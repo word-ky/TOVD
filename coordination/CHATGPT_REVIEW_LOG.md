@@ -107,3 +107,33 @@ Scientific result:
 Interpretation: T004 disproves the simple claim that a relative/distribution-preserving objective plus the original fixed `eta=.05` is sufficient. It does **not** yet disprove O1's directional signal. The data expose a direction-versus-step mismatch: local task alignment can be strong while a finite step overshoots due to episode-dependent gradient scale/curvature. This is especially clear because O1's own inner CE increases after the fixed easy step.
 
 **Next action:** T005 assigned as a frozen-checkpoint causal diagnosis. Carry forward O1 only and decouple gradient direction from step magnitude with (C1) a label-free O0-budget matched update and (C2) a deterministic label-free O1 backtracking/Armijo controller, alongside immutable O0/C0 controls. No meta-training or detector integration is allowed. If neither controlled update produces hard task improvement over W0 while retaining O1's alignment, the current semantic-fast-weight branch should be stopped/reframed rather than tuned further.
+
+---
+
+## 2026-09-12 — T005 review
+
+**Decision:** ACCEPTED; C2 BACKTRACKING IS THE FIRST POSITIVE TASK-USEFUL FAST-WEIGHT RESULT, C1 REJECTED
+
+Reviewed commits/artifacts:
+- `7b8949e33cfd861dbfb25a6e4a70b841af73733c` — T005 preregistration;
+- `f2b9722ae8a1ad68e0e529488e68f88c170125de` — controller implementation, tests, and frozen-screen machinery;
+- `2b22fc00ad34278ca285e93cf7b9b83797ae397e` — A6000 dispatch/recovery state;
+- `9f32b69373600d7ad91db707c346ed5f882cf0bf` — final frozen evidence and report;
+- `research_log/t005/RESULTS.md`, controller source, and the T005 mailbox report.
+
+Accepted protocol/engineering evidence:
+- O0/C0 exactly reproduce all matched T004 task metrics, preserving the causal comparison;
+- full local suite passes 70/70; A6000 CPU and CUDA suites each pass 70/70;
+- 2,400 diagnostic outputs/fast states match normal runtime exactly and remain finite;
+- C1 update norms match O0 budgets to float32 tolerance while retaining the O1 direction;
+- C2 uses only O1 loss for the fixed deterministic Armijo search, with no task labels/oracle diagnostics in runtime selection;
+- episodic reset, vocabulary dependence, repeatability, source checkpoint hashes, and outer-gradient safeguards are preserved;
+- no outer retraining, generator/objective/temperature redesign, detector integration, seed selection, or post-hoc eta sweep occurred.
+
+Scientific result: T005 cleanly separates *direction* from *finite-step calibration*. C1 fails the preregistered full scale-rescue/task-useful criteria, so simple norm matching is not the answer. C2, however, converts the O1 direction into a task-useful update on the same frozen W0: easy accuracy/NLL move from 77.58%/.55592 to 86.71%/.34449, and hard from 40.54%/1.31390 to 46.25%/1.23536. Hard NLL and accuracy improve in all three seeds. All 600 selected C2 steps satisfy the Armijo condition, with no zero-step fallback, while the raw O1 task-gradient cosine remains strongly better than O0 (+.411/+ .251 easy/hard versus +.011/-.011).
+
+The mechanism interpretation is now narrower and stronger: the useful ingredient is not merely a larger-capacity fast model or a vocabulary-conditioned target; it is a **vocabulary-relative semantic gradient whose episode-dependent step is controlled by label-free inner-loss geometry**. This rescues the fast-weight branch from the negative T002/T004 results.
+
+Caveats retained: Armijo descent is not per-episode task safety; easy seed 27 still regresses substantially from its own W0; C2 costs multiple inner-loss evaluations; and this remains a synthetic frozen-checkpoint result. Therefore detector integration is still premature.
+
+**Next action:** T006 assigned. Meta-train a new O1+C2 model under the original T002 budget, differentiating the accepted functional update while stop-grading the discrete eta selection. The experiment must isolate adapted performance from the same trained W0-only path, reuse/re-evaluate B0/B1/B2 on identical held-out streams, verify meta-gradients away from eta boundaries, and apply preregistered hard-generalization/easy-safety rules. Only a stable win beyond W0 and strong non-TTT/generic-TTT controls can unlock a later small detector integration task.
