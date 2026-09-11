@@ -13,3 +13,22 @@
 - A6000 connected through the existing AutoDL workflow; existing wjq verified writable.
 - Observed base interpreter lacks pytest; creating a TOVD-only environment to install it.
 - Heartbeat tovd created successfully, every 15 minutes. First tool call lacked destination and was rejected without creating an automation; retry with destination=thread succeeded.
+
+## 2026-09-12 01:11:37 +08:00 — Implementation published and deployed
+- Commit a34403756ebe049098c8850f08a1621edec0d6ce pushed successfully to origin/main.
+- Final local suite: 10 passed in 14.01s; editable package installation succeeded.
+- Remote release: 20260912-011056-tovd-t001, under /home/wenchang/asdasdsad/wjq/TOVD/releases/.
+- Remote environment ready: Python 3.12.12, torch 2.4.0+cu121, pytest 9.1.1.
+- Executing full CPU and CUDA suites plus seed-7 demos using scripts/run_a6000.sh.
+
+## 2026-09-12 01:12:32 +08:00 — Remote run launch
+- Attempt 20260912-011126-tovd-t001-a6000 encountered an SSH connection timeout while preparing run.sh. Inspection found only meta.json/artifacts and no tmux session or train.log: experiment had not started.
+- Retried existing deployed code without modifications. Run 20260912-011209-tovd-t001-a6000 launched successfully in tmux.
+- Retain both attempt directories as receipts; do not treat the first as a numerical failure.
+
+## 2026-09-12 01:14:36 +08:00 — T001 verified
+- A6000 CPU 10 passed in 1.53s; CUDA 10 passed in 2.13s. Both demos exit 0.
+- GPU vocabulary fast-state delta 0.196187243579249; reset state/output deltas 0; all required outer gradients finite and nonzero.
+- Run completed 01:12:21 +08:00; tmux session finished. All full receipts fetched; failed preparation metadata preserved.
+- Engineering mailbox marked VERIFIED, research acceptance pending. No T002 inferred.
+- Final evidence and recovery notes prepared for commit/push and remote mirror.

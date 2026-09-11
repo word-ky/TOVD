@@ -1,0 +1,69 @@
+{
+  "task": "T001",
+  "time_utc": "2026-09-11T17:12:19.137423+00:00",
+  "revision": "a34403756ebe049098c8850f08a1621edec0d6ce",
+  "seed": 7,
+  "environment": {
+    "python": "3.12.12",
+    "torch": "2.4.0+cu121",
+    "device": "cpu",
+    "dtype": "float64",
+    "cuda": "12.1",
+    "gpu": null
+  },
+  "config": {
+    "B": 2,
+    "N": 6,
+    "C": 5,
+    "M": 3,
+    "D": 8,
+    "hidden_dim": 16,
+    "inner_lr": 0.05,
+    "tau": 1.0,
+    "inner_steps": 1,
+    "dataset": "synthetic Gaussian",
+    "split": "not applicable",
+    "checkpoint": "none; seeded random initialization",
+    "changed_vocabulary": "T2 = -T1"
+  },
+  "diagnostics": {
+    "inner_loss_before": [
+      0.637258424415897,
+      0.8606449007262176
+    ],
+    "inner_loss_after": [
+      0.5119405163817825,
+      0.7631186941918832
+    ],
+    "inner_gradient_norm": [
+      1.6319451944492038,
+      1.4297677554380994
+    ],
+    "fast_update_norm": [
+      0.08159725972246021,
+      0.07148838777190498
+    ],
+    "all_finite": [
+      true,
+      true
+    ]
+  },
+  "vocabulary_target_delta": 8.998322894164238,
+  "vocabulary_fast_state_delta": 0.19618724357924902,
+  "vocabulary_output_delta": 0.34712771402343895,
+  "reset_fast_state_delta": 0.0,
+  "reset_output_delta": 0.0,
+  "adapted_vs_static_output_delta": 0.18615850927327504,
+  "outer_gradient_norms": {
+    "key_projection.weight": 0.0034741824746536334,
+    "query_projection.weight": 0.012572702045285794,
+    "fast_model.value.weight": 0.011969861947561104,
+    "fast_model.value.bias": 0.01699050773777297,
+    "fast_model.gate.weight": 0.0022165258179018235,
+    "fast_model.gate.bias": 0.0022810403930115545,
+    "fast_model.output.weight": 0.021284463077324744,
+    "fast_model.output.bias": 0.10247302488897167
+  },
+  "outer_gradients_all_finite": true,
+  "interpretation": "Synthetic mechanism feasibility only; no evidence of detection accuracy gain."
+}

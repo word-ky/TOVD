@@ -31,3 +31,8 @@ commits. No new task is inferred from an unchanged ACTIVE T001 that has already
 been VERIFIED. Research acceptance and T002 selection remain with the lead.
 Unchanged/non-actionable checks stay quiet; meaningful progress, completion,
 failure or required user input is reported. User authorized this on 2026-09-12.
+
+Release: 20260912-011056-tovd-t001, implementation SHA a34403756ebe049098c8850f08a1621edec0d6ce.
+Run: 20260912-011209-tovd-t001-a6000. Earlier preparation attempt 20260912-011126-tovd-t001-a6000 failed before execution due to SSH timeout; retain its metadata.
+
+Run 20260912-011209-tovd-t001-a6000 completed with exit 0 at 2026-09-12 01:12:21 +08:00; CPU 10/10, CUDA 10/10, both demos passed. No active TOVD tmux session remains. Complete receipts fetched to research_log/remote_runs and retained on remote.
