@@ -1,0 +1,269 @@
+{
+  "seed": 17,
+  "method": "B2",
+  "metrics": {
+    "easy": {
+      "accuracy": 0.68625,
+      "nll": 0.9552053548232652,
+      "margin": 0.23012767052277922,
+      "representation_shift": 0.33776047483086585,
+      "inner_loss_before": 0.7148278021812439,
+      "inner_loss_after": 0.49885819911956786,
+      "inner_gradient_norm": 2.2988328182697297,
+      "fast_update_norm": 0.11494164317846298,
+      "all_finite": 1.0
+    },
+    "hard": {
+      "accuracy": 0.50625,
+      "nll": 1.1604558712244033,
+      "margin": -0.004754323838278651,
+      "representation_shift": 0.38637706607580186,
+      "inner_loss_before": 0.7127797627449035,
+      "inner_loss_after": 0.4542180335521698,
+      "inner_gradient_norm": 2.6074231934547423,
+      "fast_update_norm": 0.1303711624443531,
+      "all_finite": 1.0
+    }
+  },
+  "total_parameters": 2128,
+  "outer_optimized_parameters": 2128,
+  "eval_ms_per_episode": 7.700756800477393,
+  "train_seconds": 43.43115391100582,
+  "W0_outer_drift": 2.742894626258023,
+  "mechanism": {
+    "mean": {
+      "easy_hard_state_delta": 0.0,
+      "easy_hard_output_delta": 0.0,
+      "unrelated_state_delta": 0.0,
+      "unrelated_output_delta": 0.0,
+      "unrelated_max_confidence": 0.7082819297909737,
+      "unrelated_entropy": 0.6716869186609984,
+      "reset_state_delta": 0.0,
+      "reset_output_delta": 0.0,
+      "permutation_output_max_error": 0.0
+    },
+    "episodes": [
+      {
+        "easy_hard_state_delta": 0.0,
+        "easy_hard_output_delta": 0.0,
+        "unrelated_state_delta": 0.0,
+        "unrelated_output_delta": 0.0,
+        "unrelated_max_confidence": 0.5591795444488525,
+        "unrelated_entropy": 1.058131217956543,
+        "reset_state_delta": 0.0,
+        "reset_output_delta": 0.0,
+        "permutation_output_max_error": 0.0
+      },
+      {
+        "easy_hard_state_delta": 0.0,
+        "easy_hard_output_delta": 0.0,
+        "unrelated_state_delta": 0.0,
+        "unrelated_output_delta": 0.0,
+        "unrelated_max_confidence": 0.480512797832489,
+        "unrelated_entropy": 1.1522629261016846,
+        "reset_state_delta": 0.0,
+        "reset_output_delta": 0.0,
+        "permutation_output_max_error": 0.0
+      },
+      {
+        "easy_hard_state_delta": 0.0,
+        "easy_hard_output_delta": 0.0,
+        "unrelated_state_delta": 0.0,
+        "unrelated_output_delta": 0.0,
+        "unrelated_max_confidence": 0.42664283514022827,
+        "unrelated_entropy": 1.1613516807556152,
+        "reset_state_delta": 0.0,
+        "reset_output_delta": 0.0,
+        "permutation_output_max_error": 0.0
+      },
+      {
+        "easy_hard_state_delta": 0.0,
+        "easy_hard_output_delta": 0.0,
+        "unrelated_state_delta": 0.0,
+        "unrelated_output_delta": 0.0,
+        "unrelated_max_confidence": 0.5061034560203552,
+        "unrelated_entropy": 1.1032123565673828,
+        "reset_state_delta": 0.0,
+        "reset_output_delta": 0.0,
+        "permutation_output_max_error": 0.0
+      },
+      {
+        "easy_hard_state_delta": 0.0,
+        "easy_hard_output_delta": 0.0,
+        "unrelated_state_delta": 0.0,
+        "unrelated_output_delta": 0.0,
+        "unrelated_max_confidence": 0.9658889174461365,
+        "unrelated_entropy": 0.15325191617012024,
+        "reset_state_delta": 0.0,
+        "reset_output_delta": 0.0,
+        "permutation_output_max_error": 0.0
+      },
+      {
+        "easy_hard_state_delta": 0.0,
+        "easy_hard_output_delta": 0.0,
+        "unrelated_state_delta": 0.0,
+        "unrelated_output_delta": 0.0,
+        "unrelated_max_confidence": 0.999427080154419,
+        "unrelated_entropy": 0.005365319550037384,
+        "reset_state_delta": 0.0,
+        "reset_output_delta": 0.0,
+        "permutation_output_max_error": 0.0
+      },
+      {
+        "easy_hard_state_delta": 0.0,
+        "easy_hard_output_delta": 0.0,
+        "unrelated_state_delta": 0.0,
+        "unrelated_output_delta": 0.0,
+        "unrelated_max_confidence": 0.5237876176834106,
+        "unrelated_entropy": 0.6976981163024902,
+        "reset_state_delta": 0.0,
+        "reset_output_delta": 0.0,
+        "permutation_output_max_error": 0.0
+      },
+      {
+        "easy_hard_state_delta": 0.0,
+        "easy_hard_output_delta": 0.0,
+        "unrelated_state_delta": 0.0,
+        "unrelated_output_delta": 0.0,
+        "unrelated_max_confidence": 0.8499858379364014,
+        "unrelated_entropy": 0.3999749720096588,
+        "reset_state_delta": 0.0,
+        "reset_output_delta": 0.0,
+        "permutation_output_max_error": 0.0
+      },
+      {
+        "easy_hard_state_delta": 0.0,
+        "easy_hard_output_delta": 0.0,
+        "unrelated_state_delta": 0.0,
+        "unrelated_output_delta": 0.0,
+        "unrelated_max_confidence": 0.6755225658416748,
+        "unrelated_entropy": 0.896635890007019,
+        "reset_state_delta": 0.0,
+        "reset_output_delta": 0.0,
+        "permutation_output_max_error": 0.0
+      },
+      {
+        "easy_hard_state_delta": 0.0,
+        "easy_hard_output_delta": 0.0,
+        "unrelated_state_delta": 0.0,
+        "unrelated_output_delta": 0.0,
+        "unrelated_max_confidence": 0.6688849925994873,
+        "unrelated_entropy": 0.7403984069824219,
+        "reset_state_delta": 0.0,
+        "reset_output_delta": 0.0,
+        "permutation_output_max_error": 0.0
+      },
+      {
+        "easy_hard_state_delta": 0.0,
+        "easy_hard_output_delta": 0.0,
+        "unrelated_state_delta": 0.0,
+        "unrelated_output_delta": 0.0,
+        "unrelated_max_confidence": 0.6899863481521606,
+        "unrelated_entropy": 0.8201740384101868,
+        "reset_state_delta": 0.0,
+        "reset_output_delta": 0.0,
+        "permutation_output_max_error": 0.0
+      },
+      {
+        "easy_hard_state_delta": 0.0,
+        "easy_hard_output_delta": 0.0,
+        "unrelated_state_delta": 0.0,
+        "unrelated_output_delta": 0.0,
+        "unrelated_max_confidence": 0.975943922996521,
+        "unrelated_entropy": 0.12794236838817596,
+        "reset_state_delta": 0.0,
+        "reset_output_delta": 0.0,
+        "permutation_output_max_error": 0.0
+      },
+      {
+        "easy_hard_state_delta": 0.0,
+        "easy_hard_output_delta": 0.0,
+        "unrelated_state_delta": 0.0,
+        "unrelated_output_delta": 0.0,
+        "unrelated_max_confidence": 0.7544963359832764,
+        "unrelated_entropy": 0.672378420829773,
+        "reset_state_delta": 0.0,
+        "reset_output_delta": 0.0,
+        "permutation_output_max_error": 0.0
+      },
+      {
+        "easy_hard_state_delta": 0.0,
+        "easy_hard_output_delta": 0.0,
+        "unrelated_state_delta": 0.0,
+        "unrelated_output_delta": 0.0,
+        "unrelated_max_confidence": 0.4267261326313019,
+        "unrelated_entropy": 1.2140259742736816,
+        "reset_state_delta": 0.0,
+        "reset_output_delta": 0.0,
+        "permutation_output_max_error": 0.0
+      },
+      {
+        "easy_hard_state_delta": 0.0,
+        "easy_hard_output_delta": 0.0,
+        "unrelated_state_delta": 0.0,
+        "unrelated_output_delta": 0.0,
+        "unrelated_max_confidence": 0.6515558958053589,
+        "unrelated_entropy": 0.7908051609992981,
+        "reset_state_delta": 0.0,
+        "reset_output_delta": 0.0,
+        "permutation_output_max_error": 0.0
+      },
+      {
+        "easy_hard_state_delta": 0.0,
+        "easy_hard_output_delta": 0.0,
+        "unrelated_state_delta": 0.0,
+        "unrelated_output_delta": 0.0,
+        "unrelated_max_confidence": 0.9831039905548096,
+        "unrelated_entropy": 0.1009579598903656,
+        "reset_state_delta": 0.0,
+        "reset_output_delta": 0.0,
+        "permutation_output_max_error": 0.0
+      },
+      {
+        "easy_hard_state_delta": 0.0,
+        "easy_hard_output_delta": 0.0,
+        "unrelated_state_delta": 0.0,
+        "unrelated_output_delta": 0.0,
+        "unrelated_max_confidence": 0.6903718113899231,
+        "unrelated_entropy": 0.8204748630523682,
+        "reset_state_delta": 0.0,
+        "reset_output_delta": 0.0,
+        "permutation_output_max_error": 0.0
+      },
+      {
+        "easy_hard_state_delta": 0.0,
+        "easy_hard_output_delta": 0.0,
+        "unrelated_state_delta": 0.0,
+        "unrelated_output_delta": 0.0,
+        "unrelated_max_confidence": 0.8912617564201355,
+        "unrelated_entropy": 0.33238470554351807,
+        "reset_state_delta": 0.0,
+        "reset_output_delta": 0.0,
+        "permutation_output_max_error": 0.0
+      },
+      {
+        "easy_hard_state_delta": 0.0,
+        "easy_hard_output_delta": 0.0,
+        "unrelated_state_delta": 0.0,
+        "unrelated_output_delta": 0.0,
+        "unrelated_max_confidence": 0.7847479581832886,
+        "unrelated_entropy": 0.5479028224945068,
+        "reset_state_delta": 0.0,
+        "reset_output_delta": 0.0,
+        "permutation_output_max_error": 0.0
+      },
+      {
+        "easy_hard_state_delta": 0.0,
+        "easy_hard_output_delta": 0.0,
+        "unrelated_state_delta": 0.0,
+        "unrelated_output_delta": 0.0,
+        "unrelated_max_confidence": 0.6615087985992432,
+        "unrelated_entropy": 0.6384092569351196,
+        "reset_state_delta": 0.0,
+        "reset_output_delta": 0.0,
+        "permutation_output_max_error": 0.0
+      }
+    ],
+    "negative_control": "Vocabulary excludes query class; confidence/entropy only, no accuracy defined."
+  }
+}

@@ -1,0 +1,5002 @@
+[
+  {
+    "index": 0,
+    "hardness": "easy",
+    "episode_seed": 20070000,
+    "vocabulary_ids": [
+      97,
+      80,
+      106,
+      111
+    ],
+    "query_ids": [
+      80,
+      80,
+      106,
+      80,
+      80,
+      80,
+      106,
+      106
+    ],
+    "accuracy": 0.875,
+    "nll": 0.3174176812171936,
+    "margin": 0.19654923677444458,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 1,
+    "hardness": "easy",
+    "episode_seed": 20070001,
+    "vocabulary_ids": [
+      85,
+      117,
+      100,
+      90
+    ],
+    "query_ids": [
+      100,
+      85,
+      100,
+      100,
+      100,
+      85,
+      85,
+      100
+    ],
+    "accuracy": 0.25,
+    "nll": 1.5038535594940186,
+    "margin": -0.08304227888584137,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 2,
+    "hardness": "easy",
+    "episode_seed": 20070002,
+    "vocabulary_ids": [
+      89,
+      111,
+      108,
+      91
+    ],
+    "query_ids": [
+      91,
+      89,
+      89,
+      89,
+      89,
+      89,
+      91,
+      91
+    ],
+    "accuracy": 0.625,
+    "nll": 0.943679690361023,
+    "margin": 0.08389055728912354,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 3,
+    "hardness": "easy",
+    "episode_seed": 20070003,
+    "vocabulary_ids": [
+      115,
+      98,
+      82,
+      104
+    ],
+    "query_ids": [
+      98,
+      98,
+      98,
+      115,
+      115,
+      98,
+      115,
+      115
+    ],
+    "accuracy": 1.0,
+    "nll": 0.005640902556478977,
+    "margin": 0.5688678622245789,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 4,
+    "hardness": "easy",
+    "episode_seed": 20070004,
+    "vocabulary_ids": [
+      117,
+      107,
+      95,
+      82
+    ],
+    "query_ids": [
+      107,
+      95,
+      95,
+      95,
+      95,
+      107,
+      107,
+      95
+    ],
+    "accuracy": 1.0,
+    "nll": 0.317562073469162,
+    "margin": 0.13429273664951324,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 5,
+    "hardness": "easy",
+    "episode_seed": 20070005,
+    "vocabulary_ids": [
+      102,
+      118,
+      84,
+      95
+    ],
+    "query_ids": [
+      102,
+      118,
+      118,
+      118,
+      102,
+      118,
+      118,
+      118
+    ],
+    "accuracy": 1.0,
+    "nll": 0.14333654940128326,
+    "margin": 0.4383072853088379,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 6,
+    "hardness": "easy",
+    "episode_seed": 20070006,
+    "vocabulary_ids": [
+      82,
+      105,
+      110,
+      98
+    ],
+    "query_ids": [
+      98,
+      82,
+      82,
+      82,
+      98,
+      98,
+      98,
+      82
+    ],
+    "accuracy": 0.875,
+    "nll": 0.2608923316001892,
+    "margin": 0.3620196580886841,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 7,
+    "hardness": "easy",
+    "episode_seed": 20070007,
+    "vocabulary_ids": [
+      98,
+      81,
+      106,
+      116
+    ],
+    "query_ids": [
+      81,
+      81,
+      116,
+      116,
+      116,
+      116,
+      116,
+      81
+    ],
+    "accuracy": 0.875,
+    "nll": 0.20434364676475525,
+    "margin": 0.2909594774246216,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 8,
+    "hardness": "easy",
+    "episode_seed": 20070008,
+    "vocabulary_ids": [
+      111,
+      96,
+      89,
+      102
+    ],
+    "query_ids": [
+      111,
+      111,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "accuracy": 1.0,
+    "nll": 0.008704961277544498,
+    "margin": 0.5555465221405029,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 9,
+    "hardness": "easy",
+    "episode_seed": 20070009,
+    "vocabulary_ids": [
+      97,
+      109,
+      110,
+      84
+    ],
+    "query_ids": [
+      110,
+      110,
+      110,
+      109,
+      110,
+      110,
+      109,
+      109
+    ],
+    "accuracy": 0.625,
+    "nll": 0.3577491343021393,
+    "margin": 0.29812657833099365,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 10,
+    "hardness": "easy",
+    "episode_seed": 20070010,
+    "vocabulary_ids": [
+      109,
+      118,
+      85,
+      91
+    ],
+    "query_ids": [
+      85,
+      85,
+      109,
+      109,
+      109,
+      85,
+      109,
+      109
+    ],
+    "accuracy": 0.25,
+    "nll": 1.5522220134735107,
+    "margin": -0.10917023569345474,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 11,
+    "hardness": "easy",
+    "episode_seed": 20070011,
+    "vocabulary_ids": [
+      94,
+      86,
+      105,
+      114
+    ],
+    "query_ids": [
+      94,
+      94,
+      105,
+      105,
+      94,
+      94,
+      94,
+      94
+    ],
+    "accuracy": 0.75,
+    "nll": 0.6406958103179932,
+    "margin": 0.14070165157318115,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 12,
+    "hardness": "easy",
+    "episode_seed": 20070012,
+    "vocabulary_ids": [
+      103,
+      87,
+      91,
+      118
+    ],
+    "query_ids": [
+      118,
+      87,
+      87,
+      87,
+      118,
+      118,
+      118,
+      87
+    ],
+    "accuracy": 0.5,
+    "nll": 1.1216156482696533,
+    "margin": 0.252977192401886,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 13,
+    "hardness": "easy",
+    "episode_seed": 20070013,
+    "vocabulary_ids": [
+      88,
+      93,
+      108,
+      111
+    ],
+    "query_ids": [
+      88,
+      88,
+      88,
+      88,
+      88,
+      88,
+      88,
+      93
+    ],
+    "accuracy": 0.125,
+    "nll": 2.064415693283081,
+    "margin": -0.11582916975021362,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 14,
+    "hardness": "easy",
+    "episode_seed": 20070014,
+    "vocabulary_ids": [
+      104,
+      113,
+      85,
+      91
+    ],
+    "query_ids": [
+      104,
+      104,
+      91,
+      91,
+      91,
+      91,
+      104,
+      104
+    ],
+    "accuracy": 0.5,
+    "nll": 0.6794590950012207,
+    "margin": 0.14700894057750702,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 15,
+    "hardness": "easy",
+    "episode_seed": 20070015,
+    "vocabulary_ids": [
+      92,
+      81,
+      113,
+      102
+    ],
+    "query_ids": [
+      113,
+      113,
+      81,
+      81,
+      81,
+      81,
+      113,
+      81
+    ],
+    "accuracy": 0.875,
+    "nll": 0.21052707731723785,
+    "margin": 0.2942327558994293,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 16,
+    "hardness": "easy",
+    "episode_seed": 20070016,
+    "vocabulary_ids": [
+      99,
+      106,
+      89,
+      112
+    ],
+    "query_ids": [
+      106,
+      99,
+      106,
+      99,
+      106,
+      106,
+      99,
+      99
+    ],
+    "accuracy": 1.0,
+    "nll": 0.2375892698764801,
+    "margin": 0.20589801669120789,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 17,
+    "hardness": "easy",
+    "episode_seed": 20070017,
+    "vocabulary_ids": [
+      117,
+      95,
+      81,
+      109
+    ],
+    "query_ids": [
+      109,
+      109,
+      109,
+      95,
+      109,
+      109,
+      109,
+      109
+    ],
+    "accuracy": 0.875,
+    "nll": 0.6828784942626953,
+    "margin": 0.07432880997657776,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 18,
+    "hardness": "easy",
+    "episode_seed": 20070018,
+    "vocabulary_ids": [
+      118,
+      108,
+      80,
+      90
+    ],
+    "query_ids": [
+      108,
+      108,
+      80,
+      108,
+      108,
+      108,
+      80,
+      108
+    ],
+    "accuracy": 1.0,
+    "nll": 0.24896134436130524,
+    "margin": 0.17765381932258606,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 19,
+    "hardness": "easy",
+    "episode_seed": 20070019,
+    "vocabulary_ids": [
+      93,
+      84,
+      112,
+      106
+    ],
+    "query_ids": [
+      106,
+      106,
+      84,
+      84,
+      84,
+      84,
+      84,
+      84
+    ],
+    "accuracy": 0.25,
+    "nll": 1.4803599119186401,
+    "margin": -0.0845259428024292,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 20,
+    "hardness": "easy",
+    "episode_seed": 20070020,
+    "vocabulary_ids": [
+      102,
+      110,
+      91,
+      88
+    ],
+    "query_ids": [
+      88,
+      88,
+      88,
+      88,
+      91,
+      88,
+      91,
+      88
+    ],
+    "accuracy": 0.5,
+    "nll": 0.8835545182228088,
+    "margin": 0.04993647336959839,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 21,
+    "hardness": "easy",
+    "episode_seed": 20070021,
+    "vocabulary_ids": [
+      109,
+      95,
+      115,
+      87
+    ],
+    "query_ids": [
+      115,
+      109,
+      109,
+      115,
+      115,
+      109,
+      109,
+      109
+    ],
+    "accuracy": 0.75,
+    "nll": 0.3906310200691223,
+    "margin": 0.20193825662136078,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 22,
+    "hardness": "easy",
+    "episode_seed": 20070022,
+    "vocabulary_ids": [
+      112,
+      99,
+      100,
+      89
+    ],
+    "query_ids": [
+      112,
+      100,
+      112,
+      100,
+      100,
+      112,
+      100,
+      112
+    ],
+    "accuracy": 1.0,
+    "nll": 0.15657125413417816,
+    "margin": 0.3838067054748535,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 23,
+    "hardness": "easy",
+    "episode_seed": 20070023,
+    "vocabulary_ids": [
+      95,
+      116,
+      89,
+      108
+    ],
+    "query_ids": [
+      108,
+      116,
+      116,
+      116,
+      108,
+      116,
+      116,
+      116
+    ],
+    "accuracy": 1.0,
+    "nll": 0.020867107436060905,
+    "margin": 0.46295008063316345,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 24,
+    "hardness": "easy",
+    "episode_seed": 20070024,
+    "vocabulary_ids": [
+      106,
+      88,
+      93,
+      117
+    ],
+    "query_ids": [
+      93,
+      117,
+      117,
+      93,
+      117,
+      93,
+      93,
+      93
+    ],
+    "accuracy": 1.0,
+    "nll": 0.03171965107321739,
+    "margin": 0.4239004850387573,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 25,
+    "hardness": "easy",
+    "episode_seed": 20070025,
+    "vocabulary_ids": [
+      104,
+      118,
+      87,
+      90
+    ],
+    "query_ids": [
+      104,
+      104,
+      90,
+      104,
+      90,
+      90,
+      104,
+      104
+    ],
+    "accuracy": 0.375,
+    "nll": 1.5308408737182617,
+    "margin": 0.030460383743047714,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 26,
+    "hardness": "easy",
+    "episode_seed": 20070026,
+    "vocabulary_ids": [
+      104,
+      118,
+      82,
+      96
+    ],
+    "query_ids": [
+      118,
+      104,
+      104,
+      104,
+      104,
+      104,
+      104,
+      118
+    ],
+    "accuracy": 0.25,
+    "nll": 1.4569424390792847,
+    "margin": 0.007777690887451172,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 27,
+    "hardness": "easy",
+    "episode_seed": 20070027,
+    "vocabulary_ids": [
+      118,
+      97,
+      102,
+      80
+    ],
+    "query_ids": [
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80
+    ],
+    "accuracy": 1.0,
+    "nll": 0.14626528322696686,
+    "margin": 0.2499874234199524,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 28,
+    "hardness": "easy",
+    "episode_seed": 20070028,
+    "vocabulary_ids": [
+      96,
+      104,
+      80,
+      114
+    ],
+    "query_ids": [
+      104,
+      80,
+      80,
+      80,
+      80,
+      80,
+      104,
+      104
+    ],
+    "accuracy": 0.625,
+    "nll": 0.80207759141922,
+    "margin": 0.08822297304868698,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 29,
+    "hardness": "easy",
+    "episode_seed": 20070029,
+    "vocabulary_ids": [
+      80,
+      96,
+      103,
+      115
+    ],
+    "query_ids": [
+      80,
+      103,
+      103,
+      103,
+      103,
+      103,
+      80,
+      80
+    ],
+    "accuracy": 1.0,
+    "nll": 0.4130398631095886,
+    "margin": 0.09717970341444016,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 30,
+    "hardness": "easy",
+    "episode_seed": 20070030,
+    "vocabulary_ids": [
+      110,
+      87,
+      108,
+      99
+    ],
+    "query_ids": [
+      110,
+      110,
+      87,
+      110,
+      110,
+      87,
+      87,
+      110
+    ],
+    "accuracy": 0.75,
+    "nll": 0.33872005343437195,
+    "margin": 0.3749731481075287,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 31,
+    "hardness": "easy",
+    "episode_seed": 20070031,
+    "vocabulary_ids": [
+      93,
+      80,
+      110,
+      107
+    ],
+    "query_ids": [
+      110,
+      110,
+      107,
+      110,
+      107,
+      110,
+      107,
+      107
+    ],
+    "accuracy": 0.875,
+    "nll": 0.3266749978065491,
+    "margin": 0.2864038348197937,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 32,
+    "hardness": "easy",
+    "episode_seed": 20070032,
+    "vocabulary_ids": [
+      119,
+      98,
+      89,
+      101
+    ],
+    "query_ids": [
+      98,
+      98,
+      119,
+      98,
+      119,
+      119,
+      119,
+      119
+    ],
+    "accuracy": 1.0,
+    "nll": 0.007808648981153965,
+    "margin": 0.5430945754051208,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 33,
+    "hardness": "easy",
+    "episode_seed": 20070033,
+    "vocabulary_ids": [
+      88,
+      111,
+      94,
+      105
+    ],
+    "query_ids": [
+      105,
+      94,
+      105,
+      105,
+      105,
+      105,
+      105,
+      94
+    ],
+    "accuracy": 0.25,
+    "nll": 1.2858610153198242,
+    "margin": 0.023876359686255455,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 34,
+    "hardness": "easy",
+    "episode_seed": 20070034,
+    "vocabulary_ids": [
+      101,
+      113,
+      80,
+      94
+    ],
+    "query_ids": [
+      94,
+      94,
+      101,
+      94,
+      101,
+      94,
+      94,
+      94
+    ],
+    "accuracy": 0.75,
+    "nll": 0.3159048557281494,
+    "margin": 0.27165815234184265,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 35,
+    "hardness": "easy",
+    "episode_seed": 20070035,
+    "vocabulary_ids": [
+      88,
+      106,
+      97,
+      117
+    ],
+    "query_ids": [
+      97,
+      88,
+      88,
+      97,
+      88,
+      88,
+      88,
+      97
+    ],
+    "accuracy": 0.5,
+    "nll": 0.9889582991600037,
+    "margin": 0.045163266360759735,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 36,
+    "hardness": "easy",
+    "episode_seed": 20070036,
+    "vocabulary_ids": [
+      80,
+      114,
+      92,
+      107
+    ],
+    "query_ids": [
+      80,
+      107,
+      80,
+      80,
+      107,
+      107,
+      80,
+      107
+    ],
+    "accuracy": 1.0,
+    "nll": 0.3591315448284149,
+    "margin": 0.1505354344844818,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 37,
+    "hardness": "easy",
+    "episode_seed": 20070037,
+    "vocabulary_ids": [
+      91,
+      105,
+      86,
+      118
+    ],
+    "query_ids": [
+      91,
+      91,
+      91,
+      91,
+      86,
+      86,
+      86,
+      91
+    ],
+    "accuracy": 0.75,
+    "nll": 0.5506775379180908,
+    "margin": 0.30430859327316284,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 38,
+    "hardness": "easy",
+    "episode_seed": 20070038,
+    "vocabulary_ids": [
+      97,
+      112,
+      89,
+      109
+    ],
+    "query_ids": [
+      97,
+      97,
+      89,
+      97,
+      97,
+      97,
+      89,
+      97
+    ],
+    "accuracy": 0.75,
+    "nll": 0.5721156001091003,
+    "margin": 0.16518700122833252,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 39,
+    "hardness": "easy",
+    "episode_seed": 20070039,
+    "vocabulary_ids": [
+      97,
+      114,
+      104,
+      86
+    ],
+    "query_ids": [
+      104,
+      104,
+      104,
+      104,
+      97,
+      104,
+      104,
+      97
+    ],
+    "accuracy": 0.25,
+    "nll": 1.4181474447250366,
+    "margin": -0.05165993422269821,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 40,
+    "hardness": "easy",
+    "episode_seed": 20070040,
+    "vocabulary_ids": [
+      118,
+      84,
+      94,
+      103
+    ],
+    "query_ids": [
+      84,
+      84,
+      84,
+      84,
+      103,
+      103,
+      84,
+      84
+    ],
+    "accuracy": 0.25,
+    "nll": 1.4095016717910767,
+    "margin": -0.07708992063999176,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 41,
+    "hardness": "easy",
+    "episode_seed": 20070041,
+    "vocabulary_ids": [
+      94,
+      102,
+      110,
+      88
+    ],
+    "query_ids": [
+      110,
+      110,
+      110,
+      94,
+      94,
+      94,
+      110,
+      110
+    ],
+    "accuracy": 1.0,
+    "nll": 0.013630855828523636,
+    "margin": 0.5155482292175293,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 42,
+    "hardness": "easy",
+    "episode_seed": 20070042,
+    "vocabulary_ids": [
+      97,
+      119,
+      89,
+      100
+    ],
+    "query_ids": [
+      89,
+      89,
+      97,
+      97,
+      97,
+      97,
+      89,
+      89
+    ],
+    "accuracy": 0.75,
+    "nll": 0.5930886268615723,
+    "margin": 0.15048885345458984,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 43,
+    "hardness": "easy",
+    "episode_seed": 20070043,
+    "vocabulary_ids": [
+      93,
+      101,
+      84,
+      114
+    ],
+    "query_ids": [
+      101,
+      101,
+      101,
+      114,
+      114,
+      114,
+      114,
+      101
+    ],
+    "accuracy": 0.5,
+    "nll": 0.784098744392395,
+    "margin": 0.2541700005531311,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 44,
+    "hardness": "easy",
+    "episode_seed": 20070044,
+    "vocabulary_ids": [
+      110,
+      83,
+      107,
+      92
+    ],
+    "query_ids": [
+      107,
+      110,
+      110,
+      107,
+      110,
+      110,
+      110,
+      107
+    ],
+    "accuracy": 1.0,
+    "nll": 0.11945958435535431,
+    "margin": 0.4233739376068115,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 45,
+    "hardness": "easy",
+    "episode_seed": 20070045,
+    "vocabulary_ids": [
+      108,
+      116,
+      94,
+      82
+    ],
+    "query_ids": [
+      94,
+      116,
+      116,
+      94,
+      94,
+      116,
+      116,
+      94
+    ],
+    "accuracy": 1.0,
+    "nll": 0.027960099279880524,
+    "margin": 0.4148377776145935,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 46,
+    "hardness": "easy",
+    "episode_seed": 20070046,
+    "vocabulary_ids": [
+      109,
+      116,
+      97,
+      85
+    ],
+    "query_ids": [
+      97,
+      109,
+      109,
+      109,
+      109,
+      109,
+      97,
+      109
+    ],
+    "accuracy": 0.375,
+    "nll": 0.6889451742172241,
+    "margin": 0.08691561967134476,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 47,
+    "hardness": "easy",
+    "episode_seed": 20070047,
+    "vocabulary_ids": [
+      93,
+      117,
+      100,
+      86
+    ],
+    "query_ids": [
+      86,
+      86,
+      86,
+      93,
+      93,
+      86,
+      93,
+      86
+    ],
+    "accuracy": 0.75,
+    "nll": 0.5441356897354126,
+    "margin": 0.11056993901729584,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 48,
+    "hardness": "easy",
+    "episode_seed": 20070048,
+    "vocabulary_ids": [
+      97,
+      101,
+      117,
+      84
+    ],
+    "query_ids": [
+      117,
+      117,
+      84,
+      117,
+      117,
+      84,
+      117,
+      84
+    ],
+    "accuracy": 0.75,
+    "nll": 0.6124153733253479,
+    "margin": 0.2758399546146393,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 49,
+    "hardness": "easy",
+    "episode_seed": 20070049,
+    "vocabulary_ids": [
+      118,
+      105,
+      82,
+      91
+    ],
+    "query_ids": [
+      82,
+      118,
+      118,
+      82,
+      118,
+      82,
+      118,
+      118
+    ],
+    "accuracy": 0.75,
+    "nll": 0.38572946190834045,
+    "margin": 0.3516889810562134,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 50,
+    "hardness": "easy",
+    "episode_seed": 20070050,
+    "vocabulary_ids": [
+      111,
+      101,
+      87,
+      97
+    ],
+    "query_ids": [
+      97,
+      97,
+      101,
+      101,
+      97,
+      97,
+      101,
+      101
+    ],
+    "accuracy": 0.5,
+    "nll": 0.8750912547111511,
+    "margin": 0.15831302106380463,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 51,
+    "hardness": "easy",
+    "episode_seed": 20070051,
+    "vocabulary_ids": [
+      100,
+      95,
+      83,
+      111
+    ],
+    "query_ids": [
+      83,
+      111,
+      111,
+      111,
+      111,
+      111,
+      111,
+      111
+    ],
+    "accuracy": 0.875,
+    "nll": 0.1920338273048401,
+    "margin": 0.5251933336257935,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 52,
+    "hardness": "easy",
+    "episode_seed": 20070052,
+    "vocabulary_ids": [
+      115,
+      88,
+      91,
+      108
+    ],
+    "query_ids": [
+      88,
+      88,
+      115,
+      115,
+      88,
+      88,
+      115,
+      115
+    ],
+    "accuracy": 0.875,
+    "nll": 0.3300274908542633,
+    "margin": 0.2781171202659607,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 53,
+    "hardness": "easy",
+    "episode_seed": 20070053,
+    "vocabulary_ids": [
+      80,
+      96,
+      113,
+      101
+    ],
+    "query_ids": [
+      80,
+      80,
+      80,
+      96,
+      80,
+      80,
+      96,
+      96
+    ],
+    "accuracy": 1.0,
+    "nll": 0.1338616907596588,
+    "margin": 0.2649620771408081,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 54,
+    "hardness": "easy",
+    "episode_seed": 20070054,
+    "vocabulary_ids": [
+      116,
+      80,
+      96,
+      100
+    ],
+    "query_ids": [
+      80,
+      96,
+      96,
+      80,
+      96,
+      80,
+      80,
+      80
+    ],
+    "accuracy": 0.875,
+    "nll": 0.30145972967147827,
+    "margin": 0.2476709485054016,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 55,
+    "hardness": "easy",
+    "episode_seed": 20070055,
+    "vocabulary_ids": [
+      90,
+      110,
+      85,
+      101
+    ],
+    "query_ids": [
+      101,
+      90,
+      90,
+      90,
+      90,
+      101,
+      90,
+      90
+    ],
+    "accuracy": 0.75,
+    "nll": 0.659530520439148,
+    "margin": 0.2620316743850708,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 56,
+    "hardness": "easy",
+    "episode_seed": 20070056,
+    "vocabulary_ids": [
+      119,
+      80,
+      93,
+      109
+    ],
+    "query_ids": [
+      119,
+      109,
+      119,
+      119,
+      119,
+      119,
+      119,
+      109
+    ],
+    "accuracy": 0.75,
+    "nll": 0.40221357345581055,
+    "margin": 0.4322754740715027,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 57,
+    "hardness": "easy",
+    "episode_seed": 20070057,
+    "vocabulary_ids": [
+      107,
+      80,
+      113,
+      99
+    ],
+    "query_ids": [
+      113,
+      113,
+      113,
+      113,
+      113,
+      113,
+      113,
+      80
+    ],
+    "accuracy": 1.0,
+    "nll": 0.04613290727138519,
+    "margin": 0.5082902908325195,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 58,
+    "hardness": "easy",
+    "episode_seed": 20070058,
+    "vocabulary_ids": [
+      107,
+      116,
+      94,
+      80
+    ],
+    "query_ids": [
+      116,
+      116,
+      116,
+      116,
+      116,
+      80,
+      116,
+      116
+    ],
+    "accuracy": 1.0,
+    "nll": 0.09029596298933029,
+    "margin": 0.4274088740348816,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 59,
+    "hardness": "easy",
+    "episode_seed": 20070059,
+    "vocabulary_ids": [
+      119,
+      94,
+      101,
+      84
+    ],
+    "query_ids": [
+      101,
+      84,
+      84,
+      101,
+      84,
+      84,
+      101,
+      101
+    ],
+    "accuracy": 0.375,
+    "nll": 1.1573047637939453,
+    "margin": -0.03149624541401863,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 60,
+    "hardness": "easy",
+    "episode_seed": 20070060,
+    "vocabulary_ids": [
+      84,
+      104,
+      111,
+      92
+    ],
+    "query_ids": [
+      92,
+      92,
+      84,
+      84,
+      84,
+      92,
+      84,
+      92
+    ],
+    "accuracy": 0.625,
+    "nll": 0.7536388635635376,
+    "margin": 0.20687967538833618,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 61,
+    "hardness": "easy",
+    "episode_seed": 20070061,
+    "vocabulary_ids": [
+      94,
+      110,
+      86,
+      107
+    ],
+    "query_ids": [
+      86,
+      86,
+      107,
+      86,
+      86,
+      107,
+      86,
+      86
+    ],
+    "accuracy": 0.875,
+    "nll": 0.44326114654541016,
+    "margin": 0.1236954927444458,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 62,
+    "hardness": "easy",
+    "episode_seed": 20070062,
+    "vocabulary_ids": [
+      92,
+      101,
+      110,
+      87
+    ],
+    "query_ids": [
+      101,
+      87,
+      87,
+      87,
+      87,
+      101,
+      101,
+      101
+    ],
+    "accuracy": 0.25,
+    "nll": 1.6634215116500854,
+    "margin": -0.106142058968544,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 63,
+    "hardness": "easy",
+    "episode_seed": 20070063,
+    "vocabulary_ids": [
+      95,
+      116,
+      108,
+      87
+    ],
+    "query_ids": [
+      87,
+      95,
+      87,
+      87,
+      87,
+      95,
+      95,
+      87
+    ],
+    "accuracy": 0.5,
+    "nll": 1.2868475914001465,
+    "margin": 0.0255177803337574,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 64,
+    "hardness": "easy",
+    "episode_seed": 20070064,
+    "vocabulary_ids": [
+      114,
+      93,
+      105,
+      82
+    ],
+    "query_ids": [
+      114,
+      114,
+      114,
+      82,
+      82,
+      82,
+      82,
+      82
+    ],
+    "accuracy": 0.375,
+    "nll": 0.8529556393623352,
+    "margin": 0.17517638206481934,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 65,
+    "hardness": "easy",
+    "episode_seed": 20070065,
+    "vocabulary_ids": [
+      94,
+      88,
+      100,
+      117
+    ],
+    "query_ids": [
+      88,
+      88,
+      88,
+      88,
+      94,
+      94,
+      88,
+      94
+    ],
+    "accuracy": 0.375,
+    "nll": 1.2219910621643066,
+    "margin": 0.02132905274629593,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 66,
+    "hardness": "easy",
+    "episode_seed": 20070066,
+    "vocabulary_ids": [
+      108,
+      116,
+      83,
+      92
+    ],
+    "query_ids": [
+      92,
+      92,
+      116,
+      116,
+      92,
+      92,
+      92,
+      116
+    ],
+    "accuracy": 1.0,
+    "nll": 0.020232468843460083,
+    "margin": 0.4769620895385742,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 67,
+    "hardness": "easy",
+    "episode_seed": 20070067,
+    "vocabulary_ids": [
+      113,
+      91,
+      108,
+      86
+    ],
+    "query_ids": [
+      91,
+      91,
+      86,
+      91,
+      86,
+      86,
+      86,
+      86
+    ],
+    "accuracy": 0.75,
+    "nll": 0.452558696269989,
+    "margin": 0.17341917753219604,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 68,
+    "hardness": "easy",
+    "episode_seed": 20070068,
+    "vocabulary_ids": [
+      105,
+      111,
+      90,
+      83
+    ],
+    "query_ids": [
+      105,
+      83,
+      105,
+      105,
+      83,
+      105,
+      105,
+      105
+    ],
+    "accuracy": 0.125,
+    "nll": 1.6603310108184814,
+    "margin": -0.11982966959476471,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 69,
+    "hardness": "easy",
+    "episode_seed": 20070069,
+    "vocabulary_ids": [
+      92,
+      117,
+      103,
+      86
+    ],
+    "query_ids": [
+      86,
+      86,
+      117,
+      86,
+      86,
+      86,
+      86,
+      117
+    ],
+    "accuracy": 0.75,
+    "nll": 0.6115996241569519,
+    "margin": 0.17538365721702576,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 70,
+    "hardness": "easy",
+    "episode_seed": 20070070,
+    "vocabulary_ids": [
+      96,
+      81,
+      109,
+      113
+    ],
+    "query_ids": [
+      96,
+      81,
+      81,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "accuracy": 1.0,
+    "nll": 0.08837722986936569,
+    "margin": 0.3668990135192871,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 71,
+    "hardness": "easy",
+    "episode_seed": 20070071,
+    "vocabulary_ids": [
+      104,
+      89,
+      90,
+      119
+    ],
+    "query_ids": [
+      89,
+      104,
+      89,
+      104,
+      89,
+      104,
+      89,
+      89
+    ],
+    "accuracy": 0.125,
+    "nll": 1.6206507682800293,
+    "margin": -0.12034082412719727,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 72,
+    "hardness": "easy",
+    "episode_seed": 20070072,
+    "vocabulary_ids": [
+      93,
+      101,
+      115,
+      84
+    ],
+    "query_ids": [
+      93,
+      84,
+      84,
+      93,
+      93,
+      84,
+      93,
+      93
+    ],
+    "accuracy": 0.875,
+    "nll": 0.1860828548669815,
+    "margin": 0.284274160861969,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 73,
+    "hardness": "easy",
+    "episode_seed": 20070073,
+    "vocabulary_ids": [
+      92,
+      107,
+      89,
+      115
+    ],
+    "query_ids": [
+      92,
+      115,
+      92,
+      92,
+      92,
+      92,
+      92,
+      92
+    ],
+    "accuracy": 1.0,
+    "nll": 0.009661362506449223,
+    "margin": 0.5157016515731812,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 74,
+    "hardness": "easy",
+    "episode_seed": 20070074,
+    "vocabulary_ids": [
+      92,
+      87,
+      112,
+      106
+    ],
+    "query_ids": [
+      106,
+      106,
+      87,
+      87,
+      106,
+      87,
+      106,
+      106
+    ],
+    "accuracy": 0.625,
+    "nll": 0.9500738382339478,
+    "margin": 0.01938784494996071,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 75,
+    "hardness": "easy",
+    "episode_seed": 20070075,
+    "vocabulary_ids": [
+      100,
+      81,
+      93,
+      114
+    ],
+    "query_ids": [
+      114,
+      114,
+      100,
+      114,
+      100,
+      100,
+      100,
+      100
+    ],
+    "accuracy": 1.0,
+    "nll": 0.25257301330566406,
+    "margin": 0.31655898690223694,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 76,
+    "hardness": "easy",
+    "episode_seed": 20070076,
+    "vocabulary_ids": [
+      81,
+      112,
+      95,
+      107
+    ],
+    "query_ids": [
+      112,
+      107,
+      112,
+      107,
+      107,
+      107,
+      112,
+      107
+    ],
+    "accuracy": 1.0,
+    "nll": 0.24010342359542847,
+    "margin": 0.32123613357543945,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 77,
+    "hardness": "easy",
+    "episode_seed": 20070077,
+    "vocabulary_ids": [
+      88,
+      104,
+      119,
+      97
+    ],
+    "query_ids": [
+      97,
+      97,
+      97,
+      119,
+      119,
+      97,
+      119,
+      119
+    ],
+    "accuracy": 1.0,
+    "nll": 0.023479728028178215,
+    "margin": 0.42198145389556885,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 78,
+    "hardness": "easy",
+    "episode_seed": 20070078,
+    "vocabulary_ids": [
+      114,
+      81,
+      95,
+      102
+    ],
+    "query_ids": [
+      81,
+      102,
+      81,
+      81,
+      102,
+      81,
+      102,
+      81
+    ],
+    "accuracy": 0.625,
+    "nll": 0.7833528518676758,
+    "margin": 0.026491185650229454,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 79,
+    "hardness": "easy",
+    "episode_seed": 20070079,
+    "vocabulary_ids": [
+      87,
+      108,
+      98,
+      110
+    ],
+    "query_ids": [
+      108,
+      87,
+      87,
+      108,
+      87,
+      108,
+      108,
+      87
+    ],
+    "accuracy": 0.75,
+    "nll": 0.5610436797142029,
+    "margin": 0.07574386894702911,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 80,
+    "hardness": "easy",
+    "episode_seed": 20070080,
+    "vocabulary_ids": [
+      110,
+      90,
+      87,
+      104
+    ],
+    "query_ids": [
+      104,
+      90,
+      104,
+      104,
+      104,
+      104,
+      104,
+      90
+    ],
+    "accuracy": 0.25,
+    "nll": 2.0898854732513428,
+    "margin": -0.0825105756521225,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 81,
+    "hardness": "easy",
+    "episode_seed": 20070081,
+    "vocabulary_ids": [
+      86,
+      100,
+      96,
+      110
+    ],
+    "query_ids": [
+      100,
+      110,
+      110,
+      100,
+      110,
+      110,
+      100,
+      100
+    ],
+    "accuracy": 1.0,
+    "nll": 0.3046451508998871,
+    "margin": 0.3046409487724304,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 82,
+    "hardness": "easy",
+    "episode_seed": 20070082,
+    "vocabulary_ids": [
+      84,
+      95,
+      116,
+      106
+    ],
+    "query_ids": [
+      84,
+      116,
+      84,
+      116,
+      116,
+      84,
+      116,
+      84
+    ],
+    "accuracy": 0.75,
+    "nll": 0.5366780161857605,
+    "margin": 0.18159902095794678,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 83,
+    "hardness": "easy",
+    "episode_seed": 20070083,
+    "vocabulary_ids": [
+      96,
+      114,
+      100,
+      81
+    ],
+    "query_ids": [
+      100,
+      96,
+      96,
+      96,
+      100,
+      96,
+      100,
+      100
+    ],
+    "accuracy": 1.0,
+    "nll": 0.3378128111362457,
+    "margin": 0.20757348835468292,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 84,
+    "hardness": "easy",
+    "episode_seed": 20070084,
+    "vocabulary_ids": [
+      110,
+      91,
+      89,
+      101
+    ],
+    "query_ids": [
+      101,
+      110,
+      110,
+      110,
+      110,
+      101,
+      101,
+      110
+    ],
+    "accuracy": 0.625,
+    "nll": 0.5339530110359192,
+    "margin": 0.3254663944244385,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 85,
+    "hardness": "easy",
+    "episode_seed": 20070085,
+    "vocabulary_ids": [
+      116,
+      91,
+      109,
+      85
+    ],
+    "query_ids": [
+      116,
+      116,
+      109,
+      116,
+      116,
+      116,
+      116,
+      109
+    ],
+    "accuracy": 0.875,
+    "nll": 0.21188043057918549,
+    "margin": 0.3681865930557251,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 86,
+    "hardness": "easy",
+    "episode_seed": 20070086,
+    "vocabulary_ids": [
+      107,
+      93,
+      81,
+      115
+    ],
+    "query_ids": [
+      93,
+      115,
+      93,
+      115,
+      115,
+      93,
+      115,
+      93
+    ],
+    "accuracy": 1.0,
+    "nll": 0.019558442756533623,
+    "margin": 0.47081995010375977,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 87,
+    "hardness": "easy",
+    "episode_seed": 20070087,
+    "vocabulary_ids": [
+      110,
+      82,
+      99,
+      103
+    ],
+    "query_ids": [
+      103,
+      103,
+      99,
+      99,
+      103,
+      99,
+      103,
+      103
+    ],
+    "accuracy": 1.0,
+    "nll": 0.22640469670295715,
+    "margin": 0.189228355884552,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 88,
+    "hardness": "easy",
+    "episode_seed": 20070088,
+    "vocabulary_ids": [
+      99,
+      80,
+      102,
+      112
+    ],
+    "query_ids": [
+      99,
+      112,
+      99,
+      112,
+      112,
+      112,
+      112,
+      99
+    ],
+    "accuracy": 1.0,
+    "nll": 0.015216153115034103,
+    "margin": 0.531288206577301,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 89,
+    "hardness": "easy",
+    "episode_seed": 20070089,
+    "vocabulary_ids": [
+      101,
+      99,
+      117,
+      82
+    ],
+    "query_ids": [
+      101,
+      101,
+      101,
+      82,
+      82,
+      82,
+      101,
+      82
+    ],
+    "accuracy": 0.0,
+    "nll": 1.9877327680587769,
+    "margin": -0.15251773595809937,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 90,
+    "hardness": "easy",
+    "episode_seed": 20070090,
+    "vocabulary_ids": [
+      87,
+      111,
+      106,
+      92
+    ],
+    "query_ids": [
+      87,
+      87,
+      87,
+      87,
+      92,
+      87,
+      87,
+      87
+    ],
+    "accuracy": 0.125,
+    "nll": 1.4693890810012817,
+    "margin": -0.05008477717638016,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 91,
+    "hardness": "easy",
+    "episode_seed": 20070091,
+    "vocabulary_ids": [
+      112,
+      94,
+      109,
+      87
+    ],
+    "query_ids": [
+      109,
+      109,
+      109,
+      94,
+      94,
+      94,
+      94,
+      94
+    ],
+    "accuracy": 0.625,
+    "nll": 0.46609875559806824,
+    "margin": 0.2107418030500412,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 92,
+    "hardness": "easy",
+    "episode_seed": 20070092,
+    "vocabulary_ids": [
+      86,
+      101,
+      94,
+      111
+    ],
+    "query_ids": [
+      111,
+      94,
+      94,
+      94,
+      94,
+      111,
+      94,
+      111
+    ],
+    "accuracy": 1.0,
+    "nll": 0.02520100213587284,
+    "margin": 0.4873014986515045,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 93,
+    "hardness": "easy",
+    "episode_seed": 20070093,
+    "vocabulary_ids": [
+      105,
+      114,
+      97,
+      85
+    ],
+    "query_ids": [
+      97,
+      97,
+      114,
+      97,
+      97,
+      97,
+      114,
+      97
+    ],
+    "accuracy": 1.0,
+    "nll": 0.08979647606611252,
+    "margin": 0.2897297739982605,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 94,
+    "hardness": "easy",
+    "episode_seed": 20070094,
+    "vocabulary_ids": [
+      111,
+      98,
+      83,
+      108
+    ],
+    "query_ids": [
+      111,
+      111,
+      111,
+      83,
+      83,
+      83,
+      83,
+      111
+    ],
+    "accuracy": 0.75,
+    "nll": 0.46466103196144104,
+    "margin": 0.29926446080207825,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 95,
+    "hardness": "easy",
+    "episode_seed": 20070095,
+    "vocabulary_ids": [
+      112,
+      83,
+      105,
+      91
+    ],
+    "query_ids": [
+      112,
+      83,
+      83,
+      112,
+      83,
+      112,
+      112,
+      112
+    ],
+    "accuracy": 0.75,
+    "nll": 0.4367882013320923,
+    "margin": 0.34063196182250977,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 96,
+    "hardness": "easy",
+    "episode_seed": 20070096,
+    "vocabulary_ids": [
+      110,
+      107,
+      99,
+      89
+    ],
+    "query_ids": [
+      110,
+      110,
+      110,
+      89,
+      89,
+      89,
+      89,
+      89
+    ],
+    "accuracy": 0.75,
+    "nll": 0.49582937359809875,
+    "margin": 0.21611548960208893,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 97,
+    "hardness": "easy",
+    "episode_seed": 20070097,
+    "vocabulary_ids": [
+      108,
+      116,
+      82,
+      90
+    ],
+    "query_ids": [
+      90,
+      108,
+      108,
+      90,
+      90,
+      90,
+      108,
+      108
+    ],
+    "accuracy": 1.0,
+    "nll": 0.08267711102962494,
+    "margin": 0.33548349142074585,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 98,
+    "hardness": "easy",
+    "episode_seed": 20070098,
+    "vocabulary_ids": [
+      81,
+      118,
+      108,
+      91
+    ],
+    "query_ids": [
+      91,
+      91,
+      81,
+      91,
+      81,
+      91,
+      91,
+      91
+    ],
+    "accuracy": 1.0,
+    "nll": 0.10441829264163971,
+    "margin": 0.2906530201435089,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 99,
+    "hardness": "easy",
+    "episode_seed": 20070099,
+    "vocabulary_ids": [
+      110,
+      87,
+      102,
+      96
+    ],
+    "query_ids": [
+      102,
+      87,
+      87,
+      102,
+      102,
+      102,
+      87,
+      102
+    ],
+    "accuracy": 0.0,
+    "nll": 1.8106428384780884,
+    "margin": -0.14025282859802246,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 0,
+    "hardness": "hard",
+    "episode_seed": 20070000,
+    "vocabulary_ids": [
+      89,
+      88,
+      87,
+      80
+    ],
+    "query_ids": [
+      89,
+      89,
+      89,
+      80,
+      80,
+      80,
+      89,
+      89
+    ],
+    "accuracy": 0.375,
+    "nll": 1.1464555263519287,
+    "margin": -0.0006369035691022873,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 1,
+    "hardness": "hard",
+    "episode_seed": 20070001,
+    "vocabulary_ids": [
+      106,
+      100,
+      105,
+      108
+    ],
+    "query_ids": [
+      105,
+      105,
+      100,
+      100,
+      105,
+      105,
+      105,
+      100
+    ],
+    "accuracy": 0.125,
+    "nll": 2.7108144760131836,
+    "margin": -0.20897236466407776,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 2,
+    "hardness": "hard",
+    "episode_seed": 20070002,
+    "vocabulary_ids": [
+      107,
+      108,
+      109,
+      101
+    ],
+    "query_ids": [
+      101,
+      101,
+      101,
+      107,
+      107,
+      107,
+      107,
+      107
+    ],
+    "accuracy": 0.0,
+    "nll": 1.530032992362976,
+    "margin": -0.08687343448400497,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 3,
+    "hardness": "hard",
+    "episode_seed": 20070003,
+    "vocabulary_ids": [
+      91,
+      98,
+      92,
+      95
+    ],
+    "query_ids": [
+      98,
+      98,
+      92,
+      98,
+      98,
+      98,
+      98,
+      92
+    ],
+    "accuracy": 0.75,
+    "nll": 0.6355706453323364,
+    "margin": 0.0832672119140625,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 4,
+    "hardness": "hard",
+    "episode_seed": 20070004,
+    "vocabulary_ids": [
+      94,
+      90,
+      95,
+      98
+    ],
+    "query_ids": [
+      90,
+      90,
+      94,
+      94,
+      90,
+      90,
+      94,
+      94
+    ],
+    "accuracy": 0.5,
+    "nll": 1.036651611328125,
+    "margin": 0.0026753805577754974,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 5,
+    "hardness": "hard",
+    "episode_seed": 20070005,
+    "vocabulary_ids": [
+      118,
+      111,
+      113,
+      119
+    ],
+    "query_ids": [
+      111,
+      118,
+      111,
+      111,
+      111,
+      111,
+      118,
+      111
+    ],
+    "accuracy": 0.5,
+    "nll": 1.06093430519104,
+    "margin": -0.0045796409249305725,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 6,
+    "hardness": "hard",
+    "episode_seed": 20070006,
+    "vocabulary_ids": [
+      111,
+      110,
+      117,
+      114
+    ],
+    "query_ids": [
+      114,
+      117,
+      117,
+      117,
+      114,
+      114,
+      117,
+      114
+    ],
+    "accuracy": 0.625,
+    "nll": 0.99061119556427,
+    "margin": 0.037602104246616364,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 7,
+    "hardness": "hard",
+    "episode_seed": 20070007,
+    "vocabulary_ids": [
+      108,
+      105,
+      109,
+      106
+    ],
+    "query_ids": [
+      105,
+      105,
+      105,
+      105,
+      108,
+      108,
+      105,
+      108
+    ],
+    "accuracy": 0.375,
+    "nll": 2.3463220596313477,
+    "margin": -0.15025225281715393,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 8,
+    "hardness": "hard",
+    "episode_seed": 20070008,
+    "vocabulary_ids": [
+      96,
+      93,
+      95,
+      94
+    ],
+    "query_ids": [
+      94,
+      94,
+      94,
+      94,
+      94,
+      94,
+      94,
+      96
+    ],
+    "accuracy": 0.375,
+    "nll": 1.1907777786254883,
+    "margin": -0.004165522754192352,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 9,
+    "hardness": "hard",
+    "episode_seed": 20070009,
+    "vocabulary_ids": [
+      114,
+      115,
+      110,
+      117
+    ],
+    "query_ids": [
+      115,
+      114,
+      114,
+      115,
+      115,
+      114,
+      114,
+      115
+    ],
+    "accuracy": 0.25,
+    "nll": 1.5771862268447876,
+    "margin": -0.0667012482881546,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 10,
+    "hardness": "hard",
+    "episode_seed": 20070010,
+    "vocabulary_ids": [
+      85,
+      84,
+      80,
+      83
+    ],
+    "query_ids": [
+      83,
+      83,
+      84,
+      83,
+      83,
+      83,
+      83,
+      84
+    ],
+    "accuracy": 0.75,
+    "nll": 0.9047608971595764,
+    "margin": 0.029072722420096397,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 11,
+    "hardness": "hard",
+    "episode_seed": 20070011,
+    "vocabulary_ids": [
+      100,
+      105,
+      101,
+      103
+    ],
+    "query_ids": [
+      105,
+      103,
+      103,
+      103,
+      103,
+      105,
+      103,
+      103
+    ],
+    "accuracy": 0.75,
+    "nll": 1.0575889348983765,
+    "margin": 0.029849305748939514,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 12,
+    "hardness": "hard",
+    "episode_seed": 20070012,
+    "vocabulary_ids": [
+      109,
+      107,
+      101,
+      103
+    ],
+    "query_ids": [
+      103,
+      109,
+      109,
+      109,
+      103,
+      109,
+      109,
+      109
+    ],
+    "accuracy": 0.25,
+    "nll": 1.8040039539337158,
+    "margin": -0.09632104635238647,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 13,
+    "hardness": "hard",
+    "episode_seed": 20070013,
+    "vocabulary_ids": [
+      88,
+      83,
+      80,
+      81
+    ],
+    "query_ids": [
+      88,
+      88,
+      88,
+      88,
+      81,
+      88,
+      88,
+      88
+    ],
+    "accuracy": 0.125,
+    "nll": 2.009484052658081,
+    "margin": -0.09257464110851288,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 14,
+    "hardness": "hard",
+    "episode_seed": 20070014,
+    "vocabulary_ids": [
+      84,
+      85,
+      82,
+      89
+    ],
+    "query_ids": [
+      89,
+      89,
+      89,
+      82,
+      82,
+      82,
+      82,
+      82
+    ],
+    "accuracy": 0.375,
+    "nll": 1.162474274635315,
+    "margin": -0.009404733777046204,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 15,
+    "hardness": "hard",
+    "episode_seed": 20070015,
+    "vocabulary_ids": [
+      86,
+      82,
+      81,
+      83
+    ],
+    "query_ids": [
+      83,
+      83,
+      83,
+      81,
+      83,
+      81,
+      83,
+      83
+    ],
+    "accuracy": 1.0,
+    "nll": 0.8061515688896179,
+    "margin": 0.0403958223760128,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 16,
+    "hardness": "hard",
+    "episode_seed": 20070016,
+    "vocabulary_ids": [
+      91,
+      99,
+      96,
+      95
+    ],
+    "query_ids": [
+      99,
+      91,
+      91,
+      99,
+      99,
+      99,
+      91,
+      91
+    ],
+    "accuracy": 0.0,
+    "nll": 1.373227834701538,
+    "margin": -0.039805762469768524,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 17,
+    "hardness": "hard",
+    "episode_seed": 20070017,
+    "vocabulary_ids": [
+      97,
+      92,
+      98,
+      95
+    ],
+    "query_ids": [
+      95,
+      97,
+      97,
+      97,
+      97,
+      97,
+      95,
+      97
+    ],
+    "accuracy": 0.25,
+    "nll": 1.4749985933303833,
+    "margin": -0.06166597455739975,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 18,
+    "hardness": "hard",
+    "episode_seed": 20070018,
+    "vocabulary_ids": [
+      95,
+      93,
+      92,
+      90
+    ],
+    "query_ids": [
+      92,
+      92,
+      92,
+      90,
+      92,
+      90,
+      92,
+      90
+    ],
+    "accuracy": 0.625,
+    "nll": 0.8304976224899292,
+    "margin": 0.05260578170418739,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 19,
+    "hardness": "hard",
+    "episode_seed": 20070019,
+    "vocabulary_ids": [
+      104,
+      103,
+      106,
+      101
+    ],
+    "query_ids": [
+      106,
+      106,
+      106,
+      106,
+      106,
+      104,
+      106,
+      106
+    ],
+    "accuracy": 0.25,
+    "nll": 1.1584292650222778,
+    "margin": -0.03545261546969414,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 20,
+    "hardness": "hard",
+    "episode_seed": 20070020,
+    "vocabulary_ids": [
+      114,
+      118,
+      110,
+      117
+    ],
+    "query_ids": [
+      114,
+      118,
+      114,
+      118,
+      114,
+      114,
+      114,
+      114
+    ],
+    "accuracy": 0.25,
+    "nll": 1.302596926689148,
+    "margin": -0.03313467651605606,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 21,
+    "hardness": "hard",
+    "episode_seed": 20070021,
+    "vocabulary_ids": [
+      80,
+      87,
+      88,
+      85
+    ],
+    "query_ids": [
+      80,
+      80,
+      88,
+      88,
+      88,
+      80,
+      80,
+      80
+    ],
+    "accuracy": 0.625,
+    "nll": 0.7470420002937317,
+    "margin": 0.06687377393245697,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 22,
+    "hardness": "hard",
+    "episode_seed": 20070022,
+    "vocabulary_ids": [
+      100,
+      106,
+      105,
+      104
+    ],
+    "query_ids": [
+      104,
+      104,
+      100,
+      104,
+      100,
+      104,
+      100,
+      100
+    ],
+    "accuracy": 0.375,
+    "nll": 1.3015104532241821,
+    "margin": -0.04758657142519951,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 23,
+    "hardness": "hard",
+    "episode_seed": 20070023,
+    "vocabulary_ids": [
+      90,
+      96,
+      93,
+      95
+    ],
+    "query_ids": [
+      96,
+      93,
+      96,
+      96,
+      96,
+      96,
+      93,
+      93
+    ],
+    "accuracy": 0.0,
+    "nll": 1.4656598567962646,
+    "margin": -0.0688968375325203,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 24,
+    "hardness": "hard",
+    "episode_seed": 20070024,
+    "vocabulary_ids": [
+      84,
+      80,
+      86,
+      88
+    ],
+    "query_ids": [
+      84,
+      88,
+      84,
+      84,
+      84,
+      84,
+      88,
+      84
+    ],
+    "accuracy": 0.625,
+    "nll": 0.9749712944030762,
+    "margin": -0.00019143708050251007,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 25,
+    "hardness": "hard",
+    "episode_seed": 20070025,
+    "vocabulary_ids": [
+      118,
+      110,
+      119,
+      117
+    ],
+    "query_ids": [
+      119,
+      117,
+      117,
+      119,
+      119,
+      119,
+      119,
+      117
+    ],
+    "accuracy": 0.375,
+    "nll": 0.975673258304596,
+    "margin": 0.011434696614742279,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 26,
+    "hardness": "hard",
+    "episode_seed": 20070026,
+    "vocabulary_ids": [
+      104,
+      109,
+      102,
+      101
+    ],
+    "query_ids": [
+      109,
+      109,
+      109,
+      109,
+      104,
+      109,
+      104,
+      109
+    ],
+    "accuracy": 0.5,
+    "nll": 1.1479524374008179,
+    "margin": 0.005635581444948912,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 27,
+    "hardness": "hard",
+    "episode_seed": 20070027,
+    "vocabulary_ids": [
+      89,
+      88,
+      80,
+      85
+    ],
+    "query_ids": [
+      85,
+      85,
+      85,
+      85,
+      85,
+      88,
+      85,
+      85
+    ],
+    "accuracy": 0.125,
+    "nll": 1.7703754901885986,
+    "margin": -0.11331777274608612,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 28,
+    "hardness": "hard",
+    "episode_seed": 20070028,
+    "vocabulary_ids": [
+      119,
+      111,
+      114,
+      112
+    ],
+    "query_ids": [
+      111,
+      111,
+      111,
+      119,
+      119,
+      119,
+      111,
+      119
+    ],
+    "accuracy": 0.875,
+    "nll": 1.1262160539627075,
+    "margin": 0.01606488972902298,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 29,
+    "hardness": "hard",
+    "episode_seed": 20070029,
+    "vocabulary_ids": [
+      96,
+      98,
+      99,
+      94
+    ],
+    "query_ids": [
+      94,
+      94,
+      94,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "accuracy": 0.0,
+    "nll": 1.4604963064193726,
+    "margin": -0.0877840667963028,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 30,
+    "hardness": "hard",
+    "episode_seed": 20070030,
+    "vocabulary_ids": [
+      95,
+      99,
+      93,
+      90
+    ],
+    "query_ids": [
+      90,
+      90,
+      99,
+      99,
+      90,
+      90,
+      90,
+      99
+    ],
+    "accuracy": 0.625,
+    "nll": 1.0658082962036133,
+    "margin": 0.01217745617032051,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 31,
+    "hardness": "hard",
+    "episode_seed": 20070031,
+    "vocabulary_ids": [
+      98,
+      92,
+      96,
+      93
+    ],
+    "query_ids": [
+      98,
+      92,
+      98,
+      92,
+      92,
+      98,
+      98,
+      98
+    ],
+    "accuracy": 0.625,
+    "nll": 0.8882229328155518,
+    "margin": 0.051404353231191635,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 32,
+    "hardness": "hard",
+    "episode_seed": 20070032,
+    "vocabulary_ids": [
+      101,
+      103,
+      108,
+      100
+    ],
+    "query_ids": [
+      108,
+      100,
+      100,
+      100,
+      100,
+      100,
+      108,
+      108
+    ],
+    "accuracy": 0.75,
+    "nll": 0.9826375842094421,
+    "margin": 0.01647212542593479,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 33,
+    "hardness": "hard",
+    "episode_seed": 20070033,
+    "vocabulary_ids": [
+      118,
+      114,
+      111,
+      113
+    ],
+    "query_ids": [
+      111,
+      111,
+      111,
+      111,
+      113,
+      113,
+      111,
+      113
+    ],
+    "accuracy": 0.625,
+    "nll": 1.1555657386779785,
+    "margin": 0.005213458091020584,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 34,
+    "hardness": "hard",
+    "episode_seed": 20070034,
+    "vocabulary_ids": [
+      80,
+      88,
+      89,
+      86
+    ],
+    "query_ids": [
+      89,
+      88,
+      89,
+      89,
+      89,
+      88,
+      89,
+      88
+    ],
+    "accuracy": 0.0,
+    "nll": 1.855050802230835,
+    "margin": -0.13281387090682983,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 35,
+    "hardness": "hard",
+    "episode_seed": 20070035,
+    "vocabulary_ids": [
+      110,
+      117,
+      115,
+      114
+    ],
+    "query_ids": [
+      115,
+      114,
+      114,
+      114,
+      115,
+      114,
+      115,
+      115
+    ],
+    "accuracy": 0.125,
+    "nll": 1.51847243309021,
+    "margin": -0.07037787139415741,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 36,
+    "hardness": "hard",
+    "episode_seed": 20070036,
+    "vocabulary_ids": [
+      95,
+      92,
+      97,
+      90
+    ],
+    "query_ids": [
+      90,
+      92,
+      92,
+      90,
+      92,
+      90,
+      90,
+      90
+    ],
+    "accuracy": 0.75,
+    "nll": 0.6732352375984192,
+    "margin": 0.08937114477157593,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 37,
+    "hardness": "hard",
+    "episode_seed": 20070037,
+    "vocabulary_ids": [
+      97,
+      91,
+      94,
+      92
+    ],
+    "query_ids": [
+      97,
+      92,
+      92,
+      92,
+      97,
+      97,
+      92,
+      97
+    ],
+    "accuracy": 0.75,
+    "nll": 0.9764447212219238,
+    "margin": 0.029702886939048767,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 38,
+    "hardness": "hard",
+    "episode_seed": 20070038,
+    "vocabulary_ids": [
+      109,
+      102,
+      106,
+      103
+    ],
+    "query_ids": [
+      106,
+      106,
+      106,
+      109,
+      106,
+      106,
+      106,
+      106
+    ],
+    "accuracy": 0.125,
+    "nll": 1.0898913145065308,
+    "margin": -0.03394605964422226,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 39,
+    "hardness": "hard",
+    "episode_seed": 20070039,
+    "vocabulary_ids": [
+      82,
+      86,
+      87,
+      89
+    ],
+    "query_ids": [
+      82,
+      89,
+      82,
+      82,
+      89,
+      89,
+      89,
+      82
+    ],
+    "accuracy": 0.5,
+    "nll": 1.0723227262496948,
+    "margin": 0.019605202600359917,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 40,
+    "hardness": "hard",
+    "episode_seed": 20070040,
+    "vocabulary_ids": [
+      87,
+      82,
+      84,
+      80
+    ],
+    "query_ids": [
+      84,
+      80,
+      80,
+      84,
+      84,
+      80,
+      84,
+      80
+    ],
+    "accuracy": 0.875,
+    "nll": 0.7215845584869385,
+    "margin": 0.07728373259305954,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 41,
+    "hardness": "hard",
+    "episode_seed": 20070041,
+    "vocabulary_ids": [
+      100,
+      102,
+      109,
+      104
+    ],
+    "query_ids": [
+      104,
+      104,
+      104,
+      100,
+      100,
+      100,
+      104,
+      100
+    ],
+    "accuracy": 0.5,
+    "nll": 1.0527801513671875,
+    "margin": 0.013678163290023804,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 42,
+    "hardness": "hard",
+    "episode_seed": 20070042,
+    "vocabulary_ids": [
+      97,
+      93,
+      95,
+      90
+    ],
+    "query_ids": [
+      90,
+      90,
+      90,
+      93,
+      93,
+      93,
+      93,
+      93
+    ],
+    "accuracy": 0.5,
+    "nll": 1.0481674671173096,
+    "margin": 0.0004547424614429474,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 43,
+    "hardness": "hard",
+    "episode_seed": 20070043,
+    "vocabulary_ids": [
+      97,
+      96,
+      93,
+      91
+    ],
+    "query_ids": [
+      91,
+      91,
+      91,
+      91,
+      96,
+      91,
+      91,
+      96
+    ],
+    "accuracy": 0.625,
+    "nll": 1.2641576528549194,
+    "margin": -0.002461593598127365,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 44,
+    "hardness": "hard",
+    "episode_seed": 20070044,
+    "vocabulary_ids": [
+      116,
+      110,
+      113,
+      111
+    ],
+    "query_ids": [
+      113,
+      110,
+      110,
+      110,
+      113,
+      110,
+      110,
+      113
+    ],
+    "accuracy": 0.375,
+    "nll": 1.2795134782791138,
+    "margin": -0.04504942148923874,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 45,
+    "hardness": "hard",
+    "episode_seed": 20070045,
+    "vocabulary_ids": [
+      115,
+      119,
+      118,
+      116
+    ],
+    "query_ids": [
+      115,
+      115,
+      119,
+      119,
+      115,
+      115,
+      119,
+      119
+    ],
+    "accuracy": 0.5,
+    "nll": 1.1281180381774902,
+    "margin": 0.003665640950202942,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 46,
+    "hardness": "hard",
+    "episode_seed": 20070046,
+    "vocabulary_ids": [
+      85,
+      88,
+      86,
+      80
+    ],
+    "query_ids": [
+      80,
+      80,
+      80,
+      88,
+      80,
+      88,
+      88,
+      80
+    ],
+    "accuracy": 0.625,
+    "nll": 0.896308958530426,
+    "margin": 0.040678903460502625,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 47,
+    "hardness": "hard",
+    "episode_seed": 20070047,
+    "vocabulary_ids": [
+      116,
+      117,
+      111,
+      118
+    ],
+    "query_ids": [
+      117,
+      117,
+      111,
+      117,
+      111,
+      117,
+      117,
+      117
+    ],
+    "accuracy": 0.75,
+    "nll": 0.560367226600647,
+    "margin": 0.07929247617721558,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 48,
+    "hardness": "hard",
+    "episode_seed": 20070048,
+    "vocabulary_ids": [
+      81,
+      80,
+      87,
+      84
+    ],
+    "query_ids": [
+      87,
+      87,
+      84,
+      87,
+      84,
+      87,
+      87,
+      87
+    ],
+    "accuracy": 0.125,
+    "nll": 2.08151912689209,
+    "margin": -0.11145970225334167,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 49,
+    "hardness": "hard",
+    "episode_seed": 20070049,
+    "vocabulary_ids": [
+      119,
+      118,
+      110,
+      117
+    ],
+    "query_ids": [
+      119,
+      110,
+      119,
+      110,
+      110,
+      119,
+      110,
+      119
+    ],
+    "accuracy": 0.0,
+    "nll": 1.5226863622665405,
+    "margin": -0.07112907618284225,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 50,
+    "hardness": "hard",
+    "episode_seed": 20070050,
+    "vocabulary_ids": [
+      110,
+      117,
+      111,
+      119
+    ],
+    "query_ids": [
+      119,
+      110,
+      110,
+      119,
+      119,
+      119,
+      119,
+      110
+    ],
+    "accuracy": 0.0,
+    "nll": 1.4666372537612915,
+    "margin": -0.05867379903793335,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 51,
+    "hardness": "hard",
+    "episode_seed": 20070051,
+    "vocabulary_ids": [
+      90,
+      92,
+      94,
+      95
+    ],
+    "query_ids": [
+      92,
+      92,
+      92,
+      92,
+      92,
+      92,
+      92,
+      94
+    ],
+    "accuracy": 0.25,
+    "nll": 1.0805974006652832,
+    "margin": -0.027538441121578217,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 52,
+    "hardness": "hard",
+    "episode_seed": 20070052,
+    "vocabulary_ids": [
+      88,
+      87,
+      81,
+      86
+    ],
+    "query_ids": [
+      86,
+      88,
+      88,
+      86,
+      86,
+      88,
+      88,
+      88
+    ],
+    "accuracy": 0.0,
+    "nll": 1.588021159172058,
+    "margin": -0.11320239305496216,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 53,
+    "hardness": "hard",
+    "episode_seed": 20070053,
+    "vocabulary_ids": [
+      96,
+      92,
+      99,
+      97
+    ],
+    "query_ids": [
+      97,
+      99,
+      99,
+      97,
+      97,
+      99,
+      99,
+      97
+    ],
+    "accuracy": 0.25,
+    "nll": 1.333064317703247,
+    "margin": -0.019241631031036377,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 54,
+    "hardness": "hard",
+    "episode_seed": 20070054,
+    "vocabulary_ids": [
+      92,
+      95,
+      91,
+      96
+    ],
+    "query_ids": [
+      91,
+      96,
+      91,
+      91,
+      91,
+      96,
+      91,
+      96
+    ],
+    "accuracy": 0.75,
+    "nll": 1.070442795753479,
+    "margin": 0.013626016676425934,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 55,
+    "hardness": "hard",
+    "episode_seed": 20070055,
+    "vocabulary_ids": [
+      108,
+      101,
+      100,
+      103
+    ],
+    "query_ids": [
+      101,
+      101,
+      100,
+      101,
+      101,
+      101,
+      100,
+      100
+    ],
+    "accuracy": 0.0,
+    "nll": 2.049023151397705,
+    "margin": -0.10895217210054398,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 56,
+    "hardness": "hard",
+    "episode_seed": 20070056,
+    "vocabulary_ids": [
+      97,
+      93,
+      98,
+      91
+    ],
+    "query_ids": [
+      91,
+      91,
+      91,
+      91,
+      93,
+      93,
+      91,
+      93
+    ],
+    "accuracy": 0.0,
+    "nll": 1.4491010904312134,
+    "margin": -0.061910174787044525,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 57,
+    "hardness": "hard",
+    "episode_seed": 20070057,
+    "vocabulary_ids": [
+      110,
+      117,
+      118,
+      113
+    ],
+    "query_ids": [
+      110,
+      110,
+      110,
+      110,
+      117,
+      110,
+      110,
+      117
+    ],
+    "accuracy": 0.25,
+    "nll": 1.0679007768630981,
+    "margin": -0.02972032129764557,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 58,
+    "hardness": "hard",
+    "episode_seed": 20070058,
+    "vocabulary_ids": [
+      84,
+      89,
+      80,
+      83
+    ],
+    "query_ids": [
+      80,
+      80,
+      89,
+      80,
+      80,
+      89,
+      89,
+      80
+    ],
+    "accuracy": 0.625,
+    "nll": 1.2600314617156982,
+    "margin": -0.01764923334121704,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 59,
+    "hardness": "hard",
+    "episode_seed": 20070059,
+    "vocabulary_ids": [
+      85,
+      88,
+      80,
+      84
+    ],
+    "query_ids": [
+      85,
+      84,
+      84,
+      85,
+      85,
+      85,
+      84,
+      85
+    ],
+    "accuracy": 0.25,
+    "nll": 1.4813162088394165,
+    "margin": -0.05703263729810715,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 60,
+    "hardness": "hard",
+    "episode_seed": 20070060,
+    "vocabulary_ids": [
+      104,
+      107,
+      109,
+      102
+    ],
+    "query_ids": [
+      102,
+      102,
+      104,
+      102,
+      104,
+      102,
+      102,
+      104
+    ],
+    "accuracy": 0.0,
+    "nll": 1.75002121925354,
+    "margin": -0.1089140772819519,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 61,
+    "hardness": "hard",
+    "episode_seed": 20070061,
+    "vocabulary_ids": [
+      103,
+      100,
+      102,
+      107
+    ],
+    "query_ids": [
+      102,
+      102,
+      103,
+      102,
+      102,
+      103,
+      102,
+      102
+    ],
+    "accuracy": 0.25,
+    "nll": 2.250025987625122,
+    "margin": -0.1305641531944275,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 62,
+    "hardness": "hard",
+    "episode_seed": 20070062,
+    "vocabulary_ids": [
+      116,
+      114,
+      110,
+      115
+    ],
+    "query_ids": [
+      115,
+      115,
+      110,
+      110,
+      110,
+      115,
+      115,
+      115
+    ],
+    "accuracy": 0.625,
+    "nll": 1.1374661922454834,
+    "margin": -0.006691403687000275,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 63,
+    "hardness": "hard",
+    "episode_seed": 20070063,
+    "vocabulary_ids": [
+      85,
+      87,
+      82,
+      81
+    ],
+    "query_ids": [
+      82,
+      82,
+      85,
+      85,
+      82,
+      85,
+      82,
+      82
+    ],
+    "accuracy": 0.0,
+    "nll": 1.5353477001190186,
+    "margin": -0.08876277506351471,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 64,
+    "hardness": "hard",
+    "episode_seed": 20070064,
+    "vocabulary_ids": [
+      93,
+      97,
+      90,
+      94
+    ],
+    "query_ids": [
+      97,
+      97,
+      97,
+      97,
+      97,
+      93,
+      97,
+      93
+    ],
+    "accuracy": 0.25,
+    "nll": 1.2503935098648071,
+    "margin": -0.027236968278884888,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 65,
+    "hardness": "hard",
+    "episode_seed": 20070065,
+    "vocabulary_ids": [
+      100,
+      105,
+      103,
+      102
+    ],
+    "query_ids": [
+      100,
+      105,
+      105,
+      100,
+      105,
+      105,
+      100,
+      100
+    ],
+    "accuracy": 0.125,
+    "nll": 1.8734582662582397,
+    "margin": -0.12171147763729095,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 66,
+    "hardness": "hard",
+    "episode_seed": 20070066,
+    "vocabulary_ids": [
+      109,
+      103,
+      105,
+      108
+    ],
+    "query_ids": [
+      103,
+      109,
+      109,
+      109,
+      103,
+      103,
+      109,
+      103
+    ],
+    "accuracy": 0.5,
+    "nll": 1.5280747413635254,
+    "margin": -0.07403620332479477,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 67,
+    "hardness": "hard",
+    "episode_seed": 20070067,
+    "vocabulary_ids": [
+      112,
+      110,
+      113,
+      115
+    ],
+    "query_ids": [
+      113,
+      115,
+      115,
+      115,
+      115,
+      113,
+      113,
+      113
+    ],
+    "accuracy": 0.0,
+    "nll": 1.9081145524978638,
+    "margin": -0.11452378332614899,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 68,
+    "hardness": "hard",
+    "episode_seed": 20070068,
+    "vocabulary_ids": [
+      88,
+      83,
+      80,
+      87
+    ],
+    "query_ids": [
+      80,
+      83,
+      80,
+      80,
+      80,
+      80,
+      83,
+      80
+    ],
+    "accuracy": 1.0,
+    "nll": 0.5441282987594604,
+    "margin": 0.08575473725795746,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 69,
+    "hardness": "hard",
+    "episode_seed": 20070069,
+    "vocabulary_ids": [
+      112,
+      114,
+      117,
+      111
+    ],
+    "query_ids": [
+      112,
+      112,
+      112,
+      112,
+      114,
+      114,
+      114,
+      112
+    ],
+    "accuracy": 0.375,
+    "nll": 1.1831387281417847,
+    "margin": -0.009299829602241516,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 70,
+    "hardness": "hard",
+    "episode_seed": 20070070,
+    "vocabulary_ids": [
+      81,
+      83,
+      89,
+      85
+    ],
+    "query_ids": [
+      89,
+      89,
+      89,
+      89,
+      89,
+      85,
+      89,
+      89
+    ],
+    "accuracy": 0.0,
+    "nll": 2.276059865951538,
+    "margin": -0.1508437991142273,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 71,
+    "hardness": "hard",
+    "episode_seed": 20070071,
+    "vocabulary_ids": [
+      84,
+      89,
+      86,
+      83
+    ],
+    "query_ids": [
+      83,
+      86,
+      83,
+      86,
+      86,
+      86,
+      86,
+      83
+    ],
+    "accuracy": 0.375,
+    "nll": 1.1576608419418335,
+    "margin": -0.027049196884036064,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 72,
+    "hardness": "hard",
+    "episode_seed": 20070072,
+    "vocabulary_ids": [
+      104,
+      101,
+      108,
+      105
+    ],
+    "query_ids": [
+      108,
+      108,
+      105,
+      108,
+      108,
+      108,
+      108,
+      108
+    ],
+    "accuracy": 0.875,
+    "nll": 0.5934311151504517,
+    "margin": 0.1704389601945877,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 73,
+    "hardness": "hard",
+    "episode_seed": 20070073,
+    "vocabulary_ids": [
+      92,
+      98,
+      90,
+      94
+    ],
+    "query_ids": [
+      92,
+      92,
+      92,
+      92,
+      92,
+      98,
+      98,
+      98
+    ],
+    "accuracy": 0.5,
+    "nll": 1.0182973146438599,
+    "margin": 0.029719926416873932,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 74,
+    "hardness": "hard",
+    "episode_seed": 20070074,
+    "vocabulary_ids": [
+      110,
+      118,
+      111,
+      112
+    ],
+    "query_ids": [
+      118,
+      112,
+      118,
+      112,
+      112,
+      118,
+      118,
+      118
+    ],
+    "accuracy": 0.375,
+    "nll": 1.2663127183914185,
+    "margin": -0.014818660914897919,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 75,
+    "hardness": "hard",
+    "episode_seed": 20070075,
+    "vocabulary_ids": [
+      114,
+      115,
+      111,
+      119
+    ],
+    "query_ids": [
+      114,
+      115,
+      115,
+      115,
+      115,
+      114,
+      114,
+      114
+    ],
+    "accuracy": 0.0,
+    "nll": 1.503499984741211,
+    "margin": -0.05729585140943527,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 76,
+    "hardness": "hard",
+    "episode_seed": 20070076,
+    "vocabulary_ids": [
+      117,
+      115,
+      112,
+      116
+    ],
+    "query_ids": [
+      116,
+      116,
+      116,
+      115,
+      116,
+      115,
+      116,
+      115
+    ],
+    "accuracy": 0.0,
+    "nll": 2.1761090755462646,
+    "margin": -0.15063101053237915,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 77,
+    "hardness": "hard",
+    "episode_seed": 20070077,
+    "vocabulary_ids": [
+      90,
+      92,
+      96,
+      97
+    ],
+    "query_ids": [
+      97,
+      97,
+      90,
+      97,
+      97,
+      90,
+      97,
+      90
+    ],
+    "accuracy": 0.5,
+    "nll": 1.0987179279327393,
+    "margin": 0.009446177631616592,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 78,
+    "hardness": "hard",
+    "episode_seed": 20070078,
+    "vocabulary_ids": [
+      88,
+      85,
+      81,
+      84
+    ],
+    "query_ids": [
+      88,
+      81,
+      88,
+      81,
+      88,
+      81,
+      81,
+      88
+    ],
+    "accuracy": 0.5,
+    "nll": 1.000441074371338,
+    "margin": 0.012591509148478508,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 79,
+    "hardness": "hard",
+    "episode_seed": 20070079,
+    "vocabulary_ids": [
+      96,
+      98,
+      99,
+      93
+    ],
+    "query_ids": [
+      96,
+      98,
+      96,
+      96,
+      98,
+      96,
+      98,
+      96
+    ],
+    "accuracy": 0.375,
+    "nll": 1.1697425842285156,
+    "margin": -0.008728444576263428,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 80,
+    "hardness": "hard",
+    "episode_seed": 20070080,
+    "vocabulary_ids": [
+      118,
+      111,
+      116,
+      110
+    ],
+    "query_ids": [
+      116,
+      116,
+      116,
+      116,
+      118,
+      116,
+      118,
+      116
+    ],
+    "accuracy": 0.125,
+    "nll": 1.8178964853286743,
+    "margin": -0.09199085831642151,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 81,
+    "hardness": "hard",
+    "episode_seed": 20070081,
+    "vocabulary_ids": [
+      97,
+      99,
+      91,
+      96
+    ],
+    "query_ids": [
+      91,
+      97,
+      97,
+      91,
+      91,
+      97,
+      91,
+      97
+    ],
+    "accuracy": 0.75,
+    "nll": 1.0455025434494019,
+    "margin": 0.025926683098077774,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 82,
+    "hardness": "hard",
+    "episode_seed": 20070082,
+    "vocabulary_ids": [
+      104,
+      106,
+      107,
+      105
+    ],
+    "query_ids": [
+      105,
+      105,
+      104,
+      105,
+      104,
+      104,
+      105,
+      104
+    ],
+    "accuracy": 0.0,
+    "nll": 2.078563928604126,
+    "margin": -0.1375892162322998,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 83,
+    "hardness": "hard",
+    "episode_seed": 20070083,
+    "vocabulary_ids": [
+      81,
+      85,
+      82,
+      87
+    ],
+    "query_ids": [
+      85,
+      81,
+      85,
+      81,
+      81,
+      81,
+      81,
+      81
+    ],
+    "accuracy": 0.75,
+    "nll": 0.8725579977035522,
+    "margin": 0.048440705984830856,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 84,
+    "hardness": "hard",
+    "episode_seed": 20070084,
+    "vocabulary_ids": [
+      99,
+      91,
+      98,
+      97
+    ],
+    "query_ids": [
+      99,
+      99,
+      98,
+      98,
+      99,
+      98,
+      99,
+      99
+    ],
+    "accuracy": 0.375,
+    "nll": 1.4044796228408813,
+    "margin": -0.026090893894433975,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 85,
+    "hardness": "hard",
+    "episode_seed": 20070085,
+    "vocabulary_ids": [
+      109,
+      102,
+      105,
+      107
+    ],
+    "query_ids": [
+      105,
+      105,
+      105,
+      105,
+      107,
+      107,
+      105,
+      105
+    ],
+    "accuracy": 0.25,
+    "nll": 1.9423372745513916,
+    "margin": -0.10120883584022522,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 86,
+    "hardness": "hard",
+    "episode_seed": 20070086,
+    "vocabulary_ids": [
+      104,
+      108,
+      109,
+      107
+    ],
+    "query_ids": [
+      107,
+      107,
+      109,
+      107,
+      109,
+      107,
+      107,
+      109
+    ],
+    "accuracy": 0.0,
+    "nll": 1.5755740404129028,
+    "margin": -0.09767761826515198,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 87,
+    "hardness": "hard",
+    "episode_seed": 20070087,
+    "vocabulary_ids": [
+      106,
+      108,
+      107,
+      103
+    ],
+    "query_ids": [
+      108,
+      103,
+      108,
+      103,
+      103,
+      108,
+      103,
+      108
+    ],
+    "accuracy": 1.0,
+    "nll": 0.8850004076957703,
+    "margin": 0.03349827602505684,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 88,
+    "hardness": "hard",
+    "episode_seed": 20070088,
+    "vocabulary_ids": [
+      80,
+      85,
+      83,
+      89
+    ],
+    "query_ids": [
+      80,
+      80,
+      80,
+      80,
+      83,
+      80,
+      80,
+      83
+    ],
+    "accuracy": 1.0,
+    "nll": 0.5120283365249634,
+    "margin": 0.074257031083107,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 89,
+    "hardness": "hard",
+    "episode_seed": 20070089,
+    "vocabulary_ids": [
+      88,
+      82,
+      81,
+      87
+    ],
+    "query_ids": [
+      87,
+      87,
+      87,
+      88,
+      87,
+      87,
+      87,
+      88
+    ],
+    "accuracy": 0.0,
+    "nll": 2.012113571166992,
+    "margin": -0.12252333015203476,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 90,
+    "hardness": "hard",
+    "episode_seed": 20070090,
+    "vocabulary_ids": [
+      115,
+      111,
+      113,
+      116
+    ],
+    "query_ids": [
+      115,
+      111,
+      115,
+      115,
+      115,
+      115,
+      115,
+      111
+    ],
+    "accuracy": 0.25,
+    "nll": 1.147514820098877,
+    "margin": -0.027456041425466537,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 91,
+    "hardness": "hard",
+    "episode_seed": 20070091,
+    "vocabulary_ids": [
+      115,
+      110,
+      112,
+      111
+    ],
+    "query_ids": [
+      111,
+      111,
+      111,
+      111,
+      111,
+      111,
+      111,
+      111
+    ],
+    "accuracy": 1.0,
+    "nll": 0.9614019393920898,
+    "margin": 0.028602853417396545,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 92,
+    "hardness": "hard",
+    "episode_seed": 20070092,
+    "vocabulary_ids": [
+      92,
+      90,
+      94,
+      99
+    ],
+    "query_ids": [
+      99,
+      99,
+      94,
+      99,
+      94,
+      94,
+      94,
+      94
+    ],
+    "accuracy": 0.0,
+    "nll": 1.6962202787399292,
+    "margin": -0.09211907535791397,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 93,
+    "hardness": "hard",
+    "episode_seed": 20070093,
+    "vocabulary_ids": [
+      117,
+      113,
+      114,
+      119
+    ],
+    "query_ids": [
+      117,
+      117,
+      117,
+      119,
+      117,
+      117,
+      117,
+      117
+    ],
+    "accuracy": 0.875,
+    "nll": 0.6322563290596008,
+    "margin": 0.07876182347536087,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 94,
+    "hardness": "hard",
+    "episode_seed": 20070094,
+    "vocabulary_ids": [
+      111,
+      115,
+      116,
+      114
+    ],
+    "query_ids": [
+      111,
+      111,
+      111,
+      111,
+      116,
+      116,
+      111,
+      111
+    ],
+    "accuracy": 0.75,
+    "nll": 0.9592199921607971,
+    "margin": 0.03645827993750572,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 95,
+    "hardness": "hard",
+    "episode_seed": 20070095,
+    "vocabulary_ids": [
+      108,
+      105,
+      106,
+      107
+    ],
+    "query_ids": [
+      106,
+      107,
+      106,
+      106,
+      106,
+      106,
+      106,
+      106
+    ],
+    "accuracy": 0.0,
+    "nll": 1.4449089765548706,
+    "margin": -0.07970105111598969,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 96,
+    "hardness": "hard",
+    "episode_seed": 20070096,
+    "vocabulary_ids": [
+      89,
+      86,
+      88,
+      85
+    ],
+    "query_ids": [
+      85,
+      85,
+      85,
+      85,
+      85,
+      89,
+      89,
+      89
+    ],
+    "accuracy": 0.5,
+    "nll": 1.2312514781951904,
+    "margin": -0.009988144971430302,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 97,
+    "hardness": "hard",
+    "episode_seed": 20070097,
+    "vocabulary_ids": [
+      94,
+      90,
+      99,
+      91
+    ],
+    "query_ids": [
+      94,
+      94,
+      94,
+      90,
+      90,
+      94,
+      94,
+      94
+    ],
+    "accuracy": 0.625,
+    "nll": 1.0934977531433105,
+    "margin": 0.014615252614021301,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 98,
+    "hardness": "hard",
+    "episode_seed": 20070098,
+    "vocabulary_ids": [
+      91,
+      94,
+      98,
+      99
+    ],
+    "query_ids": [
+      91,
+      99,
+      91,
+      91,
+      91,
+      99,
+      99,
+      91
+    ],
+    "accuracy": 0.0,
+    "nll": 1.633003830909729,
+    "margin": -0.09829007834196091,
+    "representation_shift": 0.0
+  },
+  {
+    "index": 99,
+    "hardness": "hard",
+    "episode_seed": 20070099,
+    "vocabulary_ids": [
+      93,
+      92,
+      96,
+      90
+    ],
+    "query_ids": [
+      93,
+      93,
+      93,
+      90,
+      93,
+      93,
+      93,
+      90
+    ],
+    "accuracy": 0.25,
+    "nll": 1.2718617916107178,
+    "margin": -0.01367170363664627,
+    "representation_shift": 0.0
+  }
+]

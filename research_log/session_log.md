@@ -37,3 +37,9 @@
 - Evidence commit e5fc34d pushed to origin/main; full project research_log and coordination directories mirrored to remote project root.
 - Final diff check identified Markdown hard-break trailing spaces in the report; removed them. No code or experiment change.
 - T001 complete for engineering review; 15-minute heartbeat remains active for new research tasks.
+
+## 2026-09-12 02:42:50 +08:00 — T002 completed and reported
+- Detected research commits 5ee09c0/de51d5b: T001 accepted, T002 assigned; executed fixed protocol via b88153a.
+- A6000 run 20260912-023122-tovd-t002-a6000 completed, exit 0; full receipts archived.
+- P does not demonstrate stable superiority over static/activation/visual-TTT controls. Learned initialization does help. Detailed evidence in coordination/CODEX_TO_CHATGPT.md and research_log/t002/analysis.md.
+- No further experiment or detector integration authorized by current task; wait for explicit Research Lead decision.

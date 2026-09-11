@@ -33,3 +33,11 @@
 - Warnings are from google protobuf import hooks, unrelated to the benchmark; unchanged.
 - Headline fixed comparison running; no code/config changes after tested b88153a.
 - Added a receipt-only paired-delta analysis script while training runs; it does not alter experiment code or select models.
+
+## 2026-09-12 02:42:50 +08:00 — Fixed experiment complete
+- Run completed at 02:39:18 +08:00, exit 0; tmux session finished.
+- All 15 method/seed models trained under unchanged b88153a/config. Full artifacts/checkpoints fetched (about 3.18 MB).
+- Independent seed7 P checkpoint re-evaluation exactly matches metrics. All TTT finite checks pass; each variant decreases inner loss in 600/600 evaluation episodes.
+- Receipt analysis executed: P-vs-B1 means +2.8333/+1.6667 pp, but signs vary; P-vs-B0 negative on average; P-vs-B2 hard negative in all seeds. Fixed W0 is much worse.
+- Report marked engineering VERIFIED, scientific review pending; detector integration deferred, no T003 inferred.
+- Report and full artifact manifest prepared for push and remote mirror.

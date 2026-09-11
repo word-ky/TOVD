@@ -1,0 +1,138 @@
+[autodl] run_id=20260912-023122-tovd-t002-a6000
+[autodl] started_at=2026-09-12T02:31:27+08:00
+.......................                                                  [100%]
+=============================== warnings summary ===============================
+tests/test_synthetic_runner.py::test_all_methods_end_to_end_checkpoint_and_readonly_evaluation
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.MessageMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+tests/test_synthetic_runner.py::test_all_methods_end_to_end_checkpoint_and_readonly_evaluation
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.ScalarMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+23 passed, 2 warnings in 2.71s
+.......................                                                  [100%]
+=============================== warnings summary ===============================
+tests/test_synthetic_runner.py::test_all_methods_end_to_end_checkpoint_and_readonly_evaluation
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.MessageMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+tests/test_synthetic_runner.py::test_all_methods_end_to_end_checkpoint_and_readonly_evaluation
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.ScalarMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+23 passed, 2 warnings in 4.30s
+seed=7 method=B0 step=1 loss=2.140946
+seed=7 method=B0 step=100 loss=1.036433
+seed=7 method=B0 step=200 loss=0.631317
+seed=7 method=B0 step=300 loss=0.591210
+seed=7 method=B0 step=400 loss=0.584284
+RESULT seed=7 method=B0 easy=0.7188 hard=0.3925
+seed=7 method=B1 step=1 loss=2.471904
+seed=7 method=B1 step=100 loss=0.978754
+seed=7 method=B1 step=200 loss=0.731134
+seed=7 method=B1 step=300 loss=0.731256
+seed=7 method=B1 step=400 loss=0.688992
+RESULT seed=7 method=B1 easy=0.6787 hard=0.4050
+seed=7 method=B2 step=1 loss=1.990585
+seed=7 method=B2 step=100 loss=1.040344
+seed=7 method=B2 step=200 loss=0.674601
+seed=7 method=B2 step=300 loss=0.583472
+seed=7 method=B2 step=400 loss=0.538879
+RESULT seed=7 method=B2 easy=0.6525 hard=0.4225
+seed=7 method=P step=1 loss=2.181355
+seed=7 method=P step=100 loss=0.999222
+seed=7 method=P step=200 loss=0.670186
+seed=7 method=P step=300 loss=0.647449
+seed=7 method=P step=400 loss=0.621918
+RESULT seed=7 method=P easy=0.7238 hard=0.3837
+seed=7 method=P_fixed step=1 loss=2.181355
+seed=7 method=P_fixed step=100 loss=2.421590
+seed=7 method=P_fixed step=200 loss=1.255199
+seed=7 method=P_fixed step=300 loss=1.148312
+seed=7 method=P_fixed step=400 loss=1.171608
+RESULT seed=7 method=P_fixed easy=0.3937 hard=0.2537
+seed=17 method=B0 step=1 loss=1.468022
+seed=17 method=B0 step=100 loss=0.971488
+seed=17 method=B0 step=200 loss=0.649300
+seed=17 method=B0 step=300 loss=0.627383
+seed=17 method=B0 step=400 loss=0.562623
+RESULT seed=17 method=B0 easy=0.7788 hard=0.5125
+seed=17 method=B1 step=1 loss=1.884186
+seed=17 method=B1 step=100 loss=0.984667
+seed=17 method=B1 step=200 loss=0.846375
+seed=17 method=B1 step=300 loss=0.664372
+seed=17 method=B1 step=400 loss=0.682529
+RESULT seed=17 method=B1 easy=0.6450 hard=0.3850
+seed=17 method=B2 step=1 loss=1.517645
+seed=17 method=B2 step=100 loss=1.059156
+seed=17 method=B2 step=200 loss=0.684628
+seed=17 method=B2 step=300 loss=0.587271
+seed=17 method=B2 step=400 loss=0.577035
+RESULT seed=17 method=B2 easy=0.6863 hard=0.5062
+seed=17 method=P step=1 loss=1.579168
+seed=17 method=P step=100 loss=0.918838
+seed=17 method=P step=200 loss=0.767812
+seed=17 method=P step=300 loss=0.654427
+seed=17 method=P step=400 loss=0.636231
+RESULT seed=17 method=P easy=0.6062 hard=0.4088
+seed=17 method=P_fixed step=1 loss=1.579168
+seed=17 method=P_fixed step=100 loss=1.971009
+seed=17 method=P_fixed step=200 loss=1.274835
+seed=17 method=P_fixed step=300 loss=1.165365
+seed=17 method=P_fixed step=400 loss=2.213517
+RESULT seed=17 method=P_fixed easy=0.2900 hard=0.2125
+seed=27 method=B0 step=1 loss=2.826952
+seed=27 method=B0 step=100 loss=1.137302
+seed=27 method=B0 step=200 loss=0.995052
+seed=27 method=B0 step=300 loss=0.628541
+seed=27 method=B0 step=400 loss=0.646025
+RESULT seed=27 method=B0 easy=0.8850 hard=0.3650
+seed=27 method=B1 step=1 loss=2.708579
+seed=27 method=B1 step=100 loss=0.942861
+seed=27 method=B1 step=200 loss=1.018031
+seed=27 method=B1 step=300 loss=0.676916
+seed=27 method=B1 step=400 loss=0.709557
+RESULT seed=27 method=B1 easy=0.8375 hard=0.3425
+seed=27 method=B2 step=1 loss=2.839731
+seed=27 method=B2 step=100 loss=1.132089
+seed=27 method=B2 step=200 loss=1.008443
+seed=27 method=B2 step=300 loss=0.589066
+seed=27 method=B2 step=400 loss=0.648674
+RESULT seed=27 method=B2 easy=0.8488 hard=0.4100
+seed=27 method=P step=1 loss=2.844176
+seed=27 method=P step=100 loss=1.098305
+seed=27 method=P step=200 loss=1.041672
+seed=27 method=P step=300 loss=0.645789
+seed=27 method=P step=400 loss=0.674209
+RESULT seed=27 method=P easy=0.9163 hard=0.3900
+seed=27 method=P_fixed step=1 loss=2.844176
+seed=27 method=P_fixed step=100 loss=1.316702
+seed=27 method=P_fixed step=200 loss=1.429403
+seed=27 method=P_fixed step=300 loss=1.007911
+seed=27 method=P_fixed step=400 loss=1.632096
+RESULT seed=27 method=P_fixed easy=0.4525 hard=0.2512
+{
+  "easy": {
+    "accuracy": 0.72375,
+    "nll": 0.5917874312866479,
+    "margin": 0.18349449342116714,
+    "representation_shift": 0.4550843584537506,
+    "inner_loss_before": 1.2530442917346953,
+    "inner_loss_after": 0.7854789644479752,
+    "inner_gradient_norm": 3.076355822086334,
+    "fast_update_norm": 0.15381779327988623,
+    "all_finite": 1.0
+  },
+  "hard": {
+    "accuracy": 0.38375,
+    "nll": 1.3211753481626511,
+    "margin": -0.02750695675611496,
+    "representation_shift": 0.5444648370146752,
+    "inner_loss_before": 1.1697798401117325,
+    "inner_loss_after": 0.5796090042591096,
+    "inner_gradient_norm": 3.660119686126709,
+    "fast_update_norm": 0.18300598740577698,
+    "all_finite": 1.0
+  }
+}
+[autodl] finished_at=2026-09-12T02:39:18+08:00
+[autodl] exit_code=0

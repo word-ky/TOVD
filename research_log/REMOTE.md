@@ -36,3 +36,8 @@ Release: 20260912-011056-tovd-t001, implementation SHA a34403756ebe049098c8850f0
 Run: 20260912-011209-tovd-t001-a6000. Earlier preparation attempt 20260912-011126-tovd-t001-a6000 failed before execution due to SSH timeout; retain its metadata.
 
 Run 20260912-011209-tovd-t001-a6000 completed with exit 0 at 2026-09-12 01:12:21 +08:00; CPU 10/10, CUDA 10/10, both demos passed. No active TOVD tmux session remains. Complete receipts fetched to research_log/remote_runs and retained on remote.
+
+## T002 completed
+Implementation b88153a44836310219201404509cfd568c02614f; release 20260912-023118-tovd-t002.
+Run 20260912-023122-tovd-t002-a6000 exited 0 at 2026-09-12 02:39:18 +08:00. Full CPU 23/23 and CUDA 23/23 suites passed, 15 models trained/evaluated, independent checkpoint evaluation matched. No active job remains.
+Run script: scripts/run_t002_a6000.sh. Full receipts/checkpoints under remote runs/<run-id>/artifacts/t002 and local research_log/remote_runs/<run-id>. Read project_state.md and the latest engineering report before acting on unchanged ACTIVE T002.

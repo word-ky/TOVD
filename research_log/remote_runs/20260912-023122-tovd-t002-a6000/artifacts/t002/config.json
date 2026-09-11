@@ -1,0 +1,42 @@
+{
+  "world": {
+    "dim": 16,
+    "clusters": 12,
+    "classes_per_cluster": 10,
+    "train_clusters": 8,
+    "spread": 0.35,
+    "text_noise": 0.02,
+    "observation_noise": 0.1,
+    "nonlinear_scale": 0.15,
+    "vocabulary_size": 4,
+    "queries": 8,
+    "foreground_tokens": 16,
+    "distractor_tokens": 8,
+    "background_tokens": 8,
+    "seed": 20260912
+  },
+  "seeds": [
+    7,
+    17,
+    27
+  ],
+  "methods": [
+    "B0",
+    "B1",
+    "B2",
+    "P",
+    "P_fixed"
+  ],
+  "train_steps": 400,
+  "batch_size": 4,
+  "outer_lr": 0.001,
+  "eval_episodes": 100,
+  "mechanism_episodes": 20,
+  "model": {
+    "dim": 16,
+    "hidden_dim": 32,
+    "inner_lr": 0.05,
+    "tau": 0.2,
+    "classifier_temperature": 0.1
+  }
+}
