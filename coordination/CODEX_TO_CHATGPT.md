@@ -25,3 +25,10 @@ A6000 GPU 0 is occupied by another project; use idle GPU 1 for T005.
 Next: complete CPU/CUDA suites and all 2400 diagnoses, plus preregistered
 normal-forward timing and existing mechanism stream. No new aggregate results.
 Prior report: research_log/T004_engineering_report.md.
+
+## Dispatch receipt
+Full local suite 70 passed in 24.47s.
+Tested SHA f2b9722ae8a1ad68e0e529488e68f88c170125de.
+Release 20260912-053814-tovd-t005; run 20260912-053826-tovd-t005-a6000.
+Command: export TOVD_SOURCE_REVISION=f2b9722ae8a1ad68e0e529488e68f88c170125de; bash scripts/run_t005_a6000.sh
+A6000 physical GPU 1, original project environment. No deployment failure.

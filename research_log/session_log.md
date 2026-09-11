@@ -70,3 +70,7 @@ Fetched c7b4954/246994e: lead accepts T004 and assigns fixed-checkpoint O1 step 
 Baseline 53 tests pass. Preregistered plan in research_log/t005; T004 report archived.
 
 T005 implementation milestone: controller tests 28 passed, analysis tests 6 passed, full local 70 passed in 24.47s. A6000 GPU 1 selected because GPU 0 runs another project. No new experimental aggregate read.
+
+## 2026-09-12 05:38 +08 — T005 A6000 dispatch
+Run 20260912-053826-tovd-t005-a6000 active on GPU 1, code f2b9722, release 20260912-053814-tovd-t005.
+70 local tests pass. No new training; 2400 paired diagnoses planned.
