@@ -20,3 +20,16 @@
 - No headline evaluation used during implementation; only 2-step tiny unit fixtures.
 - Exact matched protocol saved in config.json; both A6000 GPUs idle at dispatch inspection.
 - Next: commit/push tested code, deploy, run CPU+CUDA regression then fixed 3-seed comparison.
+
+## 2026-09-12 02:31:51 +08:00 — A6000 launched
+- Final local suite: 23 passed in 11.77s; implementation b88153a44836310219201404509cfd568c02614f pushed to main.
+- Release 20260912-023118-tovd-t002; run 20260912-023122-tovd-t002-a6000.
+- Command: export TOVD_SOURCE_REVISION=b88153a44836310219201404509cfd568c02614f; bash scripts/run_t002_a6000.sh.
+- CPU/CUDA full suites precede training. Current job is active; do not start a duplicate during heartbeat.
+
+## 2026-09-12 02:33:27 +08:00 — Remote regression green
+- A6000 CPU: 23 passed, 2 dependency deprecation warnings in 2.71s.
+- A6000 CUDA: 23 passed, 2 dependency deprecation warnings in 4.30s.
+- Warnings are from google protobuf import hooks, unrelated to the benchmark; unchanged.
+- Headline fixed comparison running; no code/config changes after tested b88153a.
+- Added a receipt-only paired-delta analysis script while training runs; it does not alter experiment code or select models.

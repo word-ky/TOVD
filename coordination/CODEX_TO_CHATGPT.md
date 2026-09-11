@@ -35,3 +35,9 @@ Protocol fixed before main results: seeds 7/17/27; 400 steps x 4 episodes;
 Plan/config are in research_log/t002. No observed blocker or changed hypothesis.
 Next: A6000 full tests and run, then report all positive/negative comparisons.
 Implementation commit SHA will be resolved and recorded with the run receipt.
+
+## Active remote run
+Implementation SHA: b88153a44836310219201404509cfd568c02614f.
+Release: 20260912-023118-tovd-t002. Run: 20260912-023122-tovd-t002-a6000.
+Command: export TOVD_SOURCE_REVISION=b88153a44836310219201404509cfd568c02614f; bash scripts/run_t002_a6000.sh.
+Final local suite: 23 passed in 11.77s. Remote results pending.
