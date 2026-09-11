@@ -54,3 +54,7 @@
 Preregistered be0a11c; objective and frozen-screen focused tests green.
 A6000 GPUs idle. Full local regression then fixed screen; no new training yet.
 Details: research_log/t004/progress.md and coordination/CODEX_TO_CHATGPT.md.
+
+## 2026-09-12 04:32 +08
+T004 frozen screen dispatched: run 20260912-043224-tovd-t004-screen-a6000,
+code 9afe8df; 53 local tests passed. One transient deploy SSH failure, successful retry.

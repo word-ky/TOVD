@@ -12,3 +12,8 @@
 - Frozen-screen tests: 6 passed in 11.06s; normal update agreement, source pairing/hash preservation and preregistered gate/ranking checked.
 - A6000 GPUs 0/1 idle (15 MiB each, 0% utilization) before scheduling.
 - Full local regression: python -m pytest -q -> 53 passed in 13.22s.
+
+## 2026-09-12 04:32 +08 — Phase 1 dispatched
+Tested SHA 9afe8df54c22d0a20b284d6b4b20aaab5b36ea9a; release 20260912-043213-tovd-t004-screen.
+Run 20260912-043224-tovd-t004-screen-a6000 executes scripts/run_t004_screen_a6000.sh.
+Initial deployment 20260912-043206-tovd-t004-screen failed on SSH connection closed, exit 255; retry succeeded without code changes. No experiment was started by that failed deployment.

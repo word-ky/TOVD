@@ -29,3 +29,10 @@ screen records on A6000. PLAN.md fixes the operational gate before results;
 only eligible candidates (at most two) may enter unchanged T002 meta-training.
 No blocker, detector integration, new training, or hyperparameter sweep.
 Archived prior report: research_log/T003_engineering_report.md.
+
+## Phase-1 dispatch
+Tested SHA 9afe8df54c22d0a20b284d6b4b20aaab5b36ea9a; full local suite 53 passed in 13.22s.
+A6000 run: 20260912-043224-tovd-t004-screen-a6000.
+Release: 20260912-043213-tovd-t004-screen.
+Command: export TOVD_SOURCE_REVISION=9afe8df54c22d0a20b284d6b4b20aaab5b36ea9a; bash scripts/run_t004_screen_a6000.sh
+One transient SSH deployment failure preserved in progress.md; retry succeeded.
