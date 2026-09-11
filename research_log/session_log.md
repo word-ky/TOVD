@@ -74,3 +74,9 @@ T005 implementation milestone: controller tests 28 passed, analysis tests 6 pass
 ## 2026-09-12 05:38 +08 — T005 A6000 dispatch
 Run 20260912-053826-tovd-t005-a6000 active on GPU 1, code f2b9722, release 20260912-053814-tovd-t005.
 70 local tests pass. No new training; 2400 paired diagnoses planned.
+
+## 2026-09-12 T005 completion
+Run 20260912-053826-tovd-t005-a6000 exit0; 70 CPU/CUDA tests each, 2400 diagnoses with zero historical drift.
+C2 passes Rules2/3: hard 46.25% accuracy and 1.23536 NLL, gains across3seeds. C1 fails Rules1/3 due hard harm.
+All C2 steps satisfy Armijo; norm-matching accuracy verified. Easy seed27 harm explicitly recorded.
+Full evidence research_log/t005 and coordination/CODEX_TO_CHATGPT.md. Task VERIFIED; await lead; no T006/training/detector inferred.

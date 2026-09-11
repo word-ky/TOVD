@@ -54,3 +54,11 @@ CPU/CUDA full suites 53 each. All 2400 diagnoses finite and paired with zero dri
 Phase-1 gate selected none; no Phase 2, no active job. Full local receipts under research_log/remote_runs.
 Project state and T004 reports are the source of truth; do not rerun unchanged ACTIVE task.
 Initial deployment 20260912-043206-tovd-t004-screen failed SSH exit 255 before job launch; retry succeeded.
+
+## T005 completed
+Tested f2b9722ae8a1ad68e0e529488e68f88c170125de; release 20260912-053814-tovd-t005.
+Run 20260912-053826-tovd-t005-a6000 exited 0 at 2026-09-12 05:42:14 +08 on physical GPU1.
+CPU/CUDA suites70 each; 2400 records finite, zero O0/C0 drift, all source hashes match.
+C2 passes descent/task-useful rules; C1 fails full scale-rescue/task-useful rules. No training permitted without next task.
+Full original receipts retained under remote runs/<run-id>/artifacts/t005 and local research_log/remote_runs/<run-id>.
+No active TOVD run; another project occupied GPU0 and was left untouched.

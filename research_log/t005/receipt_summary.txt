@@ -1,0 +1,213 @@
+{
+  "records": 2400,
+  "queries": 19200,
+  "source_hashes": [
+    {
+      "seed": 7,
+      "expected_sha256": "125f800e8a0ae7ab7547afaab9f30bf493ec1378d3866f2f8192cbd5c7c8c6e2",
+      "actual_sha256": "125f800e8a0ae7ab7547afaab9f30bf493ec1378d3866f2f8192cbd5c7c8c6e2",
+      "matches": true
+    },
+    {
+      "seed": 17,
+      "expected_sha256": "5da689fbc0750d7fde51d31f93f02248fdb5a1ca3e5189b967ac46d0431a0985",
+      "actual_sha256": "5da689fbc0750d7fde51d31f93f02248fdb5a1ca3e5189b967ac46d0431a0985",
+      "matches": true
+    },
+    {
+      "seed": 27,
+      "expected_sha256": "091124ee7af0f8ec4ca95d12617d6c5954f8cb90dd73966823af0daed607e3ac",
+      "actual_sha256": "091124ee7af0f8ec4ca95d12617d6c5954f8cb90dd73966823af0daed607e3ac",
+      "matches": true
+    }
+  ],
+  "historical_checks": [
+    {
+      "method": "O0",
+      "seed": 7,
+      "regime": "easy",
+      "episodes": 100,
+      "errors": {
+        "accuracy": 0.0,
+        "nll": 0.0,
+        "margin": 0.0
+      },
+      "episode_seed_mismatches": 0
+    },
+    {
+      "method": "O0",
+      "seed": 7,
+      "regime": "hard",
+      "episodes": 100,
+      "errors": {
+        "accuracy": 0.0,
+        "nll": 0.0,
+        "margin": 0.0
+      },
+      "episode_seed_mismatches": 0
+    },
+    {
+      "method": "C0",
+      "seed": 7,
+      "regime": "easy",
+      "episodes": 100,
+      "errors": {
+        "accuracy": 0.0,
+        "nll": 0.0,
+        "margin": 0.0
+      },
+      "episode_seed_mismatches": 0
+    },
+    {
+      "method": "C0",
+      "seed": 7,
+      "regime": "hard",
+      "episodes": 100,
+      "errors": {
+        "accuracy": 0.0,
+        "nll": 0.0,
+        "margin": 0.0
+      },
+      "episode_seed_mismatches": 0
+    },
+    {
+      "method": "O0",
+      "seed": 17,
+      "regime": "easy",
+      "episodes": 100,
+      "errors": {
+        "accuracy": 0.0,
+        "nll": 0.0,
+        "margin": 0.0
+      },
+      "episode_seed_mismatches": 0
+    },
+    {
+      "method": "O0",
+      "seed": 17,
+      "regime": "hard",
+      "episodes": 100,
+      "errors": {
+        "accuracy": 0.0,
+        "nll": 0.0,
+        "margin": 0.0
+      },
+      "episode_seed_mismatches": 0
+    },
+    {
+      "method": "C0",
+      "seed": 17,
+      "regime": "easy",
+      "episodes": 100,
+      "errors": {
+        "accuracy": 0.0,
+        "nll": 0.0,
+        "margin": 0.0
+      },
+      "episode_seed_mismatches": 0
+    },
+    {
+      "method": "C0",
+      "seed": 17,
+      "regime": "hard",
+      "episodes": 100,
+      "errors": {
+        "accuracy": 0.0,
+        "nll": 0.0,
+        "margin": 0.0
+      },
+      "episode_seed_mismatches": 0
+    },
+    {
+      "method": "O0",
+      "seed": 27,
+      "regime": "easy",
+      "episodes": 100,
+      "errors": {
+        "accuracy": 0.0,
+        "nll": 0.0,
+        "margin": 0.0
+      },
+      "episode_seed_mismatches": 0
+    },
+    {
+      "method": "O0",
+      "seed": 27,
+      "regime": "hard",
+      "episodes": 100,
+      "errors": {
+        "accuracy": 0.0,
+        "nll": 0.0,
+        "margin": 0.0
+      },
+      "episode_seed_mismatches": 0
+    },
+    {
+      "method": "C0",
+      "seed": 27,
+      "regime": "easy",
+      "episodes": 100,
+      "errors": {
+        "accuracy": 0.0,
+        "nll": 0.0,
+        "margin": 0.0
+      },
+      "episode_seed_mismatches": 0
+    },
+    {
+      "method": "C0",
+      "seed": 27,
+      "regime": "hard",
+      "episodes": 100,
+      "errors": {
+        "accuracy": 0.0,
+        "nll": 0.0,
+        "margin": 0.0
+      },
+      "episode_seed_mismatches": 0
+    }
+  ],
+  "normal_output_max_error": 0.0,
+  "normal_state_max_error": 0.0,
+  "nonfinite_elements": 0,
+  "all_records_finite": true,
+  "mechanism_records": 240,
+  "reset_state_max": 0.0,
+  "reset_output_max": 0.0,
+  "permutation_output_max_error": 1.1920928955078125e-07
+}
+{
+  "rule1_scale_rescue": {
+    "easy_nll_gain": 2.7551507382964093,
+    "easy_accuracy_gain_pp": 35.0,
+    "hard_both_worsen": true,
+    "passes": false
+  },
+  "rule2_descent_safe": {
+    "accepted_armijo_violations": 0,
+    "easy_nll_harm_vs_O0": -0.24162653772160408,
+    "easy_accuracy_loss_pp_vs_O0": -11.833333333333329,
+    "hard_nll_no_worse_than_C0": true,
+    "passes": true
+  },
+  "rule3_task_useful": {
+    "C1": {
+      "hard_nll_delta": 0.02527312864859899,
+      "hard_accuracy_delta_pp": -1.2083333333333333,
+      "hard_nll_improving_seeds": 1,
+      "hard_cosine_gain_vs_O0": 0.2620668119975986,
+      "passes": false
+    },
+    "C2": {
+      "hard_nll_delta": -0.07854422887166342,
+      "hard_accuracy_delta_pp": 5.708333333333333,
+      "hard_nll_improving_seeds": 3,
+      "hard_cosine_gain_vs_O0": 0.2620668119975986,
+      "passes": true
+    }
+  },
+  "task_useful_controllers": [
+    "C2"
+  ],
+  "next_action": "Research Lead review only; no meta-training or detector integration in T005."
+}

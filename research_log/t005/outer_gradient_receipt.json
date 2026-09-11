@@ -1,0 +1,19 @@
+{
+  "kind": "unit fixture, not trained benchmark",
+  "method": "C1",
+  "seed": 7,
+  "episode_seed": 20070000,
+  "device": "cpu",
+  "dtype": "float64",
+  "outer_loss": "mean(output squared)",
+  "W0_outer_gradient_norm": 0.06466494118762,
+  "key_projection_gradient_norm": 0.0005936790093902036,
+  "query_projection_gradient_norm": 0.004495774408453773,
+  "finite_difference": {
+    "parameter": "memory.fast_model.output.weight",
+    "epsilon": 1e-05,
+    "analytic": -0.0005458316851767773,
+    "numeric": -0.0005458316850587286,
+    "absolute_error": 1.1804869148174246e-13
+  }
+}

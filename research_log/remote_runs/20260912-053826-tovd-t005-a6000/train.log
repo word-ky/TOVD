@@ -1,0 +1,48 @@
+[autodl] run_id=20260912-053826-tovd-t005-a6000
+[autodl] started_at=2026-09-12T05:38:30+08:00
+......................................................................   [100%]
+=============================== warnings summary ===============================
+tests/test_synthetic_runner.py::test_all_methods_end_to_end_checkpoint_and_readonly_evaluation
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.MessageMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+tests/test_synthetic_runner.py::test_all_methods_end_to_end_checkpoint_and_readonly_evaluation
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.ScalarMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+70 passed, 2 warnings in 4.62s
+......................................................................   [100%]
+=============================== warnings summary ===============================
+tests/test_synthetic_runner.py::test_all_methods_end_to_end_checkpoint_and_readonly_evaluation
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.MessageMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+tests/test_synthetic_runner.py::test_all_methods_end_to_end_checkpoint_and_readonly_evaluation
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.ScalarMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+70 passed, 2 warnings in 10.50s
+SCREEN seed=7 method=O0 regime=easy episodes=100
+SCREEN seed=7 method=O0 regime=hard episodes=100
+SCREEN seed=7 method=C0 regime=easy episodes=100
+SCREEN seed=7 method=C0 regime=hard episodes=100
+SCREEN seed=7 method=C1 regime=easy episodes=100
+SCREEN seed=7 method=C1 regime=hard episodes=100
+SCREEN seed=7 method=C2 regime=easy episodes=100
+SCREEN seed=7 method=C2 regime=hard episodes=100
+SCREEN seed=17 method=O0 regime=easy episodes=100
+SCREEN seed=17 method=O0 regime=hard episodes=100
+SCREEN seed=17 method=C0 regime=easy episodes=100
+SCREEN seed=17 method=C0 regime=hard episodes=100
+SCREEN seed=17 method=C1 regime=easy episodes=100
+SCREEN seed=17 method=C1 regime=hard episodes=100
+SCREEN seed=17 method=C2 regime=easy episodes=100
+SCREEN seed=17 method=C2 regime=hard episodes=100
+SCREEN seed=27 method=O0 regime=easy episodes=100
+SCREEN seed=27 method=O0 regime=hard episodes=100
+SCREEN seed=27 method=C0 regime=easy episodes=100
+SCREEN seed=27 method=C0 regime=hard episodes=100
+SCREEN seed=27 method=C1 regime=easy episodes=100
+SCREEN seed=27 method=C1 regime=hard episodes=100
+SCREEN seed=27 method=C2 regime=easy episodes=100
+SCREEN seed=27 method=C2 regime=hard episodes=100
+[autodl] finished_at=2026-09-12T05:42:14+08:00
+[autodl] exit_code=0

@@ -19,3 +19,13 @@
 Tested SHA f2b9722ae8a1ad68e0e529488e68f88c170125de; release 20260912-053814-tovd-t005.
 Run 20260912-053826-tovd-t005-a6000, scripts/run_t005_a6000.sh, physical GPU 1.
 No deployment failure; no outer training. Fixed frozen sources/episodes.
+
+## 2026-09-12 — T005 completed
+- Run 20260912-053826-tovd-t005-a6000 exit 0 at 05:42:14 +08 on GPU 1. No experiment/deployment failures.
+- CPU 70/4.62s and CUDA 70/10.50s (2 existing protobuf deprecation warnings each). Full local 70/24.47s.
+- 2400 records/19200 queries plus 240 mechanism records. Original O0/C0 metric errors 0; source hashes match; normal output/state error 0; no nonfinite elements.
+- Rule 1 C1 FAIL: easy rescue but both hard metrics worse. Rule 2 C2 PASS. Rule 3 C1 FAIL/C2 PASS.
+- C2 hard +5.70833pp accuracy, -.07854 NLL versus same W0; hard NLL/accuracy improve in all seeds. Easy seed27 worsens (+.13119 NLL, -8.25pp), explicitly retained.
+- C1 maximum norm equality error 5.96046448e-8. C2 accepted all600, Armijo violations0, no-update0; cost 1.2393x easy/1.0676x hard versus C0.
+- Results, rule decisions, hashes/manifest, raw receipts, outer-gradient unit receipt and final mailbox saved in project.
+- Recommend Research Lead consider separate C2 meta-training task. No training/detector/T006 started; task VERIFIED pending review.

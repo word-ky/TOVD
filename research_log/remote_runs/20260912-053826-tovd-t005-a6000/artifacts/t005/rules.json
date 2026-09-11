@@ -1,0 +1,35 @@
+{
+  "rule1_scale_rescue": {
+    "easy_nll_gain": 2.7551507382964093,
+    "easy_accuracy_gain_pp": 35.0,
+    "hard_both_worsen": true,
+    "passes": false
+  },
+  "rule2_descent_safe": {
+    "accepted_armijo_violations": 0,
+    "easy_nll_harm_vs_O0": -0.24162653772160408,
+    "easy_accuracy_loss_pp_vs_O0": -11.833333333333329,
+    "hard_nll_no_worse_than_C0": true,
+    "passes": true
+  },
+  "rule3_task_useful": {
+    "C1": {
+      "hard_nll_delta": 0.02527312864859899,
+      "hard_accuracy_delta_pp": -1.2083333333333333,
+      "hard_nll_improving_seeds": 1,
+      "hard_cosine_gain_vs_O0": 0.2620668119975986,
+      "passes": false
+    },
+    "C2": {
+      "hard_nll_delta": -0.07854422887166342,
+      "hard_accuracy_delta_pp": 5.708333333333333,
+      "hard_nll_improving_seeds": 3,
+      "hard_cosine_gain_vs_O0": 0.2620668119975986,
+      "passes": true
+    }
+  },
+  "task_useful_controllers": [
+    "C2"
+  ],
+  "next_action": "Research Lead review only; no meta-training or detector integration in T005."
+}
