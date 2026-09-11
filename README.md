@@ -63,3 +63,63 @@ inner update, ruling out a merely nonzero direct gradient on W0.
 
 Research instructions and reports live in `coordination/`; experiment receipts
 and recovery notes live in `research_log/`.
+
+## T002: controlled held-out semantic benchmark
+
+The fixed protocol is in `research_log/t002/config.json` and `PLAN.md`.
+
+```bash
+python -m scripts.train_synthetic_semantic --config research_log/t002/config.json --device cpu --output research_log/t002/local_run
+python -m scripts.eval_synthetic_semantic --checkpoint research_log/t002/local_run/seed7_P/checkpoint.pt --device cpu --output research_log/t002/local_run/reevaluation.json
+```
+
+Use `--device cuda` with `CUBLAS_WORKSPACE_CONFIG=:4096:8` for the A6000 run.
+`scripts/run_t002_a6000.sh` runs CPU/CUDA suites, the fixed three-seed comparison,
+and independent checkpoint re-evaluation. Remote archives pass the tested SHA
+with `--revision`. `TOVD_TEST_DEVICE=cuda python -m pytest -q` exercises the
+model/runner tests on CUDA; generator-only tests remain on CPU.
+
+For unit cluster center u and residual e, class c has
+`z_c = normalize(u_cluster(c) + 0.35 e_c)`. Sample independent fixed orthogonal
+rotations R_t/R_v. Text is `normalize(z_c R_t + 0.02 epsilon_c)`; each visual
+observation is `normalize((z_c + 0.15 tanh(2 z_c)) R_v + 0.10 epsilon)`.
+All epsilon entries are independent standard Gaussians. The world has 120
+classes in 12 clusters; first 8 clusters/80 classes are training and last
+4 clusters/40 classes are held out. Test centers/classes never generate training
+observations or outer labels. Shared modality transforms transfer across splits.
+
+Easy vocabularies contain one class from each of four clusters; hard vocabularies
+contain four classes in one cluster. Each episode has two foreground classes,
+eight query observations, and 32 image tokens (16 foreground, 8 excluded-class
+distractors, 8 random background), all independently sampled/shuffled. Vocabulary
+positions are independently permuted. Labels map class identity to the current
+vocabulary only in outer training/evaluation, and are never model arguments.
+
+Five matched paths share the T001 parameter layout and seeded initialization:
+B0 static; B1 static output plus query-to-text and mean image-to-text context;
+B2 one-step K-to-X visual TTT; P one-step K-to-S semantic TTT; P_fixed same as P
+with random W0 excluded from the outer optimizer throughout training. In
+P_fixed, both projections still train and W0 still requires gradients for the
+inner step. B1 adds no parameters and has access to both image and vocabulary.
+B0's key projection is allocated for matching but unused; report effective
+outer parameter ownership along with total count when interpreting capacity.
+
+The outer classifier uses cosine similarity / 0.1 followed by cross-entropy.
+All methods use Adam 0.001, 400 steps of four episodes with alternating easy/hard
+examples, and identical episode streams per seed. Evaluation is 100 episodes
+per regime with held-out classes, no outer optimizer, and the final checkpoint.
+Seeds 7/17/27 vary initialization and episodes in one fixed semantic world.
+
+Outputs include complete training curves/checkpoints, per-episode metrics,
+per-seed diagnostics, config and environment/class-split receipts, a JSON/CSV
+aggregate and Markdown table. Accuracy SD is sample SD across seed means, not
+query-level error bars. Margin is correct cosine minus strongest distractor
+cosine. Representation shift is the Frobenius norm from the same model's static
+W0 query path. Batch-1 latency is measured after 3 warmups over 10 forwards,
+including diagnostics and synchronizing CUDA at the boundaries.
+
+Paired diagnostics preserve exact X/Q while changing an anchor-containing
+easy/hard vocabulary; unrelated vocabularies exclude the query class, so their
+reported outcomes are confidence/entropy and state/output shifts, not accuracy.
+No-label, permutation, reset, split isolation, fixed-W0 and checkpoint tests are
+in `tests/test_synthetic_semantic.py` and `tests/test_synthetic_runner.py`.

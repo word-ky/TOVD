@@ -52,6 +52,9 @@ class FastSemanticMemory(nn.Module):
         self.inner_lr = inner_lr
         self.tau = tau
 
+    def inner_targets(self, keys: Tensor, X: Tensor, T: Tensor) -> Tensor:
+        return torch.softmax(keys @ T.transpose(-1, -2) / self.tau, dim=-1) @ T
+
     def forward(self, X: Tensor, T: Tensor, Q: Tensor,
                 *, enable_ttt: bool = True) -> MemoryOutput:
         batch_size = Q.shape[0]
@@ -70,7 +73,7 @@ class FastSemanticMemory(nn.Module):
         with torch.enable_grad():
             keys = self.key_projection(X)
             queries = self.query_projection(Q)
-            semantic = torch.softmax(keys @ T.transpose(-1, -2) / self.tau, dim=-1) @ T
+            semantic = self.inner_targets(keys, X, T)
             for index in range(batch_size):
                 params = initial if meta_learning else {
                     name: value.detach().requires_grad_(True) for name, value in initial.items()}
