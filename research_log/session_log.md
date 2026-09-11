@@ -87,3 +87,7 @@ Preregistration/config in research_log/t006; prior T005 report archived. No newt
 
 T006 local implementation verified:75 full tests pass; initial meta-gradient primary probes60/60 stable, maxerror6.6941e-11, one larger-perturbation selector boundary recorded.
 NVML version mismatch observed remotely; PyTorch CUDA1 tensor computation works. No system driver changes. Full remote tests precede fixed training.
+
+## 2026-09-12 06:51 +08 — T006 dispatch
+A6000GPU1 run20260912-065105-tovd-t006-a6000 active, code65299db, release20260912-065052-tovd-t006.
+Fixed3seed400x4 budget follows remote tests/initial-gradient receipt. NVML mismatch recorded; CUDA works.

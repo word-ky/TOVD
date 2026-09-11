@@ -33,3 +33,9 @@ Next: deploy tested revision, run CPU/CUDA suites, regenerate initial gradient
 receipt on A6000, then exactly400stepsx4episodes for seeds7/17/27, final diagnosis
 and checkpoint/control comparisons. No T006 aggregate held-out results yet.
 Prior report: research_log/T005_engineering_report.md.
+
+## Dispatch receipt
+Tested SHA65299db5f1127407f856872b732f2b2b7051383e.
+Release20260912-065052-tovd-t006; run20260912-065105-tovd-t006-a6000.
+Command: export TOVD_SOURCE_REVISION=65299db5f1127407f856872b732f2b2b7051383e; bash scripts/run_t006_a6000.sh
+PhysicalGPU1; full tests and initial meta-gradient requirement run before fixed-budgettraining.

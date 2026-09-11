@@ -18,3 +18,8 @@ Initial boundary-coverage test assumed the first20 untrained seed7 probes at eps
 - local_initial_meta_gradient.json: all60 epsilon1e-5 probes stable, max FD absolute error6.6941126253e-11, zero disagreements; gradient requirement passes for all3seeds. Epsilon .1 crosses1/60 boundaries; larger stable probes may have finite-step truncation error and are not graded as primary FD failures.
 - Server NVML warning observed: nvidia-smi driver/library mismatch (kernel580.173.02, installedlibrary580.178.04). PyTorch2.4.0+cu121 detects2GPUs and successfully computes torch.ones on cuda:1. No system driver modification/restart attempted. Actual CPU/CUDA tests will precede training.
 - PyTorch driver-path memory query succeeds: GPU1 free50,598,707,200/50,897,289,216bytes; GPU0 free47,021,686,784. GPU1 retained for T006.
+
+## 2026-09-12 06:51 +08 — A6000 dispatched
+Tested SHA65299db5f1127407f856872b732f2b2b7051383e; release20260912-065052-tovd-t006.
+Run20260912-065105-tovd-t006-a6000 on physicalGPU1. CPU/CUDA suites and initial-gradient requirement precede three-seed400x4 training.
+No deployment failure. NVML mismatch remains an observed system warning; PyTorch device/memory/tensor path works.
