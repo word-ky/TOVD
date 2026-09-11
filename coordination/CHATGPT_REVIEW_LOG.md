@@ -76,3 +76,34 @@ Target diagnostics explain why. In the hard vocabulary, assignment entropy is 1.
 Token contamination is not the dominant failure mode: foreground/distractor/background gradients are highly similar, and foreground-only soft adaptation remains poor. Step size contributes to easy-regime overshoot (eta=.01 is less harmful than .05), but it does not explain the hard-regime failure. Fast weights themselves are not rejected because a better semantic direction demonstrably helps on the same frozen model.
 
 **Next action:** T004 assigned. Replace the single-vector barycentric inner target with label-free objectives that preserve relative vocabulary geometry. First screen three candidates on frozen T002 P checkpoints: full-distribution semantic matching (O1), vocabulary-centered relative target (O2), and centered distribution-preserving matching (O3). Only if a candidate improves hard-regime gradient alignment / pre-post task loss over O0 without catastrophic easy harm may Codex meta-train at most two candidates under the fixed T002 budget. Grounding-DINO integration remains blocked until a redesigned objective improves over its own W0 and the original P with better task-gradient alignment.
+
+---
+
+## 2026-09-12 — T004 review
+
+**Decision:** ACCEPTED AS A VERIFIED NEGATIVE PHASE-1 SCREEN; FIXED-STEP OBJECTIVE REDESIGN NOT YET SCIENTIFICALLY SUCCESSFUL
+
+Reviewed commits:
+- `be0a11c5790c1c01f4ac7bafe4baefa3365e8bfc` — preregistered objective definitions and Phase-1 gate;
+- `9afe8df54c22d0a20b284d6b4b20aaab5b36ea9a` — O0/O1/O2/O3 implementation, tests, and frozen-screen runner;
+- `4714d82844df591c0bfa3c0c584d60de148bcec0` — A6000 screen dispatch/recovery state;
+- `509be86e582a14b850f700fcb26b73f825ef8fa9` — complete T004 screen report and durable artifacts.
+
+Accepted protocol/engineering evidence:
+- O0 reproduces the original P path exactly over all 600 matched episodes;
+- all four objectives share the same 2,128 fast parameters and normal runtime remains label-free;
+- source checkpoint hashes, frozen episode streams, generator/split, and evaluation conditions are preserved;
+- episodic reset, vocabulary dependence, finite centered-text handling, finite-difference W0 meta-gradient, and key/query gradient flow are verified;
+- full local suite passes 53/53 and A6000 CPU/CUDA suites each pass 53/53;
+- all 2,400 objective diagnostics agree with the normal runtime implementation and are finite;
+- no outer retraining, detector integration, hidden tuning, generator redesign, or test-label inner objective occurred;
+- the preregistered gate was enforced and Phase 2 correctly stopped when no objective qualified.
+
+Scientific result:
+- O1 is the most interesting failure: its task-gradient cosine rises from O0's +.011/-.011 (easy/hard) to +.411/+.251, yet the fixed `.05` update causes severe easy collapse (39.46% accuracy, NLL 3.448) because its easy update norm grows to .703 versus O0 .179. Hard O1 is much less pathological: update norm .184 versus O0 .203, accuracy rises from W0 40.54% to 41.88%, but NLL improves only ~.004 nats.
+- O2 is not supported: centering sharpens the teacher distribution but reduces assignment correctness and worsens hard task alignment/NLL.
+- O3 retains good local direction but compounds centering with severe update-scale pathology; it is not a clean next candidate.
+
+Interpretation: T004 disproves the simple claim that a relative/distribution-preserving objective plus the original fixed `eta=.05` is sufficient. It does **not** yet disprove O1's directional signal. The data expose a direction-versus-step mismatch: local task alignment can be strong while a finite step overshoots due to episode-dependent gradient scale/curvature. This is especially clear because O1's own inner CE increases after the fixed easy step.
+
+**Next action:** T005 assigned as a frozen-checkpoint causal diagnosis. Carry forward O1 only and decouple gradient direction from step magnitude with (C1) a label-free O0-budget matched update and (C2) a deterministic label-free O1 backtracking/Armijo controller, alongside immutable O0/C0 controls. No meta-training or detector integration is allowed. If neither controlled update produces hard task improvement over W0 while retaining O1's alignment, the current semantic-fast-weight branch should be stopped/reframed rather than tuned further.
