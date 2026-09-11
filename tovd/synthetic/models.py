@@ -5,6 +5,7 @@ from torch import nn
 from torch.nn import functional as F
 
 from tovd.models import FastSemanticMemory, MemoryOutput
+from tovd.models.vocabulary_objectives import OBJECTIVES, VocabularyObjectiveMemory
 
 METHODS = ("B0", "B1", "B2", "P", "P_fixed")
 
@@ -21,11 +22,15 @@ class EpisodicClassifier(nn.Module):
         super().__init__()
         self.method = method
         self.classifier_temperature = classifier_temperature
-        memory_cls = VisualFastMemory if method == "B2" else FastSemanticMemory
-        self.memory = memory_cls(dim, hidden_dim, inner_lr, tau)
+        if method in OBJECTIVES:
+            self.memory = VocabularyObjectiveMemory(dim, hidden_dim, inner_lr, tau,
+                                                    objective=method, student_tau=classifier_temperature)
+        else:
+            memory_cls = VisualFastMemory if method == "B2" else FastSemanticMemory
+            self.memory = memory_cls(dim, hidden_dim, inner_lr, tau)
 
     def forward(self, X, T, Q):
-        if self.method in ("B2", "P", "P_fixed"):
+        if self.method in ("B2", "P", "P_fixed", *OBJECTIVES):
             return self.memory(X, T, Q)
         result = self.memory(X, T, Q, enable_ttt=False)
         if self.method == "B0":

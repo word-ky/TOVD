@@ -55,6 +55,10 @@ class FastSemanticMemory(nn.Module):
     def inner_targets(self, keys: Tensor, X: Tensor, T: Tensor) -> Tensor:
         return torch.softmax(keys @ T.transpose(-1, -2) / self.tau, dim=-1) @ T
 
+    def inner_objective(self, prediction: Tensor, keys: Tensor, X: Tensor,
+                        T: Tensor, target: Tensor) -> Tensor:
+        return alignment_loss(prediction, target)
+
     def forward(self, X: Tensor, T: Tensor, Q: Tensor,
                 *, enable_ttt: bool = True) -> MemoryOutput:
         batch_size = Q.shape[0]
@@ -77,15 +81,15 @@ class FastSemanticMemory(nn.Module):
             for index in range(batch_size):
                 params = initial if meta_learning else {
                     name: value.detach().requires_grad_(True) for name, value in initial.items()}
-                before = alignment_loss(functional_call(self.fast_model, params, (keys[index],)),
-                                        semantic[index])
+                before = self.inner_objective(functional_call(self.fast_model, params, (keys[index],)),
+                                              keys[index], X[index], T[index], semantic[index])
                 grads = torch.autograd.grad(before, tuple(params.values()), create_graph=meta_learning)
                 adapted = {name: value - self.inner_lr * grad
                            for (name, value), grad in zip(params.items(), grads)}
                 output = functional_call(self.fast_model, adapted, (queries[index],))
                 with torch.no_grad():
-                    after = alignment_loss(functional_call(self.fast_model, adapted, (keys[index],)),
-                                           semantic[index])
+                    after = self.inner_objective(functional_call(self.fast_model, adapted, (keys[index],)),
+                                                 keys[index], X[index], T[index], semantic[index])
                     grad_norm = torch.sqrt(sum(grad.square().sum() for grad in grads))
                     update_norm = torch.sqrt(sum((adapted[name] - value).square().sum()
                                                  for name, value in params.items()))

@@ -49,3 +49,8 @@
 - Analysis-only 6780de5 executed on A6000, run 20260912-030923-tovd-t003-a6000 exit 0. Normal runtime and checkpoints unchanged; all pairing errors zero.
 - Branch C best supported; limited A in easy regime. Exact-target oracle gains are diagnostic and non-deployable. Full evidence in latest mailbox and research_log/t003.
 - No primary retraining, detector integration, or T004 inferred.
+
+## 2026-09-12 T004 implementation milestone
+Preregistered be0a11c; objective and frozen-screen focused tests green.
+A6000 GPUs idle. Full local regression then fixed screen; no new training yet.
+Details: research_log/t004/progress.md and coordination/CODEX_TO_CHATGPT.md.
