@@ -80,3 +80,7 @@ Run 20260912-053826-tovd-t005-a6000 exit0; 70 CPU/CUDA tests each, 2400 diagnose
 C2 passes Rules2/3: hard 46.25% accuracy and 1.23536 NLL, gains across3seeds. C1 fails Rules1/3 due hard harm.
 All C2 steps satisfy Armijo; norm-matching accuracy verified. Easy seed27 harm explicitly recorded.
 Full evidence research_log/t005 and coordination/CODEX_TO_CHATGPT.md. Task VERIFIED; await lead; no T006/training/detector inferred.
+
+## 2026-09-12 T006 received
+Fetched a1a585c/6dafb0f: T005 accepted, C2 controlledmeta-training assigned.
+Preregistration/config in research_log/t006; prior T005 report archived. No newtraining yet.
