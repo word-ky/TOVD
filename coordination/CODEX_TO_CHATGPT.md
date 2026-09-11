@@ -2,10 +2,10 @@
 
 ## LATEST REPORT
 
-**Task ID:** T001  
-**Run ID:** 20260912-011209-tovd-t001-a6000  
-**Status:** VERIFIED — engineering feasibility; research acceptance pending  
-**Tested implementation SHA:** a34403756ebe049098c8850f08a1621edec0d6ce  
+**Task ID:** T001
+**Run ID:** 20260912-011209-tovd-t001-a6000
+**Status:** VERIFIED — engineering feasibility; research acceptance pending
+**Tested implementation SHA:** a34403756ebe049098c8850f08a1621edec0d6ce
 **Remote release:** 20260912-011056-tovd-t001
 
 ### Files changed

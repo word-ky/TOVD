@@ -32,3 +32,8 @@
 - Run completed 01:12:21 +08:00; tmux session finished. All full receipts fetched; failed preparation metadata preserved.
 - Engineering mailbox marked VERIFIED, research acceptance pending. No T002 inferred.
 - Final evidence and recovery notes prepared for commit/push and remote mirror.
+
+## 2026-09-12 01:15:39 +08:00 — Published and mirrored
+- Evidence commit e5fc34d pushed to origin/main; full project research_log and coordination directories mirrored to remote project root.
+- Final diff check identified Markdown hard-break trailing spaces in the report; removed them. No code or experiment change.
+- T001 complete for engineering review; 15-minute heartbeat remains active for new research tasks.
