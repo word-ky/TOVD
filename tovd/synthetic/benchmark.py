@@ -34,6 +34,7 @@ def train_model(world, config, seed, method, device):
     torch.manual_seed(seed)
     model = EpisodicClassifier(method, **config["model"]).to(device)
     initial_fast = {name: p.detach().cpu().clone() for name, p in model.memory.fast_model.named_parameters()}
+    initial_state = {name:p.detach().cpu().clone() for name,p in model.named_parameters()} if method == "P_C2_meta" else None
     optimizer = torch.optim.Adam(model.outer_parameters(), lr=config["outer_lr"])
     model.train()
     curve = []
@@ -44,12 +45,27 @@ def train_model(world, config, seed, method, device):
         X, T, Q, labels = stack_episodes(episodes, device)
         model.zero_grad(set_to_none=True)
         result = model(X, T, Q)
-        loss = F.cross_entropy(model.logits(result.tokens, T).flatten(0, 1), labels.flatten())
+        logits = model.logits(result.tokens, T)
+        loss = F.cross_entropy(logits.flatten(0, 1), labels.flatten())
         loss.backward()
         optimizer.step()
         value = loss.detach().item()
         # Preserve every training loss, including any failed/non-finite value.
-        curve.append({"step": step + 1, "loss": value})
+        row = {"step": step + 1, "loss": value}
+        if method == "P_C2_meta":
+            diag = result.diagnostics
+            row.update({"accuracy":(logits.argmax(-1)==labels).float().mean().item(),
+                        "inner_loss_before":diag["inner_loss_before"].mean().item(),
+                        "inner_loss_after":diag["inner_loss_after"].mean().item(),
+                        "inner_gradient_norm":diag["inner_gradient_norm"].mean().item(),
+                        "update_norm":diag["fast_update_norm"].mean().item(),
+                        "selected_etas":diag["chosen_eta"].tolist(),
+                        "backtracking_trials":diag["backtracking_trials"].tolist(),
+                        "eta_zero_fraction":(diag["chosen_eta"]==0).float().mean().item(),
+                        "armijo_violations":int((diag["step_accepted"] & (diag["inner_loss_after"]>diag["armijo_rhs"])).sum().item()),
+                        "finite":bool(diag["all_finite"].all()) and all(torch.isfinite(p).all().item() and
+                                       (p.grad is None or torch.isfinite(p.grad).all().item()) for p in model.parameters())})
+        curve.append(row)
         if step == 0 or (step + 1) % 100 == 0:
             print(f"seed={seed} method={method} step={step+1} loss={value:.6f}", flush=True)
     elapsed = time.perf_counter() - start
@@ -59,6 +75,8 @@ def train_model(world, config, seed, method, device):
                   "config": config, "world": asdict(world.config), "seed": seed, "method": method,
                   "train_seconds": elapsed, "initial_fast_state": initial_fast,
                   "W0_outer_drift": drift, "training_curve": curve}
+    if initial_state is not None:
+        checkpoint["initial_state_dict"] = initial_state
     return model, checkpoint
 
 

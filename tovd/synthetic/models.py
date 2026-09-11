@@ -23,7 +23,10 @@ class EpisodicClassifier(nn.Module):
         super().__init__()
         self.method = method
         self.classifier_temperature = classifier_temperature
-        if method in CONTROLLERS:
+        if method == "P_C2_meta":
+            self.memory = O1StepMemory(dim, hidden_dim, inner_lr, tau,
+                                       controller="O1_backtracking", student_tau=classifier_temperature)
+        elif method in CONTROLLERS:
             self.memory = O1StepMemory(dim, hidden_dim, inner_lr, tau,
                                        controller=method, student_tau=classifier_temperature)
         elif method in OBJECTIVES:
@@ -34,7 +37,7 @@ class EpisodicClassifier(nn.Module):
             self.memory = memory_cls(dim, hidden_dim, inner_lr, tau)
 
     def forward(self, X, T, Q):
-        if self.method in ("B2", "P", "P_fixed", *OBJECTIVES, *CONTROLLERS):
+        if self.method in ("B2", "P", "P_fixed", "P_C2_meta", *OBJECTIVES, *CONTROLLERS):
             return self.memory(X, T, Q)
         result = self.memory(X, T, Q, enable_ttt=False)
         if self.method == "B0":

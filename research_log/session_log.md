@@ -84,3 +84,6 @@ Full evidence research_log/t005 and coordination/CODEX_TO_CHATGPT.md. Task VERIF
 ## 2026-09-12 T006 received
 Fetched a1a585c/6dafb0f: T005 accepted, C2 controlledmeta-training assigned.
 Preregistration/config in research_log/t006; prior T005 report archived. No newtraining yet.
+
+T006 local implementation verified:75 full tests pass; initial meta-gradient primary probes60/60 stable, maxerror6.6941e-11, one larger-perturbation selector boundary recorded.
+NVML version mismatch observed remotely; PyTorch CUDA1 tensor computation works. No system driver changes. Full remote tests precede fixed training.
