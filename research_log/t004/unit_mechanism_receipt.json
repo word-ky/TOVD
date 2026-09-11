@@ -1,0 +1,66 @@
+{
+  "purpose": "Unit-fixture mechanism receipt, not trained benchmark results",
+  "seed": 7,
+  "device": "cpu",
+  "dtype": "float64",
+  "python_torch": "2.13.0+cpu",
+  "dimensions": {
+    "dim": 8,
+    "hidden_dim": 16,
+    "batch": 2
+  },
+  "outer_loss": "mean(square(output))",
+  "rows": [
+    {
+      "method": "O1",
+      "vocabulary_state_delta": 1.2002467490450275,
+      "reset_state_delta": 0.0,
+      "W0_outer_gradient_norm": 0.30282064265980013,
+      "key_outer_gradient_norm": 0.067811525858769,
+      "query_outer_gradient_norm": 0.02481668424847536,
+      "inner_loss_before": [
+        6.610654122432485,
+        2.7843330155777384
+      ],
+      "inner_loss_after": [
+        5.226472499216141,
+        1.872772669894086
+      ],
+      "all_finite": true
+    },
+    {
+      "method": "O2",
+      "vocabulary_state_delta": 0.058984419660581114,
+      "reset_state_delta": 0.0,
+      "W0_outer_gradient_norm": 0.09685320656357757,
+      "key_outer_gradient_norm": 0.007906601508311063,
+      "query_outer_gradient_norm": 0.01868312923036765,
+      "inner_loss_before": [
+        1.2998501098098436,
+        1.224898030076496
+      ],
+      "inner_loss_after": [
+        1.2546209479108437,
+        1.0830208111522577
+      ],
+      "all_finite": true
+    },
+    {
+      "method": "O3",
+      "vocabulary_state_delta": 1.446988856802768,
+      "reset_state_delta": 0.0,
+      "W0_outer_gradient_norm": 0.3588101355563184,
+      "key_outer_gradient_norm": 0.07306479893121332,
+      "query_outer_gradient_norm": 0.020886381597250318,
+      "inner_loss_before": [
+        6.769630666829152,
+        5.896140109897303
+      ],
+      "inner_loss_after": [
+        4.055627680964672,
+        1.4350448225132508
+      ],
+      "all_finite": true
+    }
+  ]
+}

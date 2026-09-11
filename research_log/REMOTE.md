@@ -46,3 +46,11 @@ Run script: scripts/run_t002_a6000.sh. Full receipts/checkpoints under remote ru
 Analysis SHA 6780de5ae44dcc89b9f1c45ea781f33dc16ffbaf; release 20260912-030919-tovd-t003.
 Run 20260912-030923-tovd-t003-a6000 exited 0 at 2026-09-12 03:10:33 +08:00. CPU/CUDA suites 30/30 each; all 1200 fixed P/B2 checkpoint/episode diagnoses completed. No active TOVD run remains.
 Source remains original T002 runs/20260912-023122-tovd-t002-a6000/artifacts/t002. New artifacts in runs/20260912-030923-tovd-t003-a6000/artifacts/t003; full local copy in research_log/remote_runs. Read project_state.md and latest report; wait for explicit next task.
+
+## T004 completed
+Runtime/screen SHA 9afe8df54c22d0a20b284d6b4b20aaab5b36ea9a; release 20260912-043213-tovd-t004-screen.
+Run 20260912-043224-tovd-t004-screen-a6000 exited 0 at 2026-09-12 04:34:08 +08.
+CPU/CUDA full suites 53 each. All 2400 diagnoses finite and paired with zero drift.
+Phase-1 gate selected none; no Phase 2, no active job. Full local receipts under research_log/remote_runs.
+Project state and T004 reports are the source of truth; do not rerun unchanged ACTIVE task.
+Initial deployment 20260912-043206-tovd-t004-screen failed SSH exit 255 before job launch; retry succeeded.

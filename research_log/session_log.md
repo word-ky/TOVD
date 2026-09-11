@@ -58,3 +58,9 @@ Details: research_log/t004/progress.md and coordination/CODEX_TO_CHATGPT.md.
 ## 2026-09-12 04:32 +08
 T004 frozen screen dispatched: run 20260912-043224-tovd-t004-screen-a6000,
 code 9afe8df; 53 local tests passed. One transient deploy SSH failure, successful retry.
+
+## 2026-09-12 T004 completion
+A6000 screen 20260912-043224-tovd-t004-screen-a6000 exit 0; 2400 diagnoses, source hashes match, zero O0 drift.
+Fixed gate rejected all three candidates: O1/O3 improve gradient direction but fail easy-regression limits; O2 hard worse.
+Phase 2 not run. Detailed evidence and limitations in research_log/t004/RESULTS.md and CODEX_TO_CHATGPT.md.
+Task VERIFIED; await lead review. Heartbeat active; no new task inferred from unchanged ACTIVE T004.

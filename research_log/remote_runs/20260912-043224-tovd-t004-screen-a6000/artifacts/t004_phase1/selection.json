@@ -1,0 +1,29 @@
+{
+  "preregistration_commit": "be0a11c",
+  "decisions": {
+    "O1": {
+      "hard_nll_gain_vs_O0": -0.0074887126684188825,
+      "hard_cosine_gain_vs_O0": 0.2620668119975986,
+      "easy_nll_harm_vs_O0": 2.8621282143673548,
+      "easy_accuracy_loss_pp_vs_O0": 35.41666666666667,
+      "eligible": false
+    },
+    "O2": {
+      "hard_nll_gain_vs_O0": -0.20474845260381697,
+      "hard_cosine_gain_vs_O0": -0.06757111936574801,
+      "easy_nll_harm_vs_O0": 0.22420633875609686,
+      "easy_accuracy_loss_pp_vs_O0": 4.583333333333339,
+      "eligible": false
+    },
+    "O3": {
+      "hard_nll_gain_vs_O0": -0.7330392021437486,
+      "hard_cosine_gain_vs_O0": 0.2390492000655892,
+      "easy_nll_harm_vs_O0": 3.237443443813051,
+      "easy_accuracy_loss_pp_vs_O0": 37.291666666666664,
+      "eligible": false
+    }
+  },
+  "selected": [],
+  "phase2_allowed": false,
+  "rule": "Hard NLL gain >=.02 OR cosine gain >=.05; easy NLL harm <=.10 AND accuracy loss <=5pp. Rank eligible by hard delta NLL then cosine."
+}

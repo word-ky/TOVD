@@ -56,10 +56,15 @@ def test_reset_permutation_label_free_and_meta_gradients(objective):
     model = EpisodicClassifier(objective, dim=8, hidden_dim=16).double().to(X.device)
     initial = {name: p.detach().clone() for name, p in model.named_parameters()}
     first = model(X, T, Q)
+    vocabulary_changed = model(X, -T, Q)
+    assert sum((first.fast_state[name] - vocabulary_changed.fast_state[name]).square().sum()
+               for name in first.fast_state) > 0
     model(-X, -T, -Q)
     repeated = model(X, T, Q)
     permuted = model(X, T.flip(1), Q)
     torch.testing.assert_close(first.tokens, repeated.tokens, rtol=0, atol=0)
+    for name in first.fast_state:
+        torch.testing.assert_close(first.fast_state[name], repeated.fast_state[name], rtol=0, atol=0)
     torch.testing.assert_close(first.tokens, permuted.tokens)
     first.tokens.square().mean().backward()
     for name, parameter in model.named_parameters():

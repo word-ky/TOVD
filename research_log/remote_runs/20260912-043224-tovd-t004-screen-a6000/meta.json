@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-043224-tovd-t004-screen-a6000",
+  "releaseId": "20260912-043213-tovd-t004-screen",
+  "sessionName": "autodl-20260912-043224-tovd-t004-screen-a6000",
+  "command": "export TOVD_SOURCE_REVISION=9afe8df54c22d0a20b284d6b4b20aaab5b36ea9a; bash scripts/run_t004_screen_a6000.sh"
+}
