@@ -91,3 +91,9 @@ NVML version mismatch observed remotely; PyTorch CUDA1 tensor computation works.
 ## 2026-09-12 06:51 +08 — T006 dispatch
 A6000GPU1 run20260912-065105-tovd-t006-a6000 active, code65299db, release20260912-065052-tovd-t006.
 Fixed3seed400x4 budget follows remote tests/initial-gradient receipt. NVML mismatch recorded; CUDA works.
+
+## 2026-09-12 T006 completion
+A6000GPU1 run20260912-065105-tovd-t006-a6000 exit0;3seeds400x4,75CPU/CUDA tests each.
+Rules1,2,4,5pass;Rule3fails. Fastpath improvesownW0 buthard34.625%is10ppbelowB2; recommendstop/reframebefore detector.
+Fullcheckpoints/results/probes/curves andequalityreceipts inresearch_log/t006 andremote_runs. NoT007 ornewtuning.
+ObservedNVMLwarningdidnotblockCUDA; source/controlnumericmatcheszero. Fetchtimeout recoveredbyworkflowlegacySCP.

@@ -1,0 +1,63 @@
+{
+  "rule1_validity": {
+    "finished_seeds": [
+      7,
+      17,
+      27
+    ],
+    "steps_per_seed": {
+      "7": 400,
+      "17": 400,
+      "27": 400
+    },
+    "training_nonfinite_steps": 0,
+    "training_armijo_violations": 0,
+    "test_armijo_violations": 0,
+    "test_nonfinite_elements": 0,
+    "control_max_metric_error": 0.0,
+    "control_stream_mismatches": 0,
+    "normal_output_max_error": 0.0,
+    "normal_state_max_error": 0.0,
+    "W0_only_metric_max_error": 0.0,
+    "training_runner_eval_max_error": 0.0,
+    "initial_tensor_max_error": 0.0,
+    "initial_meta_gradient_requirement_passes": true,
+    "passes": true
+  },
+  "rule2_fast_value": {
+    "hard_nll_delta": -0.11139690895875295,
+    "hard_accuracy_delta_pp": 4.708333333333334,
+    "nll_improving_seeds": 3,
+    "passes": true
+  },
+  "rule3_control_value": {
+    "accuracy_branch": {
+      "control": "B2",
+      "accuracy_gain_pp": -9.999999999999998,
+      "nll_gain": -0.09618439356486008,
+      "passes": false
+    },
+    "nll_branch": {
+      "control": "B0",
+      "accuracy_gain_pp": -7.708333333333334,
+      "nll_gain": -0.09839880277713142,
+      "passes": false
+    },
+    "passes": false
+  },
+  "rule4_easy_safety": {
+    "easy_nll_delta": -0.20993804924810927,
+    "easy_accuracy_delta_pp": 10.375,
+    "seed_robustness_flags": {},
+    "passes": true
+  },
+  "rule5_mechanism": {
+    "hard_cosine_gain_vs_original_O0": 0.3320747391809709,
+    "reset_state_max": 0.0,
+    "reset_output_max": 0.0,
+    "vocabulary_changes_state_all_seeds": true,
+    "passes": true
+  },
+  "recommendation": "Stop/reframe: the required fast-path and control gains do not both hold."
+}
+Source hashes match: True

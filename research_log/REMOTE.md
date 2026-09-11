@@ -62,3 +62,12 @@ CPU/CUDA suites70 each; 2400 records finite, zero O0/C0 drift, all source hashes
 C2 passes descent/task-useful rules; C1 fails full scale-rescue/task-useful rules. No training permitted without next task.
 Full original receipts retained under remote runs/<run-id>/artifacts/t005 and local research_log/remote_runs/<run-id>.
 No active TOVD run; another project occupied GPU0 and was left untouched.
+
+## T006 completed
+Tested65299db5f1127407f856872b732f2b2b7051383e; release20260912-065052-tovd-t006.
+Run20260912-065105-tovd-t006-a6000 exited0 at2026-09-12 06:56:11+08 on physicalGPU1.
+Three400x4seedruns completed, CPU/CUDA75tests each. All source/control/normalpath checks exact.
+Rules1/2/4/5pass;Rule3fails:hardadapted34.625%vsB2 44.625%. Awaitlead; no detector/T007.
+Fullreceipts under remote runs/<run-id>/artifacts/t006 and local research_log/remote_runs/<run-id>.
+NVML kernel/library mismatch noted; PyTorch CUDAworked and no globaldriver change made.
+One fetchtransporttimeout recovered by existing legacySCP retry. No activeTOVD job remains.

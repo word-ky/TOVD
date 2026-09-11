@@ -1,0 +1,57 @@
+[autodl] run_id=20260912-065105-tovd-t006-a6000
+[autodl] started_at=2026-09-12T06:51:08+08:00
+........................................................................ [ 96%]
+...                                                                      [100%]
+=============================== warnings summary ===============================
+tests/test_c2_experiment.py::test_complete_meta_experiment_reuses_controls_and_initial_state
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.MessageMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+tests/test_c2_experiment.py::test_complete_meta_experiment_reuses_controls_and_initial_state
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.ScalarMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+75 passed, 2 warnings in 5.36s
+........................................................................ [ 96%]
+...                                                                      [100%]
+=============================== warnings summary ===============================
+tests/test_c2_experiment.py::test_complete_meta_experiment_reuses_controls_and_initial_state
+  /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+    warnings.warn("Can't initialize NVML")
+
+tests/test_c2_experiment.py::test_complete_meta_experiment_reuses_controls_and_initial_state
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.MessageMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+tests/test_c2_experiment.py::test_complete_meta_experiment_reuses_controls_and_initial_state
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.ScalarMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+75 passed, 3 warnings in 13.14s
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+PRETRAIN_GRADIENT {"by_epsilon": {"1e-05": {"count": 60, "switch_count": 0, "switch_fraction": 0.0, "stable_count": 60, "stable_disagreements": 0, "stable_max_absolute_error": 7.558567660659321e-11}, "0.001": {"count": 60, "switch_count": 0, "switch_fraction": 0.0, "stable_count": 60, "stable_disagreements": 0, "stable_max_absolute_error": 4.678800813451289e-08}, "0.01": {"count": 60, "switch_count": 0, "switch_fraction": 0.0, "stable_count": 60, "stable_disagreements": 1, "stable_max_absolute_error": 4.678771782451463e-06}, "0.1": {"count": 60, "switch_count": 1, "switch_fraction": 0.016666666666666666, "stable_count": 59, "stable_disagreements": 33, "stable_max_absolute_error": 0.00046770811048446603}}, "pretraining_gradient_requirement_passes": true}
+seed=7 method=P_C2_meta step=1 loss=1.670236
+seed=7 method=P_C2_meta step=100 loss=1.010779
+seed=7 method=P_C2_meta step=200 loss=1.076175
+seed=7 method=P_C2_meta step=300 loss=0.848456
+seed=7 method=P_C2_meta step=400 loss=0.633483
+RESULT seed=7 method=P_C2_meta easy=0.7712 hard=0.3613
+seed=17 method=P_C2_meta step=1 loss=1.218322
+seed=17 method=P_C2_meta step=100 loss=2.047902
+seed=17 method=P_C2_meta step=200 loss=1.336918
+seed=17 method=P_C2_meta step=300 loss=0.799377
+seed=17 method=P_C2_meta step=400 loss=0.763902
+RESULT seed=17 method=P_C2_meta easy=0.7925 hard=0.3600
+seed=27 method=P_C2_meta step=1 loss=2.273752
+seed=27 method=P_C2_meta step=100 loss=1.388253
+seed=27 method=P_C2_meta step=200 loss=1.354915
+seed=27 method=P_C2_meta step=300 loss=0.745395
+seed=27 method=P_C2_meta step=400 loss=0.777379
+RESULT seed=27 method=P_C2_meta easy=0.6475 hard=0.3175
+DIAGNOSTICS seed=7 regime=easy episodes=100
+DIAGNOSTICS seed=7 regime=hard episodes=100
+DIAGNOSTICS seed=17 regime=easy episodes=100
+DIAGNOSTICS seed=17 regime=hard episodes=100
+DIAGNOSTICS seed=27 regime=easy episodes=100
+DIAGNOSTICS seed=27 regime=hard episodes=100
+[autodl] finished_at=2026-09-12T06:56:11+08:00
+[autodl] exit_code=0

@@ -1,0 +1,3765 @@
+{
+  "phase": "initial",
+  "dtype": "float64",
+  "device": "cuda",
+  "parameter": "memory.fast_model.output.weight",
+  "epsilons": [
+    1e-05,
+    0.001,
+    0.01,
+    0.1
+  ],
+  "probe_training_episodes_per_seed": 20,
+  "summary": {
+    "by_epsilon": {
+      "1e-05": {
+        "count": 60,
+        "switch_count": 0,
+        "switch_fraction": 0.0,
+        "stable_count": 60,
+        "stable_disagreements": 0,
+        "stable_max_absolute_error": 7.558567660659321e-11
+      },
+      "0.001": {
+        "count": 60,
+        "switch_count": 0,
+        "switch_fraction": 0.0,
+        "stable_count": 60,
+        "stable_disagreements": 0,
+        "stable_max_absolute_error": 4.678800813451289e-08
+      },
+      "0.01": {
+        "count": 60,
+        "switch_count": 0,
+        "switch_fraction": 0.0,
+        "stable_count": 60,
+        "stable_disagreements": 1,
+        "stable_max_absolute_error": 4.678771782451463e-06
+      },
+      "0.1": {
+        "count": 60,
+        "switch_count": 1,
+        "switch_fraction": 0.016666666666666666,
+        "stable_count": 59,
+        "stable_disagreements": 33,
+        "stable_max_absolute_error": 0.00046770811048446603
+      }
+    },
+    "pretraining_gradient_requirement_passes": true
+  },
+  "per_seed": {
+    "7": {
+      "by_epsilon": {
+        "1e-05": {
+          "count": 20,
+          "switch_count": 0,
+          "switch_fraction": 0.0,
+          "stable_count": 20,
+          "stable_disagreements": 0,
+          "stable_max_absolute_error": 5.896200888644287e-11
+        },
+        "0.001": {
+          "count": 20,
+          "switch_count": 0,
+          "switch_fraction": 0.0,
+          "stable_count": 20,
+          "stable_disagreements": 0,
+          "stable_max_absolute_error": 2.376190116892829e-08
+        },
+        "0.01": {
+          "count": 20,
+          "switch_count": 0,
+          "switch_fraction": 0.0,
+          "stable_count": 20,
+          "stable_disagreements": 0,
+          "stable_max_absolute_error": 2.3761840693414804e-06
+        },
+        "0.1": {
+          "count": 20,
+          "switch_count": 0,
+          "switch_fraction": 0.0,
+          "stable_count": 20,
+          "stable_disagreements": 9,
+          "stable_max_absolute_error": 0.0002375437211042386
+        }
+      },
+      "pretraining_gradient_requirement_passes": true
+    },
+    "17": {
+      "by_epsilon": {
+        "1e-05": {
+          "count": 20,
+          "switch_count": 0,
+          "switch_fraction": 0.0,
+          "stable_count": 20,
+          "stable_disagreements": 0,
+          "stable_max_absolute_error": 7.558567660659321e-11
+        },
+        "0.001": {
+          "count": 20,
+          "switch_count": 0,
+          "switch_fraction": 0.0,
+          "stable_count": 20,
+          "stable_disagreements": 0,
+          "stable_max_absolute_error": 4.678800813451289e-08
+        },
+        "0.01": {
+          "count": 20,
+          "switch_count": 0,
+          "switch_fraction": 0.0,
+          "stable_count": 20,
+          "stable_disagreements": 0,
+          "stable_max_absolute_error": 4.678771782451463e-06
+        },
+        "0.1": {
+          "count": 20,
+          "switch_count": 1,
+          "switch_fraction": 0.05,
+          "stable_count": 19,
+          "stable_disagreements": 12,
+          "stable_max_absolute_error": 0.00046770811048446603
+        }
+      },
+      "pretraining_gradient_requirement_passes": true
+    },
+    "27": {
+      "by_epsilon": {
+        "1e-05": {
+          "count": 20,
+          "switch_count": 0,
+          "switch_fraction": 0.0,
+          "stable_count": 20,
+          "stable_disagreements": 0,
+          "stable_max_absolute_error": 3.510061685751964e-11
+        },
+        "0.001": {
+          "count": 20,
+          "switch_count": 0,
+          "switch_fraction": 0.0,
+          "stable_count": 20,
+          "stable_disagreements": 0,
+          "stable_max_absolute_error": 1.5082921411835315e-08
+        },
+        "0.01": {
+          "count": 20,
+          "switch_count": 0,
+          "switch_fraction": 0.0,
+          "stable_count": 20,
+          "stable_disagreements": 1,
+          "stable_max_absolute_error": 1.5082499336682709e-06
+        },
+        "0.1": {
+          "count": 20,
+          "switch_count": 0,
+          "switch_fraction": 0.0,
+          "stable_count": 20,
+          "stable_disagreements": 12,
+          "stable_max_absolute_error": 0.00015072074682082048
+        }
+      },
+      "pretraining_gradient_requirement_passes": true
+    }
+  },
+  "records": [
+    {
+      "seed": 7,
+      "index": 0,
+      "regime": "easy",
+      "episode_seed": 10070000,
+      "outer_loss": 1.4956560685153928,
+      "outer_gradient_norms": {
+        "W0": 15.285982343590229,
+        "key": 0.4194631553134014,
+        "query": 0.7508261135691044
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.1842207034558873,
+          "central_difference": -0.1842207034807863,
+          "absolute_error": 2.4898999528844e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.1842207034558873,
+          "central_difference": -0.1842206983387884,
+          "absolute_error": 5.117098911266993e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.1842207034558873,
+          "central_difference": -0.18422019174946236,
+          "absolute_error": 5.117064249549053e-07,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.1842207034558873,
+          "central_difference": -0.1841695253021336,
+          "absolute_error": 5.117815375371704e-05,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "index": 1,
+      "regime": "hard",
+      "episode_seed": 10070001,
+      "outer_loss": 1.4930472227330818,
+      "outer_gradient_norms": {
+        "W0": 2.5321120629837437,
+        "key": 0.07277942567449865,
+        "query": 0.28391799908070176
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.01792151016890889,
+          "central_difference": -0.01792151015367338,
+          "absolute_error": 1.5235507300204176e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.01792151016890889,
+          "central_difference": -0.0179215100417629,
+          "absolute_error": 1.2714598818241996e-10,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.01792151016890889,
+          "central_difference": -0.017921497446427015,
+          "absolute_error": 1.272248187356162e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.01792151016890889,
+          "central_difference": -0.017920238013688916,
+          "absolute_error": 1.2721552199723707e-06,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "index": 2,
+      "regime": "easy",
+      "episode_seed": 10070002,
+      "outer_loss": 2.542698456509254,
+      "outer_gradient_norms": {
+        "W0": 45.45593817637009,
+        "key": 1.8080356737191736,
+        "query": 1.1642429249561839
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.025,
+          "plus_eta": 0.025,
+          "minus_eta": 0.025,
+          "eta_switch": false,
+          "analytic_derivative": -0.4805706090722704,
+          "central_difference": -0.4805706090627026,
+          "absolute_error": 9.567791003917137e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.025,
+          "plus_eta": 0.025,
+          "minus_eta": 0.025,
+          "eta_switch": false,
+          "analytic_derivative": -0.4805706090722704,
+          "central_difference": -0.4805705853103692,
+          "absolute_error": 2.376190116892829e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.025,
+          "plus_eta": 0.025,
+          "minus_eta": 0.025,
+          "eta_switch": false,
+          "analytic_derivative": -0.4805706090722704,
+          "central_difference": -0.48056823288820105,
+          "absolute_error": 2.3761840693414804e-06,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.025,
+          "plus_eta": 0.025,
+          "minus_eta": 0.025,
+          "eta_switch": false,
+          "analytic_derivative": -0.4805706090722704,
+          "central_difference": -0.48033306535116616,
+          "absolute_error": 0.0002375437211042386,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "index": 3,
+      "regime": "hard",
+      "episode_seed": 10070003,
+      "outer_loss": 1.1495389801226223,
+      "outer_gradient_norms": {
+        "W0": 1.4782943642608686,
+        "key": 0.010402111479589157,
+        "query": 0.16460039036180668
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.028375740444007758,
+          "central_difference": -0.028375740446229255,
+          "absolute_error": 2.221497291676755e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.028375740444007758,
+          "central_difference": -0.0283757401975393,
+          "absolute_error": 2.4646845675491136e-10,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.028375740444007758,
+          "central_difference": -0.028375715804263013,
+          "absolute_error": 2.4639744744536785e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.028375740444007758,
+          "central_difference": -0.028373276961405347,
+          "absolute_error": 2.4634826024105827e-06,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "index": 4,
+      "regime": "easy",
+      "episode_seed": 10070004,
+      "outer_loss": 5.10385716253754,
+      "outer_gradient_norms": {
+        "W0": 21.024950541475857,
+        "key": 0.8484759409161842,
+        "query": 1.4492467531969038
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": 0.051143026272968684,
+          "central_difference": 0.051143026214006675,
+          "absolute_error": 5.896200888644287e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": 0.051143026272968684,
+          "central_difference": 0.05114302589515063,
+          "absolute_error": 3.7781805461989393e-10,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": 0.051143026272968684,
+          "central_difference": 0.051142988522334676,
+          "absolute_error": 3.775063400768275e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": 0.051143026272968684,
+          "central_difference": 0.0511392544969258,
+          "absolute_error": 3.7717760428823688e-06,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "index": 5,
+      "regime": "hard",
+      "episode_seed": 10070005,
+      "outer_loss": 1.9439222030405787,
+      "outer_gradient_norms": {
+        "W0": 3.9183518141505207,
+        "key": 0.06603624297078647,
+        "query": 0.32695134759548816
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.000835479079960252,
+          "central_difference": 0.000835479063709954,
+          "absolute_error": 1.6250298090665638e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.000835479079960252,
+          "central_difference": 0.0008354787696118748,
+          "absolute_error": 3.103483772054494e-10,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.000835479079960252,
+          "central_difference": 0.0008354480661165731,
+          "absolute_error": 3.101384367897031e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.000835479079960252,
+          "central_difference": 0.0008323785877939471,
+          "absolute_error": 3.1004921663049106e-06,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "index": 6,
+      "regime": "easy",
+      "episode_seed": 10070006,
+      "outer_loss": 4.311092893084927,
+      "outer_gradient_norms": {
+        "W0": 31.390662702950806,
+        "key": 1.5541558196149154,
+        "query": 1.201339486999219
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.025,
+          "plus_eta": 0.025,
+          "minus_eta": 0.025,
+          "eta_switch": false,
+          "analytic_derivative": 0.4302486208587736,
+          "central_difference": 0.43024862086404875,
+          "absolute_error": 5.2751691903552e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.025,
+          "plus_eta": 0.025,
+          "minus_eta": 0.025,
+          "eta_switch": false,
+          "analytic_derivative": 0.4302486208587736,
+          "central_difference": 0.4302486420773022,
+          "absolute_error": 2.1218528600819297e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.025,
+          "plus_eta": 0.025,
+          "minus_eta": 0.025,
+          "eta_switch": false,
+          "analytic_derivative": 0.4302486208587736,
+          "central_difference": 0.43025074268330243,
+          "absolute_error": 2.121824528855676e-06,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.025,
+          "plus_eta": 0.025,
+          "minus_eta": 0.025,
+          "eta_switch": false,
+          "analytic_derivative": 0.4302486208587736,
+          "central_difference": 0.4304605019594199,
+          "absolute_error": 0.00021188110064629395,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "index": 7,
+      "regime": "hard",
+      "episode_seed": 10070007,
+      "outer_loss": 1.3972324760313115,
+      "outer_gradient_norms": {
+        "W0": 2.256107780594615,
+        "key": 0.04646792219496081,
+        "query": 0.3575352900475067
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.04369547768860131,
+          "central_difference": 0.04369547770277648,
+          "absolute_error": 1.4175167983854209e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.04369547768860131,
+          "central_difference": 0.04369547763705128,
+          "absolute_error": 5.1550028135061154e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.04369547768860131,
+          "central_difference": 0.0436954725222094,
+          "absolute_error": 5.166391911504142e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.04369547768860131,
+          "central_difference": 0.0436949610522841,
+          "absolute_error": 5.166363172132149e-07,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "index": 8,
+      "regime": "easy",
+      "episode_seed": 10070008,
+      "outer_loss": 3.0868591590916497,
+      "outer_gradient_norms": {
+        "W0": 33.6443492887449,
+        "key": 0.8663547706321354,
+        "query": 1.2645758447930755
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.025,
+          "plus_eta": 0.025,
+          "minus_eta": 0.025,
+          "eta_switch": false,
+          "analytic_derivative": -0.16057798665230172,
+          "central_difference": -0.16057798666313516,
+          "absolute_error": 1.0833445251989815e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.025,
+          "plus_eta": 0.025,
+          "minus_eta": 0.025,
+          "eta_switch": false,
+          "analytic_derivative": -0.16057798665230172,
+          "central_difference": -0.16057798787771915,
+          "absolute_error": 1.225417434191911e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.025,
+          "plus_eta": 0.025,
+          "minus_eta": 0.025,
+          "eta_switch": false,
+          "analytic_derivative": -0.16057798665230172,
+          "central_difference": -0.16057810920027116,
+          "absolute_error": 1.225479694388909e-07,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.025,
+          "plus_eta": 0.025,
+          "minus_eta": 0.025,
+          "eta_switch": false,
+          "analytic_derivative": -0.16057798665230172,
+          "central_difference": -0.16059023736793243,
+          "absolute_error": 1.2250715630712783e-05,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "index": 9,
+      "regime": "hard",
+      "episode_seed": 10070009,
+      "outer_loss": 1.8518013999237992,
+      "outer_gradient_norms": {
+        "W0": 3.602940649031073,
+        "key": 0.12477607580431284,
+        "query": 0.4408139594270084
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.019381310498462357,
+          "central_difference": -0.01938131047873881,
+          "absolute_error": 1.97235457133349e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.019381310498462357,
+          "central_difference": -0.019381310468857826,
+          "absolute_error": 2.9604530632498793e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.019381310498462357,
+          "central_difference": -0.01938130754598477,
+          "absolute_error": 2.952477585332902e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.019381310498462357,
+          "central_difference": -0.019381015202251106,
+          "absolute_error": 2.9529621125082284e-07,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "index": 10,
+      "regime": "easy",
+      "episode_seed": 10070010,
+      "outer_loss": 6.269633144206457,
+      "outer_gradient_norms": {
+        "W0": 44.342362443157484,
+        "key": 1.5970878534458437,
+        "query": 1.1990592398121482
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.6728106255544087,
+          "central_difference": -0.672810625568232,
+          "absolute_error": 1.3823275857305362e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.6728106255544087,
+          "central_difference": -0.6728106216380425,
+          "absolute_error": 3.916366231315749e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.6728106255544087,
+          "central_difference": -0.6728102337892672,
+          "absolute_error": 3.9176514154970477e-07,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.6728106255544087,
+          "central_difference": -0.6727714504768434,
+          "absolute_error": 3.917507756534544e-05,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "index": 11,
+      "regime": "hard",
+      "episode_seed": 10070011,
+      "outer_loss": 1.2461776494340444,
+      "outer_gradient_norms": {
+        "W0": 2.1909648597525835,
+        "key": 0.10185306501066381,
+        "query": 0.2466865326200799
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.003130358412799607,
+          "central_difference": 0.003130358416925105,
+          "absolute_error": 4.125497686524593e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.003130358412799607,
+          "central_difference": 0.0031303583516439915,
+          "absolute_error": 6.115561572775374e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.003130358412799607,
+          "central_difference": 0.0031303522772141434,
+          "absolute_error": 6.13558546374085e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.003130358412799607,
+          "central_difference": 0.003129744923654476,
+          "absolute_error": 6.13489145131086e-07,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "index": 12,
+      "regime": "easy",
+      "episode_seed": 10070012,
+      "outer_loss": 1.4728756237406937,
+      "outer_gradient_norms": {
+        "W0": 22.09070249913186,
+        "key": 0.8297356276478272,
+        "query": 0.5945593463057274
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.06293564714978939,
+          "central_difference": -0.06293564714932032,
+          "absolute_error": 4.690692279041286e-13,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.06293564714978939,
+          "central_difference": -0.06293564678716557,
+          "absolute_error": 3.626238198606302e-10,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.06293564714978939,
+          "central_difference": -0.06293561087613586,
+          "absolute_error": 3.6273653525320526e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.06293564714978939,
+          "central_difference": -0.06293201886427013,
+          "absolute_error": 3.6282855192526497e-06,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "index": 13,
+      "regime": "hard",
+      "episode_seed": 10070013,
+      "outer_loss": 1.701837747860233,
+      "outer_gradient_norms": {
+        "W0": 2.0562853157816874,
+        "key": 0.03737510698269043,
+        "query": 0.18453644764691837
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.024425961578946668,
+          "central_difference": -0.02442596157559151,
+          "absolute_error": 3.3551564304623582e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.024425961578946668,
+          "central_difference": -0.024425961516749695,
+          "absolute_error": 6.21969732661487e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.024425961578946668,
+          "central_difference": -0.024425955356088824,
+          "absolute_error": 6.222857843601881e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.024425961578946668,
+          "central_difference": -0.024425339253150158,
+          "absolute_error": 6.223257965100315e-07,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "index": 14,
+      "regime": "easy",
+      "episode_seed": 10070014,
+      "outer_loss": 6.421580013080891,
+      "outer_gradient_norms": {
+        "W0": 17.409827458168657,
+        "key": 0.3166472978710311,
+        "query": 0.46343114871826907
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.20848801988494042,
+          "central_difference": -0.2084880199149097,
+          "absolute_error": 2.996927706000463e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.20848801988494042,
+          "central_difference": -0.2084880114252563,
+          "absolute_error": 8.459684119888067e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.20848801988494042,
+          "central_difference": -0.20848717386630078,
+          "absolute_error": 8.460186396441749e-07,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.20848801988494042,
+          "central_difference": -0.2084034211089092,
+          "absolute_error": 8.459877603123056e-05,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "index": 15,
+      "regime": "hard",
+      "episode_seed": 10070015,
+      "outer_loss": 1.5006524147698295,
+      "outer_gradient_norms": {
+        "W0": 2.226354789660835,
+        "key": 0.1269737787314214,
+        "query": 0.2839974996560545
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.015991414465330707,
+          "central_difference": 0.015991414459293196,
+          "absolute_error": 6.037510769107968e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.015991414465330707,
+          "central_difference": 0.01599141431007922,
+          "absolute_error": 1.55251485278729e-10,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.015991414465330707,
+          "central_difference": 0.015991398942716284,
+          "absolute_error": 1.5522614423002512e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.015991414465330707,
+          "central_difference": 0.015989862410681344,
+          "absolute_error": 1.5520546493633103e-06,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "index": 16,
+      "regime": "easy",
+      "episode_seed": 10070016,
+      "outer_loss": 0.869863146507357,
+      "outer_gradient_norms": {
+        "W0": 3.8059177840937095,
+        "key": 0.02511773475271372,
+        "query": 0.6022903294616493
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": 0.028344942895535512,
+          "central_difference": 0.02834494289838396,
+          "absolute_error": 2.848447172576485e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": 0.028344942895535512,
+          "central_difference": 0.028344940729119195,
+          "absolute_error": 2.16641631717307e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": 0.028344942895535512,
+          "central_difference": 0.028344726257056863,
+          "absolute_error": 2.166384786492226e-07,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": 0.028344942895535512,
+          "central_difference": 0.028323289508246363,
+          "absolute_error": 2.1653387289148618e-05,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "index": 17,
+      "regime": "hard",
+      "episode_seed": 10070017,
+      "outer_loss": 1.3153141586564052,
+      "outer_gradient_norms": {
+        "W0": 2.048171556879136,
+        "key": 0.04819881871800646,
+        "query": 0.19790551313849455
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.10239776543494197,
+          "central_difference": 0.10239776543352617,
+          "absolute_error": 1.415798034365423e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.10239776543494197,
+          "central_difference": 0.10239776476528295,
+          "absolute_error": 6.696590226784593e-10,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.10239776543494197,
+          "central_difference": 0.10239769846923652,
+          "absolute_error": 6.696570545305924e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.10239776543494197,
+          "central_difference": 0.10239106960721167,
+          "absolute_error": 6.695827730301973e-06,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "index": 18,
+      "regime": "easy",
+      "episode_seed": 10070018,
+      "outer_loss": 2.355332717044026,
+      "outer_gradient_norms": {
+        "W0": 6.676043273755885,
+        "key": 0.3114739051610966,
+        "query": 0.8765749965628243
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.10878231129677514,
+          "central_difference": -0.10878231133659709,
+          "absolute_error": 3.982195129204058e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.10878231129677514,
+          "central_difference": -0.10878230976540948,
+          "absolute_error": 1.5313656592796931e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.10878231129677514,
+          "central_difference": -0.10878215815679493,
+          "absolute_error": 1.5313998021071473e-07,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.10878231129677514,
+          "central_difference": -0.1087669987108808,
+          "absolute_error": 1.5312585894336483e-05,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "index": 19,
+      "regime": "hard",
+      "episode_seed": 10070019,
+      "outer_loss": 2.113387537143223,
+      "outer_gradient_norms": {
+        "W0": 7.066499127342005,
+        "key": 0.08135238823239835,
+        "query": 0.5479704721400379
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.009456927848774686,
+          "central_difference": -0.00945692784082297,
+          "absolute_error": 7.951715674803239e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.009456927848774686,
+          "central_difference": -0.009456927693829442,
+          "absolute_error": 1.5494524413517397e-10,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.009456927848774686,
+          "central_difference": -0.009456912360250591,
+          "absolute_error": 1.5488524095219613e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.009456927848774686,
+          "central_difference": -0.009455379155784982,
+          "absolute_error": 1.5486929897043367e-06,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "index": 0,
+      "regime": "easy",
+      "episode_seed": 10170000,
+      "outer_loss": 1.4290010411675365,
+      "outer_gradient_norms": {
+        "W0": 9.49151286642154,
+        "key": 0.2909179189180244,
+        "query": 1.0943803223357802
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.00625,
+          "plus_eta": 0.00625,
+          "minus_eta": 0.00625,
+          "eta_switch": false,
+          "analytic_derivative": 0.174196066819621,
+          "central_difference": 0.17419606682667063,
+          "absolute_error": 7.049638650613588e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.00625,
+          "plus_eta": 0.00625,
+          "minus_eta": 0.00625,
+          "eta_switch": false,
+          "analytic_derivative": 0.174196066819621,
+          "central_difference": 0.17419606013280298,
+          "absolute_error": 6.686818015966267e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.00625,
+          "plus_eta": 0.00625,
+          "minus_eta": 0.00625,
+          "eta_switch": false,
+          "analytic_derivative": 0.174196066819621,
+          "central_difference": 0.1741953981491018,
+          "absolute_error": 6.686705192049391e-07,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.00625,
+          "plus_eta": 0.00625,
+          "minus_eta": 0.00625,
+          "eta_switch": false,
+          "analytic_derivative": 0.174196066819621,
+          "central_difference": 0.17412923110260103,
+          "absolute_error": 6.68357170199585e-05,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "index": 1,
+      "regime": "hard",
+      "episode_seed": 10170001,
+      "outer_loss": 1.252205669911215,
+      "outer_gradient_norms": {
+        "W0": 2.097881082976623,
+        "key": 0.06450491978102553,
+        "query": 0.20433669008656064
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.050183215923271476,
+          "central_difference": -0.05018321589389529,
+          "absolute_error": 2.9376188981355966e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.050183215923271476,
+          "central_difference": -0.05018321537575421,
+          "absolute_error": 5.475172676350226e-10,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.050183215923271476,
+          "central_difference": -0.050183161156891476,
+          "absolute_error": 5.4766380000459414e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.050183215923271476,
+          "central_difference": -0.05017774113004747,
+          "absolute_error": 5.474793224005681e-06,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "index": 2,
+      "regime": "easy",
+      "episode_seed": 10170002,
+      "outer_loss": 0.7021587922900246,
+      "outer_gradient_norms": {
+        "W0": 4.405969794512261,
+        "key": 0.1484808554820406,
+        "query": 0.7387611433968354
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": 0.04635253382182363,
+          "central_difference": 0.046352533822346935,
+          "absolute_error": 5.233036226570675e-13,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": 0.04635253382182363,
+          "central_difference": 0.04635253378598714,
+          "absolute_error": 3.5836493494922905e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": 0.04635253382182363,
+          "central_difference": 0.04635253023189678,
+          "absolute_error": 3.589926848845959e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": 0.04635253382182363,
+          "central_difference": 0.046352173769642624,
+          "absolute_error": 3.6005218100737535e-07,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "index": 3,
+      "regime": "hard",
+      "episode_seed": 10170003,
+      "outer_loss": 1.4899204542845241,
+      "outer_gradient_norms": {
+        "W0": 3.181665772184925,
+        "key": 0.37510142577630395,
+        "query": 0.6394892052823463
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.029259646788087228,
+          "central_difference": 0.029259646794344004,
+          "absolute_error": 6.256776347024484e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.029259646788087228,
+          "central_difference": 0.02925964523359248,
+          "absolute_error": 1.5544947482015736e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.029259646788087228,
+          "central_difference": 0.029259491333710752,
+          "absolute_error": 1.5545437647562776e-07,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.029259646788087228,
+          "central_difference": 0.029244106184600493,
+          "absolute_error": 1.5540603486734195e-05,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "index": 4,
+      "regime": "easy",
+      "episode_seed": 10170004,
+      "outer_loss": 2.582783071204973,
+      "outer_gradient_norms": {
+        "W0": 17.570293094300403,
+        "key": 0.4029029760420243,
+        "query": 0.7918443125959257
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.2765025009923237,
+          "central_difference": -0.27650250100652585,
+          "absolute_error": 1.4202139464458696e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.2765025009923237,
+          "central_difference": -0.27650249607980015,
+          "absolute_error": 4.912523554612136e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.2765025009923237,
+          "central_difference": -0.27650200975022354,
+          "absolute_error": 4.912421001646017e-07,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.2765025009923237,
+          "central_difference": -0.2764533677683545,
+          "absolute_error": 4.913322396921105e-05,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "index": 5,
+      "regime": "hard",
+      "episode_seed": 10170005,
+      "outer_loss": 2.170750327733517,
+      "outer_gradient_norms": {
+        "W0": 6.517196352662176,
+        "key": 0.08390711651857391,
+        "query": 0.3783246660917322
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.08508024236452702,
+          "central_difference": 0.08508024236242305,
+          "absolute_error": 2.1039697761793263e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.08508024236452702,
+          "central_difference": 0.08508024160680527,
+          "absolute_error": 7.577217464582731e-10,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.08508024236452702,
+          "central_difference": 0.08508016658377304,
+          "absolute_error": 7.578075397751682e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.08508024236452702,
+          "central_difference": 0.08507266449151007,
+          "absolute_error": 7.577873016945125e-06,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "index": 6,
+      "regime": "easy",
+      "episode_seed": 10170006,
+      "outer_loss": 5.667262955044191,
+      "outer_gradient_norms": {
+        "W0": 44.225974880467874,
+        "key": 1.7337452801898663,
+        "query": 1.6498279364248298
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": 0.32585896958174887,
+          "central_difference": 0.32585896958536864,
+          "absolute_error": 3.6197711494878604e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": 0.32585896958174887,
+          "central_difference": 0.32585897077064274,
+          "absolute_error": 1.188893872239305e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": 0.32585896958174887,
+          "central_difference": 0.32585908848465905,
+          "absolute_error": 1.1890291018445964e-07,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": 0.32585896958174887,
+          "central_difference": 0.32587090923495765,
+          "absolute_error": 1.1939653208781209e-05,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "index": 7,
+      "regime": "hard",
+      "episode_seed": 10170007,
+      "outer_loss": 1.4439151742766176,
+      "outer_gradient_norms": {
+        "W0": 1.3346591950753195,
+        "key": 0.27445316886834276,
+        "query": 0.5993005568739216
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.02124505913698955,
+          "central_difference": 0.02124505912304286,
+          "absolute_error": 1.3946687554833304e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.02124505913698955,
+          "central_difference": 0.021245059028451863,
+          "absolute_error": 1.0853768578344969e-10,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.02124505913698955,
+          "central_difference": 0.02124504827196727,
+          "absolute_error": 1.0865022277706249e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.02124505913698955,
+          "central_difference": 0.021243972625484275,
+          "absolute_error": 1.0865115052730023e-06,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "index": 8,
+      "regime": "easy",
+      "episode_seed": 10170008,
+      "outer_loss": 0.5387652498867914,
+      "outer_gradient_norms": {
+        "W0": 3.422595108112699,
+        "key": 0.04350594949215857,
+        "query": 0.7010312330281829
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.025,
+          "plus_eta": 0.025,
+          "minus_eta": 0.025,
+          "eta_switch": false,
+          "analytic_derivative": 0.023052959281826005,
+          "central_difference": 0.02305295928040074,
+          "absolute_error": 1.4252661550973045e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.025,
+          "plus_eta": 0.025,
+          "minus_eta": 0.025,
+          "eta_switch": false,
+          "analytic_derivative": 0.023052959281826005,
+          "central_difference": 0.023052955039792877,
+          "absolute_error": 4.242033127543898e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.025,
+          "plus_eta": 0.025,
+          "minus_eta": 0.025,
+          "eta_switch": false,
+          "analytic_derivative": 0.023052959281826005,
+          "central_difference": 0.023052535079676195,
+          "absolute_error": 4.242021498096493e-07,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.025,
+          "plus_eta": 0.025,
+          "minus_eta": 0.05,
+          "eta_switch": true,
+          "analytic_derivative": 0.023052959281826005,
+          "central_difference": -0.01814325573085751,
+          "absolute_error": 0.041196215012683515,
+          "stable_region_agreement": null
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "index": 9,
+      "regime": "hard",
+      "episode_seed": 10170009,
+      "outer_loss": 1.7013086908367174,
+      "outer_gradient_norms": {
+        "W0": 3.3736999973488806,
+        "key": 0.05187585741193701,
+        "query": 0.19261551887351655
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.0011723863055488806,
+          "central_difference": 0.0011723863213575214,
+          "absolute_error": 1.5808640854708678e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.0011723863055488806,
+          "central_difference": 0.0011723858661660813,
+          "absolute_error": 4.393827992416055e-10,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.0011723863055488806,
+          "central_difference": 0.0011723423835485747,
+          "absolute_error": 4.3922000305882114e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.0011723863055488806,
+          "central_difference": 0.0011679950952847573,
+          "absolute_error": 4.391210264123244e-06,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "index": 10,
+      "regime": "easy",
+      "episode_seed": 10170010,
+      "outer_loss": 8.345020036928625,
+      "outer_gradient_norms": {
+        "W0": 21.76039743801075,
+        "key": 0.3439393334300609,
+        "query": 1.2089563169448632
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.025,
+          "plus_eta": 0.025,
+          "minus_eta": 0.025,
+          "eta_switch": false,
+          "analytic_derivative": 0.07425127817937308,
+          "central_difference": 0.0742512781037874,
+          "absolute_error": 7.558567660659321e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.025,
+          "plus_eta": 0.025,
+          "minus_eta": 0.025,
+          "eta_switch": false,
+          "analytic_derivative": 0.07425127817937308,
+          "central_difference": 0.07425127192117742,
+          "absolute_error": 6.258195656139165e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.025,
+          "plus_eta": 0.025,
+          "minus_eta": 0.025,
+          "eta_switch": false,
+          "analytic_derivative": 0.07425127817937308,
+          "central_difference": 0.07425065234736294,
+          "absolute_error": 6.258320101315551e-07,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.025,
+          "plus_eta": 0.025,
+          "minus_eta": 0.025,
+          "eta_switch": false,
+          "analytic_derivative": 0.07425127817937308,
+          "central_difference": 0.07418869821240293,
+          "absolute_error": 6.257996697014989e-05,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "index": 11,
+      "regime": "hard",
+      "episode_seed": 10170011,
+      "outer_loss": 1.3201472183727312,
+      "outer_gradient_norms": {
+        "W0": 2.317901477030898,
+        "key": 0.12120408917483073,
+        "query": 0.24911125717293614
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.009806059980405436,
+          "central_difference": -0.0098060599529326,
+          "absolute_error": 2.7472836505726406e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.009806059980405436,
+          "central_difference": -0.009806059936279254,
+          "absolute_error": 4.4126181875103754e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.009806059980405436,
+          "central_difference": -0.009806055578220896,
+          "absolute_error": 4.402184540508447e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.009806059980405436,
+          "central_difference": -0.009805619763887385,
+          "absolute_error": 4.4021651805087325e-07,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "index": 12,
+      "regime": "easy",
+      "episode_seed": 10170012,
+      "outer_loss": 5.024269289143364,
+      "outer_gradient_norms": {
+        "W0": 88.7060593391414,
+        "key": 3.8117933704489526,
+        "query": 1.166435920151418
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 1.1626586710723377,
+          "central_difference": 1.1626586710278275,
+          "absolute_error": 4.4510173324852076e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 1.1626586710723377,
+          "central_difference": 1.1626586242843295,
+          "absolute_error": 4.678800813451289e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 1.1626586710723377,
+          "central_difference": 1.1626539923005552,
+          "absolute_error": 4.678771782451463e-06,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 1.1626586710723377,
+          "central_difference": 1.1621909629618532,
+          "absolute_error": 0.00046770811048446603,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "index": 13,
+      "regime": "hard",
+      "episode_seed": 10170013,
+      "outer_loss": 1.0615153572156744,
+      "outer_gradient_norms": {
+        "W0": 4.8918511932530535,
+        "key": 0.08805007237463805,
+        "query": 0.30534389166994763
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.018371597359388078,
+          "central_difference": -0.01837159736561844,
+          "absolute_error": 6.230363447379261e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.018371597359388078,
+          "central_difference": -0.01837159604678451,
+          "absolute_error": 1.3126035675048442e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.018371597359388078,
+          "central_difference": -0.0183714660883183,
+          "absolute_error": 1.312710697781716e-07,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.018371597359388078,
+          "central_difference": -0.0183584685803162,
+          "absolute_error": 1.3128779071877594e-05,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "index": 14,
+      "regime": "easy",
+      "episode_seed": 10170014,
+      "outer_loss": 1.268821109304502,
+      "outer_gradient_norms": {
+        "W0": 17.644836773627684,
+        "key": 0.5378055628416217,
+        "query": 0.8342380545801951
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.13102617187323756,
+          "central_difference": -0.13102617186788734,
+          "absolute_error": 5.350220266819861e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.13102617187323756,
+          "central_difference": -0.13102617240867698,
+          "absolute_error": 5.354394150280939e-10,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.13102617187323756,
+          "central_difference": -0.13102622540653863,
+          "absolute_error": 5.353330106983023e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.13102617187323756,
+          "central_difference": -0.13103150026820276,
+          "absolute_error": 5.328394965198324e-06,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "index": 15,
+      "regime": "hard",
+      "episode_seed": 10170015,
+      "outer_loss": 1.5336884417692531,
+      "outer_gradient_norms": {
+        "W0": 2.2339181698861563,
+        "key": 0.1652847411577562,
+        "query": 0.3586971052310148
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.006110738641030976,
+          "central_difference": -0.006110738626219358,
+          "absolute_error": 1.4811618077870126e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.006110738641030976,
+          "central_difference": -0.0061107389525139055,
+          "absolute_error": 3.114829297268251e-10,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.006110738641030976,
+          "central_difference": -0.006110769782552428,
+          "absolute_error": 3.114152145183846e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.006110738641030976,
+          "central_difference": -0.006113851936129233,
+          "absolute_error": 3.1132950982573626e-06,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "index": 16,
+      "regime": "easy",
+      "episode_seed": 10170016,
+      "outer_loss": 3.1677354109894096,
+      "outer_gradient_norms": {
+        "W0": 7.340736077875926,
+        "key": 0.24059158827243454,
+        "query": 0.34881937247764977
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.03464842924035562,
+          "central_difference": 0.03464842925904321,
+          "absolute_error": 1.8687593139610215e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.03464842924035562,
+          "central_difference": 0.03464842574762983,
+          "absolute_error": 3.492725789144835e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.03464842924035562,
+          "central_difference": 0.03464807998567743,
+          "absolute_error": 3.492546781919126e-07,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.03464842924035562,
+          "central_difference": 0.034613510950209925,
+          "absolute_error": 3.491829014569403e-05,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "index": 17,
+      "regime": "hard",
+      "episode_seed": 10170017,
+      "outer_loss": 1.7130045298683523,
+      "outer_gradient_norms": {
+        "W0": 3.719820310412176,
+        "key": 0.20468363875513307,
+        "query": 0.35941912980545
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 6.372330435949064e-05,
+          "central_difference": 6.372330441095642e-05,
+          "absolute_error": 5.146577608527991e-14,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 6.372330435949064e-05,
+          "central_difference": 6.372336014415225e-05,
+          "absolute_error": 5.578466161226814e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 6.372330435949064e-05,
+          "central_difference": 6.372888700090229e-05,
+          "absolute_error": 5.582641411649991e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 6.372330435949064e-05,
+          "central_difference": 6.428164613381249e-05,
+          "absolute_error": 5.583417743218466e-07,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "index": 18,
+      "regime": "easy",
+      "episode_seed": 10170018,
+      "outer_loss": 1.6844243185244137,
+      "outer_gradient_norms": {
+        "W0": 21.12740828623949,
+        "key": 1.8063479981674038,
+        "query": 2.1816511402353584
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.6871601616668811,
+          "central_difference": -0.687160161672029,
+          "absolute_error": 5.147882120581926e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.6871601616668811,
+          "central_difference": -0.6871601761860857,
+          "absolute_error": 1.4519204616370018e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.6871601616668811,
+          "central_difference": -0.6871616135045833,
+          "absolute_error": 1.451837702171055e-06,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.6871601616668811,
+          "central_difference": -0.6873042838479715,
+          "absolute_error": 0.0001441221810903892,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "index": 19,
+      "regime": "hard",
+      "episode_seed": 10170019,
+      "outer_loss": 1.495399678710882,
+      "outer_gradient_norms": {
+        "W0": 5.235412372782436,
+        "key": 0.07980153014912857,
+        "query": 0.6737248968602483
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.07097230748084678,
+          "central_difference": -0.07097230748653871,
+          "absolute_error": 5.691933036011676e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.07097230748084678,
+          "central_difference": -0.07097230704178337,
+          "absolute_error": 4.3906341062882603e-10,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.07097230748084678,
+          "central_difference": -0.07097226356517217,
+          "absolute_error": 4.391567461070611e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.07097230748084678,
+          "central_difference": -0.07096791608039221,
+          "absolute_error": 4.3914004545647645e-06,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "index": 0,
+      "regime": "easy",
+      "episode_seed": 10270000,
+      "outer_loss": 4.932128347937568,
+      "outer_gradient_norms": {
+        "W0": 15.037404830213916,
+        "key": 0.5368964542938144,
+        "query": 1.2981141253353337
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.19597989259074475,
+          "central_difference": -0.19597989258102186,
+          "absolute_error": 9.722889160457271e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.19597989259074475,
+          "central_difference": -0.19597989497022184,
+          "absolute_error": 2.3794770875884552e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.19597989259074475,
+          "central_difference": -0.19598013048667262,
+          "absolute_error": 2.3789592787371028e-07,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.19597989259074475,
+          "central_difference": -0.19600364750302912,
+          "absolute_error": 2.3754912284373875e-05,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "index": 1,
+      "regime": "hard",
+      "episode_seed": 10270001,
+      "outer_loss": 1.6126020580582732,
+      "outer_gradient_norms": {
+        "W0": 3.5331374215092683,
+        "key": 0.06422932011887006,
+        "query": 0.3935246143604357
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.009268613379931425,
+          "central_difference": 0.009268613387902747,
+          "absolute_error": 7.971321519528729e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.009268613379931425,
+          "central_difference": 0.009268613386015367,
+          "absolute_error": 6.083942377665963e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.009268613379931425,
+          "central_difference": 0.009268613966584294,
+          "absolute_error": 5.866528686448991e-10,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.009268613379931425,
+          "central_difference": 0.009268672002097356,
+          "absolute_error": 5.8622165930583003e-08,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "index": 2,
+      "regime": "easy",
+      "episode_seed": 10270002,
+      "outer_loss": 1.2813601112529382,
+      "outer_gradient_norms": {
+        "W0": 21.57227008664419,
+        "key": 1.1415284557764382,
+        "query": 1.4803342191113842
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": 0.04416945672547305,
+          "central_difference": 0.04416945671437133,
+          "absolute_error": 1.110172370699658e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": 0.04416945672547305,
+          "central_difference": 0.044169458299325726,
+          "absolute_error": 1.5738526731867708e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": 0.04416945672547305,
+          "central_difference": 0.044169614125566525,
+          "absolute_error": 1.5740009347287032e-07,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": 0.04416945672547305,
+          "central_difference": 0.044185193595572825,
+          "absolute_error": 1.5736870099772315e-05,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "index": 3,
+      "regime": "hard",
+      "episode_seed": 10270003,
+      "outer_loss": 1.2689183417758831,
+      "outer_gradient_norms": {
+        "W0": 3.023616324983807,
+        "key": 0.062095102244262,
+        "query": 0.3786498398948135
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.058350983220524316,
+          "central_difference": -0.05835098321194109,
+          "absolute_error": 8.583224408997836e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.058350983220524316,
+          "central_difference": -0.05835098278006434,
+          "absolute_error": 4.4045997404928983e-10,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.058350983220524316,
+          "central_difference": -0.058350939173990035,
+          "absolute_error": 4.4046534281028116e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.058350983220524316,
+          "central_difference": -0.05834657890478989,
+          "absolute_error": 4.404315734424236e-06,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "index": 4,
+      "regime": "easy",
+      "episode_seed": 10270004,
+      "outer_loss": 2.2605350652332317,
+      "outer_gradient_norms": {
+        "W0": 66.70217622117134,
+        "key": 2.636218217976736,
+        "query": 1.129766234195118
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.3028103197248464,
+          "central_difference": -0.30281031973000694,
+          "absolute_error": 5.160538663062653e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.3028103197248464,
+          "central_difference": -0.3028103179625319,
+          "absolute_error": 1.7623145165401866e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.3028103197248464,
+          "central_difference": -0.30281014341178025,
+          "absolute_error": 1.763130661469603e-07,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.3028103197248464,
+          "central_difference": -0.30279268673198967,
+          "absolute_error": 1.7632992856730922e-05,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "index": 5,
+      "regime": "hard",
+      "episode_seed": 10270005,
+      "outer_loss": 1.2597420377697894,
+      "outer_gradient_norms": {
+        "W0": 1.944693913952177,
+        "key": 0.03515870977970975,
+        "query": 0.23369757621286955
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.021209942970901247,
+          "central_difference": -0.02120994296861411,
+          "absolute_error": 2.2871357585607655e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.021209942970901247,
+          "central_difference": -0.02120994280108146,
+          "absolute_error": 1.6981978670504994e-10,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.021209942970901247,
+          "central_difference": -0.021209926004039925,
+          "absolute_error": 1.6966861322159632e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.021209942970901247,
+          "central_difference": -0.0212082465482355,
+          "absolute_error": 1.6964226657485704e-06,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "index": 6,
+      "regime": "easy",
+      "episode_seed": 10270006,
+      "outer_loss": 2.616647774893239,
+      "outer_gradient_norms": {
+        "W0": 25.694417286491003,
+        "key": 1.1912612543945544,
+        "query": 1.4431546558875137
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.07806149873565482,
+          "central_difference": -0.07806149873168522,
+          "absolute_error": 3.969602424547247e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.07806149873565482,
+          "central_difference": -0.07806150713096649,
+          "absolute_error": 8.395311668074612e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.07806149873565482,
+          "central_difference": -0.07806233822382769,
+          "absolute_error": 8.394881728657211e-07,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.07806149873565482,
+          "central_difference": -0.07814542212322362,
+          "absolute_error": 8.392338756879614e-05,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "index": 7,
+      "regime": "hard",
+      "episode_seed": 10270007,
+      "outer_loss": 1.6732025219181805,
+      "outer_gradient_norms": {
+        "W0": 3.4064861693217527,
+        "key": 0.12108827467790818,
+        "query": 0.38306965189690284
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.03511347936573561,
+          "central_difference": -0.035113479368575895,
+          "absolute_error": 2.840283563898538e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.03511347936573561,
+          "central_difference": -0.03511347957629862,
+          "absolute_error": 2.1056301147126533e-10,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.03511347936573561,
+          "central_difference": -0.035113500422800925,
+          "absolute_error": 2.1057065313634382e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.03511347936573561,
+          "central_difference": -0.03511558531734016,
+          "absolute_error": 2.105951604547407e-06,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "index": 8,
+      "regime": "easy",
+      "episode_seed": 10270008,
+      "outer_loss": 2.657958360724694,
+      "outer_gradient_norms": {
+        "W0": 15.453108463810578,
+        "key": 0.366269815854065,
+        "query": 1.706217658800502
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": 0.1990064349665407,
+          "central_difference": 0.19900643495329715,
+          "absolute_error": 1.324354514942172e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": 0.1990064349665407,
+          "central_difference": 0.19900643270864826,
+          "absolute_error": 2.2578924285809876e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": 0.1990064349665407,
+          "central_difference": 0.19900620919597323,
+          "absolute_error": 2.2577056746353463e-07,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": 0.1990064349665407,
+          "central_difference": 0.19898385251570838,
+          "absolute_error": 2.2582450832309142e-05,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "index": 9,
+      "regime": "hard",
+      "episode_seed": 10270009,
+      "outer_loss": 1.3991981054052753,
+      "outer_gradient_norms": {
+        "W0": 1.6539324631819694,
+        "key": 0.12944618638156782,
+        "query": 0.29367133459299155
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.014876523653143636,
+          "central_difference": -0.014876523635187764,
+          "absolute_error": 1.7955871164931914e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.014876523653143636,
+          "central_difference": -0.014876523488638327,
+          "absolute_error": 1.645053086807291e-10,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.014876523653143636,
+          "central_difference": -0.014876507190675348,
+          "absolute_error": 1.6462468287875565e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.014876523653143636,
+          "central_difference": -0.014874877695513211,
+          "absolute_error": 1.6459576304243828e-06,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "index": 10,
+      "regime": "easy",
+      "episode_seed": 10270010,
+      "outer_loss": 3.677249756808896,
+      "outer_gradient_norms": {
+        "W0": 20.208499553201676,
+        "key": 0.5598122517071664,
+        "query": 1.7285920565578639
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.18858947640230977,
+          "central_difference": -0.1885894764130924,
+          "absolute_error": 1.0782624793037598e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.18858947640230977,
+          "central_difference": -0.18858946131938836,
+          "absolute_error": 1.5082921411835315e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.18858947640230977,
+          "central_difference": -0.1885879681523761,
+          "absolute_error": 1.5082499336682709e-06,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.18858947640230977,
+          "central_difference": -0.18843875565548895,
+          "absolute_error": 0.00015072074682082048,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "index": 11,
+      "regime": "hard",
+      "episode_seed": 10270011,
+      "outer_loss": 1.4500861987695244,
+      "outer_gradient_norms": {
+        "W0": 2.4142879848982166,
+        "key": 0.07913899102711806,
+        "query": 0.2677033652208379
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.025289056901923575,
+          "central_difference": -0.025289056893029734,
+          "absolute_error": 8.893840525159291e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.025289056901923575,
+          "central_difference": -0.025289056883259775,
+          "absolute_error": 1.8663799672413717e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.025289056901923575,
+          "central_difference": -0.02528905504772805,
+          "absolute_error": 1.854195526285185e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.025289056901923575,
+          "central_difference": -0.02528887148596448,
+          "absolute_error": 1.8541595909332687e-07,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "index": 12,
+      "regime": "easy",
+      "episode_seed": 10270012,
+      "outer_loss": 0.8532434337777445,
+      "outer_gradient_norms": {
+        "W0": 7.541788504866442,
+        "key": 0.19003245634949162,
+        "query": 0.9191372899312769
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.025,
+          "plus_eta": 0.025,
+          "minus_eta": 0.025,
+          "eta_switch": false,
+          "analytic_derivative": 0.03907430105382284,
+          "central_difference": 0.03907430105587473,
+          "absolute_error": 2.0518864385365987e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.025,
+          "plus_eta": 0.025,
+          "minus_eta": 0.025,
+          "eta_switch": false,
+          "analytic_derivative": 0.03907430105382284,
+          "central_difference": 0.03907430010935409,
+          "absolute_error": 9.444687532056406e-10,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.025,
+          "plus_eta": 0.025,
+          "minus_eta": 0.025,
+          "eta_switch": false,
+          "analytic_derivative": 0.03907430105382284,
+          "central_difference": 0.03907420660306249,
+          "absolute_error": 9.445076035174971e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.025,
+          "plus_eta": 0.025,
+          "minus_eta": 0.025,
+          "eta_switch": false,
+          "analytic_derivative": 0.03907430105382284,
+          "central_difference": 0.03906485704785634,
+          "absolute_error": 9.444005966502411e-06,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "index": 13,
+      "regime": "hard",
+      "episode_seed": 10270013,
+      "outer_loss": 1.5141595858279029,
+      "outer_gradient_norms": {
+        "W0": 2.984739001057701,
+        "key": 0.21033560286073943,
+        "query": 0.6880076351792939
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.0024380070807862864,
+          "central_difference": 0.002438007085103777,
+          "absolute_error": 4.31749080931354e-12,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.0024380070807862864,
+          "central_difference": 0.002438006476146448,
+          "absolute_error": 6.046398381975848e-10,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.0024380070807862864,
+          "central_difference": 0.0024379465917712118,
+          "absolute_error": 6.048901507460513e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.0024380070807862864,
+          "central_difference": 0.0024319594229449404,
+          "absolute_error": 6.047657841345977e-06,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "index": 14,
+      "regime": "easy",
+      "episode_seed": 10270014,
+      "outer_loss": 1.135115631544253,
+      "outer_gradient_norms": {
+        "W0": 7.084468735688371,
+        "key": 0.12315472519936853,
+        "query": 0.921128007311369
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.1029461343061549,
+          "central_difference": -0.10294613431716114,
+          "absolute_error": 1.1006237587984913e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.1029461343061549,
+          "central_difference": -0.10294613779260331,
+          "absolute_error": 3.4864484077523628e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.1029461343061549,
+          "central_difference": -0.1029464829452098,
+          "absolute_error": 3.486390549034546e-07,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.1029461343061549,
+          "central_difference": -0.10298098132111022,
+          "absolute_error": 3.484701495531928e-05,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "index": 15,
+      "regime": "hard",
+      "episode_seed": 10270015,
+      "outer_loss": 1.2410454703718234,
+      "outer_gradient_norms": {
+        "W0": 4.326779541909131,
+        "key": 0.15915120587453455,
+        "query": 0.44030786125772453
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.001666993554390225,
+          "central_difference": -0.0016669935543056622,
+          "absolute_error": 8.456278212387591e-14,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.001666993554390225,
+          "central_difference": -0.0016669936520052886,
+          "absolute_error": 9.761506360173033e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.001666993554390225,
+          "central_difference": -0.0016670033351484648,
+          "absolute_error": 9.78075823977742e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.001666993554390225,
+          "central_difference": -0.0016679715599654532,
+          "absolute_error": 9.780055752282163e-07,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "index": 16,
+      "regime": "easy",
+      "episode_seed": 10270016,
+      "outer_loss": 6.805248862510565,
+      "outer_gradient_norms": {
+        "W0": 23.32347449206647,
+        "key": 0.4613762178906078,
+        "query": 0.7741586818317738
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.003993952555774366,
+          "central_difference": -0.003993952590874983,
+          "absolute_error": 3.510061685751964e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.003993952555774366,
+          "central_difference": -0.003993958519021845,
+          "absolute_error": 5.9632474791460055e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.003993952555774366,
+          "central_difference": -0.003994548954411314,
+          "absolute_error": 5.963986369483809e-07,
+          "stable_region_agreement": false
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": -0.003993952555774366,
+          "central_difference": -0.004053546039606282,
+          "absolute_error": 5.959348383191565e-05,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "index": 17,
+      "regime": "hard",
+      "episode_seed": 10270017,
+      "outer_loss": 1.4559576139172266,
+      "outer_gradient_norms": {
+        "W0": 4.152987472854267,
+        "key": 0.11287533785487656,
+        "query": 0.2774107393484401
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.07833459449987337,
+          "central_difference": 0.07833459448880475,
+          "absolute_error": 1.1068618244181039e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.07833459449987337,
+          "central_difference": 0.07833459395678588,
+          "absolute_error": 5.430874916445561e-10,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.07833459449987337,
+          "central_difference": 0.07833454018404407,
+          "absolute_error": 5.431582930648382e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.07833459449987337,
+          "central_difference": 0.07832916312973337,
+          "absolute_error": 5.4313701400021674e-06,
+          "stable_region_agreement": true
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "index": 18,
+      "regime": "easy",
+      "episode_seed": 10270018,
+      "outer_loss": 2.4836675679739537,
+      "outer_gradient_norms": {
+        "W0": 30.247061666679034,
+        "key": 1.690490494082228,
+        "query": 1.3932929063747777
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.17472428475632623,
+          "central_difference": -0.17472428472942167,
+          "absolute_error": 2.6904561911678115e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.17472428475632623,
+          "central_difference": -0.17472428186837696,
+          "absolute_error": 2.887949268615131e-09,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.17472428475632623,
+          "central_difference": -0.17472399595035437,
+          "absolute_error": 2.888059718597624e-07,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.0125,
+          "plus_eta": 0.0125,
+          "minus_eta": 0.0125,
+          "eta_switch": false,
+          "analytic_derivative": -0.17472428475632623,
+          "central_difference": -0.17469540748352497,
+          "absolute_error": 2.8877272801264287e-05,
+          "stable_region_agreement": false
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "index": 19,
+      "regime": "hard",
+      "episode_seed": 10270019,
+      "outer_loss": 1.1971415376743395,
+      "outer_gradient_norms": {
+        "W0": 2.272737145439352,
+        "key": 0.15913788604846238,
+        "query": 0.36139381099189816
+      },
+      "all_gradients_finite": true,
+      "eta_requires_grad": false,
+      "probes": [
+        {
+          "epsilon": 1e-05,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.015748991879273724,
+          "central_difference": 0.015748991866182394,
+          "absolute_error": 1.309133010329866e-11,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.001,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.015748991879273724,
+          "central_difference": 0.015748991746722396,
+          "absolute_error": 1.325513275529655e-10,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.01,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.015748991879273724,
+          "central_difference": 0.015748978639851252,
+          "absolute_error": 1.3239422471528206e-08,
+          "stable_region_agreement": true
+        },
+        {
+          "epsilon": 0.1,
+          "base_eta": 0.05,
+          "plus_eta": 0.05,
+          "minus_eta": 0.05,
+          "eta_switch": false,
+          "analytic_derivative": 0.015748991879273724,
+          "central_difference": 0.015747667855111613,
+          "absolute_error": 1.3240241621102766e-06,
+          "stable_region_agreement": true
+        }
+      ]
+    }
+  ]
+}

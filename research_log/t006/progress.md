@@ -23,3 +23,15 @@ Initial boundary-coverage test assumed the first20 untrained seed7 probes at eps
 Tested SHA65299db5f1127407f856872b732f2b2b7051383e; release20260912-065052-tovd-t006.
 Run20260912-065105-tovd-t006-a6000 on physicalGPU1. CPU/CUDA suites and initial-gradient requirement precede three-seed400x4 training.
 No deployment failure. NVML mismatch remains an observed system warning; PyTorch device/memory/tensor path works.
+
+## 2026-09-12 — T006 completed
+- Run20260912-065105-tovd-t006-a6000 exit0 at06:56:11+08, physicalGPU1;3seeds completed400x4 exactly.
+- Remote CPU75/5.36s, CUDA75/13.14s; local75/20.67s. CPU2protobufwarnings; CUDAplusNVMLwarning. No execution failure.
+- Initial/final primary gradientprobes60/60stable each; maxerrors7.55857e-11/3.08320e-11. One initial larger-epsilon boundary, zero final in fixedsample; no global smoothness claim.
+- Twelve historical controlcheckpoints matchhashes;2400control episodes reproduceexactly;600newpaired diagnoses and4800query changes. Initialtensors andnormalruntime/W0 scores matchexactly.
+- Rules1,2,4,5pass;Rule3fails. Hard ownW0 29.91667% ->adapted34.625%, NLL1.469848 ->1.358451; still10ppbelowB2 andworseNLL.
+- Relativefastpath gains survive inall3seeds, butabsolutecontrolcompetitivenessfails. Easyseed27mildharm+.069829NLL/-1.625pp retained (belowmajorflag).
+- Trainingcurves/rawCSV plusPNG/SVG generated andvisually checked. Checkpoints, probes, controls, artifacts/results/report persisted.
+- Default resultdownloadtimedout; existingworkflowlegacySCPretry succeeded. No remote systemdriverrepair or otherproject changes.
+- TaskVERIFIED;recommendstop/reframecurrentformulationbefore detector. NoT007/tuning/newexperiment inferred.
+- Artifact formatting: generatedSVG trailing spaces failed diff-check; normalization then exposed WindowsGBK default-decoding. ExplicitUTF8 read/write fixed it; formatter reran successfully. No model/results change.
