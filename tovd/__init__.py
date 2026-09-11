@@ -1,0 +1,1 @@
+"""TOVD detector-agnostic prototypes."""
