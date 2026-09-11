@@ -64,3 +64,7 @@ A6000 screen 20260912-043224-tovd-t004-screen-a6000 exit 0; 2400 diagnoses, sour
 Fixed gate rejected all three candidates: O1/O3 improve gradient direction but fail easy-regression limits; O2 hard worse.
 Phase 2 not run. Detailed evidence and limitations in research_log/t004/RESULTS.md and CODEX_TO_CHATGPT.md.
 Task VERIFIED; await lead review. Heartbeat active; no new task inferred from unchanged ACTIVE T004.
+
+## 2026-09-12 05:29 +08 — T005 received
+Fetched c7b4954/246994e: lead accepts T004 and assigns fixed-checkpoint O1 step control.
+Baseline 53 tests pass. Preregistered plan in research_log/t005; T004 report archived.
