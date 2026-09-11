@@ -68,3 +68,5 @@ Task VERIFIED; await lead review. Heartbeat active; no new task inferred from un
 ## 2026-09-12 05:29 +08 — T005 received
 Fetched c7b4954/246994e: lead accepts T004 and assigns fixed-checkpoint O1 step control.
 Baseline 53 tests pass. Preregistered plan in research_log/t005; T004 report archived.
+
+T005 implementation milestone: controller tests 28 passed, analysis tests 6 passed, full local 70 passed in 24.47s. A6000 GPU 1 selected because GPU 0 runs another project. No new experimental aggregate read.

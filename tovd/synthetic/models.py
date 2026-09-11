@@ -6,6 +6,7 @@ from torch.nn import functional as F
 
 from tovd.models import FastSemanticMemory, MemoryOutput
 from tovd.models.vocabulary_objectives import OBJECTIVES, VocabularyObjectiveMemory
+from tovd.models.step_control import CONTROLLERS, O1StepMemory
 
 METHODS = ("B0", "B1", "B2", "P", "P_fixed")
 
@@ -22,7 +23,10 @@ class EpisodicClassifier(nn.Module):
         super().__init__()
         self.method = method
         self.classifier_temperature = classifier_temperature
-        if method in OBJECTIVES:
+        if method in CONTROLLERS:
+            self.memory = O1StepMemory(dim, hidden_dim, inner_lr, tau,
+                                       controller=method, student_tau=classifier_temperature)
+        elif method in OBJECTIVES:
             self.memory = VocabularyObjectiveMemory(dim, hidden_dim, inner_lr, tau,
                                                     objective=method, student_tau=classifier_temperature)
         else:
@@ -30,7 +34,7 @@ class EpisodicClassifier(nn.Module):
             self.memory = memory_cls(dim, hidden_dim, inner_lr, tau)
 
     def forward(self, X, T, Q):
-        if self.method in ("B2", "P", "P_fixed", *OBJECTIVES):
+        if self.method in ("B2", "P", "P_fixed", *OBJECTIVES, *CONTROLLERS):
             return self.memory(X, T, Q)
         result = self.memory(X, T, Q, enable_ttt=False)
         if self.method == "B0":

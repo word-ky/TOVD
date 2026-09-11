@@ -5,3 +5,12 @@
 - Baseline 53 tests reproduced (11.70s).
 - PLAN.md fixes controller epsilon/guard, exact research rules and runtime measurement before aggregate results.
 - No implementation or T005 remote run yet.
+
+## Implementation milestone
+- Minimal select_update hook preserves O0 and fixed O1 defaults. Isolated C1/C2 controllers add no parameters.
+- C1 norm matching, direction preservation, zero/near-zero/nonfinite guard, finite-difference W0 and projection gradients tested.
+- C2 fixed-sequence first acceptance/rejection, label-free choice, reset/vocabulary/determinism tested.
+- Controller + existing objective tests: 28 passed in 10.57s.
+- Frozen runner tests: 6 passed in 14.56s; C0/O0 fixture drift zero, hashes retained, label changes do not change controller selection.
+- GPU 0 is running another project (taisp-t004-coco200); GPU 1 idle (18 MiB, 0%). Use CUDA_VISIBLE_DEVICES=1 for T005, leaving other job untouched.
+- Full local suite: python -m pytest -q -> 70 passed in 24.47s.

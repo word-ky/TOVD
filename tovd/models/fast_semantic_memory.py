@@ -59,6 +59,10 @@ class FastSemanticMemory(nn.Module):
                         T: Tensor, target: Tensor) -> Tensor:
         return alignment_loss(prediction, target)
 
+    def select_update(self, params, grads, before, keys, X, T, target, meta_learning):
+        return {name: value - self.inner_lr * grad
+                for (name, value), grad in zip(params.items(), grads)}, {}
+
     def forward(self, X: Tensor, T: Tensor, Q: Tensor,
                 *, enable_ttt: bool = True) -> MemoryOutput:
         batch_size = Q.shape[0]
@@ -84,8 +88,8 @@ class FastSemanticMemory(nn.Module):
                 before = self.inner_objective(functional_call(self.fast_model, params, (keys[index],)),
                                               keys[index], X[index], T[index], semantic[index])
                 grads = torch.autograd.grad(before, tuple(params.values()), create_graph=meta_learning)
-                adapted = {name: value - self.inner_lr * grad
-                           for (name, value), grad in zip(params.items(), grads)}
+                adapted, step_diagnostics = self.select_update(
+                    params, grads, before, keys[index], X[index], T[index], semantic[index], meta_learning)
                 output = functional_call(self.fast_model, adapted, (queries[index],))
                 with torch.no_grad():
                     after = self.inner_objective(functional_call(self.fast_model, adapted, (keys[index],)),
@@ -101,7 +105,8 @@ class FastSemanticMemory(nn.Module):
                 states.append({name: value.detach().clone() for name, value in adapted.items()})
                 diagnostics.append({"inner_loss_before": before.detach(), "inner_loss_after": after,
                                     "inner_gradient_norm": grad_norm, "fast_update_norm": update_norm,
-                                    "all_finite": finite})
+                                    "all_finite": finite,
+                                    **{name: value.detach() for name, value in step_diagnostics.items()}})
             tokens = torch.stack(outputs)
         if not outer_grad_enabled:
             tokens = tokens.detach()
