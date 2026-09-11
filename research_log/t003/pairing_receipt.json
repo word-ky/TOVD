@@ -1,0 +1,62 @@
+{
+  "oracle_diagnostic": true,
+  "sources": [
+    {
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-023122-tovd-t002-a6000/artifacts/t002/seed7_P/checkpoint.pt",
+      "sha256": "125f800e8a0ae7ab7547afaab9f30bf493ec1378d3866f2f8192cbd5c7c8c6e2",
+      "seed": 7,
+      "method": "P",
+      "training_revision": "b88153a44836310219201404509cfd568c02614f",
+      "local_path": "research_log\\remote_runs\\20260912-023122-tovd-t002-a6000\\artifacts\\t002\\seed7_P\\checkpoint.pt",
+      "matches_original_local_sha256": true
+    },
+    {
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-023122-tovd-t002-a6000/artifacts/t002/seed7_B2/checkpoint.pt",
+      "sha256": "fc083cf597724e42852caa32434ebfe2d185c54c75814c650fe75cc5b81026a0",
+      "seed": 7,
+      "method": "B2",
+      "training_revision": "b88153a44836310219201404509cfd568c02614f",
+      "local_path": "research_log\\remote_runs\\20260912-023122-tovd-t002-a6000\\artifacts\\t002\\seed7_B2\\checkpoint.pt",
+      "matches_original_local_sha256": true
+    },
+    {
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-023122-tovd-t002-a6000/artifacts/t002/seed17_P/checkpoint.pt",
+      "sha256": "5da689fbc0750d7fde51d31f93f02248fdb5a1ca3e5189b967ac46d0431a0985",
+      "seed": 17,
+      "method": "P",
+      "training_revision": "b88153a44836310219201404509cfd568c02614f",
+      "local_path": "research_log\\remote_runs\\20260912-023122-tovd-t002-a6000\\artifacts\\t002\\seed17_P\\checkpoint.pt",
+      "matches_original_local_sha256": true
+    },
+    {
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-023122-tovd-t002-a6000/artifacts/t002/seed17_B2/checkpoint.pt",
+      "sha256": "8714e0e1d67fbfed9491a56908967307d04da0951bad6475cd8bcb8fd5c32ce4",
+      "seed": 17,
+      "method": "B2",
+      "training_revision": "b88153a44836310219201404509cfd568c02614f",
+      "local_path": "research_log\\remote_runs\\20260912-023122-tovd-t002-a6000\\artifacts\\t002\\seed17_B2\\checkpoint.pt",
+      "matches_original_local_sha256": true
+    },
+    {
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-023122-tovd-t002-a6000/artifacts/t002/seed27_P/checkpoint.pt",
+      "sha256": "091124ee7af0f8ec4ca95d12617d6c5954f8cb90dd73966823af0daed607e3ac",
+      "seed": 27,
+      "method": "P",
+      "training_revision": "b88153a44836310219201404509cfd568c02614f",
+      "local_path": "research_log\\remote_runs\\20260912-023122-tovd-t002-a6000\\artifacts\\t002\\seed27_P\\checkpoint.pt",
+      "matches_original_local_sha256": true
+    },
+    {
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-023122-tovd-t002-a6000/artifacts/t002/seed27_B2/checkpoint.pt",
+      "sha256": "775bf5c6579d1bcd19126bd881de7a976367f47c7a3f44002ff28d1e7a8e4ce2",
+      "seed": 27,
+      "method": "B2",
+      "training_revision": "b88153a44836310219201404509cfd568c02614f",
+      "local_path": "research_log\\remote_runs\\20260912-023122-tovd-t002-a6000\\artifacts\\t002\\seed27_B2\\checkpoint.pt",
+      "matches_original_local_sha256": true
+    }
+  ],
+  "original_T002_metric_max_error": 0.0,
+  "normal_output_max_error": 0.0,
+  "weighted_gradient_reconstruction_max_error": 2.384185791015625e-07
+}

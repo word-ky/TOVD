@@ -41,3 +41,8 @@ Run 20260912-011209-tovd-t001-a6000 completed with exit 0 at 2026-09-12 01:12:21
 Implementation b88153a44836310219201404509cfd568c02614f; release 20260912-023118-tovd-t002.
 Run 20260912-023122-tovd-t002-a6000 exited 0 at 2026-09-12 02:39:18 +08:00. Full CPU 23/23 and CUDA 23/23 suites passed, 15 models trained/evaluated, independent checkpoint evaluation matched. No active job remains.
 Run script: scripts/run_t002_a6000.sh. Full receipts/checkpoints under remote runs/<run-id>/artifacts/t002 and local research_log/remote_runs/<run-id>. Read project_state.md and the latest engineering report before acting on unchanged ACTIVE T002.
+
+## T003 completed
+Analysis SHA 6780de5ae44dcc89b9f1c45ea781f33dc16ffbaf; release 20260912-030919-tovd-t003.
+Run 20260912-030923-tovd-t003-a6000 exited 0 at 2026-09-12 03:10:33 +08:00. CPU/CUDA suites 30/30 each; all 1200 fixed P/B2 checkpoint/episode diagnoses completed. No active TOVD run remains.
+Source remains original T002 runs/20260912-023122-tovd-t002-a6000/artifacts/t002. New artifacts in runs/20260912-030923-tovd-t003-a6000/artifacts/t003; full local copy in research_log/remote_runs. Read project_state.md and latest report; wait for explicit next task.

@@ -20,3 +20,16 @@
 - Expanded diagnostic suite: 7 passed in 11.12s.
 - Final full suite: 30 tests passed. No normal model, generator, or training file changed.
 - Ready to commit analysis and run fixed D1-D4 against original checkpoints.
+
+## 2026-09-12 03:09:53 +08:00 — A6000 diagnostic launched
+- Tested analysis SHA 6780de5ae44dcc89b9f1c45ea781f33dc16ffbaf; final local regression 30 passed in 11.95s.
+- Release 20260912-030919-tovd-t003; run 20260912-030923-tovd-t003-a6000.
+- Original T002 source remains /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-023122-tovd-t002-a6000/artifacts/t002.
+- No outer training; run starts with full CPU/CUDA tests, then six original checkpoint diagnostics. Do not launch a duplicate.
+
+## 2026-09-12 03:16:27 +08:00 — T003 complete
+- A6000 CPU 30 passed in 3.17s; CUDA 30 passed in 5.52s. Two existing protobuf deprecation warnings per suite.
+- Run exited 0 at 03:10:33 +08:00; all 1200 paired episodes processed; no active session remains.
+- Normal predictions and original T002 per-episode metrics match exactly; source checkpoint hashes match local originals. Weighted subset reconstruction max error 2.3841858e-7.
+- Fetched all raw records (14.57 MB). D1-D4 tables and interpretation support branch C primarily, limited easy-regime A; B not primary and D unsupported.
+- Full report, source pairing receipt and artifact manifest prepared; no T004 implementation or primary retraining.

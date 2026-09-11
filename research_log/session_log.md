@@ -43,3 +43,9 @@
 - A6000 run 20260912-023122-tovd-t002-a6000 completed, exit 0; full receipts archived.
 - P does not demonstrate stable superiority over static/activation/visual-TTT controls. Learned initialization does help. Detailed evidence in coordination/CODEX_TO_CHATGPT.md and research_log/t002/analysis.md.
 - No further experiment or detector integration authorized by current task; wait for explicit Research Lead decision.
+
+## 2026-09-12 03:16:27 +08:00 — T003 execution and conclusion
+- Research commits c068c6f/0c3ef5f accepted T002 negative evidence and assigned T003.
+- Analysis-only 6780de5 executed on A6000, run 20260912-030923-tovd-t003-a6000 exit 0. Normal runtime and checkpoints unchanged; all pairing errors zero.
+- Branch C best supported; limited A in easy regime. Exact-target oracle gains are diagnostic and non-deployable. Full evidence in latest mailbox and research_log/t003.
+- No primary retraining, detector integration, or T004 inferred.
