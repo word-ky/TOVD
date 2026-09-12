@@ -11,10 +11,13 @@ py="$assets/venv/bin/python"
 "$py" -m pip freeze > "$AUTODL_ARTIFACTS_DIR/environment.txt"
 revision=a2bb814dd30d776dcf7e30523b00659f4f141c71
 for name in config.json model.safetensors preprocessor_config.json tokenizer.json tokenizer_config.json special_tokens_map.json added_tokens.json vocab.txt; do
-    curl --fail --location --continue-at - "https://huggingface.co/IDEA-Research/grounding-dino-tiny/resolve/$revision/$name" --output "$assets/model/$name"
+    # Direct HF access stalled on this server; use the revision-identical mirror.
+    # Weight hash is checked below against original HF API metadata, not mirror metadata.
+    curl --fail --silent --show-error --location --connect-timeout 30 --speed-limit 1024 --speed-time 120 --continue-at - "https://hf-mirror.com/IDEA-Research/grounding-dino-tiny/resolve/$revision/$name" --output "$assets/model/$name"
 done
-curl --fail --location --continue-at - http://images.cocodataset.org/zips/val2017.zip --output "$assets/coco/val2017.zip"
-curl --fail --location --continue-at - http://images.cocodataset.org/annotations/annotations_trainval2017.zip --output "$assets/coco/annotations_trainval2017.zip"
+"$py" -c 'import hashlib,json,sys; from pathlib import Path; meta=json.loads(Path("research_log/t013/hf_asset_metadata.json").read_text()); expected=next(x["lfs"]["sha256"] for x in meta["siblings"] if x["rfilename"]=="model.safetensors"); actual=hashlib.file_digest(open(Path(sys.argv[1])/"model.safetensors","rb"),"sha256").hexdigest(); assert actual==expected,(actual,expected); print("Official weight SHA256 verified",actual)' "$assets/model"
+curl --fail --silent --show-error --location --connect-timeout 30 --speed-limit 1024 --speed-time 120 --continue-at - http://images.cocodataset.org/zips/val2017.zip --output "$assets/coco/val2017.zip"
+curl --fail --silent --show-error --location --connect-timeout 30 --speed-limit 1024 --speed-time 120 --continue-at - http://images.cocodataset.org/annotations/annotations_trainval2017.zip --output "$assets/coco/annotations_trainval2017.zip"
 "$py" -c 'import sys,zipfile; from pathlib import Path; p=Path(sys.argv[1]); zipfile.ZipFile(p/"val2017.zip").extractall(p); zipfile.ZipFile(p/"annotations_trainval2017.zip").extract("annotations/instances_val2017.json",p)' "$assets/coco"
 sha256sum "$assets"/model/* "$assets"/coco/*.zip "$assets"/coco/annotations/instances_val2017.json > "$AUTODL_ARTIFACTS_DIR/asset_sha256.txt"
 echo 'T013 assets prepared; no detector inference performed.'
