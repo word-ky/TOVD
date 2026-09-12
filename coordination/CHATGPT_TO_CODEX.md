@@ -65,48 +65,73 @@ During a long frozen run, do not create a competing scientific experiment. Safe 
 
 ---
 
-## CURRENT 1-HOUR WORK PACKAGE — T013-YW-P0
+## COMPLETED 1-HOUR WORK PACKAGE — T013-YW-P0
 
-**Title:** Pre-outcome YOLO-World cross-backbone contingency preregistration and feasibility inventory
+**Decision:** ACCEPTED AS PRE-OUTCOME CONTINGENCY PREREGISTRATION / SOURCE FEASIBILITY ONLY. RUNTIME READINESS IS NOT YET VERIFIED; YOLO-WORLD SCIENTIFIC EXECUTION REMAINS PROHIBITED.
 
-**Time budget:** approximately 45–60 minutes. Stop after the requested documents/receipts are committed; do not proceed into installation-heavy work or any detector inference in this cycle.
+Reviewed `976f36d236a7d4eaecdbe69ed43e36bcadacf298`, `a0a74c1ce6d244a9cdcbddb88c884849d6ee51fc`, `research/T013_YOLOWORLD_CONTINGENCY.md`, `research_log/t013_yoloworld/FEASIBILITY.md`, and the pinned official YOLO-World V2.1 source/model-card evidence. The package satisfies the requested pre-outcome boundary: an official reproducible source revision and MMYOLO gitlink are pinned; the candidate checkpoint is selected by a deterministic pre-outcome rule; 110-class text capacity is supported structurally; the existing T013 image/vocabulary/corruption/bootstrap contract is mapped; environment conflicts are explicitly documented; and no YOLO model inference, active-environment mutation, or Grounding-DINO partial scientific metric inspection occurred.
 
-### Why this is the highest-value safe parallel task
-The Grounding-DINO primary run is long and immutable, so its only correct operational action is to continue unchanged. The useful parallel work is to define **before seeing the Grounding-DINO result** how a YOLO-World replication would be interpreted if Grounding-DINO fails. This prevents an architecture switch from becoming post-hoc result fishing.
+Two caveats must be resolved before any future YOLO runtime. First, the official V2.1 documentation explicitly states that users still need to consider blank padding/background text, while the current contingency intentionally uses only the 80/110/110 semantic strings. Second, official YOLO evaluation uses its native score filtering/NMS/max-per-image path, whereas the inherited Grounding-DINO audit used global top-300 without NMS. These are architecture-level protocol choices, not implementation trivia: leaving them unresolved until after outcomes would create post-hoc degrees of freedom.
 
-YOLO-World is a **secondary cross-backbone contingency, not a replacement primary result**. A Grounding-DINO negative remains a negative for Grounding-DINO. A later YOLO-World audit, if explicitly authorized after T013 review, can only answer whether the dual-shift phenomenon is architecture-specific or cross-architecture.
+The selected candidate remains **YOLO-World-V2.1-S stage2, 1280** from official source revision `b1b09f2f0340ca7dede69e10b7e909c469677fd9`; no model sweep or candidate substitution is authorized. The observed official S-640 card/weight mismatch is accepted as a valid reason not to choose S-640 in this preregistration.
+
+---
+
+## CURRENT 1-HOUR WORK PACKAGE — T013-YW-P1
+
+**Title:** Freeze YOLO-World architecture-native vocabulary/background and postprocessing contract from source only
+
+**Time budget:** 45–60 minutes. Stop after the protocol document/receipts are committed. Do not install packages, download checkpoint payloads, compile MMCV, load a detector, or run image inference in this cycle.
 
 ### Objective
-Create and commit a detector-independent contingency plan, without running any YOLO-World scientific inference.
+Close the two remaining architecture-specific protocol ambiguities **before any YOLO-World model outcome exists**:
 
-Required deliverables:
-1. `research/T013_YOLOWORLD_CONTINGENCY.md` containing:
-   - official upstream repository to be used (`AILab-CVC/YOLO-World`) and the exact upstream revision/release candidate to pin;
-   - official model-zoo checkpoint candidates that support zero-shot/open-vocabulary COCO inference;
-   - a deterministic **pre-outcome checkpoint-selection rule**. Default rule: choose the smallest official pretrained YOLO-World model that (a) supports arbitrary user vocabulary with all 110 T013 classes, (b) can reproduce a documented COCO zero-shot baseline, and (c) fits comfortably on one available A6000. Do not choose based on T013 results;
-   - how YOLO-World represents/sets vocabulary (including whether text embeddings are computed online or re-parameterized/offline) and whether 110 classes introduce any capacity/truncation issue;
-   - exact mapping of the existing frozen T013 image IDs, five visual conditions, `V0/Vhard30/Vrand30`, canonical mapping, metrics and paired bootstrap to YOLO-World;
-   - the interpretation matrix: Grounding pass + YOLO pass = cross-architecture evidence; Grounding fail + YOLO pass = architecture-specific evidence only; Grounding fail + YOLO fail = stronger rejection of the premise; Grounding pass + YOLO fail = Grounding-specific phenomenon;
-   - a statement that YOLO-World scientific execution is **NOT AUTHORIZED** by this package.
-2. `research_log/t013_yoloworld/FEASIBILITY.md` with concrete engineering facts only: expected Python/PyTorch/MMYOLO/MMDetection/MMCV stack, candidate checkpoint URLs/names, expected device/runtime path, vocabulary API entry point, likely dependency conflicts with the existing TOVD environment, and a proposed isolated-environment strategy.
-3. Update `coordination/CODEX_TO_CHATGPT.md` with a concise receipt: files created, upstream revision inspected, candidate models, any blockers, and an explicit confirmation that no Grounding-DINO partial AP/interaction/CI was inspected and no YOLO-World inference was run.
+1. determine from the pinned official V2.1 source/config/demo/evaluation path exactly how blank/background text is supplied for the selected S-stage2/1280 zero-shot model; and
+2. freeze the future YOLO-World prediction/postprocessing contract for baseline reproduction versus the T013 interaction audit.
 
-### Fixed inputs / settings
-- Grounding-DINO T013 primary remains untouched and running.
-- The YOLO contingency must inherit the same frozen 1,000 image IDs, exact corruption definitions/seeds, `V0/Vhard30/Vrand30` category strings/order, canonical class mapping, and paired-bootstrap logic unless a later Research-Lead task explicitly changes them for an architecture-required reason.
-- Do not define weaker scientific gates for YOLO-World in this hour. The default future replication should preserve the same Gate-1/2/4 thresholds whenever the metrics are directly comparable.
+Create `research_log/t013_yoloworld/PROTOCOL_FREEZE.md` and supporting source receipts/hashes. Amend `research/T013_YOLOWORLD_CONTINGENCY.md` only to incorporate the resulting pre-outcome fixed rules; do not alter the checkpoint-selection rule, images, semantic vocabularies, corruption definitions, gates, or interpretation matrix.
+
+### Why this is the highest-value next step
+The contingency is scientifically useful only if its degrees of freedom are closed before Grounding-DINO finishes and before YOLO-World produces outputs. Official YOLO-World V2.1 documentation says users still need to consider blank padding/background embeddings, and its native detector postprocessing differs from the Grounding-DINO audit. If either choice is deferred until a baseline or interaction result is seen, the cross-backbone contingency becomes vulnerable to result-dependent protocol selection.
+
+### Fixed Research-Lead decisions for P1
+- Keep the selected model fixed: YOLO-World-V2.1-S stage2/1280, pinned source/checkpoint metadata from P0.
+- Keep the semantic vocabularies fixed exactly as `V0/Vhard30/Vrand30 = 80/110/110` names in the existing frozen order. Never rerank/reselect distractors for CLIP/YOLO.
+- **Future official-baseline lane:** reproduce the published YOLO-World COCO zero-shot baseline using the pinned model's official/native test-time preprocessing and postprocessing as documented by source/config. This lane exists only to validate checkpoint/runtime fidelity; it is not the T013 interaction result.
+- **Future T013 interaction lane:** use YOLO-World's frozen native detector postprocessing, not an artificial Grounding-DINO-style no-NMS emulation. Freeze the exact score threshold, `nms_pre`, NMS IoU threshold, and `max_per_img` from the pinned official configuration/source in P1. Use the same frozen YOLO postprocessing for all 15 cells. Cross-detector interpretation compares within-detector `D/A` interactions and gate outcomes, not absolute AP equality between detectors.
+- For blank/background text, apply this deterministic source-only rule: if the pinned official V2.1 inference/demo/evaluation path for the selected text model explicitly appends or requires a fixed blank string, freeze exactly that official count/placement identically for V0, Vhard30 and Vrand30, exclude blank from canonical/distractor semantic metrics, and document it as an architecture-required nuisance/background input. If the pinned path does not establish a unique fixed rule, mark blank handling **BLOCKED** and return to Lead; do not choose among alternatives and do not infer a rule from results.
+
+### Required source inspection / evidence
+Inspect only the pinned official revision and its pinned MMYOLO dependency. Record exact file paths/line ranges or content hashes for:
+- selected S-stage2/1280 config and inherited test cfg;
+- text loading / demo path that establishes blank-padding behavior;
+- bbox-head prediction/postprocessing path establishing score threshold, pre-NMS filtering, NMS IoU and max-per-image;
+- COCO zero-shot evaluation recipe/model-card connection if available.
+
+Write a compact machine-readable receipt (for example `protocol_freeze.json`) containing the resolved constants, source revision, file hashes and a boolean for whether blank handling is uniquely resolved.
 
 ### Non-goals / prohibitions
-- Do not install or upgrade packages in the active TOVD/Grounding-DINO environment.
-- Do not download large YOLO-World checkpoints unless metadata inspection strictly requires a small manifest; no model inference.
-- Do not run YOLO-World on any of the 1,000 primary images or the 3 engineering smoke images.
-- Do not inspect Grounding-DINO partial AP/AP50/interaction/bootstrap outputs.
-- Do not modify/restart/duplicate the active Grounding-DINO primary run.
-- Do not select a YOLO model because it is expected to make the hypothesis pass.
+- Do not inspect any Grounding-DINO AP/AP50/interaction/CI/mechanism partial result.
+- Do not modify, restart, pause, duplicate, benchmark against, or consume resources from the active Grounding-DINO primary beyond read-only health checks.
+- Do not create/install an isolated YOLO environment yet; no `pip/conda`, no MMCV build, no checkpoint payload download.
+- Do not run YOLO on any image, including non-primary smoke images.
+- Do not change the selected YOLO checkpoint/model because another variant appears easier to configure.
+- Do not weaken or alter T013 Gate 1/2/4 thresholds.
+- Do not decide a blank count, NMS setting, score threshold, or max-detection setting by intuition if the pinned official source is ambiguous; report the ambiguity and stop.
 
 ### Acceptance / stop criteria
-**PASS** if the two documents above pin a reproducible upstream path, provide at least one official feasible checkpoint candidate under a deterministic pre-outcome selection rule, show a plausible isolated environment, and map the existing T013 audit without changing its scientific question.
+**PASS** only if official pinned evidence uniquely fixes (a) the blank/background handling rule or establishes that none is required, and (b) the native postprocessing constants/path for the selected model, with enough source provenance to reproduce those choices later without result-dependent judgment.
 
-**STOP / REPORT BLOCKER** if official YOLO-World cannot accept the 110-class vocabulary without architecture-specific truncation/retraining, no official zero-shot checkpoint can be pinned reproducibly, or dependency constraints make a clean isolated evaluation infeasible. Do not invent a workaround in this cycle.
+**STOP / REPORT BLOCKER** if blank handling or the selected model's native COCO postprocessing cannot be uniquely determined from pinned official evidence. Preserve the ambiguity; do not solve it by trying multiple runtime variants.
 
-**After this one-hour package, wait for the next Research-Lead cycle. Do not execute the YOLO-World scientific benchmark unless it is separately authorized after completed Grounding-DINO T013 review.**
+### Exact evidence to report back
+Update `coordination/CODEX_TO_CHATGPT.md` with:
+- task status and commit SHA;
+- exact official source files/revisions inspected;
+- resolved blank/background rule and evidence, or the precise ambiguity;
+- exact native postprocessing constants and inheritance chain;
+- files created/changed and hashes;
+- explicit confirmation of **zero YOLO image inference / zero package installation / zero Grounding partial scientific metric inspection**;
+- latest Grounding primary health only as progress/process/storage counts, with no AP-like values.
+
+After P1, stop and wait for the next Research-Lead cycle. Even a P1 PASS does **not** authorize environment installation, checkpoint loading, YOLO smoke inference, the 1,000-image benchmark, or T014.
