@@ -306,3 +306,23 @@ Scientific result: **all five gates fail**. S2's localized teacher is genuinely 
 The failure is mechanistically decisive for this branch because it occurs despite apparently healthy optimization: 14,397/14,400 S2 query steps are accepted and the local semantic loss falls from `2.3236` to `1.8190`. Thus yet another parameterization shows that successful label-free semantic-objective descent does not imply task-useful movement. T011 also rejects the narrower explanation that the main remaining defect was simply sharing one image-level fast state across heterogeneous queries.
 
 **Decision / next action:** enforce the T011 stop rule. Do not add another fast-state loss, selector, controller, eta schedule, meta-training variant or detector integration. The current fast-semantic-state thesis is not validated by the controlled synthetic program. T012 is assigned as a static activation-side reduction audit: preserve W0 and all slow parameters, use query-local image/vocabulary evidence only through feed-forward distribution-level fusion, calibrate at most one global fusion exponent on fresh base/train episodes before novel evaluation, and compare query-local versus uniform-context fusion. This is a research reset to determine whether useful vocabulary-relative evidence survives without test-time state adaptation.
+
+---
+
+## 2026-09-12 — T012 final review
+
+**Decision:** ACCEPTED AS A VALID NEGATIVE RESULT; SYNTHETIC TOVD MECHANISM PROGRAM CLOSED
+
+Reviewed commits/artifacts:
+- `15d3353d04000c403131bf7143b7d36462ec14a6` — T012 preregistration;
+- `8c4abff9140f1d762175472117bf6b9c3d5fcb21` — tested static PoE implementation and two-phase runner;
+- `22ffbdf8d7952eb8450097cfb84ef0cbef5c4d0e` — actual global `lambda=0.2` plus complete calibration receipts frozen before novel generation;
+- `fc199a9e0fc97481970a87586dcb31bafb2f9b35` — frozen-lambda novel dispatch;
+- `0a5571326b86a08824d84d9f93e31cb497aba650` / `337712d754a78c0f4b6b568ae6cb8595c94b2adc` — final evidence publication and synthesis handoff;
+- `research_log/t012/{PLAN.md,RESULTS.md,SYNTHESIS.md,gates.json}` and `tovd/models/static_semantic_fusion.py`.
+
+Validity is accepted. T012 uses a fresh base-calibration stream and a disjoint fresh novel stream; one global lambda is committed before novel outcomes; A2/A3 are pure inference paths with no optimizer, gradient, fast state, runtime labels/IDs, or model mutation; replay/source/code/freeze hashes match; all 1,800+1,800 episodes are recovered; and local/A6000 CPU/A6000 CUDA regressions pass 108/108. No post-outcome retuning or protocol repair occurred.
+
+Scientific result: Gates 1/2 fail while Gates 3/4/5 pass. A2 worsens hard NLL versus A0 by `+0.002718 / +0.003113 / +0.001049` for original/W1/W2 and only `0/3`, `1/3`, `1/3` seeds improve hard NLL. Easy safety passes, and query-local A2 retains a small localization advantage over uniform A3 (`-0.000270` pooled hard NLL, `-0.003779` pooled easy NLL), but that relative localization signal does not produce absolute hard utility. Overall A2 is slightly worse than W0 (NLL `0.842260` vs `0.840656`; accuracy `62.75%` vs `63.04%`).
+
+**Decision / next action:** enforce the T012 stop rule. The synthetic TOVD mechanism program ends here. Preserve T005, T009 and T012's narrow localization positives as scoped evidence, but do not launch T013, retune lambda/tau, invent another synthetic gate/objective/residual/fusion rule, or integrate the tested mechanisms into Grounding DINO. `research_log/t012/SYNTHESIS.md` is accepted as the current bounded evidence package. No active Codex experiment is authorized until a genuinely new Research Lead scope changes the scientific premise rather than repairing this synthetic line.
