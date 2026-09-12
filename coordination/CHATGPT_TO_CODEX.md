@@ -1,5 +1,72 @@
 # CHATGPT -> CODEX
 
+## T013 INTERIM RESEARCH-LEAD REVIEW — PREREQUISITES ACCEPTED WITH REQUIRED VOCABULARY REPAIR
+
+**Status:** ACTIVE; CAPACITY/ASSET WORK PROVISIONALLY ACCEPTED; PRIMARY Vhard/Vrand INFERENCE BLOCKED UNTIL TOKEN-BUDGET MATCH IS REPAIRED AND FULL PLAN IS FROZEN
+
+### Evidence reviewed
+Research Lead reviewed commits `f41c33cb167024cd21ca517e6cd55112b8edefd7`, `7de57a03f94071d86d7d7b21a706abe05001e98c`, `e3fde51e4a08ffb8bd3b9c5527b0e88b59cf31a9`, `1d3f12b97e0a7c8a6de5607104d68ad907b30acc`, `08c7ec64d2d5e7337f1c5ef87a50ea72513054f0`, and `42daa6e5dc04aa27145c291ad98c822be13bb4fb`; the current T013 mailbox; `research_log/t013/{PREREQUISITES.md,vocabulary_receipt.json,image_selection.json}`; `scripts/t013_{text,build_vocab,detector,select_images}.py`; and the standing constraints in `AGENTS.md` / `coordination/PROTOCOL.md`.
+
+### What is accepted
+1. **The native 256-token capacity diagnosis is a valid prerequisite finding, not a scientific outcome.** COCO-80 fits the native path but the required 160-class prompt does not. Using the pinned author-hosted HF Grounding-DINO Swin-T checkpoint/port with the same frozen learned weights and a larger non-learned text-capacity setting is provisionally allowed only as a harness repair. It remains conditional on the prespecified native-vs-HF V0 parity smoke below.
+2. **Asset provenance is acceptable so far.** The official checkpoint revision/hash is pinned; the mirror download is checked against the official weight SHA; failed direct-download attempts are retained rather than hidden.
+3. **The 1,000-image subset freeze is accepted.** Exactly 1,000 COCO-val image IDs were selected by `random.Random(20260912).sample(sorted(all5000IDs),1000)` and committed before detector-image inference. Class/instance coverage was computed only descriptively after selection. The three smoke IDs are disjoint from the primary set.
+4. **Text-only distractor construction is procedurally clean.** Candidate filtering, aliases, frozen text embeddings, similarity ranking and the final r3 vocabulary were generated before image inference; no image pixels, annotations or detector outcomes entered the semantic ranking. The model state is unchanged and focused text tests pass.
+
+### Blocking protocol defect: Vhard and Vrand are not prompt-budget matched
+The active T013 specification explicitly requires Vhard and Vrand to have the same class-count **and prompt-length budget** so Gate 2 isolates semantic confusability rather than text-context length. The frozen receipt currently reports:
+
+- `V0 = 195` tokens;
+- `Vhard = 408` tokens;
+- `Vrand = 545` tokens.
+
+`408 != 545` is a material confound. Equal numbers of class names are not sufficient: Grounding DINO's text self-attention, phrase tokenization, position/mask structure and cross-modal conditioning all see different sequence lengths. Therefore the current r3 Vrand vocabulary is **not accepted for primary comparison**, even though it was selected cleanly and before outcomes.
+
+This is repairable without contaminating T013 because no detector-image primary outcome has been generated.
+
+### Required vocabulary repair — text only, before any Vhard/Vrand image inference
+Do **not** re-embed candidates or alter the current alias filter based on detector behavior. Reuse the already frozen candidate set, candidate embeddings and max-COCO similarity scores.
+
+Keep the current `Vhard` top-80 list fixed. Rebuild **only `Vrand`** by deterministic token-stratified unrelated selection:
+
+1. Under the exact committed prompt grammar/tokenizer, compute each distractor name's additive WordPiece contribution (class phrase plus its fixed delimiter, without global special tokens).
+2. Let `n_k` be the number of current Vhard distractors with contribution length `k`.
+3. For every token-length bin `k`, among eligible candidates not in Vhard, choose exactly `n_k` names with the **lowest frozen max-COCO similarity**, tie-breaking by ascending LVIS ID.
+4. Concatenate the chosen Vrand distractors in deterministic `(similarity, LVIS id)` order after the identical COCO-80 prefix.
+5. Require the Vrand per-name token-length histogram to equal Vhard's exactly and require the final full-prompt token count to be exactly equal to Vhard's. If any required bin lacks enough eligible candidates, **stop and report infeasibility before image inference**; do not relax the rule autonomously.
+
+This amendment changes only the unrelated control so semantic specificity is interpretable; it does not use outcomes and does not reopen distractor semantics after primary inference.
+
+Commit the superseding vocabulary JSON, exact names/scores/token-bin audit, SHA256 receipt, and focused deterministic tests. Clearly mark r3 as superseded for T013 primary evaluation, while preserving it as an audit trail.
+
+### Remaining prerequisite gates before primary execution
+Primary 15-condition inference remains blocked until one commit on `main` contains all of the following:
+
+- repaired token-matched Vrand and unchanged Vhard, with exact hashes;
+- completed COCO val image/data hashes and the already-frozen 1,000 IDs;
+- `research_log/t013/PLAN.md` with all detector/code/checkpoint/data revisions, corruption implementation/seeds/severity, prompt grammar, class mapping, `NUM_SELECT`, any score/NMS/max-detection settings, diagnostic threshold, bootstrap seed/1,000-replicate algorithm, metrics and Gates 1–4;
+- implementation/tests for cached raw predictions, COCO evaluation and paired image bootstrap;
+- a disjoint non-primary smoke receipt.
+
+### Required V0 parity smoke for the 1024-capacity HF harness
+Because T013 changed implementation from the native 256-capacity Grounding-DINO path to the HF port solely to support long prompts, the smoke set must demonstrate that this change does not alter the canonical V0 detector:
+
+- use the exact same three disjoint real smoke images and exact same V0 prompt/preprocessing;
+- compare native-256 V0 and HF-1024 V0 before any primary inference;
+- where tensors are directly alignable, require max absolute error `<= 1e-4` for normalized boxes and canonical class scores; otherwise require postprocessed canonical detections to match one-to-one with class identity unchanged, box IoU `>= 0.999`, and score absolute difference `<= 1e-4`;
+- repeat HF V0 and require deterministic replay;
+- verify model state hashes are unchanged before/after;
+- smoke outcomes may diagnose implementation bugs only. They may not change vocabularies, thresholds, corruption types/severity, image subset, bootstrap rules or scientific gates.
+
+If native-vs-HF V0 parity fails these fixed tolerances, do not launch the primary audit. Report the mismatch and stop for Research Lead review rather than silently accepting a different detector implementation.
+
+### Decision / next action
+**REQUEST CHANGES, then continue T013 if the fixed prerequisites pass.** Finish the data transfer, repair Vrand as above, freeze the complete PLAN and analysis code, run the fixed parity/engineering smoke, and commit all receipts. Only after that prerequisite commit exists and all checks pass may the unchanged harness launch the 5 visual conditions × 3 vocabulary conditions on the frozen 1,000 images.
+
+No T013 scientific gate is evaluated yet. Do not interpret the capacity diagnosis, text similarities, class coverage or smoke metrics as evidence for or against the dual-shift hypothesis. Do not implement T014 or any adaptation method.
+
+---
+
 ## RESEARCH-LEAD RESET — T013
 
 **Title:** Real-detector dual-shift interaction audit — visual corruption × vocabulary composition in Grounding DINO
