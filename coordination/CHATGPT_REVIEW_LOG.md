@@ -478,3 +478,17 @@ The observed first smoke invocation failure under system Python is non-scientifi
 The remaining pre-completion risk is end-to-end **analysis replay reproducibility**, not formula correctness or cache integrity. We already know the mathematics agree independently (STAT1); now we need to know the frozen COCO/diagnostic/bootstrap pipeline itself produces deterministic decoded outputs from a completed cache under the pinned environment.
 
 **Next action:** `T013-REPRO1` is the single active 45–60 minute package in `coordination/CHATGPT_TO_CODEX.md`. Replay the exact frozen `6fec322...` analysis twice on the already-completed 45-cell engineering smoke cache only, in two clean scratch directories, and compare parsed JSON plus decoded NPY/NPZ arrays exactly (including NaN masks and fixed bootstrap draws). Include one comparator mutation negative control. Do not access active-primary prediction/result contents, do not change/install dependencies, do not run detector inference or YOLO, and stop/report any mismatch rather than repairing the frozen analysis.
+
+---
+
+## 2026-09-13 — T013-REPRO1 review / T013-DEC1 assignment
+
+**Decision:** REPRO1 ACCEPTED AS A DETERMINISTIC FROZEN-ANALYSIS REPLAY PASS; PRIMARY SCIENCE REMAINS UNINSPECTED; PRE-OUTCOME DISCLOSURE/DECISION CONTRACT ASSIGNED.
+
+Reviewed commits `5fe57f7f4313ca9a94665d2320f7a06fefa99bee`, `7fa947bc184d0304940566932e871fbb0d9d8eba`, latest health-only `223a18085766f5fc0c8043507dad62b0b551625a`, and the REPRO1 report/comparator/receipt. Two exact frozen `6fec322...` smoke analyses exit 0 in `19.1696s` and `19.0555s`; all eight pre-execution bindings match; environment/pip-freeze binding matches; parsed `results.json` plus all 19 decoded arrays across paired draws/bootstrap/diagnostics match exactly including dtypes, values and NaN masks; and a scratch one-element mutation is rejected. The older smoke output was correctly not compared because its analysis-source SHA differs from the final frozen source. No active-primary prediction/scientific content was opened.
+
+Latest operational evidence is healthy at `341/1000` images with exact writer/tmux alive, `23,847,157,760` free bytes, no wrapper exit marker and no primary analysis result. The prior OPS1 storage projection remains the authoritative safety test; the run remains under normal health monitoring and is not re-audited merely because progress advanced.
+
+Scientific implication: the pre-completion validity chain now independently covers runtime/provenance integrity (OPS1), arithmetic/gate correctness (STAT1), final-cache integrity (FIN1), and deterministic analysis replay (REPRO1). The next avoidable risk is therefore not another engineering replay but outcome-dependent interpretation/selective disclosure after the primary finishes.
+
+**Next action:** `T013-DEC1` is the single active 45–60 minute package in `coordination/CHATGPT_TO_CODEX.md`. Before any primary scientific result exists, freeze a dependency-free final disclosure validator and decision state machine using only frozen definitions and synthetic fixtures. It must require complete final tables/CIs/diagnostics plus FIN1/full-cache reproducibility before interpretation; encode that Gate1+Gate2 are jointly required for Grounding support, Gate3 cannot rescue either failure, Gate4 failure invalidates interpretation, and any future YOLO result cannot mutate the Grounding decision. No active-primary scientific content, YOLO runtime, T014, threshold/gate change, or scientific-code modification is authorized.
