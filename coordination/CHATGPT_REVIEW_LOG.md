@@ -326,3 +326,26 @@ Validity is accepted. T012 uses a fresh base-calibration stream and a disjoint f
 Scientific result: Gates 1/2 fail while Gates 3/4/5 pass. A2 worsens hard NLL versus A0 by `+0.002718 / +0.003113 / +0.001049` for original/W1/W2 and only `0/3`, `1/3`, `1/3` seeds improve hard NLL. Easy safety passes, and query-local A2 retains a small localization advantage over uniform A3 (`-0.000270` pooled hard NLL, `-0.003779` pooled easy NLL), but that relative localization signal does not produce absolute hard utility. Overall A2 is slightly worse than W0 (NLL `0.842260` vs `0.840656`; accuracy `62.75%` vs `63.04%`).
 
 **Decision / next action:** enforce the T012 stop rule. The synthetic TOVD mechanism program ends here. Preserve T005, T009 and T012's narrow localization positives as scoped evidence, but do not launch T013, retune lambda/tau, invent another synthetic gate/objective/residual/fusion rule, or integrate the tested mechanisms into Grounding DINO. `research_log/t012/SYNTHESIS.md` is accepted as the current bounded evidence package. No active Codex experiment is authorized until a genuinely new Research Lead scope changes the scientific premise rather than repairing this synthetic line.
+
+---
+
+## 2026-09-12 — T013 prerequisite/interim review
+
+**Decision:** REQUEST CHANGES BEFORE PRIMARY INFERENCE; REAL-DETECTOR RESET REMAINS ACTIVE
+
+Reviewed commits/artifacts:
+- `f41c33cb167024cd21ca517e6cd55112b8edefd7` — native Grounding-DINO text-capacity diagnostic and real-asset preparation;
+- `7de57a03f94071d86d7d7b21a706abe05001e98c` / `e3fde51e4a08ffb8bd3b9c5527b0e88b59cf31a9` — HF frozen-detector/text harness and shared checkpoint loading;
+- `1d3f12b97e0a7c8a6de5607104d68ad907b30acc` / `08c7ec64d2d5e7337f1c5ef87a50ea72513054f0` — alias audit and final text-only vocabulary milestone;
+- `42daa6e5dc04aa27145c291ad98c822be13bb4fb` — deterministic 1,000-image COCO-val subset freeze before detector inference;
+- `research_log/t013/{PREREQUISITES.md,vocabulary_receipt.json,image_selection.json}` and `scripts/t013_{text,build_vocab,detector,select_images}.py`.
+
+Accepted prerequisite evidence: the native 256-token limitation is real and independently diagnosed; the author-hosted HF Swin-T checkpoint is pinned and weight-hash verified; text-only candidate filtering/ranking occurs before image inference; model tensors remain unchanged; and exactly 1,000 COCO-val IDs were frozen with seed 20260912 before primary inference. No T013 scientific outcome has been generated, so these engineering repairs do not contaminate the hypothesis test.
+
+Blocking issue: the active T013 contract requires matched Vhard/Vrand prompt budgets, but the committed receipt reports Vhard=408 tokens and Vrand=545 tokens. That difference can itself alter Grounding-DINO text attention/cross-modal conditioning, so Gate 2 would no longer isolate semantic confusability. The current r3 Vrand is therefore not accepted for primary evaluation.
+
+Required repair is fully text-only: keep current top-80 Vhard fixed; reuse the frozen candidate embeddings/similarities; compute each name's WordPiece contribution under the exact prompt grammar; and, for every token-length bin represented in Vhard, select the same count of lowest-similarity non-Vhard candidates with LVIS-ID tie breaking. The final Vrand per-name token-length histogram and full prompt token count must match Vhard exactly. If any bin is infeasible, stop before image inference rather than relaxing the rule.
+
+The 1024-capacity HF harness also remains conditional on a fixed native-vs-HF V0 parity smoke on three disjoint real images. Complete `PLAN.md`, thresholds, corruption/bootstrap code, repaired vocabulary hashes and smoke receipts must be committed before the 1,000-image 15-condition run. No primary gate is evaluated yet.
+
+**Next action:** repair/freeze the token-matched unrelated vocabulary, finish COCO assets, freeze the complete preregistration and analysis code, pass the native/HF V0 parity plus deterministic smoke, then run the unchanged T013 primary audit. No T014 or adaptation method is authorized.
