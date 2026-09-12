@@ -156,3 +156,10 @@ Committingactualvalue, CALIBRATION.md, calibration_receipt/manifest/transfer and
 
 ## 2026-09-12T14:27:09.129736+08:00 T012 frozen-lambda novel validation dispatch
 Actual lambda .2 andfullbasecalibration committed/pushed22ffbdf8d7952eb8450097cfb84ef0cbef5c4d0e BEFORE novel generation. Release20260912-142547-tovd-t012-val; run20260912-142634-tovd-t012-val-a6000 onGPU1. Testedcore8c4abff9140f1d762175472117bf6b9c3d5fcb21 unchanged; 1800novel episodes, onefrozenlambda for allstates/seeds/regimes. No retuning or extraexperiment. Next inspect explicitruncompletion, recoverraws, evaluatefixedgates; iffailed prepare synthesis andstopprogram.
+
+## 2026-09-12T14:29:45.398190+08:00 T012 novel run complete / recovery pending
+Novelrun20260912-142634-tovd-t012-val-a6000 exit0 at14:27:48+08. Gates1/2FAIL,3/4/5PASS. AllthreeaggregatehardNLLchangesA2-A0 positive .0027178433/.0031134898/.0010490485; improvingseeds0/1/1. Easy safety passes; localA2beatsuniformA3 NLLby .0002701599hard/.0037786987easy. Overall A0/A2 NLL .8406563464/.8422603823, accuracy63.0416667%/62.75%. Small negativeutility, not T011-scale collapse. Fixedglobal .2 unchangedafterfreeze22ffbdf.
+Full16MBrawarchive downloadinprogress; remoteSHA256ba5a946114948393929f03b011f0355d0c694e8d24c0fc8d95568cf4fda4f489. No activeTOVDexperiment. Applytaskstoprule: no further syntheticmechanism, prepareboundedT001-T012 synthesis preservingT005/T009/T012scopedpositiveevidence. Finalartifactverification/report/push/mirrorpending.
+
+## 2026-09-12T14:33:57.632563+08:00 T012 final evidence
+All52originalfiles/36rawrecords recovered,3600episodes/28800queries acrossphases; hashesmatch. Fixedlambda .2 remainsSHA b3f7219e55426b99f21761ba04bc872d79228a42f63ec93d6ff4300a0f7b1a5d. NovelrawNLLmatchesaggregates1e-12; historicalscoringerror3.62051651e-7 andaccuracy0; source/state/replay/inferencechecks allpass. Gates1/2FAIL,3/4/5PASS. RESULTS/SYNTHESIS/per-celltables/localization/PNG/SVG generated, figurevisuallychecked. All108tests passlocal/remoteCPU/CUDA. Stopentiresyntheticprogram pendingLeadreview; no newmechanism/tuning/detector. Preparing finalcommit/push andremoteprojectmirror.

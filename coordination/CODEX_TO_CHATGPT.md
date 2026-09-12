@@ -143,3 +143,48 @@ Committingactualvalue, CALIBRATION.md, calibration_receipt/manifest/transfer and
 
 ## 2026-09-12T14:27:09.129736+08:00 T012 frozen-lambda novel validation dispatch
 Actual lambda .2 andfullbasecalibration committed/pushed22ffbdf8d7952eb8450097cfb84ef0cbef5c4d0e BEFORE novel generation. Release20260912-142547-tovd-t012-val; run20260912-142634-tovd-t012-val-a6000 onGPU1. Testedcore8c4abff9140f1d762175472117bf6b9c3d5fcb21 unchanged; 1800novel episodes, onefrozenlambda for allstates/seeds/regimes. No retuning or extraexperiment. Next inspect explicitruncompletion, recoverraws, evaluatefixedgates; iffailed prepare synthesis andstopprogram.
+
+
+## T012 FINAL ENGINEERING REPORT — VERIFIED (negative static reduction audit)
+
+### Execution, commits and scope
+
+- Preregistration `15d3353`; tested implementation `8c4abff9140f1d762175472117bf6b9c3d5fcb21`.
+- Calibration release/run: `20260912-141825-tovd-t012-cal` / `20260912-141907-tovd-t012-cal-a6000`, 14:19:15–14:20:21+08, exit0.
+- Actual global lambda **0.2** and full calibration receipts were committed/pushed in `22ffbdf8d7952eb8450097cfb84ef0cbef5c4d0e` BEFORE novel generation. Frozen file SHA256 `b3f7219e55426b99f21761ba04bc872d79228a42f63ec93d6ff4300a0f7b1a5d` appears unchanged in novel train.log and local final files.
+- Novel release/run: `20260912-142547-tovd-t012-val` / `20260912-142634-tovd-t012-val-a6000`; dispatch `fc199a9`; 14:26:40–14:27:48+08, exit0. A6000 physicalGPU1, unchanged tested implementation.
+- 1,800 fresh base calibration +1,800 fresh novel evaluation episodes, 14,400 queries per phase. Same nine source states, 600 paired scene seeds per phase. Namespaces4B/5B disjoint from T002–T011 and each other. No outer training, checkpoint selection or novel-driven tuning.
+
+Changed files: new `tovd/models/static_semantic_fusion.py`, `tests/test_static_semantic_fusion.py`, `research_log/t012/{experiment,summary,write_report}.py`, `scripts/run_t012_{calibration,validation}_a6000.sh`, PLAN/config/source+implementationhashes, calibration/freeze/validation receipts, RESULTS/SYNTHESIS, tables/localization diagnostics/PNG/SVG, and all52 original run files (36losslessgzipJSONL records). Accepted C2, QLSR and generator paths remain unchanged.
+
+### Method, calibration and tests
+
+A2/A3 use literal log_softmax(log(p0+1e-12)+lambda*log(teacher+1e-12)), teacher_tau=tau_q=.2, normalized k/q/text. Pure local_teacher reuse, no gradient/optimizer/residual/parametercopy/persistentstate in static inference. A0 exactW0; A1 existingB1activationformula on the same frozen tensors (not separately trained B1 weights); A3 changes only uniformattention. A4 is the separately requested unchanged C2 historical diagnostic and cannot feed static inference or calibration.
+
+Grid [0,.05,.1,.2,.5,1,2]; one global base-query-NLL minimum with smallestlambda tie. BaseNLL forlambda0/.05/.1/.2/.5/1/2: .5538713284/.5534616259/.5531273434/.5526825519/.5531007106/.5594607018/.5929831600. BaseA0 .5538713285. Chosen .2 improves calibration NLL only .0011887765; no novel-benefit claim was made at freeze.
+
+Commands/tests: baseline `python -m pytest -q tests/test_query_local_residual.py tests/test_step_control.py`17passed9.02s. Newmodule3passed33.18s; expanded `tests/test_static_semantic_fusion.py`7passed17.76s. Full local `python -m pytest -q`:108passed53.20s. Calibration script fullCPU108passed9.36s and CUDA108passed27.36s BEFORE scientific execution. Existing warnings only; no test failures. Tests cover literalPoE includinglambda0, exactW0/B1, patched-grad/backward rejection, no-C2 calibration, frozenparameters/replay/queryisolation, globalbase-only selection/tie, label/ID independence, fixedgate arithmetic and two-phase random-world endtoend.
+
+Remote commands: `export TOVD_SOURCE_REVISION=8c4abff9140f1d762175472117bf6b9c3d5fcb21; bash scripts/run_t012_calibration_a6000.sh`; after actualfreezecommit, additionally `export TOVD_LAMBDA_COMMIT=22ffbdf8d7952eb8450097cfb84ef0cbef5c4d0e; bash scripts/run_t012_validation_a6000.sh`. Environment Python3.12.12/Torch2.4.0+cu121/CUDA12.1/RTXA6000. Report-only edits after tests; no scientific-code changes.
+
+### Five fixed criteria
+
+1. **Hard utility FAIL:** original/W1/W2 A2-A0 hardNLL +.0027178433/+.0031134898/+.0010490485. All worsen. Hardaccuracy changes -.916667/-.416667/-.208333pp satisfy the -1pp boundary, but cannot rescue the NLL failure.
+2. **Cross-seed FAIL:** only0/3,1/3,1/3 seeds improve hardNLL. Worst regressions .00302633/.00637112/.00362720 stay below .03; the failure is absence of consistent positive utility, not catastrophic outliers.
+3. **Easy safety PASS:** original/W1/W2 NLL changes -.003678625/+.009650195/-.003227737, accuracychanges +.375/-.458333/-.125pp, all within fixed limits.
+4. **Localization value PASS:** A2-A3 pooled hardNLL -.0002701599 and easyNLL -.0037786987. This scoped advantage over uniform fusion is retained as positive evidence; it does not establish hard improvement over W0.
+5. **No hidden adaptation PASS:** source/implementation/checkpoint hashes match, all model tensors byte-identical, parameter .grad fields None, static outputs inference tensors, no labels/IDs/learned gates in static inference. Actual singlelambda frozen before novel generation and exactly reused.
+
+Overall A0/A1/A2/A3/A4 NLL: .8406563464/.8532801616/.8422603823/.8442848116/.8092610204; accuracy63.041667%/62.826389%/62.75%/62.930556%/65.041667%. A4 remains only a historical diagnostic; it also regresses original-P hardNLL on this fresh stream and is not promoted.
+
+A2/A3 per-query meanL1difference .0218764055, KL .0009395687, classdifference1.618056%; attentionentropy2.9395362/effectivetokens19.5234226. Full teacher/attention distributions and per-seed/state/localization diagnostics retained. A2/A3 innerloss/gradient/update norm are not applicable: no inner optimization or fast parameters exist.
+
+### Validity, artifacts, synthesis and next action
+
+Calibration/novel engineering validity TRUE. Exact A0/staticreplay, A1 and A4 replay all pass; maximum historical NLL discrepancy2.08616257e-7 calibration and3.62051651e-7 novel; accuracy discrepancy0. Both phases preserve all model parameters and sources. All1800novelepisodes/14400queries recovered; raw query NLL reaggregation matches summary within1e-12. Local freeze SHA remains unchanged. Full52originalfiles/36rawrecordfiles preserve3600episodes/28800queries. ArchiveSHA calibration `c591d3e97d164e42dc477b604b5044fcb3cc27d3f8c35a95ad8d0036c9144b2d`, novel `ba5a946114948393929f03b011f0355d0c694e8d24c0fc8d95568cf4fda4f489`, both verified. Figure visually checked.
+
+Preregistered implementation clarifications: 1e-6-nat precision for strict improvements; failures here are positive signed NLL deltas and do not depend on that tolerance. A1 is exact same-state B1formula; A4's explicitly required historical C2 gradient is isolated from inference_mode A0–A3. No deviation from frozen protocol or post-outcome change.
+
+`research_log/t012/RESULTS.md` gives full calibration/cell/control/gate evidence; `SYNTHESIS.md` consolidates T001–T012, preserves T005/T009 and T012's narrow localization positives, and bounds conclusions to the fixed synthetic world/formulas/source states. A small static-fusion negative is distinguished from T011's severe collapse. No universal OVD-impossibility claim or detector result is made.
+
+**Next action:** enforce T012 stop rule: stop the synthetic TOVD mechanism program entirely, submit the synthesis for Research Lead review, and wait. Do not invent another synthetic mechanism, retune lambda/tau, promote A4, add a controller or integrate Grounding DINO. Engineering status VERIFIED; final research acceptance/rejection belongs to the Lead. Heartbeat15min remains active for review/new authorized tasks and must not rerun T012 merely because the inbox still says ACTIVE.

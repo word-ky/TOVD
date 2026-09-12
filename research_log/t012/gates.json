@@ -1,0 +1,130 @@
+{
+  "passes": false,
+  "by_gate": {
+    "1": false,
+    "2": false,
+    "3": true,
+    "4": true,
+    "5": true
+  },
+  "strict_improvement_tolerance": 1e-06,
+  "clauses": [
+    {
+      "gate": 3,
+      "scope": "group/original_P/easy",
+      "passes": true,
+      "A2_minus_A0_nll": -0.0036786246982349335,
+      "accuracy_delta_pp": 0.3750000000000031
+    },
+    {
+      "gate": 1,
+      "scope": "group/original_P/hard",
+      "passes": false,
+      "A2_minus_A0_nll": 0.002717843266824893,
+      "accuracy_delta_pp": -0.9166666666666656
+    },
+    {
+      "gate": 3,
+      "scope": "group/P_O0_resume/easy",
+      "passes": true,
+      "A2_minus_A0_nll": 0.009650195055255606,
+      "accuracy_delta_pp": -0.45833333333333837
+    },
+    {
+      "gate": 1,
+      "scope": "group/P_O0_resume/hard",
+      "passes": false,
+      "A2_minus_A0_nll": 0.0031134897936135886,
+      "accuracy_delta_pp": -0.4166666666666652
+    },
+    {
+      "gate": 3,
+      "scope": "group/P_C2_warm/easy",
+      "passes": true,
+      "A2_minus_A0_nll": -0.003227736631233713,
+      "accuracy_delta_pp": -0.12500000000000844
+    },
+    {
+      "gate": 1,
+      "scope": "group/P_C2_warm/hard",
+      "passes": false,
+      "A2_minus_A0_nll": 0.001049048515657569,
+      "accuracy_delta_pp": -0.2083333333333326
+    },
+    {
+      "gate": 2,
+      "scope": "original_P",
+      "passes": false,
+      "improved_seeds": 0,
+      "worst_nll_regression": 0.0030263298377393166,
+      "cells": [
+        {
+          "scope": "cell/7/original_P/hard",
+          "nll_delta": 0.0026298786140976915
+        },
+        {
+          "scope": "cell/17/original_P/hard",
+          "nll_delta": 0.002497321348637227
+        },
+        {
+          "scope": "cell/27/original_P/hard",
+          "nll_delta": 0.0030263298377393166
+        }
+      ]
+    },
+    {
+      "gate": 2,
+      "scope": "P_O0_resume",
+      "passes": false,
+      "improved_seeds": 1,
+      "worst_nll_regression": 0.006371122775599369,
+      "cells": [
+        {
+          "scope": "cell/7/P_O0_resume/hard",
+          "nll_delta": -0.0027479433827102273
+        },
+        {
+          "scope": "cell/17/P_O0_resume/hard",
+          "nll_delta": 0.006371122775599369
+        },
+        {
+          "scope": "cell/27/P_O0_resume/hard",
+          "nll_delta": 0.005717289987951402
+        }
+      ]
+    },
+    {
+      "gate": 2,
+      "scope": "P_C2_warm",
+      "passes": false,
+      "improved_seeds": 1,
+      "worst_nll_regression": 0.003627203665673706,
+      "cells": [
+        {
+          "scope": "cell/7/P_C2_warm/hard",
+          "nll_delta": 0.003627203665673706
+        },
+        {
+          "scope": "cell/17/P_C2_warm/hard",
+          "nll_delta": -0.0021663668379185985
+        },
+        {
+          "scope": "cell/27/P_C2_warm/hard",
+          "nll_delta": 0.0016863087192178217
+        }
+      ]
+    },
+    {
+      "gate": 4,
+      "scope": "pooled",
+      "passes": true,
+      "A2_minus_A3_hard_nll": -0.0002701599140548794,
+      "A2_minus_A3_easy_nll": -0.0037786986984186255
+    },
+    {
+      "gate": 5,
+      "scope": "static_inference",
+      "passes": true
+    }
+  ]
+}

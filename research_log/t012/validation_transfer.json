@@ -1,0 +1,17 @@
+{
+  "archive_sha256": "ba5a946114948393929f03b011f0355d0c694e8d24c0fc8d95568cf4fda4f489",
+  "archive_bytes": 16529950,
+  "remote_local_archive_match": true,
+  "frozen_lambda_sha256": "b3f7219e55426b99f21761ba04bc872d79228a42f63ec93d6ff4300a0f7b1a5d",
+  "lambda_commit": "22ffbdf8d7952eb8450097cfb84ef0cbef5c4d0e",
+  "source_implementation_commit": "8c4abff9140f1d762175472117bf6b9c3d5fcb21",
+  "raw_novel_query_count": 14400,
+  "raw_overall_nll": {
+    "A0": 0.84065634640402,
+    "A1": 0.8532801616407455,
+    "A2": 0.8422603822876671,
+    "A3": 0.8442848115939038,
+    "A4": 0.8092610203883022
+  },
+  "original_files": 52
+}

@@ -1,0 +1,20 @@
+{
+  "run_id": "20260912-142634-tovd-t012-val-a6000",
+  "phase": "validation",
+  "episode_count": 1800,
+  "query_count": 14400,
+  "tests": [],
+  "started_at": "2026-09-12T14:26:40+08:00",
+  "finished_at": "2026-09-12T14:27:48+08:00",
+  "exit_code": 0,
+  "environment": {
+    "revision": "8c4abff9140f1d762175472117bf6b9c3d5fcb21",
+    "python": "3.12.12",
+    "torch": "2.4.0+cu121",
+    "cuda": "12.1",
+    "device": "cuda",
+    "gpu": "NVIDIA RTX A6000",
+    "time_utc": "2026-09-12T06:27:48.198676+00:00",
+    "lambda_commit": "22ffbdf8d7952eb8450097cfb84ef0cbef5c4d0e"
+  }
+}
