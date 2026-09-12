@@ -30,17 +30,23 @@ def training_episode(world, seed, index):
     return world.episode("train", "easy" if index % 2 == 0 else "hard", episode_seed(seed, index, "train"))
 
 
-def train_model(world, config, seed, method, device):
+def train_model(world, config, seed, method, device, *, initial_state_dict=None,
+                episode_offset=0, snapshot_steps=(), snapshot_callback=None):
     torch.manual_seed(seed)
     model = EpisodicClassifier(method, **config["model"]).to(device)
+    if initial_state_dict is not None:
+        model.load_state_dict(initial_state_dict)
     initial_fast = {name: p.detach().cpu().clone() for name, p in model.memory.fast_model.named_parameters()}
-    initial_state = {name:p.detach().cpu().clone() for name,p in model.named_parameters()} if method == "P_C2_meta" else None
+    telemetry = method in ("P_C2_meta", "P_C2_warm", "P_O0_resume")
+    initial_state = {name:p.detach().cpu().clone() for name,p in model.named_parameters()} if telemetry else None
     optimizer = torch.optim.Adam(model.outer_parameters(), lr=config["outer_lr"])
     model.train()
+    if 0 in snapshot_steps:
+        snapshot_callback(0, model)
     curve = []
     start = time.perf_counter()
     for step in range(config["train_steps"]):
-        episodes = [training_episode(world, seed, step * config["batch_size"] + j)
+        episodes = [training_episode(world, seed, episode_offset + step * config["batch_size"] + j)
                     for j in range(config["batch_size"])]
         X, T, Q, labels = stack_episodes(episodes, device)
         model.zero_grad(set_to_none=True)
@@ -52,20 +58,22 @@ def train_model(world, config, seed, method, device):
         value = loss.detach().item()
         # Preserve every training loss, including any failed/non-finite value.
         row = {"step": step + 1, "loss": value}
-        if method == "P_C2_meta":
+        if telemetry:
             diag = result.diagnostics
             row.update({"accuracy":(logits.argmax(-1)==labels).float().mean().item(),
                         "inner_loss_before":diag["inner_loss_before"].mean().item(),
                         "inner_loss_after":diag["inner_loss_after"].mean().item(),
                         "inner_gradient_norm":diag["inner_gradient_norm"].mean().item(),
                         "update_norm":diag["fast_update_norm"].mean().item(),
-                        "selected_etas":diag["chosen_eta"].tolist(),
-                        "backtracking_trials":diag["backtracking_trials"].tolist(),
-                        "eta_zero_fraction":(diag["chosen_eta"]==0).float().mean().item(),
-                        "armijo_violations":int((diag["step_accepted"] & (diag["inner_loss_after"]>diag["armijo_rhs"])).sum().item()),
+                        "selected_etas":diag["chosen_eta"].tolist() if "chosen_eta" in diag else [model.memory.inner_lr]*len(episodes),
+                        "backtracking_trials":diag["backtracking_trials"].tolist() if "backtracking_trials" in diag else [0]*len(episodes),
+                        "eta_zero_fraction":(diag["chosen_eta"]==0).float().mean().item() if "chosen_eta" in diag else 0.0,
+                        "armijo_violations":int((diag["step_accepted"] & (diag["inner_loss_after"]>diag["armijo_rhs"])).sum().item()) if "armijo_rhs" in diag else 0,
                         "finite":bool(diag["all_finite"].all()) and all(torch.isfinite(p).all().item() and
                                        (p.grad is None or torch.isfinite(p.grad).all().item()) for p in model.parameters())})
         curve.append(row)
+        if step + 1 in snapshot_steps:
+            snapshot_callback(step + 1, model)
         if step == 0 or (step + 1) % 100 == 0:
             print(f"seed={seed} method={method} step={step+1} loss={value:.6f}", flush=True)
     elapsed = time.perf_counter() - start
@@ -77,6 +85,8 @@ def train_model(world, config, seed, method, device):
                   "W0_outer_drift": drift, "training_curve": curve}
     if initial_state is not None:
         checkpoint["initial_state_dict"] = initial_state
+    if initial_state_dict is not None:
+        checkpoint["continuation"] = {"episode_offset":episode_offset, "optimizer":"fresh Adam", "snapshot_steps":list(snapshot_steps)}
     return model, checkpoint
 
 

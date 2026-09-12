@@ -41,7 +41,9 @@ normal-output/W0 equality comparisons, mechanism tests and 3-pass timing.
 Report W0/key/query/total parameter L2 drift. Classifier is parameter-free cosine
 similarity divided by fixed .1: parameter count and parameter drift are zero;
 report unchanged temperature explicitly, not a fictitious learned classifier.
-W0 has 2128 fast parameters; key/query slow projections additionally train.
+Parameter bookkeeping corrected before training: the unchanged model has 2128
+total parameters: W0 has 1616 fast parameters, key/query projections add 256 each.
+The source task's 2128 count refers to the full model, not the fast subset.
 Report train/test NLL, accuracy, margin, per-seed paired deltas, inner loss,
 raw gradients, update norms, eta/trials/zero fraction/Armijo violations,
 task-gradient cosine/dot, episode/query NLL improvement fractions, vocabulary
