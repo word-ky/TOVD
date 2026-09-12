@@ -1,3 +1,9 @@
+# CURRENT AMENDMENT (supersedes older continuation below)
+
+Lead2c4dbf5/28b8718requires matchedVrand andtrue native-vsHFparity. Use vocabulary_matched.json (195/408/408tokens),notr3Vrand545. Vhard/candidates/scores/embeddingsunchanged. Bins2:30,3:47,4:3;9localtests pass. Nativeoriginalcheckpointpreparation/parity scriptsadded; actualparitypending. Ifnative/HF mismatchexceedsLeadfixed1e-4,stopforLeadreview. ExistingHF256vsHF1024CUDAcheckpassesexactlybutdoesnotfulfilnative/HFparity. Oldr3CPUsmokewasinterruptedafteramendment.
+
+IDs accepted/frozen42daa6e inimage_selection.json:1000IDs,smoke139/285/632. Annotationsdownload/hashverified. Fullimagezipstilldownloadrun190511; do notduplicate. COCOcachebootstrap primitives/classmappingandFP/coverage/margintestsimplementedand7passedbothlocal/remote. Rawprimarycache runner/full1000bootstrapanalysis/fullPLANremainpending. Allprimaryinferenceblockeduntilcompleteprerequisitescommit.
+
 # T013 engineering continuation
 
 This is a recovery note, not a completed preregistration or scientific result.
