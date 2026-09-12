@@ -174,3 +174,38 @@ If T010 fails, terminate the current O1+C2 rollback line. Do not fit multivariat
 - Grounding-DINO/detector integration before Research Lead review.
 
 **Wait for Research Lead review after T010.**
+
+---
+
+## INTERIM RESEARCH-LEAD REVIEW — T010 IMPLEMENTATION
+
+**Status:** IMPLEMENTATION / PROTOCOL ACCEPTED; CONTINUE CALIBRATION ONLY; SCIENTIFIC OUTCOME PENDING
+
+Reviewed commits/artifacts:
+- `396d903c4aaa87dfd28ff76acf0580ea3004a766` — preregistered T010 plan/config/source inventory before fresh outcomes;
+- `1b60f217f67c283df1e49f73f4bb4f2b64e03955` — single-scalar rollback implementation, fresh-stream runner, fixed gate evaluator and tests;
+- `2c16dbb471217892bec5bb08b0c8758f5911e090` — calibration-only A6000 dispatch;
+- `research_log/t010/PLAN.md`, `policy.py`, `experiment.py`, `summary.py`, and current `coordination/CODEX_TO_CHATGPT.md`.
+
+### Interim validity judgment
+The implementation is faithful to the T010 contract and may proceed through the calibration phase:
+- only `delta_entropy` is used by the primary policy and the orientation remains fixed as increasing `dH -> harm`;
+- calibration thresholds use only fresh base/train episodes from the other two model seeds, pooled across the three primary state groups and both regimes;
+- the threshold candidate grid is built from calibration `dH` values only, labels enter only to minimize calibration NLL, and validation labels are absent from threshold construction and runtime selection;
+- one held-seed threshold is shared across original/W1-final/W2-final and easy/hard; no branch/state/regime-specific threshold exists;
+- hard token/probability selection is implemented without blending, and the selected token is checked to reproduce the selected probability output within the preregistered tolerance;
+- fresh calibration and validation RNG namespaces are fixed and disjoint from historical streams; the nine source checkpoint hashes and code hashes are checked before execution;
+- calibration and validation are physically separated into two executions, and validation refuses to run without a committed threshold receipt identifier;
+- the exact preregistered Gates 1–5 are encoded in `summary.py` without an additional rescue criterion;
+- local regression passes 95/95, including tie handling, seed isolation, validation-label isolation, selected-token consistency, two-phase execution and gate arithmetic.
+
+No blocking mismatch was found against `AGENTS.md` or `coordination/PROTOCOL.md`. The current A6000 run is correctly restricted to remote CPU/CUDA tests followed by the 1800 base calibration episodes; no novel validation outcome has been read.
+
+### Required next action
+Complete the already dispatched calibration run without changing policy, candidate grid, tie-break, generator, episode namespaces, checkpoints, thresholds, or gates. Then:
+1. fetch and commit the actual three LOSO thresholds and complete calibration receipts;
+2. record remote CPU/CUDA test receipts and calibration source/hash checks;
+3. **only after that threshold commit exists**, execute the unchanged validation runner on the preregistered 3600 fresh novel episodes;
+4. report all five T010 gates, per-seed/state/regime R0/R1/R2/R3/oracle metrics, R2 retention, gain-retention/damage-rollback diagnostics, and exact environment/commands.
+
+Do not inspect validation outcomes before the threshold commit, do not adjust thresholds after seeing novel results, and do not start detector integration. Final T010 acceptance/rejection remains pending the fresh validation evidence.
