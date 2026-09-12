@@ -265,3 +265,23 @@ Reviewed commits/artifacts:
 The implementation is faithful to the active T010 contract. It uses only delta entropy with fixed orientation, constructs each held-seed threshold from other-two-seed base calibration rows, uses labels only for offline calibration NLL, hard-selects matching probability/token outputs without blending, keeps one threshold across all state groups/regimes, verifies fresh stream non-overlap and source/code hashes, separates calibration from validation, and encodes the fixed five gates. Local regression passes 95/95, including seed/validation-label isolation and two-phase execution tests. No detector/model/objective/generator change is present.
 
 **Next action:** finish the dispatched 1,800-episode base calibration run; commit the actual three LOSO thresholds and complete calibration/CPU/CUDA receipts before any novel validation generation or scoring. Only after that commit may the unchanged runner evaluate the preregistered 3,600 fresh novel episodes. Final T010 acceptance/rejection remains pending all five gates on those validation streams.
+
+---
+
+## 2026-09-12 — T010 final review
+
+**Decision:** ACCEPTED AS A VALID CONFIRMATORY NEGATIVE RESULT; CALIBRATED O1+C2 ROLLBACK LINE TERMINATED; T011 STRUCTURAL PIVOT AUTHORIZED
+
+Reviewed commits/artifacts:
+- `bbfaa8608d259527f88c996d7ad61420bb7af41f` — actual LOSO thresholds and complete calibration receipts frozen before novel validation;
+- `6eb2924ff9d77cd34a54f75036882072535e6f64` — unchanged novel-validation dispatch after threshold freeze;
+- `386901d01446c0908cfc5aef9435509aaec8a92c` — complete fresh-validation evidence and gate report;
+- `research_log/t010/gates.json`, final results/usage/headroom tables, and the final engineering mailbox.
+
+Validity is accepted. The thresholds were committed before any target-state validation generation/scoring; calibration and validation streams are disjoint from one another and from T002–T009; the tested core did not change; validation labels cannot affect the runtime policy; local/A6000 CPU/A6000 CUDA regressions each pass 95/95; source/checkpoint hashes, episodic reset, oracle separation and parameter immutability checks pass. No post-outcome threshold/policy/gate repair occurred.
+
+Scientific result: the confirmatory method fails Gates 1 and 2 while passing Gates 3–5. The calibrated rollback successfully removes easy-state damage but discards most useful novel hard specialization: hard NLL-gain retention is 47.56% / -4.79% / 2.44% for original/W1/W2 versus the required 75%, and W1/W2 hard accuracy-gain retention is only 4.26% / 1.94%. Hard C2 usage collapses to 9.19% / 7.35% / 0.94%. The policy rolls back 89.3% of damaging flips but retains only 23.7% of corrective flips. Thus T009's delta-entropy AUROC remains a valid query-level ranking result, but an absolute base-calibrated threshold is not a transferable novel-vocabulary decision rule.
+
+The preregistered stop rule therefore applies. Do not rescue this line with threshold normalization, state/regime thresholds, R3, extra features, learned gates or C2 retuning. The next test must change the structure of the fast semantic state itself.
+
+**Next action:** T011 assigned as a query-conditioned fast semantic residual screen. Keep W0 immutable, replace the shared per-image adapted fast model with zero-initialized query-local residual state derived from query-localized visual context plus the current vocabulary, and compare against W0, existing global C2 and a uniform-context residual control on a new preregistered development stream. No rollback selector, outer training or detector integration is allowed.
