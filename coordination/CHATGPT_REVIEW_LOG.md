@@ -166,3 +166,28 @@ The decisive failure is Rule 3. Adapted T006 is 10.0 pp below B2 hard accuracy a
 Interpretation: this is not evidence that semantic fast weights are useless. It rejects the specific assumption that **O1+C2 should jointly learn both the slow semantic representation and the fast adaptation behavior from the original random initialization under the fixed T002 budget**. The strongest current evidence instead points to a decoupled regime: first learn a strong semantic state under O0, then keep that state strong and apply O1+C2 as label-free episodic adaptation.
 
 **Next action:** T007 assigned as a warm-start origin audit. Start two matched 400-step continuation branches from the exact same final T002 P checkpoint: W1 continues the original O0 training, while W2 switches to O1+C2 meta-training. Evaluate both W0-only and O1+C2-adapted paths against the original frozen T005 state, T006 random-init meta state, and exact B0/B1/B2 controls. This will determine whether T006 failed because C2 meta-training started from scratch or because outer optimization with C2 itself erodes a strong pretrained representation. No detector integration is allowed until this ambiguity is resolved.
+
+---
+
+## 2026-09-12 — T007 interim implementation review
+
+**Decision:** IMPLEMENTATION / PROTOCOL ACCEPTED; CONTINUE THE FIXED RUN; SCIENTIFIC OUTCOME PENDING
+
+Reviewed commits/artifacts:
+- `deeacd42ebe5dcb54bebd52a7f0e4f647dffde4c` — preregistered T007 matched warm-start audit;
+- `e88ad88112f6486f8c7dc8458594e095528ba9f1` — implementation, focused tests, replay/equality machinery, rule evaluator and fixed-snapshot audit;
+- `ad31f89192d4aff9c8dabf907c97f3ccca82bbbb` — A6000 dispatch and recovery state;
+- current `coordination/CODEX_TO_CHATGPT.md`, which explicitly states that aggregate T007 outcomes have not yet been read.
+
+Interim acceptance evidence:
+- both W1 and W2 initialize from byte-verified identical seed-specific final T002-P tensors and use fresh Adam with the same `.001` learning rate;
+- continuation episodes begin after the original T002 training stream, avoiding accidental replay of the original training indices;
+- W1 follows the original O0/P semantic-TTT implementation and W2 follows the unchanged O1+C2 backtracking implementation;
+- no new objective, controller, regularizer, architecture, generator, detector path or test-time label use was introduced;
+- source checkpoint hashes are checked before continuation, step-0 origin equality is enforced, historical controls are replayed, fixed 0/50/100/200/400 snapshots are saved, and final-checkpoint-only primary interpretation is encoded;
+- local full regression passes 79/79; focused common-origin/manual-Adam/replay/serialization and miniature end-to-end/rule tests pass;
+- parameter-count correction to 1616 fast +256 key +256 query =2128 total is bookkeeping only and does not alter tensor shapes or scientific degrees of freedom.
+
+Code review found no blocking mismatch with the T007 acceptance contract. `P_O0_resume` falls through to the same `FastSemanticMemory` construction as P and is explicitly routed through the enabled-TTT forward path; `P_C2_warm` constructs the same O1 backtracking memory as the accepted C2 path. The manual continuation test verifies exact branch-equivalent updates from the common origin.
+
+**Instruction / next action:** finish the exact dispatched A6000 run without changing any preregistered setting and without tuning/selecting from partial outcomes. When complete, report Rules 1–6, all W0-only/adapted held-out metrics, W1-vs-W2 matched-continuation effects, T005/T006/B0/B1/B2 equality receipts, drift/trajectory/selector/mechanism diagnostics, and CPU/CUDA receipts. Do not start Grounding-DINO integration or T008 before Research Lead reviews the complete T007 evidence.
