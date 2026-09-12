@@ -1,0 +1,67 @@
+{
+  "features": {
+    "query_entropy": {
+      "is_label_free_feature": true,
+      "availability": "pre_update"
+    },
+    "query_max_probability": {
+      "is_label_free_feature": true,
+      "availability": "pre_update"
+    },
+    "query_probability_gap": {
+      "is_label_free_feature": true,
+      "availability": "pre_update"
+    },
+    "query_js": {
+      "is_label_free_feature": true,
+      "availability": "post_candidate_rollback"
+    },
+    "representation_displacement": {
+      "is_label_free_feature": true,
+      "availability": "post_candidate_rollback"
+    },
+    "prediction_changed": {
+      "is_label_free_feature": true,
+      "availability": "post_candidate_rollback"
+    },
+    "delta_max_probability": {
+      "is_label_free_feature": true,
+      "availability": "post_candidate_rollback"
+    },
+    "delta_entropy": {
+      "is_label_free_feature": true,
+      "availability": "post_candidate_rollback"
+    },
+    "delta_probability_gap": {
+      "is_label_free_feature": true,
+      "availability": "post_candidate_rollback"
+    }
+  },
+  "other_columns": {
+    "is_label_free_feature": false,
+    "fields": [
+      "state_id",
+      "seed",
+      "branch",
+      "step",
+      "regime",
+      "episode_seed",
+      "query_index",
+      "before_nll",
+      "after_nll",
+      "delta_nll",
+      "before_accuracy",
+      "after_accuracy",
+      "delta_accuracy",
+      "harm",
+      "harm_gt_005",
+      "transition",
+      "nll_direction",
+      "oracle_uses_C2",
+      "oracle_nll",
+      "oracle_accuracy"
+    ],
+    "oracle_only": true
+  },
+  "separation": "query_features accepts only stored probabilities/tokens; labels consumed afterward; no runtime output selection performed"
+}

@@ -124,4 +124,3 @@ def test_frozen_log_end_to_end_accounting_and_determinism(tmp_path):
     assert a['query_count'] == 72 and a['episode_count'] == 36
     assert a['A_passes'] and a['B']['passes']
     assert (tmp_path/'out/queries.csv').read_bytes() == (tmp_path/'repeat/queries.csv').read_bytes()
-

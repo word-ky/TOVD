@@ -1,0 +1,70 @@
+{
+  "source_commit": "1d9915b06befaf509b912e3328491e3a8b263522",
+  "source_files": 54,
+  "query_count": 43200,
+  "episode_count": 5400,
+  "A": true,
+  "B": true,
+  "artifacts": [
+    {
+      "path": "research_log\\t009\\results\\attribution.csv",
+      "bytes": 6469,
+      "sha256": "e2c7bd290276d8e5dfd3bf29bf42bb8c782443943ddfda3df72f55b8e055b86b"
+    },
+    {
+      "path": "research_log\\t009\\results\\checks.json",
+      "bytes": 2476192,
+      "sha256": "9709564e43879e37323b123cc903b06fd1a748baff73494de496493a00b76fc6"
+    },
+    {
+      "path": "research_log\\t009\\results\\direction_consistency.csv",
+      "bytes": 75667,
+      "sha256": "d7d20a33784bc7104838e4fa52c611dc046ccb10e1382e5befb0dc36cbda8957"
+    },
+    {
+      "path": "research_log\\t009\\results\\episodes.csv",
+      "bytes": 801667,
+      "sha256": "8783910670a6cf6527c06e3c68c966a386a044c536aad5a52811aa1b6e26be47"
+    },
+    {
+      "path": "research_log\\t009\\results\\gates.json",
+      "bytes": 14022,
+      "sha256": "5fd1edee37b141b7822052827e525025106f60d76ecb96922880b06c0307b87a"
+    },
+    {
+      "path": "research_log\\t009\\results\\loso.csv",
+      "bytes": 16215,
+      "sha256": "ad3b52d50c1eac9d5a3876922bce74e2e34d9741d3c8839c9ee08454cd4221f9"
+    },
+    {
+      "path": "research_log\\t009\\results\\oracle_ceilings.csv",
+      "bytes": 12009,
+      "sha256": "7902c6046e53c567ecb4aae1c660a260a678fb3f0a4de895de0df1889af32337"
+    },
+    {
+      "path": "research_log\\t009\\results\\queries.csv",
+      "bytes": 14995865,
+      "sha256": "2cfcdd801168cfd902f5b4834e669abdbf109d176360c08a86f25f7ec384f48c"
+    },
+    {
+      "path": "research_log\\t009\\results\\results.json",
+      "bytes": 734248,
+      "sha256": "dfcd1c38d770afbd051ddaa64821f5374c18d00ab3a846b85f9968eea14ed16e"
+    },
+    {
+      "path": "research_log\\t009\\results\\schema.json",
+      "bytes": 1780,
+      "sha256": "082359367da00607b43143e524c3ff1c44af6a56f907678915e8f0682576ef7a"
+    },
+    {
+      "path": "research_log\\t009\\results\\single_features.csv",
+      "bytes": 98583,
+      "sha256": "bc6a154c94842406021efd4cd5633b652380c617257e42a60962b66f4db94bb3"
+    },
+    {
+      "path": "research_log\\t009\\results\\transitions.csv",
+      "bytes": 69218,
+      "sha256": "944c08d38b13718f2d8ef06dc8b99954dbf4b03384dfb7f1c44601d1cfe715f3"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+EXTRACTED 43200 queries / 5400 episodes
+{"validity": true, "A": true, "B": true, "pre": [], "post": ["delta_max_probability", "delta_entropy", "delta_probability_gap"]}

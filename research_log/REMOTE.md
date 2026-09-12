@@ -99,3 +99,11 @@ All 14 scalar gates fail the original overall LOSO .70/.65 requirements; best me
 Complete 76-file original receipt fetched, hashes in t008/verification.json; 66 raw record files. Tables and three PNG/SVG figures generated and visually checked; corrected plot legend overlap.
 No runtime changes since tested 153ac30. No controller, training, detector or next task. Await Research Lead; do not duplicate VERIFIED T008.
 Final engineering mailbox and project state written; syncing local report and recovery logs to A6000 and committing evidence to GitHub.
+
+## 2026-09-12 11:03 +08 T009 complete
+Preregistration1b63bf6; tested3e56b0cca890ea83873e48ee68f69593b78af9b7. Pure local frozen-log analysis exited0; no model/GPU rerun.
+54 source hashes match,27states/5400episodes/43200queries; 90localtests passed26.18s. Historical query harm sign differences0, accuracyexact, NLL rounding within2e-6; deterministic repeated extraction.
+A PASS: delta_entropy meanLOSO .750696/min .722485, delta_max_probability .708225, delta_probability_gap .709433. Allpost-candidate; no pre-update passes.
+B PASS: all preregistered oracle hard-gain/easy-regression clauses pass. This is a label-using oracle ceiling, not a deployed policy.
+Report renderer initially failed on empty hardQ4 bin; plot now showszero. Three PNG/SVG figures visuallychecked; trailing EOF whitespace fixed, no semantic analysis changes.
+All evidence in t009/results plus RESULTS/verification. Final engineering mailbox and state updated; mirror to A6000 project then commit/push. Await lead review/newT010; no autonomouscontroller/detector.

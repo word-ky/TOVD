@@ -70,4 +70,3 @@ def episode_rows(record):
             for j, (f, v) in enumerate(zip(features, vectors))]
     assert features == [query_features(*v) for v in vectors]
     return rows
-
