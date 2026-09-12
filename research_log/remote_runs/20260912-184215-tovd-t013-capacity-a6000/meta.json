@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-184215-tovd-t013-capacity-a6000",
+  "releaseId": "20260912-184053-tovd-t013-capacity",
+  "sessionName": "autodl-20260912-184215-tovd-t013-capacity-a6000",
+  "command": "export PYTHONPATH=/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_probe_deps; export CUDA_VISIBLE_DEVICES=1; /home/wenchang/asdasdsad/wjq/TOVD/.venv/bin/python research_log/t013/probe_text_capacity.py --sources research_log/t013/probe_sources --output \"$AUTODL_RUN_DIR/artifacts/capacity_cpu.json\" --torch-head && /home/wenchang/asdasdsad/wjq/TOVD/.venv/bin/python research_log/t013/probe_text_capacity.py --sources research_log/t013/probe_sources --output \"$AUTODL_RUN_DIR/artifacts/capacity_cuda.json\" --torch-head --device cuda"
+}

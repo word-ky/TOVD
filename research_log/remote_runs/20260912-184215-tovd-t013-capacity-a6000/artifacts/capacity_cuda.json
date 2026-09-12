@@ -1,0 +1,740 @@
+{
+  "kind": "text_capacity_prerequisite_only_not_detector_experiment",
+  "python": "3.12.12",
+  "tokenizers": "0.22.2",
+  "upstream_commit": "856dde20aee659246248e20734ef9ba5214f5e44",
+  "canonical_caption": "person . bicycle . car . motorcycle . airplane . bus . train . truck . boat . traffic light . fire hydrant . stop sign . parking meter . bench . bird . cat . dog . horse . sheep . cow . elephant . bear . zebra . giraffe . backpack . umbrella . handbag . tie . suitcase . frisbee . skis . snowboard . sports ball . kite . baseball bat . baseball glove . skateboard . surfboard . tennis racket . bottle . wine glass . cup . fork . knife . spoon . bowl . banana . apple . sandwich . orange . broccoli . carrot . hot dog . pizza . donut . cake . chair . couch . potted plant . bed . dining table . toilet . tv . laptop . mouse . remote . keyboard . cell phone . microwave . oven . toaster . sink . refrigerator . book . clock . vase . scissors . teddy bear . hair drier . toothbrush .",
+  "canonical_tokens": [
+    "[CLS]",
+    "person",
+    ".",
+    "bicycle",
+    ".",
+    "car",
+    ".",
+    "motorcycle",
+    ".",
+    "airplane",
+    ".",
+    "bus",
+    ".",
+    "train",
+    ".",
+    "truck",
+    ".",
+    "boat",
+    ".",
+    "traffic",
+    "light",
+    ".",
+    "fire",
+    "hydra",
+    "##nt",
+    ".",
+    "stop",
+    "sign",
+    ".",
+    "parking",
+    "meter",
+    ".",
+    "bench",
+    ".",
+    "bird",
+    ".",
+    "cat",
+    ".",
+    "dog",
+    ".",
+    "horse",
+    ".",
+    "sheep",
+    ".",
+    "cow",
+    ".",
+    "elephant",
+    ".",
+    "bear",
+    ".",
+    "zebra",
+    ".",
+    "gi",
+    "##raf",
+    "##fe",
+    ".",
+    "backpack",
+    ".",
+    "umbrella",
+    ".",
+    "hand",
+    "##bag",
+    ".",
+    "tie",
+    ".",
+    "suitcase",
+    ".",
+    "fr",
+    "##is",
+    "##bee",
+    ".",
+    "ski",
+    "##s",
+    ".",
+    "snow",
+    "##board",
+    ".",
+    "sports",
+    "ball",
+    ".",
+    "kite",
+    ".",
+    "baseball",
+    "bat",
+    ".",
+    "baseball",
+    "glove",
+    ".",
+    "skate",
+    "##board",
+    ".",
+    "surf",
+    "##board",
+    ".",
+    "tennis",
+    "rack",
+    "##et",
+    ".",
+    "bottle",
+    ".",
+    "wine",
+    "glass",
+    ".",
+    "cup",
+    ".",
+    "fork",
+    ".",
+    "knife",
+    ".",
+    "spoon",
+    ".",
+    "bowl",
+    ".",
+    "banana",
+    ".",
+    "apple",
+    ".",
+    "sandwich",
+    ".",
+    "orange",
+    ".",
+    "bro",
+    "##cco",
+    "##li",
+    ".",
+    "carrot",
+    ".",
+    "hot",
+    "dog",
+    ".",
+    "pizza",
+    ".",
+    "don",
+    "##ut",
+    ".",
+    "cake",
+    ".",
+    "chair",
+    ".",
+    "couch",
+    ".",
+    "pot",
+    "##ted",
+    "plant",
+    ".",
+    "bed",
+    ".",
+    "dining",
+    "table",
+    ".",
+    "toilet",
+    ".",
+    "tv",
+    ".",
+    "laptop",
+    ".",
+    "mouse",
+    ".",
+    "remote",
+    ".",
+    "keyboard",
+    ".",
+    "cell",
+    "phone",
+    ".",
+    "microwave",
+    ".",
+    "oven",
+    ".",
+    "toast",
+    "##er",
+    ".",
+    "sink",
+    ".",
+    "refrigerator",
+    ".",
+    "book",
+    ".",
+    "clock",
+    ".",
+    "vase",
+    ".",
+    "scissors",
+    ".",
+    "teddy",
+    "bear",
+    ".",
+    "hair",
+    "dr",
+    "##ier",
+    ".",
+    "tooth",
+    "##brush",
+    ".",
+    "[SEP]"
+  ],
+  "canonical_token_count": 195,
+  "canonical_rows": [
+    {
+      "name": "person",
+      "token_indices": [
+        1
+      ]
+    },
+    {
+      "name": "bicycle",
+      "token_indices": [
+        3
+      ]
+    },
+    {
+      "name": "car",
+      "token_indices": [
+        5
+      ]
+    },
+    {
+      "name": "motorcycle",
+      "token_indices": [
+        7
+      ]
+    },
+    {
+      "name": "airplane",
+      "token_indices": [
+        9
+      ]
+    },
+    {
+      "name": "bus",
+      "token_indices": [
+        11
+      ]
+    },
+    {
+      "name": "train",
+      "token_indices": [
+        13
+      ]
+    },
+    {
+      "name": "truck",
+      "token_indices": [
+        15
+      ]
+    },
+    {
+      "name": "boat",
+      "token_indices": [
+        17
+      ]
+    },
+    {
+      "name": "traffic light",
+      "token_indices": [
+        19,
+        20
+      ]
+    },
+    {
+      "name": "fire hydrant",
+      "token_indices": [
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "name": "stop sign",
+      "token_indices": [
+        26,
+        27
+      ]
+    },
+    {
+      "name": "parking meter",
+      "token_indices": [
+        29,
+        30
+      ]
+    },
+    {
+      "name": "bench",
+      "token_indices": [
+        32
+      ]
+    },
+    {
+      "name": "bird",
+      "token_indices": [
+        34
+      ]
+    },
+    {
+      "name": "cat",
+      "token_indices": [
+        36
+      ]
+    },
+    {
+      "name": "dog",
+      "token_indices": [
+        38
+      ]
+    },
+    {
+      "name": "horse",
+      "token_indices": [
+        40
+      ]
+    },
+    {
+      "name": "sheep",
+      "token_indices": [
+        42
+      ]
+    },
+    {
+      "name": "cow",
+      "token_indices": [
+        44
+      ]
+    },
+    {
+      "name": "elephant",
+      "token_indices": [
+        46
+      ]
+    },
+    {
+      "name": "bear",
+      "token_indices": [
+        48
+      ]
+    },
+    {
+      "name": "zebra",
+      "token_indices": [
+        50
+      ]
+    },
+    {
+      "name": "giraffe",
+      "token_indices": [
+        52,
+        53,
+        54
+      ]
+    },
+    {
+      "name": "backpack",
+      "token_indices": [
+        56
+      ]
+    },
+    {
+      "name": "umbrella",
+      "token_indices": [
+        58
+      ]
+    },
+    {
+      "name": "handbag",
+      "token_indices": [
+        60,
+        61
+      ]
+    },
+    {
+      "name": "tie",
+      "token_indices": [
+        63
+      ]
+    },
+    {
+      "name": "suitcase",
+      "token_indices": [
+        65
+      ]
+    },
+    {
+      "name": "frisbee",
+      "token_indices": [
+        67,
+        68,
+        69
+      ]
+    },
+    {
+      "name": "skis",
+      "token_indices": [
+        71,
+        72
+      ]
+    },
+    {
+      "name": "snowboard",
+      "token_indices": [
+        74,
+        75
+      ]
+    },
+    {
+      "name": "sports ball",
+      "token_indices": [
+        77,
+        78
+      ]
+    },
+    {
+      "name": "kite",
+      "token_indices": [
+        80
+      ]
+    },
+    {
+      "name": "baseball bat",
+      "token_indices": [
+        82,
+        83
+      ]
+    },
+    {
+      "name": "baseball glove",
+      "token_indices": [
+        85,
+        86
+      ]
+    },
+    {
+      "name": "skateboard",
+      "token_indices": [
+        88,
+        89
+      ]
+    },
+    {
+      "name": "surfboard",
+      "token_indices": [
+        91,
+        92
+      ]
+    },
+    {
+      "name": "tennis racket",
+      "token_indices": [
+        94,
+        95,
+        96
+      ]
+    },
+    {
+      "name": "bottle",
+      "token_indices": [
+        98
+      ]
+    },
+    {
+      "name": "wine glass",
+      "token_indices": [
+        100,
+        101
+      ]
+    },
+    {
+      "name": "cup",
+      "token_indices": [
+        103
+      ]
+    },
+    {
+      "name": "fork",
+      "token_indices": [
+        105
+      ]
+    },
+    {
+      "name": "knife",
+      "token_indices": [
+        107
+      ]
+    },
+    {
+      "name": "spoon",
+      "token_indices": [
+        109
+      ]
+    },
+    {
+      "name": "bowl",
+      "token_indices": [
+        111
+      ]
+    },
+    {
+      "name": "banana",
+      "token_indices": [
+        113
+      ]
+    },
+    {
+      "name": "apple",
+      "token_indices": [
+        115
+      ]
+    },
+    {
+      "name": "sandwich",
+      "token_indices": [
+        117
+      ]
+    },
+    {
+      "name": "orange",
+      "token_indices": [
+        119
+      ]
+    },
+    {
+      "name": "broccoli",
+      "token_indices": [
+        121,
+        122,
+        123
+      ]
+    },
+    {
+      "name": "carrot",
+      "token_indices": [
+        125
+      ]
+    },
+    {
+      "name": "hot dog",
+      "token_indices": [
+        127,
+        128
+      ]
+    },
+    {
+      "name": "pizza",
+      "token_indices": [
+        130
+      ]
+    },
+    {
+      "name": "donut",
+      "token_indices": [
+        132,
+        133
+      ]
+    },
+    {
+      "name": "cake",
+      "token_indices": [
+        135
+      ]
+    },
+    {
+      "name": "chair",
+      "token_indices": [
+        137
+      ]
+    },
+    {
+      "name": "couch",
+      "token_indices": [
+        139
+      ]
+    },
+    {
+      "name": "potted plant",
+      "token_indices": [
+        141,
+        142,
+        143
+      ]
+    },
+    {
+      "name": "bed",
+      "token_indices": [
+        145
+      ]
+    },
+    {
+      "name": "dining table",
+      "token_indices": [
+        147,
+        148
+      ]
+    },
+    {
+      "name": "toilet",
+      "token_indices": [
+        150
+      ]
+    },
+    {
+      "name": "tv",
+      "token_indices": [
+        152
+      ]
+    },
+    {
+      "name": "laptop",
+      "token_indices": [
+        154
+      ]
+    },
+    {
+      "name": "mouse",
+      "token_indices": [
+        156
+      ]
+    },
+    {
+      "name": "remote",
+      "token_indices": [
+        158
+      ]
+    },
+    {
+      "name": "keyboard",
+      "token_indices": [
+        160
+      ]
+    },
+    {
+      "name": "cell phone",
+      "token_indices": [
+        162,
+        163
+      ]
+    },
+    {
+      "name": "microwave",
+      "token_indices": [
+        165
+      ]
+    },
+    {
+      "name": "oven",
+      "token_indices": [
+        167
+      ]
+    },
+    {
+      "name": "toaster",
+      "token_indices": [
+        169,
+        170
+      ]
+    },
+    {
+      "name": "sink",
+      "token_indices": [
+        172
+      ]
+    },
+    {
+      "name": "refrigerator",
+      "token_indices": [
+        174
+      ]
+    },
+    {
+      "name": "book",
+      "token_indices": [
+        176
+      ]
+    },
+    {
+      "name": "clock",
+      "token_indices": [
+        178
+      ]
+    },
+    {
+      "name": "vase",
+      "token_indices": [
+        180
+      ]
+    },
+    {
+      "name": "scissors",
+      "token_indices": [
+        182
+      ]
+    },
+    {
+      "name": "teddy bear",
+      "token_indices": [
+        184,
+        185
+      ]
+    },
+    {
+      "name": "hair drier",
+      "token_indices": [
+        187,
+        188,
+        189
+      ]
+    },
+    {
+      "name": "toothbrush",
+      "token_indices": [
+        191,
+        192
+      ]
+    }
+  ],
+  "extended_class_count": 160,
+  "minimum_extended_token_count": 355,
+  "configured_and_hardcoded_token_capacity": 256,
+  "minimum_tokens_over_capacity": 99,
+  "canonical_names_all_fit": true,
+  "all_80_appended_names_fit": false,
+  "config_only_override_effective": false,
+  "source_sha256": {
+    "LICENSE": "2a62948a727a8c56d1863a874fedd798f946d667aede030b35df8f482488fbed",
+    "bert_vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+    "coco80.json": "531f54badb9c8b01b155ec11750e98f0b284e0a64df820ed8d41f2fa6634a0cd",
+    "groundingdino.py": "f9f9fef478ad811565f34aad9f5eaeab0cd69f7379fc0ee3861c58ce4f55b29f",
+    "utils.py": "543d241b19e5592b99cbef42ce6406360bd70760da5acca14863e56f83205233",
+    "vl_utils.py": "b2ccf5fc58a31ce652dbc4f37dcaf9e90c9b2a62548cabfe20f806fd2efa5fc8"
+  },
+  "unmodified_head_extended_failure": "The expanded size of the tensor (256) must match the existing size (355) at non-singleton dimension 2.  Target sizes: [1, 1, 256].  Tensor sizes: [355]",
+  "torch": "2.4.0+cu121",
+  "device": "cuda",
+  "head_parameter_count": 0,
+  "head_256_test_passed": true
+}

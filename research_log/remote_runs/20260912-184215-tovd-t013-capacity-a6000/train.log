@@ -1,0 +1,46 @@
+[autodl] run_id=20260912-184215-tovd-t013-capacity-a6000
+[autodl] started_at=2026-09-12T18:42:22+08:00
+<unknown>:61: SyntaxWarning: invalid escape sequence '\s'
+{
+  "kind": "text_capacity_prerequisite_only_not_detector_experiment",
+  "python": "3.12.12",
+  "tokenizers": "0.22.2",
+  "upstream_commit": "856dde20aee659246248e20734ef9ba5214f5e44",
+  "canonical_token_count": 195,
+  "extended_class_count": 160,
+  "minimum_extended_token_count": 355,
+  "configured_and_hardcoded_token_capacity": 256,
+  "minimum_tokens_over_capacity": 99,
+  "canonical_names_all_fit": true,
+  "all_80_appended_names_fit": false,
+  "config_only_override_effective": false,
+  "unmodified_head_extended_failure": "The expanded size of the tensor (256) must match the existing size (355) at non-singleton dimension 2.  Target sizes: [1, 1, 256].  Tensor sizes: [355]",
+  "torch": "2.4.0+cu121",
+  "device": "cpu",
+  "head_parameter_count": 0,
+  "head_256_test_passed": true
+}
+<unknown>:61: SyntaxWarning: invalid escape sequence '\s'
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+{
+  "kind": "text_capacity_prerequisite_only_not_detector_experiment",
+  "python": "3.12.12",
+  "tokenizers": "0.22.2",
+  "upstream_commit": "856dde20aee659246248e20734ef9ba5214f5e44",
+  "canonical_token_count": 195,
+  "extended_class_count": 160,
+  "minimum_extended_token_count": 355,
+  "configured_and_hardcoded_token_capacity": 256,
+  "minimum_tokens_over_capacity": 99,
+  "canonical_names_all_fit": true,
+  "all_80_appended_names_fit": false,
+  "config_only_override_effective": false,
+  "unmodified_head_extended_failure": "The expanded size of the tensor (256) must match the existing size (355) at non-singleton dimension 2.  Target sizes: [1, 1, 256].  Tensor sizes: [355]",
+  "torch": "2.4.0+cu121",
+  "device": "cuda",
+  "head_parameter_count": 0,
+  "head_256_test_passed": true
+}
+[autodl] finished_at=2026-09-12T18:42:26+08:00
+[autodl] exit_code=0

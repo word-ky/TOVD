@@ -193,3 +193,13 @@ T012 publication complete: evidencecommit `0a5571326b86a08824d84d9f93e31cb497aba
 
 ## 2026-09-12T15:08:52.838716+08:00 Research Lead closure acknowledged
 Fetched and fast-forwarded44a1546/bd4cc6d. Lead accepted T012 as a valid negative result and accepted research_log/t012/SYNTHESIS.md as the bounded final evidence package. T001-T012 synthetic mechanism program CLOSED / AWAITING NEW RESEARCH SCOPE. No active experiment authorized; no T013 repair, lambda/tau tuning, synthetic objective/gate/residual/fusion/meta-training variant, or detector integration. Preserve all scoped positives and negative receipts unchanged. Existing completed runs already archived; no tests or experiments rerun for this coordination-only update. Heartbeat15min remains active, quiet without actionable change, awaiting explicitly new Lead scope that changes the scientific premise. Updating local/remote recovery status and acknowledging the decision in the mailbox.
+
+## T013 — ACTIVE: capacity prerequisite verified; asset preparation
+
+Lead scope c07ce16/afe9c13. Milestone commit is the commit containing this report. Files: research_log/t013/probe_text_capacity.py, probe_sources, three local/remote CPU/CUDA receipts, PREREQUISITES.md; scripts/t013_prepare_assets.sh; project state/session log; original remote run receipts.
+
+Native Grounding DINO 856dde20 hardcodes256texttokens; COCO80 is195 and160classes require at least355. This independently blocks unmodified complete prompts. Exact caption/head diagnostic passes localCPU and A6000CPU/CUDA (run20260912-184215-tovd-t013-capacity-a6000 exit0). No detector images/weights or primaryoutcomes used.
+
+Bounded repair: use author-hosted HF Swin-T checkpoint a2bb814d with Transformers4.44.2 and shared1024 capacity, retaining frozen learnedweights. Full V0 parity and promptcoverage smoke still required. Record actualtokenlengths; equalclasscounts do not implyequalWordPiececounts. OfficialPyTorch attention implementation avoids incompatible localCUDAcompiler. No mechanism/import from T001-T012.
+
+Preparing officialCOCOval and model downloads under shared/t013 with isolatedvenv. PLAN/preregistration, imageIDs, rankedLVISnames, checkpoint/dataSHA andall scientific gates remain pending. Innerloss/update/grad/reset notapplicable (noadaptation). Gates1-4 NOT EVALUATED; do not interpret this engineeringdiagnosis as a failedscientificpremise. Continue preparation and fixed1000-imageaudit, then waitLeadreview. Full source/environment/commands in research_log/t013/PREREQUISITES.md.
