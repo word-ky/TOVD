@@ -23,3 +23,8 @@ No experimental feature/outcome correlations read; only artificial unit fixtures
 Artificial-source end-to-end + statistics:4 passed13.92s; full suite85 passed25.12s.
 Both A6000 GPUs idle; use physicalGPU1. ExistingNVMLwarning only; PyTorchCUDAworks.
 No runtime model files changed, no training or controller.
+
+## 2026-09-12 10:13 +08 T008 dispatch
+Run20260912-101332-tovd-t008-a6000 active onGPU1; release20260912-101316-tovd-t008.
+Tested153ac30d00753b43a56ce2e226068b0c35039d70; local85tests pass.
+33 fixedstates/6600raw episodes; no training/controller; remoteCPU/CUDA tests precede extraction.

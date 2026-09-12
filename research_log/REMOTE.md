@@ -86,3 +86,8 @@ W1easy also harmed6.79167pp; retain fixed-T005 reference, flag checkpoint/seed d
 Normal/historical/source/step0 checks exact. Report/curves inresearch_log/t007.
 Renderer OpenMP conflict fixed by removing unnecessary torch import; experimental code unchanged e88ad88.
 No activeTOVD run; awaitlead, heartbeatactive.
+
+## 2026-09-12 10:13 +08 T008 dispatch
+Run20260912-101332-tovd-t008-a6000 active onGPU1; release20260912-101316-tovd-t008.
+Tested153ac30d00753b43a56ce2e226068b0c35039d70; local85tests pass.
+33 fixedstates/6600raw episodes; no training/controller; remoteCPU/CUDA tests precede extraction.

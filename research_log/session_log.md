@@ -119,3 +119,8 @@ No activeTOVD run; awaitlead, heartbeatactive.
 ## 2026-09-12 final publication synchronization
 Final evidence committed4315ba35f0b89bbfa92958cf75a8bcd6a22f9eee. Initial push was rejected because lead concurrently committed interim implementation acceptance a513576/09f5456.
 Fetched/reviewed and merged those mailbox/review-log updates without conflicts or runtime changes. No new task assigned.
+
+## 2026-09-12 10:13 +08 T008 dispatch
+Run20260912-101332-tovd-t008-a6000 active onGPU1; release20260912-101316-tovd-t008.
+Tested153ac30d00753b43a56ce2e226068b0c35039d70; local85tests pass.
+33 fixedstates/6600raw episodes; no training/controller; remoteCPU/CUDA tests precede extraction.
