@@ -97,3 +97,4 @@ A6000GPU1 run20260912-065105-tovd-t006-a6000 exit0;3seeds400x4,75CPU/CUDA tests 
 Rules1,2,4,5pass;Rule3fails. Fastpath improvesownW0 buthard34.625%is10ppbelowB2; recommendstop/reframebefore detector.
 Fullcheckpoints/results/probes/curves andequalityreceipts inresearch_log/t006 andremote_runs. NoT007 ornewtuning.
 ObservedNVMLwarningdidnotblockCUDA; source/controlnumericmatcheszero. Fetchtimeout recoveredbyworkflowlegacySCP.
+`n## 2026-09-12 08:26 +08 T007 received`nResearch 99e6292/742aa8b accepts T006 negative result and assigns common-checkpoint warm-start audit. Baseline75 tests pass; preregistration in t007/PLAN.md. No T007 training yet.
