@@ -12,7 +12,8 @@ COCO_ALIASES = {
     "mobile phone", "mobile telephone", "hairdryer", "hair dryer", "microwave oven",
     "teddy", "teddybear", "baseball glove", "fridge", "potted plant",
     "dining room table", "stop sign", "traffic signal", "sports ball", "ball",
-    "remote control", "wineglass", "hotdog", "ski",
+    "remote control", "wineglass", "hotdog", "ski", "laptop computer",
+    "notebook computer", "racket",
 }
 
 

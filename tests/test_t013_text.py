@@ -25,7 +25,7 @@ def test_real_lvis_alias_filter_preserves_non_equivalent_subcategories():
     kept, excluded = candidates(lvis, coco)
     assert len(kept) + len(excluded) == 1203
     names = {row["name"] for row in kept}
-    assert not {"airplane", "sofa", "cellular telephone", "person"} & names
+    assert not {"airplane", "sofa", "cellular telephone", "person", "laptop computer", "racket"} & names
     assert "sofa bed" in names
     assert len({r["normalized"] for r in kept}) == len(kept)
 

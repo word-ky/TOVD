@@ -6,7 +6,7 @@ mkdir -p "$assets/model" "$assets/coco"
 python_base=/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/bin/python
 "$python_base" -m venv --system-site-packages "$assets/venv"
 py="$assets/venv/bin/python"
-"$py" -m pip install 'numpy==1.26.4' 'transformers==4.44.2' 'huggingface-hub==0.24.7' 'tokenizers==0.19.1' 'safetensors==0.4.5' 'pycocotools==2.0.8' 'imagecorruptions==1.1.2' 'scikit-image==0.24.0' 'pillow==10.4.0' 'opencv-python==4.10.0.84'
+"$py" -m pip install 'numpy==1.26.4' 'transformers==4.44.2' 'huggingface-hub==0.24.7' 'tokenizers==0.19.1' 'safetensors==0.4.5' 'pycocotools==2.0.8' 'imagecorruptions==1.1.2' 'scikit-image==0.24.0' 'pillow==10.4.0' 'opencv-python==4.10.0.84' 'pytest==9.1.1'
 "$py" -m pip install --no-deps 'torchvision==0.19.0+cu121' --index-url https://download.pytorch.org/whl/cu121
 "$py" -m pip freeze > "$AUTODL_ARTIFACTS_DIR/environment.txt"
 revision=a2bb814dd30d776dcf7e30523b00659f4f141c71
