@@ -349,3 +349,23 @@ Required repair is fully text-only: keep current top-80 Vhard fixed; reuse the f
 The 1024-capacity HF harness also remains conditional on a fixed native-vs-HF V0 parity smoke on three disjoint real images. Complete `PLAN.md`, thresholds, corruption/bootstrap code, repaired vocabulary hashes and smoke receipts must be committed before the 1,000-image 15-condition run. No primary gate is evaluated yet.
 
 **Next action:** repair/freeze the token-matched unrelated vocabulary, finish COCO assets, freeze the complete preregistration and analysis code, pass the native/HF V0 parity plus deterministic smoke, then run the unchanged T013 primary audit. No T014 or adaptation method is authorized.
+
+---
+
+## 2026-09-12 — T013 native/HF parity blocker review
+
+**Decision:** REQUEST CHANGES; TOKEN-BUDGET REPAIR ACCEPTED; PRIMARY INFERENCE REMAINS BLOCKED PENDING PRESPECIFIED DETECTION-LEVEL PARITY
+
+Reviewed commits/artifacts:
+- `972c476048bd57de6332cf8b4f1ce93419f09ceb` — detector-capacity/replay fix and paired COCO-evaluation/statistics primitives;
+- `92801da385d5087b98a599d0aeca7fc95acb9a9d` — token-matched Vrand repair and native parity harness;
+- `f63f571d4a6841d9f997ade5a5a2df9ab45c2ed1` — failed raw native/HF parity report;
+- `research_log/t013/vocabulary_matched{,_receipt}.json`, failed parity JSON/receipts, and `scripts/t013_{detector,native_parity}.py`.
+
+The vocabulary repair is accepted: Vhard remains unchanged; frozen candidate embeddings/similarities are reused; the required distractor token histogram is exactly 2:30, 3:47, 4:3 for both extended vocabularies; and full prompt lengths are now Vhard=Vrand=408 tokens. No primary detector outcome entered this repair.
+
+The raw parity prerequisite correctly failed and stopped. Direct indexwise comparison of the 900 native versus HF decoder queries exceeds the fixed `1e-4` tolerance on all three smoke images; the largest box discrepancy reaches `0.65475` on image 285. HF replay is exact and both model states remain unchanged. This is an engineering blocker, not a T013 scientific result.
+
+However, the current script assumes native decoder query index `q` and HF decoder query index `q` are directly corresponding. That correspondence has not been established. The prior Research-Lead contract already contained an alternative for non-directly-alignable tensors: postprocessed canonical detections must match one-to-one with identical class, IoU `>=0.999`, and score difference `<=1e-4`. Invoking that already-written branch does not relax the preregistration.
+
+**Next action:** run exactly one T013-PARITY-B diagnostic on the same three V0 smoke images/checkpoints/preprocessing. Decode the primary-style top-300 canonical detections with no AP threshold/NMS, require equal per-class detection counts, and use a deterministic within-class Hungarian IoU assignment. Every matched pair must satisfy class identity, IoU `>=0.999`, and score error `<=1e-4`; HF replay/state invariance must still pass. Report raw-query permutation diagnostics only descriptively. If any smoke image fails, reject the HF-1024 harness and stop for Research Lead review with no tolerance/matching/image/checkpoint changes. If all pass, finish/freeze the complete T013 PLAN, primary runner, data hashes and paired-bootstrap implementation before launching any 1,000-image primary inference. T013 Gates 1–4 remain unevaluated; T014 remains prohibited.
