@@ -197,3 +197,11 @@ Preregister15d3353. Newfiles: tovd/models/static_semantic_fusion.py, tests/test_
 
 ## 2026-09-12 14:19 +08 T012 base calibration dispatch
 Tested8c4abff9140f1d762175472117bf6b9c3d5fcb21; preregister15d3353. Release20260912-141825-tovd-t012-cal; run20260912-141907-tovd-t012-cal-a6000 onGPU1. CPU/CUDAfulltests then1800baseepisodesonly. Actualglobal-lambda freeze andnovelphase stillpending. No noveloutcomes.
+
+## 2026-09-12T14:23:46.837199+08:00 T012 calibration complete / actual lambda awaiting freeze
+Run20260912-141907-tovd-t012-cal-a6000 exit0 at14:20:21+08. Global lambda=.2 minimizesbasequeryNLL .5526825519311226 (A0 .5538713284614907),14400queries. All7candidatevalues retained. Fullarchive downloadinprogress, remoteSHA256c591d3e97d164e42dc477b604b5044fcb3cc27d3f8c35a95ad8d0036c9144b2d. No novelmodel/outcomes generated. Next verifyarchive, commitactualvalue+completecalibrationreceipt, thenseparatenovelphase.
+
+## 2026-09-12T14:25:17.972525+08:00 T012 actual global lambda freeze — BEFORE novel evaluation
+Calibration20260912-141907-tovd-t012-cal-a6000 exit0 at14:20:21+08;1800baseepisodes/14400queries. CPU108passed9.36s,CUDA108passed27.36s (local108passed53.20s). Selectedsinglelambda=.2,baseNLL .5526825519311226;A0 .5538713284614907. Grid[0,.05,.1,.2,.5,1,2], no per-state/regime/seed adjustment. frozen_lambda.json SHA256b3f7219e55426b99f21761ba04bc872d79228a42f63ec93d6ff4300a0f7b1a5d.
+Complete25originalfiles/18rawrecords recovered; archiveSHA256c591d3e97d164e42dc477b604b5044fcb3cc27d3f8c35a95ad8d0036c9144b2d matches. Allsource/code hashes verified, model tensorsunchanged/gradNone, staticinference/replayexact; maxA0NLLerror2.08616257e-7,accuracy0. No novel scientificoutcomes generated orscored yet.
+Committingactualvalue, CALIBRATION.md, calibration_receipt/manifest/transfer andrawrecords now, then deployunchangedtested8c4abff core withfrozenlambda for1800novel episodes. Pure write_report.py added; no scientificcode/gatechangeaftertests.

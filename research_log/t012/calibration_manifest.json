@@ -1,0 +1,127 @@
+[
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/artifacts/t012_calibration/checks.json",
+    "bytes": 925368,
+    "sha256": "7ee37fcd538ca04abec8260a337edf300f32a0cda324dba5815084ce14d2df7a"
+  },
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/artifacts/t012_calibration/frozen_lambda.json",
+    "bytes": 10881,
+    "sha256": "b3f7219e55426b99f21761ba04bc872d79228a42f63ec93d6ff4300a0f7b1a5d"
+  },
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/artifacts/t012_calibration/queries.csv",
+    "bytes": 4372090,
+    "sha256": "5f12f66271a8a35252e769aae92d41a7cd8da09f162b2a413e0835b21bce8813"
+  },
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/artifacts/t012_calibration/records/seed17_original_P_easy.jsonl.gz",
+    "bytes": 605500,
+    "sha256": "9b024217b0e198f13dd45789965e261e24478cbc3d966c92c4b8923f6673be23"
+  },
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/artifacts/t012_calibration/records/seed17_original_P_hard.jsonl.gz",
+    "bytes": 597910,
+    "sha256": "e58ed92ae91f95554b74501eecd24ac1644e698d904dec7349e396ce2a2d9f8d"
+  },
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/artifacts/t012_calibration/records/seed17_P_C2_warm_step400_easy.jsonl.gz",
+    "bytes": 606876,
+    "sha256": "02e478c837d8189623155e94bbb339b90882f0b508ee7755dd808852964d2609"
+  },
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/artifacts/t012_calibration/records/seed17_P_C2_warm_step400_hard.jsonl.gz",
+    "bytes": 598891,
+    "sha256": "d349df5a6543ffddd6182deb0b866da2e009f7713994b8f6924607a2bbb8d3a4"
+  },
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/artifacts/t012_calibration/records/seed17_P_O0_resume_step400_easy.jsonl.gz",
+    "bytes": 607150,
+    "sha256": "ba8def24c0fc96677142a1a8356c6a4c4f4ec7549facbb9a2d9fb7ce29754ae1"
+  },
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/artifacts/t012_calibration/records/seed17_P_O0_resume_step400_hard.jsonl.gz",
+    "bytes": 600270,
+    "sha256": "cdb8df3aad7f1b29d122aa965b106903fdba5aa3235ca81c939d80dd9742beb4"
+  },
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/artifacts/t012_calibration/records/seed27_original_P_easy.jsonl.gz",
+    "bytes": 604927,
+    "sha256": "450c256a8209ce59fc659b6aebda2a44b92b6c04489f05abe19065590f4702e7"
+  },
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/artifacts/t012_calibration/records/seed27_original_P_hard.jsonl.gz",
+    "bytes": 599227,
+    "sha256": "368cac4ceaabb3cbcc547ddcb478dff45102b6d99bfee340b4ce87f947e4ade6"
+  },
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/artifacts/t012_calibration/records/seed27_P_C2_warm_step400_easy.jsonl.gz",
+    "bytes": 607164,
+    "sha256": "620cf4a687f5a44daf6a85b0f06454934adcf60722c24884f54da8f35cf1f6e5"
+  },
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/artifacts/t012_calibration/records/seed27_P_C2_warm_step400_hard.jsonl.gz",
+    "bytes": 599868,
+    "sha256": "4e5037122321741bd9ca2189c2114446f96b75a346c2636097677f092ea6305b"
+  },
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/artifacts/t012_calibration/records/seed27_P_O0_resume_step400_easy.jsonl.gz",
+    "bytes": 607926,
+    "sha256": "dd34767b07145f5609714f1c61fa16c5e3ca609a02c22ca3057d8f561aae68a3"
+  },
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/artifacts/t012_calibration/records/seed27_P_O0_resume_step400_hard.jsonl.gz",
+    "bytes": 599636,
+    "sha256": "9768a9c6bbf97f1782135f18f0da2f480bc0ee7ca37e07774fd6624e5a0f6ca1"
+  },
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/artifacts/t012_calibration/records/seed7_original_P_easy.jsonl.gz",
+    "bytes": 606201,
+    "sha256": "f1ae144215a06e7028294b4455d9fce407a9547448fa7198057de69eb0d65579"
+  },
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/artifacts/t012_calibration/records/seed7_original_P_hard.jsonl.gz",
+    "bytes": 599493,
+    "sha256": "4c8d4437ccc33d103c28eda6e301c8f962eeed34ca7deb3f6bd2b6e32e125c65"
+  },
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/artifacts/t012_calibration/records/seed7_P_C2_warm_step400_easy.jsonl.gz",
+    "bytes": 606665,
+    "sha256": "1ac78f856dbd4b603dffc744f0ec6197cabf7f8b1c26d2c0d23126ed3528d5bf"
+  },
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/artifacts/t012_calibration/records/seed7_P_C2_warm_step400_hard.jsonl.gz",
+    "bytes": 600789,
+    "sha256": "ef65bebfa73252f23c93a3100d445f508bd5b478d10b5c4327cebe4a13bb2d23"
+  },
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/artifacts/t012_calibration/records/seed7_P_O0_resume_step400_easy.jsonl.gz",
+    "bytes": 608406,
+    "sha256": "b149c289cb5c1e1a8eab3359036435f8b5f1fc719a497b5d7c5f7a5a616d5f37"
+  },
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/artifacts/t012_calibration/records/seed7_P_O0_resume_step400_hard.jsonl.gz",
+    "bytes": 601191,
+    "sha256": "7ce73877c5770ae7ab0c76d020e853459e06e62ad98bc677e9251a59bda518df"
+  },
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/artifacts/t012_calibration/results.json",
+    "bytes": 32687,
+    "sha256": "ebbd96690ebce31262919abf29ce512b580da446f6c25dedc3a660f87e21d370"
+  },
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/meta.json",
+    "bytes": 297,
+    "sha256": "303b1e2ec6b060f420a8d22114cb84e4a0910f36cc04fcee44313280de84962e"
+  },
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/run.sh",
+    "bytes": 681,
+    "sha256": "dc1223b63cc7aa3fa9aa4943579934d002dad29364b4bdba71e2967b5a06e51c"
+  },
+  {
+    "path": "research_log/remote_runs/20260912-141907-tovd-t012-cal-a6000/train.log",
+    "bytes": 3101,
+    "sha256": "9a6216b56f13e12013585a3df8f2b4760b9987f1eb0c54446d813b8097f29b44"
+  }
+]

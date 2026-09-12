@@ -1,0 +1,42 @@
+[autodl] run_id=20260912-141907-tovd-t012-cal-a6000
+[autodl] started_at=2026-09-12T14:19:15+08:00
+........................................................................ [ 66%]
+....................................                                     [100%]
+=============================== warnings summary ===============================
+tests/test_c2_experiment.py::test_complete_meta_experiment_reuses_controls_and_initial_state
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.MessageMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+tests/test_c2_experiment.py::test_complete_meta_experiment_reuses_controls_and_initial_state
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.ScalarMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+108 passed, 2 warnings in 9.36s
+........................................................................ [ 66%]
+....................................                                     [100%]
+=============================== warnings summary ===============================
+tests/test_c2_experiment.py::test_complete_meta_experiment_reuses_controls_and_initial_state
+  /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+    warnings.warn("Can't initialize NVML")
+
+tests/test_c2_experiment.py::test_complete_meta_experiment_reuses_controls_and_initial_state
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.MessageMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+tests/test_c2_experiment.py::test_complete_meta_experiment_reuses_controls_and_initial_state
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.ScalarMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+108 passed, 3 warnings in 27.36s
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+CALIBRATION state=seed7_original_P episodes=200
+CALIBRATION state=seed7_P_O0_resume_step400 episodes=200
+CALIBRATION state=seed7_P_C2_warm_step400 episodes=200
+CALIBRATION state=seed17_original_P episodes=200
+CALIBRATION state=seed17_P_O0_resume_step400 episodes=200
+CALIBRATION state=seed17_P_C2_warm_step400 episodes=200
+CALIBRATION state=seed27_original_P episodes=200
+CALIBRATION state=seed27_P_O0_resume_step400 episodes=200
+CALIBRATION state=seed27_P_C2_warm_step400 episodes=200
+GLOBAL_LAMBDA 0.2
+[autodl] finished_at=2026-09-12T14:20:21+08:00
+[autodl] exit_code=0
