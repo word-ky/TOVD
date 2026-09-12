@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-195530-tovd-t013-native-parity",
+  "releaseId": "20260912-195321-taisp-t011-full",
+  "sessionName": "autodl-20260912-195530-tovd-t013-native-parity",
+  "command": "export OMP_NUM_THREADS=4; export MKL_NUM_THREADS=4; /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -u -m scripts.t013_native_parity --assets /home/wenchang/asdasdsad/wjq/TOVD/shared/t013 --output \"$AUTODL_ARTIFACTS_DIR/native_parity.json\""
+}

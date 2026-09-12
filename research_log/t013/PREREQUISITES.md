@@ -95,3 +95,7 @@ refines prompts with visual tokens; [FACTOR](https://arxiv.org/abs/2605.03294)
 studies counterfactual training-free adaptation; [PISA](https://arxiv.org/abs/2608.14142)
 studies feature adaptation. T013 implements none of these methods. Its claim is
 only a frozen real-detector interaction audit, with no literature-absence claim.
+
+## Current prerequisite result — 2026-09-12T20:02:47.194079+08:00
+
+Token-matched repair complete; native/HF V0 parity FAILED on all three fixed disjoint images. Primary is blocked for Lead review. See NATIVE_PARITY_REVIEW.md for exact errors, immutable receipts and source provenance. Previous capacity-only findings remain historical engineering evidence, not proof of native/HF equivalence.

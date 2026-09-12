@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-195118-tovd-t013-matched-smoke-cuda",
+  "releaseId": "20260912-194953-tovd-t013-matched-native",
+  "sessionName": "autodl-20260912-195118-tovd-t013-matched-smoke-cuda",
+  "command": "export CUDA_VISIBLE_DEVICES=1; export CUBLAS_WORKSPACE_CONFIG=:4096:8; /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -m scripts.t013_smoke --assets /home/wenchang/asdasdsad/wjq/TOVD/shared/t013 --images /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/smoke_images --vocabulary research_log/t013/vocabulary_matched.json --selection research_log/t013/image_selection.json --output \"$AUTODL_ARTIFACTS_DIR/smoke_matched_cuda.json\" --device cuda"
+}

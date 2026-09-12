@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-194244-tovd-t013-statistics-tests",
+  "releaseId": "20260912-194228-tovd-t013-statistics",
+  "sessionName": "autodl-20260912-194244-tovd-t013-statistics-tests",
+  "command": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -m pytest tests/test_t013_text.py tests/test_t013_coco.py tests/test_t013_diagnostics.py -q"
+}

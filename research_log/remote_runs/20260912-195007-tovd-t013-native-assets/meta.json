@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-195007-tovd-t013-native-assets",
+  "releaseId": "20260912-194953-tovd-t013-matched-native",
+  "sessionName": "autodl-20260912-195007-tovd-t013-native-assets",
+  "command": "bash scripts/t013_prepare_native.sh"
+}

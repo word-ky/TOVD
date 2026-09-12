@@ -1,0 +1,42 @@
+{
+  "kind": "native256_vs_hf1024_v0",
+  "tolerance": 0.0001,
+  "device": "cpu",
+  "records": [
+    {
+      "image_id": 139,
+      "max_abs_normalized_box_error": 0.005758270621299744,
+      "max_abs_canonical_score_error": 0.0013861777260899544,
+      "hf_replay_exact": true,
+      "pass": false
+    },
+    {
+      "image_id": 285,
+      "max_abs_normalized_box_error": 0.6547528505325317,
+      "max_abs_canonical_score_error": 0.00420332932844758,
+      "hf_replay_exact": true,
+      "pass": false
+    },
+    {
+      "image_id": 632,
+      "max_abs_normalized_box_error": 0.0001596212387084961,
+      "max_abs_canonical_score_error": 0.00020853057503700256,
+      "hf_replay_exact": true,
+      "pass": false
+    }
+  ],
+  "state_hashes_before": {
+    "native": "de1683cc0a3c35157ed5475169dae013cdaffe69f45651d6e3f5550ae96139e1",
+    "hf": "edb3ae75e8e8d40a61f147eccdfcb5db6a51e4030302d9b8faa8a7db72da7b57"
+  },
+  "state_hashes_after": {
+    "native": "de1683cc0a3c35157ed5475169dae013cdaffe69f45651d6e3f5550ae96139e1",
+    "hf": "edb3ae75e8e8d40a61f147eccdfcb5db6a51e4030302d9b8faa8a7db72da7b57"
+  },
+  "unexpected_native_checkpoint_keys": [
+    "label_enc.weight",
+    "bert.embeddings.position_ids"
+  ],
+  "preprocessing": "Identical HF processor pixel tensor supplied to both implementations",
+  "validity": false
+}

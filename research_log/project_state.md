@@ -1,13 +1,11 @@
 # TOVD project state
 
-T013 ACTIVE — real-detector prerequisites; background COCO download. Scope c07ce16/afe9c13. Latestimplementation1d3f12b; allT001-T012 remainCLOSED.
+Updated 2026-09-12T20:02:47.194079+08:00. T013 engineering BLOCKED / AWAITING RESEARCH LEAD REVIEW after mandated native/HF V0 parity failure. Authoritative scope: c07ce16/afe9c13 plus 2c4dbf5/28b8718. T001–T012 remain CLOSED.
 
-ACTIVE DATA RUN: 20260912-190511-tovd-t013-coco-ranges-a6000 (release20260912-190401-tovd-t013-coco-ranges), 8HTTP ranges fromofficialCOCOhost, annotationsfirst, then5000valimages. Do notlaunchduplicatewriter. shared/t013/coco retainsrangechunksforcontinuation. Onceannotationsready, select/commit exactly1000IDs withscripts/t013_select_images.py beforeprimary.
+Run 20260912-195530-tovd-t013-native-parity exit 1 at 19:56:42+08: all three disjoint images exceed fixed 1e-4 box/score tolerance. Both model states unchanged, HF replay exact. Do not rerun, relax tolerances, launch primary or T014 without new Lead instructions. Evidence: research_log/t013/NATIVE_PARITY_REVIEW.md and original remote_runs receipt.
 
-TEXT FINAL: 20260912-190708-tovd-t013-text-r3-a6000 exit0 at19:07:40+08,release20260912-190653-tovd-t013-text-final.1124eligible/79excluded; V0/Vhard/Vrand195/408/545tokens. AllfullpromptsencodewithouttruncationusingexistingBERTsentencepositions. ModelstateSHAedb3ae75e8e8d40a61f147eccdfcb5db6a51e4030302d9b8faa8a7db72da7b57 unchanged. Use r3 finalvocabulary; r2 was supersededaftertext-only aliasaudit.
+Token-matched vocabulary supersedes r3: V0/Vhard/Vrand195/408/408; Vhard and frozen embeddings/scores unchanged. Canonical LF SHA51554562b216dcad1c693efb7781362efbac55993bc5c10651e8845ec9931977. Nine focused local/remote tests pass; matched HF CUDA 45-condition smoke passes, which does not satisfy native/HF parity. Implementation92801da; statistics972c476.
 
-OfficialHFcheckpoint a2bb814d SHA1a2412ef99bd74bcd3c2a246fa1e48581f8889a1300c9051974741314fc042f3 verified, modelreadyinshared/t013/model. Isolatedenvironment shared/t013/venv withTorch2.4.0+cu121,torchvision0.19.0+cu121,Transformers4.44.2,pytest9.1.1. Originalvenv unchanged. Shared1024textcapacity repairsnative256limitwithoutlearnedweightchanges; originalV0detectorparity stillneedsrealsmoke.
+1000 IDs committed42daa6e, accepted by Lead; smoke139/285/632 disjoint. Annotations verified. ACTIVE DATA RUN20260912-190511-tovd-t013-coco-ranges-a6000, last observed98/195 image archive parts. Single writer; retain chunks. Root /home/wenchang/asdasdsad/wjq/TOVD; assets shared/t013; isolated shared/t013/venv. Collect final archive/hash receipt when complete; no further inference. No primary AP/CI/gates exist. Full PLAN/primary cache runner/full bootstrap analysis/image hashes pending.
 
-No primaryimageinference, no AP/CI/gateoutcomes. FullPLAN/IDs/imagehashes/smoke/cache-runner/COCOmetrics/bootstrap/reportremainpending. Recoverydetails: research_log/t013/IMPLEMENTATION_NEXT.md, PREREQUISITES.md, recentsessionlog. Local/A6000 textunit3passed; prior108synthetictests notrerunforthisphase.
-
-Heartbeat15min ACTIVE andauthorizedtocontinueT013automatically. WaitLeadreviewonlyafterT013scientificreport; do notautonomouslyimplementT014. Updated 2026-09-12T19:09:50.478874+08:00
+Heartbeat tovd every15min ACTIVE. Check new Lead instruction first; otherwise only finish existing data receipt. Quiet when unchanged. Detailed recovery: t013/IMPLEMENTATION_NEXT.md, NATIVE_PARITY_REVIEW.md, session_log.md. Generic workflow last-release metadata can name another project: use actual TOVD current resolved release and source hashes (documented in parity report).

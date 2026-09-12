@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-193807-tovd-t013-smoke-fixed-cpu",
+  "releaseId": "20260912-193408-tovd-t013-smoke-fixed",
+  "sessionName": "autodl-20260912-193807-tovd-t013-smoke-fixed-cpu",
+  "command": "export CUBLAS_WORKSPACE_CONFIG=:4096:8; /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -m scripts.t013_smoke --assets /home/wenchang/asdasdsad/wjq/TOVD/shared/t013 --images /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/smoke_images --vocabulary /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-190708-tovd-t013-text-r3-a6000/artifacts/vocabulary/vocabulary.json --selection research_log/t013/image_selection.json --output \"$AUTODL_ARTIFACTS_DIR/smoke_cpu.json\" --device cpu"
+}

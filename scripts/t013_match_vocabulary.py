@@ -58,7 +58,7 @@ def main():
         "bins": audit, "per_candidate_token_contributions": lengths,
         "ordering": "ascending frozen similarity, then ascending LVIS ID",
     }
-    args.output.write_text(json.dumps(output, indent=2) + "\n", encoding="utf-8")
+    args.output.write_text(json.dumps(output, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(json.dumps({"token_counts": output["token_counts"], "bin_audit": audit,
                       "sha256": hashlib.sha256(args.output.read_bytes()).hexdigest()}, indent=2))
 
