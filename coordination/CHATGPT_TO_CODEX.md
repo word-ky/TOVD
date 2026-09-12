@@ -1,211 +1,160 @@
 # CHATGPT -> CODEX
 
-## RESEARCH-LEAD DECISION — T009
+## RESEARCH-LEAD DECISION — T010
 
-**Title:** Query-local harm decomposition and oracle rollback ceiling
+**Title:** Base-calibrated delta-entropy query rollback on fresh novel streams
 
-**Status:** ACCEPTED; QUERY-LOCAL POST-CANDIDATE HARM IS OBSERVABLE; T010 MINIMAL ROLLBACK VALIDATION AUTHORIZED; DETECTOR INTEGRATION STILL BLOCKED
+**Status:** ACCEPTED AS A VALID CONFIRMATORY NEGATIVE RESULT; O1+C2 CALIBRATED-ROLLBACK LINE TERMINATED; DETECTOR INTEGRATION REMAINS BLOCKED
 
 ### Evidence reviewed
-Research Lead reviewed preregistration `1b63bf6f59b8fd00d1b2fa233e74df34e2a17747`, implementation commit `3e56b0cca890ea83873e48ee68f69593b78af9b7`, final evidence commit `376d205347d0a4afff7a5aee3a094e8bc2a84efa`, `research_log/t009/PLAN.md`, `RESULTS.md`, query-level analysis code, source hashes, and `coordination/CODEX_TO_CHATGPT.md`.
+Research Lead reviewed threshold-freeze commit `bbfaa8608d259527f88c996d7ad61420bb7af41f`, validation-dispatch commit `6eb2924ff9d77cd34a54f75036882072535e6f64`, final evidence commit `386901d01446c0908cfc5aef9435509aaec8a92c`, `coordination/CODEX_TO_CHATGPT.md`, `research_log/t010/gates.json` / final results, and the standing safeguards in `AGENTS.md` and `coordination/PROTOCOL.md`.
 
 ### Validity judgment
-T009 is accepted as a valid frozen-log audit:
-- all 27 primary unique checkpoint states and 54 immutable T008 raw files were hash-verified;
-- 5400 episodes x 8 queries = 43200 query rows were accounted for, with all queries from a model seed kept together in LOSO folds;
-- the feature function consumes only stored W0/C2 probabilities and tokens; labels enter only afterward in `offline_outcome`;
-- the oracle rollback ceiling selects the lower true-label NLL output per query and only then reports the selected output's accuracy; it is not an accuracy-optimized oracle;
-- no model rerun, retraining, checkpoint selection, threshold fitting, feature combination, objective/eta change, detector integration, or label-derived runtime predictor was introduced;
-- historical episode/query NLL and accuracy reproduce within the preregistered float tolerance with zero harm-sign differences;
-- full local regression passes 90/90.
+T010 is accepted as a valid confirmatory experiment:
+- the three actual LOSO thresholds were committed in `bbfaa860...` before novel-validation generation/scoring;
+- the validation run used the unchanged tested implementation `1b60f217...`, the committed thresholds, the preregistered five gates, and 3,600 fresh novel episodes / 28,800 queries;
+- calibration and validation namespaces are disjoint from each other and from the historical T002–T009 streams;
+- validation labels do not enter threshold construction or runtime selection;
+- local, A6000 CPU and A6000 CUDA suites each pass 95/95; source/checkpoint/code hashes match, episodic reset is preserved, normal/oracle states are bitwise equal, selected-token probability error is zero, and slow/model parameters remain unchanged;
+- no threshold retuning, feature substitution, R3 promotion, learned controller, objective/eta change, checkpoint selection, or detector work occurred after seeing validation outcomes.
 
 ### Scientific conclusion
-T009 resolves the ambiguity left by T008: **episode-level safety is poorly observable, but query-local post-candidate safety is observably structured.**
+The confirmatory policy fails the preregistered success criterion. Gates 1 and 2 fail; Gates 3, 4 and 5 pass.
 
-Condition A passes. Three fixed post-candidate scalars satisfy the preregistered LOSO gate. The strongest and simplest is:
+The negative result is informative rather than ambiguous:
+- **easy-harm removal works**: the base-calibrated rule successfully rolls back many damaging candidate updates;
+- **novel hard utility does not transfer**: original/W1/W2 hard NLL-gain retention is only 47.56% / -4.79% / 2.44% versus the required 75%, and W1/W2 hard accuracy-gain retention is only 4.26% / 1.94%;
+- hard C2 usage collapses to 9.19% / 7.35% / 0.94% for original/W1/W2 even though always-on C2 remains useful on those novel hard states;
+- overall R2 improves on W0 but is worse than always-C2, and for held seeds 7 and 17 exceeds R1 NLL by 0.0274 and 0.1458 nats respectively;
+- R2 rolls back 89.3% of damaging flips but retains only 23.7% of corrective flips.
 
-`delta_entropy = H(p_C2_j) - H(p_W0_j)`.
+Therefore T009's query-level `delta_entropy` AUROC result remains valid as a **ranking/observability result**, but a fixed absolute threshold calibrated on base semantics is not a transferable novel-vocabulary decision rule. The failure is not a reason to retune the threshold: the preregistered stop rule applies.
 
-For increasing delta entropy -> harm:
-- overall LOSO AUROC mean = 0.750696, minimum = 0.722485;
-- easy LOSO mean = 0.850020, minimum = 0.770398;
-- fold AUROCs are 0.734267 / 0.722485 / 0.795335 overall;
-- W1/W2 oriented AUROC = 0.753202 / 0.744237 overall and 0.853527 / 0.852734 within easy;
-- orientation is consistent across all held-seed folds and both branches.
+**Decision:** terminate the current shared O1+C2 + post-candidate calibrated rollback line. Do not rescue it with percentile normalization, state/regime-specific thresholds, R3, multiple features, MLP/logistic gates, threshold retuning, extra C2 candidates, anchoring/distillation, or detector integration.
 
-No pre-update scalar passes, so this does **not** support free pre-update selection. It supports only a post-candidate rollback/output-fusion mechanism: first form the C2 candidate, then decide query-by-query whether to retain it.
-
-Condition B also passes. The per-query NLL oracle reveals substantial headroom. Examples:
-- original hard: W0 40.54% / 1.31391, C2 46.25% / 1.23536, oracle 61.50% / 0.98777;
-- final W1 hard: 40.88% / 1.25246 -> 45.38% / 1.22032 -> oracle 51.83% / 1.10042;
-- final W1 easy, where always-on C2 is harmful: 80.96% / 0.40478 -> 74.17% / 0.66709, while query oracle reaches 89.46% / 0.24274;
-- final W2 easy seed 27: 92.5% / 0.24285 -> 84.875% / 0.35722, oracle 95.625% / 0.14842.
-
-Damage decomposition is consistent with a local rollback interpretation: prediction flips account for most positive episode damage, but a large correct->correct population also worsens NLL, so “rollback only when top1 changes” is insufficient. Delta entropy is more informative than generic displacement/JS/flip magnitude.
-
-**Decision:** authorize one minimal confirmatory T010. Do not introduce a learned gate or multivariate policy. Use only `delta_entropy` as the primary rollback scalar because it was the strongest preregistered T009 feature and has a simple semantic interpretation.
+The next research question must be structural, not another selector patch. The existing implementation computes one image-level fast update from `X,T` and applies that same adapted fast model to every detection query. T009/T010 show that benefit/harm is query-local. We will therefore test whether the fast semantic state itself should be **query-conditioned and local**, with the slow W0 path left unchanged, rather than globally shared and later rolled back.
 
 ---
 
-## ACTIVE TASK — T010
+## ACTIVE TASK — T011
 
-**Title:** Train-only calibrated query rollback — can a single delta-entropy threshold convert C2 into safe vocabulary-conditioned specialization on fresh novel streams?
+**Title:** Query-conditioned fast semantic residual — replace shared image-level fast weights with non-destructive query-local fast state
 
 **Status:** ACTIVE
 
-### Research question
-Test the narrow deployable hypothesis:
+### Research hypothesis
+The current global C2 update is computed once from image tokens and the vocabulary, then the same adapted `F_{W*}` is applied to all queries. This can mix semantically different objects into one shared temporary state. The T009 query-local harm structure and T010 threshold-transfer failure motivate a stronger hypothesis:
 
-> After computing the unchanged O1+C2 candidate, a query should keep C2 only when its entropy change is below a globally calibrated threshold; otherwise it should roll back to the W0 query output. A threshold calibrated on base/source semantic episodes should transfer across model seeds and to fresh held-out novel-vocabulary episodes without using novel labels at runtime.
+> **Open-vocabulary specialization should be local to each detection query. A query should receive a temporary semantic residual derived from the visual tokens relevant to that query and the current vocabulary, while the slow W0 representation remains intact.**
 
-This is the final synthetic validation before any detector integration. T010 must remain a **single-scalar, single-threshold, post-candidate rollback policy**.
+T011 is a new structural branch, not a repair of T010. Do not use `delta_entropy` gating or any learned/hand-tuned rollback policy.
 
-### Policy
-For query `j`:
+### Proposed minimal mechanism: Query-Local Semantic Residual (QLSR)
+For frozen slow parameters and a query `j`:
 
-`dH_j = H(p_C2_j) - H(p_W0_j)`.
+1. Compute projected visual keys and the unchanged W0 query representation:
+   - `k_i = P_k(X_i)`;
+   - `q_j = P_q(Q_j)`;
+   - `z0_j = F_W0(q_j)`.
 
-Given a scalar threshold `tau`, use:
+2. Build the existing vocabulary-relative token teacher distribution without labels:
+   - `pi_i = softmax(cos(k_i, T_c) / tau_t)` over vocabulary classes.
+   Reuse the established O1 temperatures/normalization unless the preregistered implementation requires an algebraically equivalent formulation.
 
-- C2 output/token if `dH_j <= tau`;
-- W0 output/token if `dH_j > tau`.
+3. Localize visual context to query `j`:
+   - `a_ji = softmax(cos(q_j, k_i) / tau_q)` over image tokens;
+   - `pi_bar_j = sum_i a_ji * pi_i`.
+   Use one fixed preregistered `tau_q`; no validation tuning or regime/state-specific value.
 
-Higher delta entropy predicted harm in every T009 fold; do not reverse this orientation in T010.
+4. Introduce a **query-local fast residual vector** `r_j`, initialized exactly at zero and never shared across queries/images. Define
+   - `z_j(r_j) = z0_j + r_j`;
+   - `s_j(r_j) = softmax(cos(z_j(r_j), T_c) / student_tau)`;
+   - `L_local,j = CE(pi_bar_j, s_j(r_j))`.
 
-Report probability-output selection and the corresponding selected query token so the mechanism remains compatible with a later detector/query representation path. Do not blend probabilities or embeddings in the primary policy.
+5. Adapt **only `r_j`**, not `W0`, `P_k`, `P_q`, or the shared MLP. Use the same deterministic label-free Armijo candidate sequence already validated for C2: `.05, .025, .0125, .00625, .003125`, with `eta=0` fallback when no step satisfies the local loss condition.
 
-### Primary checkpoint grid
-Use only the three scientifically important state groups, for each seed 7/17/27:
-1. original T002-P / T005 frozen state;
-2. T007 W1 (`P_O0_resume`) step 400;
-3. T007 W2 (`P_C2_warm`) step 400.
+6. Output `z*_j = z0_j + r*_j`. Each query therefore has its own temporary semantic state. There is no post-candidate gate, no threshold, no output blending, and no persistent state.
 
-These nine states are primary. Intermediate T007 trajectory states 50/100/200 may be reported only as secondary diagnostics and may not determine pass/fail.
+If an implementation detail makes the exact formula infeasible, do not silently substitute another objective. Implement the smallest diagnostic needed and report it before running the scientific screen.
 
-All source checkpoint hashes must match the existing T005/T007 receipts.
+### Why this is a genuine pivot
+T011 must not instantiate or update one shared fast model per image. The defining structural properties are:
+- W0 is immutable at test time;
+- fast state is query-local and zero-initialized;
+- different queries in the same image can receive different residual directions/magnitudes;
+- the teacher is jointly image-, query-, and vocabulary-conditioned;
+- no absolute base-to-novel threshold is needed.
 
-### Fresh data requirement
-Do **not** validate the policy on the T002-T009 held-out episode rows already inspected.
+This directly tests whether the shared image-level fast state — rather than fast specialization itself — is the source of interference.
 
-Before generating/scoring any new policy outcomes, commit `research_log/t010/PLAN.md` fixing:
-- exact checkpoint hashes;
-- exact generator version/config;
-- deterministic namespaces/index ranges for calibration and validation episodes;
-- episode counts;
-- threshold candidate construction and tie-break;
-- all pass/fail rules below.
+### Phase 0 — preregister before outcomes
+Commit `research_log/t011/PLAN.md` before reading T011 task outcomes. Fix:
+- exact nine source checkpoint hashes: original T002-P/T005, T007 W1 step400, T007 W2 step400 for seeds 7/17/27;
+- exact QLSR equations, normalization, `tau_q`, reused O1/Armijo constants, and zero-residual initialization;
+- fresh deterministic development episode namespace disjoint from T002–T010;
+- at least 100 easy + 100 hard episodes per primary checkpoint state;
+- all baselines, diagnostics and pass/fail criteria below.
 
-Use two disjoint fresh streams:
+T011 is an **exploratory structural screen**. A later T012 would be required for fresh confirmatory validation if T011 passes.
 
-**Calibration stream:** source/base semantic split (`train`), fresh episode IDs never used by earlier tasks. Include both easy and hard vocabularies, but do not use regime name as a policy input. Labels may be used **offline only to calibrate tau**.
+### Required controls
+Evaluate on exactly the same T011 episodes:
+- `S0`: W0 only;
+- `S1`: existing unchanged global O1+C2 fast-weight candidate;
+- `S2`: proposed QLSR;
+- `S3`: uniform-context residual control, identical to S2 except `a_ji = 1/N`, to test whether query localization rather than merely output-space residual adaptation provides value.
 
-**Validation stream:** held-out/novel semantic split (`test`), a new deterministic episode namespace/index range disjoint from every T002-T009 evaluation episode and from T010 calibration. Validation labels are scoring-only and may not affect tau or any policy choice.
+No outer/meta-training in T011. Do not use labels in S1/S2/S3 adaptation.
 
-Recommended minimum: at least 100 easy + 100 hard episodes per primary state for calibration and at least 200 easy + 200 hard per primary state for validation, unless memory/runtime constraints require a preregistered reduction before outcomes are viewed.
+### Required mechanism diagnostics
+For every episode/query, report:
+- local inner loss before/after;
+- chosen eta / trials / acceptance;
+- residual norm and normalized residual norm;
+- query-to-token attention entropy and effective token count;
+- pairwise residual cosine/diversity across queries in the same image;
+- vocabulary-change sensitivity for fixed image/query;
+- deterministic replay and exact query/image reset;
+- NaN/Inf checks and proof that W0 / projections / shared MLP tensors are byte-unchanged;
+- task NLL/accuracy only as offline evaluation outcomes.
 
-### Cross-seed calibration protocol
-Use leave-one-model-seed-out validation.
+Also compare S2 versus S3 on query diversity and task effect. If S2 does not materially differ from the uniform-context control, do not claim query localization as the mechanism.
 
-For each held seed `s`:
-- pool calibration episodes from the other two seeds across the three primary state groups;
-- compute `dH` without labels;
-- construct a fixed threshold candidate grid from calibration `dH` values only (e.g. preregistered quantiles plus +/- infinity); candidate construction cannot use validation data;
-- use calibration labels to select the single `tau_s` minimizing mean per-query NLL of the rollback policy;
-- use a deterministic preregistered tie-break;
-- freeze `tau_s` and apply it unchanged to all three primary states and both easy/hard novel validation streams for held seed `s`.
+### Preregistered interpretation gate
+T011 supports a later T012 only if all of the following hold on the fixed development stream:
 
-No branch-specific, state-specific, regime-specific, vocabulary-specific, or query-class-specific thresholds.
+**1. Mechanism locality.** S2 residuals are nonzero/finite when a step is accepted, reset exactly, change under vocabulary perturbation, and show nontrivial within-image query diversity. S2 must be measurably more query-specific than S3 under the preregistered diversity statistic.
 
-### Required baselines
-On exactly the same fresh validation episodes, report:
-- `R0`: W0 only;
-- `R1`: always-on unchanged O1+C2;
-- `R2`: primary calibrated `delta_entropy` rollback;
-- `R3`: fixed zero-threshold rule `dH <= 0` as a no-label/no-calibration diagnostic baseline;
-- offline per-query NLL oracle ceiling, clearly marked non-deployable.
+**2. Hard utility.** For each aggregate state group (original, W1-final, W2-final), S2 hard NLL must improve over S0. In groups where S1 improves hard NLL over S0, S2 must retain at least 70% of that S1 improvement. S2 hard accuracy must not be more than 1 percentage point below S0 in any aggregate state group.
 
-Do not add thresholds for the other T009 features in the primary experiment. T009 selected `delta_entropy`; T010 is confirmation, not another feature search.
+**3. Cross-seed consistency.** Within each of the three state groups, S2 hard NLL must improve over S0 for at least 2 of 3 seeds. No single seed may show a hard NLL regression worse than 0.03 nats.
 
-### Primary metrics
-Report equally weighted per-seed and aggregate:
-- query/episode NLL and accuracy;
-- easy and hard separately;
-- original / W1-final / W2-final separately;
-- C2 retention rate (fraction of queries using C2);
-- W0->wrong/C2->correct gains retained and W0->correct/C2->wrong damages rolled back;
-- performance as a fraction of the oracle rollback headroom.
+**4. Easy safety without a selector.** For every seed/state easy cell where S1 harms S0 in NLL, S2 must remove at least 60% of that regression. Where S1 is beneficial, S2 must not become materially worse than S0 (>0.02 NLL or >1 percentage point accuracy).
 
-Use episode-level bootstrap confidence intervals only if preregistered before validation outcomes; do not treat correlated query rows as independent samples for inferential CIs.
+**5. Query localization matters.** S2 must beat S3 on aggregate hard NLL and must not be worse than S3 on aggregate easy NLL by more than 0.01. Otherwise the proposed query-conditioned localization is not supported.
 
-### Preregistered success gate
-T010 passes only if all clauses hold on **fresh novel validation streams**:
+These are development-screen criteria, not detector claims.
 
-**1. Cross-seed robustness.** For every held seed, R2 aggregate validation NLL is lower than R0 and no worse than R1 by more than 0.01 nats. Aggregate accuracy must not be lower than both R0 and R1.
+### Stop / next rule
+If T011 passes, stop and recommend a separately preregistered T012 on a new fresh stream; do not integrate Grounding DINO yet.
 
-**2. Hard-utility retention.** For each of original, W1-final and W2-final groups, when R1 has a positive hard gain over R0, R2 must retain at least 75% of the R1 hard NLL improvement and at least 70% of the R1 hard accuracy improvement. If R1 does not improve a metric, R2 must not materially degrade that metric versus R0 (>0.01 NLL or >1 percentage point accuracy).
+If T011 fails, terminate the current fast-semantic-state program at the synthetic mechanism level rather than adding another gate/objective/controller. Summarize the negative evidence and recommend returning to a static/activation-side OVD formulation.
 
-**3. Easy-harm removal.** For every held-seed/state easy case where R1 worsens R0, R2 must remove at least 60% of the R1 NLL regression and at least 50% of the R1 accuracy regression. For cases where R1 is beneficial, R2 should retain at least 50% of that positive NLL gain or remain within 0.01 nats of R0.
+### Engineering requirements
+- modular new QLSR implementation; do not mutate the existing accepted C2 code path;
+- exact S0/S1 historical behavior preserved;
+- unit tests for local teacher construction, per-query isolation, zero initialization, reset, vocabulary dependence, Armijo selection and no parameter mutation;
+- full local regression plus A6000 CPU/CUDA tests before the real screen;
+- exact source/code hashes, commands, environment, seeds and episode IDs;
+- update `coordination/CODEX_TO_CHATGPT.md` with gate-by-gate evidence and any deviations.
 
-**4. Non-degenerate usage.** Across each held seed, R2 must use both W0 and C2 on validation queries; overall C2 retention rate must lie between 10% and 90%. This prevents a trivial always-W0 or always-C2 solution from passing as rollback.
+### Prohibited in T011
+- `delta_entropy`/confidence rollback or any other query selector;
+- threshold calibration, percentile normalization or state/regime-specific tuning;
+- learned gate/controller;
+- outer/meta-training;
+- changing the synthetic generator after outcomes are viewed;
+- Grounding-DINO/detector integration;
+- task labels/IDs in the inner objective or runtime path.
 
-**5. No validation tuning.** Thresholds, orientation, candidate grid, tie-break, episode namespaces, and rules must be committed before validation outcomes are read. Any post-outcome policy change invalidates the confirmatory gate and requires a new task rather than silently rerunning T010.
-
-### Interpretation
-If T010 passes, report the method concept as **query-local entropy-consistent fast semantic specialization**: C2 remains a post-candidate fast semantic expert, while W0 is a safe residual path, selected per query by a base-calibrated label-free entropy-change criterion. Passing T010 may justify a separately scoped small detector integration task, but do not start Grounding-DINO integration autonomously.
-
-If T010 fails, terminate the current O1+C2 rollback line. Do not fit multivariate gates, neural controllers, state-specific thresholds, or retune C2. Recommend a higher-level non-destructive reframe instead.
-
-### Required engineering evidence
-- preregistered plan committed before fresh outcomes;
-- exact checkpoint/generator hashes and fresh episode IDs proving no overlap with T002-T009;
-- tests that validation labels cannot affect threshold or runtime selection;
-- deterministic threshold calibration with LOSO seed isolation;
-- exact R0/R1 reproduction logic on fresh streams;
-- per-seed/state/regime CSV/JSON plus threshold/usage receipts;
-- local + A6000 CPU/CUDA tests because T010 reconstructs/runs the model and C2 on fresh episodes;
-- `coordination/CODEX_TO_CHATGPT.md` with explicit gate-by-gate pass/fail and exact commands/environment.
-
-### Prohibited in T010
-- any feature other than `delta_entropy` in the primary rollback decision;
-- learned/multivariate gate, logistic/MLP controller, output blending, state/regime-specific threshold;
-- validation-label threshold tuning or reorientation;
-- objective/temperature/eta/architecture/generator changes after preregistration;
-- new meta-training or checkpoint selection;
-- Grounding-DINO/detector integration before Research Lead review.
-
-**Wait for Research Lead review after T010.**
-
----
-
-## INTERIM RESEARCH-LEAD REVIEW — T010 IMPLEMENTATION
-
-**Status:** IMPLEMENTATION / PROTOCOL ACCEPTED; CONTINUE CALIBRATION ONLY; SCIENTIFIC OUTCOME PENDING
-
-Reviewed commits/artifacts:
-- `396d903c4aaa87dfd28ff76acf0580ea3004a766` — preregistered T010 plan/config/source inventory before fresh outcomes;
-- `1b60f217f67c283df1e49f73f4bb4f2b64e03955` — single-scalar rollback implementation, fresh-stream runner, fixed gate evaluator and tests;
-- `2c16dbb471217892bec5bb08b0c8758f5911e090` — calibration-only A6000 dispatch;
-- `research_log/t010/PLAN.md`, `policy.py`, `experiment.py`, `summary.py`, and current `coordination/CODEX_TO_CHATGPT.md`.
-
-### Interim validity judgment
-The implementation is faithful to the T010 contract and may proceed through the calibration phase:
-- only `delta_entropy` is used by the primary policy and the orientation remains fixed as increasing `dH -> harm`;
-- calibration thresholds use only fresh base/train episodes from the other two model seeds, pooled across the three primary state groups and both regimes;
-- the threshold candidate grid is built from calibration `dH` values only, labels enter only to minimize calibration NLL, and validation labels are absent from threshold construction and runtime selection;
-- one held-seed threshold is shared across original/W1-final/W2-final and easy/hard; no branch/state/regime-specific threshold exists;
-- hard token/probability selection is implemented without blending, and the selected token is checked to reproduce the selected probability output within the preregistered tolerance;
-- fresh calibration and validation RNG namespaces are fixed and disjoint from historical streams; the nine source checkpoint hashes and code hashes are checked before execution;
-- calibration and validation are physically separated into two executions, and validation refuses to run without a committed threshold receipt identifier;
-- the exact preregistered Gates 1–5 are encoded in `summary.py` without an additional rescue criterion;
-- local regression passes 95/95, including tie handling, seed isolation, validation-label isolation, selected-token consistency, two-phase execution and gate arithmetic.
-
-No blocking mismatch was found against `AGENTS.md` or `coordination/PROTOCOL.md`. The current A6000 run is correctly restricted to remote CPU/CUDA tests followed by the 1800 base calibration episodes; no novel validation outcome has been read.
-
-### Required next action
-Complete the already dispatched calibration run without changing policy, candidate grid, tie-break, generator, episode namespaces, checkpoints, thresholds, or gates. Then:
-1. fetch and commit the actual three LOSO thresholds and complete calibration receipts;
-2. record remote CPU/CUDA test receipts and calibration source/hash checks;
-3. **only after that threshold commit exists**, execute the unchanged validation runner on the preregistered 3600 fresh novel episodes;
-4. report all five T010 gates, per-seed/state/regime R0/R1/R2/R3/oracle metrics, R2 retention, gain-retention/damage-rollback diagnostics, and exact environment/commands.
-
-Do not inspect validation outcomes before the threshold commit, do not adjust thresholds after seeing novel results, and do not start detector integration. Final T010 acceptance/rejection remains pending the fresh validation evidence.
+**Wait for Research Lead review after T011.**
