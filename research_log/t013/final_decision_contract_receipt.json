@@ -1,0 +1,491 @@
+{
+  "task": "T013-DEC1",
+  "contract_version": "T013-DEC1-v1",
+  "lead_commit": "753facb",
+  "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+  "status": "PASS",
+  "tests_run": 6,
+  "fixtures": [
+    {
+      "fixture": "gate_branch",
+      "gate1": false,
+      "gate2": false,
+      "gate3_coherent": false,
+      "gate4_lead": false,
+      "gate4_recorded": false,
+      "state": "PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": false,
+      "gate2": false,
+      "gate3_coherent": false,
+      "gate4_lead": false,
+      "gate4_recorded": true,
+      "state": "PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": false,
+      "gate2": false,
+      "gate3_coherent": false,
+      "gate4_lead": true,
+      "gate4_recorded": false,
+      "state": "PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": false,
+      "gate2": false,
+      "gate3_coherent": false,
+      "gate4_lead": true,
+      "gate4_recorded": true,
+      "state": "GROUNDING_PRIMARY_NOT_SUPPORTED",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": false,
+      "gate2": false,
+      "gate3_coherent": true,
+      "gate4_lead": false,
+      "gate4_recorded": false,
+      "state": "PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": false,
+      "gate2": false,
+      "gate3_coherent": true,
+      "gate4_lead": false,
+      "gate4_recorded": true,
+      "state": "PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": false,
+      "gate2": false,
+      "gate3_coherent": true,
+      "gate4_lead": true,
+      "gate4_recorded": false,
+      "state": "PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": false,
+      "gate2": false,
+      "gate3_coherent": true,
+      "gate4_lead": true,
+      "gate4_recorded": true,
+      "state": "GROUNDING_PRIMARY_NOT_SUPPORTED",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": false,
+      "gate2": true,
+      "gate3_coherent": false,
+      "gate4_lead": false,
+      "gate4_recorded": false,
+      "state": "PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": false,
+      "gate2": true,
+      "gate3_coherent": false,
+      "gate4_lead": false,
+      "gate4_recorded": true,
+      "state": "PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": false,
+      "gate2": true,
+      "gate3_coherent": false,
+      "gate4_lead": true,
+      "gate4_recorded": false,
+      "state": "PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": false,
+      "gate2": true,
+      "gate3_coherent": false,
+      "gate4_lead": true,
+      "gate4_recorded": true,
+      "state": "GROUNDING_PRIMARY_NOT_SUPPORTED",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": false,
+      "gate2": true,
+      "gate3_coherent": true,
+      "gate4_lead": false,
+      "gate4_recorded": false,
+      "state": "PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": false,
+      "gate2": true,
+      "gate3_coherent": true,
+      "gate4_lead": false,
+      "gate4_recorded": true,
+      "state": "PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": false,
+      "gate2": true,
+      "gate3_coherent": true,
+      "gate4_lead": true,
+      "gate4_recorded": false,
+      "state": "PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": false,
+      "gate2": true,
+      "gate3_coherent": true,
+      "gate4_lead": true,
+      "gate4_recorded": true,
+      "state": "GROUNDING_PRIMARY_NOT_SUPPORTED",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": true,
+      "gate2": false,
+      "gate3_coherent": false,
+      "gate4_lead": false,
+      "gate4_recorded": false,
+      "state": "PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": true,
+      "gate2": false,
+      "gate3_coherent": false,
+      "gate4_lead": false,
+      "gate4_recorded": true,
+      "state": "PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": true,
+      "gate2": false,
+      "gate3_coherent": false,
+      "gate4_lead": true,
+      "gate4_recorded": false,
+      "state": "PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": true,
+      "gate2": false,
+      "gate3_coherent": false,
+      "gate4_lead": true,
+      "gate4_recorded": true,
+      "state": "GROUNDING_PRIMARY_NOT_SUPPORTED",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": true,
+      "gate2": false,
+      "gate3_coherent": true,
+      "gate4_lead": false,
+      "gate4_recorded": false,
+      "state": "PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": true,
+      "gate2": false,
+      "gate3_coherent": true,
+      "gate4_lead": false,
+      "gate4_recorded": true,
+      "state": "PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": true,
+      "gate2": false,
+      "gate3_coherent": true,
+      "gate4_lead": true,
+      "gate4_recorded": false,
+      "state": "PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": true,
+      "gate2": false,
+      "gate3_coherent": true,
+      "gate4_lead": true,
+      "gate4_recorded": true,
+      "state": "GROUNDING_PRIMARY_NOT_SUPPORTED",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": true,
+      "gate2": true,
+      "gate3_coherent": false,
+      "gate4_lead": false,
+      "gate4_recorded": false,
+      "state": "PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": true,
+      "gate2": true,
+      "gate3_coherent": false,
+      "gate4_lead": false,
+      "gate4_recorded": true,
+      "state": "PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": true,
+      "gate2": true,
+      "gate3_coherent": false,
+      "gate4_lead": true,
+      "gate4_recorded": false,
+      "state": "PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": true,
+      "gate2": true,
+      "gate3_coherent": false,
+      "gate4_lead": true,
+      "gate4_recorded": true,
+      "state": "GROUNDING_DUAL_SHIFT_SUPPORTED_MECHANISM_UNRESOLVED",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": true,
+      "gate2": true,
+      "gate3_coherent": true,
+      "gate4_lead": false,
+      "gate4_recorded": false,
+      "state": "PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": true,
+      "gate2": true,
+      "gate3_coherent": true,
+      "gate4_lead": false,
+      "gate4_recorded": true,
+      "state": "PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": true,
+      "gate2": true,
+      "gate3_coherent": true,
+      "gate4_lead": true,
+      "gate4_recorded": false,
+      "state": "PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "gate_branch",
+      "gate1": true,
+      "gate2": true,
+      "gate3_coherent": true,
+      "gate4_lead": true,
+      "gate4_recorded": true,
+      "state": "GROUNDING_DUAL_SHIFT_SUPPORTED_MECHANISM_COHERENT",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "fin1_FAIL",
+      "state": "BLOCKED_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "fin1_PENDING",
+      "state": "BLOCKED_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "fin1_NOT_RUN",
+      "state": "BLOCKED_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "full_cache_replay_FAIL",
+      "state": "BLOCKED_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "full_cache_replay_PENDING",
+      "state": "BLOCKED_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "full_cache_replay_NOT_RUN",
+      "state": "BLOCKED_NO_SCIENTIFIC_INTERPRETATION",
+      "yolo_pass_state_unchanged": true
+    },
+    {
+      "fixture": "missing:results.point_metrics",
+      "state": "REJECTED"
+    },
+    {
+      "fixture": "missing:results.metric_ci95",
+      "state": "REJECTED"
+    },
+    {
+      "fixture": "missing:results.margin_common_localized_gt_counts",
+      "state": "REJECTED"
+    },
+    {
+      "fixture": "missing:results.assessment.hard_minus_random_ci95",
+      "state": "REJECTED"
+    },
+    {
+      "fixture": "missing:results.assessment.mean_A_hard_ci95",
+      "state": "REJECTED"
+    },
+    {
+      "fixture": "missing:results.assessment.D_AP50_ci95",
+      "state": "REJECTED"
+    },
+    {
+      "fixture": "missing:results.assessment.A_AP50_ci95",
+      "state": "REJECTED"
+    },
+    {
+      "fixture": "missing:results.assessment.mean_hard_minus_random_ci95",
+      "state": "REJECTED"
+    },
+    {
+      "fixture": "missing:results.assessment.gate3_diagnostics",
+      "state": "REJECTED"
+    },
+    {
+      "fixture": "missing:lead_review.gate3_coherent",
+      "state": "REJECTED"
+    },
+    {
+      "fixture": "missing:lead_review.gate4_history_audit_ref",
+      "state": "REJECTED"
+    },
+    {
+      "fixture": "missing:provenance.environment_sha256",
+      "state": "REJECTED"
+    },
+    {
+      "fixture": "missing:results.assessment.gate3_diagnostics.distractor_fp_excess_increase",
+      "state": "REJECTED"
+    },
+    {
+      "fixture": "missing:results.assessment.gate3_diagnostics.classification_beyond_localization_excess_drop",
+      "state": "REJECTED"
+    },
+    {
+      "fixture": "missing:results.assessment.gate3_diagnostics.matched_localization_margin_excess_shrinkage",
+      "state": "REJECTED"
+    },
+    {
+      "fixture": "subset:point_metrics",
+      "state": "REJECTED"
+    },
+    {
+      "fixture": "subset:assessment.D_AP50",
+      "state": "REJECTED"
+    },
+    {
+      "fixture": "subset:assessment.hard_minus_random",
+      "state": "REJECTED"
+    },
+    {
+      "fixture": "statistical_support_true_lead_false",
+      "state": "GROUNDING_DUAL_SHIFT_SUPPORTED_MECHANISM_UNRESOLVED"
+    },
+    {
+      "fixture": "explicit_undefined_support",
+      "state": "GROUNDING_DUAL_SHIFT_SUPPORTED_MECHANISM_UNRESOLVED"
+    }
+  ],
+  "source_bindings": {
+    "research_log/t013/PLAN.md": {
+      "frozen_sha256": "5d977aceb3c06a7915396aea9c7cc2504759e584ce79b459a287b18fb67e4beb",
+      "working_sha256": "5d977aceb3c06a7915396aea9c7cc2504759e584ce79b459a287b18fb67e4beb",
+      "equal": true
+    },
+    "scripts/t013_analysis.py": {
+      "frozen_sha256": "74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c",
+      "working_sha256": "74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c",
+      "equal": true
+    },
+    "scripts/t013_coco.py": {
+      "frozen_sha256": "bd3245235a6dcd455224ea7eb737b07875920b0a08b34f30e706dfc6a9ca9e81",
+      "working_sha256": "bd3245235a6dcd455224ea7eb737b07875920b0a08b34f30e706dfc6a9ca9e81",
+      "equal": true
+    },
+    "scripts/t013_diagnostics.py": {
+      "frozen_sha256": "ae7e61feaa5701ca9580c9c48901f99d09e9986b560c2821073100c94645a41e",
+      "working_sha256": "ae7e61feaa5701ca9580c9c48901f99d09e9986b560c2821073100c94645a41e",
+      "equal": true
+    },
+    "research_log/t013/native30_freeze.json": {
+      "frozen_sha256": "50addfb8e247333b49fb22cda14570166b294101bb435b5a1b5bf688b4b3a91e",
+      "working_sha256": "50addfb8e247333b49fb22cda14570166b294101bb435b5a1b5bf688b4b3a91e",
+      "equal": true
+    }
+  },
+  "artifact_sha256": {
+    "FINAL_DECISION_CONTRACT.md": "9c6e6ee662b5e22458b13adecc9825d32e1e031876c39904b3635ce1388cbcba",
+    "final_decision_contract.py": "baf99f38a3130c268385ddc4c986cd72d123bfb55e7fed29a90b88d289570931",
+    "test_final_decision_contract.py": "f3a39826f9d8331934315a584019e8f4bba21381dfebceae85331fc0af207db5"
+  },
+  "active_primary_scientific_result_opened": false,
+  "active_primary_prediction_content_opened": false,
+  "frozen_scientific_source_or_run_modified": false,
+  "fixture_values_are_scientific_results": false,
+  "command": "D:/anaconda3/python.exe research_log/t013/test_final_decision_contract.py",
+  "test_seconds": 0.024,
+  "end_health": {
+    "observed_at": "2026-09-13T07:11:24+08:00",
+    "run_id": "20260912-210355-tovd-native30-primary",
+    "tmux_alive": true,
+    "writer_pid": 721181,
+    "writer_state": "Rl+",
+    "completed_images": 356,
+    "total_images": 1000,
+    "seconds": 36421.546857393,
+    "free_bytes": 23537688576,
+    "wrapper_exit_marker_present": false,
+    "analysis_result_present": false
+  }
+}
