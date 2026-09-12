@@ -1,0 +1,19 @@
+{
+  "evidence_commit": "0a5571326b86a08824d84d9f93e31cb497aba650",
+  "pushed_to": "https://github.com/word-ky/TOVD",
+  "remote_root": "/home/wenchang/asdasdsad/wjq/TOVD",
+  "verified_at": "2026-09-12T14:36:08.976793+08:00",
+  "report_sha256": "b5e6792a4a7bb614b6c230a90665dfbd37da508ca2a16b85819c22f286d8cc8d",
+  "synthesis_sha256": "19185f809f9e4df02de4035d97b20ec0f32f2455b657e3a3e4f55ec16fca39ac",
+  "local_remote_hashes_equal": true,
+  "engineering_status": "VERIFIED",
+  "gates": {
+    "1": false,
+    "2": false,
+    "3": true,
+    "4": true,
+    "5": true
+  },
+  "next_action": "Stop synthetic mechanism program; wait for Research Lead review. Do not rerun T012.",
+  "heartbeat_minutes": 15
+}

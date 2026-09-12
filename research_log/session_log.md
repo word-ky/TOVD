@@ -215,3 +215,5 @@ Full16MBrawarchive downloadinprogress; remoteSHA256ba5a946114948393929f03b011f03
 
 ## 2026-09-12T14:33:57.632563+08:00 T012 final evidence
 All52originalfiles/36rawrecords recovered,3600episodes/28800queries acrossphases; hashesmatch. Fixedlambda .2 remainsSHA b3f7219e55426b99f21761ba04bc872d79228a42f63ec93d6ff4300a0f7b1a5d. NovelrawNLLmatchesaggregates1e-12; historicalscoringerror3.62051651e-7 andaccuracy0; source/state/replay/inferencechecks allpass. Gates1/2FAIL,3/4/5PASS. RESULTS/SYNTHESIS/per-celltables/localization/PNG/SVG generated, figurevisuallychecked. All108tests passlocal/remoteCPU/CUDA. Stopentiresyntheticprogram pendingLeadreview; no newmechanism/tuning/detector. Preparing finalcommit/push andremoteprojectmirror.
+
+T012 publication complete: evidencecommit `0a5571326b86a08824d84d9f93e31cb497aba650` pushed to origin/main. RESULTS.md andSYNTHESIS.md mirrored toA6000 andSHA256matched local. Source/calibration/novelreceipts andall52originalrunfiles retained. Publicationreceipt inresearch_log/t012/publication_receipt.json. No activeexperiment; waitResearchLead review andrespectstoprule.
