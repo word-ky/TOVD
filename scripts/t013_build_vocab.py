@@ -1,25 +1,16 @@
 """Freeze T013 distractors using only category text and frozen detector BERT."""
 import argparse
-import hashlib
 import json
 from pathlib import Path
 
 import numpy as np
 import torch
-from transformers import AutoTokenizer, GroundingDinoForObjectDetection
 from transformers.models.grounding_dino.modeling_grounding_dino import (
     generate_masks_with_special_tokens_and_transfer_map,
 )
 
 from scripts.t013_text import candidates, caption_and_spans, rank_candidates
-
-
-def state_hash(model):
-    digest = hashlib.sha256()
-    for name, tensor in sorted(model.state_dict().items()):
-        digest.update(name.encode())
-        digest.update(tensor.detach().cpu().contiguous().numpy().tobytes())
-    return digest.hexdigest()
+from scripts.t013_detector import load_detector, state_hash
 
 
 @torch.inference_mode()
@@ -54,10 +45,8 @@ def main():
     root = Path("research_log/t013")
     canonical = [r["name"] for r in json.loads((root / "probe_sources/coco80.json").read_text())]
     rows, excluded = candidates(json.loads((root / "lvis_categories.json").read_text()), canonical)
-    tokenizer = AutoTokenizer.from_pretrained(args.model, local_files_only=True)
-    model = GroundingDinoForObjectDetection.from_pretrained(
-        args.model, local_files_only=True, disable_custom_kernels=True, max_text_len=1024,
-    ).eval().requires_grad_(False).to(args.device)
+    processor, model = load_detector(args.model, args.device)
+    tokenizer = processor.tokenizer
     before = state_hash(model)
     coco_vectors = embed_names(model, tokenizer, canonical, args.device)
     candidate_vectors = embed_names(model, tokenizer, [r["name"] for r in rows], args.device)

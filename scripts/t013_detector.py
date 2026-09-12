@@ -26,9 +26,12 @@ def configure_torch():
 def load_detector(path, device, capacity=CAPACITY):
     configure_torch()
     processor = AutoProcessor.from_pretrained(path, local_files_only=True)
-    model = GroundingDinoForObjectDetection.from_pretrained(
+    model, loading_info = GroundingDinoForObjectDetection.from_pretrained(
         path, local_files_only=True, max_text_len=capacity, disable_custom_kernels=True,
-    ).eval().requires_grad_(False).to(device)
+        output_loading_info=True,
+    )
+    assert not loading_info["missing_keys"] and not loading_info["mismatched_keys"], loading_info
+    model = model.eval().requires_grad_(False).to(device)
     return processor, model
 
 
