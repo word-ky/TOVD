@@ -137,3 +137,32 @@ The mechanism interpretation is now narrower and stronger: the useful ingredient
 Caveats retained: Armijo descent is not per-episode task safety; easy seed 27 still regresses substantially from its own W0; C2 costs multiple inner-loss evaluations; and this remains a synthetic frozen-checkpoint result. Therefore detector integration is still premature.
 
 **Next action:** T006 assigned. Meta-train a new O1+C2 model under the original T002 budget, differentiating the accepted functional update while stop-grading the discrete eta selection. The experiment must isolate adapted performance from the same trained W0-only path, reuse/re-evaluate B0/B1/B2 on identical held-out streams, verify meta-gradients away from eta boundaries, and apply preregistered hard-generalization/easy-safety rules. Only a stable win beyond W0 and strong non-TTT/generic-TTT controls can unlock a later small detector integration task.
+
+---
+
+## 2026-09-12 — T006 review
+
+**Decision:** ACCEPTED AS A VALID NEGATIVE CONTROL-COMPETITIVENESS RESULT; RANDOM-INIT C2 META-TRAINING REJECTED, FROZEN T005 MECHANISM RETAINED
+
+Reviewed commits/artifacts:
+- `f9f413704f8aa062a2b4c198e232a7b260ba44d9` — preregistered T006 protocol and comparator convention;
+- `65299db5f1127407f856872b732f2b2b7051383e` — piecewise C2 meta-training implementation, tests, and controlled runner;
+- `59311b904fe8178db6d5376be39b1d4954a7c941` — A6000 dispatch/recovery state;
+- `70588e10f3237d69f6d30a83af57c09fc2591512` — complete three-seed T006 evidence and final report;
+- `research_log/t006/PLAN.md`, `research_log/t006/RESULTS.md`, and the T006 mailbox report.
+
+Accepted validity evidence:
+- all three seeds completed 400 continuation-equivalent steps under the fixed T002 budget with zero nonfinite steps/elements, zero train/test Armijo violations, and no eta=0 fallback;
+- full local suite passes 75/75; A6000 CPU and CUDA suites each pass 75/75;
+- historical B0/B1/B2/P checkpoint hashes and exact held-out streams are preserved; all 2,400 re-evaluated historical episode metrics/IDs match T002 exactly;
+- stable-region finite differences validate the piecewise meta-gradient at epsilon 1e-5 with 60/60 stable probes and approximately 1e-11 maximum absolute error; selector crossings at larger perturbations are explicitly recorded rather than treated as smooth-gradient failures;
+- selected eta is label-free and stop-gradient, while outer gradients reach W0/key/query projections; episodic reset, deterministic replay, vocabulary dependence, W0-disable equality and normal-runtime equality remain intact;
+- no detector work, objective/controller/temperature/generator/architecture change, test-label inner loss, or post-result tuning occurred.
+
+Scientific result: T006 preserves the *relative* value of the fast update but loses *absolute* competitiveness. Hard held-out performance moves from the new W0-only 29.92% / 1.46985 NLL to 34.63% / 1.35845 after adaptation, and both metrics improve in all three seeds. Hard O1/task cosine remains +0.321 versus original O0 approximately -0.011. Thus Rules 2 and 5 pass: the learned model still uses the fast path and the update direction remains task-relevant.
+
+The decisive failure is Rule 3. Adapted T006 is 10.0 pp below B2 hard accuracy and approximately 0.096 nats worse in NLL; it is also about 7.71 pp below B0 and 0.098 nats worse in NLL. Most importantly, it is far below the T005 frozen-C2 reference (46.25% / 1.23536). The outer/meta training therefore learned a weak absolute representation even though C2 still improves that weak representation locally.
+
+Interpretation: this is not evidence that semantic fast weights are useless. It rejects the specific assumption that **O1+C2 should jointly learn both the slow semantic representation and the fast adaptation behavior from the original random initialization under the fixed T002 budget**. The strongest current evidence instead points to a decoupled regime: first learn a strong semantic state under O0, then keep that state strong and apply O1+C2 as label-free episodic adaptation.
+
+**Next action:** T007 assigned as a warm-start origin audit. Start two matched 400-step continuation branches from the exact same final T002 P checkpoint: W1 continues the original O0 training, while W2 switches to O1+C2 meta-training. Evaluate both W0-only and O1+C2-adapted paths against the original frozen T005 state, T006 random-init meta state, and exact B0/B1/B2 controls. This will determine whether T006 failed because C2 meta-training started from scratch or because outer optimization with C2 itself erodes a strong pretrained representation. No detector integration is allowed until this ambiguity is resolved.
