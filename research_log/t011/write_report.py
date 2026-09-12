@@ -77,6 +77,15 @@ def main(run_path):
              'Nine frozen checkpoints, 100 easy + 100 hard episodes each; 1,800 episodes / 14,400 queries, 600 paired scene seeds from the fresh 3-billion namespace. No outer training, learned selector or outcome-driven change.', '',
              '## Fixed criteria', '', table(['Criterion', 'Result'], [(k, 'PASS' if passed else 'FAIL') for k, passed in g['by_gate'].items()]), '',
              'Full clause arithmetic, including every easy cell and hard seed, is preserved in `gates.json`.', '',
+             'Hard utility and consistency:', '',
+             table(['Group', 'S2 hard NLL gain over S0', 'S1 gain retained %', 'S2 accuracy change pp'],
+                   [(c['scope'], f"{c['S2_nll_gain']:.6f}", 'N/A' if c['gain_retention'] is None else f"{100*c['gain_retention']:.2f}",
+                     f"{c['accuracy_delta_pp']:.4f}") for c in g['clauses'] if c['gate'] == 2]), '',
+             table(['Group', 'Seeds improving hard NLL', 'Worst seed NLL regression'],
+                   [(c['scope'], c['improved_seeds'], f"{c['worst_nll_regression']:.6f}") for c in g['clauses'] if c['gate'] == 3]), '',
+             f"Easy safety: {sum(c['passes'] for c in g['clauses'] if c['gate'] == 4)} / {sum(c['gate'] == 4 for c in g['clauses'])} seed/state cells pass.",
+             'Localization: '+', '.join(f"{k}={c[k]:.6f}" for c in g['clauses'] if c['gate'] == 5
+                                        for k in ('S2_minus_S3_hard_nll', 'S2_minus_S3_easy_nll'))+'.', '',
              '## Task metrics', '',
              table(['Scope', 'Method', 'Accuracy %', 'NLL'], [(r['scope'], r['method'], f"{100*r['accuracy']:.4f}", f"{r['nll']:.6f}")
                     for r in result['summary'] if r['scope'] == 'overall' or r['scope'].startswith('group/')]), '',

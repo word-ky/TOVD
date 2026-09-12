@@ -87,3 +87,40 @@ Both figures visually checked; git diff --check passes. No remaining execution b
 
 ## 2026-09-12 13:32 +08 T011 dispatch
 Tested79e6e2baac5b92dd8b66c1a8a048a4d5013f5d5b; preregisterb615642. Release20260912-133111-tovd-t011; run20260912-133149-tovd-t011-a6000 onGPU1. FullCPU/CUDA tests precede1800episode screen in script. No outcomes/changes yet. Source/config/hashes unchanged.
+
+
+## T011 FINAL ENGINEERING REPORT — VERIFIED (negative development screen)
+
+- Run: `20260912-133149-tovd-t011-a6000`; release `20260912-133111-tovd-t011`; A6000 physical GPU1. Started 2026-09-12 13:31:58+08, finished 13:37:55+08, exit0.
+- Preregistration: `b615642a3b23261dfaed6ebbdb61b423be7f3901`. Tested scientific implementation: `79e6e2baac5b92dd8b66c1a8a048a4d5013f5d5b`. Dispatch `cd1c1aa`. Report-only changes afterward; scientific/config/source bytes verified unchanged remotely.
+- Nine checkpoints, 100 easy +100 hard novel development episodes each: 1,800 episodes /14,400 queries, 600 paired scene seeds. Fresh namespace3,000,000,000; complete IDs/checkpoint hashes/code hashes in the committed manifests. No outer training or checkpoint selection.
+
+### Implementation and tests
+
+New code: `tovd/models/query_local_residual.py`; `tests/test_query_local_residual.py`; `research_log/t011/{experiment,summary,write_report}.py`; `scripts/run_t011_a6000.sh`. Added PLAN/config/sources/implementation hashes, RESULTS, gate/table/diagnostic/PNG/SVG/receipt manifests and all27 original run files (including18 lossless gzip JSONL records) under research_log.
+
+Frozen slow projections/MLP provide z0; only independently zero-initialized query residuals adapt. Explicit cosine teacher and query attention, tau_t=tau_q=.2, student_tau=.1. Local CE, independent gradient with no query-count averaging, original five Armijo candidates/c1. Uniform-context S3 changes only attention. Runtime accepts no labels/IDs; labels enter offline scoring only after all outputs/audits. Existing C2 path and generator remain byte-unchanged.
+
+Commands: `python -m pytest -q tests/test_step_control.py tests/test_query_rollback.py` (baseline16passed12.33s); module focused3passed5.15s; expanded focused6passed6.72s; `python -m pytest -q` local101passed19.16s. Remote `export TOVD_SOURCE_REVISION=79e6e2baac5b92dd8b66c1a8a048a4d5013f5d5b; bash scripts/run_t011_a6000.sh` runs fullCPU101passed9.71s, fullCUDA101passed25.66s BEFORE screen. Python3.12.12/Torch2.4.0+cu121/CUDA12.1/RTXA6000. Existing NVML/protobufwarnings did not affect CUDA execution.
+
+### Five preregistered criteria — ALL FAIL
+
+1. **Locality FAIL:** finite accepted residuals, exact zero-init/isolation/reset and vocabulary dependence all pass. S2 accepted14,397/14,400; min accepted vocabulary residual difference .003163727. But S2 mean residual diversity .4102165641 < S3 .4302423724, excess -.0200258083 versus required +.01. Local teacher diversity exists (.04046647 vs ~0), but this does not establish the required residual-localization advantage.
+2. **Hard utility FAIL:** original/W1/W2 S2 hard NLL changes versus S0 are +.20095284/+.05643936/+.00862303. S1 improves all3groups, so gain-retention fractions are negative (-462.12%/-675.28%/-15.39%). Hard accuracy changes -15.7917/-5.2917/-2.2917pp, all worse than allowed -1pp.
+3. **Cross-seed FAIL:** original/W1 improve0of3seeds; worst NLL regressions .346356/.103313. W2 improves2of3 but its worst regression .062520 exceeds .03.
+4. **Easy safety FAIL:** all9 seed/state cells fail. Pooled easy accuracy S0 77.4306% -> S2 25.2917%; NLL .538841 ->3.473938. Detailed removal fractions and cell metrics are in gates.json/summary.csv.
+5. **Localization utility FAIL:** S2-S3 pooled hard NLL +.0165207255 and easy NLL +.1006617691; neither required comparison passes.
+
+Overall S0/S1/S2/S3 accuracy:59.7917%/63.1181%/29.8264%/27.3403%; NLL:.907914884/.853955531/2.419799086/2.361207839.
+S2 inner CE2.32361179 ->1.81902371; gradient norm7.75312819; meaneta.04156576; trials1.46417; residualnorm.26012696; normalizedresidualnorm.63533342; attentionentropy2.94541451/effective19.61048tokens (S3uniform32).
+Thus inner descent, vocabulary dependence and exact reset are insufficient for task utility. This is an observed failure of the specified frozen QLSR screen, not evidence that its code failed to execute.
+
+### Validity, deviations, artifacts and next action
+
+Engineering validity TRUE: all9 checkpoint hashes/all source and implementation hashes match; slow/model tensors byte-unchanged; S0/S1 replay output/states bitwise equal; all S2/S3 outputs finite and per-query isolation/reset exact. Maximum offline score NLL discrepancy1.10268593e-6 (<=2e-6); accuracy discrepancy0. Raw recovery verified18files/1800episodes/14400queries; raw recomputed overall NLL agrees within1e-12. Full archive34,877,359bytes SHA256 `5567735c5f387ab5ffed8bbfa33280b3a80a9b4522b28d86bf8324886bc10bc9` matches remote. Plots visually checked.
+
+Normalization scope disclosed BEFORE outcomes: the task's explicit QLSR equation uses cosine, while historical O1 teacher is key-dot-text without key normalization. S2/S3 follow the explicit new cosine equation; S1 remains historical. S2-vs-S3 isolates query localization, while S1-vs-S2 also changes parameterization/teacher normalization. No outcome-based formula, temperature, candidate, metric or gate changes. No QLSR outer-training claim; existing meta-gradient tests remain green.
+
+See `research_log/t011/RESULTS.md`, `completion_receipt.json`, `verification.json`, `artifact_manifest.json`, `diversity.csv`, `summary.csv`, `gates.json` and all original run records. Figure is descriptive with no confidence/confirmatory claim.
+
+**Recommendation:** enforce T011's stop rule: terminate the current fast-semantic-state program at the synthetic mechanism level; return to a static/activation-side OVD formulation only under a new Research Lead task. Do not add another selector/objective/controller, tune tau/eta, run confirmatory T012 or integrate a detector. Stop here for Research Lead review. Engineering status VERIFIED; research acceptance/rejection remains the Lead's decision. Heartbeat stays active at15min and must not rerun completed T011.

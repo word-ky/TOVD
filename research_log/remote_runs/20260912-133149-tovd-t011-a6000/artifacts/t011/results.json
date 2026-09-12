@@ -1,0 +1,1900 @@
+{
+  "config": {
+    "world": {
+      "dim": 16,
+      "clusters": 12,
+      "classes_per_cluster": 10,
+      "train_clusters": 8,
+      "spread": 0.35,
+      "text_noise": 0.02,
+      "observation_noise": 0.1,
+      "nonlinear_scale": 0.15,
+      "vocabulary_size": 4,
+      "queries": 8,
+      "foreground_tokens": 16,
+      "distractor_tokens": 8,
+      "background_tokens": 8,
+      "seed": 20260912
+    },
+    "model": {
+      "dim": 16,
+      "hidden_dim": 32,
+      "inner_lr": 0.05,
+      "tau": 0.2,
+      "classifier_temperature": 0.1
+    },
+    "seeds": [
+      7,
+      17,
+      27
+    ],
+    "episodes_per_regime": 100,
+    "namespace": 3000000000,
+    "seed_stride": 100000,
+    "hard_offset": 10000,
+    "tau_q": 0.2,
+    "teacher_tau": 0.2,
+    "student_tau": 0.1,
+    "normalization_eps": 1e-12,
+    "diversity_min": 0.001,
+    "diversity_excess_min": 0.01,
+    "vocabulary_difference_min": 1e-08
+  },
+  "validity": {
+    "source_checks": [
+      {
+        "state_id": "seed7_original_P",
+        "sha256": "125f800e8a0ae7ab7547afaab9f30bf493ec1378d3866f2f8192cbd5c7c8c6e2",
+        "matches": true
+      },
+      {
+        "state_id": "seed7_P_O0_resume_step400",
+        "sha256": "f89cb68bdf816715a60bdf70a462ea81b1b22e4c85e597beb9a59765d14c5547",
+        "matches": true
+      },
+      {
+        "state_id": "seed7_P_C2_warm_step400",
+        "sha256": "3f4c8714615b9b12bf5df613ef731a77d0bf6d1c9a828c856587696412a14643",
+        "matches": true
+      },
+      {
+        "state_id": "seed17_original_P",
+        "sha256": "5da689fbc0750d7fde51d31f93f02248fdb5a1ca3e5189b967ac46d0431a0985",
+        "matches": true
+      },
+      {
+        "state_id": "seed17_P_O0_resume_step400",
+        "sha256": "c68cbe91e6d5c0e4f8c850fa58a6cde5ebcca791a530eeb5442f8e70d38cab7b",
+        "matches": true
+      },
+      {
+        "state_id": "seed17_P_C2_warm_step400",
+        "sha256": "b39fb05a0c68a78e99294f229b949eda7ed4a3ad2b5b1ac4dc34d32e6250739f",
+        "matches": true
+      },
+      {
+        "state_id": "seed27_original_P",
+        "sha256": "091124ee7af0f8ec4ca95d12617d6c5954f8cb90dd73966823af0daed607e3ac",
+        "matches": true
+      },
+      {
+        "state_id": "seed27_P_O0_resume_step400",
+        "sha256": "2326771172557cd183d0d11f5eb1d3f69120ed95a6509b8c2c534ac53d144724",
+        "matches": true
+      },
+      {
+        "state_id": "seed27_P_C2_warm_step400",
+        "sha256": "620505e05b69574dcb20b8cd512e24fb86b53edf44a6188bbb38a295dd96804e",
+        "matches": true
+      }
+    ],
+    "code_checks": [
+      {
+        "path": "tovd/__init__.py",
+        "sha256": "bbf966d2542a21b7d8984f3985b24dda004687bb9474000b54cdcd01af3b834b",
+        "actual": "bbf966d2542a21b7d8984f3985b24dda004687bb9474000b54cdcd01af3b834b"
+      },
+      {
+        "path": "tovd/models/__init__.py",
+        "sha256": "0abe0c593dda7a57bc95909f1155fc3ab1813285855c708bec011948b82bc76c",
+        "actual": "0abe0c593dda7a57bc95909f1155fc3ab1813285855c708bec011948b82bc76c"
+      },
+      {
+        "path": "tovd/models/fast_semantic_memory.py",
+        "sha256": "0958c058f5ae43ac097d9363f74da0b0e575ce319351ef63f9028e0eb5c5e03f",
+        "actual": "0958c058f5ae43ac097d9363f74da0b0e575ce319351ef63f9028e0eb5c5e03f"
+      },
+      {
+        "path": "tovd/models/step_control.py",
+        "sha256": "5feacd409afb0a054679e61b7389141696378537e57b0f3fdb7dab7bc3ad45bc",
+        "actual": "5feacd409afb0a054679e61b7389141696378537e57b0f3fdb7dab7bc3ad45bc"
+      },
+      {
+        "path": "tovd/models/vocabulary_objectives.py",
+        "sha256": "cde8c70f46d45dcbd472406bffe6b7b4b6f0984bc1da8d64a8baa6b9b6140273",
+        "actual": "cde8c70f46d45dcbd472406bffe6b7b4b6f0984bc1da8d64a8baa6b9b6140273"
+      },
+      {
+        "path": "tovd/synthetic/__init__.py",
+        "sha256": "e2bef97e9839964f0b8825190375bef4df88e571f676fb7c54ca54bf3d923df4",
+        "actual": "e2bef97e9839964f0b8825190375bef4df88e571f676fb7c54ca54bf3d923df4"
+      },
+      {
+        "path": "tovd/synthetic/benchmark.py",
+        "sha256": "353cd70ea2e70ca1790c52b81bc13ef5a196a2e678200ee9d2dd58926d5c66b0",
+        "actual": "353cd70ea2e70ca1790c52b81bc13ef5a196a2e678200ee9d2dd58926d5c66b0"
+      },
+      {
+        "path": "tovd/synthetic/models.py",
+        "sha256": "c4fb90e885455aa128a2c54107cef752e34a43dbd3822e211cdb9651351073cf",
+        "actual": "c4fb90e885455aa128a2c54107cef752e34a43dbd3822e211cdb9651351073cf"
+      },
+      {
+        "path": "tovd/synthetic/semantic_episodes.py",
+        "sha256": "c4b5cd6b8e28a79c963e17b5ec2c6391be6ac4325db18539b9f4ba59e95fb9d6",
+        "actual": "c4b5cd6b8e28a79c963e17b5ec2c6391be6ac4325db18539b9f4ba59e95fb9d6"
+      },
+      {
+        "path": "tovd/models/query_local_residual.py",
+        "sha256": "767840e29e3b3440d26628a92ec90179f1e747427d23c4988c9c26c5526b5901",
+        "actual": "767840e29e3b3440d26628a92ec90179f1e747427d23c4988c9c26c5526b5901"
+      },
+      {
+        "path": "research_log/t011/experiment.py",
+        "sha256": "6fc24d95d1a291b4ec1f48e5ba0626b4605c31313160d08a03231ad3e1ce80ee",
+        "actual": "6fc24d95d1a291b4ec1f48e5ba0626b4605c31313160d08a03231ad3e1ce80ee"
+      },
+      {
+        "path": "research_log/t011/summary.py",
+        "sha256": "e5663a3e96bdc29a2e99a4d21b78a1c3d9cf447fe37d9b0cb36c5133ba0552ac",
+        "actual": "e5663a3e96bdc29a2e99a4d21b78a1c3d9cf447fe37d9b0cb36c5133ba0552ac"
+      },
+      {
+        "path": "tests/test_query_local_residual.py",
+        "sha256": "3ede7e9837a88e67ec02268226b45da4ddcc0dfb8f8d6a2d5c400919d399027a",
+        "actual": "3ede7e9837a88e67ec02268226b45da4ddcc0dfb8f8d6a2d5c400919d399027a"
+      },
+      {
+        "path": "scripts/run_t011_a6000.sh",
+        "sha256": "e38acedbeff3e52a25859de607cb71811d27ae53fdd16000361349b0ed8c216d",
+        "actual": "e38acedbeff3e52a25859de607cb71811d27ae53fdd16000361349b0ed8c216d"
+      },
+      {
+        "path": "research_log/t011/config.json",
+        "sha256": "f2556a983d30eefe2f4d9c441266f95bc2ca12903ec93bebda9247e98f344290",
+        "actual": "f2556a983d30eefe2f4d9c441266f95bc2ca12903ec93bebda9247e98f344290"
+      },
+      {
+        "path": "research_log/t011/sources.json",
+        "sha256": "d6b09b2b5e9e69f6b1899384de2a6e11d5bfd36e6c1193c43a92951dbeb44817",
+        "actual": "d6b09b2b5e9e69f6b1899384de2a6e11d5bfd36e6c1193c43a92951dbeb44817"
+      },
+      {
+        "path": "research_log/t011/PLAN.md",
+        "sha256": "54a5f033211e3469a5448f4d852e155edd2bec6f092b5ef67d6eaebfd88a9544",
+        "actual": "54a5f033211e3469a5448f4d852e155edd2bec6f092b5ef67d6eaebfd88a9544"
+      }
+    ],
+    "unchanged": [
+      {
+        "state_id": "seed7_original_P",
+        "all_tensors_byte_equal": true,
+        "max_error": 0.0
+      },
+      {
+        "state_id": "seed7_P_O0_resume_step400",
+        "all_tensors_byte_equal": true,
+        "max_error": 0.0
+      },
+      {
+        "state_id": "seed7_P_C2_warm_step400",
+        "all_tensors_byte_equal": true,
+        "max_error": 0.0
+      },
+      {
+        "state_id": "seed17_original_P",
+        "all_tensors_byte_equal": true,
+        "max_error": 0.0
+      },
+      {
+        "state_id": "seed17_P_O0_resume_step400",
+        "all_tensors_byte_equal": true,
+        "max_error": 0.0
+      },
+      {
+        "state_id": "seed17_P_C2_warm_step400",
+        "all_tensors_byte_equal": true,
+        "max_error": 0.0
+      },
+      {
+        "state_id": "seed27_original_P",
+        "all_tensors_byte_equal": true,
+        "max_error": 0.0
+      },
+      {
+        "state_id": "seed27_P_O0_resume_step400",
+        "all_tensors_byte_equal": true,
+        "max_error": 0.0
+      },
+      {
+        "state_id": "seed27_P_C2_warm_step400",
+        "all_tensors_byte_equal": true,
+        "max_error": 0.0
+      }
+    ],
+    "episode_ids": [
+      3000700000,
+      3000700001,
+      3000700002,
+      3000700003,
+      3000700004,
+      3000700005,
+      3000700006,
+      3000700007,
+      3000700008,
+      3000700009,
+      3000700010,
+      3000700011,
+      3000700012,
+      3000700013,
+      3000700014,
+      3000700015,
+      3000700016,
+      3000700017,
+      3000700018,
+      3000700019,
+      3000700020,
+      3000700021,
+      3000700022,
+      3000700023,
+      3000700024,
+      3000700025,
+      3000700026,
+      3000700027,
+      3000700028,
+      3000700029,
+      3000700030,
+      3000700031,
+      3000700032,
+      3000700033,
+      3000700034,
+      3000700035,
+      3000700036,
+      3000700037,
+      3000700038,
+      3000700039,
+      3000700040,
+      3000700041,
+      3000700042,
+      3000700043,
+      3000700044,
+      3000700045,
+      3000700046,
+      3000700047,
+      3000700048,
+      3000700049,
+      3000700050,
+      3000700051,
+      3000700052,
+      3000700053,
+      3000700054,
+      3000700055,
+      3000700056,
+      3000700057,
+      3000700058,
+      3000700059,
+      3000700060,
+      3000700061,
+      3000700062,
+      3000700063,
+      3000700064,
+      3000700065,
+      3000700066,
+      3000700067,
+      3000700068,
+      3000700069,
+      3000700070,
+      3000700071,
+      3000700072,
+      3000700073,
+      3000700074,
+      3000700075,
+      3000700076,
+      3000700077,
+      3000700078,
+      3000700079,
+      3000700080,
+      3000700081,
+      3000700082,
+      3000700083,
+      3000700084,
+      3000700085,
+      3000700086,
+      3000700087,
+      3000700088,
+      3000700089,
+      3000700090,
+      3000700091,
+      3000700092,
+      3000700093,
+      3000700094,
+      3000700095,
+      3000700096,
+      3000700097,
+      3000700098,
+      3000700099,
+      3000710000,
+      3000710001,
+      3000710002,
+      3000710003,
+      3000710004,
+      3000710005,
+      3000710006,
+      3000710007,
+      3000710008,
+      3000710009,
+      3000710010,
+      3000710011,
+      3000710012,
+      3000710013,
+      3000710014,
+      3000710015,
+      3000710016,
+      3000710017,
+      3000710018,
+      3000710019,
+      3000710020,
+      3000710021,
+      3000710022,
+      3000710023,
+      3000710024,
+      3000710025,
+      3000710026,
+      3000710027,
+      3000710028,
+      3000710029,
+      3000710030,
+      3000710031,
+      3000710032,
+      3000710033,
+      3000710034,
+      3000710035,
+      3000710036,
+      3000710037,
+      3000710038,
+      3000710039,
+      3000710040,
+      3000710041,
+      3000710042,
+      3000710043,
+      3000710044,
+      3000710045,
+      3000710046,
+      3000710047,
+      3000710048,
+      3000710049,
+      3000710050,
+      3000710051,
+      3000710052,
+      3000710053,
+      3000710054,
+      3000710055,
+      3000710056,
+      3000710057,
+      3000710058,
+      3000710059,
+      3000710060,
+      3000710061,
+      3000710062,
+      3000710063,
+      3000710064,
+      3000710065,
+      3000710066,
+      3000710067,
+      3000710068,
+      3000710069,
+      3000710070,
+      3000710071,
+      3000710072,
+      3000710073,
+      3000710074,
+      3000710075,
+      3000710076,
+      3000710077,
+      3000710078,
+      3000710079,
+      3000710080,
+      3000710081,
+      3000710082,
+      3000710083,
+      3000710084,
+      3000710085,
+      3000710086,
+      3000710087,
+      3000710088,
+      3000710089,
+      3000710090,
+      3000710091,
+      3000710092,
+      3000710093,
+      3000710094,
+      3000710095,
+      3000710096,
+      3000710097,
+      3000710098,
+      3000710099,
+      3001700000,
+      3001700001,
+      3001700002,
+      3001700003,
+      3001700004,
+      3001700005,
+      3001700006,
+      3001700007,
+      3001700008,
+      3001700009,
+      3001700010,
+      3001700011,
+      3001700012,
+      3001700013,
+      3001700014,
+      3001700015,
+      3001700016,
+      3001700017,
+      3001700018,
+      3001700019,
+      3001700020,
+      3001700021,
+      3001700022,
+      3001700023,
+      3001700024,
+      3001700025,
+      3001700026,
+      3001700027,
+      3001700028,
+      3001700029,
+      3001700030,
+      3001700031,
+      3001700032,
+      3001700033,
+      3001700034,
+      3001700035,
+      3001700036,
+      3001700037,
+      3001700038,
+      3001700039,
+      3001700040,
+      3001700041,
+      3001700042,
+      3001700043,
+      3001700044,
+      3001700045,
+      3001700046,
+      3001700047,
+      3001700048,
+      3001700049,
+      3001700050,
+      3001700051,
+      3001700052,
+      3001700053,
+      3001700054,
+      3001700055,
+      3001700056,
+      3001700057,
+      3001700058,
+      3001700059,
+      3001700060,
+      3001700061,
+      3001700062,
+      3001700063,
+      3001700064,
+      3001700065,
+      3001700066,
+      3001700067,
+      3001700068,
+      3001700069,
+      3001700070,
+      3001700071,
+      3001700072,
+      3001700073,
+      3001700074,
+      3001700075,
+      3001700076,
+      3001700077,
+      3001700078,
+      3001700079,
+      3001700080,
+      3001700081,
+      3001700082,
+      3001700083,
+      3001700084,
+      3001700085,
+      3001700086,
+      3001700087,
+      3001700088,
+      3001700089,
+      3001700090,
+      3001700091,
+      3001700092,
+      3001700093,
+      3001700094,
+      3001700095,
+      3001700096,
+      3001700097,
+      3001700098,
+      3001700099,
+      3001710000,
+      3001710001,
+      3001710002,
+      3001710003,
+      3001710004,
+      3001710005,
+      3001710006,
+      3001710007,
+      3001710008,
+      3001710009,
+      3001710010,
+      3001710011,
+      3001710012,
+      3001710013,
+      3001710014,
+      3001710015,
+      3001710016,
+      3001710017,
+      3001710018,
+      3001710019,
+      3001710020,
+      3001710021,
+      3001710022,
+      3001710023,
+      3001710024,
+      3001710025,
+      3001710026,
+      3001710027,
+      3001710028,
+      3001710029,
+      3001710030,
+      3001710031,
+      3001710032,
+      3001710033,
+      3001710034,
+      3001710035,
+      3001710036,
+      3001710037,
+      3001710038,
+      3001710039,
+      3001710040,
+      3001710041,
+      3001710042,
+      3001710043,
+      3001710044,
+      3001710045,
+      3001710046,
+      3001710047,
+      3001710048,
+      3001710049,
+      3001710050,
+      3001710051,
+      3001710052,
+      3001710053,
+      3001710054,
+      3001710055,
+      3001710056,
+      3001710057,
+      3001710058,
+      3001710059,
+      3001710060,
+      3001710061,
+      3001710062,
+      3001710063,
+      3001710064,
+      3001710065,
+      3001710066,
+      3001710067,
+      3001710068,
+      3001710069,
+      3001710070,
+      3001710071,
+      3001710072,
+      3001710073,
+      3001710074,
+      3001710075,
+      3001710076,
+      3001710077,
+      3001710078,
+      3001710079,
+      3001710080,
+      3001710081,
+      3001710082,
+      3001710083,
+      3001710084,
+      3001710085,
+      3001710086,
+      3001710087,
+      3001710088,
+      3001710089,
+      3001710090,
+      3001710091,
+      3001710092,
+      3001710093,
+      3001710094,
+      3001710095,
+      3001710096,
+      3001710097,
+      3001710098,
+      3001710099,
+      3002700000,
+      3002700001,
+      3002700002,
+      3002700003,
+      3002700004,
+      3002700005,
+      3002700006,
+      3002700007,
+      3002700008,
+      3002700009,
+      3002700010,
+      3002700011,
+      3002700012,
+      3002700013,
+      3002700014,
+      3002700015,
+      3002700016,
+      3002700017,
+      3002700018,
+      3002700019,
+      3002700020,
+      3002700021,
+      3002700022,
+      3002700023,
+      3002700024,
+      3002700025,
+      3002700026,
+      3002700027,
+      3002700028,
+      3002700029,
+      3002700030,
+      3002700031,
+      3002700032,
+      3002700033,
+      3002700034,
+      3002700035,
+      3002700036,
+      3002700037,
+      3002700038,
+      3002700039,
+      3002700040,
+      3002700041,
+      3002700042,
+      3002700043,
+      3002700044,
+      3002700045,
+      3002700046,
+      3002700047,
+      3002700048,
+      3002700049,
+      3002700050,
+      3002700051,
+      3002700052,
+      3002700053,
+      3002700054,
+      3002700055,
+      3002700056,
+      3002700057,
+      3002700058,
+      3002700059,
+      3002700060,
+      3002700061,
+      3002700062,
+      3002700063,
+      3002700064,
+      3002700065,
+      3002700066,
+      3002700067,
+      3002700068,
+      3002700069,
+      3002700070,
+      3002700071,
+      3002700072,
+      3002700073,
+      3002700074,
+      3002700075,
+      3002700076,
+      3002700077,
+      3002700078,
+      3002700079,
+      3002700080,
+      3002700081,
+      3002700082,
+      3002700083,
+      3002700084,
+      3002700085,
+      3002700086,
+      3002700087,
+      3002700088,
+      3002700089,
+      3002700090,
+      3002700091,
+      3002700092,
+      3002700093,
+      3002700094,
+      3002700095,
+      3002700096,
+      3002700097,
+      3002700098,
+      3002700099,
+      3002710000,
+      3002710001,
+      3002710002,
+      3002710003,
+      3002710004,
+      3002710005,
+      3002710006,
+      3002710007,
+      3002710008,
+      3002710009,
+      3002710010,
+      3002710011,
+      3002710012,
+      3002710013,
+      3002710014,
+      3002710015,
+      3002710016,
+      3002710017,
+      3002710018,
+      3002710019,
+      3002710020,
+      3002710021,
+      3002710022,
+      3002710023,
+      3002710024,
+      3002710025,
+      3002710026,
+      3002710027,
+      3002710028,
+      3002710029,
+      3002710030,
+      3002710031,
+      3002710032,
+      3002710033,
+      3002710034,
+      3002710035,
+      3002710036,
+      3002710037,
+      3002710038,
+      3002710039,
+      3002710040,
+      3002710041,
+      3002710042,
+      3002710043,
+      3002710044,
+      3002710045,
+      3002710046,
+      3002710047,
+      3002710048,
+      3002710049,
+      3002710050,
+      3002710051,
+      3002710052,
+      3002710053,
+      3002710054,
+      3002710055,
+      3002710056,
+      3002710057,
+      3002710058,
+      3002710059,
+      3002710060,
+      3002710061,
+      3002710062,
+      3002710063,
+      3002710064,
+      3002710065,
+      3002710066,
+      3002710067,
+      3002710068,
+      3002710069,
+      3002710070,
+      3002710071,
+      3002710072,
+      3002710073,
+      3002710074,
+      3002710075,
+      3002710076,
+      3002710077,
+      3002710078,
+      3002710079,
+      3002710080,
+      3002710081,
+      3002710082,
+      3002710083,
+      3002710084,
+      3002710085,
+      3002710086,
+      3002710087,
+      3002710088,
+      3002710089,
+      3002710090,
+      3002710091,
+      3002710092,
+      3002710093,
+      3002710094,
+      3002710095,
+      3002710096,
+      3002710097,
+      3002710098,
+      3002710099
+    ],
+    "episode_count": 1800,
+    "query_count": 14400,
+    "S0_S1_bitwise_equal": true,
+    "all_probabilities_finite": true,
+    "max_score_nll_error": 1.1026859283447266e-06,
+    "max_score_accuracy_error": 0.0,
+    "parameters_unchanged": true,
+    "exact_resets": true,
+    "passes": true
+  },
+  "mechanism": {
+    "passes": false,
+    "S2": {
+      "accepted_count": 14397,
+      "acceptance_fraction": 0.9997916666666666,
+      "residual_diversity": 0.41021656410302965,
+      "teacher_diversity": 0.040466473048541556,
+      "eligible_pairs": 27.988333333333333,
+      "inner_loss_before": 2.3236117914526,
+      "inner_loss_after": 1.8190237059651149,
+      "inner_gradient_norm": 7.753128186011842,
+      "chosen_eta": 0.041565755827711354,
+      "backtracking_trials": 1.4641666666666666,
+      "residual_norm": 0.26012696041175837,
+      "normalized_residual_norm": 0.6353334170211262,
+      "attention_entropy": 2.945414512604475,
+      "effective_token_count": 19.610478927824232,
+      "vocabulary_residual_difference": 0.2564666570664364,
+      "all_finite": true,
+      "all_zero_init": true,
+      "all_exact_reset": true,
+      "all_query_isolation": true,
+      "accepted_nonzero": true,
+      "accepted_vocabulary_sensitive": true,
+      "min_accepted_vocabulary_difference": 0.0031637270003557205
+    },
+    "S3": {
+      "accepted_count": 14395,
+      "acceptance_fraction": 0.9996527777777777,
+      "residual_diversity": 0.43024237238219937,
+      "teacher_diversity": 2.3510723757959162e-09,
+      "eligible_pairs": 27.980555555555554,
+      "inner_loss_before": 2.4077987765189675,
+      "inner_loss_after": 1.9015882529980606,
+      "inner_gradient_norm": 7.662024646157709,
+      "chosen_eta": 0.04048090338099024,
+      "backtracking_trials": 1.538125,
+      "residual_norm": 0.23760873392148318,
+      "normalized_residual_norm": 0.5510247298722647,
+      "attention_entropy": 3.465735912322998,
+      "effective_token_count": 32.0,
+      "vocabulary_residual_difference": 0.23034417366360788,
+      "all_finite": true,
+      "all_zero_init": true,
+      "all_exact_reset": true,
+      "all_query_isolation": true,
+      "accepted_nonzero": true,
+      "accepted_vocabulary_sensitive": true,
+      "min_accepted_vocabulary_difference": 0.0013354467228055
+    },
+    "residual_diversity_excess": -0.02002580827916972
+  },
+  "summary": [
+    {
+      "scope": "overall",
+      "method": "S0",
+      "episode_count": 1800,
+      "nll": 0.9079148837393485,
+      "accuracy": 0.5979166666666667
+    },
+    {
+      "scope": "overall",
+      "method": "S1",
+      "episode_count": 1800,
+      "nll": 0.8539555307399214,
+      "accuracy": 0.6311805555555555
+    },
+    {
+      "scope": "overall",
+      "method": "S2",
+      "episode_count": 1800,
+      "nll": 2.419799086467764,
+      "accuracy": 0.2982638888888889
+    },
+    {
+      "scope": "overall",
+      "method": "S3",
+      "episode_count": 1800,
+      "nll": 2.3612078391762528,
+      "accuracy": 0.2734027777777778
+    },
+    {
+      "scope": "regime/easy",
+      "method": "S0",
+      "episode_count": 900,
+      "nll": 0.5388413432059032,
+      "accuracy": 0.7743055555555556
+    },
+    {
+      "scope": "regime/easy",
+      "method": "S1",
+      "episode_count": 900,
+      "nll": 0.4668770078909357,
+      "accuracy": 0.8269444444444445
+    },
+    {
+      "scope": "regime/easy",
+      "method": "S2",
+      "episode_count": 900,
+      "nll": 3.4739380061537184,
+      "accuracy": 0.2529166666666667
+    },
+    {
+      "scope": "regime/easy",
+      "method": "S3",
+      "episode_count": 900,
+      "nll": 3.373276237042802,
+      "accuracy": 0.20722222222222222
+    },
+    {
+      "scope": "group/original_P/easy",
+      "method": "S0",
+      "episode_count": 300,
+      "nll": 0.5916259859478062,
+      "accuracy": 0.7658333333333334
+    },
+    {
+      "scope": "group/original_P/easy",
+      "method": "S1",
+      "episode_count": 300,
+      "nll": 0.3822753829957219,
+      "accuracy": 0.8495833333333334
+    },
+    {
+      "scope": "group/original_P/easy",
+      "method": "S2",
+      "episode_count": 300,
+      "nll": 4.511000809472365,
+      "accuracy": 0.10958333333333334
+    },
+    {
+      "scope": "group/original_P/easy",
+      "method": "S3",
+      "episode_count": 300,
+      "nll": 4.095732241868973,
+      "accuracy": 0.10375
+    },
+    {
+      "scope": "cell/7/original_P/easy",
+      "method": "S0",
+      "episode_count": 100,
+      "nll": 0.5635469313870999,
+      "accuracy": 0.73
+    },
+    {
+      "scope": "cell/7/original_P/easy",
+      "method": "S1",
+      "episode_count": 100,
+      "nll": 0.2682446982993861,
+      "accuracy": 0.90125
+    },
+    {
+      "scope": "cell/7/original_P/easy",
+      "method": "S2",
+      "episode_count": 100,
+      "nll": 3.5631867051357404,
+      "accuracy": 0.13375
+    },
+    {
+      "scope": "cell/7/original_P/easy",
+      "method": "S3",
+      "episode_count": 100,
+      "nll": 4.332777439514175,
+      "accuracy": 0.08
+    },
+    {
+      "scope": "regime/hard",
+      "method": "S0",
+      "episode_count": 900,
+      "nll": 1.2769884242727938,
+      "accuracy": 0.4215277777777778
+    },
+    {
+      "scope": "regime/hard",
+      "method": "S1",
+      "episode_count": 900,
+      "nll": 1.2410340535889068,
+      "accuracy": 0.4354166666666667
+    },
+    {
+      "scope": "regime/hard",
+      "method": "S2",
+      "episode_count": 900,
+      "nll": 1.3656601667818096,
+      "accuracy": 0.3436111111111111
+    },
+    {
+      "scope": "regime/hard",
+      "method": "S3",
+      "episode_count": 900,
+      "nll": 1.3491394413097038,
+      "accuracy": 0.33958333333333335
+    },
+    {
+      "scope": "group/original_P/hard",
+      "method": "S0",
+      "episode_count": 300,
+      "nll": 1.2942991841925928,
+      "accuracy": 0.4245833333333333
+    },
+    {
+      "scope": "group/original_P/hard",
+      "method": "S1",
+      "episode_count": 300,
+      "nll": 1.250813853808989,
+      "accuracy": 0.425
+    },
+    {
+      "scope": "group/original_P/hard",
+      "method": "S2",
+      "episode_count": 300,
+      "nll": 1.4952520215138794,
+      "accuracy": 0.26666666666666666
+    },
+    {
+      "scope": "group/original_P/hard",
+      "method": "S3",
+      "episode_count": 300,
+      "nll": 1.4652010059605043,
+      "accuracy": 0.25625
+    },
+    {
+      "scope": "cell/7/original_P/hard",
+      "method": "S0",
+      "episode_count": 100,
+      "nll": 1.326307612285018,
+      "accuracy": 0.405
+    },
+    {
+      "scope": "cell/7/original_P/hard",
+      "method": "S1",
+      "episode_count": 100,
+      "nll": 1.2614389049448074,
+      "accuracy": 0.42125
+    },
+    {
+      "scope": "cell/7/original_P/hard",
+      "method": "S2",
+      "episode_count": 100,
+      "nll": 1.4695593547448516,
+      "accuracy": 0.2825
+    },
+    {
+      "scope": "cell/7/original_P/hard",
+      "method": "S3",
+      "episode_count": 100,
+      "nll": 1.4551565966755151,
+      "accuracy": 0.28375
+    },
+    {
+      "scope": "group/P_O0_resume/easy",
+      "method": "S0",
+      "episode_count": 300,
+      "nll": 0.4419246558396602,
+      "accuracy": 0.7945833333333333
+    },
+    {
+      "scope": "group/P_O0_resume/easy",
+      "method": "S1",
+      "episode_count": 300,
+      "nll": 0.7003305353875233,
+      "accuracy": 0.7470833333333333
+    },
+    {
+      "scope": "group/P_O0_resume/easy",
+      "method": "S2",
+      "episode_count": 300,
+      "nll": 3.4393059323828976,
+      "accuracy": 0.28708333333333336
+    },
+    {
+      "scope": "group/P_O0_resume/easy",
+      "method": "S3",
+      "episode_count": 300,
+      "nll": 3.859715683480414,
+      "accuracy": 0.18458333333333332
+    },
+    {
+      "scope": "cell/7/P_O0_resume/easy",
+      "method": "S0",
+      "episode_count": 100,
+      "nll": 0.29183286483988924,
+      "accuracy": 0.89875
+    },
+    {
+      "scope": "cell/7/P_O0_resume/easy",
+      "method": "S1",
+      "episode_count": 100,
+      "nll": 0.7779265429072256,
+      "accuracy": 0.745
+    },
+    {
+      "scope": "cell/7/P_O0_resume/easy",
+      "method": "S2",
+      "episode_count": 100,
+      "nll": 3.767674365345156,
+      "accuracy": 0.24
+    },
+    {
+      "scope": "cell/7/P_O0_resume/easy",
+      "method": "S3",
+      "episode_count": 100,
+      "nll": 4.736680795024149,
+      "accuracy": 0.06
+    },
+    {
+      "scope": "group/P_O0_resume/hard",
+      "method": "S0",
+      "episode_count": 300,
+      "nll": 1.2478319773760935,
+      "accuracy": 0.42291666666666666
+    },
+    {
+      "scope": "group/P_O0_resume/hard",
+      "method": "S1",
+      "episode_count": 300,
+      "nll": 1.2394740639068187,
+      "accuracy": 0.44916666666666666
+    },
+    {
+      "scope": "group/P_O0_resume/hard",
+      "method": "S2",
+      "episode_count": 300,
+      "nll": 1.3042713354155422,
+      "accuracy": 0.37
+    },
+    {
+      "scope": "group/P_O0_resume/hard",
+      "method": "S3",
+      "episode_count": 300,
+      "nll": 1.2929275314758222,
+      "accuracy": 0.37333333333333335
+    },
+    {
+      "scope": "cell/7/P_O0_resume/hard",
+      "method": "S0",
+      "episode_count": 100,
+      "nll": 1.2483445915579796,
+      "accuracy": 0.41875
+    },
+    {
+      "scope": "cell/7/P_O0_resume/hard",
+      "method": "S1",
+      "episode_count": 100,
+      "nll": 1.1984270696341992,
+      "accuracy": 0.47125
+    },
+    {
+      "scope": "cell/7/P_O0_resume/hard",
+      "method": "S2",
+      "episode_count": 100,
+      "nll": 1.2885414699092508,
+      "accuracy": 0.36875
+    },
+    {
+      "scope": "cell/7/P_O0_resume/hard",
+      "method": "S3",
+      "episode_count": 100,
+      "nll": 1.2893973752111196,
+      "accuracy": 0.36875
+    },
+    {
+      "scope": "group/P_C2_warm/easy",
+      "method": "S0",
+      "episode_count": 300,
+      "nll": 0.5829733878302431,
+      "accuracy": 0.7625
+    },
+    {
+      "scope": "group/P_C2_warm/easy",
+      "method": "S1",
+      "episode_count": 300,
+      "nll": 0.3180251052895619,
+      "accuracy": 0.8841666666666667
+    },
+    {
+      "scope": "group/P_C2_warm/easy",
+      "method": "S2",
+      "episode_count": 300,
+      "nll": 2.4715072766058923,
+      "accuracy": 0.3620833333333333
+    },
+    {
+      "scope": "group/P_C2_warm/easy",
+      "method": "S3",
+      "episode_count": 300,
+      "nll": 2.1643807857790187,
+      "accuracy": 0.3333333333333333
+    },
+    {
+      "scope": "cell/7/P_C2_warm/easy",
+      "method": "S0",
+      "episode_count": 100,
+      "nll": 0.632336864334502,
+      "accuracy": 0.73875
+    },
+    {
+      "scope": "cell/7/P_C2_warm/easy",
+      "method": "S1",
+      "episode_count": 100,
+      "nll": 0.3032597925601294,
+      "accuracy": 0.915
+    },
+    {
+      "scope": "cell/7/P_C2_warm/easy",
+      "method": "S2",
+      "episode_count": 100,
+      "nll": 1.9543232093495317,
+      "accuracy": 0.345
+    },
+    {
+      "scope": "cell/7/P_C2_warm/easy",
+      "method": "S3",
+      "episode_count": 100,
+      "nll": 2.015838253907859,
+      "accuracy": 0.30375
+    },
+    {
+      "scope": "group/P_C2_warm/hard",
+      "method": "S0",
+      "episode_count": 300,
+      "nll": 1.2888341112496953,
+      "accuracy": 0.4170833333333333
+    },
+    {
+      "scope": "group/P_C2_warm/hard",
+      "method": "S1",
+      "episode_count": 300,
+      "nll": 1.232814243050913,
+      "accuracy": 0.4320833333333333
+    },
+    {
+      "scope": "group/P_C2_warm/hard",
+      "method": "S2",
+      "episode_count": 300,
+      "nll": 1.2974571434160074,
+      "accuracy": 0.39416666666666667
+    },
+    {
+      "scope": "group/P_C2_warm/hard",
+      "method": "S3",
+      "episode_count": 300,
+      "nll": 1.2892897864927848,
+      "accuracy": 0.38916666666666666
+    },
+    {
+      "scope": "cell/7/P_C2_warm/hard",
+      "method": "S0",
+      "episode_count": 100,
+      "nll": 1.3299192336387933,
+      "accuracy": 0.4075
+    },
+    {
+      "scope": "cell/7/P_C2_warm/hard",
+      "method": "S1",
+      "episode_count": 100,
+      "nll": 1.2603577307239175,
+      "accuracy": 0.4375
+    },
+    {
+      "scope": "cell/7/P_C2_warm/hard",
+      "method": "S2",
+      "episode_count": 100,
+      "nll": 1.3225681568682193,
+      "accuracy": 0.365
+    },
+    {
+      "scope": "cell/7/P_C2_warm/hard",
+      "method": "S3",
+      "episode_count": 100,
+      "nll": 1.3167924796044828,
+      "accuracy": 0.375
+    },
+    {
+      "scope": "cell/17/original_P/easy",
+      "method": "S0",
+      "episode_count": 100,
+      "nll": 0.8726121633243747,
+      "accuracy": 0.6725
+    },
+    {
+      "scope": "cell/17/original_P/easy",
+      "method": "S1",
+      "episode_count": 100,
+      "nll": 0.4020431745229871,
+      "accuracy": 0.83875
+    },
+    {
+      "scope": "cell/17/original_P/easy",
+      "method": "S2",
+      "episode_count": 100,
+      "nll": 5.212075570244342,
+      "accuracy": 0.10125
+    },
+    {
+      "scope": "cell/17/original_P/easy",
+      "method": "S3",
+      "episode_count": 100,
+      "nll": 4.6059834980499,
+      "accuracy": 0.18625
+    },
+    {
+      "scope": "cell/17/original_P/hard",
+      "method": "S0",
+      "episode_count": 100,
+      "nll": 1.2153538979496807,
+      "accuracy": 0.475
+    },
+    {
+      "scope": "cell/17/original_P/hard",
+      "method": "S1",
+      "episode_count": 100,
+      "nll": 1.2270424702018499,
+      "accuracy": 0.48125
+    },
+    {
+      "scope": "cell/17/original_P/hard",
+      "method": "S2",
+      "episode_count": 100,
+      "nll": 1.561709606088698,
+      "accuracy": 0.25
+    },
+    {
+      "scope": "cell/17/original_P/hard",
+      "method": "S3",
+      "episode_count": 100,
+      "nll": 1.4955492059141398,
+      "accuracy": 0.27125
+    },
+    {
+      "scope": "cell/17/P_O0_resume/easy",
+      "method": "S0",
+      "episode_count": 100,
+      "nll": 0.6795394272716657,
+      "accuracy": 0.635
+    },
+    {
+      "scope": "cell/17/P_O0_resume/easy",
+      "method": "S1",
+      "episode_count": 100,
+      "nll": 0.9698164922415162,
+      "accuracy": 0.6475
+    },
+    {
+      "scope": "cell/17/P_O0_resume/easy",
+      "method": "S2",
+      "episode_count": 100,
+      "nll": 2.8548549189127517,
+      "accuracy": 0.4675
+    },
+    {
+      "scope": "cell/17/P_O0_resume/easy",
+      "method": "S3",
+      "episode_count": 100,
+      "nll": 2.8980236129369588,
+      "accuracy": 0.45875
+    },
+    {
+      "scope": "cell/17/P_O0_resume/hard",
+      "method": "S0",
+      "episode_count": 100,
+      "nll": 1.2840460140444339,
+      "accuracy": 0.42125
+    },
+    {
+      "scope": "cell/17/P_O0_resume/hard",
+      "method": "S1",
+      "episode_count": 100,
+      "nll": 1.3211360100843013,
+      "accuracy": 0.39875
+    },
+    {
+      "scope": "cell/17/P_O0_resume/hard",
+      "method": "S2",
+      "episode_count": 100,
+      "nll": 1.309853916093707,
+      "accuracy": 0.3725
+    },
+    {
+      "scope": "cell/17/P_O0_resume/hard",
+      "method": "S3",
+      "episode_count": 100,
+      "nll": 1.2745411465317011,
+      "accuracy": 0.39875
+    },
+    {
+      "scope": "cell/17/P_C2_warm/easy",
+      "method": "S0",
+      "episode_count": 100,
+      "nll": 0.8321323405324438,
+      "accuracy": 0.65375
+    },
+    {
+      "scope": "cell/17/P_C2_warm/easy",
+      "method": "S1",
+      "episode_count": 100,
+      "nll": 0.2770829011090973,
+      "accuracy": 0.885
+    },
+    {
+      "scope": "cell/17/P_C2_warm/easy",
+      "method": "S2",
+      "episode_count": 100,
+      "nll": 2.146590014885878,
+      "accuracy": 0.54125
+    },
+    {
+      "scope": "cell/17/P_C2_warm/easy",
+      "method": "S3",
+      "episode_count": 100,
+      "nll": 1.884656171508832,
+      "accuracy": 0.565
+    },
+    {
+      "scope": "cell/17/P_C2_warm/hard",
+      "method": "S0",
+      "episode_count": 100,
+      "nll": 1.2349152773246168,
+      "accuracy": 0.4275
+    },
+    {
+      "scope": "cell/17/P_C2_warm/hard",
+      "method": "S1",
+      "episode_count": 100,
+      "nll": 1.1925459162704646,
+      "accuracy": 0.43875
+    },
+    {
+      "scope": "cell/17/P_C2_warm/hard",
+      "method": "S2",
+      "episode_count": 100,
+      "nll": 1.2974354597181081,
+      "accuracy": 0.37625
+    },
+    {
+      "scope": "cell/17/P_C2_warm/hard",
+      "method": "S3",
+      "episode_count": 100,
+      "nll": 1.2746475712954999,
+      "accuracy": 0.375
+    },
+    {
+      "scope": "cell/27/original_P/easy",
+      "method": "S0",
+      "episode_count": 100,
+      "nll": 0.3387188631319441,
+      "accuracy": 0.895
+    },
+    {
+      "scope": "cell/27/original_P/easy",
+      "method": "S1",
+      "episode_count": 100,
+      "nll": 0.4765382761647925,
+      "accuracy": 0.80875
+    },
+    {
+      "scope": "cell/27/original_P/easy",
+      "method": "S2",
+      "episode_count": 100,
+      "nll": 4.757740153037012,
+      "accuracy": 0.09375
+    },
+    {
+      "scope": "cell/27/original_P/easy",
+      "method": "S3",
+      "episode_count": 100,
+      "nll": 3.3484357880428433,
+      "accuracy": 0.045
+    },
+    {
+      "scope": "cell/27/original_P/hard",
+      "method": "S0",
+      "episode_count": 100,
+      "nll": 1.34123604234308,
+      "accuracy": 0.39375
+    },
+    {
+      "scope": "cell/27/original_P/hard",
+      "method": "S1",
+      "episode_count": 100,
+      "nll": 1.2639601862803103,
+      "accuracy": 0.3725
+    },
+    {
+      "scope": "cell/27/original_P/hard",
+      "method": "S2",
+      "episode_count": 100,
+      "nll": 1.4544871037080884,
+      "accuracy": 0.2675
+    },
+    {
+      "scope": "cell/27/original_P/hard",
+      "method": "S3",
+      "episode_count": 100,
+      "nll": 1.4448972152918578,
+      "accuracy": 0.21375
+    },
+    {
+      "scope": "cell/27/P_O0_resume/easy",
+      "method": "S0",
+      "episode_count": 100,
+      "nll": 0.3544016754074255,
+      "accuracy": 0.85
+    },
+    {
+      "scope": "cell/27/P_O0_resume/easy",
+      "method": "S1",
+      "episode_count": 100,
+      "nll": 0.35324857101382806,
+      "accuracy": 0.84875
+    },
+    {
+      "scope": "cell/27/P_O0_resume/easy",
+      "method": "S2",
+      "episode_count": 100,
+      "nll": 3.6953885128907857,
+      "accuracy": 0.15375
+    },
+    {
+      "scope": "cell/27/P_O0_resume/easy",
+      "method": "S3",
+      "episode_count": 100,
+      "nll": 3.944442642480135,
+      "accuracy": 0.035
+    },
+    {
+      "scope": "cell/27/P_O0_resume/hard",
+      "method": "S0",
+      "episode_count": 100,
+      "nll": 1.2111053265258669,
+      "accuracy": 0.42875
+    },
+    {
+      "scope": "cell/27/P_O0_resume/hard",
+      "method": "S1",
+      "episode_count": 100,
+      "nll": 1.1988591120019556,
+      "accuracy": 0.4775
+    },
+    {
+      "scope": "cell/27/P_O0_resume/hard",
+      "method": "S2",
+      "episode_count": 100,
+      "nll": 1.3144186202436685,
+      "accuracy": 0.36875
+    },
+    {
+      "scope": "cell/27/P_O0_resume/hard",
+      "method": "S3",
+      "episode_count": 100,
+      "nll": 1.3148440726846458,
+      "accuracy": 0.3525
+    },
+    {
+      "scope": "cell/27/P_C2_warm/easy",
+      "method": "S0",
+      "episode_count": 100,
+      "nll": 0.28445095862378367,
+      "accuracy": 0.895
+    },
+    {
+      "scope": "cell/27/P_C2_warm/easy",
+      "method": "S1",
+      "episode_count": 100,
+      "nll": 0.373732622199459,
+      "accuracy": 0.8525
+    },
+    {
+      "scope": "cell/27/P_C2_warm/easy",
+      "method": "S2",
+      "episode_count": 100,
+      "nll": 3.313608605582267,
+      "accuracy": 0.2
+    },
+    {
+      "scope": "cell/27/P_C2_warm/easy",
+      "method": "S3",
+      "episode_count": 100,
+      "nll": 2.5926479319203644,
+      "accuracy": 0.13125
+    },
+    {
+      "scope": "cell/27/P_C2_warm/hard",
+      "method": "S0",
+      "episode_count": 100,
+      "nll": 1.3016678227856755,
+      "accuracy": 0.41625
+    },
+    {
+      "scope": "cell/27/P_C2_warm/hard",
+      "method": "S1",
+      "episode_count": 100,
+      "nll": 1.245539082158357,
+      "accuracy": 0.42
+    },
+    {
+      "scope": "cell/27/P_C2_warm/hard",
+      "method": "S2",
+      "episode_count": 100,
+      "nll": 1.2723678136616945,
+      "accuracy": 0.44125
+    },
+    {
+      "scope": "cell/27/P_C2_warm/hard",
+      "method": "S3",
+      "episode_count": 100,
+      "nll": 1.276429308578372,
+      "accuracy": 0.4175
+    }
+  ],
+  "gates": {
+    "passes": false,
+    "by_gate": {
+      "1": false,
+      "2": false,
+      "3": false,
+      "4": false,
+      "5": false
+    },
+    "clauses": [
+      {
+        "gate": 1,
+        "scope": "mechanism",
+        "passes": false,
+        "S2": {
+          "accepted_count": 14397,
+          "acceptance_fraction": 0.9997916666666666,
+          "residual_diversity": 0.41021656410302965,
+          "teacher_diversity": 0.040466473048541556,
+          "eligible_pairs": 27.988333333333333,
+          "inner_loss_before": 2.3236117914526,
+          "inner_loss_after": 1.8190237059651149,
+          "inner_gradient_norm": 7.753128186011842,
+          "chosen_eta": 0.041565755827711354,
+          "backtracking_trials": 1.4641666666666666,
+          "residual_norm": 0.26012696041175837,
+          "normalized_residual_norm": 0.6353334170211262,
+          "attention_entropy": 2.945414512604475,
+          "effective_token_count": 19.610478927824232,
+          "vocabulary_residual_difference": 0.2564666570664364,
+          "all_finite": true,
+          "all_zero_init": true,
+          "all_exact_reset": true,
+          "all_query_isolation": true,
+          "accepted_nonzero": true,
+          "accepted_vocabulary_sensitive": true,
+          "min_accepted_vocabulary_difference": 0.0031637270003557205
+        },
+        "S3": {
+          "accepted_count": 14395,
+          "acceptance_fraction": 0.9996527777777777,
+          "residual_diversity": 0.43024237238219937,
+          "teacher_diversity": 2.3510723757959162e-09,
+          "eligible_pairs": 27.980555555555554,
+          "inner_loss_before": 2.4077987765189675,
+          "inner_loss_after": 1.9015882529980606,
+          "inner_gradient_norm": 7.662024646157709,
+          "chosen_eta": 0.04048090338099024,
+          "backtracking_trials": 1.538125,
+          "residual_norm": 0.23760873392148318,
+          "normalized_residual_norm": 0.5510247298722647,
+          "attention_entropy": 3.465735912322998,
+          "effective_token_count": 32.0,
+          "vocabulary_residual_difference": 0.23034417366360788,
+          "all_finite": true,
+          "all_zero_init": true,
+          "all_exact_reset": true,
+          "all_query_isolation": true,
+          "accepted_nonzero": true,
+          "accepted_vocabulary_sensitive": true,
+          "min_accepted_vocabulary_difference": 0.0013354467228055
+        },
+        "residual_diversity_excess": -0.02002580827916972
+      },
+      {
+        "gate": 4,
+        "scope": "cell/7/original_P/easy",
+        "passes": false,
+        "S1_nll_regression": -0.2953022330877138,
+        "regression_removed_fraction": null,
+        "S2_minus_S0_nll": 2.9996397737486404,
+        "accuracy_delta_pp": -59.62499999999999
+      },
+      {
+        "gate": 2,
+        "scope": "group/original_P/hard",
+        "passes": false,
+        "S2_nll_gain": -0.20095283732128655,
+        "S1_nll_gain": 0.043485330383603804,
+        "gain_retention": -4.621163862585164,
+        "accuracy_delta_pp": -15.791666666666664
+      },
+      {
+        "gate": 4,
+        "scope": "cell/7/P_O0_resume/easy",
+        "passes": false,
+        "S1_nll_regression": 0.4860936780673364,
+        "regression_removed_fraction": -6.150558950539928,
+        "S2_minus_S0_nll": 3.4758415005052665,
+        "accuracy_delta_pp": -65.875
+      },
+      {
+        "gate": 2,
+        "scope": "group/P_O0_resume/hard",
+        "passes": false,
+        "S2_nll_gain": -0.05643935803944866,
+        "S1_nll_gain": 0.008357913469274836,
+        "gain_retention": -6.752804781591685,
+        "accuracy_delta_pp": -5.291666666666667
+      },
+      {
+        "gate": 4,
+        "scope": "cell/7/P_C2_warm/easy",
+        "passes": false,
+        "S1_nll_regression": -0.32907707177437256,
+        "regression_removed_fraction": null,
+        "S2_minus_S0_nll": 1.3219863450150298,
+        "accuracy_delta_pp": -39.37500000000001
+      },
+      {
+        "gate": 2,
+        "scope": "group/P_C2_warm/hard",
+        "passes": false,
+        "S2_nll_gain": -0.008623032166312106,
+        "S1_nll_gain": 0.05601986819878224,
+        "gain_retention": -0.1539281052164195,
+        "accuracy_delta_pp": -2.2916666666666643
+      },
+      {
+        "gate": 4,
+        "scope": "cell/17/original_P/easy",
+        "passes": false,
+        "S1_nll_regression": -0.47056898880138764,
+        "regression_removed_fraction": null,
+        "S2_minus_S0_nll": 4.339463406919967,
+        "accuracy_delta_pp": -57.125
+      },
+      {
+        "gate": 4,
+        "scope": "cell/17/P_O0_resume/easy",
+        "passes": false,
+        "S1_nll_regression": 0.2902770649698505,
+        "regression_removed_fraction": -6.493928229800119,
+        "S2_minus_S0_nll": 2.175315491641086,
+        "accuracy_delta_pp": -16.75
+      },
+      {
+        "gate": 4,
+        "scope": "cell/17/P_C2_warm/easy",
+        "passes": false,
+        "S1_nll_regression": -0.5550494394233465,
+        "regression_removed_fraction": null,
+        "S2_minus_S0_nll": 1.3144576743534344,
+        "accuracy_delta_pp": -11.250000000000004
+      },
+      {
+        "gate": 4,
+        "scope": "cell/27/original_P/easy",
+        "passes": false,
+        "S1_nll_regression": 0.1378194130328484,
+        "regression_removed_fraction": -31.06385220093646,
+        "S2_minus_S0_nll": 4.419021289905068,
+        "accuracy_delta_pp": -80.125
+      },
+      {
+        "gate": 4,
+        "scope": "cell/27/P_O0_resume/easy",
+        "passes": false,
+        "S1_nll_regression": -0.0011531043935974483,
+        "regression_removed_fraction": null,
+        "S2_minus_S0_nll": 3.34098683748336,
+        "accuracy_delta_pp": -69.625
+      },
+      {
+        "gate": 4,
+        "scope": "cell/27/P_C2_warm/easy",
+        "passes": false,
+        "S1_nll_regression": 0.08928166357567535,
+        "regression_removed_fraction": -32.928104894584116,
+        "S2_minus_S0_nll": 3.0291576469584833,
+        "accuracy_delta_pp": -69.5
+      },
+      {
+        "gate": 3,
+        "scope": "original_P",
+        "passes": false,
+        "improved_seeds": 0,
+        "worst_nll_regression": 0.34635570813901717,
+        "cells": [
+          {
+            "scope": "cell/7/original_P/hard",
+            "nll_delta": 0.14325174245983363
+          },
+          {
+            "scope": "cell/17/original_P/hard",
+            "nll_delta": 0.34635570813901717
+          },
+          {
+            "scope": "cell/27/original_P/hard",
+            "nll_delta": 0.1132510613650084
+          }
+        ]
+      },
+      {
+        "gate": 3,
+        "scope": "P_O0_resume",
+        "passes": false,
+        "improved_seeds": 0,
+        "worst_nll_regression": 0.10331329371780162,
+        "cells": [
+          {
+            "scope": "cell/7/P_O0_resume/hard",
+            "nll_delta": 0.04019687835127117
+          },
+          {
+            "scope": "cell/17/P_O0_resume/hard",
+            "nll_delta": 0.02580790204927319
+          },
+          {
+            "scope": "cell/27/P_O0_resume/hard",
+            "nll_delta": 0.10331329371780162
+          }
+        ]
+      },
+      {
+        "gate": 3,
+        "scope": "P_C2_warm",
+        "passes": false,
+        "improved_seeds": 2,
+        "worst_nll_regression": 0.06252018239349133,
+        "cells": [
+          {
+            "scope": "cell/7/P_C2_warm/hard",
+            "nll_delta": -0.0073510767705740054
+          },
+          {
+            "scope": "cell/17/P_C2_warm/hard",
+            "nll_delta": 0.06252018239349133
+          },
+          {
+            "scope": "cell/27/P_C2_warm/hard",
+            "nll_delta": -0.029300009123981008
+          }
+        ]
+      },
+      {
+        "gate": 5,
+        "scope": "pooled",
+        "passes": false,
+        "S2_minus_S3_hard_nll": 0.016520725472105813,
+        "S2_minus_S3_easy_nll": 0.1006617691109164
+      }
+    ]
+  },
+  "environment": {
+    "revision": "79e6e2baac5b92dd8b66c1a8a048a4d5013f5d5b",
+    "python": "3.12.12",
+    "torch": "2.4.0+cu121",
+    "cuda": "12.1",
+    "device": "cuda",
+    "gpu": "NVIDIA RTX A6000",
+    "time_utc": "2026-09-12T05:37:54.653063+00:00"
+  }
+}
