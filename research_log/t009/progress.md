@@ -1,0 +1,1 @@
+2026-09-12 10:53 +08: fetched b9973b9/e6eb2c0: T008 accepted negative, T009 assigned. Inventoried 54 raw files/43200 queries, hashes and plan recorded before query correlations. Baseline T008 statistics tests 3 passed .03s. No GPU/model rerun required.

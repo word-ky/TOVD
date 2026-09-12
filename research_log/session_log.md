@@ -132,3 +132,4 @@ All 14 scalar gates fail the original overall LOSO .70/.65 requirements; best me
 Complete 76-file original receipt fetched, hashes in t008/verification.json; 66 raw record files. Tables and three PNG/SVG figures generated and visually checked; corrected plot legend overlap.
 No runtime changes since tested 153ac30. No controller, training, detector or next task. Await Research Lead; do not duplicate VERIFIED T008.
 Final engineering mailbox and project state written; syncing local report and recovery logs to A6000 and committing evidence to GitHub.
+2026-09-12 10:53 +08: fetched b9973b9/e6eb2c0: T008 accepted negative, T009 assigned. Inventoried 54 raw files/43200 queries, hashes and plan recorded before query correlations. Baseline T008 statistics tests 3 passed .03s. No GPU/model rerun required.
