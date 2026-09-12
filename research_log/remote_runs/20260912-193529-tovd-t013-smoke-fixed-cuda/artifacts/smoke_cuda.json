@@ -1,0 +1,328 @@
+{
+  "kind": "nonprimary_engineering_smoke",
+  "validity": true,
+  "v0_256_vs_1024_exact": true,
+  "v0_standalone_vs_common_exact": true,
+  "pixels_replay_exact": true,
+  "weights_unchanged": true,
+  "state_sha256": "edb3ae75e8e8d40a61f147eccdfcb5db6a51e4030302d9b8faa8a7db72da7b57",
+  "torch": "2.4.0+cu121",
+  "device": "cuda",
+  "records": [
+    {
+      "image_id": 139,
+      "condition": "clean",
+      "vocabulary": "V0",
+      "pixel_sha256": "49e1682eddd63940370376db6dbbc90aaf08a758dd5731ac7479e73cac57f5c1",
+      "mean_top_score": 0.1509767472743988
+    },
+    {
+      "image_id": 139,
+      "condition": "clean",
+      "vocabulary": "Vhard",
+      "pixel_sha256": "49e1682eddd63940370376db6dbbc90aaf08a758dd5731ac7479e73cac57f5c1",
+      "mean_top_score": 0.18524810671806335
+    },
+    {
+      "image_id": 139,
+      "condition": "clean",
+      "vocabulary": "Vrand",
+      "pixel_sha256": "49e1682eddd63940370376db6dbbc90aaf08a758dd5731ac7479e73cac57f5c1",
+      "mean_top_score": 0.19367378950119019
+    },
+    {
+      "image_id": 139,
+      "condition": "gaussian_noise",
+      "vocabulary": "V0",
+      "pixel_sha256": "3d24c359e93f0296643bd6d9c761d7ad2a32798e5c3303c625310791d1d329b0",
+      "mean_top_score": 0.12390787899494171
+    },
+    {
+      "image_id": 139,
+      "condition": "gaussian_noise",
+      "vocabulary": "Vhard",
+      "pixel_sha256": "3d24c359e93f0296643bd6d9c761d7ad2a32798e5c3303c625310791d1d329b0",
+      "mean_top_score": 0.14701469242572784
+    },
+    {
+      "image_id": 139,
+      "condition": "gaussian_noise",
+      "vocabulary": "Vrand",
+      "pixel_sha256": "3d24c359e93f0296643bd6d9c761d7ad2a32798e5c3303c625310791d1d329b0",
+      "mean_top_score": 0.13967768847942352
+    },
+    {
+      "image_id": 139,
+      "condition": "motion_blur",
+      "vocabulary": "V0",
+      "pixel_sha256": "e0de331cb275234d55fefac6f25fdbb6711134a950e3d17c94a0ba68424f61f7",
+      "mean_top_score": 0.10516329854726791
+    },
+    {
+      "image_id": 139,
+      "condition": "motion_blur",
+      "vocabulary": "Vhard",
+      "pixel_sha256": "e0de331cb275234d55fefac6f25fdbb6711134a950e3d17c94a0ba68424f61f7",
+      "mean_top_score": 0.14706087112426758
+    },
+    {
+      "image_id": 139,
+      "condition": "motion_blur",
+      "vocabulary": "Vrand",
+      "pixel_sha256": "e0de331cb275234d55fefac6f25fdbb6711134a950e3d17c94a0ba68424f61f7",
+      "mean_top_score": 0.15752822160720825
+    },
+    {
+      "image_id": 139,
+      "condition": "fog",
+      "vocabulary": "V0",
+      "pixel_sha256": "6844b071469f86a3bc49f5dc8d9c580b244bcb9e5957924c49c16492b34ca81d",
+      "mean_top_score": 0.14077363908290863
+    },
+    {
+      "image_id": 139,
+      "condition": "fog",
+      "vocabulary": "Vhard",
+      "pixel_sha256": "6844b071469f86a3bc49f5dc8d9c580b244bcb9e5957924c49c16492b34ca81d",
+      "mean_top_score": 0.16951006650924683
+    },
+    {
+      "image_id": 139,
+      "condition": "fog",
+      "vocabulary": "Vrand",
+      "pixel_sha256": "6844b071469f86a3bc49f5dc8d9c580b244bcb9e5957924c49c16492b34ca81d",
+      "mean_top_score": 0.18776732683181763
+    },
+    {
+      "image_id": 139,
+      "condition": "jpeg_compression",
+      "vocabulary": "V0",
+      "pixel_sha256": "5d1f789b024e3bee278ee3a86ecd7fb9185bea54f63129ab5a762c6b4139cf56",
+      "mean_top_score": 0.13371844589710236
+    },
+    {
+      "image_id": 139,
+      "condition": "jpeg_compression",
+      "vocabulary": "Vhard",
+      "pixel_sha256": "5d1f789b024e3bee278ee3a86ecd7fb9185bea54f63129ab5a762c6b4139cf56",
+      "mean_top_score": 0.15935151278972626
+    },
+    {
+      "image_id": 139,
+      "condition": "jpeg_compression",
+      "vocabulary": "Vrand",
+      "pixel_sha256": "5d1f789b024e3bee278ee3a86ecd7fb9185bea54f63129ab5a762c6b4139cf56",
+      "mean_top_score": 0.1588343232870102
+    },
+    {
+      "image_id": 285,
+      "condition": "clean",
+      "vocabulary": "V0",
+      "pixel_sha256": "7589d16900e5d36c2cd7b2937335322d2d0e6b7235ea65bc9066d79d1be0abf4",
+      "mean_top_score": 0.012452686205506325
+    },
+    {
+      "image_id": 285,
+      "condition": "clean",
+      "vocabulary": "Vhard",
+      "pixel_sha256": "7589d16900e5d36c2cd7b2937335322d2d0e6b7235ea65bc9066d79d1be0abf4",
+      "mean_top_score": 0.11374173313379288
+    },
+    {
+      "image_id": 285,
+      "condition": "clean",
+      "vocabulary": "Vrand",
+      "pixel_sha256": "7589d16900e5d36c2cd7b2937335322d2d0e6b7235ea65bc9066d79d1be0abf4",
+      "mean_top_score": 0.1077798455953598
+    },
+    {
+      "image_id": 285,
+      "condition": "gaussian_noise",
+      "vocabulary": "V0",
+      "pixel_sha256": "c26756e07184eddd3397e375dbda0b725eb98c86e8c49b6b93bf43142c9e0d84",
+      "mean_top_score": 0.01668139174580574
+    },
+    {
+      "image_id": 285,
+      "condition": "gaussian_noise",
+      "vocabulary": "Vhard",
+      "pixel_sha256": "c26756e07184eddd3397e375dbda0b725eb98c86e8c49b6b93bf43142c9e0d84",
+      "mean_top_score": 0.13357140123844147
+    },
+    {
+      "image_id": 285,
+      "condition": "gaussian_noise",
+      "vocabulary": "Vrand",
+      "pixel_sha256": "c26756e07184eddd3397e375dbda0b725eb98c86e8c49b6b93bf43142c9e0d84",
+      "mean_top_score": 0.09851261228322983
+    },
+    {
+      "image_id": 285,
+      "condition": "motion_blur",
+      "vocabulary": "V0",
+      "pixel_sha256": "7730d71c91d9fdf19296a96e048343291b1953d4bbd10c03cea2e9a7653d9611",
+      "mean_top_score": 0.01443304494023323
+    },
+    {
+      "image_id": 285,
+      "condition": "motion_blur",
+      "vocabulary": "Vhard",
+      "pixel_sha256": "7730d71c91d9fdf19296a96e048343291b1953d4bbd10c03cea2e9a7653d9611",
+      "mean_top_score": 0.10883226990699768
+    },
+    {
+      "image_id": 285,
+      "condition": "motion_blur",
+      "vocabulary": "Vrand",
+      "pixel_sha256": "7730d71c91d9fdf19296a96e048343291b1953d4bbd10c03cea2e9a7653d9611",
+      "mean_top_score": 0.10915373265743256
+    },
+    {
+      "image_id": 285,
+      "condition": "fog",
+      "vocabulary": "V0",
+      "pixel_sha256": "53d394af95f7cb97eba72003638796a52d1cb7926b1fe7abcebe975ea32a4940",
+      "mean_top_score": 0.012645666487514973
+    },
+    {
+      "image_id": 285,
+      "condition": "fog",
+      "vocabulary": "Vhard",
+      "pixel_sha256": "53d394af95f7cb97eba72003638796a52d1cb7926b1fe7abcebe975ea32a4940",
+      "mean_top_score": 0.11199729889631271
+    },
+    {
+      "image_id": 285,
+      "condition": "fog",
+      "vocabulary": "Vrand",
+      "pixel_sha256": "53d394af95f7cb97eba72003638796a52d1cb7926b1fe7abcebe975ea32a4940",
+      "mean_top_score": 0.11066818237304688
+    },
+    {
+      "image_id": 285,
+      "condition": "jpeg_compression",
+      "vocabulary": "V0",
+      "pixel_sha256": "a3aeafaaf63d91ca9b9688d9c574fe4e341a01a69c4ab53adbe2d3b2b798ce68",
+      "mean_top_score": 0.014238247647881508
+    },
+    {
+      "image_id": 285,
+      "condition": "jpeg_compression",
+      "vocabulary": "Vhard",
+      "pixel_sha256": "a3aeafaaf63d91ca9b9688d9c574fe4e341a01a69c4ab53adbe2d3b2b798ce68",
+      "mean_top_score": 0.12884308397769928
+    },
+    {
+      "image_id": 285,
+      "condition": "jpeg_compression",
+      "vocabulary": "Vrand",
+      "pixel_sha256": "a3aeafaaf63d91ca9b9688d9c574fe4e341a01a69c4ab53adbe2d3b2b798ce68",
+      "mean_top_score": 0.08899512141942978
+    },
+    {
+      "image_id": 632,
+      "condition": "clean",
+      "vocabulary": "V0",
+      "pixel_sha256": "599dcd5702f5a6a540e403e89120be5c251de2a051ffbeec135bc1024c1d23be",
+      "mean_top_score": 0.10567313432693481
+    },
+    {
+      "image_id": 632,
+      "condition": "clean",
+      "vocabulary": "Vhard",
+      "pixel_sha256": "599dcd5702f5a6a540e403e89120be5c251de2a051ffbeec135bc1024c1d23be",
+      "mean_top_score": 0.14836300909519196
+    },
+    {
+      "image_id": 632,
+      "condition": "clean",
+      "vocabulary": "Vrand",
+      "pixel_sha256": "599dcd5702f5a6a540e403e89120be5c251de2a051ffbeec135bc1024c1d23be",
+      "mean_top_score": 0.15653106570243835
+    },
+    {
+      "image_id": 632,
+      "condition": "gaussian_noise",
+      "vocabulary": "V0",
+      "pixel_sha256": "f31ffbca0b9b4ec42f66c2906b581016b16aeec472f7e8c8fe87d91ae9a76f77",
+      "mean_top_score": 0.09420450776815414
+    },
+    {
+      "image_id": 632,
+      "condition": "gaussian_noise",
+      "vocabulary": "Vhard",
+      "pixel_sha256": "f31ffbca0b9b4ec42f66c2906b581016b16aeec472f7e8c8fe87d91ae9a76f77",
+      "mean_top_score": 0.13206014037132263
+    },
+    {
+      "image_id": 632,
+      "condition": "gaussian_noise",
+      "vocabulary": "Vrand",
+      "pixel_sha256": "f31ffbca0b9b4ec42f66c2906b581016b16aeec472f7e8c8fe87d91ae9a76f77",
+      "mean_top_score": 0.13590408861637115
+    },
+    {
+      "image_id": 632,
+      "condition": "motion_blur",
+      "vocabulary": "V0",
+      "pixel_sha256": "f22e7842768a53a156505d4cab8090dcb9a532681a399dfe550e26be2d2dc884",
+      "mean_top_score": 0.09764222800731659
+    },
+    {
+      "image_id": 632,
+      "condition": "motion_blur",
+      "vocabulary": "Vhard",
+      "pixel_sha256": "f22e7842768a53a156505d4cab8090dcb9a532681a399dfe550e26be2d2dc884",
+      "mean_top_score": 0.13727551698684692
+    },
+    {
+      "image_id": 632,
+      "condition": "motion_blur",
+      "vocabulary": "Vrand",
+      "pixel_sha256": "f22e7842768a53a156505d4cab8090dcb9a532681a399dfe550e26be2d2dc884",
+      "mean_top_score": 0.15682406723499298
+    },
+    {
+      "image_id": 632,
+      "condition": "fog",
+      "vocabulary": "V0",
+      "pixel_sha256": "a9dcac8d83e90ca76047425c2e1201fc1ae3f1f1452e8f5e62fbd0e29bb7f319",
+      "mean_top_score": 0.10089041292667389
+    },
+    {
+      "image_id": 632,
+      "condition": "fog",
+      "vocabulary": "Vhard",
+      "pixel_sha256": "a9dcac8d83e90ca76047425c2e1201fc1ae3f1f1452e8f5e62fbd0e29bb7f319",
+      "mean_top_score": 0.14326530694961548
+    },
+    {
+      "image_id": 632,
+      "condition": "fog",
+      "vocabulary": "Vrand",
+      "pixel_sha256": "a9dcac8d83e90ca76047425c2e1201fc1ae3f1f1452e8f5e62fbd0e29bb7f319",
+      "mean_top_score": 0.1543344408273697
+    },
+    {
+      "image_id": 632,
+      "condition": "jpeg_compression",
+      "vocabulary": "V0",
+      "pixel_sha256": "fbbcf5d30fe04b076d68d2aa9dadd2d94247d8ca93bb7034dbc9c259406483e3",
+      "mean_top_score": 0.0967194139957428
+    },
+    {
+      "image_id": 632,
+      "condition": "jpeg_compression",
+      "vocabulary": "Vhard",
+      "pixel_sha256": "fbbcf5d30fe04b076d68d2aa9dadd2d94247d8ca93bb7034dbc9c259406483e3",
+      "mean_top_score": 0.13865236937999725
+    },
+    {
+      "image_id": 632,
+      "condition": "jpeg_compression",
+      "vocabulary": "Vrand",
+      "pixel_sha256": "fbbcf5d30fe04b076d68d2aa9dadd2d94247d8ca93bb7034dbc9c259406483e3",
+      "mean_top_score": 0.13661640882492065
+    }
+  ]
+}

@@ -61,7 +61,10 @@ def detect(processor, model, pixels, names):
     mapping = positive_map(encoded.offset_mapping, spans, model.config.max_text_len)
     inputs = processor(images=Image.fromarray(pixels), text=caption, return_tensors="pt").to(model.device)
     output = model(**inputs)
-    class_scores = output.logits[0].sigmoid() @ torch.as_tensor(mapping.T, device=model.device)
+    # Exclude padding columns so changing output capacity cannot change GEMM
+    # accumulation order for an otherwise identical prompt (observed 9.3e-10).
+    length = len(encoded.input_ids)
+    class_scores = output.logits[0, :, :length].sigmoid() @ torch.as_tensor(mapping[:, :length].T, device=model.device)
     # Same class-token averaging and global query/class top300 as native COCO eval.
     # No AP threshold or NMS. 0.25 applies only to prespecified mechanism diagnostics.
     scores, flat = torch.topk(class_scores.flatten(), NUM_SELECT)

@@ -1,0 +1,25 @@
+[autodl] run_id=20260912-193529-tovd-t013-smoke-fixed-cuda
+[autodl] started_at=2026-09-12T19:35:36+08:00
+2026-09-12 19:35:39.187009: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-12 19:35:39.233090: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Could not load the custom kernel for multi-scale deformable attention: CUDA_HOME environment variable is not set. Please set it to your CUDA install root.
+Could not load the custom kernel for multi-scale deformable attention: /home/liujianhua/.cache/torch_extensions/py312_cu121/MultiScaleDeformableAttention/MultiScaleDeformableAttention.so: cannot open shared object file: No such file or directory
+Could not load the custom kernel for multi-scale deformable attention: /home/liujianhua/.cache/torch_extensions/py312_cu121/MultiScaleDeformableAttention/MultiScaleDeformableAttention.so: cannot open shared object file: No such file or directory
+Could not load the custom kernel for multi-scale deformable attention: /home/liujianhua/.cache/torch_extensions/py312_cu121/MultiScaleDeformableAttention/MultiScaleDeformableAttention.so: cannot open shared object file: No such file or directory
+Could not load the custom kernel for multi-scale deformable attention: /home/liujianhua/.cache/torch_extensions/py312_cu121/MultiScaleDeformableAttention/MultiScaleDeformableAttention.so: cannot open shared object file: No such file or directory
+Could not load the custom kernel for multi-scale deformable attention: /home/liujianhua/.cache/torch_extensions/py312_cu121/MultiScaleDeformableAttention/MultiScaleDeformableAttention.so: cannot open shared object file: No such file or directory
+Could not load the custom kernel for multi-scale deformable attention: /home/liujianhua/.cache/torch_extensions/py312_cu121/MultiScaleDeformableAttention/MultiScaleDeformableAttention.so: cannot open shared object file: No such file or directory
+Could not load the custom kernel for multi-scale deformable attention: /home/liujianhua/.cache/torch_extensions/py312_cu121/MultiScaleDeformableAttention/MultiScaleDeformableAttention.so: cannot open shared object file: No such file or directory
+Could not load the custom kernel for multi-scale deformable attention: /home/liujianhua/.cache/torch_extensions/py312_cu121/MultiScaleDeformableAttention/MultiScaleDeformableAttention.so: cannot open shared object file: No such file or directory
+Could not load the custom kernel for multi-scale deformable attention: /home/liujianhua/.cache/torch_extensions/py312_cu121/MultiScaleDeformableAttention/MultiScaleDeformableAttention.so: cannot open shared object file: No such file or directory
+Could not load the custom kernel for multi-scale deformable attention: /home/liujianhua/.cache/torch_extensions/py312_cu121/MultiScaleDeformableAttention/MultiScaleDeformableAttention.so: cannot open shared object file: No such file or directory
+Could not load the custom kernel for multi-scale deformable attention: /home/liujianhua/.cache/torch_extensions/py312_cu121/MultiScaleDeformableAttention/MultiScaleDeformableAttention.so: cannot open shared object file: No such file or directory
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+Token indices sequence length is longer than the specified maximum sequence length for this model (545 > 512). Running this sequence through the model will result in indexing errors
+/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages/imagecorruptions/corruptions.py:17: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+{"kind": "nonprimary_engineering_smoke", "validity": true, "v0_256_vs_1024_exact": true, "v0_standalone_vs_common_exact": true, "pixels_replay_exact": true, "weights_unchanged": true, "state_sha256": "edb3ae75e8e8d40a61f147eccdfcb5db6a51e4030302d9b8faa8a7db72da7b57", "torch": "2.4.0+cu121", "device": "cuda"}
+[autodl] finished_at=2026-09-12T19:36:08+08:00
+[autodl] exit_code=0

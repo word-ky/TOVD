@@ -1,0 +1,30 @@
+{
+  "validity": false,
+  "image_id": 139,
+  "capacity_comparison": {
+    "boxes": {
+      "exact": true,
+      "max_abs_delta_finite": 0.0
+    },
+    "class_scores": {
+      "exact": false,
+      "max_abs_delta_finite": 9.313225746154785e-10
+    },
+    "top_query_ids": {
+      "exact": true,
+      "max_abs_delta_finite": 0.0
+    },
+    "top_labels": {
+      "exact": true,
+      "max_abs_delta_finite": 0.0
+    },
+    "top_scores": {
+      "exact": true,
+      "max_abs_delta_finite": 0.0
+    },
+    "token_logits": {
+      "exact": true,
+      "max_abs_delta_finite": 0.0
+    }
+  }
+}

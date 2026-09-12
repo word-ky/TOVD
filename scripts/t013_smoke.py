@@ -51,7 +51,16 @@ def main():
             if hasattr(module, "max_text_len"):
                 module.max_text_len = 256
         original_capacity = detect(processor, model, np.array(image), vocab["V0"])
-        assert all(np.array_equal(value, standalone[name]) for name, value in original_capacity.items())
+        comparison = {}
+        for name, value in original_capacity.items():
+            other = standalone[name]
+            finite = np.isfinite(value) & np.isfinite(other)
+            comparison[name] = {"exact": bool(np.array_equal(value, other)),
+                                "max_abs_delta_finite": float(np.abs(value[finite] - other[finite]).max())}
+        if not all(row["exact"] for row in comparison.values()):
+            args.output.write_text(json.dumps({"validity": False, "image_id": image_id,
+                                               "capacity_comparison": comparison}, indent=2) + "\n")
+            raise AssertionError(f"256 vs 1024 capacity comparison: {comparison}")
         model.config.max_text_len = 1024
         for module in model.modules():
             if hasattr(module, "max_text_len"):
