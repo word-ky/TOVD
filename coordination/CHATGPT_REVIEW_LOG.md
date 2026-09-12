@@ -388,3 +388,25 @@ The fixed detection-level parity criterion fails on 2/3 images. Image 139 matche
 This result is strictly an engineering-harness rejection. No T013 primary AP/AP50, interaction estimate, confidence interval or scientific Gate 1–4 has been generated, so the visual-corruption × vocabulary-composition hypothesis remains unevaluated.
 
 **Next action:** continue T013 only through the official native-256 detector with a capacity-safe pre-outcome reset. `V0` remains COCO-80 at 195 tokens. Define `Vhard30` as the exactly 30 already accepted Vhard80 distractors whose frozen prompt contribution is 2 tokens; preserve their committed order/similarities. Define `Vrand30` from the frozen eligible 2-token candidate bucket as the 30 lowest-similarity entries with LVIS-ID tie breaking. Require exact class counts 80/110/110 and prompt token counts 195/255/255 with no truncation. Keep the same frozen 1,000 COCO IDs, four severity-3 corruptions, inference configuration, metrics, bootstrap algorithm and original Gates 1–4 without weakening thresholds. Before any primary outcome, commit a native-only `PLAN.md`, final data/vocabulary/code hashes, complete 15-condition cache/evaluation/bootstrap code and deterministic validity tests. Only then may the unchanged native primary audit run; if the original gates fail, stop the dual-shift premise rather than redesigning the vocabulary again.
+
+---
+
+## 2026-09-12 — T013-NATIVE30 pre-primary freeze review
+
+**Decision:** IMPLEMENTATION / PREREGISTRATION ACCEPTED; IMMUTABLE PRIMARY RUN MAY CONTINUE; SCIENTIFIC OUTCOME PENDING
+
+Reviewed commits/artifacts:
+- `eed8d1a3d391af7dff9ea81562cb1af6cc56f5ea` — frozen native30 vocabulary and native-only smoke harness;
+- `d5dc8070eb24eb38629998a0029824baeb2439ff` — cached native audit, COCO metrics, diagnostics and paired-image bootstrap implementation;
+- `35fbfb793b775df22659162c61b40b905df5087e` — successful native30 smoke and bound primary data provenance;
+- `6fec32243985ccc808123d851abf5f3dea10af99` — complete immutable pre-primary freeze;
+- `88668f76b22777459b5792dd28f88075f208c678` — immutable primary dispatch receipt;
+- `research_log/t013/{PLAN.md,native30_freeze.json,vocabulary_native30.json,data_receipt.json,image_sha256.json}` plus the native smoke/cache receipts.
+
+The mandatory pre-primary contract is accepted. The official native Grounding-DINO path is used exclusively; checkpoint/source/state hashes, CPU FP32 execution and official preprocessing are frozen; the same 1,000 COCO IDs are bound to a completed CRC/hash-verified COCO val archive; the three vocabularies are exactly 80/110/110 classes and 195/255/255 tokens with matched `2:30` distractor budgets; no truncation occurs. The five visual conditions, severity settings, `NUM_SELECT=300`, canonical mapping, diagnostics and Gates 1–4 remain unchanged.
+
+The analysis implementation follows the prespecified dataset-level design: raw predictions are cached without annotations; identical corrupted pixels are reused across vocabularies; COCO AP/AP50/AR/AR50 and detector-native FP/recall/margin diagnostics are computed after caching; and the 1,000-replicate paired-image bootstrap reuses identical image draws across all 15 cells and computes interaction contrasts per replicate. Duplicate samples, crowd annotations, absent classes and score ties are covered by deterministic tests. Native 45-cell validity and cached-pipeline engineering smokes pass; focused tests pass 17/17 locally and 17/17 remotely. All 5,000 COCO JPEG hashes and the 1,000-ID selection are frozen before primary inference.
+
+The dispatch is protocol-compliant: run `20260912-210355-tovd-native30-primary` uses immutable release `20260912-210306-tovd-native30-primary-freeze` with `--freeze-commit 6fec32243985ccc808123d851abf5f3dea10af99`. No T013 scientific AP/CI/gate result existed at freeze or dispatch.
+
+**Next action:** let only this frozen primary run continue. Do not inspect or act on partial AP/AP50/interaction/CI values, do not start a duplicate writer, and do not alter any frozen setting. If the run fails, preserve partial outputs and return for Research-Lead review before designing a restart because the runner has no automatic resume path. At completion, verify all 15,000 cells and hashes, reproduce analysis from the frozen cache, and report the complete metric/interaction/CI/diagnostic package against unchanged Gates 1–4. T014 remains prohibited until Research-Lead review.
