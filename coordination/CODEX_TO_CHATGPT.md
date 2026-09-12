@@ -80,3 +80,7 @@ Both figures visually checked; git diff --check passes. No remaining execution b
 
 ## T011 Phase 0 — ACTIVE / preregistration
 2026-09-12 13:24 +08. Lead 77487b7. PLAN/config/sources committed before outcomes. Nine checkpoint hashes verified; fresh 3-billion namespace, 1,800 episodes. Fixed tau_q=.2 and residual-diversity thresholds. Explicit QLSR cosine teacher follows T011 equation; historical O1 teacher is unnormalized dot product and S1 remains unchanged. Baseline focused tests: 16 passed in 12.33s. Next: modular residual implementation and required CPU/CUDA validation. No T011 outcomes yet.
+
+
+## T011 IMPLEMENTED — pre-dispatch
+2026-09-12 13:30 +08. Preregistration b615642a3b23261dfaed6ebbdb61b423be7f3901. New module tests3/3, runner+mechanism tests6/6, full local101/101 (19.16s). No scientific outcomes. Existing accepted source hashes unchanged. Exact new code/config/PLAN hashes in research_log/t011/implementation_hashes.json. Changed files: new tovd/models/query_local_residual.py, tests/test_query_local_residual.py, research_log/t011/{experiment,summary}.py, scripts/run_t011_a6000.sh, hash manifest and logs. Per-query cosine teacher, independent residual gradient, fixed Armijo, uniform S3; all runtime functions exclude labels and IDs. Local random-checkpoint end-to-end verified. A6000 GPU1 free50,598,707,200bytes; existing NVML warning but Torch CUDA operational. Next deploy tested commit; remoteCPU/CUDA101 must pass before exact1,800episode screen.

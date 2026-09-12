@@ -1,0 +1,34 @@
+[
+  {
+    "path": "tovd/models/query_local_residual.py",
+    "sha256": "767840e29e3b3440d26628a92ec90179f1e747427d23c4988c9c26c5526b5901"
+  },
+  {
+    "path": "research_log/t011/experiment.py",
+    "sha256": "6fc24d95d1a291b4ec1f48e5ba0626b4605c31313160d08a03231ad3e1ce80ee"
+  },
+  {
+    "path": "research_log/t011/summary.py",
+    "sha256": "e5663a3e96bdc29a2e99a4d21b78a1c3d9cf447fe37d9b0cb36c5133ba0552ac"
+  },
+  {
+    "path": "tests/test_query_local_residual.py",
+    "sha256": "3ede7e9837a88e67ec02268226b45da4ddcc0dfb8f8d6a2d5c400919d399027a"
+  },
+  {
+    "path": "scripts/run_t011_a6000.sh",
+    "sha256": "e38acedbeff3e52a25859de607cb71811d27ae53fdd16000361349b0ed8c216d"
+  },
+  {
+    "path": "research_log/t011/config.json",
+    "sha256": "f2556a983d30eefe2f4d9c441266f95bc2ca12903ec93bebda9247e98f344290"
+  },
+  {
+    "path": "research_log/t011/sources.json",
+    "sha256": "d6b09b2b5e9e69f6b1899384de2a6e11d5bfd36e6c1193c43a92951dbeb44817"
+  },
+  {
+    "path": "research_log/t011/PLAN.md",
+    "sha256": "54a5f033211e3469a5448f4d852e155edd2bec6f092b5ef67d6eaebfd88a9544"
+  }
+]

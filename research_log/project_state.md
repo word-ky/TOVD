@@ -1,6 +1,6 @@
 # TOVD project state
 
-T001-T010 accepted; T010 valid negative, rollback line terminated. T011 ACTIVE under lead77487b7.
-Phase0 preregistered in research_log/t011/PLAN.md, config.json, sources.json before outcomes. Nine frozen source hashes verified; 1,800 development episodes, fresh3-billion namespace.
-Next: QLSR module/tests then runner/full regressions then A6000 screen. No task outcomes generated yet.
-Heartbeat15min; do not repeat completed tasks. Research Lead owns acceptance and successor task.
+T001-T010 accepted. T011 IMPLEMENTED, preregister b615642.
+QLSR/core+runner6tests pass; full local101passed19.16s. No T011 scientific outcomes yet.
+Next: deploy tested code and run scripts/run_t011_a6000.sh: fullCPU/fullCUDA then1800freshnovel development episodes onGPU1. Sources/config/equations/fivecriteria frozen in research_log/t011.
+No selector/outer training/detector; stop for lead review after this screen. Heartbeat15min; no duplicate jobs.
