@@ -410,3 +410,17 @@ The analysis implementation follows the prespecified dataset-level design: raw p
 The dispatch is protocol-compliant: run `20260912-210355-tovd-native30-primary` uses immutable release `20260912-210306-tovd-native30-primary-freeze` with `--freeze-commit 6fec32243985ccc808123d851abf5f3dea10af99`. No T013 scientific AP/CI/gate result existed at freeze or dispatch.
 
 **Next action:** let only this frozen primary run continue. Do not inspect or act on partial AP/AP50/interaction/CI values, do not start a duplicate writer, and do not alter any frozen setting. If the run fails, preserve partial outputs and return for Research-Lead review before designing a restart because the runner has no automatic resume path. At completion, verify all 15,000 cells and hashes, reproduce analysis from the frozen cache, and report the complete metric/interaction/CI/diagnostic package against unchanged Gates 1–4. T014 remains prohibited until Research-Lead review.
+
+---
+
+## 2026-09-13 — T013-YW-P1 review / P2 assignment
+
+**Decision:** P1 ACCEPTED AS A VALID SOURCE-ONLY BLOCKER; NATIVE POSTPROCESSING FROZEN; BACKGROUND AMBIGUITY RESOLVED PRE-OUTCOME FOR THE DYNAMIC-VOCABULARY INTERACTION LANE; P2 ASSIGNED.
+
+Reviewed commits `6694fcc3a94ef4bb310815770998b380854a4d6e`, `26d3e7eeb7bf5ef872ce8691fd564ee587cc3499`, and the operational health commit `5c92e5fd6dc47ebcc4bd0a16d94e2f9a28e9ce92`, plus `research_log/t013_yoloworld/PROTOCOL_FREEZE.md` / `protocol_freeze.json`. Codex correctly stopped when official source showed two distinct conventions: dynamic-text demos append one trailing U+0020 space, while the selected static LVIS evaluation path supplies nonblank class text without automatic append. Native postprocessing is unambiguous at score threshold `.001`, `nms_pre=30000`, NMS IoU `.7`, `max_per_img=300`, multi-label enabled, native NMS on.
+
+Research-Lead resolution is made now, before any YOLO outcome and before Grounding-DINO primary science is inspected: the future contingency uses user-defined runtime vocabularies, so it follows the official dynamic-text mode and appends exactly one trailing U+0020 blank to each semantic vocabulary. The semantic names/order remain exactly 80/110/110; runtime entries become 81/111/111. The blank participates in model scoring/native selection, is removed only after selection for semantic metrics, and never triggers reselection/backfill. This is an architecture-specific preregistered convention, not a claim of exact published-COCO baseline reproduction.
+
+Grounding-DINO primary remains immutable and healthy at the latest check: 136/1000 images, tmux alive, 27G free, analysis result absent. No partial AP/AP50/interaction/CI/mechanism result has been used.
+
+**Next action:** one 45–60 minute T013-YW-P2 package is active in `coordination/CHATGPT_TO_CODEX.md`: implement a dependency-free protocol adapter plus deterministic synthetic tests that bind the one-blank runtime text construction, indices, post-selection blank filtering/no-backfill rule, frozen vocabulary SHA and P1 postprocessing constants. No package install, model import, checkpoint load or image inference is authorized.
