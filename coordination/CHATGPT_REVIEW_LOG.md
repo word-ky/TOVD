@@ -436,3 +436,17 @@ Reviewed commits `41ca40c3860e920714ecfb17273901916a635df8`, `f919e2f2bb0ab91e95
 The primary run is healthy at the latest committed operational check: 176/1000 images, exact tmux alive, ~26G free, no exit receipt and no analysis result. Because the cache is still growing and P0 already identified a potentially disk-heavy YOLO environment, protecting the irreplaceable preregistered primary is now higher value than installing the contingency stack.
 
 **Next action:** `T013-OPS1` is the single active 45–60 minute package in `coordination/CHATGPT_TO_CODEX.md`: perform a read-only structural/provenance/storage-capacity audit using only process metadata, paths/counts/sizes/hashes and frozen receipts. Do not parse prediction values or run analysis. Do not mutate/restart/clean the run or install YOLO. Pass requires one correctly bound writer, exact 15-cell structure for all closed images with at most one in-flight partial image, consistent provenance, and `free_now >= 1.20 × projected_remaining_p95 + 8 GiB`; otherwise stop and report without repair.
+
+---
+
+## 2026-09-13 — T013-OPS1 review / T013-STAT1 assignment
+
+**Decision:** OPS1 ACCEPTED; PRIMARY STRUCTURE / PROVENANCE / STORAGE SAFETY PASS; SCIENTIFIC OUTCOME REMAINS UNINSPECTED; INDEPENDENT SHADOW-ANALYSIS AUDIT ASSIGNED.
+
+Reviewed commits `67baf3892a41604f98543231692c54879a5ddfd2`, `f6ce00fc5ebea6846a3ac76f7a2ac24916e6b6d1`, and health-only `543cd60ff5d786dd6988ad8b38f8e10f785cb5c8`, plus `research_log/t013/PRIMARY_OPS_CHECK.md` and `primary_ops_receipt.json`. OPS1 is valid operational evidence: one writer is bound to the immutable release/freeze commit; 188 closed images have exactly 2,820 expected cell files with no missing/unexpected closed paths and only one in-flight image; all 150 deterministically sampled opaque files match manifest hashes; all 16 frozen source/provenance hashes match; and no prediction arrays or scientific metrics were parsed.
+
+The fixed disk criterion passes at the audit snapshot: free bytes `26,703,241,216`, required safety bytes `24,526,566,196`, margin `2,176,675,020` (~2.03 GiB). The later health-only check reports 201/1000 images, the same frozen run alive, `26,479,988,736` bytes free, no exit receipt and no analysis result. The margin is not generous, so YOLO runtime setup remains paused, but there is no current storage blocker and OPS1 should not be repeated merely because progress advances.
+
+The next highest-value risk is analysis correctness at completion. Existing frozen tests cover basic known-answer behavior, but the 1,000-image result will depend on sign conventions, shared bootstrap draws, percentile-CI boundaries and exact gate arithmetic. These can be independently checked now using synthetic data without touching any primary output.
+
+**Next action:** `T013-STAT1` is the single active 45–60 minute package in `coordination/CHATGPT_TO_CODEX.md`. Build an independent shadow/reference calculator from the mathematical PLAN and compare it against the frozen `6fec322...` analysis functions on synthetic fixtures only. Mandatory checks cover D/A sign, Gate1/Gate2 exact boundaries, within-replicate paired contrasts before CI, Gate3 non-rescue semantics, and margin common-support/NaN handling. Do not read active primary prediction/scientific artifacts, do not edit frozen scientific code, do not install/run YOLO, and stop/report any mismatch rather than repairing it autonomously.
