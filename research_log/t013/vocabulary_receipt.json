@@ -1,0 +1,38 @@
+{
+  "recorded_at": "2026-09-12T19:11:36.226672+08:00",
+  "run_id": "20260912-190708-tovd-t013-text-r3-a6000",
+  "source_commit": "1d3f12b",
+  "status": "text_only_vocabulary_complete_before_any_detector_image_inference",
+  "candidate_count": 1124,
+  "excluded_count": 79,
+  "local_remote_sha256": {
+    "text_embeddings.npz": "83b3e949ab9cbf53b9c79a918b56ceaf779d26c9de69cee05d0b385039cd04fc",
+    "vocabulary.json": "983f7ed670688bd9990bf50badc6d43682409cdac83432415b602bfca59ee6be"
+  },
+  "artifacts_root": "research_log\\remote_runs\\20260912-190708-tovd-t013-text-r3-a6000\\artifacts\\vocabulary",
+  "token_counts": {
+    "V0": 195,
+    "Vhard": 408,
+    "Vrand": 545
+  },
+  "full_prompt_encoder_checks": {
+    "V0": {
+      "input_tokens": 195,
+      "output_tokens": 195,
+      "max_sentence_position_id": 3
+    },
+    "Vhard": {
+      "input_tokens": 408,
+      "output_tokens": 408,
+      "max_sentence_position_id": 3
+    },
+    "Vrand": {
+      "input_tokens": 545,
+      "output_tokens": 545,
+      "max_sentence_position_id": 7
+    }
+  },
+  "model_state_sha256": "edb3ae75e8e8d40a61f147eccdfcb5db6a51e4030302d9b8faa8a7db72da7b57",
+  "model_weights_sha256": "1a2412ef99bd74bcd3c2a246fa1e48581f8889a1300c9051974741314fc042f3",
+  "primary_outcomes_generated": false
+}

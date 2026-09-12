@@ -1,0 +1,46 @@
+[autodl] run_id=20260912-185148-tovd-t013-assets-r2-a6000
+[autodl] started_at=2026-09-12T18:51:55+08:00
+Requirement already satisfied: numpy==1.26.4 in /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages (1.26.4)
+Requirement already satisfied: transformers==4.44.2 in /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages (4.44.2)
+Requirement already satisfied: huggingface-hub==0.24.7 in /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages (0.24.7)
+Requirement already satisfied: tokenizers==0.19.1 in /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages (0.19.1)
+Requirement already satisfied: safetensors==0.4.5 in /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages (0.4.5)
+Requirement already satisfied: pycocotools==2.0.8 in /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages (2.0.8)
+Requirement already satisfied: imagecorruptions==1.1.2 in /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages (1.1.2)
+Requirement already satisfied: scikit-image==0.24.0 in /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages (0.24.0)
+Requirement already satisfied: pillow==10.4.0 in /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages (10.4.0)
+Requirement already satisfied: opencv-python==4.10.0.84 in /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages (4.10.0.84)
+Requirement already satisfied: filelock in /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages (from transformers==4.44.2) (3.24.2)
+Requirement already satisfied: packaging>=20.0 in /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages (from transformers==4.44.2) (26.0)
+Requirement already satisfied: pyyaml>=5.1 in /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages (from transformers==4.44.2) (6.0.3)
+Requirement already satisfied: regex!=2019.12.17 in /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages (from transformers==4.44.2) (2026.9.10)
+Requirement already satisfied: requests in /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages (from transformers==4.44.2) (2.32.5)
+Requirement already satisfied: tqdm>=4.27 in /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages (from transformers==4.44.2) (4.67.3)
+Requirement already satisfied: fsspec>=2023.5.0 in /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages (from huggingface-hub==0.24.7) (2026.2.0)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages (from huggingface-hub==0.24.7) (4.15.0)
+Requirement already satisfied: matplotlib>=2.1.0 in /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages (from pycocotools==2.0.8) (3.11.2)
+Requirement already satisfied: scipy>=1.2.1 in /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages (from imagecorruptions==1.1.2) (1.17.0)
+Requirement already satisfied: networkx>=2.8 in /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages (from scikit-image==0.24.0) (3.6.1)
+Requirement already satisfied: imageio>=2.33 in /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages (from scikit-image==0.24.0) (2.37.4)
+Requirement already satisfied: tifffile>=2022.8.12 in /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages (from scikit-image==0.24.0) (2026.3.3)
+Requirement already satisfied: lazy-loader>=0.4 in /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages (from scikit-image==0.24.0) (0.5)
+Requirement already satisfied: contourpy>=1.0.1 in /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages (from matplotlib>=2.1.0->pycocotools==2.0.8) (1.3.3)
+Requirement already satisfied: cycler>=0.10 in /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages (from matplotlib>=2.1.0->pycocotools==2.0.8) (0.12.1)
+Requirement already satisfied: fonttools>=4.28.2 in /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages (from matplotlib>=2.1.0->pycocotools==2.0.8) (4.65.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages (from matplotlib>=2.1.0->pycocotools==2.0.8) (1.5.1)
+Requirement already satisfied: pyparsing>=3 in /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages (from matplotlib>=2.1.0->pycocotools==2.0.8) (3.3.2)
+Requirement already satisfied: python-dateutil>=2.7 in /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages (from matplotlib>=2.1.0->pycocotools==2.0.8) (2.9.0.post0)
+Requirement already satisfied: charset_normalizer<4,>=2 in /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages (from requests->transformers==4.44.2) (3.4.4)
+Requirement already satisfied: idna<4,>=2.5 in /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages (from requests->transformers==4.44.2) (3.11)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages (from requests->transformers==4.44.2) (2.6.3)
+Requirement already satisfied: certifi>=2017.4.17 in /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages (from requests->transformers==4.44.2) (2026.1.4)
+Requirement already satisfied: six>=1.5 in /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages (from python-dateutil>=2.7->matplotlib>=2.1.0->pycocotools==2.0.8) (1.17.0)
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -m pip install --upgrade pip
+Looking in indexes: https://download.pytorch.org/whl/cu121
+Requirement already satisfied: torchvision==0.19.0+cu121 in /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages (0.19.0+cu121)
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -m pip install --upgrade pip
+Official weight SHA256 verified 1a2412ef99bd74bcd3c2a246fa1e48581f8889a1300c9051974741314fc042f3
