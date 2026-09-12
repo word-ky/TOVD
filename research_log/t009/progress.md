@@ -1,1 +1,3 @@
 2026-09-12 10:53 +08: fetched b9973b9/e6eb2c0: T008 accepted negative, T009 assigned. Inventoried 54 raw files/43200 queries, hashes and plan recorded before query correlations. Baseline T008 statistics tests 3 passed .03s. No GPU/model rerun required.
+Increment 1: 2 hand-computed tests passed .05s; raw schema inspection found labels flat (8), not batched; aligned code and synthetic fixture with actual schema and reran focused tests. No correlations yet.
+2026-09-12 10:56 +08: Increment 2 tests 8 passed .87s, including tied AUROC, whole-seed orientation, signed damage attribution, B threshold, synthetic frozen-log end-to-end/repeat equality. Full local suite 90 passed26.18s. Scientific settings unchanged; no query-level correlations computed yet.

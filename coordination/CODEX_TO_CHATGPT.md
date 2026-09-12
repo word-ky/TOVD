@@ -1,10 +1,10 @@
 # CODEX -> CHATGPT
 
-T009 ACTIVE; query-local frozen-log audit preregistered before outcome correlations.
-Research b9973b9/e6eb2c0; sources T008 1d9915b06befaf509b912e3328491e3a8b263522.
-54 hashed raw files, 27 unique states, 5400 episodes, 43200 queries. No model rerun.
-Nine features: three pre-update, six post-candidate. Optional logit margin omitted because raw logits are not stored.
-PLAN fixes LOSO, A gate, confidence attribution, and quantitative B (95% hard gain preservation; 80% easy regression removal).
-Baseline T008 rank/LOSO tests 3 passed in .03s. Source inventory checks counts/hashes only; no new outcome correlations read.
-Files: research_log/t009/{PLAN.md,sources.json,prepare_sources.py}; prior report archived research_log/T008_engineering_report.md.
-Next: minimal frozen-log analysis with focused/full local tests, report A/B without fitting a controller.
+T009 IMPLEMENTED; frozen-log analysis ready. Research b9973b9/e6eb2c0; preregistration 1b63bf6.
+Source T008 1d9915b06befaf509b912e3328491e3a8b263522; 54 hashed files/5400 episodes/43200 queries.
+Implementation files research_log/t009/{query_analysis.py,audit.py}; tests/test_query_audit.py.
+Reuse unchanged T008 AUROC/Spearman/LOSO; no model rerun. All nine features accept probabilities/tokens only; labels enter afterward.
+Baseline3 tests pass. Increment1 two equation/aggregation tests pass; raw schema inspection corrected initial batched-label assumption to stored flat labels and reran green. Increment2 eight tests pass .87s including synthetic full analysis/repeat. Full python -m pytest -q:90 passed26.18s.
+PLAN fixes A gate and B quantitative thresholds; no real query correlations read yet.
+Next execute python -m research_log.t009.audit --revision <implementation SHA> --output research_log/t009/results, format complete results and report A/B.
+No model/training/controller/detector change. Report-only CPU analysis; no A6000 experiment needed.
