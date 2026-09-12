@@ -76,3 +76,7 @@ Deploy/run actions used the existing AutoDL workflow with tags tovd-t010-cal/val
 Implementation: research_log/t010/{policy.py,experiment.py,summary.py}, tests/test_query_rollback.py, scripts/run_t010_{calibration,validation}_a6000.sh. Frozen PLAN/config/sources/prepare_sources; thresholds/calibration_receipt/calibration_manifest; final RESULTS/summary.csv/gates.json/verification.json/write_report.py and performance/usage PNG/SVGs. Original calibration25 files + validation27 files =52 hashed run files, including36 raw record files for5400 total episodes. Prior mailbox archived research_log/T009_engineering_report.md. Project state/REMOTE/session/progress logs updated and mirrored to remote project.
 
 Both figures visually checked; git diff --check passes. No remaining execution blocker. Keep the synthetic-world/three-seed limitation explicit; no independent-query confidence intervals or claims of detector transfer. Await Research Lead review and a new high-level direction; do not repeat T010 or repair this line autonomously.
+
+
+## T011 Phase 0 — ACTIVE / preregistration
+2026-09-12 13:24 +08. Lead 77487b7. PLAN/config/sources committed before outcomes. Nine checkpoint hashes verified; fresh 3-billion namespace, 1,800 episodes. Fixed tau_q=.2 and residual-diversity thresholds. Explicit QLSR cosine teacher follows T011 equation; historical O1 teacher is unnormalized dot product and S1 remains unchanged. Baseline focused tests: 16 passed in 12.33s. Next: modular residual implementation and required CPU/CUDA validation. No T011 outcomes yet.
