@@ -107,3 +107,8 @@ A PASS: delta_entropy meanLOSO .750696/min .722485, delta_max_probability .70822
 B PASS: all preregistered oracle hard-gain/easy-regression clauses pass. This is a label-using oracle ceiling, not a deployed policy.
 Report renderer initially failed on empty hardQ4 bin; plot now showszero. Three PNG/SVG figures visuallychecked; trailing EOF whitespace fixed, no semantic analysis changes.
 All evidence in t009/results plus RESULTS/verification. Final engineering mailbox and state updated; mirror to A6000 project then commit/push. Await lead review/newT010; no autonomouscontroller/detector.
+
+## 2026-09-12 11:44 +08 T010 calibration dispatch
+Tested1b60f217f67c283df1e49f73f4bb4f2b64e03955; release20260912-114356-tovd-t010-cal.
+Run20260912-114426-tovd-t010-cal-a6000 on physicalGPU1. RemoteCPU/CUDA tests then1800 base calibration episodes only.
+Local95tests passed40.01s. No validation outcomes yet; fetch/commit actual thresholds before validation.
