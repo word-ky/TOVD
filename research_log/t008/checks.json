@@ -1,0 +1,1625 @@
+{
+  "historical": [
+    {
+      "state_id": "seed7_original_P",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": 0.0,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed7_original_P",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": 0.0,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step0",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step0",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step50",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step50",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step100",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step100",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step200",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step200",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step400",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step400",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step0",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step0",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step50",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step50",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step100",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step100",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step200",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step200",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step400",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step400",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed17_original_P",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": 0.0,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed17_original_P",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": 0.0,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step0",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step0",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step50",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step50",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step100",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step100",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step200",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step200",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step400",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step400",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step0",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step0",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step50",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step50",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step100",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step100",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step200",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step200",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step400",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step400",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed27_original_P",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": 0.0,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed27_original_P",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": 0.0,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step0",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step0",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step50",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step50",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step100",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step100",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step200",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step200",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step400",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step400",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step0",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step0",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step50",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step50",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step100",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step100",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step200",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step200",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step400",
+      "regime": "easy",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step400",
+      "regime": "hard",
+      "count": 100,
+      "historical_count": 100,
+      "max_error": 0.0,
+      "T005_max_error": null,
+      "stream_mismatches": 0
+    }
+  ],
+  "normal_oracle": [
+    {
+      "state_id": "seed7_original_P",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed7_original_P",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step0",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step0",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step50",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step50",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step100",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step100",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step200",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step200",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step400",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step400",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step0",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step0",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step50",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step50",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step100",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step100",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step200",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step200",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step400",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step400",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed17_original_P",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed17_original_P",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step0",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step0",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step50",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step50",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step100",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step100",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step200",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step200",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step400",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step400",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step0",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step0",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step50",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step50",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step100",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step100",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step200",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step200",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step400",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step400",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed27_original_P",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed27_original_P",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step0",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step0",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step50",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step50",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step100",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step100",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step200",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step200",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step400",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step400",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step0",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step0",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step50",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step50",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step100",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step100",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step200",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step200",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step400",
+      "regime": "easy",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step400",
+      "regime": "hard",
+      "bitwise_equal": true,
+      "output_max_error": 0.0,
+      "state_max_error": 0.0,
+      "features_exact": true,
+      "feature_repeat_max_error": 0.0,
+      "pre_inner_loss_max_error": 0.0,
+      "pre_gradient_max_error": 0.0,
+      "nonfinite_features": 0,
+      "all_finite": true
+    }
+  ],
+  "parameters_unchanged": [
+    {
+      "state_id": "seed7_original_P",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step0",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step50",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step100",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step200",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed7_P_O0_resume_step400",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step0",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step50",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step100",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step200",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed7_P_C2_warm_step400",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed17_original_P",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step0",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step50",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step100",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step200",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed17_P_O0_resume_step400",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step0",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step50",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step100",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step200",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed17_P_C2_warm_step400",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed27_original_P",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step0",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step50",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step100",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step200",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed27_P_O0_resume_step400",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step0",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step50",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step100",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step200",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    },
+    {
+      "state_id": "seed27_P_C2_warm_step400",
+      "all_tensors_byte_equal": true,
+      "max_error": 0.0
+    }
+  ]
+}

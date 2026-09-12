@@ -91,3 +91,11 @@ No activeTOVD run; awaitlead, heartbeatactive.
 Run20260912-101332-tovd-t008-a6000 active onGPU1; release20260912-101316-tovd-t008.
 Tested153ac30d00753b43a56ce2e226068b0c35039d70; local85tests pass.
 33 fixedstates/6600raw episodes; no training/controller; remoteCPU/CUDA tests precede extraction.
+
+## 2026-09-12 10:32 +08 T008 evidence finalized
+Run 20260912-101332-tovd-t008-a6000 exited 0 at 10:20:21 +08. Local/remote CPU/remote CUDA each 85 tests passed.
+33 frozen states, 6600 raw / 5400 primary rows; historical/feature/oracle equality exact, all parameters unchanged.
+All 14 scalar gates fail the original overall LOSO .70/.65 requirements; best mean .580556, best pre-update .538529.
+Complete 76-file original receipt fetched, hashes in t008/verification.json; 66 raw record files. Tables and three PNG/SVG figures generated and visually checked; corrected plot legend overlap.
+No runtime changes since tested 153ac30. No controller, training, detector or next task. Await Research Lead; do not duplicate VERIFIED T008.
+Final engineering mailbox and project state written; syncing local report and recovery logs to A6000 and committing evidence to GitHub.

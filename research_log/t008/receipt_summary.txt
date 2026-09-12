@@ -1,0 +1,23 @@
+{
+  "validity": {
+    "source_hashes_match": true,
+    "state_count": 33,
+    "row_count": 6600,
+    "expected_row_count": 6600,
+    "historical_max_error": 0.0,
+    "T005_max_error": 0.0,
+    "historical_stream_mismatches": 0,
+    "normal_oracle_bitwise_equal": true,
+    "features_exact": true,
+    "output_max_error": 0.0,
+    "state_max_error": 0.0,
+    "pre_inner_loss_max_error": 0.0,
+    "pre_gradient_max_error": 0.0,
+    "nonfinite_features": 0,
+    "all_outputs_finite": true,
+    "parameters_unchanged": true,
+    "passes": true
+  },
+  "pre": [],
+  "rollback": []
+}

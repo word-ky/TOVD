@@ -1,0 +1,92 @@
+{
+  "features": {
+    "query_entropy": {
+      "is_label_free_feature": true,
+      "availability": "pre_update"
+    },
+    "query_max_probability": {
+      "is_label_free_feature": true,
+      "availability": "pre_update"
+    },
+    "query_probability_gap": {
+      "is_label_free_feature": true,
+      "availability": "pre_update"
+    },
+    "assignment_entropy": {
+      "is_label_free_feature": true,
+      "availability": "pre_update"
+    },
+    "assignment_probability_gap": {
+      "is_label_free_feature": true,
+      "availability": "pre_update"
+    },
+    "inner_loss_before": {
+      "is_label_free_feature": true,
+      "availability": "pre_update"
+    },
+    "gradient_norm": {
+      "is_label_free_feature": true,
+      "availability": "pre_update",
+      "compute_note": "Requires raw inner backward pass, but no candidate step/selection."
+    },
+    "chosen_eta": {
+      "is_label_free_feature": true,
+      "availability": "post_candidate_rollback"
+    },
+    "backtracking_trials": {
+      "is_label_free_feature": true,
+      "availability": "post_candidate_rollback"
+    },
+    "normalized_update": {
+      "is_label_free_feature": true,
+      "availability": "post_candidate_rollback"
+    },
+    "representation_shift": {
+      "is_label_free_feature": true,
+      "availability": "post_candidate_rollback"
+    },
+    "relative_inner_reduction": {
+      "is_label_free_feature": true,
+      "availability": "post_candidate_rollback"
+    },
+    "query_js": {
+      "is_label_free_feature": true,
+      "availability": "post_candidate_rollback"
+    },
+    "prediction_changed_fraction": {
+      "is_label_free_feature": true,
+      "availability": "post_candidate_rollback"
+    }
+  },
+  "metadata_and_outcomes": {
+    "is_label_free_feature": false,
+    "fields": [
+      "seed",
+      "branch",
+      "step",
+      "regime",
+      "state_id",
+      "episode_seed",
+      "vocabulary_ids",
+      "query_ids",
+      "labels",
+      "delta_nll",
+      "delta_accuracy",
+      "harm",
+      "harm_gt_005",
+      "before_nll",
+      "after_nll",
+      "before_accuracy",
+      "after_accuracy",
+      "drift_W0",
+      "drift_key",
+      "drift_query",
+      "drift_total"
+    ]
+  },
+  "outputs": {
+    "is_label_free_feature": false,
+    "label_free_tensors": true,
+    "note": "Recorded for replay; excluded from the fixed fourteen-scalar predictor vector."
+  }
+}
