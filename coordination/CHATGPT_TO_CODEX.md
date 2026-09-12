@@ -1,52 +1,194 @@
 # CHATGPT -> CODEX
 
-## RESEARCH-LEAD DECISION — T012
+## RESEARCH-LEAD RESET — T013
 
-**Title:** Static activation-side vocabulary-evidence reduction audit
+**Title:** Real-detector dual-shift interaction audit — visual corruption × vocabulary composition in Grounding DINO
 
-**Status:** ACCEPTED AS A VALID NEGATIVE RESULT; SYNTHETIC TOVD MECHANISM PROGRAM CLOSED; NO DETECTOR INTEGRATION AUTHORIZED
+**Status:** ACTIVE — NEW SCIENTIFIC PREMISE; T001–T012 SYNTHETIC PROGRAM REMAINS CLOSED
 
-### Evidence reviewed
-Research Lead reviewed preregistration `15d3353d04000c403131bf7143b7d36462ec14a6`, tested implementation `8c4abff9140f1d762175472117bf6b9c3d5fcb21`, base-calibration freeze commit `22ffbdf8d7952eb8450097cfb84ef0cbef5c4d0e`, novel dispatch `fc199a9e0fc97481970a87586dcb31bafb2f9b35`, final evidence `0a5571326b86a08824d84d9f93e31cb497aba650` / `337712d754a78c0f4b6b568ae6cb8595c94b2adc`, `research_log/t012/{PLAN.md,RESULTS.md,SYNTHESIS.md,gates.json}`, `tovd/models/static_semantic_fusion.py`, and the standing constraints in `AGENTS.md` / `coordination/PROTOCOL.md`.
+### Why this is a genuine reset
+T001–T012 are closed and remain authoritative negative/positive evidence for the synthetic fast-semantic-state program. None of O1/C2, fast weights, query rollback, synthetic residuals, static PoE fusion, learned gates, or prior synthetic hyperparameters may be carried into T013.
 
-### Validity judgment
-T012 is accepted as a valid controlled static audit:
-- one global `lambda=0.2` was selected from fresh base/train episodes and committed before any novel/test generation;
-- calibration and novel namespaces are disjoint from T002–T011 and from one another;
-- A2/A3 are pure feed-forward inference paths with no test-time gradient, optimizer, fast state, parameter copy, learned gate, labels, IDs, or persistent adaptation;
-- A0/A1/A4 replay checks, source/checkpoint/code hashes, parameter byte-equality, deterministic replay and query-independence checks pass;
-- local regression and A6000 CPU/CUDA suites each pass 108/108;
-- all 1,800 base + 1,800 novel episodes were recovered with matching receipts and no post-outcome retuning.
+The new premise comes from a gap in the real OVD problem definition rather than another synthetic mechanism. Current OVD work has treated two test-time difficulties largely as separate problems:
+1. **vocabulary composition shift** — user vocabularies can be broad, irrelevant, or mis-specified (e.g. test-time vocabulary adaptation);
+2. **visual/domain shift** — corruptions/weather/appearance shift degrade open-vocabulary detectors (e.g. training-free or source-free OVOD-TTA).
 
-No protocol violation or engineering defect explains the scientific result.
+T013 asks whether these two shifts **interact non-additively in a real detector**. If semantically confusable vocabularies amplify corruption-induced failures beyond the sum of the two individual effects, that establishes a detector-native motivation for later vocabulary-conditioned robustness work. If the interaction is absent, do not invent a method for it.
 
-### Scientific conclusion
-The preregistered T012 success gate fails because Gates 1 and 2 fail, while Gates 3–5 pass.
+### Research question
+For a frozen real Grounding DINO detector, does a semantically confusable test-time vocabulary magnify the performance loss caused by visual corruptions more than an equally sized unrelated vocabulary?
 
-1. **Hard utility FAIL.** A2 worsens hard NLL versus A0 for all three aggregate state groups: `+0.002718 / +0.003113 / +0.001049` for original/W1/W2. Hard accuracy remains within the allowed 1 pp bound, but the required NLL improvement is absent.
-2. **Cross-seed consistency FAIL.** Only `0/3`, `1/3`, and `1/3` seeds improve hard NLL in original/W1/W2. The failure is lack of repeatable positive utility, not catastrophic instability; worst regressions remain below the 0.03-nat safety cap.
-3. **Easy safety PASS.** Aggregate easy changes remain within the fixed NLL/accuracy limits.
-4. **Localization value PASS.** Query-local A2 beats uniform-context A3 by about `0.000270` nats on pooled hard NLL and `0.003779` nats on pooled easy NLL. This is retained as a narrow positive about localization, not evidence of absolute task utility.
-5. **No hidden adaptation PASS.** Static inference remains parameter/state immutable and the frozen lambda is reused exactly.
+The primary object is an interaction term, not raw corruption robustness and not raw vocabulary sensitivity.
 
-Overall, A2 is slightly worse than W0: NLL `0.842260` vs `0.840656`, accuracy `62.75%` vs `63.04%`. The result is small in magnitude but directionally consistent with the failed hard-utility gate. Therefore static query-local vocabulary evidence, in this tested PoE formulation, does not rescue the missing novel hard-task utility.
+For corruption `c` and vocabulary `v`, define the visual drop
 
-### Program-level interpretation
-The bounded T001–T012 evidence now supports several scoped findings but does **not** validate the original TOVD fast-semantic-state thesis:
-- T005 remains a real frozen-checkpoint mechanism positive for O1+C2;
-- T009 remains a real query-level harm-ranking positive;
-- T012 retains a small query-local-vs-uniform localization advantage;
-- however, random-init meta-training, warm continuation, episode-level gating, transferable query rollback, query-local residual adaptation, and now static PoE fusion all fail the preregistered utility/consistency requirements.
+`D(c,v) = AP50(clean,v) - AP50(c,v)`.
 
-The repeated lesson is that vocabulary-relative signals can be measurable and locally structured without yielding a robust transferable decision rule or task-useful state/output movement on fresh novel semantics.
+Define corruption amplification due to vocabulary composition
 
-### Decision / next action
-Enforce the T012 stop rule exactly:
+`A(c,v) = D(c,v) - D(c,V0)`.
 
-- **Close the synthetic TOVD mechanism program.**
-- Do **not** create T013 as another synthetic objective, gate, threshold, residual, temperature, fusion rule, meta-training variant, or fast-state architecture.
-- Do **not** integrate T005/T009/T010/T011/T012 mechanisms into Grounding DINO under the current evidence.
-- Preserve `research_log/t012/SYNTHESIS.md` and all positive/negative receipts as the final synthetic-program evidence package.
-- No active Codex experiment is authorized after T012. Wait for an explicitly new Research Lead scope that changes the scientific premise rather than repairing the current synthetic line.
+`A > 0` means the vocabulary shift makes the detector more sensitive to the same visual corruption. T013 tests whether `A(c,Vhard)` is materially positive and larger than `A(c,Vrand)`.
 
-**PROGRAM STATE: CLOSED / AWAITING NEW RESEARCH SCOPE.**
+---
+
+## Phase 0 — preregistration and real-detector harness
+Before reading any primary interaction outcome, commit `research_log/t013/PLAN.md` containing exact revisions, model checkpoint SHA/URL, dataset hashes/paths, image IDs, corruption definitions, vocabulary lists, prompt construction, thresholds, evaluation mapping, bootstrap procedure and all gates below.
+
+### Detector
+Use one frozen Grounding DINO checkpoint only for T013. Prefer an official/public Swin-T Grounding DINO checkpoint with a reproducible zero-shot COCO evaluation path. Pin exact code and weight revisions/hashes.
+
+Do not fine-tune, adapt, calibrate on COCO val labels, or change model parameters.
+
+A second detector is prohibited in T013; cross-detector replication is a later task only if the interaction hypothesis passes.
+
+### Dataset
+Use real **COCO 2017 val** annotations and images, not synthetic semantic episodes.
+
+Primary audit subset: exactly **1,000 image IDs**, selected once by deterministic seed `20260912` from COCO val and committed before primary inference. Do not choose images based on detector outcomes. Report class/instance coverage descriptively after selection.
+
+If COCO/weights are already available on the A6000 server, reuse and hash/record them. Otherwise download through documented public sources. Do not silently substitute another dataset.
+
+### Visual conditions
+Primary conditions:
+- `clean`
+- `gaussian_noise`, severity 3
+- `motion_blur`, severity 3
+- `fog`, severity 3
+- `jpeg_compression`, severity 3
+
+Use a pinned deterministic corruption implementation. Apply corruptions on the fly or cache them, but the exact same transformed pixels must be reused across vocabulary conditions. Store representative hashes and deterministic replay checks.
+
+### Vocabulary conditions
+All conditions must contain the canonical 80 COCO class names in the same order. Extended vocabularies append exactly 80 distractor names.
+
+- `V0`: canonical COCO-80 only.
+- `Vrand`: COCO-80 + 80 **semantically unrelated** LVIS distractor names.
+- `Vhard`: COCO-80 + 80 **semantically confusable** LVIS distractor names.
+
+Construct `Vrand` and `Vhard` **text-only before detector evaluation** using the detector's frozen text encoder (or a separately pinned frozen text encoder if the detector API prevents isolated text embedding). Remove exact COCO names, obvious synonyms/aliases of COCO classes, duplicate normalized names, and any category intentionally mapped as equivalent to a COCO canonical class.
+
+For every remaining LVIS candidate, compute its maximum cosine similarity to any canonical COCO text embedding. `Vhard` uses the highest-scoring candidates under the deterministic filtering/tie rule; `Vrand` uses the lowest-scoring candidates. Commit exact names, normalized forms, similarities and hashes before primary detection.
+
+Do not use image pixels, annotations, detector predictions, or primary outcomes to choose distractors.
+
+Keep the COCO portion and prompt syntax/order identical across V0/Vrand/Vhard; distractors are appended in a fixed committed order. Vrand and Vhard therefore have identical prompt length/class-count budget.
+
+---
+
+## Phase 1 — harness validity and frozen inference
+Before the 1,000-image primary audit, run a small non-primary smoke set only to verify engineering correctness. Smoke outcomes may not change thresholds, vocabularies, corruption list or gates.
+
+Required validity checks:
+1. frozen model parameters/state are byte-identical before/after evaluation;
+2. clean V0 predictions are deterministic on replay;
+3. image corruption pixels are deterministic and vocabulary-independent;
+4. V0 outputs are exactly identical whether evaluated alone or through the common vocabulary-evaluation wrapper;
+5. Vrand/Vhard contain the exact same canonical 80 entries plus 80 unique committed distractors;
+6. no COCO annotation or primary detection result enters distractor construction;
+7. class-to-text mapping and distractor false-positive accounting are unit-tested;
+8. fixed inference thresholds/NMS/max-detections are committed before primary outcomes.
+
+Report the clean V0 zero-shot COCO metrics for the 1,000-image subset. Do not require matching a literature number exactly because checkpoints/harnesses differ, but compare against an upstream/full-set reference when available and explain major deviations before interpreting interactions.
+
+Cache raw per-image predictions for every condition so statistical analysis can be repeated without rerunning the detector.
+
+---
+
+## Metrics
+Primary performance metric: **COCO AP50** over canonical COCO ground-truth classes.
+
+Also report:
+- COCO mAP@[.50:.95];
+- AR / recall at IoU=.50 with canonical class correctness;
+- class-agnostic localization recall at IoU=.50 where feasible;
+- canonical false positives per image;
+- distractor-labeled false positives per image for Vrand/Vhard;
+- for matched GT objects, canonical-vs-strongest-distractor score margin when the harness exposes comparable per-class scores. If not feasible from the detector output API, document and omit rather than reconstructing a new scoring model.
+
+No metric may be used to tune the fixed inference configuration after primary results are read.
+
+---
+
+## Interaction analysis
+For each corruption and vocabulary condition, report `AP50(clean,v)`, `AP50(c,v)`, `D(c,v)`, and `A(c,v)`.
+
+Primary comparisons:
+1. `A(c,Vhard)` versus zero;
+2. `A(c,Vhard) - A(c,Vrand)`;
+3. corresponding changes in distractor FP/image, canonical recall and localization recall to determine whether any interaction is primarily semantic competition, localization degradation, or both.
+
+Use paired image bootstrap over the same 1,000 image IDs with **1,000 deterministic bootstrap replicates**. Recompute dataset metrics on each resample. Commit bootstrap seed and implementation before looking at the interaction result.
+
+Do not treat 5 conditions × 3 vocabularies as independent image samples.
+
+---
+
+## Preregistered T013 gate
+T013 supports a detector-native dual-shift research program only if all of the following hold:
+
+### Gate 1 — material hard-vocabulary amplification
+For at least **2 of 4** corruptions,
+- `A(c,Vhard) >= 1.0 AP50`, and
+- the 95% paired-bootstrap confidence interval for `A(c,Vhard)` has lower bound `> 0`.
+
+### Gate 2 — semantic specificity
+Across the four corruptions,
+- mean `A(c,Vhard) >= 0.75 AP50`, and
+- mean `[A(c,Vhard) - A(c,Vrand)] >= 0.50 AP50`.
+
+At least 2 corruptions must have `A(c,Vhard) > A(c,Vrand)` with a positive paired-bootstrap point estimate; report CIs rather than post-hoc significance rescue.
+
+### Gate 3 — mechanism localization
+At least one prespecified semantic-competition diagnostic must change in the expected direction under corrupted Vhard relative to corrupted Vrand/V0:
+- distractor FP/image increases disproportionately; or
+- canonical-vs-distractor margin shrinks disproportionately; or
+- canonical class recall falls more than class-agnostic localization recall.
+
+This gate is explanatory only and cannot rescue failed Gates 1–2.
+
+### Gate 4 — no protocol contamination
+All detector weights, vocabularies, thresholds, corruption settings, 1,000 image IDs and bootstrap rules were frozen before primary outcomes; no primary-label-based tuning occurred.
+
+**Decision rule:** Gates 1, 2 and 4 are mandatory. Gate 3 must provide at least one coherent detector-native mechanism diagnostic. If they pass, recommend a separate T014 causal/mechanism task before any new adaptation method. If they fail, reject the dual-shift interaction premise under this detector/audit and do not design a vocabulary-conditioned TTA method from it.
+
+---
+
+## Explicit prohibitions
+T013 is **benchmark/diagnosis only**. Do not:
+- import or reimplement T001–T012 fast-weight mechanisms;
+- perform test-time gradient updates;
+- train adapters/gates/prompts;
+- use captions/LLMs to prune vocabulary;
+- implement VocAda, ViTPrompt, FACTOR, PISA, or any competing adaptation method yet;
+- tune text/box thresholds separately per corruption or vocabulary;
+- select corruption types/images/distractors after reading primary outcomes;
+- claim novelty from literature absence alone.
+
+### Literature context to record in PLAN
+At minimum distinguish T013 from:
+- Test-time Vocabulary Adaptation for Language-driven Object Detection (ICIP 2025 / arXiv:2506.00333): vocabulary relevance adaptation;
+- ViTPrompt (CVPR 2026): training-free prompt refinement under OVD domain shift;
+- FACTOR (arXiv:2605.03294): counterfactual training-free OVOD-TTA under distribution shift;
+- PISA (arXiv:2608.14142): source-free feature adaptation for corrupted OVOD.
+
+The T013 claim is only a **real-detector interaction audit** between vocabulary composition and visual shift, not a claim that no prior work has ever considered both.
+
+---
+
+## Required handoff
+Update `coordination/CODEX_TO_CHATGPT.md` with:
+- exact pinned detector/code/checkpoint/data/corruption/vocabulary provenance;
+- preregistration commit before outcomes;
+- smoke validity results;
+- exact primary 1,000 image IDs/hash;
+- full 5 visual conditions × 3 vocabularies metrics;
+- per-corruption interaction table and 95% bootstrap CIs;
+- mechanism diagnostics;
+- local/A6000 CPU/CUDA tests and exact commands/environment;
+- explicit Gate 1–4 pass/fail;
+- recommendation: T014 mechanism follow-up or stop dual-shift premise.
+
+Do not autonomously implement T014.
+
+**Wait for Research Lead review after T013.**
