@@ -1,0 +1,1922 @@
+{
+  "task": "T013-OPS1",
+  "started_at": "2026-09-12T18:25:47.326465+00:00",
+  "finished_at": "2026-09-12T18:25:47.864690+00:00",
+  "status": "PASS",
+  "checks": {
+    "exact_single_writer_binding": true,
+    "all_closed_images_15_cells": true,
+    "no_unexpected_paths": true,
+    "at_most_next_image_inflight": true,
+    "opaque_samples_readable_hash_consistent": true,
+    "provenance_consistent": true,
+    "disk_safety": true,
+    "process_still_healthy": true
+  },
+  "run_id": "20260912-210355-tovd-native30-primary",
+  "release_id": "20260912-210306-tovd-native30-primary-freeze",
+  "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+  "process_start": {
+    "cache_target_processes": [
+      {
+        "pid": 721181,
+        "ppid": 721177,
+        "args": [
+          "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python",
+          "-u",
+          "-m",
+          "scripts.t013_native_run",
+          "--assets",
+          "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013",
+          "--output",
+          "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/cache",
+          "--freeze-commit",
+          "6fec32243985ccc808123d851abf5f3dea10af99"
+        ],
+        "cwd": "/home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze",
+        "exe": "/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/bin/python3.12",
+        "ancestor_pids": [
+          721177,
+          721175,
+          721174,
+          1
+        ]
+      }
+    ],
+    "proc_entries_unreadable": 0,
+    "tmux_alive": true,
+    "tmux_pane_pids": [
+      721175
+    ],
+    "tmux_error": ""
+  },
+  "process_end": {
+    "cache_target_processes": [
+      {
+        "pid": 721181,
+        "ppid": 721177,
+        "args": [
+          "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python",
+          "-u",
+          "-m",
+          "scripts.t013_native_run",
+          "--assets",
+          "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013",
+          "--output",
+          "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/cache",
+          "--freeze-commit",
+          "6fec32243985ccc808123d851abf5f3dea10af99"
+        ],
+        "cwd": "/home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze",
+        "exe": "/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/bin/python3.12",
+        "ancestor_pids": [
+          721177,
+          721175,
+          721174,
+          1
+        ]
+      }
+    ],
+    "proc_entries_unreadable": 0,
+    "tmux_alive": true,
+    "tmux_pane_pids": [
+      721175
+    ],
+    "tmux_error": ""
+  },
+  "progress_start": {
+    "progress": {
+      "completed_images": 188,
+      "total_images": 1000,
+      "seconds": 19282.101294426015
+    },
+    "exit_receipts": []
+  },
+  "progress_end": {
+    "progress": {
+      "completed_images": 188,
+      "total_images": 1000,
+      "seconds": 19282.101294426015
+    },
+    "exit_receipts": []
+  },
+  "structure": {
+    "closed_image_count": 188,
+    "checked_closed_images": 188,
+    "expected_cells_per_image": 15,
+    "observed_closed_cells": 2820,
+    "conditions": [
+      "clean",
+      "gaussian_noise",
+      "motion_blur",
+      "fog",
+      "jpeg_compression"
+    ],
+    "vocabularies": [
+      "V0",
+      "Vhard30",
+      "Vrand30"
+    ],
+    "bad_closed_images": [],
+    "inflight_images": [
+      {
+        "image_id": 105264,
+        "cell_count": 2
+      }
+    ],
+    "unexpected_paths": [],
+    "all_observed_cells": 2822,
+    "snapshot_rule": "closed prefix certified by start terminal completion receipt; next image may be in flight"
+  },
+  "sample": {
+    "rule": "first3 + nearest4 to (n-1)/2 completed position, ties lower position + latest3",
+    "zero_based_positions": [
+      0,
+      1,
+      2,
+      92,
+      93,
+      94,
+      95,
+      185,
+      186,
+      187
+    ],
+    "image_ids": [
+      1425,
+      1490,
+      1584,
+      51712,
+      53909,
+      54123,
+      54593,
+      104455,
+      104619,
+      104782
+    ],
+    "files": [
+      {
+        "path": "raw/clean/V0/000000001425.npz",
+        "size_bytes": 896300,
+        "allocated_bytes": 897024,
+        "mtime_ns": 1789218254603495035,
+        "image_id": 1425,
+        "sha256": "f929a1dab98e06a16abf64985da6215942646c28f003feec8c47399f512808e5",
+        "manifest_sha256": "f929a1dab98e06a16abf64985da6215942646c28f003feec8c47399f512808e5",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/Vhard30/000000001425.npz",
+        "size_bytes": 1176761,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789218260459472452,
+        "image_id": 1425,
+        "sha256": "75fc4c61ce3442ea23d50ae9d4d119d711226e6f9854e73ef2fdd0fb33897506",
+        "manifest_sha256": "75fc4c61ce3442ea23d50ae9d4d119d711226e6f9854e73ef2fdd0fb33897506",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/Vrand30/000000001425.npz",
+        "size_bytes": 1178835,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789218266359449929,
+        "image_id": 1425,
+        "sha256": "23af4765311cde144485ffff9c69b97dd174392f4d31655fd33296ed5ed0f0cf",
+        "manifest_sha256": "23af4765311cde144485ffff9c69b97dd174392f4d31655fd33296ed5ed0f0cf",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/V0/000000001425.npz",
+        "size_bytes": 895897,
+        "allocated_bytes": 897024,
+        "mtime_ns": 1789218306743301728,
+        "image_id": 1425,
+        "sha256": "db8c3582309d44bb5ed04c2c769c4dc0f1285eb13b564fbffdb7b1a32606cb18",
+        "manifest_sha256": "db8c3582309d44bb5ed04c2c769c4dc0f1285eb13b564fbffdb7b1a32606cb18",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/Vhard30/000000001425.npz",
+        "size_bytes": 1177631,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789218312884280074,
+        "image_id": 1425,
+        "sha256": "ef6e4103cefea9114aeb2d5e66865157e630278107a7eda2afc8c3005268331b",
+        "manifest_sha256": "ef6e4103cefea9114aeb2d5e66865157e630278107a7eda2afc8c3005268331b",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/Vrand30/000000001425.npz",
+        "size_bytes": 1182073,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789218319058258530,
+        "image_id": 1425,
+        "sha256": "b0028f4fd25d5a5629e55ec2d5dc9ee00156874ef73ceb851ed5d665112cdae6",
+        "manifest_sha256": "b0028f4fd25d5a5629e55ec2d5dc9ee00156874ef73ceb851ed5d665112cdae6",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/V0/000000001425.npz",
+        "size_bytes": 894939,
+        "allocated_bytes": 897024,
+        "mtime_ns": 1789218271708429705,
+        "image_id": 1425,
+        "sha256": "2c3e2059e0c8f19adbb0cfb29932214fa229af81197a55fbc2d8c1497b5e5aba",
+        "manifest_sha256": "2c3e2059e0c8f19adbb0cfb29932214fa229af81197a55fbc2d8c1497b5e5aba",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/Vhard30/000000001425.npz",
+        "size_bytes": 1177888,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789218277482408082,
+        "image_id": 1425,
+        "sha256": "cab56616d00562dab04b5fe1e0352431714a5b74032f13d56e1c800de9640a2c",
+        "manifest_sha256": "cab56616d00562dab04b5fe1e0352431714a5b74032f13d56e1c800de9640a2c",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/Vrand30/000000001425.npz",
+        "size_bytes": 1179139,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789218283233386756,
+        "image_id": 1425,
+        "sha256": "7d5a1caee83ba1d57d6180e2e481fe2de6b940bdbbf962dfd14c63234900ceea",
+        "manifest_sha256": "7d5a1caee83ba1d57d6180e2e481fe2de6b940bdbbf962dfd14c63234900ceea",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/V0/000000001425.npz",
+        "size_bytes": 895465,
+        "allocated_bytes": 897024,
+        "mtime_ns": 1789218324738238909,
+        "image_id": 1425,
+        "sha256": "5985b4c32f07398c8bcad76ab979227f2fdcc8094798187a6ba96d9d7529f980",
+        "manifest_sha256": "5985b4c32f07398c8bcad76ab979227f2fdcc8094798187a6ba96d9d7529f980",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/Vhard30/000000001425.npz",
+        "size_bytes": 1179068,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789218330908217807,
+        "image_id": 1425,
+        "sha256": "65870221f2d5ed62417cbc2cd032605bff8ff36af313091e945742a57c1b539f",
+        "manifest_sha256": "65870221f2d5ed62417cbc2cd032605bff8ff36af313091e945742a57c1b539f",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/Vrand30/000000001425.npz",
+        "size_bytes": 1180923,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789218337249196349,
+        "image_id": 1425,
+        "sha256": "ed35757b74ec4b33e896db5826b3e3c9a5ad0477233dd3b1e8f7d85c3b7681b0",
+        "manifest_sha256": "ed35757b74ec4b33e896db5826b3e3c9a5ad0477233dd3b1e8f7d85c3b7681b0",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/V0/000000001425.npz",
+        "size_bytes": 892510,
+        "allocated_bytes": 892928,
+        "mtime_ns": 1789218288770366422,
+        "image_id": 1425,
+        "sha256": "31cf8aa371dc5331509f04d26b17551f1b8f0d0d2524dc70e6aa00cd7194f825",
+        "manifest_sha256": "31cf8aa371dc5331509f04d26b17551f1b8f0d0d2524dc70e6aa00cd7194f825",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/Vhard30/000000001425.npz",
+        "size_bytes": 1174677,
+        "allocated_bytes": 1175552,
+        "mtime_ns": 1789218294751344673,
+        "image_id": 1425,
+        "sha256": "4e99b64b068a070746eadaee87448bb3c327635e2a5385b8106f985947ccadce",
+        "manifest_sha256": "4e99b64b068a070746eadaee87448bb3c327635e2a5385b8106f985947ccadce",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/Vrand30/000000001425.npz",
+        "size_bytes": 1179086,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789218300872322643,
+        "image_id": 1425,
+        "sha256": "64f2eabf3130fe3d7822ccbd95a6c23f960d4ed245c52bc274c1548a4dc9a44c",
+        "manifest_sha256": "64f2eabf3130fe3d7822ccbd95a6c23f960d4ed245c52bc274c1548a4dc9a44c",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/V0/000000001490.npz",
+        "size_bytes": 896484,
+        "allocated_bytes": 897024,
+        "mtime_ns": 1789218343539175290,
+        "image_id": 1490,
+        "sha256": "03b481dcc91d9b6186d593a55dd60a2ee5ca3e7f1ec6be741f2508f2a5b50531",
+        "manifest_sha256": "03b481dcc91d9b6186d593a55dd60a2ee5ca3e7f1ec6be741f2508f2a5b50531",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/Vhard30/000000001490.npz",
+        "size_bytes": 1180965,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789218350328152809,
+        "image_id": 1490,
+        "sha256": "7314b1e12e0288bfc87334674f4e8cc8da7355a43d0d0f752b9fa800bbe8fbf5",
+        "manifest_sha256": "7314b1e12e0288bfc87334674f4e8cc8da7355a43d0d0f752b9fa800bbe8fbf5",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/Vrand30/000000001490.npz",
+        "size_bytes": 1185934,
+        "allocated_bytes": 1187840,
+        "mtime_ns": 1789218357250130151,
+        "image_id": 1490,
+        "sha256": "1e281e40532be9bca470b7d31647eb524014db8396c1f45db75950e128505cdf",
+        "manifest_sha256": "1e281e40532be9bca470b7d31647eb524014db8396c1f45db75950e128505cdf",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/V0/000000001490.npz",
+        "size_bytes": 896053,
+        "allocated_bytes": 897024,
+        "mtime_ns": 1789218403252986057,
+        "image_id": 1490,
+        "sha256": "7af3e18aece935662a1dcb0cf5a4c173847fb0610fde705a11c83a660e10f92c",
+        "manifest_sha256": "7af3e18aece935662a1dcb0cf5a4c173847fb0610fde705a11c83a660e10f92c",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/Vhard30/000000001490.npz",
+        "size_bytes": 1179646,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789218409957965961,
+        "image_id": 1490,
+        "sha256": "1ce8f67000ac24485357478a85223095c4c63323e3177fad9eb37124dd0904dc",
+        "manifest_sha256": "1ce8f67000ac24485357478a85223095c4c63323e3177fad9eb37124dd0904dc",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/Vrand30/000000001490.npz",
+        "size_bytes": 1186769,
+        "allocated_bytes": 1187840,
+        "mtime_ns": 1789218416557946397,
+        "image_id": 1490,
+        "sha256": "9ad5532e2ddce631c5511a46772d24980c81317fec66faaf3d2313c767406e37",
+        "manifest_sha256": "9ad5532e2ddce631c5511a46772d24980c81317fec66faaf3d2313c767406e37",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/V0/000000001490.npz",
+        "size_bytes": 896041,
+        "allocated_bytes": 897024,
+        "mtime_ns": 1789218363743109135,
+        "image_id": 1490,
+        "sha256": "5891c3190a4929a10f7c7309396ca2fd77edd157fa6fddd27fd2be03b5e06f8b",
+        "manifest_sha256": "5891c3190a4929a10f7c7309396ca2fd77edd157fa6fddd27fd2be03b5e06f8b",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/Vhard30/000000001490.npz",
+        "size_bytes": 1179694,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789218370508087481,
+        "image_id": 1490,
+        "sha256": "43c5159ee7ea346a075d3e994d8a35a7b0fe9b11c7b5587ab993892b620974c4",
+        "manifest_sha256": "43c5159ee7ea346a075d3e994d8a35a7b0fe9b11c7b5587ab993892b620974c4",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/Vrand30/000000001490.npz",
+        "size_bytes": 1185895,
+        "allocated_bytes": 1187840,
+        "mtime_ns": 1789218377323065914,
+        "image_id": 1490,
+        "sha256": "e4ce227cbe7ce93970863938e71347319d6d7ec3e7e2767db5617698c75f32f1",
+        "manifest_sha256": "e4ce227cbe7ce93970863938e71347319d6d7ec3e7e2767db5617698c75f32f1",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/V0/000000001490.npz",
+        "size_bytes": 897831,
+        "allocated_bytes": 901120,
+        "mtime_ns": 1789218422709928352,
+        "image_id": 1490,
+        "sha256": "8b36039a5685dff287fe17992c491a1cfbd13b3830c0096936f1b318d98497a7",
+        "manifest_sha256": "8b36039a5685dff287fe17992c491a1cfbd13b3830c0096936f1b318d98497a7",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/Vhard30/000000001490.npz",
+        "size_bytes": 1181195,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789218429536908540,
+        "image_id": 1490,
+        "sha256": "4caf5b2e09e18389c3119159f2019e55f1cc634134b663fd5cc7f045751fa790",
+        "manifest_sha256": "4caf5b2e09e18389c3119159f2019e55f1cc634134b663fd5cc7f045751fa790",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/Vrand30/000000001490.npz",
+        "size_bytes": 1186112,
+        "allocated_bytes": 1187840,
+        "mtime_ns": 1789218436421888784,
+        "image_id": 1490,
+        "sha256": "ce617386982596ee4fd807c968acfef3aae3caedce39c3dc0c4551f89ba1a505",
+        "manifest_sha256": "ce617386982596ee4fd807c968acfef3aae3caedce39c3dc0c4551f89ba1a505",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/V0/000000001490.npz",
+        "size_bytes": 893548,
+        "allocated_bytes": 897024,
+        "mtime_ns": 1789218383550046421,
+        "image_id": 1490,
+        "sha256": "e6c495ad030cbf6390e3a9d613f0755db174b3d9da4786a65c7d42d85c2d6717",
+        "manifest_sha256": "e6c495ad030cbf6390e3a9d613f0755db174b3d9da4786a65c7d42d85c2d6717",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/Vhard30/000000001490.npz",
+        "size_bytes": 1178466,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789218390307025496,
+        "image_id": 1490,
+        "sha256": "8e51df7df262e49e2e4f89ffe37d9b2958c9f52fd85f26bdcb8997f10f1de4b0",
+        "manifest_sha256": "8e51df7df262e49e2e4f89ffe37d9b2958c9f52fd85f26bdcb8997f10f1de4b0",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/Vrand30/000000001490.npz",
+        "size_bytes": 1185967,
+        "allocated_bytes": 1187840,
+        "mtime_ns": 1789218397076004769,
+        "image_id": 1490,
+        "sha256": "0e664c4a9f2b4881853b9d118ae8ab1ff601ec181ee575bc3ef5252ee1bbae22",
+        "manifest_sha256": "0e664c4a9f2b4881853b9d118ae8ab1ff601ec181ee575bc3ef5252ee1bbae22",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/V0/000000001584.npz",
+        "size_bytes": 899833,
+        "allocated_bytes": 901120,
+        "mtime_ns": 1789218440675876688,
+        "image_id": 1584,
+        "sha256": "e5132dde569e357e9b71e44f0b9e213334e2a078096d2f2b7113b2b2cb4c0575",
+        "manifest_sha256": "e5132dde569e357e9b71e44f0b9e213334e2a078096d2f2b7113b2b2cb4c0575",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/Vhard30/000000001584.npz",
+        "size_bytes": 1182942,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789218445243863793,
+        "image_id": 1584,
+        "sha256": "d1baed9fb95ba77d068771f49ed16d11516c9b5cae7e2acdbeef78d8ec720f19",
+        "manifest_sha256": "d1baed9fb95ba77d068771f49ed16d11516c9b5cae7e2acdbeef78d8ec720f19",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/Vrand30/000000001584.npz",
+        "size_bytes": 1184226,
+        "allocated_bytes": 1187840,
+        "mtime_ns": 1789218449790851053,
+        "image_id": 1584,
+        "sha256": "16a2940e05e4cc03844cbf67f7a0f488b2cd34399ca2f88a705f71a317c92b07",
+        "manifest_sha256": "16a2940e05e4cc03844cbf67f7a0f488b2cd34399ca2f88a705f71a317c92b07",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/V0/000000001584.npz",
+        "size_bytes": 900440,
+        "allocated_bytes": 901120,
+        "mtime_ns": 1789218480587767205,
+        "image_id": 1584,
+        "sha256": "5516f147c0d70b8a70e5679fd31a5aa1203e3ff67cc6711e85cf15c10a48d6d3",
+        "manifest_sha256": "5516f147c0d70b8a70e5679fd31a5aa1203e3ff67cc6711e85cf15c10a48d6d3",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/Vhard30/000000001584.npz",
+        "size_bytes": 1184858,
+        "allocated_bytes": 1187840,
+        "mtime_ns": 1789218485122755208,
+        "image_id": 1584,
+        "sha256": "1f0a9021c3e646769da240d0d4a6f224bf9b99afdfb30d8bc01250df8961c3c7",
+        "manifest_sha256": "1f0a9021c3e646769da240d0d4a6f224bf9b99afdfb30d8bc01250df8961c3c7",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/Vrand30/000000001584.npz",
+        "size_bytes": 1184359,
+        "allocated_bytes": 1187840,
+        "mtime_ns": 1789218489666743275,
+        "image_id": 1584,
+        "sha256": "99ff0a6546c58c77160bf525dcc954be2c25a2c83fd064d4c70d46d2234e398e",
+        "manifest_sha256": "99ff0a6546c58c77160bf525dcc954be2c25a2c83fd064d4c70d46d2234e398e",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/V0/000000001584.npz",
+        "size_bytes": 899735,
+        "allocated_bytes": 901120,
+        "mtime_ns": 1789218454012839307,
+        "image_id": 1584,
+        "sha256": "0e79d0c85f6a1ca67373dc6069319dda60f76b24b3b3987bb5daac482cda4a00",
+        "manifest_sha256": "0e79d0c85f6a1ca67373dc6069319dda60f76b24b3b3987bb5daac482cda4a00",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/Vhard30/000000001584.npz",
+        "size_bytes": 1184849,
+        "allocated_bytes": 1187840,
+        "mtime_ns": 1789218458513826876,
+        "image_id": 1584,
+        "sha256": "0d0e98e9a14fbb4a91af0285957f7f7fb3f646a1b30fa1a719debb8f40dce868",
+        "manifest_sha256": "0d0e98e9a14fbb4a91af0285957f7f7fb3f646a1b30fa1a719debb8f40dce868",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/Vrand30/000000001584.npz",
+        "size_bytes": 1187074,
+        "allocated_bytes": 1187840,
+        "mtime_ns": 1789218463030814490,
+        "image_id": 1584,
+        "sha256": "ae5ff4ae56ea9ea55664a069b41bbc82706e93559ff1af1ebefa0a17186fa3c2",
+        "manifest_sha256": "ae5ff4ae56ea9ea55664a069b41bbc82706e93559ff1af1ebefa0a17186fa3c2",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/V0/000000001584.npz",
+        "size_bytes": 900445,
+        "allocated_bytes": 901120,
+        "mtime_ns": 1789218493871732310,
+        "image_id": 1584,
+        "sha256": "7f5b1893874fe37dfb65bc7bedaa746bbcbc4fa28894c69d09a4beacf8563a87",
+        "manifest_sha256": "7f5b1893874fe37dfb65bc7bedaa746bbcbc4fa28894c69d09a4beacf8563a87",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/Vhard30/000000001584.npz",
+        "size_bytes": 1184916,
+        "allocated_bytes": 1187840,
+        "mtime_ns": 1789218498398720589,
+        "image_id": 1584,
+        "sha256": "bc4f1effc6ec7bc1cfc2a92d3e59296a6635791d5dfd0782dd2f19759a0e07db",
+        "manifest_sha256": "bc4f1effc6ec7bc1cfc2a92d3e59296a6635791d5dfd0782dd2f19759a0e07db",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/Vrand30/000000001584.npz",
+        "size_bytes": 1187880,
+        "allocated_bytes": 1191936,
+        "mtime_ns": 1789218502917708972,
+        "image_id": 1584,
+        "sha256": "9acbf35cbcbbda1214c7fd4c59bbe39e48c79977978189a3a5fbef716d414efb",
+        "manifest_sha256": "9acbf35cbcbbda1214c7fd4c59bbe39e48c79977978189a3a5fbef716d414efb",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/V0/000000001584.npz",
+        "size_bytes": 899958,
+        "allocated_bytes": 901120,
+        "mtime_ns": 1789218467288802898,
+        "image_id": 1584,
+        "sha256": "ecbf1cedbf61d4cd433a697899ca09b1022c1efb73ad558c4c60b19a002b8e6c",
+        "manifest_sha256": "ecbf1cedbf61d4cd433a697899ca09b1022c1efb73ad558c4c60b19a002b8e6c",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/Vhard30/000000001584.npz",
+        "size_bytes": 1184423,
+        "allocated_bytes": 1187840,
+        "mtime_ns": 1789218471812790670,
+        "image_id": 1584,
+        "sha256": "54ce95a4592c0898e345125661744730f0ad7414e19789216e71a627edebc999",
+        "manifest_sha256": "54ce95a4592c0898e345125661744730f0ad7414e19789216e71a627edebc999",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/Vrand30/000000001584.npz",
+        "size_bytes": 1186694,
+        "allocated_bytes": 1187840,
+        "mtime_ns": 1789218476344778509,
+        "image_id": 1584,
+        "sha256": "97f1aed17ba7bf948ef814b5b44a4290995f3e7a5930ae26d9688d8d757c377b",
+        "manifest_sha256": "97f1aed17ba7bf948ef814b5b44a4290995f3e7a5930ae26d9688d8d757c377b",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/V0/000000051712.npz",
+        "size_bytes": 897812,
+        "allocated_bytes": 901120,
+        "mtime_ns": 1789227617970393617,
+        "image_id": 51712,
+        "sha256": "cbafe9d287827087a560b6e008f2a2f6a242a88da05c4230fe59b0a0b2670c68",
+        "manifest_sha256": "cbafe9d287827087a560b6e008f2a2f6a242a88da05c4230fe59b0a0b2670c68",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/Vhard30/000000051712.npz",
+        "size_bytes": 1182098,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789227626150419801,
+        "image_id": 51712,
+        "sha256": "4faf666a19394375cb5f3491a40e9089c8a3b9abec0473d18a22c611caa7b82f",
+        "manifest_sha256": "4faf666a19394375cb5f3491a40e9089c8a3b9abec0473d18a22c611caa7b82f",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/Vrand30/000000051712.npz",
+        "size_bytes": 1185035,
+        "allocated_bytes": 1187840,
+        "mtime_ns": 1789227634348446045,
+        "image_id": 51712,
+        "sha256": "d34cb0fcebcb82730a138826db1abec057d863ce3a45e8176ec946f0001539d4",
+        "manifest_sha256": "d34cb0fcebcb82730a138826db1abec057d863ce3a45e8176ec946f0001539d4",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/V0/000000051712.npz",
+        "size_bytes": 898216,
+        "allocated_bytes": 901120,
+        "mtime_ns": 1789227689255621872,
+        "image_id": 51712,
+        "sha256": "c2df2bc0741ab2658a99300ac530c6eb25e8d2cf68ffa3c53c6f2f131ecde0a6",
+        "manifest_sha256": "c2df2bc0741ab2658a99300ac530c6eb25e8d2cf68ffa3c53c6f2f131ecde0a6",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/Vhard30/000000051712.npz",
+        "size_bytes": 1182200,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789227697390647930,
+        "image_id": 51712,
+        "sha256": "ff363e1b6a5a27f9a208095a120cf0dcc3b7b2d1232edfcd1e4b36bf6c4db62f",
+        "manifest_sha256": "ff363e1b6a5a27f9a208095a120cf0dcc3b7b2d1232edfcd1e4b36bf6c4db62f",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/Vrand30/000000051712.npz",
+        "size_bytes": 1182577,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789227705496673897,
+        "image_id": 51712,
+        "sha256": "be91c7def0ff099c52d947fc9c9d4aae8a6e13b830e45fbc72d01cf888f5506c",
+        "manifest_sha256": "be91c7def0ff099c52d947fc9c9d4aae8a6e13b830e45fbc72d01cf888f5506c",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/V0/000000051712.npz",
+        "size_bytes": 898496,
+        "allocated_bytes": 901120,
+        "mtime_ns": 1789227641910470255,
+        "image_id": 51712,
+        "sha256": "32a11a15ebb89c62abac8d005ec081e471ebcee1451977242402ea7d04056d48",
+        "manifest_sha256": "32a11a15ebb89c62abac8d005ec081e471ebcee1451977242402ea7d04056d48",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/Vhard30/000000051712.npz",
+        "size_bytes": 1181853,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789227649990496125,
+        "image_id": 51712,
+        "sha256": "8a617b437819d5f7c5a5884a356bfb75c138cfd77ab9274f9cd3168ea277ab0b",
+        "manifest_sha256": "8a617b437819d5f7c5a5884a356bfb75c138cfd77ab9274f9cd3168ea277ab0b",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/Vrand30/000000051712.npz",
+        "size_bytes": 1186002,
+        "allocated_bytes": 1187840,
+        "mtime_ns": 1789227658007521796,
+        "image_id": 51712,
+        "sha256": "bde104d8ebc21dfdabf709f339963de6278c3a27a2f964f510a6e5de8f47d7f6",
+        "manifest_sha256": "bde104d8ebc21dfdabf709f339963de6278c3a27a2f964f510a6e5de8f47d7f6",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/V0/000000051712.npz",
+        "size_bytes": 898885,
+        "allocated_bytes": 901120,
+        "mtime_ns": 1789227713057698120,
+        "image_id": 51712,
+        "sha256": "841def073d275b877609f97a0bb0708ab6303e47e601b5dda1890571d8ddff5d",
+        "manifest_sha256": "841def073d275b877609f97a0bb0708ab6303e47e601b5dda1890571d8ddff5d",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/Vhard30/000000051712.npz",
+        "size_bytes": 1183030,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789227721198724203,
+        "image_id": 51712,
+        "sha256": "6fda69586d116835bf16527a0e889f25603c439be92ba5ea0884e34d117ac8e5",
+        "manifest_sha256": "6fda69586d116835bf16527a0e889f25603c439be92ba5ea0884e34d117ac8e5",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/Vrand30/000000051712.npz",
+        "size_bytes": 1186546,
+        "allocated_bytes": 1187840,
+        "mtime_ns": 1789227729347750314,
+        "image_id": 51712,
+        "sha256": "af218f9c3e0500af84fd7378077478c4f625191d316e12cc61e1f3e72375e4d8",
+        "manifest_sha256": "af218f9c3e0500af84fd7378077478c4f625191d316e12cc61e1f3e72375e4d8",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/V0/000000051712.npz",
+        "size_bytes": 897839,
+        "allocated_bytes": 901120,
+        "mtime_ns": 1789227665549545947,
+        "image_id": 51712,
+        "sha256": "fc3917783005d31a2479f74ccffe3b8776dfc816411dd71c3d10a39e867d6da8",
+        "manifest_sha256": "fc3917783005d31a2479f74ccffe3b8776dfc816411dd71c3d10a39e867d6da8",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/Vhard30/000000051712.npz",
+        "size_bytes": 1180260,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789227673632571833,
+        "image_id": 51712,
+        "sha256": "510afa4edab5a15cca4681f68479c24f968678d1c8974784117190ba82e6df40",
+        "manifest_sha256": "510afa4edab5a15cca4681f68479c24f968678d1c8974784117190ba82e6df40",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/Vrand30/000000051712.npz",
+        "size_bytes": 1178827,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789227681692597647,
+        "image_id": 51712,
+        "sha256": "0e9e3dd2047538e5920ddc992c5a9604977f5587342dc5c4bfc453628c7370b5",
+        "manifest_sha256": "0e9e3dd2047538e5920ddc992c5a9604977f5587342dc5c4bfc453628c7370b5",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/V0/000000053909.npz",
+        "size_bytes": 894585,
+        "allocated_bytes": 897024,
+        "mtime_ns": 1789227735578770280,
+        "image_id": 53909,
+        "sha256": "c439166770f1a21bd5e5523441f5f2915af9427a4b823614587bf5f53d470345",
+        "manifest_sha256": "c439166770f1a21bd5e5523441f5f2915af9427a4b823614587bf5f53d470345",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/Vhard30/000000053909.npz",
+        "size_bytes": 1177610,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789227742113791221,
+        "image_id": 53909,
+        "sha256": "22f5a9aef672d9b7db1261d988aca3d117e6c06ff94f7a68adc01f42ba2b62b2",
+        "manifest_sha256": "22f5a9aef672d9b7db1261d988aca3d117e6c06ff94f7a68adc01f42ba2b62b2",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/Vrand30/000000053909.npz",
+        "size_bytes": 1181157,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789227748708812356,
+        "image_id": 53909,
+        "sha256": "ce162d4329533d0305f8ffdc8b0122a3373a627a1b62df46862d2904497baab1",
+        "manifest_sha256": "ce162d4329533d0305f8ffdc8b0122a3373a627a1b62df46862d2904497baab1",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/V0/000000053909.npz",
+        "size_bytes": 892905,
+        "allocated_bytes": 892928,
+        "mtime_ns": 1789227793625956330,
+        "image_id": 53909,
+        "sha256": "c4a68cd82073488f413eae830e9862627ea36bbfee1c77c825f8deb54e66d68c",
+        "manifest_sha256": "c4a68cd82073488f413eae830e9862627ea36bbfee1c77c825f8deb54e66d68c",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/Vhard30/000000053909.npz",
+        "size_bytes": 1174208,
+        "allocated_bytes": 1175552,
+        "mtime_ns": 1789227800128977178,
+        "image_id": 53909,
+        "sha256": "9bee6a133c67dbc379af99d1c352190fe3ac4cc4416b342a856c68c0a550c813",
+        "manifest_sha256": "9bee6a133c67dbc379af99d1c352190fe3ac4cc4416b342a856c68c0a550c813",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/Vrand30/000000053909.npz",
+        "size_bytes": 1176202,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789227806659998117,
+        "image_id": 53909,
+        "sha256": "e17899d8f3cd3da05b051cc41cba27d3ad14d28470b8a77c1decc41c49cbfcea",
+        "manifest_sha256": "e17899d8f3cd3da05b051cc41cba27d3ad14d28470b8a77c1decc41c49cbfcea",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/V0/000000053909.npz",
+        "size_bytes": 892283,
+        "allocated_bytes": 892928,
+        "mtime_ns": 1789227754938832322,
+        "image_id": 53909,
+        "sha256": "8908b656c551b7f296acc3178728a5684bfaa76757f9a42224df979e7dca0c8c",
+        "manifest_sha256": "8908b656c551b7f296acc3178728a5684bfaa76757f9a42224df979e7dca0c8c",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/Vhard30/000000053909.npz",
+        "size_bytes": 1172796,
+        "allocated_bytes": 1175552,
+        "mtime_ns": 1789227761542853488,
+        "image_id": 53909,
+        "sha256": "e84c4d922b6d4c8e1205e21d38de48549b42f78fd63694d5172ebc35a68f66a3",
+        "manifest_sha256": "e84c4d922b6d4c8e1205e21d38de48549b42f78fd63694d5172ebc35a68f66a3",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/Vrand30/000000053909.npz",
+        "size_bytes": 1174893,
+        "allocated_bytes": 1175552,
+        "mtime_ns": 1789227768172874738,
+        "image_id": 53909,
+        "sha256": "f165b30851e7a0ec10a323d0a011132eb9965e401f8455524f3f5593c05e8788",
+        "manifest_sha256": "f165b30851e7a0ec10a323d0a011132eb9965e401f8455524f3f5593c05e8788",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/V0/000000053909.npz",
+        "size_bytes": 894832,
+        "allocated_bytes": 897024,
+        "mtime_ns": 1789227812814017849,
+        "image_id": 53909,
+        "sha256": "4fadc9df5b1c602769b006a82a3412a405bc2af3ae29d0720c1adf729bf704bf",
+        "manifest_sha256": "4fadc9df5b1c602769b006a82a3412a405bc2af3ae29d0720c1adf729bf704bf",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/Vhard30/000000053909.npz",
+        "size_bytes": 1178068,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789227819341038777,
+        "image_id": 53909,
+        "sha256": "77f192a02e3a48305fa0f3d7ca230419051b8377bf8f84e9e0944a3a2d00d396",
+        "manifest_sha256": "77f192a02e3a48305fa0f3d7ca230419051b8377bf8f84e9e0944a3a2d00d396",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/Vrand30/000000053909.npz",
+        "size_bytes": 1183401,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789227825874059725,
+        "image_id": 53909,
+        "sha256": "b04db01d75ec39827cebb32ad9a0484204504be54b8cc49907fada28cc213739",
+        "manifest_sha256": "b04db01d75ec39827cebb32ad9a0484204504be54b8cc49907fada28cc213739",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/V0/000000053909.npz",
+        "size_bytes": 892743,
+        "allocated_bytes": 892928,
+        "mtime_ns": 1789227774404894714,
+        "image_id": 53909,
+        "sha256": "6649e7cfaa4eed0a7910b551473d0c65826fb94942b58425f982a719f04ec741",
+        "manifest_sha256": "6649e7cfaa4eed0a7910b551473d0c65826fb94942b58425f982a719f04ec741",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/Vhard30/000000053909.npz",
+        "size_bytes": 1170190,
+        "allocated_bytes": 1171456,
+        "mtime_ns": 1789227780967915751,
+        "image_id": 53909,
+        "sha256": "cdf27bbb2723e2f24aa984401c731d0e99f0cec4bb2a69b556038bbb4ec112e8",
+        "manifest_sha256": "cdf27bbb2723e2f24aa984401c731d0e99f0cec4bb2a69b556038bbb4ec112e8",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/Vrand30/000000053909.npz",
+        "size_bytes": 1174781,
+        "allocated_bytes": 1175552,
+        "mtime_ns": 1789227787467936588,
+        "image_id": 53909,
+        "sha256": "98186faf1c1dcff67accdaf2a8c39f5db3a0fb28ae3018784e6a1997a6ca707e",
+        "manifest_sha256": "98186faf1c1dcff67accdaf2a8c39f5db3a0fb28ae3018784e6a1997a6ca707e",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/V0/000000054123.npz",
+        "size_bytes": 895550,
+        "allocated_bytes": 897024,
+        "mtime_ns": 1789227832905082272,
+        "image_id": 54123,
+        "sha256": "dcf0b40408af899aefc8a3847c60f5fdd446b6a9242fdd05bc810256a58277fb",
+        "manifest_sha256": "dcf0b40408af899aefc8a3847c60f5fdd446b6a9242fdd05bc810256a58277fb",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/Vhard30/000000054123.npz",
+        "size_bytes": 1181233,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789227840447106458,
+        "image_id": 54123,
+        "sha256": "635cf9b81879471cd8f5e7e747a1d814c3d7a8966c20deee2e88cc074dbc8606",
+        "manifest_sha256": "635cf9b81879471cd8f5e7e747a1d814c3d7a8966c20deee2e88cc074dbc8606",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/Vrand30/000000054123.npz",
+        "size_bytes": 1186106,
+        "allocated_bytes": 1187840,
+        "mtime_ns": 1789227847930130456,
+        "image_id": 54123,
+        "sha256": "0965845c962b9485bad692af91cd93a51c58f4960dcaa13b94e582e18d4bd2c1",
+        "manifest_sha256": "0965845c962b9485bad692af91cd93a51c58f4960dcaa13b94e582e18d4bd2c1",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/V0/000000054123.npz",
+        "size_bytes": 895719,
+        "allocated_bytes": 897024,
+        "mtime_ns": 1789227898607293010,
+        "image_id": 54123,
+        "sha256": "494dd0c4ffd6eb5e500c834a21c6ca77e11be647dad97209c278e8bc51e6c017",
+        "manifest_sha256": "494dd0c4ffd6eb5e500c834a21c6ca77e11be647dad97209c278e8bc51e6c017",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/Vhard30/000000054123.npz",
+        "size_bytes": 1180853,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789227906048316882,
+        "image_id": 54123,
+        "sha256": "53a8213930708bac13a55db6df52e746d2bc1f085abf2dd43539925f0be40a83",
+        "manifest_sha256": "53a8213930708bac13a55db6df52e746d2bc1f085abf2dd43539925f0be40a83",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/Vrand30/000000054123.npz",
+        "size_bytes": 1185645,
+        "allocated_bytes": 1187840,
+        "mtime_ns": 1789227913537340910,
+        "image_id": 54123,
+        "sha256": "73c74c6d91d6471e3264a8bf3dce7f6a0ebd3bfafdca2514cfabccec0488b8a1",
+        "manifest_sha256": "73c74c6d91d6471e3264a8bf3dce7f6a0ebd3bfafdca2514cfabccec0488b8a1",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/V0/000000054123.npz",
+        "size_bytes": 894601,
+        "allocated_bytes": 897024,
+        "mtime_ns": 1789227854912152849,
+        "image_id": 54123,
+        "sha256": "056b947be6eca2738ddb0991cdfad3bdc4ebdc4d3610d98c3feb56cee7fe008a",
+        "manifest_sha256": "056b947be6eca2738ddb0991cdfad3bdc4ebdc4d3610d98c3feb56cee7fe008a",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/Vhard30/000000054123.npz",
+        "size_bytes": 1179792,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789227862359176734,
+        "image_id": 54123,
+        "sha256": "e34b541744118b4cb5a674b139c7f6702b96e2af9e73cffbb3bb3e7234fb82cc",
+        "manifest_sha256": "e34b541744118b4cb5a674b139c7f6702b96e2af9e73cffbb3bb3e7234fb82cc",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/Vrand30/000000054123.npz",
+        "size_bytes": 1183973,
+        "allocated_bytes": 1187840,
+        "mtime_ns": 1789227869799200597,
+        "image_id": 54123,
+        "sha256": "9a032abe1b8af292df742311f928326dbd7d5ac4ceb0f2b517eb5cf183f490d9",
+        "manifest_sha256": "9a032abe1b8af292df742311f928326dbd7d5ac4ceb0f2b517eb5cf183f490d9",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/V0/000000054123.npz",
+        "size_bytes": 897164,
+        "allocated_bytes": 901120,
+        "mtime_ns": 1789227920514363295,
+        "image_id": 54123,
+        "sha256": "8382e4c78d4b6e8c01e01b686e0cce8156a41899fe5eed4fd50949a4a4505da6",
+        "manifest_sha256": "8382e4c78d4b6e8c01e01b686e0cce8156a41899fe5eed4fd50949a4a4505da6",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/Vhard30/000000054123.npz",
+        "size_bytes": 1179910,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789227927976387238,
+        "image_id": 54123,
+        "sha256": "b18c57830e907d4ff6f5426a9e91693a20700e2a1b7f0bb55d06edfc632ce75b",
+        "manifest_sha256": "b18c57830e907d4ff6f5426a9e91693a20700e2a1b7f0bb55d06edfc632ce75b",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/Vrand30/000000054123.npz",
+        "size_bytes": 1185789,
+        "allocated_bytes": 1187840,
+        "mtime_ns": 1789227935565411590,
+        "image_id": 54123,
+        "sha256": "ebbfd22ec38f80347aef4de619a536b7791852d4641785979c16dbe19e9d8adc",
+        "manifest_sha256": "ebbfd22ec38f80347aef4de619a536b7791852d4641785979c16dbe19e9d8adc",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/V0/000000054123.npz",
+        "size_bytes": 894931,
+        "allocated_bytes": 897024,
+        "mtime_ns": 1789227876699222730,
+        "image_id": 54123,
+        "sha256": "2e09d1573c4098cf66d18e5e34b2c59896ecc6c433cd9b5f5e20a53b0fab731e",
+        "manifest_sha256": "2e09d1573c4098cf66d18e5e34b2c59896ecc6c433cd9b5f5e20a53b0fab731e",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/Vhard30/000000054123.npz",
+        "size_bytes": 1180717,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789227884155246648,
+        "image_id": 54123,
+        "sha256": "6d8078c25d6c24331777a3b4dfc20db8410b89731ef9aa6fb2cbbd2cb2e564ad",
+        "manifest_sha256": "6d8078c25d6c24331777a3b4dfc20db8410b89731ef9aa6fb2cbbd2cb2e564ad",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/Vrand30/000000054123.npz",
+        "size_bytes": 1185438,
+        "allocated_bytes": 1187840,
+        "mtime_ns": 1789227891606270550,
+        "image_id": 54123,
+        "sha256": "26f8bf3267db1a6158028dfa1c5d3f3e5f6284a529cca5f1cebd6026daf9cba4",
+        "manifest_sha256": "26f8bf3267db1a6158028dfa1c5d3f3e5f6284a529cca5f1cebd6026daf9cba4",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/V0/000000054593.npz",
+        "size_bytes": 897053,
+        "allocated_bytes": 901120,
+        "mtime_ns": 1789227942553434014,
+        "image_id": 54593,
+        "sha256": "6c1ef1f0d9b6611ecff399df97ed354371aa7dd0fb6a57381c10ddc44131075e",
+        "manifest_sha256": "6c1ef1f0d9b6611ecff399df97ed354371aa7dd0fb6a57381c10ddc44131075e",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/Vhard30/000000054593.npz",
+        "size_bytes": 1178593,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789227949954457764,
+        "image_id": 54593,
+        "sha256": "e83775393f9d515737c70b1c83894f15e3c46627098ef1a2eb62494dc71cfea2",
+        "manifest_sha256": "e83775393f9d515737c70b1c83894f15e3c46627098ef1a2eb62494dc71cfea2",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/Vrand30/000000054593.npz",
+        "size_bytes": 1175518,
+        "allocated_bytes": 1175552,
+        "mtime_ns": 1789227957409481688,
+        "image_id": 54593,
+        "sha256": "0cceeb8b37761fc230c2b8270b72c96ee53c1d5d55eb81d7ae5e03319e200546",
+        "manifest_sha256": "0cceeb8b37761fc230c2b8270b72c96ee53c1d5d55eb81d7ae5e03319e200546",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/V0/000000054593.npz",
+        "size_bytes": 895534,
+        "allocated_bytes": 897024,
+        "mtime_ns": 1789228008558645860,
+        "image_id": 54593,
+        "sha256": "8334677b6a4a9c992a96204ca03755bd156a2220175430eb0450877e00db2f35",
+        "manifest_sha256": "8334677b6a4a9c992a96204ca03755bd156a2220175430eb0450877e00db2f35",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/Vhard30/000000054593.npz",
+        "size_bytes": 1177441,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789228016062669949,
+        "image_id": 54593,
+        "sha256": "3771a7018a21e588318cb235581232618c9fcbc314d737b6da19815a1756a811",
+        "manifest_sha256": "3771a7018a21e588318cb235581232618c9fcbc314d737b6da19815a1756a811",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/Vrand30/000000054593.npz",
+        "size_bytes": 1174994,
+        "allocated_bytes": 1175552,
+        "mtime_ns": 1789228023602694154,
+        "image_id": 54593,
+        "sha256": "5665624e936696bf8d5769663ca9946afee3eed0810292f65f01229aee13d998",
+        "manifest_sha256": "5665624e936696bf8d5769663ca9946afee3eed0810292f65f01229aee13d998",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/V0/000000054593.npz",
+        "size_bytes": 894700,
+        "allocated_bytes": 897024,
+        "mtime_ns": 1789227964488504407,
+        "image_id": 54593,
+        "sha256": "fe094d5c1679edee2880aab39cec93d6a51ff971e094f4473f7f36637bb33033",
+        "manifest_sha256": "fe094d5c1679edee2880aab39cec93d6a51ff971e094f4473f7f36637bb33033",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/Vhard30/000000054593.npz",
+        "size_bytes": 1176836,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789227971936528311,
+        "image_id": 54593,
+        "sha256": "dbf5b783176bea2668d692b768d445e6f386a30edfaa6c7aa2ca515ac6d134b4",
+        "manifest_sha256": "dbf5b783176bea2668d692b768d445e6f386a30edfaa6c7aa2ca515ac6d134b4",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/Vrand30/000000054593.npz",
+        "size_bytes": 1179626,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789227979387552225,
+        "image_id": 54593,
+        "sha256": "59bc8d92474dbc209996b3359cfeebb74a88db7df390a76a934503392a83b2cc",
+        "manifest_sha256": "59bc8d92474dbc209996b3359cfeebb74a88db7df390a76a934503392a83b2cc",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/V0/000000054593.npz",
+        "size_bytes": 895074,
+        "allocated_bytes": 897024,
+        "mtime_ns": 1789228030665716829,
+        "image_id": 54593,
+        "sha256": "e1b4dd3633de62744f6d3dd20e9b5913592801d456587f9752f55299d691c501",
+        "manifest_sha256": "e1b4dd3633de62744f6d3dd20e9b5913592801d456587f9752f55299d691c501",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/Vhard30/000000054593.npz",
+        "size_bytes": 1177760,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789228038194741001,
+        "image_id": 54593,
+        "sha256": "d35624d8b16512f9fb2263073ae0c02e150ecb61004a8e188147285d6d1aa75f",
+        "manifest_sha256": "d35624d8b16512f9fb2263073ae0c02e150ecb61004a8e188147285d6d1aa75f",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/Vrand30/000000054593.npz",
+        "size_bytes": 1179206,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789228045702765106,
+        "image_id": 54593,
+        "sha256": "93c49653ddc5e83fe09905e3639920428affab9740c7c152e596f017fb56c7ac",
+        "manifest_sha256": "93c49653ddc5e83fe09905e3639920428affab9740c7c152e596f017fb56c7ac",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/V0/000000054593.npz",
+        "size_bytes": 897443,
+        "allocated_bytes": 901120,
+        "mtime_ns": 1789227986426574818,
+        "image_id": 54593,
+        "sha256": "52ad43be10d7dfe196c2ab7fcdf7a14ea7c720e22bb1138ad82f666d9149c0b1",
+        "manifest_sha256": "52ad43be10d7dfe196c2ab7fcdf7a14ea7c720e22bb1138ad82f666d9149c0b1",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/Vhard30/000000054593.npz",
+        "size_bytes": 1178315,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789227993940598936,
+        "image_id": 54593,
+        "sha256": "c70a10460ccb674acda859fdcf1602d40f79d57a26579af3ba27f5d825e73702",
+        "manifest_sha256": "c70a10460ccb674acda859fdcf1602d40f79d57a26579af3ba27f5d825e73702",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/Vrand30/000000054593.npz",
+        "size_bytes": 1173175,
+        "allocated_bytes": 1175552,
+        "mtime_ns": 1789228001505623220,
+        "image_id": 54593,
+        "sha256": "88ac78d296d1abcacaf5092d3acc0d801226fb8c04fe2bbf50381c312da0d0f4",
+        "manifest_sha256": "88ac78d296d1abcacaf5092d3acc0d801226fb8c04fe2bbf50381c312da0d0f4",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/V0/000000104455.npz",
+        "size_bytes": 897156,
+        "allocated_bytes": 901120,
+        "mtime_ns": 1789237238933402359,
+        "image_id": 104455,
+        "sha256": "a8cb424290eca2ae9f0e5f7936556e4818a8df2c76943ecd7e69afa368e5dfc8",
+        "manifest_sha256": "a8cb424290eca2ae9f0e5f7936556e4818a8df2c76943ecd7e69afa368e5dfc8",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/Vhard30/000000104455.npz",
+        "size_bytes": 1181191,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789237245633418883,
+        "image_id": 104455,
+        "sha256": "00fe0c6fa627891b50415426505faf7b5e43fcf452ce7aee6613480a1e99943d",
+        "manifest_sha256": "00fe0c6fa627891b50415426505faf7b5e43fcf452ce7aee6613480a1e99943d",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/Vrand30/000000104455.npz",
+        "size_bytes": 1182258,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789237252330435372,
+        "image_id": 104455,
+        "sha256": "87cb1f1d10446a6096b978137918822f82edc66f938932cf82c9e8f8fb9066ad",
+        "manifest_sha256": "87cb1f1d10446a6096b978137918822f82edc66f938932cf82c9e8f8fb9066ad",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/V0/000000104455.npz",
+        "size_bytes": 897212,
+        "allocated_bytes": 901120,
+        "mtime_ns": 1789237298226547689,
+        "image_id": 104455,
+        "sha256": "e1b8cf783d581821f832a792022b7aae521262c3605b2782ac9c4364765d5615",
+        "manifest_sha256": "e1b8cf783d581821f832a792022b7aae521262c3605b2782ac9c4364765d5615",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/Vhard30/000000104455.npz",
+        "size_bytes": 1178783,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789237304944564033,
+        "image_id": 104455,
+        "sha256": "b0615e589c5d2ad44c5bf3a8433dda78570245b84b65ab5b900747624f204ed8",
+        "manifest_sha256": "b0615e589c5d2ad44c5bf3a8433dda78570245b84b65ab5b900747624f204ed8",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/Vrand30/000000104455.npz",
+        "size_bytes": 1178653,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789237311668580367,
+        "image_id": 104455,
+        "sha256": "e2c7b8f024dbbbd0f64c4e3a5bb05b40cb464d9148905af8df38077cca1334f1",
+        "manifest_sha256": "e2c7b8f024dbbbd0f64c4e3a5bb05b40cb464d9148905af8df38077cca1334f1",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/V0/000000104455.npz",
+        "size_bytes": 896545,
+        "allocated_bytes": 897024,
+        "mtime_ns": 1789237258665450946,
+        "image_id": 104455,
+        "sha256": "221e6e05215518e108d6b043a840085783716b64fcfd366a7d2a7184021d04f8",
+        "manifest_sha256": "221e6e05215518e108d6b043a840085783716b64fcfd366a7d2a7184021d04f8",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/Vhard30/000000104455.npz",
+        "size_bytes": 1181073,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789237265370467404,
+        "image_id": 104455,
+        "sha256": "72c108a31532424460616b6b826abca715b055f563ac71d465bedaa4bc226382",
+        "manifest_sha256": "72c108a31532424460616b6b826abca715b055f563ac71d465bedaa4bc226382",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/Vrand30/000000104455.npz",
+        "size_bytes": 1183258,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789237272081483851,
+        "image_id": 104455,
+        "sha256": "03d9591dadb2dcc40af31b2f7de38080e968c506bb13a081ee3fbca549078e6e",
+        "manifest_sha256": "03d9591dadb2dcc40af31b2f7de38080e968c506bb13a081ee3fbca549078e6e",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/V0/000000104455.npz",
+        "size_bytes": 897754,
+        "allocated_bytes": 901120,
+        "mtime_ns": 1789237318034595810,
+        "image_id": 104455,
+        "sha256": "7b9ec5fc34ab0e4c42e93242478c2b8fead176f7e88b4cfc775c12a8bd7be882",
+        "manifest_sha256": "7b9ec5fc34ab0e4c42e93242478c2b8fead176f7e88b4cfc775c12a8bd7be882",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/Vhard30/000000104455.npz",
+        "size_bytes": 1181738,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789237324856612337,
+        "image_id": 104455,
+        "sha256": "141a19eed4d6466b3029dfe33b2af5be47dfd7e89cdce8057ed94c56a6859667",
+        "manifest_sha256": "141a19eed4d6466b3029dfe33b2af5be47dfd7e89cdce8057ed94c56a6859667",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/Vrand30/000000104455.npz",
+        "size_bytes": 1184488,
+        "allocated_bytes": 1187840,
+        "mtime_ns": 1789237331642628752,
+        "image_id": 104455,
+        "sha256": "44cbcbed81e0fb64f7dc2d14f5ae61119513e6144c0677875ccb442b045e48a3",
+        "manifest_sha256": "44cbcbed81e0fb64f7dc2d14f5ae61119513e6144c0677875ccb442b045e48a3",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/V0/000000104455.npz",
+        "size_bytes": 896519,
+        "allocated_bytes": 897024,
+        "mtime_ns": 1789237278439499410,
+        "image_id": 104455,
+        "sha256": "d383e9ff48fe73a5dfd84cd8704c7dad8df060cbe28ed7fe086c3435d5639cc4",
+        "manifest_sha256": "d383e9ff48fe73a5dfd84cd8704c7dad8df060cbe28ed7fe086c3435d5639cc4",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/Vhard30/000000104455.npz",
+        "size_bytes": 1177168,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789237285145515796,
+        "image_id": 104455,
+        "sha256": "0e742be6cfb41736d7028ef289647ee441c6a39193ca13a15ca22a5807004083",
+        "manifest_sha256": "0e742be6cfb41736d7028ef289647ee441c6a39193ca13a15ca22a5807004083",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/Vrand30/000000104455.npz",
+        "size_bytes": 1176191,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789237291859532177,
+        "image_id": 104455,
+        "sha256": "67bcf7e24ebcea62bc3990e12962282911ffb4802adf603db7c3cb7bf1543d50",
+        "manifest_sha256": "67bcf7e24ebcea62bc3990e12962282911ffb4802adf603db7c3cb7bf1543d50",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/V0/000000104619.npz",
+        "size_bytes": 896026,
+        "allocated_bytes": 897024,
+        "mtime_ns": 1789237338004644121,
+        "image_id": 104619,
+        "sha256": "7a01f71f9e204c4903d08642a020bf2cf4e5124813c03dc442552a438e7b8156",
+        "manifest_sha256": "7a01f71f9e204c4903d08642a020bf2cf4e5124813c03dc442552a438e7b8156",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/Vhard30/000000104619.npz",
+        "size_bytes": 1180780,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789237344806660531,
+        "image_id": 104619,
+        "sha256": "c050e94005a9619902092e29cd25435963072035b257548f4185d456949ca33c",
+        "manifest_sha256": "c050e94005a9619902092e29cd25435963072035b257548f4185d456949ca33c",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/Vrand30/000000104619.npz",
+        "size_bytes": 1183374,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789237351616676937,
+        "image_id": 104619,
+        "sha256": "5f76859a1c53ceef7ac06d53e586dd8581616d2435cb42ddb3657a6c9c6f8253",
+        "manifest_sha256": "5f76859a1c53ceef7ac06d53e586dd8581616d2435cb42ddb3657a6c9c6f8253",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/V0/000000104619.npz",
+        "size_bytes": 896271,
+        "allocated_bytes": 897024,
+        "mtime_ns": 1789237397731787464,
+        "image_id": 104619,
+        "sha256": "b8d1a3b097755f247536fd8678857c8a498bda665797f51715eb405106998a07",
+        "manifest_sha256": "b8d1a3b097755f247536fd8678857c8a498bda665797f51715eb405106998a07",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/Vhard30/000000104619.npz",
+        "size_bytes": 1181262,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789237404471803538,
+        "image_id": 104619,
+        "sha256": "279e14e98b03958a7ec23cc663687efe76a115cc0543bb2461ac3bc21c09ccac",
+        "manifest_sha256": "279e14e98b03958a7ec23cc663687efe76a115cc0543bb2461ac3bc21c09ccac",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/Vrand30/000000104619.npz",
+        "size_bytes": 1182922,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789237411220819614,
+        "image_id": 104619,
+        "sha256": "07adca56b4cf4f1e11f1ff883690397d6cb14b49b0203857d0425b29d4f899fd",
+        "manifest_sha256": "07adca56b4cf4f1e11f1ff883690397d6cb14b49b0203857d0425b29d4f899fd",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/V0/000000104619.npz",
+        "size_bytes": 897302,
+        "allocated_bytes": 901120,
+        "mtime_ns": 1789237358012692326,
+        "image_id": 104619,
+        "sha256": "1ebf96c253a0969f89b38945df79fb0454d9b74f26642bf2c6d537e038941a9e",
+        "manifest_sha256": "1ebf96c253a0969f89b38945df79fb0454d9b74f26642bf2c6d537e038941a9e",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/Vhard30/000000104619.npz",
+        "size_bytes": 1178445,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789237364787708606,
+        "image_id": 104619,
+        "sha256": "4a7143b1bd8435475fc07575abbe725a0ae246b8163c177279be5029457edcf1",
+        "manifest_sha256": "4a7143b1bd8435475fc07575abbe725a0ae246b8163c177279be5029457edcf1",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/Vrand30/000000104619.npz",
+        "size_bytes": 1183933,
+        "allocated_bytes": 1187840,
+        "mtime_ns": 1789237371550724835,
+        "image_id": 104619,
+        "sha256": "6e06e70e7438e10c56901276f0c46b6e8f8c3b012bec8410a431b82e6a2adb3c",
+        "manifest_sha256": "6e06e70e7438e10c56901276f0c46b6e8f8c3b012bec8410a431b82e6a2adb3c",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/V0/000000104619.npz",
+        "size_bytes": 898371,
+        "allocated_bytes": 901120,
+        "mtime_ns": 1789237417597834785,
+        "image_id": 104619,
+        "sha256": "e0b7b95b51a455127497ec152d8326d40a104a6a828ecbb723072d6ff7532485",
+        "manifest_sha256": "e0b7b95b51a455127497ec152d8326d40a104a6a828ecbb723072d6ff7532485",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/Vhard30/000000104619.npz",
+        "size_bytes": 1182131,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789237424388850923,
+        "image_id": 104619,
+        "sha256": "84b2264cb3f8273f26905660131d142405d5b195b8eef6cebb204ab7589f65db",
+        "manifest_sha256": "84b2264cb3f8273f26905660131d142405d5b195b8eef6cebb204ab7589f65db",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/Vrand30/000000104619.npz",
+        "size_bytes": 1184174,
+        "allocated_bytes": 1187840,
+        "mtime_ns": 1789237431170867020,
+        "image_id": 104619,
+        "sha256": "3a5c70bec6bdbec4bcf70406dacd2f797843b743562151a3d7475aadc8b7bb79",
+        "manifest_sha256": "3a5c70bec6bdbec4bcf70406dacd2f797843b743562151a3d7475aadc8b7bb79",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/V0/000000104619.npz",
+        "size_bytes": 896140,
+        "allocated_bytes": 897024,
+        "mtime_ns": 1789237377949740171,
+        "image_id": 104619,
+        "sha256": "8ff15b460c60d19377de0266a94764845e6c02b43862ddd92b274aceae8ec1fd",
+        "manifest_sha256": "8ff15b460c60d19377de0266a94764845e6c02b43862ddd92b274aceae8ec1fd",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/Vhard30/000000104619.npz",
+        "size_bytes": 1173586,
+        "allocated_bytes": 1175552,
+        "mtime_ns": 1789237384681756285,
+        "image_id": 104619,
+        "sha256": "cb6652042b2e2c212c99b577f58385d2eb9d957c861f233b09ebef01c4064e12",
+        "manifest_sha256": "cb6652042b2e2c212c99b577f58385d2eb9d957c861f233b09ebef01c4064e12",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/Vrand30/000000104619.npz",
+        "size_bytes": 1177303,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789237391413772379,
+        "image_id": 104619,
+        "sha256": "25f4e43d18f34ab5ecb394cbd4dfb2663ccdb56576fa7d242d76cf67d551692a",
+        "manifest_sha256": "25f4e43d18f34ab5ecb394cbd4dfb2663ccdb56576fa7d242d76cf67d551692a",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/V0/000000104782.npz",
+        "size_bytes": 890938,
+        "allocated_bytes": 892928,
+        "mtime_ns": 1789237437572882198,
+        "image_id": 104782,
+        "sha256": "149567cf9ef0c10a2ff012cbfdf72be4812799c6f98b4ccb658b6f625ebd30bb",
+        "manifest_sha256": "149567cf9ef0c10a2ff012cbfdf72be4812799c6f98b4ccb658b6f625ebd30bb",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/Vhard30/000000104782.npz",
+        "size_bytes": 1175153,
+        "allocated_bytes": 1175552,
+        "mtime_ns": 1789237444356898263,
+        "image_id": 104782,
+        "sha256": "aa7df7ea00b9eb4a90459760a54c6c64b216974764441cb0c212dc46a03e0ca3",
+        "manifest_sha256": "aa7df7ea00b9eb4a90459760a54c6c64b216974764441cb0c212dc46a03e0ca3",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/clean/Vrand30/000000104782.npz",
+        "size_bytes": 1183442,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789237451153914341,
+        "image_id": 104782,
+        "sha256": "d85e00c66b09192e66a280bc9f327a0f210f76aca31ae788e511c1c4f07e9457",
+        "manifest_sha256": "d85e00c66b09192e66a280bc9f327a0f210f76aca31ae788e511c1c4f07e9457",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/V0/000000104782.npz",
+        "size_bytes": 890448,
+        "allocated_bytes": 892928,
+        "mtime_ns": 1789237497586023694,
+        "image_id": 104782,
+        "sha256": "d4424e75b05c03f3ed35cc875bfe8eb164f42731b3766ebabee2466efec2b9be",
+        "manifest_sha256": "d4424e75b05c03f3ed35cc875bfe8eb164f42731b3766ebabee2466efec2b9be",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/Vhard30/000000104782.npz",
+        "size_bytes": 1174965,
+        "allocated_bytes": 1175552,
+        "mtime_ns": 1789237504359039578,
+        "image_id": 104782,
+        "sha256": "693b824681aa1bb65f0a478574d808616a1a9cb07cd2b428376b6603c667dcde",
+        "manifest_sha256": "693b824681aa1bb65f0a478574d808616a1a9cb07cd2b428376b6603c667dcde",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/fog/Vrand30/000000104782.npz",
+        "size_bytes": 1180746,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789237511124055427,
+        "image_id": 104782,
+        "sha256": "a942a622e490563d46456c6d4fec70ca7ce07c4a9973c327f294372a72005126",
+        "manifest_sha256": "a942a622e490563d46456c6d4fec70ca7ce07c4a9973c327f294372a72005126",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/V0/000000104782.npz",
+        "size_bytes": 891319,
+        "allocated_bytes": 892928,
+        "mtime_ns": 1789237457555929467,
+        "image_id": 104782,
+        "sha256": "eeb0e261baf1cde0eeab40808dac73db9c8ea33c517b0334fbee9a2e169c888a",
+        "manifest_sha256": "eeb0e261baf1cde0eeab40808dac73db9c8ea33c517b0334fbee9a2e169c888a",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/Vhard30/000000104782.npz",
+        "size_bytes": 1174313,
+        "allocated_bytes": 1175552,
+        "mtime_ns": 1789237464349945502,
+        "image_id": 104782,
+        "sha256": "b2a0894425f842c33b3bd574dca2f41a2655b335a84ffeb68f1edfdd4feaec3a",
+        "manifest_sha256": "b2a0894425f842c33b3bd574dca2f41a2655b335a84ffeb68f1edfdd4feaec3a",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/gaussian_noise/Vrand30/000000104782.npz",
+        "size_bytes": 1181996,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789237471136961503,
+        "image_id": 104782,
+        "sha256": "62665bf6b12411242ec5066d5e9b75edd1e8b0b84e68e3deece00ae44111cdc4",
+        "manifest_sha256": "62665bf6b12411242ec5066d5e9b75edd1e8b0b84e68e3deece00ae44111cdc4",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/V0/000000104782.npz",
+        "size_bytes": 892918,
+        "allocated_bytes": 892928,
+        "mtime_ns": 1789237517497070344,
+        "image_id": 104782,
+        "sha256": "9a038e3415c2b73563bcafd0011b3126fa7d09e477bb520fab949052059bc9d1",
+        "manifest_sha256": "9a038e3415c2b73563bcafd0011b3126fa7d09e477bb520fab949052059bc9d1",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/Vhard30/000000104782.npz",
+        "size_bytes": 1175470,
+        "allocated_bytes": 1175552,
+        "mtime_ns": 1789237524281086206,
+        "image_id": 104782,
+        "sha256": "9548d19519c2e903731c7bb0ec6a62da4c77507cd8869ef07191fe6da0fb5da5",
+        "manifest_sha256": "9548d19519c2e903731c7bb0ec6a62da4c77507cd8869ef07191fe6da0fb5da5",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/jpeg_compression/Vrand30/000000104782.npz",
+        "size_bytes": 1182913,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789237531065102053,
+        "image_id": 104782,
+        "sha256": "fbec09df9a1d9702dd832786759b52c46d2594a9d70f57bd7e50471cd6676b57",
+        "manifest_sha256": "fbec09df9a1d9702dd832786759b52c46d2594a9d70f57bd7e50471cd6676b57",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/V0/000000104782.npz",
+        "size_bytes": 894078,
+        "allocated_bytes": 897024,
+        "mtime_ns": 1789237477547976602,
+        "image_id": 104782,
+        "sha256": "ef0adfd2850e9f4d33f6a42b11be5e906498e082d68b2ac3d5f7227082b2f6df",
+        "manifest_sha256": "ef0adfd2850e9f4d33f6a42b11be5e906498e082d68b2ac3d5f7227082b2f6df",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/Vhard30/000000104782.npz",
+        "size_bytes": 1178464,
+        "allocated_bytes": 1179648,
+        "mtime_ns": 1789237484374992663,
+        "image_id": 104782,
+        "sha256": "91d9ef0d3fe8fc733ee32d4700ad9b32bf6c24442b36da48d587bb1d4a3b0555",
+        "manifest_sha256": "91d9ef0d3fe8fc733ee32d4700ad9b32bf6c24442b36da48d587bb1d4a3b0555",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      },
+      {
+        "path": "raw/motion_blur/Vrand30/000000104782.npz",
+        "size_bytes": 1179772,
+        "allocated_bytes": 1183744,
+        "mtime_ns": 1789237491171008634,
+        "image_id": 104782,
+        "sha256": "98794eb17fd5b3bab3c06184e9d113377d423e9885c8060b8fcba22720fca191",
+        "manifest_sha256": "98794eb17fd5b3bab3c06184e9d113377d423e9885c8060b8fcba22720fca191",
+        "matches_manifest": true,
+        "unchanged_during_hash": true
+      }
+    ]
+  },
+  "provenance": {
+    "checks": {
+      "freeze_sha_matches": true,
+      "meta_run": true,
+      "meta_release": true,
+      "meta_tmux": true,
+      "meta_command_freeze": true,
+      "resolved_release": true,
+      "receipt_kind": true,
+      "receipt_freeze": true,
+      "receipt_ids": true,
+      "receipt_vocab": true,
+      "receipt_selection": true,
+      "initial_model_state": true,
+      "receipt_cpu_four_threads": true,
+      "frozen_source_and_provenance_files": true,
+      "launch_freeze_and_plan_hashes": true
+    },
+    "file_checks": {
+      "scripts/t013_native_detector.py": {
+        "expected": "b49f23f131777f08e23131ad55a94d9211c33b1c759adf86c6b52e2b95c34126",
+        "observed": "b49f23f131777f08e23131ad55a94d9211c33b1c759adf86c6b52e2b95c34126"
+      },
+      "scripts/t013_native_run.py": {
+        "expected": "177176fdb1c133b98770f8e6719b22e3ead0a00adbdced598e92326aec723429",
+        "observed": "177176fdb1c133b98770f8e6719b22e3ead0a00adbdced598e92326aec723429"
+      },
+      "scripts/t013_native_smoke.py": {
+        "expected": "d30430f324d0577afc6997c38d78d6f46b78679cb2adaf96055986344928a421",
+        "observed": "d30430f324d0577afc6997c38d78d6f46b78679cb2adaf96055986344928a421"
+      },
+      "scripts/t013_analysis.py": {
+        "expected": "74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c",
+        "observed": "74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c"
+      },
+      "scripts/t013_coco.py": {
+        "expected": "bd3245235a6dcd455224ea7eb737b07875920b0a08b34f30e706dfc6a9ca9e81",
+        "observed": "bd3245235a6dcd455224ea7eb737b07875920b0a08b34f30e706dfc6a9ca9e81"
+      },
+      "scripts/t013_diagnostics.py": {
+        "expected": "ae7e61feaa5701ca9580c9c48901f99d09e9986b560c2821073100c94645a41e",
+        "observed": "ae7e61feaa5701ca9580c9c48901f99d09e9986b560c2821073100c94645a41e"
+      },
+      "scripts/t013_detector.py": {
+        "expected": "4800f1471f2de8f964700b683505c7230e078b6833a57afa1e09af6b42babd0d",
+        "observed": "4800f1471f2de8f964700b683505c7230e078b6833a57afa1e09af6b42babd0d"
+      },
+      "scripts/t013_text.py": {
+        "expected": "2c175a779304f045267e3419eda04dbc2e5c4730ae19cce23727043832102018",
+        "observed": "2c175a779304f045267e3419eda04dbc2e5c4730ae19cce23727043832102018"
+      },
+      "scripts/t013_native_vocab.py": {
+        "expected": "61d40e7f4107a2a13eaa7cd872667acaa4db3dffb3a257e2cddbaece4f943351",
+        "observed": "61d40e7f4107a2a13eaa7cd872667acaa4db3dffb3a257e2cddbaece4f943351"
+      },
+      "scripts/t013_data_receipt.py": {
+        "expected": "9ef780aa724d3a8a6f685dc0a273a285e7ce17942985fb107c2638810f54305e",
+        "observed": "9ef780aa724d3a8a6f685dc0a273a285e7ce17942985fb107c2638810f54305e"
+      },
+      "research_log/t013/vocabulary_native30.json": {
+        "expected": "3bb4a0ebada1f9da407ae6a94f1135798dba7117bd658a6ecba97b2ebfad0967",
+        "observed": "3bb4a0ebada1f9da407ae6a94f1135798dba7117bd658a6ecba97b2ebfad0967"
+      },
+      "research_log/t013/image_selection.json": {
+        "expected": "8039a70f25c34f295345e63d1980f692631b6bbdaa5c37267a10852acbf3833b",
+        "observed": "8039a70f25c34f295345e63d1980f692631b6bbdaa5c37267a10852acbf3833b"
+      },
+      "research_log/t013/image_sha256.json": {
+        "expected": "38eb39894b8c0f1924e099b3a1ec0b885fdf7ec43c86933e1dc28186d85c3ba8",
+        "observed": "38eb39894b8c0f1924e099b3a1ec0b885fdf7ec43c86933e1dc28186d85c3ba8"
+      },
+      "research_log/t013/native30_environment.txt": {
+        "expected": "6fdb8b3da35dddb24c5ea602e81b160ab864e792ca29fa27236dd759a6b4f090",
+        "observed": "6fdb8b3da35dddb24c5ea602e81b160ab864e792ca29fa27236dd759a6b4f090"
+      },
+      "research_log/t013/PLAN.md": {
+        "expected": "5d977aceb3c06a7915396aea9c7cc2504759e584ce79b459a287b18fb67e4beb",
+        "observed": "5d977aceb3c06a7915396aea9c7cc2504759e584ce79b459a287b18fb67e4beb"
+      },
+      "research_log/t013/data_receipt.json": {
+        "expected": "4dc1361b17a9221b278dd70ac805afb4d87742451b310af5381dc69900fe8c50",
+        "observed": "4dc1361b17a9221b278dd70ac805afb4d87742451b310af5381dc69900fe8c50"
+      }
+    },
+    "run_receipt_sha256": "1d1c0d2673c4df32193c6d9d9388679f3e463ae16a9c0436a6c0923caf6a4f26",
+    "initial_model_state_sha256": "de1683cc0a3c35157ed5475169dae013cdaffe69f45651d6e3f5550ae96139e1",
+    "model_state_after_not_yet_verified": true,
+    "native_source_revision_from_freeze": "856dde20aee659246248e20734ef9ba5214f5e44",
+    "checkpoint_sha256_from_freeze": "3b3ca2563c77c69f651d7bd133e97139c186df06231157a64c507099c52bc799",
+    "launch_hash_receipt": [
+      "50addfb8e247333b49fb22cda14570166b294101bb435b5a1b5bf688b4b3a91e  research_log/t013/native30_freeze.json",
+      "5d977aceb3c06a7915396aea9c7cc2504759e584ce79b459a287b18fb67e4beb  research_log/t013/PLAN.md"
+    ]
+  },
+  "storage": {
+    "basis": "sum st_blocks*512 of 15 closed-image cell files; no image directories in transposed layout",
+    "closed_logical_bytes_total": 3058588504,
+    "closed_allocated_bytes_total": 3064516608,
+    "median_bytes_per_closed_image": 16310272.0,
+    "p95_bytes_per_closed_image": 16355328.0,
+    "p95_method": "linear interpolation rank=.95*(n-1)",
+    "remaining_images": 812,
+    "projected_remaining_bytes": 13280526336.0,
+    "free_now_bytes": 26703241216,
+    "required_safety_bytes": 24526566196,
+    "safety_formula": "ceil(1.20*p95_bytes_per_image*remaining_images + 8*2**30)",
+    "safety_margin_bytes": 2176675020,
+    "passes": true
+  },
+  "no_prediction_deserialization": true,
+  "no_scientific_metric_inspection": true,
+  "no_primary_or_yolo_runtime_mutation": true
+}
