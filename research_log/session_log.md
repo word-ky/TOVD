@@ -160,3 +160,10 @@ Actual thresholds and complete calibration receipts committed/pushed bbfaa8608d2
 Validation release20260912-120531-tovd-t010-val; run20260912-120555-tovd-t010-val-a6000 onGPU1.
 Core testedrevision1b60f217f67c283df1e49f73f4bb4f2b64e03955 unchanged. 3600 fresh novel episodes; no calibration/policy changes.
 All5 gates fixed; await explicit run completion and preserve every result regardlessofoutcome.
+
+## 2026-09-12 12:13 +08 T010 final evidence
+Validationrun20260912-120555-tovd-t010-val-a6000 exit0 at12:07:29+08. Gates1/2FAIL,3/4/5PASS; no policychanges afteractualthresholdcommitbbfaa86.
+All3600freshnovel episodes recovered, alongside1800basecalibration;52originalrunfiles hashed,36rawrecordfiles. Compressed validation transfer SHA256d1cd989c4c7585ad743a62f7ae5e9f23abef161999d0e0f1b103ca835a4f840c matchesremote.
+Historical scoringerrorwithin2e-6; accuracy andselected-token probabilitiesexact; normal/oracle bitwise equalityandparametersunchanged. Local/remoteCPU/CUDA95tests each pass.
+Both plots visuallychecked; allsummary/gate/per-cell/headroom tables retained. R2throwsawayhardutility despiteeasyregressionremoval; recommendterminatecurrentrollbackline, awaitleadreview. No activejob/retuning/detector.
+Final report/state/recoverylogs written; syncingtoA6000 andcommitting/pushing completeevidence.

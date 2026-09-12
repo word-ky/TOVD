@@ -1,0 +1,16 @@
+[autodl] run_id=20260912-120555-tovd-t010-val-a6000
+[autodl] started_at=2026-09-12T12:06:01+08:00
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+VALIDATION state=seed7_original_P episodes=400
+VALIDATION state=seed7_P_O0_resume_step400 episodes=400
+VALIDATION state=seed7_P_C2_warm_step400 episodes=400
+VALIDATION state=seed17_original_P episodes=400
+VALIDATION state=seed17_P_O0_resume_step400 episodes=400
+VALIDATION state=seed17_P_C2_warm_step400 episodes=400
+VALIDATION state=seed27_original_P episodes=400
+VALIDATION state=seed27_P_O0_resume_step400 episodes=400
+VALIDATION state=seed27_P_C2_warm_step400 episodes=400
+GATES {"1": false, "2": false, "3": true, "4": true, "5": true}
+[autodl] finished_at=2026-09-12T12:07:29+08:00
+[autodl] exit_code=0

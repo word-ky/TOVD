@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-120555-tovd-t010-val-a6000",
+  "releaseId": "20260912-120531-tovd-t010-val",
+  "sessionName": "autodl-20260912-120555-tovd-t010-val-a6000",
+  "command": "export TOVD_SOURCE_REVISION=1b60f217f67c283df1e49f73f4bb4f2b64e03955; export TOVD_THRESHOLD_COMMIT=bbfaa8608d259527f88c996d7ad61420bb7af41f; bash scripts/run_t010_validation_a6000.sh"
+}

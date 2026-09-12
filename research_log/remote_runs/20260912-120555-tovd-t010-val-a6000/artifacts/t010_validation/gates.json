@@ -1,0 +1,215 @@
+{
+  "passes": false,
+  "by_gate": {
+    "1": false,
+    "2": false,
+    "3": true,
+    "4": true,
+    "5": true
+  },
+  "clauses": [
+    {
+      "gate": 1,
+      "scope": "seed/7",
+      "passes": false,
+      "R2_minus_R0_nll": -0.022842535918465523,
+      "R2_minus_R1_nll": 0.027405017041644886,
+      "R2_minus_worse_baseline_accuracy": 0.02156250000000004
+    },
+    {
+      "gate": 4,
+      "scope": "seed/7",
+      "passes": true,
+      "retention": 0.20625
+    },
+    {
+      "gate": 3,
+      "scope": "cell/7/original_P/easy",
+      "passes": true,
+      "nll_passes": true,
+      "accuracy_passes": true,
+      "R1_nll_regression": -0.314396403075074,
+      "R2_nll_regression": -0.14155831514216044,
+      "R1_accuracy_regression": -0.15625,
+      "R2_accuracy_regression": -0.06875000000000009,
+      "nll_regression_removed_fraction": null,
+      "accuracy_regression_removed_fraction": null
+    },
+    {
+      "gate": 2,
+      "scope": "group/original_P/hard",
+      "passes": false,
+      "nll_passes": false,
+      "accuracy_passes": true,
+      "R1_nll_gain": 0.05950797723348944,
+      "R2_nll_gain": 0.02830352155356075,
+      "R1_accuracy_gain": 0.007916666666666683,
+      "R2_accuracy_gain": 0.016041666666666676,
+      "nll_gain_retained": 0.4756256701938831,
+      "accuracy_gain_retained": 2.0263157894736814
+    },
+    {
+      "gate": 3,
+      "scope": "cell/7/P_O0_resume/easy",
+      "passes": true,
+      "nll_passes": true,
+      "accuracy_passes": true,
+      "R1_nll_regression": 0.5071216295707397,
+      "R2_nll_regression": 0.19007851897241118,
+      "R1_accuracy_regression": 0.17625000000000002,
+      "R2_accuracy_regression": 0.04125000000000001,
+      "nll_regression_removed_fraction": 0.6251815976902705,
+      "accuracy_regression_removed_fraction": 0.7659574468085106
+    },
+    {
+      "gate": 2,
+      "scope": "group/P_O0_resume/hard",
+      "passes": false,
+      "nll_passes": false,
+      "accuracy_passes": false,
+      "R1_nll_gain": 0.04311133659041899,
+      "R2_nll_gain": -0.002065805983847202,
+      "R1_accuracy_gain": 0.02937500000000004,
+      "R2_accuracy_gain": 0.0012500000000000289,
+      "nll_gain_retained": -0.04791792941781128,
+      "accuracy_gain_retained": 0.042553191489362624
+    },
+    {
+      "gate": 3,
+      "scope": "cell/7/P_C2_warm/easy",
+      "passes": true,
+      "nll_passes": true,
+      "accuracy_passes": true,
+      "R1_nll_regression": -0.299512028350373,
+      "R2_nll_regression": -0.1714795615317951,
+      "R1_accuracy_regression": -0.14250000000000007,
+      "R2_accuracy_regression": -0.09625000000000006,
+      "nll_regression_removed_fraction": null,
+      "accuracy_regression_removed_fraction": null
+    },
+    {
+      "gate": 2,
+      "scope": "group/P_C2_warm/hard",
+      "passes": false,
+      "nll_passes": false,
+      "accuracy_passes": false,
+      "R1_nll_gain": 0.07889421124671459,
+      "R2_nll_gain": 0.001924033643337708,
+      "R1_accuracy_gain": 0.03229166666666666,
+      "R2_accuracy_gain": 0.0006249999999999867,
+      "nll_gain_retained": 0.02438751351884301,
+      "accuracy_gain_retained": 0.019354838709677007
+    },
+    {
+      "gate": 1,
+      "scope": "seed/17",
+      "passes": false,
+      "R2_minus_R0_nll": -0.036208559318035904,
+      "R2_minus_R1_nll": 0.14577763962236845,
+      "R2_minus_worse_baseline_accuracy": 0.030416666666666647
+    },
+    {
+      "gate": 4,
+      "scope": "seed/17",
+      "passes": true,
+      "retention": 0.1515625
+    },
+    {
+      "gate": 3,
+      "scope": "cell/17/original_P/easy",
+      "passes": true,
+      "nll_passes": true,
+      "accuracy_passes": true,
+      "R1_nll_regression": -0.46975852558226927,
+      "R2_nll_regression": -0.0888479694821106,
+      "R1_accuracy_regression": -0.181875,
+      "R2_accuracy_regression": -0.04437499999999994,
+      "nll_regression_removed_fraction": null,
+      "accuracy_regression_removed_fraction": null
+    },
+    {
+      "gate": 3,
+      "scope": "cell/17/P_O0_resume/easy",
+      "passes": true,
+      "nll_passes": true,
+      "accuracy_passes": true,
+      "R1_nll_regression": 0.11936879268666412,
+      "R2_nll_regression": 0.029658594921472825,
+      "R1_accuracy_regression": -0.05875000000000008,
+      "R2_accuracy_regression": -0.04187500000000011,
+      "nll_regression_removed_fraction": 0.7515381176776676,
+      "accuracy_regression_removed_fraction": null
+    },
+    {
+      "gate": 3,
+      "scope": "cell/17/P_C2_warm/easy",
+      "passes": true,
+      "nll_passes": true,
+      "accuracy_passes": true,
+      "R1_nll_regression": -0.547107804694409,
+      "R2_nll_regression": -0.1251036749668617,
+      "R1_accuracy_regression": -0.23750000000000004,
+      "R2_accuracy_regression": -0.07125000000000004,
+      "nll_regression_removed_fraction": null,
+      "accuracy_regression_removed_fraction": null
+    },
+    {
+      "gate": 1,
+      "scope": "seed/27",
+      "passes": true,
+      "R2_minus_R0_nll": -0.03025935423095416,
+      "R2_minus_R1_nll": -0.049647224082633,
+      "R2_minus_worse_baseline_accuracy": 0.025208333333333388
+    },
+    {
+      "gate": 4,
+      "scope": "seed/27",
+      "passes": true,
+      "retention": 0.1971875
+    },
+    {
+      "gate": 3,
+      "scope": "cell/27/original_P/easy",
+      "passes": true,
+      "nll_passes": true,
+      "accuracy_passes": true,
+      "R1_nll_regression": 0.11862850972798461,
+      "R2_nll_regression": -0.04390678748151844,
+      "R1_accuracy_regression": 0.07250000000000001,
+      "R2_accuracy_regression": -0.0050000000000000044,
+      "nll_regression_removed_fraction": 1.3701200291750844,
+      "accuracy_regression_removed_fraction": 1.0689655172413794
+    },
+    {
+      "gate": 3,
+      "scope": "cell/27/P_O0_resume/easy",
+      "passes": true,
+      "nll_passes": true,
+      "accuracy_passes": true,
+      "R1_nll_regression": 0.06654266710424989,
+      "R2_nll_regression": -0.058624684805229976,
+      "R1_accuracy_regression": 0.010000000000000009,
+      "R2_accuracy_regression": -0.03500000000000003,
+      "nll_regression_removed_fraction": 1.8810089429295778,
+      "accuracy_regression_removed_fraction": 4.5
+    },
+    {
+      "gate": 3,
+      "scope": "cell/27/P_C2_warm/easy",
+      "passes": true,
+      "nll_passes": true,
+      "accuracy_passes": true,
+      "R1_nll_regression": 0.0865784455313402,
+      "R2_nll_regression": -0.041593569649787554,
+      "R1_accuracy_regression": 0.041874999999999996,
+      "R2_accuracy_regression": -0.0031250000000000444,
+      "nll_regression_removed_fraction": 1.4804148352921311,
+      "accuracy_regression_removed_fraction": 1.074626865671643
+    },
+    {
+      "gate": 5,
+      "scope": "validity",
+      "passes": true
+    }
+  ]
+}
