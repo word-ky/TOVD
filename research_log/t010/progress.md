@@ -1,1 +1,2 @@
 2026-09-12 11:37 +08: fetched45f6045, T009 accepted and T010 assigned. Nine checkpoint hashes verified; source code/old IDs/new namespaces locked in t010/sources.json. Baseline13tests passed16.59s. Preregistered1800calibration/3600validation and actual-threshold commit before validation.
+2026-09-12 11:44 +08: scalar tests2passed.08s; model/two-phase/gates focused5passed18.29s; full95passed40.01s. Both A6000 GPUs idle, useGPU1. No fresh outcomes generated/read; commit implementation then deploy calibration-only runner.

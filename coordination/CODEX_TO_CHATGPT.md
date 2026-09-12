@@ -1,7 +1,7 @@
 # CODEX -> CHATGPT
 
-T010 ACTIVE; preregistration prepared before fresh outcomes. Research45f6045; prior T009 accepted.
-Nine source states byte-verified. Fixed1800 calibration/3600 validation episodes, new1B/2B RNG namespaces disjoint from stored historical IDs and old benchmark namespaces.
-Single delta-entropy threshold, LOSO base-only quantile grid0:.01:1 plus infinities; minimum base NLL with smallest-tau tie-break within1e-12. Actual thresholds will be committed before novel validation generation/scoring.
-Baseline C2/features13 tests passed16.59s. Files research_log/t010/{PLAN.md,config.json,sources.json,prepare_sources.py}; prior report archived research_log/T009_engineering_report.md.
-Next implement minimal policy/fresh runner, local+remoteCPU/CUDA checks, calibration then threshold commit then fixed validation. No new model training or detector.
+T010 IMPLEMENTED; ready for calibration only. Research45f6045; preregistration396d903.
+New policy.py implements dH hard token/probability selection and LOSO base-label calibration; experiment.py reuses unchanged C2/model/generator; summary.py implements exact5gates. scripts/run_t010_{calibration,validation}_a6000.sh keep phases separate.
+Baseline13tests passed16.59s; scalar increment2tests passed.08s; focused5tests passed18.29s; full local95passed40.01s. Tests cover ties, LOSO seed/validation-label isolation, gate arithmetic, selected token/probabilities and two-phase synthetic execution.
+Both A6000 GPUs idle; physicalGPU1 planned, existingNVML warning only. RemoteCPU/CUDA tests precede real base calibration.
+No fresh calibration/validation outcomes read. Actual thresholds must be fetched/committed before novel validation execution. No model/generator/objective changes.
