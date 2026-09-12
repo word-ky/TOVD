@@ -142,3 +142,6 @@ Downloading34MB losslessfullrunarchive; remoteSHA2565567735c5f387ab5ffed8bbfa332
 
 ## 2026-09-12 13:46 +08 T011 final evidence
 All27runfiles/18rawrecords recovered; archiveSHA5567735c5f387ab5ffed8bbfa33280b3a80a9b4522b28d86bf8324886bc10bc9 matches. Raw1800episodes/14400queries and aggregateNLL checked. Fullreport/tables/diagramPNG/SVG generated and plot visuallychecked. All5scientificcriteriaFAIL; engineeringvalidityTRUE,101tests eachlocal/CPU/CUDA. Stoprule enforced; no furthermethodchanges. Preparing final commit/push and mirroring projectrecovery/reports toA6000.
+
+## 2026-09-12 14:19 +08 T012 base calibration dispatch
+Tested8c4abff9140f1d762175472117bf6b9c3d5fcb21; preregister15d3353. Release20260912-141825-tovd-t012-cal; run20260912-141907-tovd-t012-cal-a6000 onGPU1. CPU/CUDAfulltests then1800baseepisodesonly. Actualglobal-lambda freeze andnovelphase stillpending. No noveloutcomes.

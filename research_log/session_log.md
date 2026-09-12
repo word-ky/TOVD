@@ -194,3 +194,6 @@ Preregister15d3353. Staticmodule3tests passed33.18s; expanded7tests passed17.76s
 
 ## 2026-09-12 14:18 +08 T012 IMPLEMENTED / calibration preparation
 Preregister15d3353. Newfiles: tovd/models/static_semantic_fusion.py, tests/test_static_semantic_fusion.py, research_log/t012/{experiment,summary}.py, scripts/run_t012_{calibration,validation}_a6000.sh andimplementationhashmanifest. LiteralPoE, exactW0/B1; staticpath inference_mode/no gradient; existingC2onlyseparatehistoricalA4. Module3tests passed33.18s; expanded7passed17.76s; full local108passed53.20s. No T012 scientificoutcomes generated. Source/config/PLAN/newcode hashes frozen. Next GPU1CPU/CUDA fulltests thenbase-only calibration; actuallambda mustbecommittedbefore novelphase.
+
+## 2026-09-12 14:19 +08 T012 base calibration dispatch
+Tested8c4abff9140f1d762175472117bf6b9c3d5fcb21; preregister15d3353. Release20260912-141825-tovd-t012-cal; run20260912-141907-tovd-t012-cal-a6000 onGPU1. CPU/CUDAfulltests then1800baseepisodesonly. Actualglobal-lambda freeze andnovelphase stillpending. No noveloutcomes.
