@@ -362,3 +362,15 @@ Thisisadispatch/provenancereceipt,notacompletionorscientificclaim. Frozenmodel/c
 ## T013-NATIVE30 — Lead acceptance acknowledged
 
 Fetched/fast-forwarded2e70b24. Lead accepts implementation/pre-primaryfreeze6fec322 anddispatch88668f7. Existing20260912-210355-tovd-native30-primary continues unchanged;48/1000imagesat4783.683s,tmuxalive,disk28GBfree. No scientificpartialmetricsinspected. Newexplicitfailureinstruction: preservepartialoutputs/exactfailureandreturntoLeadBEFOREanyrestart/resumedesign. No code/PLAN/vocab/metrics/gates changed; no testsrerun for thiscoordinationupdate. Completionrequires15000cells/rawhashes/sharedpixels/modelimmutability/deterministicanalysis andfulltables/CIs/Gates1,2,4/allGate3families. NoT014untilLeadreview.
+
+---
+
+## T013-YW-P0 — DELIVERED; WAITING FOR NEXT LEAD PACKAGE
+
+Lead279ac4b added one hourly package while native primary continues. Created research/T013_YOLOWORLD_CONTINGENCY.md andresearch_log/t013_yoloworld/FEASIBILITY.md, plus officialsource/metadata/token-capacity receipts. OfficialHEAD4f70adbaacf5685bd9ec5bea85f1f91057f6fc0b has reproducedSyntaxError atdetectorline61; pinned unmodifiedofficialpredecessorb1b09f2f0340ca7dede69e10b7e909c469677fd9 (19modelfilesparse), MMYOLOgitlink4d97b3a06609dba94b8ec584be2f2029cfdb7519. Pre-outcomerule selectsV2.1-Sstage2/1280 amongunambiguousofficialcheckpoint/baseline mappings. S640officialcardlinkpointsX; actualS640metadata inventoriedbutassociationunresolved, nomodelsweep. Selectedweight305058902bytes SHA4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458; metadataonly,nopayload. CLIPtokenizer-only80/110/110names3–5tokens versus77context, noembeddingsorimageforward.
+
+DocumentedexplicitMMDet3.0requiresMMCV<2.1 conflictwithguideexample, packageMMCV/MMCV-lite overlap andlegacyTorch/newtorchvisionconstraint. ProposedisolatedPython3.10/Torch2.1.2cu118/torchvision0.16.2/MMCV2.0.xsourcebuildrequireslaterauthorizationandverification; noinstall/patch. Runtimefeasibilitynotclaimedverified. Blankbackground andnativeNMS differfrominheritedT013contract; recordforLead, noauthorizedchanges. PreserveIDs/vocab/corruptions/metrics/bootstrap/Gates1,2,4 andfour-caseinterpretationmatrix.
+
+NoGroundingpartialAP/interaction/CI/mechanismmetricsread; noYOLOinference; noinstall,weightdownload or activerunmodification. Onlypublicsource/metadata/tokenizer andread-onlyoperationalhealthinspected. LastGroundingcount80/1000; GPU1A6000free50598707200/50897289216bytes(snapshot,notreservation). Thispackageendswithdocuments/receiptcommit; waitnextLeadcycle, do not repeatP0 or begininstall/inference whileCURRENTpackageheadingpersists. Primary20260912-210355-tovd-native30-primarycontinuesunchanged.
+
+Files: thetwo requireddocuments; inspection_receipt.json, token_capacity.json, officialHFmetadata/config/tokenizer, source snapshotswithlicenseandartifact_sha256.json underresearch_log/t013_yoloworld; projectstate/session/remotehandoffs. Noactiveexperimentfilewaschanged. Documentsarepre-outcomecontingency only; detector scientificexecutionisNOTAUTHORIZED.

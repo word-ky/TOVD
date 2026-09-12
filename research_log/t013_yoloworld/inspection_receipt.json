@@ -1,0 +1,91 @@
+{
+  "task": "T013-YW-P0",
+  "recorded_at": "2026-09-12T23:19:04.873839+08:00",
+  "upstream_head_inspected": "4f70adbaacf5685bd9ec5bea85f1f91057f6fc0b",
+  "head_syntax_error": {
+    "line": 61,
+    "message": "cannot assign to None",
+    "source_line": "self.text_feats, None = self.backbone.forward_text(texts)"
+  },
+  "candidate_upstream_revision": "b1b09f2f0340ca7dede69e10b7e909c469677fd9",
+  "pin_rule": "last official V2.1-era commit before the reproduced add-mask syntax regression; no local source patch",
+  "mmyolo_gitlink": "4d97b3a06609dba94b8ec584be2f2029cfdb7519",
+  "model_files_ast_parse_passed": 19,
+  "source_files": [
+    {
+      "path": "LICENSE",
+      "sha256": "e1d283b7a07b0964e38ddd080e69f95b52ecb40f594254168994f1816c7d7829",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/LICENSE"
+    },
+    {
+      "path": "README.md",
+      "sha256": "f553a1b9d04008f973ce9799fa706657a5318df34ba5d33af638e989dba159ba",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/README.md"
+    },
+    {
+      "path": "docs/installation.md",
+      "sha256": "42d30dc55f0f9f1985ddaef4287e73980d34ff5c485a9ba38bfca4ddb3337cbf",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/docs/installation.md"
+    },
+    {
+      "path": "docs/update_20250123.md",
+      "sha256": "4695b2a6982aba3effc03407f2b2a7ca1c9044c15bb6b7385266a5b91d0097c5",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/docs/update_20250123.md"
+    },
+    {
+      "path": "docs/reparameterize.md",
+      "sha256": "42440c92ecd31d6d20f675199dd6942261dcc2eb4b114b88f4532b4f42986d09",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/docs/reparameterize.md"
+    },
+    {
+      "path": "requirements/basic_requirements.txt",
+      "sha256": "cc16118a7c7eeb3ac393f63aee28af2b61e420f8028d84b0cc126bde2dd40d6c",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/requirements/basic_requirements.txt"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "1974d5cad143643c79b3ee97ba9fbd7d1d283a1d2c4f97440d667cc46889bb00",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/pyproject.toml"
+    },
+    {
+      "path": ".gitmodules",
+      "sha256": "4ae514323c1036af8e27dbc98adaa7036ce46cc5974c75189606f215f18653a9",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/.gitmodules"
+    },
+    {
+      "path": "yolo_world/models/detectors/yolo_world.py",
+      "sha256": "59bb45d667e789954f7887173790559d9606d6be491686134070adab9e1d72cd",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/yolo_world/models/detectors/yolo_world.py"
+    },
+    {
+      "path": "yolo_world/models/backbones/mm_backbone.py",
+      "sha256": "083d51f2f324a0e05bc9bf101d8c2590e185b49fdd18ba08c6a1fc6f7c6d4ca5",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/yolo_world/models/backbones/mm_backbone.py"
+    },
+    {
+      "path": "yolo_world/models/dense_heads/yolo_world_head.py",
+      "sha256": "3054f701aa82f0ddc172c63e4e50daacf0e08d1d3f759842e974410ec62a762f",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/yolo_world/models/dense_heads/yolo_world_head.py"
+    },
+    {
+      "path": "yolo_world/datasets/transformers/mm_transforms.py",
+      "sha256": "a506a718215200e00357b1acf388363cc2b5861558a11cdc998fc5f344e81c6a",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/yolo_world/datasets/transformers/mm_transforms.py"
+    },
+    {
+      "path": "demo/gradio_demo.py",
+      "sha256": "21348e6dc0cc5503e64f002630cedf12449bf7a52d389716a9321c248c955b3c",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/demo/gradio_demo.py"
+    },
+    {
+      "path": "configs/pretrain/yolo_world_v2_s_vlpan_bn_2e-3_100e_4x8gpus_obj365v1_goldg_train_1280ft_lvis_minival.py",
+      "sha256": "15fa9a012f96c6245e0d272ac6c52a9a77f453887cea1e384642d814c0a4076f",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/configs/pretrain/yolo_world_v2_s_vlpan_bn_2e-3_100e_4x8gpus_obj365v1_goldg_train_1280ft_lvis_minival.py"
+    }
+  ],
+  "no_yolo_model_inference": true,
+  "no_grounding_partial_scientific_metrics_read": true,
+  "no_package_install": true,
+  "no_checkpoint_payload_download": true,
+  "tokenizer_only_check": "token_capacity.json"
+}
