@@ -1,0 +1,79 @@
+{
+  "run": "20260912-114426-tovd-t010-cal-a6000",
+  "tested_revision": "1b60f217f67c283df1e49f73f4bb4f2b64e03955",
+  "preregistration": "396d903",
+  "remote_CPU_tests": "95 passed8.74s",
+  "remote_CUDA_tests": "95 passed25.42s",
+  "validity": {
+    "passes": true,
+    "query_count": 14400,
+    "episode_count": 1800,
+    "max_nll_error": 8.713977610597112e-07,
+    "max_accuracy_error": 0.0,
+    "max_selected_token_probability_error": 0.0,
+    "normal_oracle_bitwise_equal": true,
+    "parameters_unchanged": true,
+    "nonoverlap": true,
+    "threshold_commit": null
+  },
+  "thresholds": {
+    "7": {
+      "held_seed": 7,
+      "tau": -0.11053594030393298,
+      "minimum_calibration_nll": 0.5459873254043508,
+      "selected_calibration_nll": 0.5459873254043508,
+      "query_count": 9600,
+      "calibration_seeds": [
+        17,
+        27
+      ],
+      "state_ids": [
+        "seed17_P_C2_warm_step400",
+        "seed17_P_O0_resume_step400",
+        "seed17_original_P",
+        "seed27_P_C2_warm_step400",
+        "seed27_P_O0_resume_step400",
+        "seed27_original_P"
+      ]
+    },
+    "17": {
+      "held_seed": 17,
+      "tau": -0.11194298182737498,
+      "minimum_calibration_nll": 0.5411123192217765,
+      "selected_calibration_nll": 0.5411123192217765,
+      "query_count": 9600,
+      "calibration_seeds": [
+        7,
+        27
+      ],
+      "state_ids": [
+        "seed27_P_C2_warm_step400",
+        "seed27_P_O0_resume_step400",
+        "seed27_original_P",
+        "seed7_P_C2_warm_step400",
+        "seed7_P_O0_resume_step400",
+        "seed7_original_P"
+      ]
+    },
+    "27": {
+      "held_seed": 27,
+      "tau": -0.12223384632396617,
+      "minimum_calibration_nll": 0.5473287021579523,
+      "selected_calibration_nll": 0.5473287021579523,
+      "query_count": 9600,
+      "calibration_seeds": [
+        7,
+        17
+      ],
+      "state_ids": [
+        "seed17_P_C2_warm_step400",
+        "seed17_P_O0_resume_step400",
+        "seed17_original_P",
+        "seed7_P_C2_warm_step400",
+        "seed7_P_O0_resume_step400",
+        "seed7_original_P"
+      ]
+    }
+  },
+  "validation_generated": false
+}

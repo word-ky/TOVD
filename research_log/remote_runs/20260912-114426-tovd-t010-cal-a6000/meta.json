@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-114426-tovd-t010-cal-a6000",
+  "releaseId": "20260912-114356-tovd-t010-cal",
+  "sessionName": "autodl-20260912-114426-tovd-t010-cal-a6000",
+  "command": "export TOVD_SOURCE_REVISION=1b60f217f67c283df1e49f73f4bb4f2b64e03955; bash scripts/run_t010_calibration_a6000.sh"
+}

@@ -1,0 +1,130 @@
+{
+  "episodes": 1800,
+  "files": [
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/artifacts/t010_calibration/checks.json",
+      "bytes": 784264,
+      "sha256": "2199691fac595836fe3a508213f0e42da51dde3b24f2b4c2fb0034b5527bd5a0"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/artifacts/t010_calibration/queries.csv",
+      "bytes": 2104475,
+      "sha256": "44405e2b86e4cb92d38b8c113286451ff1673af3163b223e3e4b03064b2f9ca9"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/artifacts/t010_calibration/records/seed17_original_P_easy.json",
+      "bytes": 1387587,
+      "sha256": "9299d020b7e050c4a9c7f0739b0f848dbfb7eba7cea0e48e82b0bcab7223c7f0"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/artifacts/t010_calibration/records/seed17_original_P_hard.json",
+      "bytes": 1376733,
+      "sha256": "84e0193c848bc1468b5f5ef8481c0f17aa84e5a0bb5bb6848eec9a1b5d558d18"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/artifacts/t010_calibration/records/seed17_P_C2_warm_step400_easy.json",
+      "bytes": 1382108,
+      "sha256": "b2a91cf7594ea161d7786f7b72f9ebcceb02d32fd7b0fade256c7b4fe0ff7e9d"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/artifacts/t010_calibration/records/seed17_P_C2_warm_step400_hard.json",
+      "bytes": 1370626,
+      "sha256": "32c09a31860e0bea0f53ecb27fae105ea9538870e7ce14b650acf40e88052b9d"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/artifacts/t010_calibration/records/seed17_P_O0_resume_step400_easy.json",
+      "bytes": 1387221,
+      "sha256": "b3d52c7965caf43df332b5d601c538f55ad33264a4ead6e567e775b3da17ae9a"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/artifacts/t010_calibration/records/seed17_P_O0_resume_step400_hard.json",
+      "bytes": 1378073,
+      "sha256": "9897e9efcab1ccec7fe4e53137fb900a7aa05e37034fed4b88eb8c6cdcea4ddb"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/artifacts/t010_calibration/records/seed27_original_P_easy.json",
+      "bytes": 1389604,
+      "sha256": "5d113e07f142176d542d21fd9bff8bd832e7f03617375191db0ed8c2e1a59e3a"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/artifacts/t010_calibration/records/seed27_original_P_hard.json",
+      "bytes": 1376424,
+      "sha256": "d642bf07c6c57899c060bd876b4c95cd971ac7c42fc944d22f9d43c18aac96e2"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/artifacts/t010_calibration/records/seed27_P_C2_warm_step400_easy.json",
+      "bytes": 1383164,
+      "sha256": "f83663e5b643a1cff5b426fcb746115b12ee8f8dd24fd74140250051e295dc0c"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/artifacts/t010_calibration/records/seed27_P_C2_warm_step400_hard.json",
+      "bytes": 1370491,
+      "sha256": "3a3cdd8afcfc9171ec459da1bf766bb1f820d0b472e43b73a7fd2c82afc06c14"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/artifacts/t010_calibration/records/seed27_P_O0_resume_step400_easy.json",
+      "bytes": 1389106,
+      "sha256": "892aa7ed577ced046381059126838d5b5d8ce1efa8204cd8475c3fc96a9149fa"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/artifacts/t010_calibration/records/seed27_P_O0_resume_step400_hard.json",
+      "bytes": 1375956,
+      "sha256": "655c39f73bab80636eb2f87f901f450762d2ea4501e9a3c791b0161f2dd7c374"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/artifacts/t010_calibration/records/seed7_original_P_easy.json",
+      "bytes": 1385517,
+      "sha256": "02f47139d48c905106e61a848bc9f0ac32fb1766f88f3d75d57a8b21a0893e49"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/artifacts/t010_calibration/records/seed7_original_P_hard.json",
+      "bytes": 1374040,
+      "sha256": "963fb52985c40d1dec247e875afb4a72f0369e167efb66638abb068c1e166ebb"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/artifacts/t010_calibration/records/seed7_P_C2_warm_step400_easy.json",
+      "bytes": 1383373,
+      "sha256": "000b5ee1811d666dbe3e60295eea925cf318aa47c522a023df788419db37085d"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/artifacts/t010_calibration/records/seed7_P_C2_warm_step400_hard.json",
+      "bytes": 1371384,
+      "sha256": "616dd1ef1249e7fcfed7f8e51ca71a85466682551ee304f8d15a298cbf58385c"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/artifacts/t010_calibration/records/seed7_P_O0_resume_step400_easy.json",
+      "bytes": 1386439,
+      "sha256": "572b6a0744c900c321ff0771fdfa858de5a6fb784c7f217a557cc78a176eb10f"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/artifacts/t010_calibration/records/seed7_P_O0_resume_step400_hard.json",
+      "bytes": 1375900,
+      "sha256": "4e8582cf22c69382787143b5a897c2d5bb644a6019cd0f5f9b1b8d992bea7da3"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/artifacts/t010_calibration/results.json",
+      "bytes": 897256,
+      "sha256": "54450552372c6347aeb15b2f64968b36e42da801d4afd3ac8fd1e1cd4c5d5c19"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/artifacts/t010_calibration/thresholds.json",
+      "bytes": 50138,
+      "sha256": "9208ffd5f535cccf0b7ceda62348cf31acd5ae1a4c7d8daca6a0f3cbedd1b0ff"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/meta.json",
+      "bytes": 297,
+      "sha256": "bbb765072b44fd1d758dde4745d71539c6d07a0f15c49b66d20b08798bc2c275"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/run.sh",
+      "bytes": 681,
+      "sha256": "cd82eca501d89d23f501eed55667af49bec624bd80042232b16c5484d5a52b62"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-114426-tovd-t010-cal-a6000/train.log",
+      "bytes": 3176,
+      "sha256": "ef385c4349e1c56be21e17e89110d69c1d6b603fc627b0e7850d1926d9acd50c"
+    }
+  ]
+}
