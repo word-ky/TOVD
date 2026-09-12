@@ -188,6 +188,27 @@ Interim acceptance evidence:
 - local full regression passes 79/79; focused common-origin/manual-Adam/replay/serialization and miniature end-to-end/rule tests pass;
 - parameter-count correction to 1616 fast +256 key +256 query =2128 total is bookkeeping only and does not alter tensor shapes or scientific degrees of freedom.
 
-Code review found no blocking mismatch with the T007 acceptance contract. `P_O0_resume` falls through to the same `FastSemanticMemory` construction as P and is explicitly routed through the enabled-TTT forward path; `P_C2_warm` constructs the same O1 backtracking memory as the accepted C2 path. The manual continuation test verifies exact branch-equivalent updates from the common origin.
+Code review found no blocking mismatch with the T007 acceptance contract. `P_O0_resume` falls through to the same `FastSemanticMemory` construction as P and is explicitly routed through the enabled-TTT forward path; `P_C2_warm` constructs the same O1 backtracking memory as the accepted C2 path. The manual continuation test verifies exact branch-equivalent continuation from the common origin.
 
 **Instruction / next action:** finish the exact dispatched A6000 run without changing any preregistered setting and without tuning/selecting from partial outcomes. When complete, report Rules 1–6, all W0-only/adapted held-out metrics, W1-vs-W2 matched-continuation effects, T005/T006/B0/B1/B2 equality receipts, drift/trajectory/selector/mechanism diagnostics, and CPU/CUDA receipts. Do not start Grounding-DINO integration or T008 before Research Lead reviews the complete T007 evidence.
+
+---
+
+## 2026-09-12 — T007 final review
+
+**Decision:** ACCEPTED AS A VALID NEGATIVE / STATE-DEPENDENCE RESULT; WARM-START C2 META-TRAINING REJECTED AS T005 SUCCESSOR
+
+Reviewed commits/artifacts:
+- `4315ba35f0b89bbfa92958cf75a8bcd6a22f9eee` — complete T007 A6000 evidence, tests, trajectory metrics, rules and engineering report;
+- `3d784491016bc187eb8a91379045cc18a545a1c6` — reconciliation of the interim review with the completed evidence;
+- `research_log/t007/RESULTS.md`, `trajectory_metrics.csv`, `per_seed_diagnostics.csv`, and the final mailbox report.
+
+Validity is accepted. All six runs completed the fixed preregistered budget, source hashes and common origins match, historical reference streams replay exactly, all steps are finite with zero Armijo violations, and local plus A6000 CPU/CUDA suites pass 79/79. No scientific setting changed after the tested implementation commit.
+
+Scientific result: warm start repairs much of the T006 random-initialization deficit but does not make C2 outer training a viable successor to the frozen T005 mechanism. W2 hard improves from its own W0 38.92% / 1.30820 to 43.54% / 1.22793, so the fast path remains locally useful. However W2 is 2.71 pp below T005 hard accuracy and loses to the matched W1+frozen-C2 state in both hard accuracy and NLL (43.54% / 1.22793 versus 45.38% / 1.22032). The C2 continuation objective therefore does not improve the strong pretrained state under the fixed continuation budget.
+
+The more important finding is **checkpoint/state dependence of the fast update itself**. W2 easy seed 27 is harmed severely by C2 (92.5% / .24285 -> 84.875% / .35722), while seeds 7/17 gain strongly. W1+frozen-C2 is also unsafe after O0 continuation: final easy performance falls on average from 80.96% / .40478 to 74.17% / .66709. The fixed trajectory makes the sign flip concrete: the same W1 seed-7 easy C2 update is strongly helpful at step 0, nearly neutral around step 200, and harmful by step 400 as the slow state strengthens. Thus T005 remains valid mechanism evidence but is not evidence that always-on C2 is safe across checkpoint evolution.
+
+This changes the research question. The next scientifically useful question is no longer how to meta-train C2, but whether **the need for adaptation is observable without labels**. If a strong/easy state can be recognized from runtime uncertainty or update geometry, C2 can become selective specialization; if not, the current branch lacks a defensible safety mechanism and should not be moved into a detector.
+
+**Next action:** T008 assigned as a state-dependent safety audit. Reuse T005/T007 checkpoints and fixed held-out streams without retraining. Before computing new correlations, preregister a fixed set of label-free pre-update and post-candidate observables. Use task labels only offline to score C2 benefit/harm, then test whether any single runtime scalar predicts harm with leave-one-seed-out AUROC >= .70 mean and >= .65 in every fold, including within easy episodes. No learned gate, new objective, new eta schedule, architecture change or detector integration is allowed in T008. A passing scalar only justifies a later separately preregistered selective/rollback policy task.
