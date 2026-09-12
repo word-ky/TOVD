@@ -1,0 +1,48 @@
+{
+  "task": "T013-FIN1",
+  "lead_commit": "e22ee9b",
+  "status": "PASS",
+  "scientific_freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+  "local_command": "python research_log/t013/test_primary_completion_verifier.py",
+  "local_environment": "D:/anaconda3/python.exe Python3.12.7; standard library only",
+  "tests_run": 13,
+  "test_seconds": 193.507,
+  "negative_fixtures": 23,
+  "smoke_status": "PASS",
+  "smoke_files": 45,
+  "smoke_raw_bytes": 48715584,
+  "remote_environment": "existing shared/t013/venv/bin/python Python3.12.12",
+  "remote_command": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/fin1/primary_completion_verifier.py --frozen-root /home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze --cache /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache --smoke --output /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/fin1/primary_completion_smoke_receipt.json",
+  "observed_failure": {
+    "command_difference": "initial command used system python3",
+    "exit_code": 1,
+    "exception": "AttributeError: module hashlib has no attribute file_digest",
+    "location": "primary_completion_verifier.py:24",
+    "resolution": "identical script rerun with existing Python3.12 interpreter; no code/environment changes"
+  },
+  "end_health": {
+    "observed_at": "2026-09-13T04:27:45+08:00",
+    "run_id": "20260912-210355-tovd-native30-primary",
+    "tmux_alive": true,
+    "writer_pid": 721181,
+    "writer_state": "Rl+",
+    "completed_images": 258,
+    "total_images": 1000,
+    "seconds": 26526.936807298014,
+    "free_bytes": 25408024576,
+    "wrapper_exit_marker_present": false,
+    "analysis_result_present": false
+  },
+  "primary_cache_accessed": false,
+  "npz_deserialized": false,
+  "scientific_result_opened": false,
+  "frozen_code_or_run_modified": false,
+  "artifacts_sha256": {
+    "primary_completion_verifier.py": "9d4c604b40677d81fa634715a55c7132dcbe04303a1a8a3021dc11e42273c6a8",
+    "test_primary_completion_verifier.py": "be2f842ef34000a0057e5658a7a0459fab7a7c847962da9b6f0330fc5c5c22c2",
+    "primary_completion_tests.txt": "e347c2aa5420000b9843c1f5eb1a20ffec9d0f7facde41615cdd9a0615c892b5",
+    "primary_completion_test_receipt.json": "296af25ac4ac6123d5a46aa14a5c2603dad90c00a827e6146bcd38d62dee8380",
+    "primary_completion_smoke_receipt.json": "1c07064807e5baf43f286cee57bc7820eb338d8648c219bcd50df999a30e3e7e",
+    "PRIMARY_COMPLETION_VERIFIER.md": "29315f47e979f701a480bd5e0eeaee6a34e6d4384eea997698b0ee9eb2a4d875"
+  }
+}

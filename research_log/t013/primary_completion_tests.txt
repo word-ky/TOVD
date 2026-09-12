@@ -1,0 +1,18 @@
+test_01_full_primary_contract_deterministic_and_analysis_independent (__main__.CompletionVerifierTests.test_01_full_primary_contract_deterministic_and_analysis_independent) ... ok
+test_02_missing_cell (__main__.CompletionVerifierTests.test_02_missing_cell) ... ok
+test_03_duplicate_key (__main__.CompletionVerifierTests.test_03_duplicate_key) ... ok
+test_04_tampered_raw_bytes (__main__.CompletionVerifierTests.test_04_tampered_raw_bytes) ... ok
+test_05_shared_pixel_mismatch (__main__.CompletionVerifierTests.test_05_shared_pixel_mismatch) ... ok
+test_06_wrong_freeze_commit (__main__.CompletionVerifierTests.test_06_wrong_freeze_commit) ... ok
+test_07_wrong_state (__main__.CompletionVerifierTests.test_07_wrong_state) ... ok
+test_08_incomplete (__main__.CompletionVerifierTests.test_08_incomplete) ... ok
+test_09_wrong_image_hash (__main__.CompletionVerifierTests.test_09_wrong_image_hash) ... ok
+test_10_receipt_omission_and_hash_disagreement (__main__.CompletionVerifierTests.test_10_receipt_omission_and_hash_disagreement) ... ok
+test_11_wrong_path_and_extra_key (__main__.CompletionVerifierTests.test_11_wrong_path_and_extra_key) ... ok
+test_12_missing_or_empty_raw_file (__main__.CompletionVerifierTests.test_12_missing_or_empty_raw_file) ... ok
+test_13_final_receipt_bindings (__main__.CompletionVerifierTests.test_13_final_receipt_bindings) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 193.507s
+
+OK
