@@ -49,7 +49,7 @@ def test_bootstrap_cache_exactly_matches_full_reevaluation_with_ties_and_crowd()
 def test_empty_detections_and_paired_sampling():
     dataset, _ = fixture()
     result = evaluate_dataset(dataset, [], [1, 2])
-    assert metrics(result.eval) == {"AP": 0., "AP50": 0., "AR50": 0.}
+    assert metrics(result.eval) == {"AP": 0., "AP50": 0., "AR": 0., "AR50": 0.}
     a = paired_bootstrap_indices(2, replicates=10)
     np.testing.assert_array_equal(a, paired_bootstrap_indices(2, replicates=10))
     assert a.shape == (10, 2)

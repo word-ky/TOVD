@@ -40,7 +40,7 @@ def metrics(evaluation):
         valid = values[values >= 0]
         return float(valid.mean() * 100) if valid.size else float("nan")
     return {"AP": mean_valid(precision), "AP50": mean_valid(precision[0]),
-            "AR50": mean_valid(recall[0])}
+            "AR": mean_valid(recall), "AR50": mean_valid(recall[0])}
 
 
 def image_cache(evaluator):
