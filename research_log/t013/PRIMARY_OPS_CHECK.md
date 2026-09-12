@@ -71,3 +71,5 @@ Receipt SHA256: `b1b6120aef9885fea74bdfede2f69ebf6adace8f19a9eb82a373ae4009ab55c
 Audit script SHA256: `ccf84a3697c8526c3166482f7b44d7fef2e04485086b91ed966416ac6718a32a`.
 
 All requested operational checks pass. Continue the same primary run and15-minute monitoring. Stop OPS1 after publication and await the next Lead package; no YOLO setup or scientific analysis is authorized by this pass.
+
+End-of-package bookend at2026-09-13T02:28:25+08:00: primary tmux alive,189/1000 images at19394.152425s; free26675806208 bytes. One SSH timeout (exit255) preceded a successful read-only retry. The original0.54s audit snapshot and its JSON remain unchanged.

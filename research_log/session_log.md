@@ -385,3 +385,20 @@ GitHub main synced at14a9d7e; no new Lead task. P2 already verified/delivered; n
 
 ## 2026-09-13T02:05:42+08:00 heartbeat operational check
 GitHub main synced at4232db9; no new Lead task. P2 already verified/delivered; no repeated work. Primary20260912-210355-tovd-native30-primary tmux alive,176/1000 images at18030.316314s,26G filesystem free, no exit receipt observed, analysis result absent. Only operational counts/process/storage inspected; no partial scientific metrics. No code/environment/config/process changes. Continue existing primary and quiet15-minute monitoring.
+
+
+## 2026-09-13T02:29:23.792699+08:00 T013-OPS1 — PASS / WAITING FOR LEAD
+
+Evidence commit 67baf3892a41604f98543231692c54879a5ddfd2. Lead bc041cb assigns OPS1 and accepts P2; review-log append784d7a1 merged without changing the task. Files: research_log/t013/primary_ops_check.py, primary_ops_receipt.json, PRIMARY_OPS_CHECK.md; coordination/state/log handoffs. No frozen primary implementation or inputs changed.
+
+Read-only audit at2026-09-13T02:25:47+08: PID721181 is the only process with the exact cache target argument, parent721177, tmux pane721175 in its ancestry; same process at start/end. CWD=/home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze. Command=/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -u -m scripts.t013_native_run --assets /home/wenchang/asdasdsad/wjq/TOVD/shared/t013 --output /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/cache --freeze-commit 6fec32243985ccc808123d851abf5f3dea10af99. No duplicate target, no unreadable process cmdline entries. Run/tmux/release/freeze bindings PASS.
+
+Closed188/1000 images,2820 expected/observed closed paths; exactly15 per closed image. All observed paths2822; only next image105264 in flight with2 cells. Missing/unexpected paths0. SampleIDs exactly [1425,1490,1584,51712,53909,54123,54593,104455,104619,104782], positions [0,1,2,92,93,94,95,185,186,187]: first3, nearest4 to completed median position with lower-index tie break, latest3. All150 opaque file hashes match cache-manifest provenance hashes and size/mtime stable during hashing. No prediction deserialization.16 frozen source/provenance file hashes and initial model-state receipt agree; final model-state verification remains pending original-run completion.
+
+Storage uses only15 closed-file allocated sizes per image (transposed cache layout). Median16310272 bytes; P9516355328 bytes (linear interpolation). Remaining812; projected13280526336 bytes. Free26703241216; required ceil(1.20*projection+8GiB)=24526566196; margin2176675020 bytes (~2.027GiB). Fixed disk inequality PASS. No deletion/compression/move to obtain pass.
+
+Commands: local python -m py_compile research_log/t013/primary_ops_check.py PASS; remote system python3 /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/ops1/primary_ops_check.py > /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/ops1/primary_ops_receipt.json exit0, about0.54s. Opaque/provenance audit only; no detector tests/scientific analysis. Receipt SHA b1b6120aef9885fea74bdfede2f69ebf6adace8f19a9eb82a373ae4009ab55ca; script SHA ccf84a3697c8526c3166482f7b44d7fef2e04485086b91ed966416ac6718a32a. Full150 size/hash rows and process metadata in JSON.
+
+End-of-package health at2026-09-13T02:28:25+08: same primary tmux alive,189/1000 at19394.152425s, free26675806208 bytes. First bookend SSH attempt timed out (exit255); one read-only retry succeeded. No inference/run repair or process interruption occurred.
+
+Zero parsed prediction contents/scientific metrics; zero active-run mutation or YOLO installation/import/weight loading/image inference. All requested OPS1 checks pass. Stop this package and await Lead review; continue only the existing primary/15-minute heartbeat. Do not rerun OPS1 merely because its heading persists; no YOLO setup or analysis authorization.
