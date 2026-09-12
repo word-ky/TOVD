@@ -132,3 +132,6 @@ All3600freshnovel episodes recovered, alongside1800basecalibration;52originalrun
 Historical scoringerrorwithin2e-6; accuracy andselected-token probabilitiesexact; normal/oracle bitwise equalityandparametersunchanged. Local/remoteCPU/CUDA95tests each pass.
 Both plots visuallychecked; allsummary/gate/per-cell/headroom tables retained. R2throwsawayhardutility despiteeasyregressionremoval; recommendterminatecurrentrollbackline, awaitleadreview. No activejob/retuning/detector.
 Final report/state/recoverylogs written; syncingtoA6000 andcommitting/pushing completeevidence.
+
+## 2026-09-12 13:32 +08 T011 dispatch
+Tested79e6e2baac5b92dd8b66c1a8a048a4d5013f5d5b; preregisterb615642. Release20260912-133111-tovd-t011; run20260912-133149-tovd-t011-a6000 onGPU1. FullCPU/CUDA tests precede1800episode screen in script. No outcomes/changes yet. Source/config/hashes unchanged.

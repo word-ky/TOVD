@@ -1,6 +1,6 @@
 # TOVD project state
 
-T001-T010 accepted. T011 IMPLEMENTED, preregister b615642.
-QLSR/core+runner6tests pass; full local101passed19.16s. No T011 scientific outcomes yet.
-Next: deploy tested code and run scripts/run_t011_a6000.sh: fullCPU/fullCUDA then1800freshnovel development episodes onGPU1. Sources/config/equations/fivecriteria frozen in research_log/t011.
-No selector/outer training/detector; stop for lead review after this screen. Heartbeat15min; no duplicate jobs.
+T001-T010 accepted. T011 RUNNING: 20260912-133149-tovd-t011-a6000, GPU1.
+Preregisterb615642; tested79e6e2baac5b92dd8b66c1a8a048a4d5013f5d5b; release20260912-133111-tovd-t011.
+Local101passed19.16s. Remote script CPU/CUDAfull tests then1800episode screen.
+Inspect this explicit run ID, fetch completed artifacts, report fixed five criteria. Do not start duplicatejobs or tune outcomes. Heartbeat15min.

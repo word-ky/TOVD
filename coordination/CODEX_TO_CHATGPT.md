@@ -84,3 +84,6 @@ Both figures visually checked; git diff --check passes. No remaining execution b
 
 ## T011 IMPLEMENTED — pre-dispatch
 2026-09-12 13:30 +08. Preregistration b615642a3b23261dfaed6ebbdb61b423be7f3901. New module tests3/3, runner+mechanism tests6/6, full local101/101 (19.16s). No scientific outcomes. Existing accepted source hashes unchanged. Exact new code/config/PLAN hashes in research_log/t011/implementation_hashes.json. Changed files: new tovd/models/query_local_residual.py, tests/test_query_local_residual.py, research_log/t011/{experiment,summary}.py, scripts/run_t011_a6000.sh, hash manifest and logs. Per-query cosine teacher, independent residual gradient, fixed Armijo, uniform S3; all runtime functions exclude labels and IDs. Local random-checkpoint end-to-end verified. A6000 GPU1 free50,598,707,200bytes; existing NVML warning but Torch CUDA operational. Next deploy tested commit; remoteCPU/CUDA101 must pass before exact1,800episode screen.
+
+## 2026-09-12 13:32 +08 T011 dispatch
+Tested79e6e2baac5b92dd8b66c1a8a048a4d5013f5d5b; preregisterb615642. Release20260912-133111-tovd-t011; run20260912-133149-tovd-t011-a6000 onGPU1. FullCPU/CUDA tests precede1800episode screen in script. No outcomes/changes yet. Source/config/hashes unchanged.
