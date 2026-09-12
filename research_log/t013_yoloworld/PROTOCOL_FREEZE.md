@@ -1,5 +1,15 @@
 # T013-YW-P1 — source-only protocol receipt
 
+## P2 superseding Lead convention — 2026-09-13
+
+Lead ccec9fd accepts the P1 source-only blocker below and resolves the **dynamic-vocabulary interaction lane** before outcomes: append exactly one trailing U+0020 space, giving runtime81/111/111 while semantic names/order remain80/110/110. Blank indices are80/110/110, canonical indices0–79, extended distractors80–109. Blank participates normally through text encoding, fusion, dense scoring and the frozen native filtering/NMS/max300 selection. Remove blank-labelled retained predictions from semantic metric rows only after selection; never refill slots. The rule is identical across all15cells. Published-COCO baseline fidelity remains separately unresolved; no alternative blank convention may be selected from runtime results.
+
+`protocol_adapter.py` implements only text construction, index partitions and filtering of already-native-selected row lists. It has no model, NMS, scoring, preselection-pool or refill implementation. Command `python -m unittest discover -s research_log/t013_yoloworld -p test_protocol_adapter.py -v` passed7/7 local standard-library tests in0.005s; output in `p2_tests.txt`. `protocol_adapter_receipt.json` binds the unchanged semantic artifact, historical P1 JSON and native constants. No detector import/install/load/inference occurred. P2 fixture verification is not runtime readiness or published-baseline reproduction.
+
+The original P1 source evidence and its machine-readable `protocol_freeze.json` remain historical records. The null background fields in that P1 JSON mean source-only ambiguity at P1, not the current Lead-resolved interaction convention; use the P2 receipt for that convention. The remainder of this document preserves the P1 finding and stop request as recorded at commit6694fcc. P2 still does not authorize environment installation, checkpoint loading, image smoke tests, the benchmark or T014. Stop after this package and wait for the next Lead task.
+
+## Original P1 record
+
 Recorded 2026-09-13, before any YOLO outcome or Grounding-DINO partial scientific result was inspected. **BLOCKED: background handling is not uniquely established by the pinned official evidence.** Native postprocessing constants are resolved for the selected config; the complete published COCO baseline recipe is not. This is an engineering/protocol blocker, not a negative scientific result. Stop here and return to Research Lead under mailbox commit `c2f24e28d0579f2b0c55a8181c4532a721c354db`.
 
 The model remains V2.1-S stage2/1280, checkpoint `s_stage2-4466ab94.pth`, SHA256 `4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458`. YOLO source revision is `b1b09f2f0340ca7dede69e10b7e909c469677fd9`; MMYOLO gitlink is `4d97b3a06609dba94b8ec584be2f2029cfdb7519`. No candidate substitution or model sweep occurred.

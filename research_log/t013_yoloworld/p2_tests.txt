@@ -1,0 +1,12 @@
+test_blank_is_not_confused_with_extended_distractor_80 (test_protocol_adapter.ProtocolAdapterTests.test_blank_is_not_confused_with_extended_distractor_80) ... ok
+test_index_partitions_preserve_semantic_identity (test_protocol_adapter.ProtocolAdapterTests.test_index_partitions_preserve_semantic_identity) ... ok
+test_no_refill_from_larger_pool_at_native_300_limit (test_protocol_adapter.ProtocolAdapterTests.test_no_refill_from_larger_pool_at_native_300_limit) ... ok
+test_receipt_binds_frozen_inputs_and_native_constants (test_protocol_adapter.ProtocolAdapterTests.test_receipt_binds_frozen_inputs_and_native_constants) ... ok
+test_runtime_text_counts_content_and_order (test_protocol_adapter.ProtocolAdapterTests.test_runtime_text_counts_content_and_order) ... ok
+test_same_contract_across_all_15_cells (test_protocol_adapter.ProtocolAdapterTests.test_same_contract_across_all_15_cells) ... ok
+test_selected_semantic_rows_keep_order_scores_boxes_and_identity (test_protocol_adapter.ProtocolAdapterTests.test_selected_semantic_rows_keep_order_scores_boxes_and_identity) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.005s
+
+OK

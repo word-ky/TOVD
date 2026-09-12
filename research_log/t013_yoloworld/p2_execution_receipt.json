@@ -1,0 +1,47 @@
+{
+  "task": "T013-YW-P2",
+  "status": "VERIFIED_MODEL_FREE_FIXTURE",
+  "recorded_at": "2026-09-12T17:16:02.505053+00:00",
+  "lead_commit": "ccec9fdaceba10f768da1dfa3aa7843712128f16",
+  "test_command": "python -m unittest discover -s research_log/t013_yoloworld -p test_protocol_adapter.py -v",
+  "receipt_command": "python research_log/t013_yoloworld/protocol_adapter.py",
+  "tests_run": 7,
+  "test_seconds": 0.005,
+  "tests_passed": true,
+  "python_executable": "D:\\anaconda3\\python.exe",
+  "python_version": "3.12.7",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "test_dependencies": "Python standard library only",
+  "semantic_vocabulary_sha256": "3bb4a0ebada1f9da407ae6a94f1135798dba7117bd658a6ecba97b2ebfad0967",
+  "p1_receipt_sha256": "85c590e21b6dc1292ad645dd660d750cfd4df42e8880f0938849e13e456f07d0",
+  "native_postprocessing_sha256": "8ea66b1454fcf2e5e5d9efdc9f836bfa44c0fc8e4018c6be57d08bd5ccc3b9d2",
+  "runtime_text_counts": {
+    "V0": 81,
+    "Vhard30": 111,
+    "Vrand30": 111
+  },
+  "blank_indices": {
+    "V0": 80,
+    "Vhard30": 110,
+    "Vrand30": 110
+  },
+  "zero_activity": {
+    "yolo_image_inference": true,
+    "detector_import": true,
+    "package_installation": true,
+    "checkpoint_payload_download_or_load": true,
+    "grounding_partial_scientific_metric_inspection": true,
+    "active_primary_mutation": true
+  },
+  "grounding_health": {
+    "observed_at": "2026-09-13T01:12:25+08:00",
+    "run": "20260912-210355-tovd-native30-primary",
+    "completed_images": 146,
+    "total_images": 1000,
+    "seconds": 14890.053538636013,
+    "tmux_alive": true,
+    "filesystem_free_human": "26G",
+    "analysis_result_exists": false
+  },
+  "next_action": "Stop P2 after publication. Await Research Lead; no detector runtime, benchmark or T014 authorized."
+}
