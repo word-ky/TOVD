@@ -230,7 +230,7 @@ Validity is accepted. The audit used the exact frozen T005/T007 state grid and e
 
 Scientific result: all 14 preregistered single scalar features fail the episode-level interpretation gate. Best overall is post-candidate relative inner reduction with mean LOSO AUROC 0.5806 (minimum 0.4911); best pre-update is gradient norm at 0.5385 (minimum 0.4087). Easy pooled confidence-gap/max-probability AUCs are not transferable because the held-seed orientation flips on seed 27. This rules out a defensible simple episode-level selective/rollback C2 policy under the tested state grid.
 
-The localization evidence is mechanistically useful but insufficient for deployment: harmful easy episodes are more confident at W0 and show somewhat larger normalized updates/representation shifts, yet they have smaller predictive JS, fewer top-1 changes and smaller relative inner descent than beneficial easy episodes. All 33 hard state means remain beneficial even though individual hard episodes can be harmed. Therefore “confident-state overspecialization” is only a partial qualitative explanation, and episode averaging may be concealing query-local structure.
+The localization evidence is mechanistically useful but insufficient for deployment: harmful easy episodes are more confident at W0 and show somewhat larger normalized updates/representation shifts, yet they have smaller predictive JS, fewer top-1 changes and smaller relative inner descent than beneficial episodes. All 33 hard state means remain beneficial even though individual hard queries/episodes can be harmed. Therefore “confident-state overspecialization” is only a partial qualitative explanation, and episode averaging may be concealing query-local structure.
 
 **Next action:** T009 assigned as the final narrow audit before terminating this fast-weight safety branch. Reuse T008 stored query probabilities/tokens and decompose task harm at the query level. Test fixed per-query pre-update and post-candidate scalars with leave-one-seed-out evaluation, quantify correct/wrong transition types and confidence-quartile damage attribution, and compute an offline oracle per-query rollback ceiling. No learned gate, threshold rescue, model rerun/retraining, objective/eta change, or detector integration is allowed. A future T010 is justified only if a single query-level label-free scalar generalizes across seeds and the oracle rollback ceiling shows meaningful retained hard gain plus removal of easy regressions; otherwise formally stop O1+C2 and pivot to a non-destructive higher-level formulation.
 
@@ -285,3 +285,24 @@ Scientific result: the confirmatory method fails Gates 1 and 2 while passing Gat
 The preregistered stop rule therefore applies. Do not rescue this line with threshold normalization, state/regime thresholds, R3, extra features, learned gates or C2 retuning. The next test must change the structure of the fast semantic state itself.
 
 **Next action:** T011 assigned as a query-conditioned fast semantic residual screen. Keep W0 immutable, replace the shared per-image adapted fast model with zero-initialized query-local residual state derived from query-localized visual context plus the current vocabulary, and compare against W0, existing global C2 and a uniform-context residual control on a new preregistered development stream. No rollback selector, outer training or detector integration is allowed.
+
+---
+
+## 2026-09-12 — T011 final review
+
+**Decision:** ACCEPTED AS A VALID NEGATIVE DEVELOPMENT SCREEN; FAST-SEMANTIC-STATE PROGRAM TERMINATED AT THE SYNTHETIC MECHANISM LEVEL
+
+Reviewed commits/artifacts:
+- `b615642a3b23261dfaed6ebbdb61b423be7f3901` — preregistered T011 equations, state grid, fresh namespace and five gates;
+- `79e6e2baac5b92dd8b66c1a8a048a4d5013f5d5b` — modular QLSR implementation, runner and tests;
+- `cd1c1aadab8e2dbf89244706f96fb8f18c92860b` / `7e6393b9817c3479cdbfcfb6279905d1c56b3ed1` — A6000 dispatch and remote-test evidence;
+- `f7da4299450a41e31d4c517442c5d6043d88bfa5` / `fd841b34ec1f004043fc30054c93af9153beeae1` — final report/publication and recovery receipt;
+- `research_log/t011/RESULTS.md`, `gates.json`, and `tovd/models/query_local_residual.py`.
+
+Validity is accepted. The screen uses nine frozen checkpoints and 1,800 fresh novel episodes / 14,400 queries under a preregistered namespace. S0/S1 replay exactly; QLSR runtime excludes labels/IDs; residuals are exactly zero-initialized, query-isolated, episodically reset and vocabulary-sensitive; W0/projections/shared MLP remain byte-unchanged. Local, A6000 CPU and A6000 CUDA suites each pass 101/101. No outcome-driven scientific setting changed after the tested implementation.
+
+Scientific result: **all five gates fail**. S2's localized teacher is genuinely query-dependent, but its residual diversity is lower than uniform-context S3 (`0.4102` vs `0.4302`). More importantly, S2 worsens hard NLL against W0 by `+0.2010 / +0.0564 / +0.0086` for original/W1/W2 and drops hard accuracy by `15.79 / 5.29 / 2.29` points. Original and W1 improve 0/3 hard seeds; W2 improves 2/3 but its worst regression is `0.0625` nats. All nine easy seed/state cells fail, and S2 is worse than S3 on both pooled hard and easy NLL.
+
+The failure is mechanistically decisive for this branch because it occurs despite apparently healthy optimization: 14,397/14,400 S2 query steps are accepted and the local semantic loss falls from `2.3236` to `1.8190`. Thus yet another parameterization shows that successful label-free semantic-objective descent does not imply task-useful movement. T011 also rejects the narrower explanation that the main remaining defect was simply sharing one image-level fast state across heterogeneous queries.
+
+**Decision / next action:** enforce the T011 stop rule. Do not add another fast-state loss, selector, controller, eta schedule, meta-training variant or detector integration. The current fast-semantic-state thesis is not validated by the controlled synthetic program. T012 is assigned as a static activation-side reduction audit: preserve W0 and all slow parameters, use query-local image/vocabulary evidence only through feed-forward distribution-level fusion, calibrate at most one global fusion exponent on fresh base/train episodes before novel evaluation, and compare query-local versus uniform-context fusion. This is a research reset to determine whether useful vocabulary-relative evidence survives without test-time state adaptation.
