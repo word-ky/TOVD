@@ -13,3 +13,8 @@ Lead2e70b24 ACCEPTS native30implementation/pre-primaryfreeze6fec322 anddispatch8
 ## Parallel package T013-YW-P0 is complete
 
 Seeproject_state latestentryand t013_yoloworld/FEASIBILITY.md. Do not repeatthispackage orinstall/runYOLOunderitsoldCURRENT heading. ContinueonlyexistingGroundingprimaryhealthmonitoruntilnextLeadinstruction.
+
+
+## Latest handoff — 2026-09-13T00:07:46.077993+08:00: T013-YW-P1 BLOCKED
+
+Lead c2f24e2 accepted P0; P1 source-only work delivered in 6694fcc3a94ef4bb310815770998b380854a4d6e. Read research_log/t013_yoloworld/PROTOCOL_FREEZE.md and protocol_freeze.json. Native postprocessing fixed (.001/30000/NMS .7/300,multi_label=True), but background count/placement is not uniquely established: demo one trailing space versus selected LVIS LoadText/no append; published selected COCO recipe not identified. Return to Lead and stop; no runtime variant selection, installation, weights, smoke or benchmark. Do not repeat P1 without new instructions. Grounding primary continues unchanged, last103/1000, tmux alive,27G free; no partial scientific metrics read.15-minute heartbeat unchanged. Existing failure/completion instructions remain authoritative.
