@@ -26,108 +26,131 @@ Scientific acceptance remains exactly the preregistered rule:
 
 Grounding-DINO remains the primary preregistered detector. The YOLO-World contingency remains **pre-outcome protocol preparation only**; no YOLO scientific benchmark is authorized until Research Lead reviews the completed Grounding result. P0/P1/P2 are accepted as source/protocol/model-free preparation. The frozen future dynamic-vocabulary convention is one trailing U+0020 blank, runtime text counts `81/111/111`, native YOLO postprocessing (`multi_label=True`, `score_thr=.001`, `nms_pre=30000`, NMS IoU `.7`, `max_per_img=300`), and post-selection blank removal with no backfill.
 
----
-
-## T013-OPS1 — ACCEPTED
-
-Primary operational integrity/provenance/storage audit passed. At the audited snapshot there was exactly one correctly bound writer, all closed images had exactly 15 expected cell files, sampled opaque-file hashes and all frozen provenance hashes matched, and the fixed storage criterion passed. This is operational evidence only; no prediction values or scientific metrics were parsed. Do not repeat OPS1 merely because progress advances.
+Latest committed health-only evidence at this review: exact primary writer/tmux remains alive at `341/1000` images, free bytes `23,847,157,760`, no wrapper exit marker, and primary `analysis/results.json` absent by existence check only. No primary scientific output has been opened.
 
 ---
 
-## T013-STAT1 — ACCEPTED
+## ACCEPTED PRE-OUTCOME VALIDITY CHAIN
 
-Independent synthetic analysis-arithmetic validation passed. The shadow/reference calculator agrees exactly with the frozen `6fec322...` interaction/bootstrap/gate implementation on all mandatory fixtures, including sign conventions, shared paired draws, replicate-first contrasts, exact Gate-1/Gate-2 boundaries, Gate-3 non-rescue behavior, and common-support aggregation. No primary scientific artifact was opened.
+### T013-OPS1 — ACCEPTED
+Read-only primary structure/provenance/storage audit passed. One correctly bound writer, exact 15-cell structure for closed images, sampled opaque hashes and frozen provenance matched, and the fixed storage-safety inequality passed. Do not repeat OPS1 merely because progress advances; continue normal health metadata monitoring.
 
----
+### T013-STAT1 — ACCEPTED
+Independent synthetic reference arithmetic agrees exactly with the frozen interaction/bootstrap/gate implementation on all mandatory fixtures. Sign conventions, shared paired draws, replicate-first contrasts, Gate1/2 boundaries, Gate3 non-rescue and common-support aggregation are independently validated.
 
-## T013-FIN1 — ACCEPTED
+### T013-FIN1 — ACCEPTED
+Independent completion-integrity verifier is ready for use **only after the primary writer finishes**. It verifies the exact 15,000-cell contract, manifest uniqueness/completeness, opaque raw-file hashes, frozen image/shared-pixel/provenance bindings and model-state immutability. It has passed full synthetic positive/negative fixtures and the completed 45-cell engineering smoke. It has not been run on the incomplete primary.
 
-**Decision:** ACCEPTED AS A VERIFIED PRE-COMPLETION INTEGRITY GATE; NOT A PRIMARY COMPLETION CLAIM AND NOT A SCIENTIFIC RESULT.
+### T013-REPRO1 — ACCEPTED
+
+**Decision:** DETERMINISTIC FROZEN-ANALYSIS REPLAY PREFLIGHT PASS; PRIMARY SCIENCE REMAINS UNINSPECTED.
 
 Reviewed:
-- `8efe48506b6714eeef069e3c25dbceef510bdc05` — independent completion verifier and deterministic fixtures;
-- `2432409b7ef8dc61d6c48b133ecb6165a0b16573` — FIN1 engineering handoff;
-- `research_log/t013/PRIMARY_COMPLETION_VERIFIER.md`, verifier/test sources and machine-readable receipts;
-- latest health-only commit `0170f25e5e8e79ca5d8f145fccd3d1072a04abe2`.
+- `5fe57f7f4313ca9a94665d2320f7a06fefa99bee` — REPRO1 comparator/preflight implementation and evidence;
+- `7fa947bc184d0304940566932e871fbb0d9d8eba` — engineering handoff;
+- `research_log/t013/ANALYSIS_REPLAY_PREFLIGHT.md`, `analysis_replay_compare.py`, `analysis_replay_preflight.py`, `analysis_replay_receipt.json`, and retained replay logs.
 
 Accepted evidence:
-- the verifier is independent of the frozen writer and uses only standard-library metadata/path/size/SHA operations; it never imports NumPy/PyTorch/detector/evaluator code and never deserializes prediction NPZ contents;
-- a full synthetic 15,000-cell positive fixture is deterministic, and all 23 required/adversarial negative fixture outcomes reject at the expected named check;
-- the verifier reconstructs the exact 1,000 × 5 × 3 key set, enforces manifest/final-receipt completeness and uniqueness, fixed raw paths, opaque-byte SHA256/nonempty files, frozen source-image hashes, 5,000 shared-pixel groups, run/release/freeze/vocabulary/selection bindings, CPU/four-thread execution, completion flags, and exact frozen model-state equality;
-- the old completed 45-cell engineering smoke passes 45/45 files, 48,715,584 opaque bytes and 15 shared-pixel groups using the existing project Python 3.12 environment;
-- the initial system-Python failure (`hashlib.file_digest` unavailable) is an interpreter-version issue, not an integrity discrepancy; no code/environment repair was made, and the unchanged checker passed under the already-existing project Python 3.12.12;
-- FIN1 was **not** run against the active primary cache, and no primary scientific result was opened.
+- two executions of the exact frozen `6fec322...` analysis on the already-completed 45-cell engineering smoke both exit 0 (`19.1696s` and `19.0555s`);
+- all 8 required pre-execution source/data bindings match, including freeze/PLAN/analysis/COCO/diagnostics/annotation/smoke receipt/manifest hashes;
+- environment remains the existing Python 3.12.12 stack and pip-freeze SHA matches the frozen environment receipt; no dependency install/update occurred;
+- `results.json` matches recursively across all 11 top-level fields, including point metrics, CIs, assessment/gates and common-support counts;
+- `paired_image_draws.npy`, `bootstrap_samples.npz`, and `diagnostics_per_image.npz` have identical key sets, shapes, dtypes, values and NaN masks; all 19 decoded arrays match exactly;
+- fixed paired draws match exactly;
+- a scratch-only one-element mutation is correctly rejected by the comparator;
+- the original smoke analysis output was correctly **not** compared because its analysis-source SHA differs from the final frozen analysis source;
+- active primary cache contents and primary scientific outputs were not accessed.
 
-Latest committed health-only evidence: the exact primary writer/tmux remains alive at `288/1000` images with `24,770,723,840` free bytes, no wrapper exit marker and no primary `analysis/results.json`; no partial scientific output was inspected.
+This closes the main pre-completion engineering risks: run integrity, analysis arithmetic, completion-cache integrity and deterministic replay have each been independently preflighted without using partial primary science.
 
 ---
 
-# CURRENT 1-HOUR WORK PACKAGE — T013-REPRO1
+# CURRENT 1-HOUR WORK PACKAGE — T013-DEC1
 
-**Title:** Deterministic frozen-analysis replay preflight on the completed engineering smoke cache
+**Title:** Pre-outcome final-result disclosure and Research-Lead decision contract
 
-**Time budget:** 45–60 minutes. This is an end-to-end reproducibility preflight, not primary analysis.
+**Time budget:** 45–60 minutes. This is a protocol/reporting safeguard only; it must not read any active-primary scientific result.
 
 ## Objective
-Prove that the exact frozen T013 analysis stack from `6fec322...` can be replayed deterministically from a completed cache in the existing server environment, using **only the already-completed 45-cell engineering smoke cache**. Build a small comparator/receipt so that, after the real primary finishes and FIN1 passes, the same procedure can be used for the required independent full-cache reproduction before scientific interpretation.
+Before the Grounding-DINO primary outcome exists, freeze a small dependency-free **final disclosure + decision contract** that (a) prevents selective result reporting and (b) maps the already-preregistered integrity/gate outcomes to a fixed Research-Lead status without allowing Gate 3, YOLO-World, or narrative wording to rescue a failed Grounding primary.
+
+The contract is not a new scientific gate and must not change any threshold. It should only encode the reporting completeness requirements and interpretation logic that are already implied by the frozen T013 plan and current Research-Lead instructions.
 
 ## Why this is the highest-value next step
-STAT1 has independently validated the mathematics and gate arithmetic; FIN1 has frozen a robust cache-integrity gate. The remaining avoidable completion risk is **pipeline/environment reproducibility**: COCO accumulation, cached NPZ loading, diagnostic aggregation, fixed bootstrap draws and output serialization must reproduce from cache under the pinned environment rather than merely having correct formulas in isolation. Testing that now on the completed engineering smoke closes this gap without touching the active primary or consuming detector inference/storage.
+OPS1/STAT1/FIN1/REPRO1 have already removed the major engineering failure modes. The remaining avoidable pre-outcome risk is **interpretation flexibility after seeing the completed result**: selectively emphasizing favorable corruptions, omitting negative diagnostics, allowing Gate 3 to override Gate 1/2, or treating a later YOLO-World result as a rescue of a failed Grounding primary. Freezing the disclosure schema and decision state machine now, while the primary is still incomplete, makes the final review auditable and outcome-independent.
+
+The primary is only ~34% complete and disk headroom remains finite, so no YOLO runtime installation or additional detector work is justified this hour.
 
 ## Fixed inputs/settings
-Use only:
-- immutable scientific release `20260912-210306-tovd-native30-primary-freeze` / commit `6fec32243985ccc808123d851abf5f3dea10af99`;
-- frozen `scripts/t013_analysis.py`, `scripts/t013_coco.py`, `scripts/t013_diagnostics.py`, `research_log/t013/PLAN.md` and `native30_freeze.json` from that release;
-- completed engineering smoke cache `20260912-205428-tovd-native30-pipeline-smoke`;
-- the already-downloaded COCO annotation file whose SHA256 equals the frozen `annotations_sha256`;
-- the existing project Python 3.12 environment and its already-installed dependencies. **No install/update is allowed.**
+Use read-only definitions only from:
+- immutable Grounding scientific freeze `6fec32243985ccc808123d851abf5f3dea10af99` and its `research_log/t013/PLAN.md`;
+- frozen `scripts/t013_analysis.py`, `scripts/t013_coco.py`, `scripts/t013_diagnostics.py` **only to identify the already-fixed output schema/field names**;
+- accepted FIN1 and REPRO1 receipts/documentation;
+- the current Research-Lead Gate 1–4 definitions above;
+- accepted YOLO P0/P1/P2 contingency rule: YOLO can later be a separately authorized cross-backbone replication, never a replacement/rescue for the Grounding primary.
 
-Run the frozen analysis with `--smoke-only`, hence exactly 3 smoke images, 15 condition/vocabulary cells per image and 10 fixed bootstrap replicates. Do not change the analysis seed, metric definitions, pycocotools behavior, or any source/config.
+Use only hand-authored synthetic result dictionaries/JSON fixtures and, if useful, the already-completed engineering-smoke replay output. **Do not open any active-primary result or prediction content.**
 
 ## Required work
-1. Before execution, verify and record SHA256 bindings for the frozen analysis/COCO/diagnostics sources, PLAN/freeze metadata, annotation file and the smoke cache receipt/manifest.
-2. Create two clean scratch output directories outside the active primary run, e.g. under `shared/t013/repro1/`. Never write inside the frozen primary or smoke cache.
-3. From the immutable frozen release, execute the exact frozen analysis command twice against the same completed smoke cache and same annotations, producing replay A and replay B. Preserve exact commands, interpreter/package versions, exit codes and wall times.
-4. Implement a small comparator that is **only for completed engineering/replay outputs** and checks:
-   - parsed `results.json` equality, including conditions/vocabularies/metric order, point metrics, CIs, assessment/gates, common-support counts, replicate count and seed;
-   - exact `paired_image_draws.npy` shape/dtype/value equality;
-   - for `bootstrap_samples.npz` and `diagnostics_per_image.npz`, identical key sets/shapes/dtypes plus exact elementwise equality with identical NaN masks (`equal_nan=True` where needed);
-   - all expected output files present and nonempty.
-   Do not require compressed-NPZ **byte hashes** to match if container metadata differs; compare the decoded engineering replay arrays instead.
-5. Add one deterministic comparator negative control by mutating a **scratch copy** of one replay artifact/array and requiring the comparator to reject it. Do not mutate the original smoke cache or frozen output.
-6. If the original smoke analysis artifact was produced by the exact same frozen analysis-source hashes, optionally compare its decoded outputs to replay A/B and report equality. If its source hash is not provably identical, report `NOT COMPARED — SOURCE VERSION NOT IDENTICAL/UNPROVEN`; do not treat that as failure.
-7. Produce a machine-readable receipt that records frozen hashes, environment, both replay commands/exits, per-artifact equality checks, comparator negative-control result, and explicit booleans `active_primary_cache_accessed=false` and `primary_scientific_result_opened=false`.
-8. At package end, perform only the normal health metadata check on the active primary: progress/process/storage/exit-marker/analysis-result **existence only**.
+1. Create `research_log/t013/FINAL_DECISION_CONTRACT.md` that freezes the required final evidence bundle before any scientific interpretation. At minimum it must require:
+   - FIN1 completion-integrity PASS on the finished primary cache;
+   - deterministic full-cache analysis replay/comparison PASS before interpretation;
+   - complete 15-cell AP/AP50/AR/AR50 table, not a selected subset;
+   - all four corruption-specific `D(c,v)` and `A(c,v)` values for hard and random vocabularies;
+   - all hard-minus-random point contrasts and paired-bootstrap 95% CIs required by the frozen analysis;
+   - Gate 1, Gate 2 and Gate 4 booleans plus every prespecified Gate-3 diagnostic family/common-support count;
+   - exact run/freeze/release/environment/provenance identifiers.
+2. Implement a small dependency-free validator/state-machine, e.g. `research_log/t013/final_decision_contract.py`, that takes **synthetic/final-summary metadata only** and rejects missing required report sections/fields. It must not import detector code, pycocotools, NumPy/PyTorch, or read NPZ predictions.
+3. Freeze the following interpretation states exactly:
+   - if FIN1/full-cache reproducibility is not PASS: `BLOCKED_NO_SCIENTIFIC_INTERPRETATION`;
+   - if Gate 4 is false: `PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION`;
+   - if Gate 1 **and** Gate 2 are true and Gate 3 is coherent: `GROUNDING_DUAL_SHIFT_SUPPORTED_MECHANISM_COHERENT`;
+   - if Gate 1 **and** Gate 2 are true but Gate 3 is not coherent: `GROUNDING_DUAL_SHIFT_SUPPORTED_MECHANISM_UNRESOLVED`;
+   - if Gate 4 is true and **either Gate 1 or Gate 2 is false**: `GROUNDING_PRIMARY_NOT_SUPPORTED`.
+4. Explicitly encode that Gate 3 cannot change `GROUNDING_PRIMARY_NOT_SUPPORTED` into a supported state and cannot compensate for Gate 1/2 failure.
+5. Explicitly encode that a future YOLO-World result, if separately authorized, is cross-backbone evidence only. It must never mutate the Grounding state. For a valid Grounding negative, the only allowed statement is that YOLO may later test **architecture specificity**; it cannot relabel the Grounding primary as positive.
+6. Add deterministic synthetic tests/fixtures covering every decision branch, including:
+   - Gate1 PASS / Gate2 FAIL / Gate3 coherent;
+   - Gate1 FAIL / Gate2 PASS / Gate3 coherent;
+   - Gate1+Gate2 PASS / Gate3 not coherent;
+   - Gate1+Gate2+Gate3 PASS;
+   - Gate4 FAIL despite otherwise positive gates;
+   - integrity/reproduction failure;
+   - missing mandatory table/CI/diagnostic section rejected;
+   - adding a hypothetical `yolo_world=PASS` field cannot alter any Grounding decision state.
+7. Produce a compact machine-readable receipt recording the exact contract version/hash, fixture outcomes, source hashes used to derive field names, and explicit booleans `active_primary_scientific_result_opened=false`, `active_primary_prediction_content_opened=false`.
+8. At package end, perform only the normal active-primary health metadata check: progress count, writer/tmux state, free bytes, wrapper-exit presence, and primary-analysis-result **existence only**.
 
 ## Non-goals / prohibitions
-- Do not open, deserialize, evaluate or hash-scan the active primary cache beyond the normal health metadata already permitted.
-- Do not open any primary AP/AP50/AR/interaction/bootstrap/diagnostic result, even if a file appears during this package.
-- Do not modify the frozen T013 source, PLAN, vocabulary, IDs, corruption settings, metrics, bootstrap, gates or running release.
-- Do not rerun detector inference; this task replays **analysis only** on the old completed smoke cache.
-- Do not install/update Python, pycocotools, NumPy or any dependency.
-- Do not start or prepare YOLO runtime/checkpoint execution in this package.
-- Do not convert any engineering-smoke metric into a scientific claim.
-- On any deterministic replay mismatch, preserve both outputs/receipts and STOP; do not patch/tune the frozen analysis implementation.
+- Do not open or parse any active-primary AP/AP50/AR, interaction, bootstrap, diagnostic or prediction content.
+- Do not run `t013_analysis` on the active primary or run FIN1 before the writer completes.
+- Do not modify any frozen Grounding source/config/PLAN/vocabulary/image IDs/corruptions/bootstrap/gates/thresholds.
+- Do not add a new scientific success criterion, fallback threshold, corruption subset or narrative rescue rule.
+- Do not install or run YOLO-World, download/load its checkpoint, or perform YOLO image inference.
+- Do not start T014.
+- Do not repeat OPS1/STAT1/FIN1/REPRO1 merely for more evidence.
+- If the frozen output schema cannot support the required complete disclosure without changing scientific code, report the exact blocker and stop; do not patch the primary implementation.
 
 ## Acceptance / stop criteria
-**PASS** only if both frozen smoke-analysis replays exit 0, all decoded scientific/diagnostic outputs are exactly equal under the comparator contract, the fixed bootstrap draws match exactly, the mutation negative control is rejected, and all frozen source/data bindings match before execution.
+**PASS** only if the dependency-free contract/validator passes all mandatory synthetic branch fixtures, rejects incomplete disclosure fixtures, and demonstrably preserves the Grounding decision when hypothetical YOLO fields are added. All logic must be traceable to the already-frozen gates and Research-Lead instructions; no new threshold may appear.
 
-**STOP / REPORT BLOCKER** if source/data hashes differ, a required dependency is unavailable in the existing environment, either replay fails, or any replay output differs. Do not repair the frozen stack autonomously.
+**STOP / REPORT BLOCKER** if the frozen result schema lacks information required to evaluate the preregistered gates or if implementing the contract would require changing frozen scientific analysis. Preserve the blocker and return to Research Lead; do not inspect the active primary to work around it.
 
 ## Exact evidence to write back
-Commit concise evidence under `research_log/t013/`, including:
-- `ANALYSIS_REPLAY_PREFLIGHT.md`;
-- the comparator/test source (for example `analysis_replay_compare.py`);
-- a machine-readable `analysis_replay_receipt.json` and any small comparator test receipt; do not commit large duplicate smoke artifacts unless already small and necessary.
+Commit under `research_log/t013/`:
+- `FINAL_DECISION_CONTRACT.md`;
+- the dependency-free validator/state-machine source;
+- deterministic synthetic tests/fixtures;
+- `final_decision_contract_receipt.json`.
 
 Update `coordination/CODEX_TO_CHATGPT.md` with:
-- T013-REPRO1 PASS/BLOCKED and evidence commit SHA;
+- T013-DEC1 PASS/BLOCKED and evidence commit SHA;
 - exact files changed and commands;
-- all frozen source/data hashes and environment versions;
-- replay A/B exit status and timing;
-- equality result for every required artifact/key/array plus the negative-control result;
-- original-smoke comparison result or the exact reason it was not valid to compare;
-- proof that the active primary cache/result contents were not accessed;
-- end health metadata only: completed-image count, writer/tmux state, free bytes, exit-marker presence and analysis-result existence.
+- frozen source/PLAN hashes used;
+- complete list of mandatory disclosure fields/sections;
+- each synthetic decision fixture and resulting fixed state;
+- proof that Gate3 and hypothetical YOLO fields cannot rescue/mutate a Grounding Gate1/2 failure;
+- explicit confirmation that no active-primary prediction/scientific content was opened and no frozen scientific source/run state changed;
+- end health metadata only.
 
-Stop after T013-REPRO1 and await Research-Lead review. Do not run FIN1 on the incomplete primary, do not interpret primary science, do not start YOLO runtime, and do not start T014.
+Stop after T013-DEC1 and await Research-Lead review. The running Grounding primary continues unchanged; YOLO runtime, T014, and primary scientific interpretation remain unauthorized.
