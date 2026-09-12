@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-192834-tovd-t013-select-a6000",
+  "releaseId": "20260912-191938-ttie-t014-stage-b",
+  "sessionName": "autodl-20260912-192834-tovd-t013-select-a6000",
+  "command": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -m scripts.t013_select_images --annotations /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations/instances_val2017.json --output \"$AUTODL_ARTIFACTS_DIR/image_selection.json\""
+}

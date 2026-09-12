@@ -18,6 +18,7 @@ def main():
     parser.add_argument("--selection", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--device", default="cuda")
+    parser.add_argument("--images", type=Path)
     args = parser.parse_args()
     vocab = json.loads(args.vocabulary.read_text())["vocabularies"]
     selection = json.loads(args.selection.read_text())
@@ -30,7 +31,8 @@ def main():
     before = state_hash(model)
     records = []
     for image_id in selection["smoke_ids"]:
-        image = Image.open(args.assets / "coco/val2017" / f"{image_id:012d}.jpg").convert("RGB")
+        image_root = args.images if args.images is not None else args.assets / "coco/val2017"
+        image = Image.open(image_root / f"{image_id:012d}.jpg").convert("RGB")
         standalone = detect(processor, model, np.array(image), vocab["V0"])
         for condition in CONDITIONS:
             pixels = corrupted_pixels(image, image_id, condition)

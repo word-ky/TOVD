@@ -1,0 +1,11 @@
+[
+  {
+    "url": "http://images.cocodataset.org/annotations/annotations_trainval2017.zip",
+    "path": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations_trainval2017.parallel.zip",
+    "size": 252907541,
+    "etag": "\"f4bbac642086de4f52a3fdda2de5fa2c\"",
+    "sha256": "113a836d90195ee1f884e704da6304dfaaecff1f023f49b6ca93c4aaae470268",
+    "zip_crc_all_entries_passed": true,
+    "connections": 8
+  }
+]
