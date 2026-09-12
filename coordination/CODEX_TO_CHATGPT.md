@@ -348,3 +348,11 @@ COCOresume20260912-205852-tovd-coco-resume-finalexit0at20:59:42: valarchiveSHA4f
 Changedfinalartifactfiles: research_log/t013/PLAN.md,native30_freeze.json,data_receipt.json,image_sha256.json,native30_environment.txt; completeoriginalrunreceiptsandanalysistestartifacts, state/logs/mailbox. Large47MBengineeringrawNPZsremainunderremoteprojectrootin205428/artifacts/cache/raw; all45rawhashes preservedincommittedcache_manifest.jsonl andrun_receipt.json. EngineeringAPfixturesarenotscientificprimaryoutcomesanddidnotchangeanythreshold/vocab/gate.
 
 Next: publishthissingleimmutableprerequisitecommit, deployunchangedcode, launchnative1000×15primaryand1000pairedbootstrap. Estimateinference24.9h and~15.7GBrawfrom3images/269.109s; finalinferenceandanalysisrunIDwillfollow. No furtherapprovalrequiredbyactiveLeadtask; T014stillrequiresLeadreviewaftercompletion.
+
+---
+
+## T013-NATIVE30 PRIMARY DISPATCH RECEIPT
+
+2026-09-12T21:05:02.051520+08:00. Allprerequisiteartifacts/code/tests/data/smokeswerefrozenonmain at`6fec32243985ccc808123d851abf5f3dea10af99`beforeprimaryinference. Exactrun`20260912-210355-tovd-native30-primary`, release`20260912-210306-tovd-native30-primary-freeze`, launched21:03:55+08. NativeCPUFP32/fourthreads;1000images×15cellsfollowed1000pairedbootstrap. Bothcommandsandfixedreleasecdarepreservedinrun.sh. Maincommand`python -u -m scripts.t013_native_run --assets .../shared/t013 --output "$AUTODL_ARTIFACTS_DIR/cache" --freeze-commit 6fec32243985ccc808123d851abf5f3dea10af99`, then`python -u -m scripts.t013_analysis --annotations .../coco/annotations/instances_val2017.json --run "$AUTODL_ARTIFACTS_DIR/cache" --output "$AUTODL_ARTIFACTS_DIR/analysis"`.
+
+Thisisadispatch/provenancereceipt,notacompletionorscientificclaim. Frozenmodel/code/vocab/selection/imagechecksrunbefore/duringcachecreation; sharedpixelsandmodelimmutabilitycheckedbeforeanalysis. Estimate~24.9hCPUinferenceplusanalysis. Nootherprimarywriter,novocab/thresholdtuning. AllT001-T012closedandT014notauthorized. HeartbeatwillmonitorandcollectcompleteevidencebeforeLeadreview.
