@@ -188,3 +188,9 @@ T011 publication complete: evidencecommit `f7da4299450a41e31d4c517442c5d6043d88b
 
 ## 2026-09-12 14:08 +08 T012 Phase0
 Synced bb4d451/d2738a7: LeadacceptedT011negative andterminatedfaststateprogram; newT012staticPoE auditACTIVE. Preregisteredninecheckpoint hashes, 4-billionbase/5-billionnovel disjointstreams, oneglobal lambda grid[0,.05,.1,.2,.5,1,2], baseNLLminimum/smallesttie, fixedtau=.2/eps1e-12, fivecriteria. Documented1e-6 strict-NLL comparison precision and A4historical-onlygradientexception. ExistingB1formula meaningfulonmatchedfrozenstate. Baseline17passed9.02s. No T012 outcomes. Next staticmodule/tests then two-phase A6000 execution with actual-lambda commit betweenphases.
+
+## 2026-09-12 14:16 +08 T012 increments green
+Preregister15d3353. Staticmodule3tests passed33.18s; expanded7tests passed17.76s, including literalPoE/lambda0 formula, no-gradient calibration, exactW0/B1, globalbase-onlytie/calibration, fixedgatearithmetic, label/IDindependence andtwophase random-world endtoend. ExistingC2/QLSR/generator untouched. GPU1free50,598,707,200bytes; GPU0 inusebyotherwork, leaveitunchanged. Full localregression next.
+
+## 2026-09-12 14:18 +08 T012 IMPLEMENTED / calibration preparation
+Preregister15d3353. Newfiles: tovd/models/static_semantic_fusion.py, tests/test_static_semantic_fusion.py, research_log/t012/{experiment,summary}.py, scripts/run_t012_{calibration,validation}_a6000.sh andimplementationhashmanifest. LiteralPoE, exactW0/B1; staticpath inference_mode/no gradient; existingC2onlyseparatehistoricalA4. Module3tests passed33.18s; expanded7passed17.76s; full local108passed53.20s. No T012 scientificoutcomes generated. Source/config/PLAN/newcode hashes frozen. Next GPU1CPU/CUDA fulltests thenbase-only calibration; actuallambda mustbecommittedbefore novelphase.

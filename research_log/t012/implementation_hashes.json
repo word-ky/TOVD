@@ -1,0 +1,38 @@
+[
+  {
+    "path": "tovd/models/static_semantic_fusion.py",
+    "sha256": "b745b256740c0a02e57fbe656caea268215b907478aa3aefa25e11e2709c85e1"
+  },
+  {
+    "path": "research_log/t012/experiment.py",
+    "sha256": "a1877e0cc60a2cf0928371a38fc19382f3317f39aace595d050bd0bbc1b23b6d"
+  },
+  {
+    "path": "research_log/t012/summary.py",
+    "sha256": "2c0a37917bb27ce868b59ad3a67a19f32d1790b3acb3c222a5579dc68962227a"
+  },
+  {
+    "path": "tests/test_static_semantic_fusion.py",
+    "sha256": "f45caecfef26b4e20e08c4e495d242429b8f806b3cfc2e61e82c652e843cfb31"
+  },
+  {
+    "path": "scripts/run_t012_calibration_a6000.sh",
+    "sha256": "345bc891b7558474fd9580575cc5105649f6d4520da01d483ea5befaf7d3b8c8"
+  },
+  {
+    "path": "scripts/run_t012_validation_a6000.sh",
+    "sha256": "254d5e226de405e8c6582297e0f29d2344932e257360df65546bd927becb2df2"
+  },
+  {
+    "path": "research_log/t012/config.json",
+    "sha256": "87ad4893abae65faa7d39ab5736b9f43bf888573c928fc14776017890e4ea668"
+  },
+  {
+    "path": "research_log/t012/sources.json",
+    "sha256": "972de5a21323e8c73befb1eac0a98009b7812752ff8f0475cd9e2b9e29b9772d"
+  },
+  {
+    "path": "research_log/t012/PLAN.md",
+    "sha256": "3f8d4b14430a98c53836dce4296ced6f05e57818b777411160d2aec4073dc27b"
+  }
+]

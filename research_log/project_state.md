@@ -1,7 +1,6 @@
 # TOVD project state
 
-T001-T011 accepted. Fast-state program terminated byleadbb4d451/d2738a7.
-T012 ACTIVE: staticactivation-side PoE audit, preregistering PLAN/config/sources beforeoutcomes.
-Ninefrozenstates; calibration4Bnamespace/validation5Bnamespace,1800episodes each. Global lambda chosenonce frombaseonly andmustbecommittedBEFOREnovelgeneration. B1matched-state activationcontrol andC2historicalreference; noA2/A3gradients/state.
-Baseline17tests passed9.02s. Next implement/test staticmodule thenrunner thenfullCPU/CUDA/A6000twophases.
-No activejob. Heartbeat15min. Do not rerunT011.
+T001-T011 accepted; faststateprogramterminated. T012 IMPLEMENTED, preregister15d3353.
+Staticmodule+runner7tests pass; full local108passed53.20s. No T012 scientificoutcomes yet.
+Next deploytestedcode: GPU1fullCPU/CUDA then1800basecalibration episodes only. Fetch actual global lambda +complete receipts andcommit before any novel generation. Novel phase separate1800episodes.
+Sources/config/equations/gates inresearch_log/t012 fixed. No A2/A3gradient/state; A4onlyhistoricalreference. Heartbeat15min; no duplicatejobs.
