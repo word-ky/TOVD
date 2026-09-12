@@ -1,0 +1,398 @@
+{
+  "task": "T013-YW-P1",
+  "status": "BLOCKED_SOURCE_AMBIGUITY",
+  "recorded_at": "2026-09-12T16:06:45.552902+00:00",
+  "lead_commit": "c2f24e28d0579f2b0c55a8181c4532a721c354db",
+  "source_revision": "b1b09f2f0340ca7dede69e10b7e909c469677fd9",
+  "mmyolo_revision": "4d97b3a06609dba94b8ec584be2f2029cfdb7519",
+  "selected_config": "configs/pretrain/yolo_world_v2_s_vlpan_bn_2e-3_100e_4x8gpus_obj365v1_goldg_train_1280ft_lvis_minival.py",
+  "selected_checkpoint": "s_stage2-4466ab94.pth",
+  "checkpoint_sha256": "4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458",
+  "semantic_class_counts": [
+    80,
+    110,
+    110
+  ],
+  "blank_handling_uniquely_resolved": false,
+  "frozen_blank_string": null,
+  "frozen_blank_count": null,
+  "frozen_blank_placement": null,
+  "blank_evidence": {
+    "text_demo": {
+      "count": 1,
+      "string": " ",
+      "unicode": "U+0020",
+      "placement": "after semantic classes"
+    },
+    "selected_LVIS_evaluation": {
+      "count": 0,
+      "automatic_append": false
+    },
+    "class_text_files": {
+      "coco_class_texts.json": {
+        "classes": 80,
+        "blank_class_indices": []
+      },
+      "lvis_v1_class_texts.json": {
+        "classes": 1203,
+        "blank_class_indices": []
+      }
+    },
+    "training_padding": {
+      "string": "",
+      "variable_count": true,
+      "scope": "training only"
+    },
+    "published_COCO_recipe_with_blank_rule_found": false
+  },
+  "native_postprocessing": {
+    "selected_config_constants_resolved": true,
+    "test_cfg": {
+      "multi_label": true,
+      "nms_pre": 30000,
+      "score_thr": 0.001,
+      "nms": {
+        "type": "nms",
+        "iou_threshold": 0.7
+      },
+      "max_per_img": 300
+    },
+    "with_nms": true,
+    "rescale": true,
+    "yolox_style": false,
+    "demo_extra_filtering": false,
+    "test_time_augmentation": false,
+    "use_same_native_contract_for_all_15_cells": true,
+    "full_published_COCO_recipe_verified": false
+  },
+  "execution": {
+    "yolo_image_inference_count": 0,
+    "detector_load_count": 0,
+    "package_install_count": 0,
+    "checkpoint_payload_download_count": 0,
+    "grounding_partial_scientific_metrics_inspected": false,
+    "active_primary_modified": false
+  },
+  "next_action": "Return blank/COCO recipe ambiguity to Research Lead; no installation or runtime variants.",
+  "sources": [
+    {
+      "repository": "AILab-CVC/YOLO-World",
+      "revision": "b1b09f2f0340ca7dede69e10b7e909c469677fd9",
+      "path": "configs/pretrain/yolo_world_v2_s_vlpan_bn_2e-3_100e_4x8gpus_obj365v1_goldg_train_1280ft_lvis_minival.py",
+      "lines": [
+        [
+          1,
+          45
+        ],
+        [
+          47,
+          54
+        ],
+        [
+          127,
+          160
+        ]
+      ],
+      "snapshot": "research_log/t013_yoloworld/p1_source/yolo_world/configs/pretrain/yolo_world_v2_s_vlpan_bn_2e-3_100e_4x8gpus_obj365v1_goldg_train_1280ft_lvis_minival.py",
+      "sha256": "15fa9a012f96c6245e0d272ac6c52a9a77f453887cea1e384642d814c0a4076f",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/configs/pretrain/yolo_world_v2_s_vlpan_bn_2e-3_100e_4x8gpus_obj365v1_goldg_train_1280ft_lvis_minival.py"
+    },
+    {
+      "repository": "AILab-CVC/YOLO-World",
+      "revision": "b1b09f2f0340ca7dede69e10b7e909c469677fd9",
+      "path": "docs/update_20250123.md",
+      "lines": [
+        [
+          15,
+          26
+        ],
+        [
+          60,
+          75
+        ],
+        [
+          98,
+          108
+        ]
+      ],
+      "snapshot": "research_log/t013_yoloworld/p1_source/yolo_world/docs/update_20250123.md",
+      "sha256": "4695b2a6982aba3effc03407f2b2a7ca1c9044c15bb6b7385266a5b91d0097c5",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/docs/update_20250123.md"
+    },
+    {
+      "repository": "AILab-CVC/YOLO-World",
+      "revision": "b1b09f2f0340ca7dede69e10b7e909c469677fd9",
+      "path": "README.md",
+      "lines": [
+        [
+          96,
+          143
+        ],
+        [
+          189,
+          207
+        ]
+      ],
+      "snapshot": "research_log/t013_yoloworld/p1_source/yolo_world/README.md",
+      "sha256": "f553a1b9d04008f973ce9799fa706657a5318df34ba5d33af638e989dba159ba",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/README.md"
+    },
+    {
+      "repository": "AILab-CVC/YOLO-World",
+      "revision": "b1b09f2f0340ca7dede69e10b7e909c469677fd9",
+      "path": "demo/gradio_demo.py",
+      "lines": [
+        [
+          73,
+          98
+        ],
+        [
+          133,
+          136
+        ],
+        [
+          229,
+          253
+        ]
+      ],
+      "snapshot": "research_log/t013_yoloworld/p1_source/yolo_world/demo/gradio_demo.py",
+      "sha256": "21348e6dc0cc5503e64f002630cedf12449bf7a52d389716a9321c248c955b3c",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/demo/gradio_demo.py"
+    },
+    {
+      "repository": "AILab-CVC/YOLO-World",
+      "revision": "b1b09f2f0340ca7dede69e10b7e909c469677fd9",
+      "path": "demo/image_demo.py",
+      "lines": [
+        [
+          97,
+          110
+        ],
+        [
+          170,
+          191
+        ],
+        [
+          206,
+          207
+        ]
+      ],
+      "snapshot": "research_log/t013_yoloworld/p1_source/yolo_world/demo/image_demo.py",
+      "sha256": "9a7b07476b98116d7bdbd6b6b561530b835429860d14c46fbae7266cbe4fe450",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/demo/image_demo.py"
+    },
+    {
+      "repository": "AILab-CVC/YOLO-World",
+      "revision": "b1b09f2f0340ca7dede69e10b7e909c469677fd9",
+      "path": "tools/test.py",
+      "lines": [
+        [
+          73,
+          82
+        ],
+        [
+          112,
+          128
+        ],
+        [
+          145,
+          150
+        ]
+      ],
+      "snapshot": "research_log/t013_yoloworld/p1_source/yolo_world/tools/test.py",
+      "sha256": "960fa93c644e186172353656ea899d01f8fd13261ac865e7d0b64d1e636b50dc",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/tools/test.py"
+    },
+    {
+      "repository": "AILab-CVC/YOLO-World",
+      "revision": "b1b09f2f0340ca7dede69e10b7e909c469677fd9",
+      "path": "yolo_world/datasets/transformers/mm_transforms.py",
+      "lines": [
+        [
+          89,
+          96
+        ],
+        [
+          100,
+          129
+        ]
+      ],
+      "snapshot": "research_log/t013_yoloworld/p1_source/yolo_world/yolo_world/datasets/transformers/mm_transforms.py",
+      "sha256": "a506a718215200e00357b1acf388363cc2b5861558a11cdc998fc5f344e81c6a",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/yolo_world/datasets/transformers/mm_transforms.py"
+    },
+    {
+      "repository": "AILab-CVC/YOLO-World",
+      "revision": "b1b09f2f0340ca7dede69e10b7e909c469677fd9",
+      "path": "yolo_world/datasets/mm_dataset.py",
+      "lines": [
+        [
+          33,
+          44
+        ],
+        [
+          66,
+          72
+        ]
+      ],
+      "snapshot": "research_log/t013_yoloworld/p1_source/yolo_world/yolo_world/datasets/mm_dataset.py",
+      "sha256": "b669f15f0f49a562199da24b3aacb16f1aa9e954ed51ced2e7f00f0953e4797f",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/yolo_world/datasets/mm_dataset.py"
+    },
+    {
+      "repository": "AILab-CVC/YOLO-World",
+      "revision": "b1b09f2f0340ca7dede69e10b7e909c469677fd9",
+      "path": "yolo_world/models/detectors/yolo_world.py",
+      "lines": [
+        [
+          34,
+          60
+        ],
+        [
+          73,
+          104
+        ]
+      ],
+      "snapshot": "research_log/t013_yoloworld/p1_source/yolo_world/yolo_world/models/detectors/yolo_world.py",
+      "sha256": "59bb45d667e789954f7887173790559d9606d6be491686134070adab9e1d72cd",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/yolo_world/models/detectors/yolo_world.py"
+    },
+    {
+      "repository": "AILab-CVC/YOLO-World",
+      "revision": "b1b09f2f0340ca7dede69e10b7e909c469677fd9",
+      "path": "yolo_world/models/backbones/mm_backbone.py",
+      "lines": [
+        [
+          86,
+          98
+        ]
+      ],
+      "snapshot": "research_log/t013_yoloworld/p1_source/yolo_world/yolo_world/models/backbones/mm_backbone.py",
+      "sha256": "083d51f2f324a0e05bc9bf101d8c2590e185b49fdd18ba08c6a1fc6f7c6d4ca5",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/yolo_world/models/backbones/mm_backbone.py"
+    },
+    {
+      "repository": "AILab-CVC/YOLO-World",
+      "revision": "b1b09f2f0340ca7dede69e10b7e909c469677fd9",
+      "path": "yolo_world/models/dense_heads/yolo_world_head.py",
+      "lines": [
+        [
+          342,
+          348
+        ],
+        [
+          396,
+          411
+        ],
+        [
+          564,
+          617
+        ],
+        [
+          643,
+          652
+        ],
+        [
+          675,
+          734
+        ]
+      ],
+      "snapshot": "research_log/t013_yoloworld/p1_source/yolo_world/yolo_world/models/dense_heads/yolo_world_head.py",
+      "sha256": "3054f701aa82f0ddc172c63e4e50daacf0e08d1d3f759842e974410ec62a762f",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/yolo_world/models/dense_heads/yolo_world_head.py"
+    },
+    {
+      "repository": "AILab-CVC/YOLO-World",
+      "revision": "b1b09f2f0340ca7dede69e10b7e909c469677fd9",
+      "path": "data/texts/coco_class_texts.json",
+      "lines": [
+        [
+          1,
+          1
+        ]
+      ],
+      "snapshot": "research_log/t013_yoloworld/p1_source/yolo_world/data/texts/coco_class_texts.json",
+      "sha256": "00e15b3c6d261105f6d7e88fcddca45df8254d3f828b2d8f002ff84d5ced4f88",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/data/texts/coco_class_texts.json"
+    },
+    {
+      "repository": "AILab-CVC/YOLO-World",
+      "revision": "b1b09f2f0340ca7dede69e10b7e909c469677fd9",
+      "path": "data/texts/lvis_v1_class_texts.json",
+      "lines": [
+        [
+          1,
+          1
+        ]
+      ],
+      "snapshot": "research_log/t013_yoloworld/p1_source/yolo_world/data/texts/lvis_v1_class_texts.json",
+      "sha256": "b27b638a41a74a930af25483bcacdced35134e57b0cb3d97c3d4786f404952f3",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/data/texts/lvis_v1_class_texts.json"
+    },
+    {
+      "repository": "AILab-CVC/YOLO-World",
+      "revision": "b1b09f2f0340ca7dede69e10b7e909c469677fd9",
+      "path": "LICENSE",
+      "lines": [],
+      "snapshot": "research_log/t013_yoloworld/p1_source/yolo_world/LICENSE",
+      "sha256": "e1d283b7a07b0964e38ddd080e69f95b52ecb40f594254168994f1816c7d7829",
+      "url": "https://github.com/AILab-CVC/YOLO-World/blob/b1b09f2f0340ca7dede69e10b7e909c469677fd9/LICENSE"
+    },
+    {
+      "repository": "onuralpszr/mmyolo",
+      "revision": "4d97b3a06609dba94b8ec584be2f2029cfdb7519",
+      "path": "configs/_base_/default_runtime.py",
+      "snapshot": "research_log/t013_yoloworld/p1_source/mmyolo/configs/_base_/default_runtime.py",
+      "sha256": "f1982f6fa2e7b49d1facc05911d1276ba71939a87526b9c55b45f881894c1880",
+      "url": "https://github.com/onuralpszr/mmyolo/blob/4d97b3a06609dba94b8ec584be2f2029cfdb7519/configs/_base_/default_runtime.py"
+    },
+    {
+      "repository": "onuralpszr/mmyolo",
+      "revision": "4d97b3a06609dba94b8ec584be2f2029cfdb7519",
+      "path": "configs/_base_/det_p5_tta.py",
+      "snapshot": "research_log/t013_yoloworld/p1_source/mmyolo/configs/_base_/det_p5_tta.py",
+      "sha256": "debb11f4f726b17bca708b661e40436c93da6a4435172b41d16d14561079a531",
+      "url": "https://github.com/onuralpszr/mmyolo/blob/4d97b3a06609dba94b8ec584be2f2029cfdb7519/configs/_base_/det_p5_tta.py"
+    },
+    {
+      "repository": "onuralpszr/mmyolo",
+      "revision": "4d97b3a06609dba94b8ec584be2f2029cfdb7519",
+      "path": "configs/yolov8/yolov8_s_syncbn_fast_8xb16-500e_coco.py",
+      "snapshot": "research_log/t013_yoloworld/p1_source/mmyolo/configs/yolov8/yolov8_s_syncbn_fast_8xb16-500e_coco.py",
+      "sha256": "05b4fc5f20027347aefd52c7750503d516ee812e7636473e2fc229d87a2a40e4",
+      "url": "https://github.com/onuralpszr/mmyolo/blob/4d97b3a06609dba94b8ec584be2f2029cfdb7519/configs/yolov8/yolov8_s_syncbn_fast_8xb16-500e_coco.py"
+    },
+    {
+      "repository": "onuralpszr/mmyolo",
+      "revision": "4d97b3a06609dba94b8ec584be2f2029cfdb7519",
+      "path": "LICENSE",
+      "snapshot": "research_log/t013_yoloworld/p1_source/mmyolo/LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "url": "https://github.com/onuralpszr/mmyolo/blob/4d97b3a06609dba94b8ec584be2f2029cfdb7519/LICENSE"
+    },
+    {
+      "repository": "onuralpszr/mmyolo",
+      "revision": "4d97b3a06609dba94b8ec584be2f2029cfdb7519",
+      "path": "mmyolo/models/dense_heads/yolov5_head.py",
+      "snapshot": "research_log/t013_yoloworld/p1_source/mmyolo/mmyolo/models/dense_heads/yolov5_head.py",
+      "sha256": "93527d8382a6560d03e3cc5c843139ffc24f85123ae222f8e1edf0dc2cdf5ba4",
+      "url": "https://github.com/onuralpszr/mmyolo/blob/4d97b3a06609dba94b8ec584be2f2029cfdb7519/mmyolo/models/dense_heads/yolov5_head.py"
+    },
+    {
+      "repository": "onuralpszr/mmyolo",
+      "revision": "4d97b3a06609dba94b8ec584be2f2029cfdb7519",
+      "path": "mmyolo/models/dense_heads/yolov8_head.py",
+      "snapshot": "research_log/t013_yoloworld/p1_source/mmyolo/mmyolo/models/dense_heads/yolov8_head.py",
+      "sha256": "e8d34604dcc54dfc2b0cebb3b50edab1ef5ed6f7341729e71b72c97ba4905a7d",
+      "url": "https://github.com/onuralpszr/mmyolo/blob/4d97b3a06609dba94b8ec584be2f2029cfdb7519/mmyolo/models/dense_heads/yolov8_head.py"
+    },
+    {
+      "repository": "onuralpszr/mmyolo",
+      "revision": "4d97b3a06609dba94b8ec584be2f2029cfdb7519",
+      "path": "mmyolo/models/detectors/yolo_detector.py",
+      "snapshot": "research_log/t013_yoloworld/p1_source/mmyolo/mmyolo/models/detectors/yolo_detector.py",
+      "sha256": "a564418ed476c1c1278b771361db10aa19835acf65efbf4ee9f54876d4543d37",
+      "url": "https://github.com/onuralpszr/mmyolo/blob/4d97b3a06609dba94b8ec584be2f2029cfdb7519/mmyolo/models/detectors/yolo_detector.py"
+    }
+  ]
+}
