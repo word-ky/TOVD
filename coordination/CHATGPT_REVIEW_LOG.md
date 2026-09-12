@@ -212,3 +212,24 @@ The more important finding is **checkpoint/state dependence of the fast update i
 This changes the research question. The next scientifically useful question is no longer how to meta-train C2, but whether **the need for adaptation is observable without labels**. If a strong/easy state can be recognized from runtime uncertainty or update geometry, C2 can become selective specialization; if not, the current branch lacks a defensible safety mechanism and should not be moved into a detector.
 
 **Next action:** T008 assigned as a state-dependent safety audit. Reuse T005/T007 checkpoints and fixed held-out streams without retraining. Before computing new correlations, preregister a fixed set of label-free pre-update and post-candidate observables. Use task labels only offline to score C2 benefit/harm, then test whether any single runtime scalar predicts harm with leave-one-seed-out AUROC >= .70 mean and >= .65 in every fold, including within easy episodes. No learned gate, new objective, new eta schedule, architecture change or detector integration is allowed in T008. A passing scalar only justifies a later separately preregistered selective/rollback policy task.
+
+---
+
+## 2026-09-12 — T008 review
+
+**Decision:** ACCEPTED AS A VALID NEGATIVE RESULT; EPISODE-LEVEL SAFETY OBSERVABILITY FAILED; QUERY-LOCAL REFRAME ONLY
+
+Reviewed commits/artifacts:
+- `c163c78c51045f532176e9165dc56f7ead3649b0` — preregistered T008 plan;
+- `153ac30d00753b43a56ce2e226068b0c35039d70` — frozen audit implementation and tests;
+- `fce7541564fb3f7b4350524b2628171836075b11` — fixed A6000 dispatch;
+- `1d9915b06befaf509b912e3328491e3a8b263522` — finalized evidence/report;
+- `research_log/t008/RESULTS.md`, `statistics.py`, localization/sign-map tables, and final engineering mailbox.
+
+Validity is accepted. The audit used the exact frozen T005/T007 state grid and episode streams, produced 6600 raw / 5400 unique-state primary rows, replayed all historical metrics and IDs exactly, kept oracle outcomes outside runtime features, preserved model parameters, and passed 85/85 locally and on A6000 CPU/CUDA. The LOSO implementation fixes scalar orientation from the other two seeds only and never reorients on the held seed.
+
+Scientific result: all 14 preregistered single scalar features fail the episode-level interpretation gate. Best overall is post-candidate relative inner reduction with mean LOSO AUROC 0.5806 (minimum 0.4911); best pre-update is gradient norm at 0.5385 (minimum 0.4087). Easy pooled confidence-gap/max-probability AUCs are not transferable because the held-seed orientation flips on seed 27. This rules out a defensible simple episode-level selective/rollback C2 policy under the tested state grid.
+
+The localization evidence is mechanistically useful but insufficient for deployment: harmful easy episodes are more confident at W0 and show somewhat larger normalized updates/representation shifts, yet they have smaller predictive JS, fewer top-1 changes and smaller relative inner descent than beneficial easy episodes. All 33 hard state means remain beneficial even though individual hard episodes can be harmed. Therefore “confident-state overspecialization” is only a partial qualitative explanation, and episode averaging may be concealing query-local structure.
+
+**Next action:** T009 assigned as the final narrow audit before terminating this fast-weight safety branch. Reuse T008 stored query probabilities/tokens and decompose task harm at the query level. Test fixed per-query pre-update and post-candidate scalars with leave-one-seed-out evaluation, quantify correct/wrong transition types and confidence-quartile damage attribution, and compute an offline oracle per-query rollback ceiling. No learned gate, threshold rescue, model rerun/retraining, objective/eta change, or detector integration is allowed. A future T010 is justified only if a single query-level label-free scalar generalizes across seeds and the oracle rollback ceiling shows meaningful retained hard gain plus removal of easy regressions; otherwise formally stop O1+C2 and pivot to a non-destructive higher-level formulation.
