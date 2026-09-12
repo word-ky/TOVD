@@ -473,3 +473,26 @@ GitHub main synchronized at58313bc; project handoffs/logs and required coordinat
 
 ## 2026-09-13T05:18:17+08:00 — Heartbeat operational check
 GitHub main synchronized ata94df63; project handoffs/logs and required coordination/specification files read. No new Lead task; FIN1 already delivered, no repeated tests or verifier execution. Primary20260912-210355-tovd-native30-primary tmux alive,288/1000 images at29539.488987912016s,free24770723840bytes; no wrapper exit marker and analysis/results.json absent (existence only). No partial scientific outputs inspected, no code/environment/run changes and no YOLO work. Continue existing frozen primary and quiet15-minute monitoring.
+
+## T013-REPRO1 started — Lead348b1df
+FIN1 accepted. New scope: replay exact6fec322 analysis twice on existing completed45-cell engineering smoke, compare all JSON/array outputs exactly including NaNs, reject a scratch mutation, optionally compare original output if source hashes prove identical. No primary cache/scientific-result access; no inference/dependency changes. Artifacts/commands/receipts will remain under research_log/t013 and remote shared/t013/repro1, outside both original caches and immutable releases.
+
+## 2026-09-13T05:40:47.8448841+08:00 — REPRO1 delivered
+
+## T013-REPRO1 — VERIFIED / deterministic frozen analysis replay PASS
+
+Lead348b1df accepts FIN1. Evidence commit 5fe57f7f4313ca9a94665d2320f7a06fefa99bee. Two exact frozen6fec322 smoke analyses exit0; all decoded outputs agree exactly, fixed draws match, scratch mutation rejected. No primary science evaluated.
+
+Files under research_log/t013: ANALYSIS_REPLAY_PREFLIGHT.md, analysis_replay_compare.py, analysis_replay_preflight.py, analysis_replay_receipt.json, repro1/environment.txt, repro1/replay_a.log, repro1/replay_b.log; coordination/state/log handoffs. Local python -m py_compile on both helpers and git diff --check PASS. Remote top command: /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -u /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/repro1/analysis_replay_preflight.py. Both full subprocess commands/cwd/output paths are preserved in report and JSON. They run -m scripts.t013_analysis from immutable20260912-210306-tovd-native30-primary-freeze with the frozen annotations, old20260912-205428 smoke cache, --smoke-only and separate shared/t013/repro1/replay_a or replay_b outputs. No original cache/release writes.
+
+A exit0 in19.169558474997757s; B exit0 in19.055517392000183s. Existing Python3.12.12,NumPy1.26.4,pycocotools2.0.8,torch2.4.0metadata,torchvision0.19.0+cu121,transformers4.44.2; pip freezeSHA6fdb8b3da35dddb24c5ea602e81b160ab864e792ca29fa27236dd759a6b4f090 equals frozen environment receipt. Thread environment OMP/MKL/OPENBLAS unset in SSH process, unchanged. No install/update/inference.
+
+All8pre-execution source/data bindings PASS: freeze50addfb8,PLAN5d977ace,analysis74cc73e7,COCObd324523,diagnosticsae7e61fe,annotationse8c7f790,smoke finalreceipta1ec8408,manifest3d3623c2 (full64-character values in receipt/report). Smoke3images/45cells/10replicates/seed20260913 verified. ComparisonPASS: results.json all11fields recursively including every metric/CI/assessment/gate/common-support count; draws int64[10,3]; bootstrap metrics float64[10,5,3,8],margins[10,4]; diagnostics15cell arrays float64[3,5] and margin_sum_count[4,3,2]. All19arrays exact shape/dtype/values/NaN masks and all keysets match. All four outputs nonempty. No compressed-NPZ byte-equality requirement.
+
+Negative controlPASS: scratchcopy of replayB, metrics[0,0,0,0]+=1, comparator FAIL at that bootstrap array as expected; A/B and old cache preserved. Full comparison evidence retained. Original-smoke optional comparison NOT COMPARED — SOURCE VERSION NOT IDENTICAL/UNPROVEN: its t013_analysis.py SHA f472c3cc3fb8eeab9b4de7cb37afa4c54ae90e9ecd0263a06497204b0edf5224 differs from frozen74cc73e7, although COCO/diagnostic source hashes match. Original scientific output was not opened by this preflight. This optional skip is not a failure; no replay failures occurred.
+
+End health2026-09-13T05:38:17+08: exact primary20260912-210355-tovd-native30-primary tmux/writer721181 Rl+ alive,300/1000 at30761.30617114401s,free24575799296bytes,no wrapper exit marker,primary analysis/results.json absent (existence only). active_primary_cache_accessed=false,primary_scientific_result_opened=false. All decoded arrays were completed engineering replay/mutation artifacts. No frozen code/config/PLAN/vocab/IDs/seeds/gates/environment/run change and no YOLO activity.
+
+Recommended next action: Lead review REPRO1. Stop package; retain remote replayA/B/mutation and local logs/environment/receipt. Do not repeat or repoint smoke helper to active primary. Continue immutable primary and15-minute health monitoring. FIN1/full-cache reproduction applies after completion under existing Lead contract; no current primary interpretation,YOLO orT014 authorization.
+
+Communication correction: an intermediate progress message prematurely claimed original-smoke equality after seeing overall PASS. Reading the detailed receipt showed the optional comparison was skipped for a different source hash; corrected immediately in the next user update. The receipt and final technical reports correctly say NOT COMPARED; A/B equality is verified.
