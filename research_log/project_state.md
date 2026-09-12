@@ -12,3 +12,5 @@ All source/historical/initial-state/normal-output checks exact;105 originalrunfi
 No activeTOVD run remains. No detector/T008 or extra rescue tuning.
 Read coordination/CODEX_TO_CHATGPT.md and research_log/t007/{PLAN,RESULTS,progress}.md.
 Heartbeat active every15min; do not rerun unchanged ACTIVE T007. Await explicit research task.
+
+Final evidence4315ba35f0b89bbfa92958cf75a8bcd6a22f9eee; interim acceptance a513576/09f5456 merged. Final research review still pending.

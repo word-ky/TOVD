@@ -12,6 +12,8 @@ successor. Do not start detector integration or T008.
 - Research instructions99e6292/742aa8b.
 - Preregistration `deeacd4`; tested implementation `e88ad88112f6486f8c7dc8458594e095528ba9f1`.
 - Dispatch/recovery `ad31f89`.
+- Final evidence commit `4315ba35f0b89bbfa92958cf75a8bcd6a22f9eee`.
+- Concurrent interim implementation acceptance a513576/09f5456 merged before publication; no scientific setting changed.
 - Release `20260912-083405-tovd-t007`.
 - Run `20260912-083417-tovd-t007-a6000`: exit0, finished2026-09-12 08:47:19+08.
 - Physical A6000 GPU1; no active TOVD run remains.

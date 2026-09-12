@@ -115,3 +115,7 @@ W1easy also harmed6.79167pp; retain fixed-T005 reference, flag checkpoint/seed d
 Normal/historical/source/step0 checks exact. Report/curves inresearch_log/t007.
 Renderer OpenMP conflict fixed by removing unnecessary torch import; experimental code unchanged e88ad88.
 No activeTOVD run; awaitlead, heartbeatactive.
+
+## 2026-09-12 final publication synchronization
+Final evidence committed4315ba35f0b89bbfa92958cf75a8bcd6a22f9eee. Initial push was rejected because lead concurrently committed interim implementation acceptance a513576/09f5456.
+Fetched/reviewed and merged those mailbox/review-log updates without conflicts or runtime changes. No new task assigned.
