@@ -167,3 +167,12 @@ All3600freshnovel episodes recovered, alongside1800basecalibration;52originalrun
 Historical scoringerrorwithin2e-6; accuracy andselected-token probabilitiesexact; normal/oracle bitwise equalityandparametersunchanged. Local/remoteCPU/CUDA95tests each pass.
 Both plots visuallychecked; allsummary/gate/per-cell/headroom tables retained. R2throwsawayhardutility despiteeasyregressionremoval; recommendterminatecurrentrollbackline, awaitleadreview. No activejob/retuning/detector.
 Final report/state/recoverylogs written; syncingtoA6000 andcommitting/pushing completeevidence.
+
+## 2026-09-12 13:30 +08 T011 implementation increments
+Preregister b615642a3b23261dfaed6ebbdb61b423be7f3901 pushed before outcomes. Phase0 log append encountered Windows default GBK decoding; fixed this documentation read by specifying UTF-8. No scientific code/outcome affected.
+Baseline16passed12.33s; new module3passed5.15s; module+runner6passed6.72s. Reused existing frozen model, scoring, generator and Armijo constants; no baseline file edited. Added per-query isolation/replay/vocabulary diagnostics and all five fixed criteria. New raw records gzip JSONL losslessly retains all fields. Next full local plus A6000 CPU/CUDA before screen.
+
+Full local suite: 101 passed in19.16s. GPU1 verified idle/free50,598,707,200bytes. Preparing immutable implementation commit and remote dispatch.
+
+## 2026-09-12 13:32 +08 T011 dispatch
+Tested79e6e2baac5b92dd8b66c1a8a048a4d5013f5d5b; preregisterb615642. Release20260912-133111-tovd-t011; run20260912-133149-tovd-t011-a6000 onGPU1. FullCPU/CUDA tests precede1800episode screen in script. No outcomes/changes yet. Source/config/hashes unchanged.
