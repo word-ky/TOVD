@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-202233-tovd-t013-parity-b",
+  "releaseId": "20260912-202152-tovd-t013-parity-b",
+  "sessionName": "autodl-20260912-202233-tovd-t013-parity-b",
+  "command": "cd /home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-202152-tovd-t013-parity-b; pwd > \"$AUTODL_ARTIFACTS_DIR/resolved_release.txt\"; sha256sum scripts/t013_native_parity.py scripts/t013_parity_matching.py scripts/t013_detector.py research_log/t013/vocabulary_matched.json > \"$AUTODL_ARTIFACTS_DIR/source_sha256.txt\"; export OMP_NUM_THREADS=4; export MKL_NUM_THREADS=4; /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -u -m scripts.t013_native_parity --assets /home/wenchang/asdasdsad/wjq/TOVD/shared/t013 --detection-level --output \"$AUTODL_ARTIFACTS_DIR/parity_b.json\""
+}

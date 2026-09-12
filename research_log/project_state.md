@@ -1,5 +1,7 @@
 # TOVD current state
 
-T013-PARITY-B ACTIVE under Lead999b4b7/ddd24e7; primary remains blocked. See t013/PARITY_B_PLAN.md. Matching code and13 local tests complete; remote tests and exactly one frozen three-image CPU diagnostic pending. If any image fails, stop for Lead. Previous raw failure preserved in NATIVE_PARITY_REVIEW.md.
+Updated 2026-09-12T20:26:15.013866+08:00. T013 BLOCKED / AWAITING LEAD after T013-PARITY-B failed2/3images. Lead999b4b7/ddd24e7 says anyfailure rejects HF1024 harness for primary use and requires stopping. Codefreeze61918fa. Run20260912-202233-tovd-t013-parity-b exit1 at20:23:52+08; immutable release20260912-202152-tovd-t013-parity-b. Image139scoreerr.000431165>1e-4; image285classcounts differ (HF+1person,-1bear); image632PASS. No tolerance changes or retries. Allstatehashesunchanged/HFreplayexact. Evidence research_log/t013/PARITY_B_RESULTS.md and original rawrun.13focusedlocal/remote tests pass; savedraw matching exactlyreproduced locally.
 
-COCOdownload20260912-190511-tovd-t013-coco-ranges-a6000 active,142/195parts last observed; do not duplicate. Matched vocabulary and1000IDs unchanged. AllT001-T012 remain closed.
+Only currently executable work: monitor existingCOCOdownload20260912-190511-tovd-t013-coco-ranges-a6000; last150/195parts. Collectcompletedarchive/CRC/hashreceipt. Do not duplicatewriter. Root/home/wenchang/asdasdsad/wjq/TOVD, shared/t013assets, isolatedshared/t013/venv. Use explicitrunIDs and immutable releases; generic workflow state can refer tootherprojects.
+
+Matchedvocabulary195/408/408 accepted, SHA51554562b216dcad1c693efb7781362efbac55993bc5c10651e8845ec9931977;1000IDs accepted42daa6e;smoke139/285/632disjoint. No primary outcomes or scientificGates1–4; fullPLAN/primarycache/fullbootstrap/imagehashmanifestpending. AllT001-T012remainclosed. NoT014 or alternate detector/matching changes withoutnewLead instruction. Heartbeat15minACTIVE; quietwhenunchanged.

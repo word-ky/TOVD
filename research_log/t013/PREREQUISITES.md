@@ -99,3 +99,7 @@ only a frozen real-detector interaction audit, with no literature-absence claim.
 ## Current prerequisite result — 2026-09-12T20:02:47.194079+08:00
 
 Token-matched repair complete; native/HF V0 parity FAILED on all three fixed disjoint images. Primary is blocked for Lead review. See NATIVE_PARITY_REVIEW.md for exact errors, immutable receipts and source provenance. Previous capacity-only findings remain historical engineering evidence, not proof of native/HF equivalence.
+
+## 2026-09-12T20:26:15.013866+08:00 Detection-level alternative completed
+
+T013-PARITY-B failed139/285, passed632. HF1024 harness rejected for primary use under Lead999b4b7/ddd24e7; await Lead. Details PARITY_B_RESULTS.md. No scientific outcome exists.

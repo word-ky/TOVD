@@ -278,3 +278,15 @@ Within each canonical class, SciPy1.17.0 linear_sum_assignment minimizes negativ
 Require300 detections per implementation and identical per-class counts, then every pair IoU>=.999 and score error<=1e-4. HF replay must be exact and model state hashes unchanged. Count mismatch immediately fails detection matching; raw900-box Hungarian summaries remain diagnostic only. Save rawboxes, classscores andtop300 selections to NPZ and all matches/permutations toJSON; preserve actual run directory/release and source hashes.
 
 If any image fails, HF1024 harness is rejected for primary use under this Lead decision and all further detector work stops pending Lead. If allpass, complete outstanding preregistration/code/data requirements before primary. No scientific Gates1–4 are evaluated here. ExistingCOCOdownload190511 remains active, last142/195parts; no duplicatewriter.
+
+## 2026-09-12T20:23:03.323778+08:00 T013-PARITY-B dispatched
+
+Freeze61918fa pushed before inference; local13tests0.76s and remote13tests0.77s pass. Run20260912-202233-tovd-t013-parity-b uses explicit immutable release20260912-202152-tovd-t013-parity-b, records resolved pwd/source hashes. CPUFP32/fourthreads, existing3images/V0 unchanged. Await result; no duplicate diagnostic.
+
+## 2026-09-12T20:26:15.013866+08:00 T013-PARITY-B failed; stop for Lead review
+
+Updated 2026-09-12T20:26:15.013866+08:00. T013 BLOCKED / AWAITING LEAD after T013-PARITY-B failed2/3images. Lead999b4b7/ddd24e7 says anyfailure rejects HF1024 harness for primary use and requires stopping. Codefreeze61918fa. Run20260912-202233-tovd-t013-parity-b exit1 at20:23:52+08; immutable release20260912-202152-tovd-t013-parity-b. Image139scoreerr.000431165>1e-4; image285classcounts differ (HF+1person,-1bear); image632PASS. No tolerance changes or retries. Allstatehashesunchanged/HFreplayexact. Evidence research_log/t013/PARITY_B_RESULTS.md and original rawrun.13focusedlocal/remote tests pass; savedraw matching exactlyreproduced locally.
+
+Only currently executable work: monitor existingCOCOdownload20260912-190511-tovd-t013-coco-ranges-a6000; last150/195parts. Collectcompletedarchive/CRC/hashreceipt. Do not duplicatewriter. Root/home/wenchang/asdasdsad/wjq/TOVD, shared/t013assets, isolatedshared/t013/venv. Use explicitrunIDs and immutable releases; generic workflow state can refer tootherprojects.
+
+Matchedvocabulary195/408/408 accepted, SHA51554562b216dcad1c693efb7781362efbac55993bc5c10651e8845ec9931977;1000IDs accepted42daa6e;smoke139/285/632disjoint. No primary outcomes or scientificGates1–4; fullPLAN/primarycache/fullbootstrap/imagehashmanifestpending. AllT001-T012remainclosed. NoT014 or alternate detector/matching changes withoutnewLead instruction. Heartbeat15minACTIVE; quietwhenunchanged.
