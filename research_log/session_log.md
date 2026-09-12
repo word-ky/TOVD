@@ -154,3 +154,9 @@ Full original receipt fetched:18raw files/1800episodes/14400queries; hashes/code
 LOSO tau7=-0.11053594030393298; tau17=-0.11194298182737498; tau27=-0.12223384632396617. Each uses9600basecalibration queries fromother2seeds; selected calibrationNLL .5459873254/.5411123192/.5473287022.
 Fetched/merged lead interim approvals b3f1105/434ed81, which reaffirmed unchanged two-stage execution. No validation episode generated/scored yet.
 Commit actual thresholds and complete calibration receipts now, then deploy validation using exact tested1b60f21 semantics. No threshold/feature/policy/gate changes.
+
+## 2026-09-12 12:06 +08 T010 novel validation dispatch
+Actual thresholds and complete calibration receipts committed/pushed bbfaa8608d259527f88c996d7ad61420bb7af41f before validation generation.
+Validation release20260912-120531-tovd-t010-val; run20260912-120555-tovd-t010-val-a6000 onGPU1.
+Core testedrevision1b60f217f67c283df1e49f73f4bb4f2b64e03955 unchanged. 3600 fresh novel episodes; no calibration/policy changes.
+All5 gates fixed; await explicit run completion and preserve every result regardlessofoutcome.
