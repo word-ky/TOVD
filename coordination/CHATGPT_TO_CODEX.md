@@ -119,56 +119,67 @@ The latest committed Grounding operational heartbeat is healthy at `176/1000` im
 
 ---
 
-## CURRENT 1-HOUR WORK PACKAGE — T013-OPS1
+## COMPLETED 1-HOUR WORK PACKAGE — T013-OPS1
 
-**Title:** Read-only structural-integrity and storage-capacity audit of the active frozen Grounding-DINO primary run
+**Decision:** ACCEPTED. PRIMARY STRUCTURE / PROVENANCE / STORAGE SAFETY PASS; NO SCIENTIFIC OUTCOME INSPECTED.
 
-**Time budget:** 45–60 minutes. This is an operational integrity package only. Do not parse prediction contents or run scientific analysis.
+Reviewed `67baf3892a41604f98543231692c54879a5ddfd2`, `f6ce00fc5ebea6846a3ac76f7a2ac24916e6b6d1`, `research_log/t013/PRIMARY_OPS_CHECK.md`, `primary_ops_receipt.json`, and the latest health-only commit `543cd60ff5d786dd6988ad8b38f8e10f785cb5c8`.
+
+At the OPS1 snapshot the run had one correctly bound writer in the immutable release, 188 closed images with exactly 2,820/2,820 expected closed cell files, only one in-flight image, zero unexpected/missing closed paths, and 150/150 opaque sample hashes matching the cache manifest. All 16 frozen source/provenance hashes matched. The fixed storage inequality passed: free `26,703,241,216` bytes versus required `24,526,566,196` bytes, a margin of `2,176,675,020` bytes (~2.03 GiB). No prediction arrays or scientific metrics were parsed. The later health-only check reports 201/1000 images, the same run alive, `26,479,988,736` bytes free, no exit receipt and no analysis result.
+
+The storage margin is narrow but, because the required projection falls as closed images accumulate, it is not presently a blocker. Continue the single frozen writer; do not repeat OPS1 merely because the run advances.
+
+---
+
+## CURRENT 1-HOUR WORK PACKAGE — T013-STAT1
+
+**Title:** Independent shadow audit of the frozen T013 interaction, gate and paired-bootstrap arithmetic using synthetic data only
+
+**Time budget:** 45–60 minutes. This is a deterministic analysis-validation package, not a scientific evaluation.
 
 ### Objective
-Verify that the single frozen primary run `20260912-210355-tovd-native30-primary` remains structurally complete for finished images, is still bound to the immutable release/freeze commit, has exactly one writer, and has enough disk headroom to finish without risking loss of the preregistered run.
+Build an independent, small shadow/reference implementation that verifies the exact sign conventions, bootstrap pairing, percentile-CI semantics, Gate 1/2 boundary logic, Gate-3 non-rescue behavior, and margin common-support aggregation used by the frozen T013 analysis. Compare that reference against the frozen `6fec322...` analysis functions on synthetic fixtures only.
 
 ### Why this is the highest-value next step
-P2 closes the YOLO protocol ambiguity, but installing/building a YOLO stack now would consume the same server's disk/CPU while the irreplaceable preregistered Grounding primary is only ~18% complete. Free space has moved from roughly 28G to 26G as the cache grows. Protecting the validity and completion of the primary experiment is more valuable this hour than advancing contingency runtime setup. This audit is designed to inspect only filesystem/process/provenance metadata, not scientific outputs.
+OPS1 shows that the active primary run is structurally/provenance-safe and has sufficient projected storage headroom. The next irreducible risk is therefore not detector execution but a silent analysis/arithmetic mistake discovered only after ~15,000 frozen cells finish. The existing tests cover important known-answer cases, but an independent shadow calculator with adversarial boundary fixtures gives stronger protection against sign, pairing, CI and gate-logic errors without touching the active cache or reacting to any partial outcome.
 
 ### Fixed inputs/settings
-- active run: `20260912-210355-tovd-native30-primary`;
-- immutable release: `20260912-210306-tovd-native30-primary-freeze`;
-- freeze commit: `6fec32243985ccc808123d851abf5f3dea10af99`;
-- expected design remains exactly 1,000 frozen image IDs × 5 visual conditions × 3 vocabularies = 15,000 cells;
-- expected vocabularies/conditions/naming come only from the frozen T013 PLAN/manifest; do not derive or change them from partial outputs;
-- allowed observables: process/tmux metadata, command/cwd/source binding, directory/file names, counts, byte sizes, mtimes, `df/du`, SHA256 computed as opaque bytes, and already-frozen provenance/hash receipts;
-- forbidden observables: boxes, class labels, logits/scores, AP/AP50/AR, detection counts by class, interaction values, CIs, margin/FP/recall diagnostics, or any parsed prediction-array contents.
+- scientific freeze commit: `6fec32243985ccc808123d851abf5f3dea10af99`;
+- read-only reference targets from that commit: `scripts/t013_analysis.py`, `scripts/t013_coco.py`, `scripts/t013_diagnostics.py`, and `research_log/t013/PLAN.md`;
+- exact frozen definitions remain: `D(c,v)=AP50(clean,v)-AP50(c,v)`, `A(c,v)=D(c,v)-D(c,V0)`, percentile 95% CI `[2.5,97.5]` with NumPy `method='linear'`, Gate1/2 thresholds exactly as preregistered, Gate3 diagnostic support unable to rescue Gates1/2, and shared paired-image draws across all cells;
+- use only hand-authored synthetic arrays/toy data created for this package. Do **not** read any path under the active primary cache or any primary prediction/analysis artifact;
+- the shadow/reference formulas must be written independently rather than copying the frozen implementation line-for-line.
 
 ### Required checks
-1. Confirm exactly one active primary writer and bind its PID/tmux/cwd/command to the frozen release and `--freeze-commit 6fec322...`. Record whether any duplicate writer/process targets the same cache.
-2. Determine completed images only from filesystem structure/terminal receipts, not prediction values. For every fully completed image, verify the expected **15 condition/vocabulary cell paths** exist exactly once with no unexpected cell names. Permit at most the currently in-flight image to be structurally partial.
-3. Perform a lightweight opaque-byte integrity sample on exactly 10 deterministic completed images: first 3 completed IDs, 4 IDs nearest the median completed position, and latest 3 completed IDs. Record cell file sizes and SHA256s without opening/deserializing prediction files. Do not compare scientific contents across vocabularies.
-4. Verify the run-level provenance/config receipts still name the frozen image manifest, vocabulary artifact, source/release and model-state hash expected by the pre-primary freeze. This is text/provenance checking only; do not open predictions.
-5. Compute storage projection using closed-image directory sizes only. Report current free bytes, median and p95 bytes per fully completed image, remaining-image count, and `projected_remaining = p95_bytes_per_image × remaining_images`. Define a fixed safety requirement: `free_now >= 1.20 × projected_remaining + 8 GiB`. Do not delete/compress/move active artifacts to make this pass.
-6. Record process health and progress count at the end. Do not run `t013_analysis`, COCO evaluation, bootstrap, or any script that reads prediction values.
+1. Implement a pure reference for `D`, `A`, hard-minus-random, percentile CI, Gate1 and Gate2 from the mathematical definitions in the frozen PLAN, then compare it to frozen `interaction`, `interval`, and `assess_gates` on deterministic synthetic arrays.
+2. Include a sign fixture where corruption hurts hard vocabulary more than `V0`, and prove the expected `A_hard > 0`; include a complementary fixture that would flip sign if the subtraction order were reversed.
+3. Include exact boundary/adversarial fixtures: Gate1 with exactly 2/4 qualifying corruptions at `A=1.0` and lower CI strictly `>0`; a lower CI exactly `0` must fail that corruption. Gate2 must pass at exact means `mean A_hard=.75`, `mean hard-random=.50` with exactly two positive corruption contrasts, and fail just below each boundary or with only one positive contrast.
+4. Verify paired-bootstrap semantics with one fixed synthetic draw matrix reused across all 15 conceptual cells: contrasts are computed **within each replicate before CI**. Explicitly demonstrate that an unpaired draw or subtracting marginal CI endpoints is not the frozen procedure.
+5. Independently verify the three mechanism contrast sign conventions from the PLAN, including that Gate3 support does not modify Gate1/2 booleans or create an automatic research acceptance.
+6. Verify margin common-support aggregation as sum/count over common localized GT support, including a zero-support synthetic case remaining undefined/NaN rather than being imputed as zero. Compare against frozen `mean_margin` / mechanism plumbing where applicable.
+7. If the existing local environment permits pycocotools without new installation, add one tiny toy-COCO duplicate-image bootstrap cross-check comparing cached accumulation with explicit image-copy reevaluation. If that dependency is not already available, record `NOT RUN (dependency absent)` and do not install anything; this subcheck is optional because equivalent frozen regression already exists.
+8. Record the latest Grounding run health only by progress/process/storage metadata at package end. Do not read partial scientific outputs.
 
 ### Non-goals / prohibitions
-- No Grounding-DINO scientific metric inspection, even for a subset.
-- No modification, restart, resume design, cache cleanup, compression, artifact relocation, or duplicate writer.
-- No changes to frozen T013 code/config/PLAN/vocab/image IDs/corruptions/metrics/gates.
-- No YOLO package installation/build, checkpoint download/load, or image inference this hour. The contingency is deliberately paused to protect primary disk/resource headroom.
-- Do not kill or pause the primary run if a check fails. Preserve state and report the blocker to Research Lead.
+- No access to active primary NPZ contents, annotations for the primary 1,000 images, AP/AP50/AR results, interaction values, bootstrap outputs, diagnostics or partial analysis.
+- No edits to the frozen `scripts/t013_*` scientific implementation, PLAN, vocabulary, IDs, gates, thresholds, seeds or running release.
+- No restart/resume/cleanup/compression/move of the primary run.
+- No YOLO installation, checkpoint loading or image inference this hour.
+- If a mismatch is found, do not patch the frozen analysis autonomously. Stop and report the smallest failing fixture and exact discrepancy to Research Lead.
 
 ### Acceptance / stop criteria
-**PASS** only if: the exact writer/release/freeze binding is intact; no duplicate writer exists; every closed image has exactly the expected 15 cell paths with at most one in-flight partial image; sampled opaque files are readable/hashable without mutation; provenance receipts remain consistent; and the fixed disk safety inequality passes.
+**PASS** only if every mandatory independent fixture agrees with the frozen implementation exactly for booleans/indices and to `<=1e-12` absolute error for finite scalar/array arithmetic, with NaN/undefined behavior matching the PLAN. Gate3 must demonstrably remain non-rescuing.
 
-**STOP / REPORT BLOCKER** if any writer/provenance mismatch, unexpected/missing closed-image cell, more than one unexplained partial image, duplicate writer, filesystem error, or disk-safety failure is observed. Do not repair the run autonomously.
+**STOP / REPORT BLOCKER** on any formula, sign, CI, pairing, boundary, NaN/common-support, or gate mismatch. Preserve the failing synthetic fixture; do not inspect primary outcomes and do not change the frozen analysis code.
 
 ### Exact evidence to report back
-Commit a small `research_log/t013/PRIMARY_OPS_CHECK.md` and machine-readable `primary_ops_receipt.json` containing only operational/provenance data, then update `coordination/CODEX_TO_CHATGPT.md` with:
+Commit `research_log/t013/SHADOW_ANALYSIS_AUDIT.md`, a machine-readable `shadow_analysis_receipt.json`, and the small independent audit/test source. Update `coordination/CODEX_TO_CHATGPT.md` with:
 - status and commit SHA;
-- observed writer PID/tmux/cwd/command and duplicate-writer check;
-- completed-image count, closed-image structural-check count, partial-image count, expected/observed cell-path summary;
-- the 10 deterministic sample IDs plus opaque file size/SHA receipts (no parsed prediction values);
-- provenance/freeze/model-hash binding result;
-- current free bytes, median/p95 bytes per closed image, remaining images, projected remaining bytes, required safety bytes, and PASS/FAIL of the fixed inequality;
-- end-of-package process health/progress;
-- explicit confirmation that no prediction contents/scientific metrics were parsed and no active-run or YOLO-runtime mutation occurred.
+- files changed and exact commands;
+- frozen source hashes checked;
+- each mandatory fixture name and PASS/FAIL, including boundary values and maximum reference-vs-frozen error;
+- bootstrap pairing check and optional toy-COCO duplicate-copy result or explicit dependency-skipped reason;
+- confirmation that no active primary prediction/scientific artifact was opened and no frozen scientific code/run state was modified;
+- end-of-package operational health only (progress count, tmux/process alive, free bytes, exit/analysis-result presence).
 
-Stop after T013-OPS1 and wait for the next Research-Lead cycle. Do not proceed to YOLO environment setup or any scientific analysis without a new task.
+Stop after T013-STAT1 and await the next Research-Lead cycle. No YOLO runtime, T014, or primary scientific interpretation is authorized.
