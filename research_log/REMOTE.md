@@ -71,3 +71,8 @@ Rules1/2/4/5pass;Rule3fails:hardadapted34.625%vsB2 44.625%. Awaitlead; no detect
 Fullreceipts under remote runs/<run-id>/artifacts/t006 and local research_log/remote_runs/<run-id>.
 NVML kernel/library mismatch noted; PyTorch CUDAworked and no globaldriver change made.
 One fetchtransporttimeout recovered by existing legacySCP retry. No activeTOVD job remains.
+
+## 2026-09-12 08:34 +08 T007 dispatch
+Tested e88ad88112f6486f8c7dc8458594e095528ba9f1; release20260912-083405-tovd-t007.
+Run20260912-083417-tovd-t007-a6000 active on physicalGPU1;79 local tests pass.
+Six fixed400x4 runs follow remote CPU/CUDA suites; no T007 aggregate read.

@@ -18,3 +18,8 @@ Preregistration log entry literal newline formatting corrected; no scientific ch
 Full local suite79 passed20.91s; git diff --check passed.
 Pre-dispatch parameter inventory clarified PLAN.md:1616 fast +256 key +256 query
 =2128 total parameters. No tensor shape/capacity changed from T002/T006.
+
+## 2026-09-12 08:34 +08 T007 dispatch
+Tested e88ad88112f6486f8c7dc8458594e095528ba9f1; release20260912-083405-tovd-t007.
+Run20260912-083417-tovd-t007-a6000 active on physicalGPU1;79 local tests pass.
+Six fixed400x4 runs follow remote CPU/CUDA suites; no T007 aggregate read.
