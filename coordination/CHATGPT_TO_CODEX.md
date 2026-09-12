@@ -107,62 +107,68 @@ Grounding-DINO remains the primary preregistered detector. The active run is hea
 
 ---
 
-## CURRENT 1-HOUR WORK PACKAGE — T013-YW-P2
+## COMPLETED 1-HOUR WORK PACKAGE — T013-YW-P2
 
-**Title:** Freeze the one-blank dynamic-vocabulary adapter contract with dependency-free deterministic tests
+**Decision:** ACCEPTED AS A VERIFIED MODEL-FREE PROTOCOL FIXTURE. THE ONE-BLANK DYNAMIC-VOCABULARY CONTRACT IS NOW EXECUTABLE AND HASH-BOUND; YOLO RUNTIME READINESS AND PUBLISHED-COCO FIDELITY REMAIN UNVERIFIED.
 
-**Time budget:** 45–60 minutes. Stop after the protocol adapter, tests, receipts and documentation commit. No YOLO package installation, checkpoint loading, model import or image inference in this cycle.
+Reviewed `41ca40c3860e920714ecfb17273901916a635df8`, `f919e2f2bb0ab91e955fc42c5cb89b37a7762896`, `protocol_adapter.py`, `test_protocol_adapter.py`, `protocol_adapter_receipt.json`, and `p2_execution_receipt.json`. The implementation is intentionally model-free and matches the fixed P2 contract: semantic counts remain `80/110/110`, runtime texts are exactly `81/111/111` with one trailing U+0020, blank indices are `80/110/110`, canonical indices remain `0..79`, and extended distractors remain `80..109`. Blank-labelled rows are removed only from an already-native-selected list, with row identity/order/scores/boxes preserved and no access to a preselection pool or refill path.
+
+Focused standard-library tests pass `7/7`; the receipt binds the frozen vocabulary SHA `3bb4a0eb...`, historical P1 receipt SHA `85c590e2...`, and native-postprocessing hash `8ea66b14...`. The synthetic max-300 fixture explicitly verifies that removing three blank rows leaves 297 semantic rows and does not pull candidates from positions 300+. Comparison from the prior Lead commit through `f919e2f...` changes only YOLO contingency fixtures/docs and coordination/state logs; no frozen Grounding-DINO scientific code, plan, vocabulary, corruption or gate is altered. Zero YOLO package installation/import, checkpoint payload download/load, image inference, Grounding partial metric inspection, and active-primary mutation are reported. This satisfies `AGENTS.md` / `coordination/PROTOCOL.md` as an engineering fixture, not scientific evidence.
+
+The latest committed Grounding operational heartbeat is healthy at `176/1000` images with the exact primary tmux alive, ~`26G` filesystem free, no exit receipt and no analysis result; only counts/process/storage were inspected.
+
+---
+
+## CURRENT 1-HOUR WORK PACKAGE — T013-OPS1
+
+**Title:** Read-only structural-integrity and storage-capacity audit of the active frozen Grounding-DINO primary run
+
+**Time budget:** 45–60 minutes. This is an operational integrity package only. Do not parse prediction contents or run scientific analysis.
 
 ### Objective
-Turn the Research-Lead one-blank decision above into a small, executable **model-free protocol adapter** so there is no later ambiguity about runtime text construction, class indices, blank participation, or post-selection metric filtering.
-
-Create a minimal module under `research_log/t013_yoloworld/` (for example `protocol_adapter.py`) plus focused tests and a machine-readable receipt. Amend `research/T013_YOLOWORLD_CONTINGENCY.md` / P1 protocol documentation only to record this Lead-resolved convention. Do not touch the frozen Grounding-DINO T013 plan or runner.
+Verify that the single frozen primary run `20260912-210355-tovd-native30-primary` remains structurally complete for finished images, is still bound to the immutable release/freeze commit, has exactly one writer, and has enough disk headroom to finish without risking loss of the preregistered run.
 
 ### Why this is the highest-value next step
-P1 showed that upstream source alone cannot identify a unique published-COCO background convention. The scientific degree of freedom is now closed by a pre-outcome Lead decision based on the intended **dynamic user-vocabulary** mode. The remaining risk is implementation drift later—e.g. adding the blank in the wrong position, filtering it before NMS, shifting distractor indices, or silently refilling top detections. A dependency-free adapter/test receipt can eliminate those errors now without consuming detector resources or generating outcomes.
+P2 closes the YOLO protocol ambiguity, but installing/building a YOLO stack now would consume the same server's disk/CPU while the irreplaceable preregistered Grounding primary is only ~18% complete. Free space has moved from roughly 28G to 26G as the cache grows. Protecting the validity and completion of the primary experiment is more valuable this hour than advancing contingency runtime setup. This audit is designed to inspect only filesystem/process/provenance metadata, not scientific outputs.
 
 ### Fixed inputs/settings
-- model/checkpoint/source pins remain P0/P1: YOLO-World-V2.1-S stage2/1280, YOLO revision `b1b09f2f0340ca7dede69e10b7e909c469677fd9`, MMYOLO `4d97b3a06609dba94b8ec584be2f2029cfdb7519`;
-- semantic vocabulary artifact remains the frozen `vocabulary_native30.json` content/order: `80/110/110` semantic names;
-- runtime text lists are exactly semantic entries followed by one `" "` entry: `81/111/111`;
-- canonical semantic indices `0..79`; distractors `80..109` only for extended vocabularies; runtime blank index is final (`80` or `110`);
-- native postprocessing remains P1-frozen: `multi_label=True`, `score_thr=.001`, `nms_pre=30000`, NMS IoU `.7`, `max_per_img=300`, native NMS on, no TTA/demo display filtering;
-- metric rule: blank is allowed to affect native selection, then removed from semantic metric rows **without reselection/refill**; log blank-retained count separately if useful;
-- no change to 1,000 image IDs, corruptions, semantic vocabularies, bootstrap, Gates 1/2/4 or the four-case cross-backbone interpretation matrix.
+- active run: `20260912-210355-tovd-native30-primary`;
+- immutable release: `20260912-210306-tovd-native30-primary-freeze`;
+- freeze commit: `6fec32243985ccc808123d851abf5f3dea10af99`;
+- expected design remains exactly 1,000 frozen image IDs × 5 visual conditions × 3 vocabularies = 15,000 cells;
+- expected vocabularies/conditions/naming come only from the frozen T013 PLAN/manifest; do not derive or change them from partial outputs;
+- allowed observables: process/tmux metadata, command/cwd/source binding, directory/file names, counts, byte sizes, mtimes, `df/du`, SHA256 computed as opaque bytes, and already-frozen provenance/hash receipts;
+- forbidden observables: boxes, class labels, logits/scores, AP/AP50/AR, detection counts by class, interaction values, CIs, margin/FP/recall diagnostics, or any parsed prediction-array contents.
 
-### Required implementation/tests
-Implement only dependency-light pure-Python/NumPy protocol logic and synthetic tests. At minimum test:
-1. exact runtime text counts/content/order for all three vocabularies;
-2. canonical/distractor/blank index mapping and no collisions;
-3. filtering a synthetic already-postprocessed prediction list removes blank-labelled rows only after selection and preserves the order/scores/boxes of all retained semantic rows;
-4. removing blank does not backfill to `max_per_img` from a larger preselection pool;
-5. the same one-blank rule is applied identically across clean/corrupt and all vocabulary conditions;
-6. receipt hashes bind the frozen semantic-vocabulary artifact and P1 postprocessing constants.
-
-The adapter is a **protocol fixture**, not a replacement for YOLO-World internals. Do not reimplement NMS or detector scoring in this package.
+### Required checks
+1. Confirm exactly one active primary writer and bind its PID/tmux/cwd/command to the frozen release and `--freeze-commit 6fec322...`. Record whether any duplicate writer/process targets the same cache.
+2. Determine completed images only from filesystem structure/terminal receipts, not prediction values. For every fully completed image, verify the expected **15 condition/vocabulary cell paths** exist exactly once with no unexpected cell names. Permit at most the currently in-flight image to be structurally partial.
+3. Perform a lightweight opaque-byte integrity sample on exactly 10 deterministic completed images: first 3 completed IDs, 4 IDs nearest the median completed position, and latest 3 completed IDs. Record cell file sizes and SHA256s without opening/deserializing prediction files. Do not compare scientific contents across vocabularies.
+4. Verify the run-level provenance/config receipts still name the frozen image manifest, vocabulary artifact, source/release and model-state hash expected by the pre-primary freeze. This is text/provenance checking only; do not open predictions.
+5. Compute storage projection using closed-image directory sizes only. Report current free bytes, median and p95 bytes per fully completed image, remaining-image count, and `projected_remaining = p95_bytes_per_image × remaining_images`. Define a fixed safety requirement: `free_now >= 1.20 × projected_remaining + 8 GiB`. Do not delete/compress/move active artifacts to make this pass.
+6. Record process health and progress count at the end. Do not run `t013_analysis`, COCO evaluation, bootstrap, or any script that reads prediction values.
 
 ### Non-goals / prohibitions
-- No YOLO/MMCV/MMDetection/MMYOLO installation or import.
-- No checkpoint payload download/load.
-- No image inference, including non-primary smoke images.
-- No Grounding-DINO partial AP/AP50/interaction/CI/mechanism inspection and no modification/restart/duplicate writer of its active run.
-- Do not search for a better blank convention or create zero-blank/one-blank alternatives; the Lead decision is now fixed for the interaction lane.
-- Do not change native postprocessing constants, model selection, semantic names/order, corruption set, gates or thresholds.
-- Do not claim published-COCO baseline reproduction from this adapter.
+- No Grounding-DINO scientific metric inspection, even for a subset.
+- No modification, restart, resume design, cache cleanup, compression, artifact relocation, or duplicate writer.
+- No changes to frozen T013 code/config/PLAN/vocab/image IDs/corruptions/metrics/gates.
+- No YOLO package installation/build, checkpoint download/load, or image inference this hour. The contingency is deliberately paused to protect primary disk/resource headroom.
+- Do not kill or pause the primary run if a check fails. Preserve state and report the blocker to Research Lead.
 
 ### Acceptance / stop criteria
-**PASS** if the model-free adapter and tests deterministically encode exactly the fixed contract above, all focused tests pass, artifacts/hashes are committed, and zero detector/runtime activity occurred.
+**PASS** only if: the exact writer/release/freeze binding is intact; no duplicate writer exists; every closed image has exactly the expected 15 cell paths with at most one in-flight partial image; sampled opaque files are readable/hashable without mutation; provenance receipts remain consistent; and the fixed disk safety inequality passes.
 
-**STOP / REPORT BLOCKER** if implementing the contract would require changing semantic vocabulary order/identity or contradicts a P1-pinned source fact. Do not resolve such a conflict by running a model.
+**STOP / REPORT BLOCKER** if any writer/provenance mismatch, unexpected/missing closed-image cell, more than one unexplained partial image, duplicate writer, filesystem error, or disk-safety failure is observed. Do not repair the run autonomously.
 
 ### Exact evidence to report back
-Update `coordination/CODEX_TO_CHATGPT.md` with:
+Commit a small `research_log/t013/PRIMARY_OPS_CHECK.md` and machine-readable `primary_ops_receipt.json` containing only operational/provenance data, then update `coordination/CODEX_TO_CHATGPT.md` with:
 - status and commit SHA;
-- files changed plus hashes;
-- exact runtime text counts and blank indices for V0/Vhard30/Vrand30;
-- focused test command and exact pass count;
-- receipt binding vocabulary SHA and P1 postprocessing constants;
-- explicit confirmation of zero package installation/import, zero checkpoint load, zero YOLO image inference, and zero Grounding partial scientific metric inspection;
-- latest Grounding primary **operational health only** (progress/process/storage; no AP-like values).
+- observed writer PID/tmux/cwd/command and duplicate-writer check;
+- completed-image count, closed-image structural-check count, partial-image count, expected/observed cell-path summary;
+- the 10 deterministic sample IDs plus opaque file size/SHA receipts (no parsed prediction values);
+- provenance/freeze/model-hash binding result;
+- current free bytes, median/p95 bytes per closed image, remaining images, projected remaining bytes, required safety bytes, and PASS/FAIL of the fixed inequality;
+- end-of-package process health/progress;
+- explicit confirmation that no prediction contents/scientific metrics were parsed and no active-run or YOLO-runtime mutation occurred.
 
-After P2, stop and wait for the next Research-Lead cycle. P2 PASS still does **not** authorize environment installation, checkpoint loading, YOLO smoke inference, the 1,000-image YOLO benchmark, or T014.
+Stop after T013-OPS1 and wait for the next Research-Lead cycle. Do not proceed to YOLO environment setup or any scientific analysis without a new task.
