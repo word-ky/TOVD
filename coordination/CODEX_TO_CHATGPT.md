@@ -472,3 +472,48 @@ Negative controlPASS: scratchcopy of replayB, metrics[0,0,0,0]+=1, comparator FA
 End health2026-09-13T05:38:17+08: exact primary20260912-210355-tovd-native30-primary tmux/writer721181 Rl+ alive,300/1000 at30761.30617114401s,free24575799296bytes,no wrapper exit marker,primary analysis/results.json absent (existence only). active_primary_cache_accessed=false,primary_scientific_result_opened=false. All decoded arrays were completed engineering replay/mutation artifacts. No frozen code/config/PLAN/vocab/IDs/seeds/gates/environment/run change and no YOLO activity.
 
 Recommended next action: Lead review REPRO1. Stop package; retain remote replayA/B/mutation and local logs/environment/receipt. Do not repeat or repoint smoke helper to active primary. Continue immutable primary and15-minute health monitoring. FIN1/full-cache reproduction applies after completion under existing Lead contract; no current primary interpretation,YOLO orT014 authorization.
+
+## T013-DEC1 — PASS; final disclosure and Lead decision contract frozen
+
+Lead753facb accepted REPRO1 and assigned DEC1. Evidence commit **51881e3ca83ef0abafd0510965f32c19455c0025**. Contract version T013-DEC1-v1, document SHA2569c6e6ee662b5e22458b13adecc9825d32e1e031876c39904b3635ce1388cbcba; implementation SHAbaf99f38a3130c268385ddc4c986cd72d123bfb55e7fed29a90b88d289570931. Engineering PASS only; Grounding primary science remains pending.
+
+Files: research_log/t013/FINAL_DECISION_CONTRACT.md, final_decision_contract.py, test_final_decision_contract.py, final_decision_contract_receipt.json. This handoff also appends project_state.md, REMOTE.md and session_log.md. No frozen scientific file changed.
+
+Command: D:/anaconda3/python.exe research_log/t013/test_final_decision_contract.py. Six standard-library tests PASS in0.024s;58 deterministic fixture outcomes retained. git diff --check PASS. Function accepts an in-memory metadata dictionary, performs no I/O/imports, and never reads predictions. Supplied FIN1/replay statuses refer to finished-primary evidence; this is not another byte-integrity checker. Source bytes match immutable6fec322 via git show.
+
+Source/PLAN SHA256 bindings:
+- PLAN.md:5d977aceb3c06a7915396aea9c7cc2504759e584ce79b459a287b18fb67e4beb.
+- t013_analysis.py:74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c.
+- t013_coco.py:bd3245235a6dcd455224ea7eb737b07875920b0a08b34f30e706dfc6a9ca9e81.
+- t013_diagnostics.py:ae7e61feaa5701ca9580c9c48901f99d09e9986b560c2821073100c94645a41e.
+- native30_freeze.json:50addfb8e247333b49fb22cda14570166b294101bb435b5a1b5bf688b4b3a91e.
+
+Mandatory disclosure sections/fields:
+- contract_version; evidence.fin1/full_cache_replay each status and receipt_ref. Either non-PASS blocks interpretation before requiring unavailable scientific results.
+- All11 frozen results fields: kind,image_count,conditions,vocabularies,metric_order,point_metrics[5,3,8],metric_ci95[2,5,3,8],replicates,seed,margin_common_localized_gt_counts[4],assessment. Full15-cell AP/AP50/AR/AR50 plus canonicalFP,distractorFP,canonicalrecall,localizationrecall; final report must display all cells.
+- Assessment D_AP50/A_AP50[4,3] and both CI[2,4,3]; hard_minus_random[4]/CI[2,4]; mean_A_hard/CI,mean_hard_minus_random/CI; gate1,gate1_corruptions[4],gate2,gate3_statistical_support,gate4_recorded_checks,research_acceptance.
+- All3 gate3_diagnostics families: distractor_fp_excess_increase,classification_beyond_localization_excess_drop,matched_localization_margin_excess_shrinkage; each per_corruption[4],mean,mean_ci95,positive_corruptions,statistical_support. No favorable-family selection. Four common-localized-GT counts retained.
+- Provenance: exact run_id/release_id/freeze_commit; environment_sha256,freeze_sha256,plan_sha256,analysis_sha256,coco_sha256,diagnostics_sha256,vocabulary_sha256,selection_sha256,annotations_sha256,image_manifest_sha256,checkpoint_sha256,native_source_revision,state_before_sha256,state_after_sha256,run_receipt_sha256,cache_manifest_sha256,results_sha256,paired_draws_sha256,bootstrap_samples_sha256,diagnostics_per_image_sha256.
+- lead_review: gate3_coherent,gate4,review_ref,gate3_rationale,gate4_history_audit_ref. Recorded gate4 checks and Lead protocol-history audit must both hold. Gate3 statistical_support does not supply the Lead judgment.
+
+Fixed states / mandatory branch results (allPASS):
+| Fixture | State |
+| --- | --- |
+| Gate1 true / Gate2 false / Gate3 coherent, Gate4 valid | GROUNDING_PRIMARY_NOT_SUPPORTED |
+| Gate1 false / Gate2 true / Gate3 coherent, Gate4 valid | GROUNDING_PRIMARY_NOT_SUPPORTED |
+| Gate1+2 true / Gate3 not coherent, Gate4 valid | GROUNDING_DUAL_SHIFT_SUPPORTED_MECHANISM_UNRESOLVED |
+| Gate1+2 true / Gate3 coherent, Gate4 valid | GROUNDING_DUAL_SHIFT_SUPPORTED_MECHANISM_COHERENT |
+| Gate4 Lead audit false or recorded checks false, otherwise positive | PROTOCOL_INVALID_NO_SCIENTIFIC_INTERPRETATION |
+| Either FIN1/replay FAIL, PENDING or NOT_RUN | BLOCKED_NO_SCIENTIFIC_INTERPRETATION |
+| Missing mandatory table/CI/family/support/Lead/provenance field (15fixtures) | REJECTED incomplete disclosure |
+| Shortened table or D/contrast corruption array (3fixtures) | REJECTED incomplete disclosure |
+| Explicit NaN margin/nullCI/zero common support, Lead3 false | GROUNDING_DUAL_SHIFT_SUPPORTED_MECHANISM_UNRESOLVED |
+| Statistical support true, Lead3 false | GROUNDING_DUAL_SHIFT_SUPPORTED_MECHANISM_UNRESOLVED |
+
+All32 Gate1/2/Lead3/Lead4/recorded4 combinations and six non-PASS evidence cases remain exactly unchanged when yolo_world=PASS is added. Gate3 cannot rescue either Gate1/2 failure. Future separately authorized YOLO evidence is cross-backbone only; for a valid Grounding negative it may later test architecture specificity, never relabel/replace/rescue Grounding.
+
+Frozen interval() can return null and margins can be NaN. The contract requires those fields to remain present and the final report to label unavailable values; no imputation/drop of undefined replicates. This is existing PLAN behavior, not a new threshold/blocker. The helper consumes frozen Gate1/2 booleans without duplicating STAT1 arithmetic and requires explicit Lead3/4 input; it does not autonomously accept research. No frozen schema blocker, test failure, dependency install, inference or primary cache access occurred.
+
+End health only,2026-09-13T07:11:24+08:00: exact primary20260912-210355-tovd-native30-primary tmux alive,writer721181 Rl+,356/1000 at36421.546857393s,free23537688576bytes; no wrapper exit marker,analysis/results.json absent (existence only). active_primary_scientific_result_opened=false; active_primary_prediction_content_opened=false; frozen source/config/run unchanged. No TTT in this task; inner-loss/update/gradient/reset diagnostics N/A.
+
+Initial Git fetch hit transient schannel TLS failure; bounded retry succeeded before reading new Lead scope. No operational repair was needed. Recommend Lead review DEC1; stop this package. Continue immutable primary and quiet15-minute heartbeat. Do not repeat DEC1 while its heading persists; no YOLO runtime,T014 or primary interpretation authorized before existing completion/review prerequisites.
