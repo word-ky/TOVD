@@ -336,3 +336,15 @@ Realcachedpipeline run20260912-205428-tovd-native30-pipeline-smoke ACTIVE, relea
 ExistingCOCOdownload20260912-190511-tovd-t013-coco-ranges-a6000 stillalive; laterparts190–194reached despitecompletionlog169/195. Preservepartialrangefiles; inspectexitbeforeanyresume. FinalCRC/archivehash/5000JPEGhashes pending. Do notstartprimaryuntiltheseplus successfulpipeline andcompletePLAN/native30_freeze.json are committedtogetheronmain. ExistingID/vocabularyhardspecsunchanged.
 
 Filesadded/changed: scripts/t013_native_vocab.py,t013_native_detector.py,t013_native_smoke.py,t013_native_run.py,t013_analysis.py,t013_data_receipt.py; existingt013_coco.pyaddsAR; tests/test_t013_native_vocab.py,test_t013_analysis.py,test_t013_pipeline.py andaffectedCOCOtests; vocabulary_native30.json,PLAN.md,state/logs/receipts. Commands arepreserved inrun.sh; focusedtests python -m pytest tests/test_t013_*.py -q (explicitPowerShellpath expansionlocally). NoAPorinteractionclaim. Nextactionfinishrealcachetest/datareceiptthenfinalfreezeandunchangedprimaryexecution.
+
+---
+
+## T013-NATIVE30 FINAL PRE-PRIMARY FREEZE
+
+2026-09-12T21:02:51.610316+08:00. Implementation35fbfb7. Allprerequisitespassed; finalPLAN/native30_freeze.json nowbindthecompletecode/data/vocab/selection/environmentandreceipts. Native45cellsmoke204646PASS;realcachedpipeline205428exit0at20:59:29,45rawcells+10engineeringbootstrapreplicates. 17focusedlocaltests0.91s andremote0.85sPASS. OriginalnativeCPUFP32/fourthreads/directpreprocessing; noHFprimary. NativeweightsunchangedSHAde1683cc0a3c35157ed5475169dae013cdaffe69f45651d6e3f5550ae96139e1. Tokenlengths195/255/255actualnativeattention/masksverified.
+
+COCOresume20260912-205852-tovd-coco-resume-finalexit0at20:59:42: valarchiveSHA4f7e2ccb2866ec5041993c9cf2a952bbed69647b115d0f74da7ce8f4bef82f05,815585330bytes,allZIPCRCspass. All5000imageSHAmanifest38eb39894b8c0f1924e099b3a1ec0b885fdf7ec43c86933e1dc28186d85c3ba8. Frozen1000IDsunchanged. Prior190511transferfailedConnectionResetErrorat20:57:14; verifiedprocessexitbeforeresume, reusedexistingparts, failurespreserved.
+
+Changedfinalartifactfiles: research_log/t013/PLAN.md,native30_freeze.json,data_receipt.json,image_sha256.json,native30_environment.txt; completeoriginalrunreceiptsandanalysistestartifacts, state/logs/mailbox. Large47MBengineeringrawNPZsremainunderremoteprojectrootin205428/artifacts/cache/raw; all45rawhashes preservedincommittedcache_manifest.jsonl andrun_receipt.json. EngineeringAPfixturesarenotscientificprimaryoutcomesanddidnotchangeanythreshold/vocab/gate.
+
+Next: publishthissingleimmutableprerequisitecommit, deployunchangedcode, launchnative1000×15primaryand1000pairedbootstrap. Estimateinference24.9h and~15.7GBrawfrom3images/269.109s; finalinferenceandanalysisrunIDwillfollow. No furtherapprovalrequiredbyactiveLeadtask; T014stillrequiresLeadreviewaftercompletion.

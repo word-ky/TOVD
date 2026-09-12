@@ -1,6 +1,6 @@
 # T013-NATIVE30 preregistration
 
-Status: PRE-PRIMARY DRAFT; no primary inference authorized until the final data hashes, smoke receipts and native30_freeze.json are committed together on main. Supersedes HF1024/80-distractor primary design under Lead02ba123/259217c. Scientific premise and numerical Gates1–4 unchanged; T001–T012 remain closed. No scientific primary outcomes have been generated.
+Status: FINAL PRE-PRIMARY FREEZE. All prerequisites below have passed; this PLAN, native30_freeze.json, code, data hashes, vocabulary, IDs and smoke receipts are committed together before primary execution. Use the exact enclosing main commit as --freeze-commit. Supersedes HF1024/80-distractor primary design under Lead02ba123/259217c. Scientific premise and numerical Gates1–4 unchanged; T001–T012 remain closed. No scientific primary outcomes have been generated.
 
 ## Detector and execution
 
@@ -40,6 +40,10 @@ Gate3 requirescoherentsemanticcompetitionevidence andcannotrescueGates1/2. Presp
 
 IfGates1/2/4fail,stopandreportthenative/capacity-saferesult; no vocabredesignorT014. Ifpass,LeadreviewsGate3anddecideswhetheraseparateT014causaltestiswarranted. AllHF/parity/syntheticresultsremainhistoricalengineeringevidenceonly.
 
-## Pending completion before final freeze
+## Completed prerequisite receipts
 
-FullCOCOarchive/imagehashreceipt; completednative45cellsmoke; realcached-runner/analysisengineeringtest; fullfocusedtests; native30_freeze.jsonwithexactcode/environment/data hashes. No primary execution before these artifacts and this final PLAN share one immutable main commit.
+FinalCOCOresume20260912-205852-tovd-coco-resume-final exit0 at20:59:42+08. Valarchive815585330bytes,SHA4f7e2ccb2866ec5041993c9cf2a952bbed69647b115d0f74da7ce8f4bef82f05; allZIPCRCs passed. Exactly5000JPEGhashes inimage_sha256.json, manifestSHA38eb39894b8c0f1924e099b3a1ec0b885fdf7ec43c86933e1dc28186d85c3ba8. AnnotationsarchiveSHA113a836d90195ee1f884e704da6304dfaaecff1f023f49b6ca93c4aaae470268. Preservefailedfirsttransfer190511exit1(ConnectionResetError) andresumereceipt; noprimaryoutcomesduringrepair.
+
+Nativevaliditysmoke20260912-204646-tovd-native30-smoke PASS45cells at20:52:51; masks/textlengths/replay/directV0identity/pixels/weightsallverified. Nativecachedpipeline20260912-205428-tovd-native30-pipeline-smoke PASS45rawcells+10engineeringbootstrapreplicates at20:59:29. ItsrawNPZs47MBremainunderremoteprojectrun; allhashesandrunreceipt/analysisartifactsarearchivedlocally. Theyareengineeringfixtures,notprimarydata. Full17focusedtests passedlocal0.91s andremote0.85s oncurrentcode. Fullknown-answer15cellpipelineunit andduplicate-imageCOCOreevaluation tests included.
+
+Environmentexactpipfreeze in native30_environment.txt. native30_freeze.json contains exactcode/vocab/selection/annotation/image-manifest/PLAN/environment/receipt hashes. Runtimebindssources, selection, vocab, imagebytes, expectednativeinitialstate andannotationbytes; cachemanifestprovesidenticalpixelsacrossvocabulariesandfinalweightsunchanged. Estimated1000imageCPUinference~24.9hours from3-imagepipeline269.109s, plusbootstrapanalysis. Estimateonly; donotalterprotocolforruntime. Remoteavailabledisk31GBbeforearchiveassembly, projectedprimaryraw~15.7GBfrom47MB/3images;largeNPZsremaininremoteprojectrootwithhashmanifest.

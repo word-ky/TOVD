@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-190511-tovd-t013-coco-ranges-a6000",
+  "releaseId": "20260912-190401-tovd-t013-coco-ranges",
+  "sessionName": "autodl-20260912-190511-tovd-t013-coco-ranges-a6000",
+  "command": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -u -m scripts.t013_download_coco --destination /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco --receipt \"$AUTODL_ARTIFACTS_DIR/coco_downloads.json\""
+}

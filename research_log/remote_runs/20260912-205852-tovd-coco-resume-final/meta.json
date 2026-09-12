@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-205852-tovd-coco-resume-final",
+  "releaseId": "20260912-205808-tovd-native30-data",
+  "sessionName": "autodl-20260912-205852-tovd-coco-resume-final",
+  "command": "cd /home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-205808-tovd-native30-data; pwd > \"$AUTODL_ARTIFACTS_DIR/resolved_release.txt\"; /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -u -m scripts.t013_download_coco --destination /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco --receipt \"$AUTODL_ARTIFACTS_DIR/coco_downloads.json\" && /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -u -m scripts.t013_data_receipt --coco /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco --download-receipt \"$AUTODL_ARTIFACTS_DIR/coco_downloads.json\" --output \"$AUTODL_ARTIFACTS_DIR/final_data\""
+}

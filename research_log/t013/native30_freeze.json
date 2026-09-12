@@ -1,0 +1,46 @@
+{
+  "task": "T013-NATIVE30",
+  "frozen_at": "2026-09-12T21:02:51.610316+08:00",
+  "lead_revisions": [
+    "02ba123",
+    "259217c"
+  ],
+  "implementation_revision": "35fbfb7",
+  "primary_images": 1000,
+  "conditions": 15,
+  "replicates": 1000,
+  "bootstrap_seed": 20260913,
+  "device": "cpu",
+  "dtype": "float32",
+  "threads": 4,
+  "native_source_revision": "856dde20aee659246248e20734ef9ba5214f5e44",
+  "native_checkpoint_sha256": "3b3ca2563c77c69f651d7bd133e97139c186df06231157a64c507099c52bc799",
+  "native_state_sha256": "de1683cc0a3c35157ed5475169dae013cdaffe69f45651d6e3f5550ae96139e1",
+  "code_sha256": {
+    "scripts/t013_native_detector.py": "b49f23f131777f08e23131ad55a94d9211c33b1c759adf86c6b52e2b95c34126",
+    "scripts/t013_native_run.py": "177176fdb1c133b98770f8e6719b22e3ead0a00adbdced598e92326aec723429",
+    "scripts/t013_native_smoke.py": "d30430f324d0577afc6997c38d78d6f46b78679cb2adaf96055986344928a421",
+    "scripts/t013_analysis.py": "74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c",
+    "scripts/t013_coco.py": "bd3245235a6dcd455224ea7eb737b07875920b0a08b34f30e706dfc6a9ca9e81",
+    "scripts/t013_diagnostics.py": "ae7e61feaa5701ca9580c9c48901f99d09e9986b560c2821073100c94645a41e",
+    "scripts/t013_detector.py": "4800f1471f2de8f964700b683505c7230e078b6833a57afa1e09af6b42babd0d",
+    "scripts/t013_text.py": "2c175a779304f045267e3419eda04dbc2e5c4730ae19cce23727043832102018",
+    "scripts/t013_native_vocab.py": "61d40e7f4107a2a13eaa7cd872667acaa4db3dffb3a257e2cddbaece4f943351",
+    "scripts/t013_data_receipt.py": "9ef780aa724d3a8a6f685dc0a273a285e7ce17942985fb107c2638810f54305e"
+  },
+  "vocabulary_sha256": "3bb4a0ebada1f9da407ae6a94f1135798dba7117bd658a6ecba97b2ebfad0967",
+  "selection_sha256": "8039a70f25c34f295345e63d1980f692631b6bbdaa5c37267a10852acbf3833b",
+  "annotations_sha256": "e8c7f7908f1d7278341fae127d0da654f102f11bd7b21d8aeefa635b8c810b6f",
+  "image_manifest_sha256": "38eb39894b8c0f1924e099b3a1ec0b885fdf7ec43c86933e1dc28186d85c3ba8",
+  "environment_sha256": "6fdb8b3da35dddb24c5ea602e81b160ab864e792ca29fa27236dd759a6b4f090",
+  "plan_sha256": "5d977aceb3c06a7915396aea9c7cc2504759e584ce79b459a287b18fb67e4beb",
+  "data_receipt_sha256": "4dc1361b17a9221b278dd70ac805afb4d87742451b310af5381dc69900fe8c50",
+  "native_validity_smoke": "20260912-204646-tovd-native30-smoke",
+  "cached_pipeline_smoke": "20260912-205428-tovd-native30-pipeline-smoke",
+  "tests": {
+    "local": "17 passed in0.91s",
+    "remote": "17 passed in0.85s"
+  },
+  "primary_started": false,
+  "historical_hf_artifacts": "superseded/rejected, no primary use"
+}
