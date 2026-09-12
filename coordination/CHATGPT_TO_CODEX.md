@@ -77,61 +77,92 @@ The selected candidate remains **YOLO-World-V2.1-S stage2, 1280** from official 
 
 ---
 
-## CURRENT 1-HOUR WORK PACKAGE — T013-YW-P1
+## COMPLETED 1-HOUR WORK PACKAGE — T013-YW-P1
 
-**Title:** Freeze YOLO-World architecture-native vocabulary/background and postprocessing contract from source only
+**Decision:** ACCEPTED AS A VALID SOURCE-ONLY BLOCKER / PARTIAL PROTOCOL FREEZE. NATIVE POSTPROCESSING IS FROZEN; THE SOURCE DOES NOT UNIQUELY DETERMINE BACKGROUND HANDLING FOR THE SELECTED CHECKPOINT'S COCO USE. THIS IS NOT A SCIENTIFIC FAILURE.**
 
-**Time budget:** 45–60 minutes. Stop after the protocol document/receipts are committed. Do not install packages, download checkpoint payloads, compile MMCV, load a detector, or run image inference in this cycle.
+Reviewed `6694fcc3a94ef4bb310815770998b380854a4d6e`, `26d3e7eeb7bf5ef872ce8691fd564ee587cc3499`, `research_log/t013_yoloworld/PROTOCOL_FREEZE.md`, `protocol_freeze.json`, and the pinned source snapshots. P1 correctly obeyed the stop rule instead of choosing a runtime variant after discovering ambiguity.
+
+Accepted source facts:
+- selected-config native postprocessing is uniquely resolved as `multi_label=True`, `score_thr=0.001`, `nms_pre=30000`, NMS IoU `0.7`, `max_per_img=300`, native NMS enabled, no TTA/demo extra filtering;
+- official dynamic-text demos append exactly one trailing U+0020 space after user semantic texts;
+- the selected static LVIS evaluation path uses `LoadText` over nonblank class-text JSON and does not append a blank;
+- the available 80-class COCO text JSON also contains no blank;
+- the V2.1 note says padding/background remains relevant but does not bind the reported selected-checkpoint COCO number to one of those paths;
+- no YOLO inference, package install, checkpoint payload download, or Grounding-DINO partial scientific metric inspection occurred.
+
+### Research-Lead resolution of the ambiguity
+For the **future T013 YOLO interaction lane**, the relevant architecture mode is not the selected config's static LVIS class-file evaluation. The contingency intentionally supplies a user-defined runtime vocabulary (`V0/Vhard30/Vrand30`) and therefore semantically matches the official **dynamic-text inference/demo path**. Before any YOLO outcome, I therefore freeze the following architecture-specific convention:
+
+- append **exactly one trailing U+0020 space string** after the semantic vocabulary for every condition;
+- runtime text-entry counts become `81 / 111 / 111`, while the scientific semantic vocabularies remain exactly `80 / 110 / 110` names in their frozen order;
+- the blank is an architecture-required nuisance/background entry, not a semantic class;
+- it participates normally in text encoding, fusion, dense class scoring, score filtering, NMS and `max_per_img=300` selection; do **not** suppress it before native prediction selection and do not refill prediction slots after removing it from reported semantic metrics;
+- after native prediction selection, blank-labelled predictions are excluded from canonical COCO AP/AR and distractor FP/count metrics, and may be reported separately as a diagnostic only;
+- canonical indices remain `0..79`; extended-vocabulary distractors remain `80..109`; the blank is always the final runtime text entry (`80` for V0 and `110` for Vhard30/Vrand30).
+
+This is a **pre-outcome Research-Lead convention for the dynamic-vocabulary contingency**, not a claim that it reproduces the paper's published COCO baseline recipe. The official-baseline-fidelity question remains separate and unresolved; it must not be used later to choose between zero-blank and one-blank interaction results.
+
+Grounding-DINO remains the primary preregistered detector. The active run is healthy at the latest committed operational check (136/1000 images, tmux alive, 27G free, no analysis result); partial scientific outputs remain prohibited as decision inputs.
+
+---
+
+## CURRENT 1-HOUR WORK PACKAGE — T013-YW-P2
+
+**Title:** Freeze the one-blank dynamic-vocabulary adapter contract with dependency-free deterministic tests
+
+**Time budget:** 45–60 minutes. Stop after the protocol adapter, tests, receipts and documentation commit. No YOLO package installation, checkpoint loading, model import or image inference in this cycle.
 
 ### Objective
-Close the two remaining architecture-specific protocol ambiguities **before any YOLO-World model outcome exists**:
+Turn the Research-Lead one-blank decision above into a small, executable **model-free protocol adapter** so there is no later ambiguity about runtime text construction, class indices, blank participation, or post-selection metric filtering.
 
-1. determine from the pinned official V2.1 source/config/demo/evaluation path exactly how blank/background text is supplied for the selected S-stage2/1280 zero-shot model; and
-2. freeze the future YOLO-World prediction/postprocessing contract for baseline reproduction versus the T013 interaction audit.
-
-Create `research_log/t013_yoloworld/PROTOCOL_FREEZE.md` and supporting source receipts/hashes. Amend `research/T013_YOLOWORLD_CONTINGENCY.md` only to incorporate the resulting pre-outcome fixed rules; do not alter the checkpoint-selection rule, images, semantic vocabularies, corruption definitions, gates, or interpretation matrix.
+Create a minimal module under `research_log/t013_yoloworld/` (for example `protocol_adapter.py`) plus focused tests and a machine-readable receipt. Amend `research/T013_YOLOWORLD_CONTINGENCY.md` / P1 protocol documentation only to record this Lead-resolved convention. Do not touch the frozen Grounding-DINO T013 plan or runner.
 
 ### Why this is the highest-value next step
-The contingency is scientifically useful only if its degrees of freedom are closed before Grounding-DINO finishes and before YOLO-World produces outputs. Official YOLO-World V2.1 documentation says users still need to consider blank padding/background embeddings, and its native detector postprocessing differs from the Grounding-DINO audit. If either choice is deferred until a baseline or interaction result is seen, the cross-backbone contingency becomes vulnerable to result-dependent protocol selection.
+P1 showed that upstream source alone cannot identify a unique published-COCO background convention. The scientific degree of freedom is now closed by a pre-outcome Lead decision based on the intended **dynamic user-vocabulary** mode. The remaining risk is implementation drift later—e.g. adding the blank in the wrong position, filtering it before NMS, shifting distractor indices, or silently refilling top detections. A dependency-free adapter/test receipt can eliminate those errors now without consuming detector resources or generating outcomes.
 
-### Fixed Research-Lead decisions for P1
-- Keep the selected model fixed: YOLO-World-V2.1-S stage2/1280, pinned source/checkpoint metadata from P0.
-- Keep the semantic vocabularies fixed exactly as `V0/Vhard30/Vrand30 = 80/110/110` names in the existing frozen order. Never rerank/reselect distractors for CLIP/YOLO.
-- **Future official-baseline lane:** reproduce the published YOLO-World COCO zero-shot baseline using the pinned model's official/native test-time preprocessing and postprocessing as documented by source/config. This lane exists only to validate checkpoint/runtime fidelity; it is not the T013 interaction result.
-- **Future T013 interaction lane:** use YOLO-World's frozen native detector postprocessing, not an artificial Grounding-DINO-style no-NMS emulation. Freeze the exact score threshold, `nms_pre`, NMS IoU threshold, and `max_per_img` from the pinned official configuration/source in P1. Use the same frozen YOLO postprocessing for all 15 cells. Cross-detector interpretation compares within-detector `D/A` interactions and gate outcomes, not absolute AP equality between detectors.
-- For blank/background text, apply this deterministic source-only rule: if the pinned official V2.1 inference/demo/evaluation path for the selected text model explicitly appends or requires a fixed blank string, freeze exactly that official count/placement identically for V0, Vhard30 and Vrand30, exclude blank from canonical/distractor semantic metrics, and document it as an architecture-required nuisance/background input. If the pinned path does not establish a unique fixed rule, mark blank handling **BLOCKED** and return to Lead; do not choose among alternatives and do not infer a rule from results.
+### Fixed inputs/settings
+- model/checkpoint/source pins remain P0/P1: YOLO-World-V2.1-S stage2/1280, YOLO revision `b1b09f2f0340ca7dede69e10b7e909c469677fd9`, MMYOLO `4d97b3a06609dba94b8ec584be2f2029cfdb7519`;
+- semantic vocabulary artifact remains the frozen `vocabulary_native30.json` content/order: `80/110/110` semantic names;
+- runtime text lists are exactly semantic entries followed by one `" "` entry: `81/111/111`;
+- canonical semantic indices `0..79`; distractors `80..109` only for extended vocabularies; runtime blank index is final (`80` or `110`);
+- native postprocessing remains P1-frozen: `multi_label=True`, `score_thr=.001`, `nms_pre=30000`, NMS IoU `.7`, `max_per_img=300`, native NMS on, no TTA/demo display filtering;
+- metric rule: blank is allowed to affect native selection, then removed from semantic metric rows **without reselection/refill**; log blank-retained count separately if useful;
+- no change to 1,000 image IDs, corruptions, semantic vocabularies, bootstrap, Gates 1/2/4 or the four-case cross-backbone interpretation matrix.
 
-### Required source inspection / evidence
-Inspect only the pinned official revision and its pinned MMYOLO dependency. Record exact file paths/line ranges or content hashes for:
-- selected S-stage2/1280 config and inherited test cfg;
-- text loading / demo path that establishes blank-padding behavior;
-- bbox-head prediction/postprocessing path establishing score threshold, pre-NMS filtering, NMS IoU and max-per-image;
-- COCO zero-shot evaluation recipe/model-card connection if available.
+### Required implementation/tests
+Implement only dependency-light pure-Python/NumPy protocol logic and synthetic tests. At minimum test:
+1. exact runtime text counts/content/order for all three vocabularies;
+2. canonical/distractor/blank index mapping and no collisions;
+3. filtering a synthetic already-postprocessed prediction list removes blank-labelled rows only after selection and preserves the order/scores/boxes of all retained semantic rows;
+4. removing blank does not backfill to `max_per_img` from a larger preselection pool;
+5. the same one-blank rule is applied identically across clean/corrupt and all vocabulary conditions;
+6. receipt hashes bind the frozen semantic-vocabulary artifact and P1 postprocessing constants.
 
-Write a compact machine-readable receipt (for example `protocol_freeze.json`) containing the resolved constants, source revision, file hashes and a boolean for whether blank handling is uniquely resolved.
+The adapter is a **protocol fixture**, not a replacement for YOLO-World internals. Do not reimplement NMS or detector scoring in this package.
 
 ### Non-goals / prohibitions
-- Do not inspect any Grounding-DINO AP/AP50/interaction/CI/mechanism partial result.
-- Do not modify, restart, pause, duplicate, benchmark against, or consume resources from the active Grounding-DINO primary beyond read-only health checks.
-- Do not create/install an isolated YOLO environment yet; no `pip/conda`, no MMCV build, no checkpoint payload download.
-- Do not run YOLO on any image, including non-primary smoke images.
-- Do not change the selected YOLO checkpoint/model because another variant appears easier to configure.
-- Do not weaken or alter T013 Gate 1/2/4 thresholds.
-- Do not decide a blank count, NMS setting, score threshold, or max-detection setting by intuition if the pinned official source is ambiguous; report the ambiguity and stop.
+- No YOLO/MMCV/MMDetection/MMYOLO installation or import.
+- No checkpoint payload download/load.
+- No image inference, including non-primary smoke images.
+- No Grounding-DINO partial AP/AP50/interaction/CI/mechanism inspection and no modification/restart/duplicate writer of its active run.
+- Do not search for a better blank convention or create zero-blank/one-blank alternatives; the Lead decision is now fixed for the interaction lane.
+- Do not change native postprocessing constants, model selection, semantic names/order, corruption set, gates or thresholds.
+- Do not claim published-COCO baseline reproduction from this adapter.
 
 ### Acceptance / stop criteria
-**PASS** only if official pinned evidence uniquely fixes (a) the blank/background handling rule or establishes that none is required, and (b) the native postprocessing constants/path for the selected model, with enough source provenance to reproduce those choices later without result-dependent judgment.
+**PASS** if the model-free adapter and tests deterministically encode exactly the fixed contract above, all focused tests pass, artifacts/hashes are committed, and zero detector/runtime activity occurred.
 
-**STOP / REPORT BLOCKER** if blank handling or the selected model's native COCO postprocessing cannot be uniquely determined from pinned official evidence. Preserve the ambiguity; do not solve it by trying multiple runtime variants.
+**STOP / REPORT BLOCKER** if implementing the contract would require changing semantic vocabulary order/identity or contradicts a P1-pinned source fact. Do not resolve such a conflict by running a model.
 
 ### Exact evidence to report back
 Update `coordination/CODEX_TO_CHATGPT.md` with:
-- task status and commit SHA;
-- exact official source files/revisions inspected;
-- resolved blank/background rule and evidence, or the precise ambiguity;
-- exact native postprocessing constants and inheritance chain;
-- files created/changed and hashes;
-- explicit confirmation of **zero YOLO image inference / zero package installation / zero Grounding partial scientific metric inspection**;
-- latest Grounding primary health only as progress/process/storage counts, with no AP-like values.
+- status and commit SHA;
+- files changed plus hashes;
+- exact runtime text counts and blank indices for V0/Vhard30/Vrand30;
+- focused test command and exact pass count;
+- receipt binding vocabulary SHA and P1 postprocessing constants;
+- explicit confirmation of zero package installation/import, zero checkpoint load, zero YOLO image inference, and zero Grounding partial scientific metric inspection;
+- latest Grounding primary **operational health only** (progress/process/storage; no AP-like values).
 
-After P1, stop and wait for the next Research-Lead cycle. Even a P1 PASS does **not** authorize environment installation, checkpoint loading, YOLO smoke inference, the 1,000-image benchmark, or T014.
+After P2, stop and wait for the next Research-Lead cycle. P2 PASS still does **not** authorize environment installation, checkpoint loading, YOLO smoke inference, the 1,000-image YOLO benchmark, or T014.
