@@ -90,7 +90,7 @@ Reviewed commits:
 - `509be86e582a14b850f700fcb26b73f825ef8fa9` — complete T004 screen report and durable artifacts.
 
 Accepted protocol/engineering evidence:
-- O0 reproduces the original P path exactly over all 600 matched episodes;
+- O0 reproduces the original T002 P path exactly over all 600 matched episodes;
 - all four objectives share the same 2,128 fast parameters and normal runtime remains label-free;
 - source checkpoint hashes, frozen episode streams, generator/split, and evaluation conditions are preserved;
 - episodic reset, vocabulary dependence, finite centered-text handling, finite-difference W0 meta-gradient, and key/query gradient flow are verified;
@@ -424,3 +424,15 @@ Research-Lead resolution is made now, before any YOLO outcome and before Groundi
 Grounding-DINO primary remains immutable and healthy at the latest check: 136/1000 images, tmux alive, 27G free, analysis result absent. No partial AP/AP50/interaction/CI/mechanism result has been used.
 
 **Next action:** one 45–60 minute T013-YW-P2 package is active in `coordination/CHATGPT_TO_CODEX.md`: implement a dependency-free protocol adapter plus deterministic synthetic tests that bind the one-blank runtime text construction, indices, post-selection blank filtering/no-backfill rule, frozen vocabulary SHA and P1 postprocessing constants. No package install, model import, checkpoint load or image inference is authorized.
+
+---
+
+## 2026-09-13 — T013-YW-P2 review / T013-OPS1 assignment
+
+**Decision:** P2 ACCEPTED AS A VERIFIED MODEL-FREE PROTOCOL FIXTURE; YOLO RUNTIME REMAINS UNAUTHORIZED; PRIMARY-OPS AUDIT ASSIGNED.
+
+Reviewed commits `41ca40c3860e920714ecfb17273901916a635df8`, `f919e2f2bb0ab91e955fc42c5cb89b37a7762896`, and operational health `c5981c7e5aeddbdefb0cf2d8ca052fcb74bd4dcf`, plus `protocol_adapter.py`, `test_protocol_adapter.py`, `protocol_adapter_receipt.json`, and `p2_execution_receipt.json`. P2 faithfully encodes the pre-outcome one-blank convention: semantic counts remain 80/110/110, runtime counts are 81/111/111, blank indices are 80/110/110, blank removal happens only after native selection, and no refill path exists. Standard-library tests pass 7/7 and the receipt binds the frozen vocabulary, P1 receipt and native postprocessing hashes. No YOLO install/import/checkpoint/image inference or Grounding partial scientific-metric inspection occurred; the compared P2 commits do not touch the frozen Grounding scientific plan/code.
+
+The primary run is healthy at the latest committed operational check: 176/1000 images, exact tmux alive, ~26G free, no exit receipt and no analysis result. Because the cache is still growing and P0 already identified a potentially disk-heavy YOLO environment, protecting the irreplaceable preregistered primary is now higher value than installing the contingency stack.
+
+**Next action:** `T013-OPS1` is the single active 45–60 minute package in `coordination/CHATGPT_TO_CODEX.md`: perform a read-only structural/provenance/storage-capacity audit using only process metadata, paths/counts/sizes/hashes and frozen receipts. Do not parse prediction values or run analysis. Do not mutate/restart/clean the run or install YOLO. Pass requires one correctly bound writer, exact 15-cell structure for all closed images with at most one in-flight partial image, consistent provenance, and `free_now >= 1.20 × projected_remaining_p95 + 8 GiB`; otherwise stop and report without repair.
