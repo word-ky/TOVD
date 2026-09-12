@@ -1,9 +1,5 @@
-# Recovery after T013-PARITY-B
+# T013-NATIVE30 recovery
 
-Updated 2026-09-12T20:26:15.013866+08:00. T013 BLOCKED / AWAITING LEAD after T013-PARITY-B failed2/3images. Lead999b4b7/ddd24e7 says anyfailure rejects HF1024 harness for primary use and requires stopping. Codefreeze61918fa. Run20260912-202233-tovd-t013-parity-b exit1 at20:23:52+08; immutable release20260912-202152-tovd-t013-parity-b. Image139scoreerr.000431165>1e-4; image285classcounts differ (HF+1person,-1bear); image632PASS. No tolerance changes or retries. Allstatehashesunchanged/HFreplayexact. Evidence research_log/t013/PARITY_B_RESULTS.md and original rawrun.13focusedlocal/remote tests pass; savedraw matching exactlyreproduced locally.
+Readproject_state.md,newLeadmailbox02ba123/259217c andNATIVE30_PREREQUISITES.md. EarlierPARITY-Bstopis supersededonlyby native30reset; HFpathstaysrejected.
 
-Only currently executable work: monitor existingCOCOdownload20260912-190511-tovd-t013-coco-ranges-a6000; last150/195parts. Collectcompletedarchive/CRC/hashreceipt. Do not duplicatewriter. Root/home/wenchang/asdasdsad/wjq/TOVD, shared/t013assets, isolatedshared/t013/venv. Use explicitrunIDs and immutable releases; generic workflow state can refer tootherprojects.
-
-Matchedvocabulary195/408/408 accepted, SHA51554562b216dcad1c693efb7781362efbac55993bc5c10651e8845ec9931977;1000IDs accepted42daa6e;smoke139/285/632disjoint. No primary outcomes or scientificGates1–4; fullPLAN/primarycache/fullbootstrap/imagehashmanifestpending. AllT001-T012remainclosed. NoT014 or alternate detector/matching changes withoutnewLead instruction. Heartbeat15minACTIVE; quietwhenunchanged.
-
-Read newest Lead mailbox and PARITY_B_RESULTS.md before acting. Earlier PARITY-B authorization is exhausted by the single completed run; do not rerun just because its task header is still ACTIVE.
+Activepipelineengineeringrun20260912-205428-tovd-native30-pipeline-smoke;activeCOCOdownload20260912-190511-tovd-t013-coco-ranges-a6000. InspectbothexplicitIDs; donotrepeatcompleted45cellnativevaliditysmoke. Remainingfinaldatahashes,pipfreezereceipt,realcache/analysisreceipt,PLAN/native30_freeze manifest andsinglemainfreezecommitbeforeprimary. scripts/t013_native_run.py andt013_analysis.py arecomplete; nativeCPU4threads. Keep1000IDs/195,255,255tokens/scientificgatesfixed.

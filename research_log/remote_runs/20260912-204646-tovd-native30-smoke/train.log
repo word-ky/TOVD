@@ -1,0 +1,78 @@
+[autodl] run_id=20260912-204646-tovd-native30-smoke
+[autodl] started_at=2026-09-12T20:46:54+08:00
+2026-09-12 20:46:56.893862: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-12 20:46:56.939258: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/native/groundingdino/models/GroundingDINO/ms_deform_attn.py:31: UserWarning: Failed to load custom C++ ops. Running on CPU mode Only!
+  warnings.warn("Failed to load custom C++ ops. Running on CPU mode Only!")
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/functional.py:513: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3609.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+final text_encoder_type: /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/native_bert
+Some weights of BertModel were not initialized from the model checkpoint at /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/native_bert and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages/transformers/modeling_utils.py:1126: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:600: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/utils/checkpoint.py:92: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/native/groundingdino/models/GroundingDINO/transformer.py:862: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=False):
+{"image_id": 139, "condition": "clean", "vocabulary": "V0", "pixel_sha256": "49e1682eddd63940370376db6dbbc90aaf08a758dd5731ac7479e73cac57f5c1", "seconds": 20.780981741991127, "token_length": 195}
+{"image_id": 139, "condition": "clean", "vocabulary": "Vhard30", "pixel_sha256": "49e1682eddd63940370376db6dbbc90aaf08a758dd5731ac7479e73cac57f5c1", "seconds": 14.719967431999976, "token_length": 255}
+{"image_id": 139, "condition": "clean", "vocabulary": "Vrand30", "pixel_sha256": "49e1682eddd63940370376db6dbbc90aaf08a758dd5731ac7479e73cac57f5c1", "seconds": 14.470981495978776, "token_length": 255}
+/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages/imagecorruptions/corruptions.py:17: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/lib/python3.12/site-packages/transformers/modeling_utils.py:1126: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:600: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/utils/checkpoint.py:92: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/native/groundingdino/models/GroundingDINO/transformer.py:862: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=False):
+{"image_id": 139, "condition": "gaussian_noise", "vocabulary": "V0", "pixel_sha256": "3d24c359e93f0296643bd6d9c761d7ad2a32798e5c3303c625310791d1d329b0", "seconds": 6.797223887988366, "token_length": 195}
+{"image_id": 139, "condition": "gaussian_noise", "vocabulary": "Vhard30", "pixel_sha256": "3d24c359e93f0296643bd6d9c761d7ad2a32798e5c3303c625310791d1d329b0", "seconds": 7.34503142000176, "token_length": 255}
+{"image_id": 139, "condition": "gaussian_noise", "vocabulary": "Vrand30", "pixel_sha256": "3d24c359e93f0296643bd6d9c761d7ad2a32798e5c3303c625310791d1d329b0", "seconds": 7.37173397699371, "token_length": 255}
+{"image_id": 139, "condition": "motion_blur", "vocabulary": "V0", "pixel_sha256": "e0de331cb275234d55fefac6f25fdbb6711134a950e3d17c94a0ba68424f61f7", "seconds": 6.9413214350061025, "token_length": 195}
+{"image_id": 139, "condition": "motion_blur", "vocabulary": "Vhard30", "pixel_sha256": "e0de331cb275234d55fefac6f25fdbb6711134a950e3d17c94a0ba68424f61f7", "seconds": 7.331388042017352, "token_length": 255}
+{"image_id": 139, "condition": "motion_blur", "vocabulary": "Vrand30", "pixel_sha256": "e0de331cb275234d55fefac6f25fdbb6711134a950e3d17c94a0ba68424f61f7", "seconds": 7.342559987009736, "token_length": 255}
+{"image_id": 139, "condition": "fog", "vocabulary": "V0", "pixel_sha256": "6844b071469f86a3bc49f5dc8d9c580b244bcb9e5957924c49c16492b34ca81d", "seconds": 6.953446172003169, "token_length": 195}
+{"image_id": 139, "condition": "fog", "vocabulary": "Vhard30", "pixel_sha256": "6844b071469f86a3bc49f5dc8d9c580b244bcb9e5957924c49c16492b34ca81d", "seconds": 7.359720860986272, "token_length": 255}
+{"image_id": 139, "condition": "fog", "vocabulary": "Vrand30", "pixel_sha256": "6844b071469f86a3bc49f5dc8d9c580b244bcb9e5957924c49c16492b34ca81d", "seconds": 7.469694236991927, "token_length": 255}
+{"image_id": 139, "condition": "jpeg_compression", "vocabulary": "V0", "pixel_sha256": "5d1f789b024e3bee278ee3a86ecd7fb9185bea54f63129ab5a762c6b4139cf56", "seconds": 7.030328424996696, "token_length": 195}
+{"image_id": 139, "condition": "jpeg_compression", "vocabulary": "Vhard30", "pixel_sha256": "5d1f789b024e3bee278ee3a86ecd7fb9185bea54f63129ab5a762c6b4139cf56", "seconds": 7.416364717006218, "token_length": 255}
+{"image_id": 139, "condition": "jpeg_compression", "vocabulary": "Vrand30", "pixel_sha256": "5d1f789b024e3bee278ee3a86ecd7fb9185bea54f63129ab5a762c6b4139cf56", "seconds": 7.360875299986219, "token_length": 255}
+{"image_id": 285, "condition": "clean", "vocabulary": "V0", "pixel_sha256": "7589d16900e5d36c2cd7b2937335322d2d0e6b7235ea65bc9066d79d1be0abf4", "seconds": 14.242747607000638, "token_length": 195}
+{"image_id": 285, "condition": "clean", "vocabulary": "Vhard30", "pixel_sha256": "7589d16900e5d36c2cd7b2937335322d2d0e6b7235ea65bc9066d79d1be0abf4", "seconds": 10.007353282009717, "token_length": 255}
+{"image_id": 285, "condition": "clean", "vocabulary": "Vrand30", "pixel_sha256": "7589d16900e5d36c2cd7b2937335322d2d0e6b7235ea65bc9066d79d1be0abf4", "seconds": 10.011805109999841, "token_length": 255}
+{"image_id": 285, "condition": "gaussian_noise", "vocabulary": "V0", "pixel_sha256": "c26756e07184eddd3397e375dbda0b725eb98c86e8c49b6b93bf43142c9e0d84", "seconds": 4.842484900000272, "token_length": 195}
+{"image_id": 285, "condition": "gaussian_noise", "vocabulary": "Vhard30", "pixel_sha256": "c26756e07184eddd3397e375dbda0b725eb98c86e8c49b6b93bf43142c9e0d84", "seconds": 5.022879774012836, "token_length": 255}
+{"image_id": 285, "condition": "gaussian_noise", "vocabulary": "Vrand30", "pixel_sha256": "c26756e07184eddd3397e375dbda0b725eb98c86e8c49b6b93bf43142c9e0d84", "seconds": 5.008698012999957, "token_length": 255}
+{"image_id": 285, "condition": "motion_blur", "vocabulary": "V0", "pixel_sha256": "7730d71c91d9fdf19296a96e048343291b1953d4bbd10c03cea2e9a7653d9611", "seconds": 4.834268730017357, "token_length": 195}
+{"image_id": 285, "condition": "motion_blur", "vocabulary": "Vhard30", "pixel_sha256": "7730d71c91d9fdf19296a96e048343291b1953d4bbd10c03cea2e9a7653d9611", "seconds": 5.038429570995504, "token_length": 255}
+{"image_id": 285, "condition": "motion_blur", "vocabulary": "Vrand30", "pixel_sha256": "7730d71c91d9fdf19296a96e048343291b1953d4bbd10c03cea2e9a7653d9611", "seconds": 4.992305007006507, "token_length": 255}
+{"image_id": 285, "condition": "fog", "vocabulary": "V0", "pixel_sha256": "53d394af95f7cb97eba72003638796a52d1cb7926b1fe7abcebe975ea32a4940", "seconds": 4.738692742015701, "token_length": 195}
+{"image_id": 285, "condition": "fog", "vocabulary": "Vhard30", "pixel_sha256": "53d394af95f7cb97eba72003638796a52d1cb7926b1fe7abcebe975ea32a4940", "seconds": 5.075039079005364, "token_length": 255}
+{"image_id": 285, "condition": "fog", "vocabulary": "Vrand30", "pixel_sha256": "53d394af95f7cb97eba72003638796a52d1cb7926b1fe7abcebe975ea32a4940", "seconds": 5.137341308000032, "token_length": 255}
+{"image_id": 285, "condition": "jpeg_compression", "vocabulary": "V0", "pixel_sha256": "a3aeafaaf63d91ca9b9688d9c574fe4e341a01a69c4ab53adbe2d3b2b798ce68", "seconds": 4.792184576013824, "token_length": 195}
+{"image_id": 285, "condition": "jpeg_compression", "vocabulary": "Vhard30", "pixel_sha256": "a3aeafaaf63d91ca9b9688d9c574fe4e341a01a69c4ab53adbe2d3b2b798ce68", "seconds": 5.008079944003839, "token_length": 255}
+{"image_id": 285, "condition": "jpeg_compression", "vocabulary": "Vrand30", "pixel_sha256": "a3aeafaaf63d91ca9b9688d9c574fe4e341a01a69c4ab53adbe2d3b2b798ce68", "seconds": 5.012099900981411, "token_length": 255}
+{"image_id": 632, "condition": "clean", "vocabulary": "V0", "pixel_sha256": "599dcd5702f5a6a540e403e89120be5c251de2a051ffbeec135bc1024c1d23be", "seconds": 17.485504219977884, "token_length": 195}
+{"image_id": 632, "condition": "clean", "vocabulary": "Vhard30", "pixel_sha256": "599dcd5702f5a6a540e403e89120be5c251de2a051ffbeec135bc1024c1d23be", "seconds": 12.892251908982871, "token_length": 255}
+{"image_id": 632, "condition": "clean", "vocabulary": "Vrand30", "pixel_sha256": "599dcd5702f5a6a540e403e89120be5c251de2a051ffbeec135bc1024c1d23be", "seconds": 12.833916444971692, "token_length": 255}
+{"image_id": 632, "condition": "gaussian_noise", "vocabulary": "V0", "pixel_sha256": "f31ffbca0b9b4ec42f66c2906b581016b16aeec472f7e8c8fe87d91ae9a76f77", "seconds": 5.7076853930193465, "token_length": 195}
+{"image_id": 632, "condition": "gaussian_noise", "vocabulary": "Vhard30", "pixel_sha256": "f31ffbca0b9b4ec42f66c2906b581016b16aeec472f7e8c8fe87d91ae9a76f77", "seconds": 6.415607281000121, "token_length": 255}
+{"image_id": 632, "condition": "gaussian_noise", "vocabulary": "Vrand30", "pixel_sha256": "f31ffbca0b9b4ec42f66c2906b581016b16aeec472f7e8c8fe87d91ae9a76f77", "seconds": 6.404938088991912, "token_length": 255}
+{"image_id": 632, "condition": "motion_blur", "vocabulary": "V0", "pixel_sha256": "f22e7842768a53a156505d4cab8090dcb9a532681a399dfe550e26be2d2dc884", "seconds": 5.771504528995138, "token_length": 195}
+{"image_id": 632, "condition": "motion_blur", "vocabulary": "Vhard30", "pixel_sha256": "f22e7842768a53a156505d4cab8090dcb9a532681a399dfe550e26be2d2dc884", "seconds": 6.408656748011708, "token_length": 255}
+{"image_id": 632, "condition": "motion_blur", "vocabulary": "Vrand30", "pixel_sha256": "f22e7842768a53a156505d4cab8090dcb9a532681a399dfe550e26be2d2dc884", "seconds": 6.407627652020892, "token_length": 255}
+{"image_id": 632, "condition": "fog", "vocabulary": "V0", "pixel_sha256": "a9dcac8d83e90ca76047425c2e1201fc1ae3f1f1452e8f5e62fbd0e29bb7f319", "seconds": 5.761565303982934, "token_length": 195}
+{"image_id": 632, "condition": "fog", "vocabulary": "Vhard30", "pixel_sha256": "a9dcac8d83e90ca76047425c2e1201fc1ae3f1f1452e8f5e62fbd0e29bb7f319", "seconds": 6.40704713301966, "token_length": 255}
+{"image_id": 632, "condition": "fog", "vocabulary": "Vrand30", "pixel_sha256": "a9dcac8d83e90ca76047425c2e1201fc1ae3f1f1452e8f5e62fbd0e29bb7f319", "seconds": 6.450924201024463, "token_length": 255}
+{"image_id": 632, "condition": "jpeg_compression", "vocabulary": "V0", "pixel_sha256": "fbbcf5d30fe04b076d68d2aa9dadd2d94247d8ca93bb7034dbc9c259406483e3", "seconds": 5.774519422993762, "token_length": 195}
+{"image_id": 632, "condition": "jpeg_compression", "vocabulary": "Vhard30", "pixel_sha256": "fbbcf5d30fe04b076d68d2aa9dadd2d94247d8ca93bb7034dbc9c259406483e3", "seconds": 6.465255115996115, "token_length": 255}
+{"image_id": 632, "condition": "jpeg_compression", "vocabulary": "Vrand30", "pixel_sha256": "fbbcf5d30fe04b076d68d2aa9dadd2d94247d8ca93bb7034dbc9c259406483e3", "seconds": 6.402731794019928, "token_length": 255}
+Native30 smoke PASS
+[autodl] finished_at=2026-09-12T20:52:51+08:00
+[autodl] exit_code=0

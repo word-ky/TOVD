@@ -1,6 +1,7 @@
 """Native30 cached COCO evaluation and paired dataset-level image bootstrap."""
 import argparse
 from collections import defaultdict
+import hashlib
 import json
 from pathlib import Path
 
@@ -175,6 +176,9 @@ def main():
     assert len(pixels) == len(receipt['image_ids']) * 5
     assert all(len(value) == 1 and counts[key] == 3 for key, value in pixels.items())
     protocol_valid = bool(receipt['freeze_commit']) and receipt['code_vocab_selection_images_verified']
+    if not args.smoke_only:
+        freeze = json.loads(Path('research_log/t013/native30_freeze.json').read_text())
+        assert hashlib.sha256(args.annotations.read_bytes()).hexdigest() == freeze['annotations_sha256']
     dataset = json.loads(args.annotations.read_text())
     result = analyze(dataset, receipt['image_ids'], args.run / 'raw', args.output,
                      replicates=10 if args.smoke_only else 1000,

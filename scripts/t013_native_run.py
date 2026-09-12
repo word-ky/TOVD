@@ -35,6 +35,8 @@ def main():
         expected_images = json.loads(Path('research_log/t013/image_sha256.json').read_text())
     model, transform = load_native(args.assets)
     before = state_hash(model)
+    if not args.smoke_only:
+        assert before == freeze['native_state_sha256']
     receipt = {'kind': 'smoke_cached_pipeline' if args.smoke_only else 'T013-NATIVE30-primary',
                'freeze_commit': args.freeze_commit, 'image_ids': ids, 'device': 'cpu', 'threads': 4,
                'vocabulary_sha256': hashlib.sha256(vocab_path.read_bytes()).hexdigest(),

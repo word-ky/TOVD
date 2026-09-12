@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-204646-tovd-native30-smoke",
+  "releaseId": "20260912-202152-tovd-t013-parity-b",
+  "sessionName": "autodl-20260912-204646-tovd-native30-smoke",
+  "command": "cd /home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-204543-tovd-native30-smoke; pwd > \"$AUTODL_ARTIFACTS_DIR/resolved_release.txt\"; sha256sum scripts/t013_native_detector.py scripts/t013_native_smoke.py research_log/t013/vocabulary_native30.json > \"$AUTODL_ARTIFACTS_DIR/source_sha256.txt\"; export OMP_NUM_THREADS=4; export MKL_NUM_THREADS=4; /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -u -m scripts.t013_native_smoke --assets /home/wenchang/asdasdsad/wjq/TOVD/shared/t013 --output \"$AUTODL_ARTIFACTS_DIR/native30_smoke.json\""
+}
