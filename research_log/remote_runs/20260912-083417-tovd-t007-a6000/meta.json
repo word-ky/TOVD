@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-083417-tovd-t007-a6000",
+  "releaseId": "20260912-083405-tovd-t007",
+  "sessionName": "autodl-20260912-083417-tovd-t007-a6000",
+  "command": "export TOVD_SOURCE_REVISION=e88ad88112f6486f8c7dc8458594e095528ba9f1; bash scripts/run_t007_a6000.sh"
+}

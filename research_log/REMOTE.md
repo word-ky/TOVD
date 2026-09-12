@@ -76,3 +76,13 @@ One fetchtransporttimeout recovered by existing legacySCP retry. No activeTOVD j
 Tested e88ad88112f6486f8c7dc8458594e095528ba9f1; release20260912-083405-tovd-t007.
 Run20260912-083417-tovd-t007-a6000 active on physicalGPU1;79 local tests pass.
 Six fixed400x4 runs follow remote CPU/CUDA suites; no T007 aggregate read.
+
+## 2026-09-12 T007 completion
+Run20260912-083417-tovd-t007-a6000 exit0 at08:47:19+08;79CPU/CUDA tests each.
+Six fixed400x4 runs completed. Rules1/2/5PASS;3/4/6FAIL; no detector/T008.
+W2hard43.54167% versusW1+C2 45.375% andT00546.25%; W2easyseed27 -7.625pp.
+W1easy also harmed6.79167pp; retain fixed-T005 reference, flag checkpoint/seed dependence.
+105 rawrunfiles,6final+30trajectory checkpoints and1200oracle episodes retained locally/remotely.
+Normal/historical/source/step0 checks exact. Report/curves inresearch_log/t007.
+Renderer OpenMP conflict fixed by removing unnecessary torch import; experimental code unchanged e88ad88.
+No activeTOVD run; awaitlead, heartbeatactive.

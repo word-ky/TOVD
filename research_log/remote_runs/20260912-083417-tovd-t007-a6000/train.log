@@ -1,0 +1,69 @@
+[autodl] run_id=20260912-083417-tovd-t007-a6000
+[autodl] started_at=2026-09-12T08:34:22+08:00
+........................................................................ [ 91%]
+.......                                                                  [100%]
+=============================== warnings summary ===============================
+tests/test_c2_experiment.py::test_complete_meta_experiment_reuses_controls_and_initial_state
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.MessageMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+tests/test_c2_experiment.py::test_complete_meta_experiment_reuses_controls_and_initial_state
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.ScalarMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+79 passed, 2 warnings in 7.07s
+........................................................................ [ 91%]
+.......                                                                  [100%]
+=============================== warnings summary ===============================
+tests/test_c2_experiment.py::test_complete_meta_experiment_reuses_controls_and_initial_state
+  /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+    warnings.warn("Can't initialize NVML")
+
+tests/test_c2_experiment.py::test_complete_meta_experiment_reuses_controls_and_initial_state
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.MessageMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+tests/test_c2_experiment.py::test_complete_meta_experiment_reuses_controls_and_initial_state
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.ScalarMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+79 passed, 3 warnings in 20.47s
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+seed=7 method=P_O0_resume step=1 loss=0.690846
+seed=7 method=P_O0_resume step=100 loss=0.592379
+seed=7 method=P_O0_resume step=200 loss=0.608281
+seed=7 method=P_O0_resume step=300 loss=0.496956
+seed=7 method=P_O0_resume step=400 loss=0.424146
+seed=7 method=P_C2_warm step=1 loss=0.645418
+seed=7 method=P_C2_warm step=100 loss=0.574814
+seed=7 method=P_C2_warm step=200 loss=0.669188
+seed=7 method=P_C2_warm step=300 loss=0.480700
+seed=7 method=P_C2_warm step=400 loss=0.494131
+seed=17 method=P_O0_resume step=1 loss=0.662405
+seed=17 method=P_O0_resume step=100 loss=0.599299
+seed=17 method=P_O0_resume step=200 loss=0.694968
+seed=17 method=P_O0_resume step=300 loss=0.653038
+seed=17 method=P_O0_resume step=400 loss=0.465927
+seed=17 method=P_C2_warm step=1 loss=1.322546
+seed=17 method=P_C2_warm step=100 loss=0.701949
+seed=17 method=P_C2_warm step=200 loss=0.786430
+seed=17 method=P_C2_warm step=300 loss=0.662257
+seed=17 method=P_C2_warm step=400 loss=0.578818
+seed=27 method=P_O0_resume step=1 loss=0.585387
+seed=27 method=P_O0_resume step=100 loss=0.548304
+seed=27 method=P_O0_resume step=200 loss=0.491825
+seed=27 method=P_O0_resume step=300 loss=0.628465
+seed=27 method=P_O0_resume step=400 loss=0.488111
+seed=27 method=P_C2_warm step=1 loss=1.057275
+seed=27 method=P_C2_warm step=100 loss=0.656896
+seed=27 method=P_C2_warm step=200 loss=0.483296
+seed=27 method=P_C2_warm step=300 loss=0.705419
+seed=27 method=P_C2_warm step=400 loss=0.555554
+EVALUATED seed=7 branch=P_O0_resume fixed_final=400
+EVALUATED seed=7 branch=P_C2_warm fixed_final=400
+EVALUATED seed=17 branch=P_O0_resume fixed_final=400
+EVALUATED seed=17 branch=P_C2_warm fixed_final=400
+EVALUATED seed=27 branch=P_O0_resume fixed_final=400
+EVALUATED seed=27 branch=P_C2_warm fixed_final=400
+RULES {"rule1_validity": {"complete_budget": true, "training_nonfinite_steps": 0, "training_armijo_violations": 0, "test_nonfinite_elements": 0, "test_armijo_violations": 0, "initial_all_tensors_byte_equal": true, "initial_max_error": 0.0, "historical_max_error": 0.0, "historical_stream_mismatches": 0, "source_hashes_match": true, "normal_output_max_error": 0.0, "normal_state_max_error": 0.0, "W0_only_metric_max_error": 0.0, "normal_metric_max_error": 0.0, "config_matches_T002_except_methods": true, "passes": true}, "rule2_fast_value": {"hard_nll_delta": -0.08026934365431468, "hard_accuracy_delta_pp": 4.625, "nll_improving_seeds": 3, "passes": true}, "rule3_preservation": {"accuracy_delta_pp": -2.708333333333335, "nll_delta": -0.007432644367217911, "passes": false}, "rule4_objective_effect": {"W2_minus_W1_accuracy_pp": -1.8333333333333313, "W2_minus_W1_nll": 0.007603372434775046, "passes": false}, "rule5_control_value": {"accuracy_branch": {"control": "B2", "accuracy_gain_pp": -1.0833333333333306, "nll_gain": 0.03433842440446222, "passes": false}, "nll_branch": {"control": "B0", "accuracy_gain_pp": 1.2083333333333335, "nll_gain": 0.03212401519219088, "passes": true}, "passes": true}, "rule6_easy_mechanism": {"easy_safety": {"easy_nll_delta": -0.24358915608221043, "easy_accuracy_delta_pp": 11.708333333333334, "seed_robustness_flags": {"27": {"nll_harm": 0.11436544429510832, "accuracy_harm_pp": 7.625}}, "passes": true}, "mechanism": {"hard_cosine_gain_vs_original_O0": 0.20860734285553917, "reset_state_max": 0.0, "reset_output_max": 0.0, "vocabulary_changes_state_all_seeds": true, "passes": true}, "passes": false}}
+[autodl] finished_at=2026-09-12T08:47:19+08:00
+[autodl] exit_code=0

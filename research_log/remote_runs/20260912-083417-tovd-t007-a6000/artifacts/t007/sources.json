@@ -1,0 +1,107 @@
+[
+  {
+    "key": "seed7_B0",
+    "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-023122-tovd-t002-a6000/artifacts/t002/seed7_B0/checkpoint.pt",
+    "sha256": "d685f2116d8d21ad372632b5eb11c45916a919aea07521ff7d58df9746ec8bf9",
+    "expected_sha256": "d685f2116d8d21ad372632b5eb11c45916a919aea07521ff7d58df9746ec8bf9",
+    "matches": true
+  },
+  {
+    "key": "seed7_B1",
+    "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-023122-tovd-t002-a6000/artifacts/t002/seed7_B1/checkpoint.pt",
+    "sha256": "7fa1e38ba7c57dc9f2705bfad042d73283640d6b2b260b720e5facce86d5844c",
+    "expected_sha256": "7fa1e38ba7c57dc9f2705bfad042d73283640d6b2b260b720e5facce86d5844c",
+    "matches": true
+  },
+  {
+    "key": "seed7_B2",
+    "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-023122-tovd-t002-a6000/artifacts/t002/seed7_B2/checkpoint.pt",
+    "sha256": "fc083cf597724e42852caa32434ebfe2d185c54c75814c650fe75cc5b81026a0",
+    "expected_sha256": "fc083cf597724e42852caa32434ebfe2d185c54c75814c650fe75cc5b81026a0",
+    "matches": true
+  },
+  {
+    "key": "seed7_P",
+    "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-023122-tovd-t002-a6000/artifacts/t002/seed7_P/checkpoint.pt",
+    "sha256": "125f800e8a0ae7ab7547afaab9f30bf493ec1378d3866f2f8192cbd5c7c8c6e2",
+    "expected_sha256": "125f800e8a0ae7ab7547afaab9f30bf493ec1378d3866f2f8192cbd5c7c8c6e2",
+    "matches": true
+  },
+  {
+    "key": "seed7_P_C2_meta",
+    "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-065105-tovd-t006-a6000/artifacts/t006/trained/seed7_P_C2_meta/checkpoint.pt",
+    "sha256": "c306e142264710274660588488f7b6fec3f0c8108de3af6c56c1423269709c23",
+    "expected_sha256": "c306e142264710274660588488f7b6fec3f0c8108de3af6c56c1423269709c23",
+    "matches": true
+  },
+  {
+    "key": "seed17_B0",
+    "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-023122-tovd-t002-a6000/artifacts/t002/seed17_B0/checkpoint.pt",
+    "sha256": "9b92c7016c19dc0a496acee2bef4aaf3d18a97f80180f9ba83859ee9a3c3727c",
+    "expected_sha256": "9b92c7016c19dc0a496acee2bef4aaf3d18a97f80180f9ba83859ee9a3c3727c",
+    "matches": true
+  },
+  {
+    "key": "seed17_B1",
+    "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-023122-tovd-t002-a6000/artifacts/t002/seed17_B1/checkpoint.pt",
+    "sha256": "720d843051952d119cc342709a9c7ab97b6625e1a521f5bc968cd4ee5ed8130d",
+    "expected_sha256": "720d843051952d119cc342709a9c7ab97b6625e1a521f5bc968cd4ee5ed8130d",
+    "matches": true
+  },
+  {
+    "key": "seed17_B2",
+    "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-023122-tovd-t002-a6000/artifacts/t002/seed17_B2/checkpoint.pt",
+    "sha256": "8714e0e1d67fbfed9491a56908967307d04da0951bad6475cd8bcb8fd5c32ce4",
+    "expected_sha256": "8714e0e1d67fbfed9491a56908967307d04da0951bad6475cd8bcb8fd5c32ce4",
+    "matches": true
+  },
+  {
+    "key": "seed17_P",
+    "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-023122-tovd-t002-a6000/artifacts/t002/seed17_P/checkpoint.pt",
+    "sha256": "5da689fbc0750d7fde51d31f93f02248fdb5a1ca3e5189b967ac46d0431a0985",
+    "expected_sha256": "5da689fbc0750d7fde51d31f93f02248fdb5a1ca3e5189b967ac46d0431a0985",
+    "matches": true
+  },
+  {
+    "key": "seed17_P_C2_meta",
+    "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-065105-tovd-t006-a6000/artifacts/t006/trained/seed17_P_C2_meta/checkpoint.pt",
+    "sha256": "596c8ab4f9e581060348c191a39fad64fd4358e824043233cb1e183cd2027d22",
+    "expected_sha256": "596c8ab4f9e581060348c191a39fad64fd4358e824043233cb1e183cd2027d22",
+    "matches": true
+  },
+  {
+    "key": "seed27_B0",
+    "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-023122-tovd-t002-a6000/artifacts/t002/seed27_B0/checkpoint.pt",
+    "sha256": "7788b581c9eecb4b878bf9b898434c21610820afc55d380d97f05183bda5181b",
+    "expected_sha256": "7788b581c9eecb4b878bf9b898434c21610820afc55d380d97f05183bda5181b",
+    "matches": true
+  },
+  {
+    "key": "seed27_B1",
+    "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-023122-tovd-t002-a6000/artifacts/t002/seed27_B1/checkpoint.pt",
+    "sha256": "0fb21e4b2db0bda9a1195ac196c6aeec54093ba3ab41cab000d3da5e9bac9ccd",
+    "expected_sha256": "0fb21e4b2db0bda9a1195ac196c6aeec54093ba3ab41cab000d3da5e9bac9ccd",
+    "matches": true
+  },
+  {
+    "key": "seed27_B2",
+    "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-023122-tovd-t002-a6000/artifacts/t002/seed27_B2/checkpoint.pt",
+    "sha256": "775bf5c6579d1bcd19126bd881de7a976367f47c7a3f44002ff28d1e7a8e4ce2",
+    "expected_sha256": "775bf5c6579d1bcd19126bd881de7a976367f47c7a3f44002ff28d1e7a8e4ce2",
+    "matches": true
+  },
+  {
+    "key": "seed27_P",
+    "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-023122-tovd-t002-a6000/artifacts/t002/seed27_P/checkpoint.pt",
+    "sha256": "091124ee7af0f8ec4ca95d12617d6c5954f8cb90dd73966823af0daed607e3ac",
+    "expected_sha256": "091124ee7af0f8ec4ca95d12617d6c5954f8cb90dd73966823af0daed607e3ac",
+    "matches": true
+  },
+  {
+    "key": "seed27_P_C2_meta",
+    "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-065105-tovd-t006-a6000/artifacts/t006/trained/seed27_P_C2_meta/checkpoint.pt",
+    "sha256": "a49946c08c05e3609a2d821164ae28e11ffd401990e58cb22f3c800ce9cd652f",
+    "expected_sha256": "a49946c08c05e3609a2d821164ae28e11ffd401990e58cb22f3c800ce9cd652f",
+    "matches": true
+  }
+]

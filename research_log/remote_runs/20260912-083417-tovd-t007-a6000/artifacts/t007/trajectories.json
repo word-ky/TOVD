@@ -1,0 +1,2672 @@
+[
+  {
+    "seed": 7,
+    "branch": "P_O0_resume",
+    "step": 0,
+    "diagnostic_only": true,
+    "drift": {
+      "W0": 0.0,
+      "key_projection": 0.0,
+      "query_projection": 0.0,
+      "total_slow_state": 0.0,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 1.0,
+            "nll": 0.02434246850956697,
+            "margin": 0.5120129072666169
+          },
+          "after": {
+            "accuracy": 0.91625,
+            "nll": 0.28265566080925053,
+            "margin": 0.398598094843328
+          },
+          "training_objective": {
+            "accuracy": 1.0,
+            "nll": 0.04107099034939893,
+            "margin": 0.44936983168125155
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.53375,
+            "nll": 1.167261729836464,
+            "margin": 0.002537650614976883
+          },
+          "after": {
+            "accuracy": 0.4175,
+            "nll": 1.2727253943681718,
+            "margin": -0.018907235749065877
+          },
+          "training_objective": {
+            "accuracy": 0.54375,
+            "nll": 1.2083304756879807,
+            "margin": 0.0013466890901327132
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.71875,
+            "nll": 0.618635843731463,
+            "margin": 0.19278949451632799
+          },
+          "after": {
+            "accuracy": 0.90375,
+            "nll": 0.26979391610249875,
+            "margin": 0.24005332447588443
+          },
+          "training_objective": {
+            "accuracy": 0.72375,
+            "nll": 0.5917874312866479,
+            "margin": 0.18349449342116714
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.41125,
+            "nll": 1.316600942015648,
+            "margin": -0.02872786041116342
+          },
+          "after": {
+            "accuracy": 0.48625,
+            "nll": 1.236402542591095,
+            "margin": -0.013386011882685124
+          },
+          "training_objective": {
+            "accuracy": 0.38375,
+            "nll": 1.3211753481626511,
+            "margin": -0.02750695675611496
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 7,
+    "branch": "P_O0_resume",
+    "step": 50,
+    "diagnostic_only": true,
+    "drift": {
+      "W0": 0.3771100701545507,
+      "key_projection": 0.20434065326024894,
+      "query_projection": 0.15346761782769777,
+      "total_slow_state": 0.4555429917236174,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 1.0,
+            "nll": 0.020499322022660634,
+            "margin": 0.5347425031661988
+          },
+          "after": {
+            "accuracy": 0.8975,
+            "nll": 0.3295887777779717,
+            "margin": 0.3805259868875146
+          },
+          "training_objective": {
+            "accuracy": 1.0,
+            "nll": 0.03134437367436476,
+            "margin": 0.4788702197372913
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.60625,
+            "nll": 1.1219456261396408,
+            "margin": 0.010605884715914726
+          },
+          "after": {
+            "accuracy": 0.4575,
+            "nll": 1.2327042627334595,
+            "margin": -0.012382551394402981
+          },
+          "training_objective": {
+            "accuracy": 0.6075,
+            "nll": 1.1727169448137282,
+            "margin": 0.007549657002091408
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.74,
+            "nll": 0.6017902340507135,
+            "margin": 0.20570704532787204
+          },
+          "after": {
+            "accuracy": 0.88375,
+            "nll": 0.2917328807897866,
+            "margin": 0.24714115761220457
+          },
+          "training_objective": {
+            "accuracy": 0.75,
+            "nll": 0.5539925986062735,
+            "margin": 0.20623112578876315
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.41375,
+            "nll": 1.2978034430742265,
+            "margin": -0.025906566930934787
+          },
+          "after": {
+            "accuracy": 0.4875,
+            "nll": 1.2223585176467895,
+            "margin": -0.011211354667320848
+          },
+          "training_objective": {
+            "accuracy": 0.4025,
+            "nll": 1.3034525620937347,
+            "margin": -0.024806791543960573
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 7,
+    "branch": "P_O0_resume",
+    "step": 100,
+    "diagnostic_only": true,
+    "drift": {
+      "W0": 0.5951265345068818,
+      "key_projection": 0.39094682787554647,
+      "query_projection": 0.24324055889387555,
+      "total_slow_state": 0.7524499875680295,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 1.0,
+            "nll": 0.01790033490397036,
+            "margin": 0.5612215414643288
+          },
+          "after": {
+            "accuracy": 0.90625,
+            "nll": 0.3066769685887266,
+            "margin": 0.3848082382977009
+          },
+          "training_objective": {
+            "accuracy": 1.0,
+            "nll": 0.024973317828262225,
+            "margin": 0.5080844858288764
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.635,
+            "nll": 1.0935638999938966,
+            "margin": 0.014838290326297283
+          },
+          "after": {
+            "accuracy": 0.485,
+            "nll": 1.2003151452541352,
+            "margin": -0.008078514970839024
+          },
+          "training_objective": {
+            "accuracy": 0.63125,
+            "nll": 1.1484777808189393,
+            "margin": 0.010811350643634796
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.775,
+            "nll": 0.5239546534745023,
+            "margin": 0.23233249858021737
+          },
+          "after": {
+            "accuracy": 0.89125,
+            "nll": 0.28744682105258107,
+            "margin": 0.25426277475431563
+          },
+          "training_objective": {
+            "accuracy": 0.79875,
+            "nll": 0.4720098246075213,
+            "margin": 0.23424841668456792
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.44,
+            "nll": 1.2721994984149934,
+            "margin": -0.02099903820082545
+          },
+          "after": {
+            "accuracy": 0.4875,
+            "nll": 1.2012935286760331,
+            "margin": -0.0082343789935112
+          },
+          "training_objective": {
+            "accuracy": 0.42,
+            "nll": 1.2772095596790314,
+            "margin": -0.019886288195848464
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 7,
+    "branch": "P_O0_resume",
+    "step": 200,
+    "diagnostic_only": true,
+    "drift": {
+      "W0": 0.9894482302488166,
+      "key_projection": 0.7102117502076805,
+      "query_projection": 0.4107409351600061,
+      "total_slow_state": 1.2853468972583582,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 1.0,
+            "nll": 0.012630158965475858,
+            "margin": 0.5873096859455109
+          },
+          "after": {
+            "accuracy": 0.8825,
+            "nll": 0.3613886712526437,
+            "margin": 0.3803105234913528
+          },
+          "training_objective": {
+            "accuracy": 1.0,
+            "nll": 0.016449833156657406,
+            "margin": 0.5440042158961296
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.6575,
+            "nll": 1.0625707203149795,
+            "margin": 0.018720292150974274
+          },
+          "after": {
+            "accuracy": 0.52625,
+            "nll": 1.1374956411123276,
+            "margin": 0.0023914407938718796
+          },
+          "training_objective": {
+            "accuracy": 0.6525,
+            "nll": 1.1133127862215042,
+            "margin": 0.014401840195059776
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.83,
+            "nll": 0.4005457465071231,
+            "margin": 0.2646084504947066
+          },
+          "after": {
+            "accuracy": 0.8375,
+            "nll": 0.3980723411682993,
+            "margin": 0.23390823731198906
+          },
+          "training_objective": {
+            "accuracy": 0.85875,
+            "nll": 0.3551472039707005,
+            "margin": 0.26168716373853385
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.42625,
+            "nll": 1.2741164025664329,
+            "margin": -0.0213952441024594
+          },
+          "after": {
+            "accuracy": 0.4825,
+            "nll": 1.2068225252628326,
+            "margin": -0.009444812312722206
+          },
+          "training_objective": {
+            "accuracy": 0.41875,
+            "nll": 1.2724458944797516,
+            "margin": -0.019851124137639998
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 7,
+    "branch": "P_O0_resume",
+    "step": 400,
+    "diagnostic_only": false,
+    "drift": {
+      "W0": 1.7296592187755453,
+      "key_projection": 1.293629825926211,
+      "query_projection": 0.682418707068896,
+      "total_slow_state": 2.265147772525822,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 1.0,
+            "nll": 0.013602167051285505,
+            "margin": 0.6100785115361214
+          },
+          "after": {
+            "accuracy": 0.85625,
+            "nll": 0.42885853886953557,
+            "margin": 0.40023216262459754
+          },
+          "training_objective": {
+            "accuracy": 1.0,
+            "nll": 0.014539719013846479,
+            "margin": 0.5829325971007348
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.71375,
+            "nll": 0.9555218201875687,
+            "margin": 0.03363522317260504
+          },
+          "after": {
+            "accuracy": 0.62375,
+            "nll": 1.013568667769432,
+            "margin": 0.02096397813409567
+          },
+          "training_objective": {
+            "accuracy": 0.7175,
+            "nll": 1.0035977041721345,
+            "margin": 0.0279580969363451
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.86375,
+            "nll": 0.3358395268209279,
+            "margin": 0.27867456393316387
+          },
+          "after": {
+            "accuracy": 0.75375,
+            "nll": 0.7010030606389046,
+            "margin": 0.21204525221139192
+          },
+          "training_objective": {
+            "accuracy": 0.9075,
+            "nll": 0.2794050324521959,
+            "margin": 0.28096875607967375
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.415,
+            "nll": 1.2431567847728728,
+            "margin": -0.01687249240698293
+          },
+          "after": {
+            "accuracy": 0.4675,
+            "nll": 1.2145445561408996,
+            "margin": -0.011479685893282294
+          },
+          "training_objective": {
+            "accuracy": 0.41125,
+            "nll": 1.234810539484024,
+            "margin": -0.014722023792564869
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 7,
+    "branch": "P_C2_warm",
+    "step": 0,
+    "diagnostic_only": true,
+    "drift": {
+      "W0": 0.0,
+      "key_projection": 0.0,
+      "query_projection": 0.0,
+      "total_slow_state": 0.0,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 1.0,
+            "nll": 0.02434246850956697,
+            "margin": 0.5120129072666169
+          },
+          "after": {
+            "accuracy": 0.91625,
+            "nll": 0.28265566080925053,
+            "margin": 0.398598094843328
+          },
+          "training_objective": {
+            "accuracy": 0.91625,
+            "nll": 0.28265566080925053,
+            "margin": 0.398598094843328
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.53375,
+            "nll": 1.167261729836464,
+            "margin": 0.002537650614976883
+          },
+          "after": {
+            "accuracy": 0.4175,
+            "nll": 1.2727253943681718,
+            "margin": -0.018907235749065877
+          },
+          "training_objective": {
+            "accuracy": 0.4175,
+            "nll": 1.2727253943681718,
+            "margin": -0.018907235749065877
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.71875,
+            "nll": 0.618635843731463,
+            "margin": 0.19278949451632799
+          },
+          "after": {
+            "accuracy": 0.90375,
+            "nll": 0.26979391610249875,
+            "margin": 0.24005332447588443
+          },
+          "training_objective": {
+            "accuracy": 0.90375,
+            "nll": 0.26979391610249875,
+            "margin": 0.24005332447588443
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.41125,
+            "nll": 1.316600942015648,
+            "margin": -0.02872786041116342
+          },
+          "after": {
+            "accuracy": 0.48625,
+            "nll": 1.236402542591095,
+            "margin": -0.013386011882685124
+          },
+          "training_objective": {
+            "accuracy": 0.48625,
+            "nll": 1.236402542591095,
+            "margin": -0.013386011882685124
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 7,
+    "branch": "P_C2_warm",
+    "step": 50,
+    "diagnostic_only": true,
+    "drift": {
+      "W0": 0.5306291423395536,
+      "key_projection": 0.1744803130885556,
+      "query_projection": 0.19397689009078806,
+      "total_slow_state": 0.5913016998493953,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 1.0,
+            "nll": 0.033458184469491246,
+            "margin": 0.4714926472306252
+          },
+          "after": {
+            "accuracy": 0.91125,
+            "nll": 0.2307508250384126,
+            "margin": 0.3715117035806179
+          },
+          "training_objective": {
+            "accuracy": 0.91125,
+            "nll": 0.2307508250384126,
+            "margin": 0.3715117035806179
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.5025,
+            "nll": 1.1945667445659638,
+            "margin": -0.002502900958061218
+          },
+          "after": {
+            "accuracy": 0.5375,
+            "nll": 1.1880038642883302,
+            "margin": -0.0013291890546679496
+          },
+          "training_objective": {
+            "accuracy": 0.5375,
+            "nll": 1.1880038642883302,
+            "margin": -0.0013291890546679496
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.68625,
+            "nll": 0.682934296540916,
+            "margin": 0.14979032476432622
+          },
+          "after": {
+            "accuracy": 0.93625,
+            "nll": 0.29569791596382855,
+            "margin": 0.20810593030415475
+          },
+          "training_objective": {
+            "accuracy": 0.93625,
+            "nll": 0.29569791596382855,
+            "margin": 0.20810593030415475
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.36375,
+            "nll": 1.374547131061554,
+            "margin": -0.037226609517820176
+          },
+          "after": {
+            "accuracy": 0.46375,
+            "nll": 1.2290142530202866,
+            "margin": -0.010336942900903524
+          },
+          "training_objective": {
+            "accuracy": 0.46375,
+            "nll": 1.2290142530202866,
+            "margin": -0.010336942900903524
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 7,
+    "branch": "P_C2_warm",
+    "step": 100,
+    "diagnostic_only": true,
+    "drift": {
+      "W0": 0.7910695569761607,
+      "key_projection": 0.24302387409512516,
+      "query_projection": 0.30833519594600767,
+      "total_slow_state": 0.883132062838693,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 0.99625,
+            "nll": 0.03582880155765451,
+            "margin": 0.47972158163785933
+          },
+          "after": {
+            "accuracy": 0.9225,
+            "nll": 0.21026894162874668,
+            "margin": 0.37815121486783027
+          },
+          "training_objective": {
+            "accuracy": 0.9225,
+            "nll": 0.21026894162874668,
+            "margin": 0.37815121486783027
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.49875,
+            "nll": 1.190881074666977,
+            "margin": -0.0021730223298072815
+          },
+          "after": {
+            "accuracy": 0.56375,
+            "nll": 1.1670732563734054,
+            "margin": 0.0022507963329553606
+          },
+          "training_objective": {
+            "accuracy": 0.56375,
+            "nll": 1.1670732563734054,
+            "margin": 0.0022507963329553606
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.6525,
+            "nll": 0.7878601213544607,
+            "margin": 0.13142133411951362
+          },
+          "after": {
+            "accuracy": 0.90625,
+            "nll": 0.3187135104835033,
+            "margin": 0.19799481940455735
+          },
+          "training_objective": {
+            "accuracy": 0.90625,
+            "nll": 0.3187135104835033,
+            "margin": 0.19799481940455735
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.375,
+            "nll": 1.3636071813106536,
+            "margin": -0.035121309328824284
+          },
+          "after": {
+            "accuracy": 0.4675,
+            "nll": 1.2267187929153442,
+            "margin": -0.009608612309675664
+          },
+          "training_objective": {
+            "accuracy": 0.4675,
+            "nll": 1.2267187929153442,
+            "margin": -0.009608612309675664
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 7,
+    "branch": "P_C2_warm",
+    "step": 200,
+    "diagnostic_only": true,
+    "drift": {
+      "W0": 1.247635581819328,
+      "key_projection": 0.3723307221407044,
+      "query_projection": 0.5057850786829609,
+      "total_slow_state": 1.3967975005310542,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 0.995,
+            "nll": 0.03169493726920337,
+            "margin": 0.5028496660292149
+          },
+          "after": {
+            "accuracy": 0.99375,
+            "nll": 0.06225518358754925,
+            "margin": 0.4448024380207062
+          },
+          "training_objective": {
+            "accuracy": 0.99375,
+            "nll": 0.06225518358754925,
+            "margin": 0.4448024380207062
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.50375,
+            "nll": 1.1806561279296874,
+            "margin": -0.0015223250910639764
+          },
+          "after": {
+            "accuracy": 0.55625,
+            "nll": 1.1503636300563813,
+            "margin": 0.004678409583866596
+          },
+          "training_objective": {
+            "accuracy": 0.55625,
+            "nll": 1.1503636300563813,
+            "margin": 0.004678409583866596
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.62,
+            "nll": 0.8597560779936612,
+            "margin": 0.1151273168437183
+          },
+          "after": {
+            "accuracy": 0.93,
+            "nll": 0.29342674061656,
+            "margin": 0.20958630916662513
+          },
+          "training_objective": {
+            "accuracy": 0.93,
+            "nll": 0.29342674061656,
+            "margin": 0.20958630916662513
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.385,
+            "nll": 1.35629802942276,
+            "margin": -0.03323248077649623
+          },
+          "after": {
+            "accuracy": 0.45625,
+            "nll": 1.2413731509447097,
+            "margin": -0.012308114171028138
+          },
+          "training_objective": {
+            "accuracy": 0.45625,
+            "nll": 1.2413731509447097,
+            "margin": -0.012308114171028138
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 7,
+    "branch": "P_C2_warm",
+    "step": 400,
+    "diagnostic_only": false,
+    "drift": {
+      "W0": 1.750169160449771,
+      "key_projection": 0.4761699717157393,
+      "query_projection": 0.7435129076254794,
+      "total_slow_state": 1.9602656391313193,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 0.99625,
+            "nll": 0.022036985431914218,
+            "margin": 0.5708364927768708
+          },
+          "after": {
+            "accuracy": 0.99875,
+            "nll": 0.02635198531555943,
+            "margin": 0.531258089542389
+          },
+          "training_objective": {
+            "accuracy": 0.99875,
+            "nll": 0.02635198531555943,
+            "margin": 0.531258089542389
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.62875,
+            "nll": 1.0724777406454087,
+            "margin": 0.01592551380395889
+          },
+          "after": {
+            "accuracy": 0.64,
+            "nll": 1.0627115309238433,
+            "margin": 0.01820780072361231
+          },
+          "training_objective": {
+            "accuracy": 0.64,
+            "nll": 1.0627115309238433,
+            "margin": 0.01820780072361231
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.68,
+            "nll": 0.7419018422998488,
+            "margin": 0.14337425466626882
+          },
+          "after": {
+            "accuracy": 0.8975,
+            "nll": 0.3267726779356599,
+            "margin": 0.2205282204039395
+          },
+          "training_objective": {
+            "accuracy": 0.8975,
+            "nll": 0.3267726779356599,
+            "margin": 0.2205282204039395
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.38,
+            "nll": 1.3297561180591584,
+            "margin": -0.029262842764146625
+          },
+          "after": {
+            "accuracy": 0.445,
+            "nll": 1.2407440042495728,
+            "margin": -0.013514689691364766
+          },
+          "training_objective": {
+            "accuracy": 0.445,
+            "nll": 1.2407440042495728,
+            "margin": -0.013514689691364766
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 17,
+    "branch": "P_O0_resume",
+    "step": 0,
+    "diagnostic_only": true,
+    "drift": {
+      "W0": 0.0,
+      "key_projection": 0.0,
+      "query_projection": 0.0,
+      "total_slow_state": 0.0,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 1.0,
+            "nll": 0.01698675511725014,
+            "margin": 0.528818776011467
+          },
+          "after": {
+            "accuracy": 0.81375,
+            "nll": 1.0571858521114337,
+            "margin": 0.2587867883220315
+          },
+          "training_objective": {
+            "accuracy": 1.0,
+            "nll": 0.029485079117584974,
+            "margin": 0.4478196370601654
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.505,
+            "nll": 1.1745581382513046,
+            "margin": 0.0015592167526483536
+          },
+          "after": {
+            "accuracy": 0.4275,
+            "nll": 1.334757115840912,
+            "margin": -0.023264490142464636
+          },
+          "training_objective": {
+            "accuracy": 0.53,
+            "nll": 1.2188116216659546,
+            "margin": 0.0026768699288368227
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.7175,
+            "nll": 0.7262714859424159,
+            "margin": 0.20867593789473177
+          },
+          "after": {
+            "accuracy": 0.88875,
+            "nll": 0.30962498250417414,
+            "margin": 0.2201828347146511
+          },
+          "training_objective": {
+            "accuracy": 0.60625,
+            "nll": 0.851825790796429,
+            "margin": 0.11284017961472273
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.42875,
+            "nll": 1.293194181919098,
+            "margin": -0.022685653301887213
+          },
+          "after": {
+            "accuracy": 0.4875,
+            "nll": 1.2091670197248459,
+            "margin": -0.008759406432509421
+          },
+          "training_objective": {
+            "accuracy": 0.40875,
+            "nll": 1.2905646228790284,
+            "margin": -0.02038192521780729
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 17,
+    "branch": "P_O0_resume",
+    "step": 50,
+    "diagnostic_only": true,
+    "drift": {
+      "W0": 0.3664520550729588,
+      "key_projection": 0.21666434249334393,
+      "query_projection": 0.13839997243608768,
+      "total_slow_state": 0.44764394148204184,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 1.0,
+            "nll": 0.014055324802466202,
+            "margin": 0.5317031800746918
+          },
+          "after": {
+            "accuracy": 0.79125,
+            "nll": 1.2620598091030844,
+            "margin": 0.2220925584435463
+          },
+          "training_objective": {
+            "accuracy": 1.0,
+            "nll": 0.022430213171755895,
+            "margin": 0.4729370632767677
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.54625,
+            "nll": 1.1505322510004043,
+            "margin": 0.006928175687789917
+          },
+          "after": {
+            "accuracy": 0.4275,
+            "nll": 1.294777991771698,
+            "margin": -0.016436732858419418
+          },
+          "training_objective": {
+            "accuracy": 0.5725,
+            "nll": 1.1946841049194337,
+            "margin": 0.006418915912508965
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.71625,
+            "nll": 0.7289662774838507,
+            "margin": 0.19145214182324707
+          },
+          "after": {
+            "accuracy": 0.88375,
+            "nll": 0.33915131227113304,
+            "margin": 0.21493199698626994
+          },
+          "training_objective": {
+            "accuracy": 0.5925,
+            "nll": 0.8964431955292821,
+            "margin": 0.10250007424503566
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.39125,
+            "nll": 1.3142985555529594,
+            "margin": -0.025142389005050062
+          },
+          "after": {
+            "accuracy": 0.47125,
+            "nll": 1.190643984079361,
+            "margin": -0.006252664579078555
+          },
+          "training_objective": {
+            "accuracy": 0.37,
+            "nll": 1.3081182676553726,
+            "margin": -0.023049495965242386
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 17,
+    "branch": "P_O0_resume",
+    "step": 100,
+    "diagnostic_only": true,
+    "drift": {
+      "W0": 0.6176721243410833,
+      "key_projection": 0.37630933426819624,
+      "query_projection": 0.2345387204865557,
+      "total_slow_state": 0.7603525364282482,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 1.0,
+            "nll": 0.009300778365868609,
+            "margin": 0.5707884374260902
+          },
+          "after": {
+            "accuracy": 0.77875,
+            "nll": 1.1787531319327536,
+            "margin": 0.25639902368187906
+          },
+          "training_objective": {
+            "accuracy": 1.0,
+            "nll": 0.01663161727366969,
+            "margin": 0.5092587520182132
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.60875,
+            "nll": 1.1137269723415375,
+            "margin": 0.013510409295558929
+          },
+          "after": {
+            "accuracy": 0.45625,
+            "nll": 1.2738840401172637,
+            "margin": -0.015097525902092457
+          },
+          "training_objective": {
+            "accuracy": 0.62625,
+            "nll": 1.166287534236908,
+            "margin": 0.010847030356526375
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.77,
+            "nll": 0.5068912239931523,
+            "margin": 0.24526537844911217
+          },
+          "after": {
+            "accuracy": 0.84625,
+            "nll": 0.41288090413436296,
+            "margin": 0.18305239770561457
+          },
+          "training_objective": {
+            "accuracy": 0.6925,
+            "nll": 0.6457648430485279,
+            "margin": 0.14811582839116455
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.4125,
+            "nll": 1.2778742310404778,
+            "margin": -0.019703060649335385
+          },
+          "after": {
+            "accuracy": 0.46125,
+            "nll": 1.1739126133918762,
+            "margin": -0.004984064335003495
+          },
+          "training_objective": {
+            "accuracy": 0.405,
+            "nll": 1.267468923330307,
+            "margin": -0.016290159560739995
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 17,
+    "branch": "P_O0_resume",
+    "step": 200,
+    "diagnostic_only": true,
+    "drift": {
+      "W0": 1.0550268947270132,
+      "key_projection": 0.6980176658048054,
+      "query_projection": 0.4085743507462724,
+      "total_slow_state": 1.329377076100175,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 1.0,
+            "nll": 0.00861028172832448,
+            "margin": 0.582825779914856
+          },
+          "after": {
+            "accuracy": 0.76375,
+            "nll": 1.1415694942705885,
+            "margin": 0.24047348951920866
+          },
+          "training_objective": {
+            "accuracy": 1.0,
+            "nll": 0.012550435484736227,
+            "margin": 0.539393419623375
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.72625,
+            "nll": 1.0401271343231202,
+            "margin": 0.02534456714987755
+          },
+          "after": {
+            "accuracy": 0.53,
+            "nll": 1.1774669539928437,
+            "margin": 0.0012474900484085083
+          },
+          "training_objective": {
+            "accuracy": 0.7475,
+            "nll": 1.0959681791067124,
+            "margin": 0.020488609075546265
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.71125,
+            "nll": 0.6232455836795271,
+            "margin": 0.22050781294703484
+          },
+          "after": {
+            "accuracy": 0.82125,
+            "nll": 0.43487113126553595,
+            "margin": 0.18884568884968758
+          },
+          "training_objective": {
+            "accuracy": 0.6125,
+            "nll": 0.8083561010845005,
+            "margin": 0.13488002736121416
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.41375,
+            "nll": 1.2838355433940887,
+            "margin": -0.01942218152806163
+          },
+          "after": {
+            "accuracy": 0.4575,
+            "nll": 1.2071417367458344,
+            "margin": -0.009698980171233416
+          },
+          "training_objective": {
+            "accuracy": 0.40625,
+            "nll": 1.2700724944472312,
+            "margin": -0.016653553880751133
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 17,
+    "branch": "P_O0_resume",
+    "step": 400,
+    "diagnostic_only": false,
+    "drift": {
+      "W0": 1.9718417719347723,
+      "key_projection": 1.3689030374472517,
+      "query_projection": 0.7676037500195445,
+      "total_slow_state": 2.5201728148131513,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 1.0,
+            "nll": 0.009689919132797513,
+            "margin": 0.5965859121084214
+          },
+          "after": {
+            "accuracy": 0.77125,
+            "nll": 0.9297422555158846,
+            "margin": 0.2673547248542309
+          },
+          "training_objective": {
+            "accuracy": 1.0,
+            "nll": 0.010260459354612976,
+            "margin": 0.5743911421298981
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.7575,
+            "nll": 0.9097990664839745,
+            "margin": 0.04143559653311968
+          },
+          "after": {
+            "accuracy": 0.675,
+            "nll": 0.9833494552969932,
+            "margin": 0.03088914018124342
+          },
+          "training_objective": {
+            "accuracy": 0.76125,
+            "nll": 0.9587120857834815,
+            "margin": 0.03580869488418102
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.68375,
+            "nll": 0.5733866421342827,
+            "margin": 0.2225476238876581
+          },
+          "after": {
+            "accuracy": 0.68125,
+            "nll": 0.8511325776297599,
+            "margin": 0.10955701645463706
+          },
+          "training_objective": {
+            "accuracy": 0.60875,
+            "nll": 0.7222653131838888,
+            "margin": 0.15628723541274667
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.385,
+            "nll": 1.3273070353269576,
+            "margin": -0.028655997775495053
+          },
+          "after": {
+            "accuracy": 0.43,
+            "nll": 1.2600391176342964,
+            "margin": -0.01904632756486535
+          },
+          "training_objective": {
+            "accuracy": 0.38375,
+            "nll": 1.2922785025835037,
+            "margin": -0.022801006734371184
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 17,
+    "branch": "P_C2_warm",
+    "step": 0,
+    "diagnostic_only": true,
+    "drift": {
+      "W0": 0.0,
+      "key_projection": 0.0,
+      "query_projection": 0.0,
+      "total_slow_state": 0.0,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 1.0,
+            "nll": 0.01698675511725014,
+            "margin": 0.528818776011467
+          },
+          "after": {
+            "accuracy": 0.81375,
+            "nll": 1.0571858521114337,
+            "margin": 0.2587867883220315
+          },
+          "training_objective": {
+            "accuracy": 0.81375,
+            "nll": 1.0571858521114337,
+            "margin": 0.2587867883220315
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.505,
+            "nll": 1.1745581382513046,
+            "margin": 0.0015592167526483536
+          },
+          "after": {
+            "accuracy": 0.4275,
+            "nll": 1.334757115840912,
+            "margin": -0.023264490142464636
+          },
+          "training_objective": {
+            "accuracy": 0.4275,
+            "nll": 1.334757115840912,
+            "margin": -0.023264490142464636
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.7175,
+            "nll": 0.7262714859424159,
+            "margin": 0.20867593789473177
+          },
+          "after": {
+            "accuracy": 0.88875,
+            "nll": 0.30962498250417414,
+            "margin": 0.2201828347146511
+          },
+          "training_objective": {
+            "accuracy": 0.88875,
+            "nll": 0.30962498250417414,
+            "margin": 0.2201828347146511
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.42875,
+            "nll": 1.293194181919098,
+            "margin": -0.022685653301887213
+          },
+          "after": {
+            "accuracy": 0.4875,
+            "nll": 1.2091670197248459,
+            "margin": -0.008759406432509421
+          },
+          "training_objective": {
+            "accuracy": 0.4875,
+            "nll": 1.2091670197248459,
+            "margin": -0.008759406432509421
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 17,
+    "branch": "P_C2_warm",
+    "step": 50,
+    "diagnostic_only": true,
+    "drift": {
+      "W0": 0.5740225046652567,
+      "key_projection": 0.1904951129909751,
+      "query_projection": 0.24178389019835492,
+      "total_slow_state": 0.651344512140134,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 0.99,
+            "nll": 0.07149908113744459,
+            "margin": 0.4391571987420321
+          },
+          "after": {
+            "accuracy": 0.7675,
+            "nll": 0.8406817642098758,
+            "margin": 0.22982827462255956
+          },
+          "training_objective": {
+            "accuracy": 0.7675,
+            "nll": 0.8406817642098758,
+            "margin": 0.22982827462255956
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.455,
+            "nll": 1.216497020125389,
+            "margin": -0.00820520456880331
+          },
+          "after": {
+            "accuracy": 0.45375,
+            "nll": 1.2464638197422027,
+            "margin": -0.00573826003819704
+          },
+          "training_objective": {
+            "accuracy": 0.45375,
+            "nll": 1.2464638197422027,
+            "margin": -0.00573826003819704
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.6,
+            "nll": 0.993031662949361,
+            "margin": 0.1465943936444819
+          },
+          "after": {
+            "accuracy": 0.88375,
+            "nll": 0.4160804036259651,
+            "margin": 0.19835976671427488
+          },
+          "training_objective": {
+            "accuracy": 0.88375,
+            "nll": 0.4160804036259651,
+            "margin": 0.19835976671427488
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.39125,
+            "nll": 1.3253959840536118,
+            "margin": -0.027956761405803263
+          },
+          "after": {
+            "accuracy": 0.46375,
+            "nll": 1.1793185597658158,
+            "margin": -0.002737977816723287
+          },
+          "training_objective": {
+            "accuracy": 0.46375,
+            "nll": 1.1793185597658158,
+            "margin": -0.002737977816723287
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 17,
+    "branch": "P_C2_warm",
+    "step": 100,
+    "diagnostic_only": true,
+    "drift": {
+      "W0": 0.963542722742258,
+      "key_projection": 0.31008705549194027,
+      "query_projection": 0.4337241517975726,
+      "total_slow_state": 1.1012198692294601,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 0.96875,
+            "nll": 0.11935480320593342,
+            "margin": 0.4253784838691354
+          },
+          "after": {
+            "accuracy": 0.895,
+            "nll": 0.3517194373044185,
+            "margin": 0.327469271030277
+          },
+          "training_objective": {
+            "accuracy": 0.895,
+            "nll": 0.3517194373044185,
+            "margin": 0.327469271030277
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.4425,
+            "nll": 1.2166279017925263,
+            "margin": -0.008353531919419765
+          },
+          "after": {
+            "accuracy": 0.50125,
+            "nll": 1.2145127713680268,
+            "margin": 0.00020125286653637886
+          },
+          "training_objective": {
+            "accuracy": 0.50125,
+            "nll": 1.2145127713680268,
+            "margin": 0.00020125286653637886
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.62625,
+            "nll": 0.8919744800589978,
+            "margin": 0.17403938902541996
+          },
+          "after": {
+            "accuracy": 0.8525,
+            "nll": 0.39745627574622633,
+            "margin": 0.21528008576482535
+          },
+          "training_objective": {
+            "accuracy": 0.8525,
+            "nll": 0.39745627574622633,
+            "margin": 0.21528008576482535
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.39,
+            "nll": 1.3210065633058548,
+            "margin": -0.0268426900729537
+          },
+          "after": {
+            "accuracy": 0.4675,
+            "nll": 1.1762459886074066,
+            "margin": -0.002300060521811247
+          },
+          "training_objective": {
+            "accuracy": 0.4675,
+            "nll": 1.1762459886074066,
+            "margin": -0.002300060521811247
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 17,
+    "branch": "P_C2_warm",
+    "step": 200,
+    "diagnostic_only": true,
+    "drift": {
+      "W0": 1.4752057940922476,
+      "key_projection": 0.4432238737239295,
+      "query_projection": 0.6861869236875672,
+      "total_slow_state": 1.6862775665358274,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 0.9675,
+            "nll": 0.10164258148681256,
+            "margin": 0.449438758790493
+          },
+          "after": {
+            "accuracy": 0.9725,
+            "nll": 0.10729743411473464,
+            "margin": 0.42409013241529464
+          },
+          "training_objective": {
+            "accuracy": 0.9725,
+            "nll": 0.10729743411473464,
+            "margin": 0.42409013241529464
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.49625,
+            "nll": 1.1838658577203751,
+            "margin": -0.002180189825594425
+          },
+          "after": {
+            "accuracy": 0.54625,
+            "nll": 1.1773871237039566,
+            "margin": 0.0053330156952142715
+          },
+          "training_objective": {
+            "accuracy": 0.54625,
+            "nll": 1.1773871237039566,
+            "margin": 0.0053330156952142715
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.6675,
+            "nll": 0.7599546394171193,
+            "margin": 0.20378203930333258
+          },
+          "after": {
+            "accuracy": 0.89375,
+            "nll": 0.28947002996690574,
+            "margin": 0.24907798551023005
+          },
+          "training_objective": {
+            "accuracy": 0.89375,
+            "nll": 0.28947002996690574,
+            "margin": 0.24907798551023005
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.40375,
+            "nll": 1.3045358142256738,
+            "margin": -0.023735188143327833
+          },
+          "after": {
+            "accuracy": 0.47,
+            "nll": 1.1882363110780716,
+            "margin": -0.0044639943586662414
+          },
+          "training_objective": {
+            "accuracy": 0.47,
+            "nll": 1.1882363110780716,
+            "margin": -0.0044639943586662414
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 17,
+    "branch": "P_C2_warm",
+    "step": 400,
+    "diagnostic_only": false,
+    "drift": {
+      "W0": 1.9198080855728419,
+      "key_projection": 0.5500292954445647,
+      "query_projection": 0.9176257202744239,
+      "total_slow_state": 2.197778941064651,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 0.9975,
+            "nll": 0.033724568978941535,
+            "margin": 0.5254140612483025
+          },
+          "after": {
+            "accuracy": 0.99125,
+            "nll": 0.039246547784423456,
+            "margin": 0.5098699222505093
+          },
+          "training_objective": {
+            "accuracy": 0.99125,
+            "nll": 0.039246547784423456,
+            "margin": 0.5098699222505093
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.6,
+            "nll": 1.0981028270721436,
+            "margin": 0.01328003529459238
+          },
+          "after": {
+            "accuracy": 0.64375,
+            "nll": 1.1065020298957824,
+            "margin": 0.016279581077396868
+          },
+          "training_objective": {
+            "accuracy": 0.64375,
+            "nll": 1.1065020298957824,
+            "margin": 0.016279581077396868
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.71,
+            "nll": 0.6635724888416007,
+            "margin": 0.2268176558893174
+          },
+          "after": {
+            "accuracy": 0.92,
+            "nll": 0.23356874066404998,
+            "margin": 0.274170259963721
+          },
+          "training_objective": {
+            "accuracy": 0.92,
+            "nll": 0.23356874066404998,
+            "margin": 0.274170259963721
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.40625,
+            "nll": 1.2947138035297394,
+            "margin": -0.022745189163833855
+          },
+          "after": {
+            "accuracy": 0.46125,
+            "nll": 1.201086275577545,
+            "margin": -0.007953939186409116
+          },
+          "training_objective": {
+            "accuracy": 0.46125,
+            "nll": 1.201086275577545,
+            "margin": -0.007953939186409116
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 27,
+    "branch": "P_O0_resume",
+    "step": 0,
+    "diagnostic_only": true,
+    "drift": {
+      "W0": 0.0,
+      "key_projection": 0.0,
+      "query_projection": 0.0,
+      "total_slow_state": 0.0,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 1.0,
+            "nll": 0.014548514027846977,
+            "margin": 0.5545019063353539
+          },
+          "after": {
+            "accuracy": 0.94875,
+            "nll": 0.18359415599377826,
+            "margin": 0.42303652115166185
+          },
+          "training_objective": {
+            "accuracy": 1.0,
+            "nll": 0.03139709066483192,
+            "margin": 0.4492588149011135
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.46875,
+            "nll": 1.229384657740593,
+            "margin": -0.007483183592557907
+          },
+          "after": {
+            "accuracy": 0.41375,
+            "nll": 1.2955181235074997,
+            "margin": -0.024080730974674225
+          },
+          "training_objective": {
+            "accuracy": 0.49625,
+            "nll": 1.250095454454422,
+            "margin": -0.003105122148990631
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.89125,
+            "nll": 0.32285109363496306,
+            "margin": 0.22009868528693916
+          },
+          "after": {
+            "accuracy": 0.80875,
+            "nll": 0.45404423791915177,
+            "margin": 0.17920943047851323
+          },
+          "training_objective": {
+            "accuracy": 0.91625,
+            "nll": 0.3147295276075602,
+            "margin": 0.19028801340609788
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.37625,
+            "nll": 1.3319190782308579,
+            "margin": -0.028078518323600293
+          },
+          "after": {
+            "accuracy": 0.41375,
+            "nll": 1.2605119532346725,
+            "margin": -0.0159631703235209
+          },
+          "training_objective": {
+            "accuracy": 0.39,
+            "nll": 1.2962085217237473,
+            "margin": -0.018572104275226594
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 27,
+    "branch": "P_O0_resume",
+    "step": 50,
+    "diagnostic_only": true,
+    "drift": {
+      "W0": 0.3813306054297611,
+      "key_projection": 0.22050276244524267,
+      "query_projection": 0.12958696559075705,
+      "total_slow_state": 0.459159319337451,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 1.0,
+            "nll": 0.012096198017534334,
+            "margin": 0.5624426510930062
+          },
+          "after": {
+            "accuracy": 0.94,
+            "nll": 0.23986544514540584,
+            "margin": 0.4016950423642993
+          },
+          "training_objective": {
+            "accuracy": 1.0,
+            "nll": 0.026769222506554797,
+            "margin": 0.47130474358797075
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.4575,
+            "nll": 1.1898658257722854,
+            "margin": -0.002364421524107456
+          },
+          "after": {
+            "accuracy": 0.40625,
+            "nll": 1.2697255447506905,
+            "margin": -0.020525493398308753
+          },
+          "training_objective": {
+            "accuracy": 0.5025,
+            "nll": 1.2186717718839646,
+            "margin": 0.0010796745121479034
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.87,
+            "nll": 0.36195335745811463,
+            "margin": 0.2379696173220873
+          },
+          "after": {
+            "accuracy": 0.82625,
+            "nll": 0.41471722269430755,
+            "margin": 0.1810199612006545
+          },
+          "training_objective": {
+            "accuracy": 0.90875,
+            "nll": 0.29840648151934146,
+            "margin": 0.21346083022654055
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.39,
+            "nll": 1.2748135727643968,
+            "margin": -0.018868876565247775
+          },
+          "after": {
+            "accuracy": 0.4075,
+            "nll": 1.2341814056038856,
+            "margin": -0.013248556964099408
+          },
+          "training_objective": {
+            "accuracy": 0.40375,
+            "nll": 1.261366749405861,
+            "margin": -0.012406719699501991
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 27,
+    "branch": "P_O0_resume",
+    "step": 100,
+    "diagnostic_only": true,
+    "drift": {
+      "W0": 0.576362039514126,
+      "key_projection": 0.38544771567709535,
+      "query_projection": 0.21209506905155248,
+      "total_slow_state": 0.7250844505501112,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 1.0,
+            "nll": 0.010632866526138969,
+            "margin": 0.590923800766468
+          },
+          "after": {
+            "accuracy": 0.91375,
+            "nll": 0.29157034278847277,
+            "margin": 0.39140971697866916
+          },
+          "training_objective": {
+            "accuracy": 1.0,
+            "nll": 0.01913437888259068,
+            "margin": 0.5108189687132836
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.49625,
+            "nll": 1.1644161474704742,
+            "margin": 0.001180926114320755
+          },
+          "after": {
+            "accuracy": 0.43875,
+            "nll": 1.2147662615776063,
+            "margin": -0.012377656698226928
+          },
+          "training_objective": {
+            "accuracy": 0.54625,
+            "nll": 1.1966168129444121,
+            "margin": 0.0034973962604999543
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.85125,
+            "nll": 0.41951111445203426,
+            "margin": 0.24217026196420194
+          },
+          "after": {
+            "accuracy": 0.84875,
+            "nll": 0.3743738545104861,
+            "margin": 0.20385570731014013
+          },
+          "training_objective": {
+            "accuracy": 0.89,
+            "nll": 0.3019110481068492,
+            "margin": 0.22741090953350068
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.40125,
+            "nll": 1.2793392288684844,
+            "margin": -0.020189010109752416
+          },
+          "after": {
+            "accuracy": 0.4375,
+            "nll": 1.2372038125991822,
+            "margin": -0.013061066269874572
+          },
+          "training_objective": {
+            "accuracy": 0.395,
+            "nll": 1.2589022874832154,
+            "margin": -0.013511237949132919
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 27,
+    "branch": "P_O0_resume",
+    "step": 200,
+    "diagnostic_only": true,
+    "drift": {
+      "W0": 0.9909107223400673,
+      "key_projection": 0.706494796998343,
+      "query_projection": 0.380018136601806,
+      "total_slow_state": 1.2749324460458886,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 1.0,
+            "nll": 0.01105471187416697,
+            "margin": 0.6012792620062828
+          },
+          "after": {
+            "accuracy": 0.8875,
+            "nll": 0.46763736340159084,
+            "margin": 0.38018948573619127
+          },
+          "training_objective": {
+            "accuracy": 1.0,
+            "nll": 0.01593120200035628,
+            "margin": 0.5456944128870964
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.5925,
+            "nll": 1.101615208387375,
+            "margin": 0.010427000746130944
+          },
+          "after": {
+            "accuracy": 0.49,
+            "nll": 1.1642926225066186,
+            "margin": -0.0038473580032587053
+          },
+          "training_objective": {
+            "accuracy": 0.60625,
+            "nll": 1.1459982055425644,
+            "margin": 0.009050456061959266
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.8875,
+            "nll": 0.2995641615428031,
+            "margin": 0.27579502046108245
+          },
+          "after": {
+            "accuracy": 0.75625,
+            "nll": 0.5321907956898212,
+            "margin": 0.20359192656353117
+          },
+          "training_objective": {
+            "accuracy": 0.92125,
+            "nll": 0.23829607414081694,
+            "margin": 0.25900033380836246
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.41125,
+            "nll": 1.2533202043175697,
+            "margin": -0.017142154816538094
+          },
+          "after": {
+            "accuracy": 0.45625,
+            "nll": 1.2210519820451737,
+            "margin": -0.010033966284245252
+          },
+          "training_objective": {
+            "accuracy": 0.4025,
+            "nll": 1.2430377382040023,
+            "margin": -0.012540328130126
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 27,
+    "branch": "P_O0_resume",
+    "step": 400,
+    "diagnostic_only": false,
+    "drift": {
+      "W0": 1.7696646181956224,
+      "key_projection": 1.3012154344260736,
+      "query_projection": 0.7066642061414108,
+      "total_slow_state": 2.307433372369301,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 1.0,
+            "nll": 0.009098204605979845,
+            "margin": 0.62640689432621
+          },
+          "after": {
+            "accuracy": 0.9175,
+            "nll": 0.33141650797449984,
+            "margin": 0.4114760074391961
+          },
+          "training_objective": {
+            "accuracy": 1.0,
+            "nll": 0.012367183948808815,
+            "margin": 0.5855287793278694
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.7425,
+            "nll": 0.9831595647335053,
+            "margin": 0.02888801336288452
+          },
+          "after": {
+            "accuracy": 0.645,
+            "nll": 1.0175139060616494,
+            "margin": 0.018791386410593986
+          },
+          "training_objective": {
+            "accuracy": 0.7475,
+            "nll": 1.032550163269043,
+            "margin": 0.024265171512961387
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.88125,
+            "nll": 0.30511408768594267,
+            "margin": 0.3012849616631865
+          },
+          "after": {
+            "accuracy": 0.79,
+            "nll": 0.4491394209489226,
+            "margin": 0.24470230031758547
+          },
+          "training_objective": {
+            "accuracy": 0.9025,
+            "nll": 0.24225723826326429,
+            "margin": 0.29350672505795955
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.42625,
+            "nll": 1.1869154512882232,
+            "margin": -0.006080478113144636
+          },
+          "after": {
+            "accuracy": 0.46375,
+            "nll": 1.1863897913694381,
+            "margin": -0.003843991979956627
+          },
+          "training_objective": {
+            "accuracy": 0.41375,
+            "nll": 1.189176459312439,
+            "margin": -0.004579328820109367
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 27,
+    "branch": "P_C2_warm",
+    "step": 0,
+    "diagnostic_only": true,
+    "drift": {
+      "W0": 0.0,
+      "key_projection": 0.0,
+      "query_projection": 0.0,
+      "total_slow_state": 0.0,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 1.0,
+            "nll": 0.014548514027846977,
+            "margin": 0.5545019063353539
+          },
+          "after": {
+            "accuracy": 0.94875,
+            "nll": 0.18359415599377826,
+            "margin": 0.42303652115166185
+          },
+          "training_objective": {
+            "accuracy": 0.94875,
+            "nll": 0.18359415599377826,
+            "margin": 0.42303652115166185
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.46875,
+            "nll": 1.229384657740593,
+            "margin": -0.007483183592557907
+          },
+          "after": {
+            "accuracy": 0.41375,
+            "nll": 1.2955181235074997,
+            "margin": -0.024080730974674225
+          },
+          "training_objective": {
+            "accuracy": 0.41375,
+            "nll": 1.2955181235074997,
+            "margin": -0.024080730974674225
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.89125,
+            "nll": 0.32285109363496306,
+            "margin": 0.22009868528693916
+          },
+          "after": {
+            "accuracy": 0.80875,
+            "nll": 0.45404423791915177,
+            "margin": 0.17920943047851323
+          },
+          "training_objective": {
+            "accuracy": 0.80875,
+            "nll": 0.45404423791915177,
+            "margin": 0.17920943047851323
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.37625,
+            "nll": 1.3319190782308579,
+            "margin": -0.028078518323600293
+          },
+          "after": {
+            "accuracy": 0.41375,
+            "nll": 1.2605119532346725,
+            "margin": -0.0159631703235209
+          },
+          "training_objective": {
+            "accuracy": 0.41375,
+            "nll": 1.2605119532346725,
+            "margin": -0.0159631703235209
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 27,
+    "branch": "P_C2_warm",
+    "step": 50,
+    "diagnostic_only": true,
+    "drift": {
+      "W0": 0.5758342392126667,
+      "key_projection": 0.2028245813418562,
+      "query_projection": 0.2301826883864966,
+      "total_slow_state": 0.6524622225684525,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 1.0,
+            "nll": 0.03732623800286092,
+            "margin": 0.4874403148889542
+          },
+          "after": {
+            "accuracy": 0.9325,
+            "nll": 0.2138098160363734,
+            "margin": 0.37567544473335146
+          },
+          "training_objective": {
+            "accuracy": 0.9325,
+            "nll": 0.2138098160363734,
+            "margin": 0.37567544473335146
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.39125,
+            "nll": 1.2925523871183395,
+            "margin": -0.021049323864281176
+          },
+          "after": {
+            "accuracy": 0.485,
+            "nll": 1.2059439265727996,
+            "margin": -0.005989889055490494
+          },
+          "training_objective": {
+            "accuracy": 0.485,
+            "nll": 1.2059439265727996,
+            "margin": -0.005989889055490494
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.86875,
+            "nll": 0.3950538989529014,
+            "margin": 0.21059652775526047
+          },
+          "after": {
+            "accuracy": 0.81875,
+            "nll": 0.45597391936928033,
+            "margin": 0.1688025537505746
+          },
+          "training_objective": {
+            "accuracy": 0.81875,
+            "nll": 0.45597391936928033,
+            "margin": 0.1688025537505746
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.395,
+            "nll": 1.34621484041214,
+            "margin": -0.029120586551725863
+          },
+          "after": {
+            "accuracy": 0.43,
+            "nll": 1.2473668348789215,
+            "margin": -0.010652652848511935
+          },
+          "training_objective": {
+            "accuracy": 0.43,
+            "nll": 1.2473668348789215,
+            "margin": -0.010652652848511935
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 27,
+    "branch": "P_C2_warm",
+    "step": 100,
+    "diagnostic_only": true,
+    "drift": {
+      "W0": 0.9491707957481711,
+      "key_projection": 0.32437129051645286,
+      "query_projection": 0.37016652364712327,
+      "total_slow_state": 1.0691890332590968,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 0.99625,
+            "nll": 0.05864976629032753,
+            "margin": 0.4727547852694988
+          },
+          "after": {
+            "accuracy": 0.9425,
+            "nll": 0.21734595354180783,
+            "margin": 0.36756490333005787
+          },
+          "training_objective": {
+            "accuracy": 0.9425,
+            "nll": 0.21734595354180783,
+            "margin": 0.36756490333005787
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.36,
+            "nll": 1.3133258777856827,
+            "margin": -0.024855781942605973
+          },
+          "after": {
+            "accuracy": 0.50375,
+            "nll": 1.205070116519928,
+            "margin": -0.0029800808057188987
+          },
+          "training_objective": {
+            "accuracy": 0.50375,
+            "nll": 1.205070116519928,
+            "margin": -0.0029800808057188987
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.85875,
+            "nll": 0.4066829542443156,
+            "margin": 0.2089847141318023
+          },
+          "after": {
+            "accuracy": 0.78,
+            "nll": 0.5126992549188435,
+            "margin": 0.1633046348206699
+          },
+          "training_objective": {
+            "accuracy": 0.78,
+            "nll": 0.5126992549188435,
+            "margin": 0.1633046348206699
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.3875,
+            "nll": 1.3532444423437118,
+            "margin": -0.030163547359406948
+          },
+          "after": {
+            "accuracy": 0.4,
+            "nll": 1.2576887625455857,
+            "margin": -0.012742876149713993
+          },
+          "training_objective": {
+            "accuracy": 0.4,
+            "nll": 1.2576887625455857,
+            "margin": -0.012742876149713993
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 27,
+    "branch": "P_C2_warm",
+    "step": 200,
+    "diagnostic_only": true,
+    "drift": {
+      "W0": 1.3608693580588669,
+      "key_projection": 0.424337020039681,
+      "query_projection": 0.559655574141483,
+      "total_slow_state": 1.5314181917253504,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 0.99375,
+            "nll": 0.05259939667506842,
+            "margin": 0.4940213204920292
+          },
+          "after": {
+            "accuracy": 0.97375,
+            "nll": 0.10995041226269678,
+            "margin": 0.42080573372542857
+          },
+          "training_objective": {
+            "accuracy": 0.97375,
+            "nll": 0.10995041226269678,
+            "margin": 0.42080573372542857
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.38875,
+            "nll": 1.2579307693243027,
+            "margin": -0.015097916573286057
+          },
+          "after": {
+            "accuracy": 0.51875,
+            "nll": 1.1820033395290375,
+            "margin": 0.001425030119717121
+          },
+          "training_objective": {
+            "accuracy": 0.51875,
+            "nll": 1.1820033395290375,
+            "margin": 0.001425030119717121
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.88875,
+            "nll": 0.34103850634768607,
+            "margin": 0.22884461080655455
+          },
+          "after": {
+            "accuracy": 0.7925,
+            "nll": 0.4860930470190942,
+            "margin": 0.1854088469222188
+          },
+          "training_objective": {
+            "accuracy": 0.7925,
+            "nll": 0.4860930470190942,
+            "margin": 0.1854088469222188
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.3925,
+            "nll": 1.3311213406920432,
+            "margin": -0.027037522811442612
+          },
+          "after": {
+            "accuracy": 0.395,
+            "nll": 1.2556924271583556,
+            "margin": -0.013751306850463153
+          },
+          "training_objective": {
+            "accuracy": 0.395,
+            "nll": 1.2556924271583556,
+            "margin": -0.013751306850463153
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 27,
+    "branch": "P_C2_warm",
+    "step": 400,
+    "diagnostic_only": false,
+    "drift": {
+      "W0": 1.873798443823789,
+      "key_projection": 0.5221779600649719,
+      "query_projection": 0.8151175809656269,
+      "total_slow_state": 2.109077310307359,
+      "classifier": 0.0,
+      "classifier_parameter_count": 0,
+      "classifier_temperature": 0.1
+    },
+    "metrics": {
+      "train_seen_at_final": {
+        "easy": {
+          "before": {
+            "accuracy": 0.99875,
+            "nll": 0.026898865652619862,
+            "margin": 0.561110087633133
+          },
+          "after": {
+            "accuracy": 0.9975,
+            "nll": 0.034602833027020094,
+            "margin": 0.49856718242168424
+          },
+          "training_objective": {
+            "accuracy": 0.9975,
+            "nll": 0.034602833027020094,
+            "margin": 0.49856718242168424
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.5175,
+            "nll": 1.1490861481428147,
+            "margin": 0.0024217339605093003
+          },
+          "after": {
+            "accuracy": 0.59375,
+            "nll": 1.1081188583374024,
+            "margin": 0.012065006047487259
+          },
+          "training_objective": {
+            "accuracy": 0.59375,
+            "nll": 1.1081188583374024,
+            "margin": 0.012065006047487259
+          }
+        }
+      },
+      "heldout": {
+        "easy": {
+          "before": {
+            "accuracy": 0.925,
+            "nll": 0.2428513232059777,
+            "margin": 0.26735079374164344
+          },
+          "after": {
+            "accuracy": 0.84875,
+            "nll": 0.357216767501086,
+            "margin": 0.22987379672005773
+          },
+          "training_objective": {
+            "accuracy": 0.84875,
+            "nll": 0.357216767501086,
+            "margin": 0.22987379672005773
+          }
+        },
+        "hard": {
+          "before": {
+            "accuracy": 0.38125,
+            "nll": 1.3001216918230056,
+            "margin": -0.02366661949083209
+          },
+          "after": {
+            "accuracy": 0.4,
+            "nll": 1.2419533026218414,
+            "margin": -0.012910607866942883
+          },
+          "training_objective": {
+            "accuracy": 0.4,
+            "nll": 1.2419533026218414,
+            "margin": -0.012910607866942883
+          }
+        }
+      }
+    }
+  }
+]
