@@ -369,3 +369,22 @@ The raw parity prerequisite correctly failed and stopped. Direct indexwise compa
 However, the current script assumes native decoder query index `q` and HF decoder query index `q` are directly corresponding. That correspondence has not been established. The prior Research-Lead contract already contained an alternative for non-directly-alignable tensors: postprocessed canonical detections must match one-to-one with identical class, IoU `>=0.999`, and score difference `<=1e-4`. Invoking that already-written branch does not relax the preregistration.
 
 **Next action:** run exactly one T013-PARITY-B diagnostic on the same three V0 smoke images/checkpoints/preprocessing. Decode the primary-style top-300 canonical detections with no AP threshold/NMS, require equal per-class detection counts, and use a deterministic within-class Hungarian IoU assignment. Every matched pair must satisfy class identity, IoU `>=0.999`, and score error `<=1e-4`; HF replay/state invariance must still pass. Report raw-query permutation diagnostics only descriptively. If any smoke image fails, reject the HF-1024 harness and stop for Research Lead review with no tolerance/matching/image/checkpoint changes. If all pass, finish/freeze the complete T013 PLAN, primary runner, data hashes and paired-bootstrap implementation before launching any 1,000-image primary inference. T013 Gates 1–4 remain unevaluated; T014 remains prohibited.
+
+---
+
+## 2026-09-12 — T013 PARITY-B final / native reset review
+
+**Decision:** ACCEPTED AS A VALID ENGINEERING NEGATIVE; HF-1024 HARNESS REJECTED; T013 SCIENTIFIC PREMISE UNEVALUATED; NATIVE-256 T013-NATIVE30 RESET AUTHORIZED
+
+Reviewed commits/artifacts:
+- `61918fa9510d88eb0de49ac0de997ea700e14cfe` — frozen T013-PARITY-B assignment/matching rules and focused tests before outcomes;
+- `654887013ab49c5626fadea18a8f922d2bc68ff6` — completed three-image PARITY-B result and preserved run artifacts;
+- `research_log/t013/PARITY_B_PLAN.md`, `PARITY_B_RESULTS.md`, saved raw NPZ/JSON records and source/release receipts.
+
+Validity is accepted. The prescribed rule was frozen before execution; local and remote focused suites both pass 13/13; the exact same smoke images, V0 prompt, checkpoints, processed pixels and FP32 CPU setting were used; HF replay is exact; model state hashes remain unchanged; and no tolerance, matching rule, image, checkpoint or prompt was altered after outcomes.
+
+The fixed detection-level parity criterion fails on 2/3 images. Image 139 matches class counts and boxes at IoU >=0.999 but has maximum canonical-score error `0.000431165 > 1e-4`. Image 285 fails immediately because the top-300 canonical class multisets differ (HF has one more person and one fewer bear). Image 632 passes. Per the preregistered decision rule, the HF-1024 port is therefore rejected for T013 primary use. No further HF parity rescue is permitted.
+
+This result is strictly an engineering-harness rejection. No T013 primary AP/AP50, interaction estimate, confidence interval or scientific Gate 1–4 has been generated, so the visual-corruption × vocabulary-composition hypothesis remains unevaluated.
+
+**Next action:** continue T013 only through the official native-256 detector with a capacity-safe pre-outcome reset. `V0` remains COCO-80 at 195 tokens. Define `Vhard30` as the exactly 30 already accepted Vhard80 distractors whose frozen prompt contribution is 2 tokens; preserve their committed order/similarities. Define `Vrand30` from the frozen eligible 2-token candidate bucket as the 30 lowest-similarity entries with LVIS-ID tie breaking. Require exact class counts 80/110/110 and prompt token counts 195/255/255 with no truncation. Keep the same frozen 1,000 COCO IDs, four severity-3 corruptions, inference configuration, metrics, bootstrap algorithm and original Gates 1–4 without weakening thresholds. Before any primary outcome, commit a native-only `PLAN.md`, final data/vocabulary/code hashes, complete 15-condition cache/evaluation/bootstrap code and deterministic validity tests. Only then may the unchanged native primary audit run; if the original gates fail, stop the dual-shift premise rather than redesigning the vocabulary again.
