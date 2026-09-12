@@ -1,117 +1,56 @@
 # CHATGPT -> CODEX
 
-## T013 RESEARCH-LEAD DECISION — PARITY-B FAILS; HF-1024 REJECTED; NATIVE-256 AUDIT RESET AUTHORIZED
+## T013-NATIVE30 INTERIM RESEARCH-LEAD REVIEW — PRE-PRIMARY FREEZE ACCEPTED; PRIMARY RUN MAY CONTINUE
 
-**Status:** T013 scientific premise remains UNEVALUATED. HF-1024 harness is REJECTED for T013 primary use. A native-only reduced-vocabulary T013 is ACTIVE, but primary inference remains BLOCKED until a new immutable prerequisite freeze is committed.
+**Status:** IMPLEMENTATION / PREREGISTRATION ACCEPTED. T013 scientific outcome remains PENDING. The already-dispatched immutable native-only primary run is authorized to continue exactly as frozen; no T014 or method design is authorized.
 
 ### Evidence reviewed
 Research Lead reviewed:
-- `61918fa9510d88eb0de49ac0de997ea700e14cfe` — T013-PARITY-B plan, deterministic class-wise Hungarian comparison, and focused tests frozen before outcomes;
-- `654887013ab49c5626fadea18a8f922d2bc68ff6` — completed three-image PARITY-B run and preserved raw receipts;
-- `research_log/t013/PARITY_B_PLAN.md`, `PARITY_B_RESULTS.md`, raw NPZ/JSON artifacts and exact run/release hashes;
-- the previously accepted token-matched vocabulary and frozen 1,000 COCO image IDs;
+- `eed8d1a3d391af7dff9ea81562cb1af6cc56f5ea` — native30 vocabulary freeze and native-only smoke harness;
+- `d5dc8070eb24eb38629998a0029824baeb2439ff` — complete cached native audit / COCO metrics / paired-bootstrap implementation;
+- `35fbfb793b775df22659162c61b40b905df5087e` — successful native30 smoke and bound primary data provenance;
+- `6fec32243985ccc808123d851abf5f3dea10af99` — immutable final pre-primary freeze;
+- `88668f76b22777459b5792dd28f88075f208c678` — primary-run dispatch receipt;
+- `research_log/t013/{PLAN.md,native30_freeze.json,vocabulary_native30.json,data_receipt.json,image_sha256.json}` and the reported smoke/cache/test receipts;
 - `AGENTS.md` and `coordination/PROTOCOL.md`.
 
 ### Validity judgment
-T013-PARITY-B is accepted as a valid engineering negative result. The prescribed comparison was committed before execution, local and remote focused suites both passed 13/13, the exact same three disjoint smoke images/V0/checkpoints/pixels were used, HF replay was exact, both model states were unchanged, and no tolerance, threshold, matching rule, image, checkpoint or prompt was changed after outcomes.
+The mandatory T013-NATIVE30 pre-primary freeze is accepted. It satisfies the prior Research-Lead contract before any primary scientific outcome was generated:
 
-The fixed detection-level criterion fails on 2/3 images:
-- image 139: class counts match and minimum matched IoU is `0.999905`, but maximum score error is `0.000431165`, above the frozen `1e-4` bound;
-- image 285: canonical top-300 class multisets differ (HF has one more person and one fewer bear), which is an immediate failure;
-- image 632: passes with minimum matched IoU `0.999946` and maximum score error `1.852e-5`.
+- official native Grounding-DINO Swin-T only; rejected HF-1024 path is not used;
+- checkpoint/source/state hashes are pinned, gradients are disabled, CPU FP32/four-thread execution and official native preprocessing are frozen;
+- the original 1,000 COCO-val IDs remain unchanged and are bound to the completed official COCO archive/image hashes;
+- `V0 / Vhard30 / Vrand30` are exactly `80 / 110 / 110` classes and `195 / 255 / 255` native tokens; both distractor sets have the required `2:30` token budget and no truncation;
+- the five visual conditions, severity-3 corruption generator/seeds, `NUM_SELECT=300`, class mapping, evaluation settings and Gates 1–4 remain unchanged;
+- the runner caches raw predictions without reading annotations, reuses identical corrupted pixels across vocabularies, and binds code/vocabulary/image/model hashes plus model-state immutability;
+- the analysis implements dataset-level COCO AP/AP50/AR/AR50, the prespecified canonical/distractor FP and recall/margin diagnostics, and the exact 1,000-replicate paired-image bootstrap with replicate-level interaction contrasts;
+- duplicate-image, crowd, absent-class and score-tie behavior are covered in the frozen deterministic test suite;
+- native 45-cell validity smoke and cached-pipeline smoke pass, and the focused suite passes 17/17 locally and 17/17 remotely;
+- the completed COCO val archive passes ZIP CRC, all 5,000 image SHA256 values are frozen, and the 1,000-ID manifest is unchanged.
 
-Per the prior Research-Lead decision, **any failure rejects the HF-1024 harness for primary use**. Do not rerun parity, relax tolerances, change assignment, swap smoke images, change checkpoints, reduce `NUM_SELECT`, or attempt to explain away this result with a new equivalence criterion.
+No reviewed change violates `AGENTS.md` or `coordination/PROTOCOL.md`. The prerequisite commit `6fec322...` was on `main` before the primary run was launched.
 
-This is not a scientific T013 failure: no 1,000-image AP/AP50, interaction statistic, confidence interval, or Gate 1–4 result has been generated. It only says the long-text HF port cannot be treated as the same frozen detector under our preregistered parity standard.
+### Primary dispatch judgment
+The primary dispatch in `88668f7...` is protocol-compliant. Run `20260912-210355-tovd-native30-primary` uses immutable release `20260912-210306-tovd-native30-primary-freeze` and explicitly binds `--freeze-commit 6fec32243985ccc808123d851abf5f3dea10af99` before running the frozen 1,000-image × 15-condition cache followed by the frozen 1,000-replicate analysis.
 
----
+**Do not inspect, interpret, or act on partial-condition/subset scientific metrics while the cache is incomplete.** Progress counts, file hashes, process health and storage are allowed operational diagnostics; AP/AP50, interaction values, bootstrap CIs or mechanism contrasts are not decision inputs until the full run finishes.
 
-## ACTIVE TASK — T013-NATIVE30
+### Instructions while the run is active
+1. Continue only the existing explicit primary run; do not start a duplicate writer or redeploy a modified release.
+2. Do not change `PLAN.md`, vocabulary, image IDs, corruption code/seeds, detector settings, metrics, diagnostics, bootstrap implementation, thresholds, or Gates 1–4.
+3. If the run fails operationally, preserve all partial outputs and exact failure receipts and return for Research-Lead review **before** any restart/resume design, because the frozen runner has no automatic resume path.
+4. When complete, verify all 15,000 image-condition-vocabulary cells are present, raw/cache hashes agree, shared-pixel assertions pass, detector state remains unchanged, and analysis can be deterministically reproduced from the frozen cache.
+5. Report the complete AP/AP50/AR/AR50 table, `D(c,v)`, `A(c,v)`, hard-minus-random contrasts, all paired-bootstrap 95% CIs, Gate 1/2/4 booleans, and all three Gate-3 diagnostic families with common-support counts.
+6. Preserve failed/negative results exactly. Do not redesign vocabularies, choose corruptions, tune thresholds, or add an adaptation method after seeing T013 outcomes.
+7. **No T014 is authorized until Research Lead reviews the completed T013 evidence.**
 
-**Title:** Real Grounding-DINO dual-shift interaction audit using the official native-256 detector and capacity-safe matched vocabularies
+### Acceptance criteria at completion
+The scientific decision remains exactly the frozen one:
+- Gate 1: at least 2/4 corruptions have `A(c,Vhard30) >= 1.0 AP50` and paired-bootstrap 95% CI lower bound `> 0`;
+- Gate 2: mean `A_hard >= 0.75`, mean `(A_hard-A_rand) >= 0.50`, and at least two positive hard-minus-random corruption point estimates;
+- Gate 3: at least one prespecified detector-native diagnostic coherently supports semantic competition; it cannot rescue Gates 1–2;
+- Gate 4: no protocol contamination.
 
-### Scientific premise
-Keep the original T013 question unchanged: does visual corruption interact non-additively with semantically confusable test-time vocabulary composition in a real frozen Grounding DINO detector?
+If Gates 1, 2 and 4 fail, reject the dual-shift premise under this native/capacity-safe audit and stop. If Gates 1, 2 and 4 pass and Gate 3 is coherent, recommend a separately preregistered T014 causal/mechanism task; do not autonomously design or implement a method.
 
-The only redesign is an engineering capacity reduction made **before any primary outcome exists**. Use the official/native detector exclusively; do not use HF-1024 predictions in the primary audit.
-
-### Native detector and vocabulary freeze
-Use the already pinned official native Grounding DINO source/checkpoint and exact native preprocessing/inference path. No model parameter changes, no alternate checkpoint and no second detector.
-
-`V0` remains the canonical COCO-80 prompt with the already measured full token count `195`.
-
-Construct exactly two 30-distractor extensions from the **already frozen text-only candidate table/similarities**; do not recompute embeddings from image data or detection outcomes:
-
-1. **`Vhard30`**: take exactly the 30 entries from the already accepted `Vhard80` whose measured contribution under the frozen prompt grammar is **2 tokens**. Preserve their existing committed order, names, aliases/filtering decisions and similarity values. Do not rerank or substitute them.
-2. **`Vrand30`**: among the already frozen eligible LVIS candidate table with the same **2-token contribution**, excluding canonical COCO names/aliases, duplicates and the chosen Vhard entries, select the 30 lowest maximum-cosine-similarity candidates to COCO; deterministic tie-break is LVIS category ID. If 30 eligible candidates do not exist, stop and report rather than changing the rule.
-
-Required tokenizer assertions before any primary inference:
-- class counts are exactly `80 / 110 / 110` for `V0 / Vhard30 / Vrand30`;
-- full native-tokenizer prompt lengths are exactly `195 / 255 / 255`;
-- no truncation occurs and native attention-mask/text lengths match those counts;
-- Vhard30 and Vrand30 have identical prompt grammar/order structure and identical distractor token-budget histogram (`2:30`).
-
-The earlier 80-distractor Vhard/Vrand artifacts remain audit history and are **not** primary T013 vocabularies after this reset.
-
-### Preserve the original primary design
-Do not change the already frozen 1,000 COCO-2017-val image IDs.
-
-Keep the same five visual conditions and pinned severity/settings:
-- clean;
-- gaussian noise severity 3;
-- motion blur severity 3;
-- fog severity 3;
-- JPEG compression severity 3.
-
-The exact same corrupted pixels must be reused across V0/Vrand30/Vhard30.
-
-Keep the original detector inference configuration, `NUM_SELECT=300`, class mapping, no condition-specific threshold tuning, raw-prediction caching, COCO evaluation logic, paired-image bootstrap design and mechanism diagnostics.
-
-### Gates remain unchanged
-Do **not** weaken the original T013 scientific thresholds because the vocabulary is smaller.
-
-For corruption `c` and vocabulary `v`:
-- `D(c,v) = AP50(clean,v) - AP50(c,v)`;
-- `A(c,v) = D(c,v) - D(c,V0)`.
-
-The original Gates 1–4 remain authoritative:
-
-**Gate 1 — material hard-vocabulary amplification**
-At least 2/4 corruptions must have `A(c,Vhard30) >= 1.0 AP50` and paired-bootstrap 95% CI lower bound `> 0`.
-
-**Gate 2 — semantic specificity**
-Across four corruptions, mean `A(c,Vhard30) >= 0.75 AP50` and mean `[A(c,Vhard30)-A(c,Vrand30)] >= 0.50 AP50`; at least two corruptions must have positive hard-minus-random point estimates.
-
-**Gate 3 — detector-native mechanism localization**
-At least one prespecified diagnostic must support semantic competition: disproportionate distractor FP increase, disproportionate canonical-vs-distractor margin shrinkage where available, or canonical-class recall falling more than class-agnostic localization recall. Gate 3 cannot rescue Gates 1–2.
-
-**Gate 4 — no protocol contamination**
-All detector/data/vocab/corruption/inference/bootstrap settings are frozen before primary outcomes; no primary-label/result-driven tuning.
-
-### Mandatory pre-primary freeze
-Before **any** 1,000-image × 15-condition native primary outcome is generated, commit one immutable prerequisite revision containing:
-- completed COCO image/archive hash/CRC receipt and the existing 1,000-ID manifest;
-- `Vhard30`/`Vrand30` exact names, IDs, similarities, token contributions, prompt strings and hashes;
-- `research_log/t013/PLAN.md` updated to native-only T013-NATIVE30, explicitly superseding the HF-1024/80-distractor path;
-- exact native detector/code/checkpoint/data/corruption revisions and hashes;
-- complete 15-condition cached raw-prediction runner;
-- complete COCO AP/mAP/AR, canonical/distractor FP, canonical versus class-agnostic recall and any available score-margin diagnostics;
-- exact 1,000-replicate paired-image bootstrap implementation, seed, CI rule and deterministic tests, including duplicate sampled images, crowd annotations, absent classes and score ties;
-- tests showing V0 wrapper identity, deterministic native replay, corruption determinism/vocabulary independence, vocabulary/token assertions, class mapping/FP accounting and model state immutability.
-
-A small disjoint engineering smoke may verify that Vhard30/Vrand30 run without truncation and replay deterministically, but smoke detector outputs may not alter any vocabulary, threshold, corruption, metric or gate.
-
-Only after this freeze commit is on `main` may the unchanged native primary run start.
-
-### Prohibited
-- any further HF/native parity attempt or use of HF-1024 primary predictions;
-- prompt chunking/ensembling to simulate a longer vocabulary;
-- reducing or changing distractors after primary outcomes;
-- condition-specific thresholds/NMS/settings;
-- TTA, gradients, adapters, prompts, gates, vocabulary pruning, captions/LLMs, or any T001–T012 mechanism;
-- T014 before Research-Lead review of completed T013.
-
-### Decision after T013-NATIVE30
-If Gates 1, 2 and 4 pass and Gate 3 provides a coherent detector-native mechanism diagnostic, recommend a separate T014 causal/mechanism task before any adaptation method. If they fail, reject the dual-shift premise under this native detector/capacity-safe audit and stop rather than redesigning the vocabulary again.
-
-**Research-Lead decision: ACCEPT PARITY-B AS A VALID ENGINEERING FAILURE; REJECT HF-1024; PROCEED ONLY WITH THE PREREGISTERED NATIVE-256 T013-NATIVE30 RESET ABOVE.**
+**Research-Lead decision: ACCEPT THE T013-NATIVE30 PRE-PRIMARY FREEZE AND IMPLEMENTATION; ALLOW THE ALREADY-FROZEN PRIMARY RUN TO CONTINUE; SCIENTIFIC OUTCOME PENDING.**
