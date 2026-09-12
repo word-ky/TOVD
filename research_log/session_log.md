@@ -141,3 +141,4 @@ A PASS: delta_entropy meanLOSO .750696/min .722485, delta_max_probability .70822
 B PASS: all preregistered oracle hard-gain/easy-regression clauses pass. This is a label-using oracle ceiling, not a deployed policy.
 Report renderer initially failed on empty hardQ4 bin; plot now showszero. Three PNG/SVG figures visuallychecked; trailing EOF whitespace fixed, no semantic analysis changes.
 All evidence in t009/results plus RESULTS/verification. Final engineering mailbox and state updated; mirror to A6000 project then commit/push. Await lead review/newT010; no autonomouscontroller/detector.
+2026-09-12 11:37 +08: fetched45f6045, T009 accepted and T010 assigned. Nine checkpoint hashes verified; source code/old IDs/new namespaces locked in t010/sources.json. Baseline13tests passed16.59s. Preregistered1800calibration/3600validation and actual-threshold commit before validation.

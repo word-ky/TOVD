@@ -1,0 +1,1 @@
+2026-09-12 11:37 +08: fetched45f6045, T009 accepted and T010 assigned. Nine checkpoint hashes verified; source code/old IDs/new namespaces locked in t010/sources.json. Baseline13tests passed16.59s. Preregistered1800calibration/3600validation and actual-threshold commit before validation.
