@@ -1,0 +1,13 @@
+{
+  "evidence_commit": "f7da4299450a41e31d4c517442c5d6043d88bfa5",
+  "pushed_to": "https://github.com/word-ky/TOVD",
+  "remote_root": "/home/wenchang/asdasdsad/wjq/TOVD",
+  "verified_at": "2026-09-12T13:49:00+08:00",
+  "report_mirrored_sha256": "577db138c77b8ac4dc0bb9a931acd76014426c4926b8142c7dd0a922c4591421",
+  "local_remote_report_hash_equal": true,
+  "heartbeat_minutes": 15,
+  "heartbeat_active": true,
+  "engineering_status": "VERIFIED",
+  "scientific_gate_results": "all five failed",
+  "next_action": "Wait for Research Lead review; do not rerun or rescue T011."
+}

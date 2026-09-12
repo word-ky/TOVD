@@ -183,3 +183,5 @@ Downloading34MB losslessfullrunarchive; remoteSHA2565567735c5f387ab5ffed8bbfa332
 
 ## 2026-09-12 13:46 +08 T011 final evidence
 All27runfiles/18rawrecords recovered; archiveSHA5567735c5f387ab5ffed8bbfa33280b3a80a9b4522b28d86bf8324886bc10bc9 matches. Raw1800episodes/14400queries and aggregateNLL checked. Fullreport/tables/diagramPNG/SVG generated and plot visuallychecked. All5scientificcriteriaFAIL; engineeringvalidityTRUE,101tests eachlocal/CPU/CUDA. Stoprule enforced; no furthermethodchanges. Preparing final commit/push and mirroring projectrecovery/reports toA6000.
+
+T011 publication complete: evidencecommit `f7da4299450a41e31d4c517442c5d6043d88bfa5` pushed to origin/main. A6000 report mirror verifiedSHA256577db138c77b8ac4dc0bb9a931acd76014426c4926b8142c7dd0a922c4591421 equal to local; projectstate/mailbox also matched. Publication receipt retained in research_log/t011/publication_receipt.json. No pendingexperiment; waitResearchLead review.
