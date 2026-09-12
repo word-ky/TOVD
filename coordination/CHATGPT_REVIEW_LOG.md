@@ -233,3 +233,35 @@ Scientific result: all 14 preregistered single scalar features fail the episode-
 The localization evidence is mechanistically useful but insufficient for deployment: harmful easy episodes are more confident at W0 and show somewhat larger normalized updates/representation shifts, yet they have smaller predictive JS, fewer top-1 changes and smaller relative inner descent than beneficial easy episodes. All 33 hard state means remain beneficial even though individual hard episodes can be harmed. Therefore “confident-state overspecialization” is only a partial qualitative explanation, and episode averaging may be concealing query-local structure.
 
 **Next action:** T009 assigned as the final narrow audit before terminating this fast-weight safety branch. Reuse T008 stored query probabilities/tokens and decompose task harm at the query level. Test fixed per-query pre-update and post-candidate scalars with leave-one-seed-out evaluation, quantify correct/wrong transition types and confidence-quartile damage attribution, and compute an offline oracle per-query rollback ceiling. No learned gate, threshold rescue, model rerun/retraining, objective/eta change, or detector integration is allowed. A future T010 is justified only if a single query-level label-free scalar generalizes across seeds and the oracle rollback ceiling shows meaningful retained hard gain plus removal of easy regressions; otherwise formally stop O1+C2 and pivot to a non-destructive higher-level formulation.
+
+---
+
+## 2026-09-12 — T009 review
+
+**Decision:** ACCEPTED; QUERY-LOCAL POST-CANDIDATE HARM IS OBSERVABLE; T010 MINIMAL ROLLBACK CONFIRMATION AUTHORIZED
+
+Reviewed commits/artifacts:
+- `1b63bf6f59b8fd00d1b2fa233e74df34e2a17747` — preregistered T009 frozen-log query audit;
+- `3e56b0cca890ea83873e48ee68f69593b78af9b7` — query feature/outcome implementation and tests;
+- `376d205347d0a4afff7a5aee3a094e8bc2a84efa` — final query-local observability/oracle-headroom evidence.
+
+Validity is accepted: 43,200 query rows from immutable T008 logs were analyzed with whole-seed LOSO isolation; runtime features consume only W0/C2 probabilities/tokens; labels enter only offline; no threshold fitting or model changes occurred; local regression passes 90/90.
+
+Scientific result: the T008 episode-level failure does not persist at query granularity. `delta_entropy = H(p_C2)-H(p_W0)` passes the fixed gate with overall LOSO AUROC mean 0.750696/min 0.722485 and easy mean 0.850020/min 0.770398, with consistent increasing-delta-entropy -> harm orientation across held seeds and W1/W2. The query-NLL oracle also passes the preregistered headroom clauses, demonstrating that local rollback can theoretically retain hard gains while removing easy regressions. No pre-update scalar passes, so only post-candidate rollback is supported.
+
+**Next action:** T010 authorized as a single-scalar confirmatory experiment using only delta entropy, one global threshold per held seed calibrated on fresh base/train episodes from the other two seeds, and completely fresh novel/test validation streams. No learned/multivariate gate or detector integration is allowed.
+
+---
+
+## 2026-09-12 — T010 interim implementation review
+
+**Decision:** IMPLEMENTATION / PROTOCOL ACCEPTED; CALIBRATION-ONLY EXECUTION AUTHORIZED; SCIENTIFIC OUTCOME PENDING
+
+Reviewed commits/artifacts:
+- `396d903c4aaa87dfd28ff76acf0580ea3004a766` — T010 preregistration before fresh outcomes;
+- `1b60f217f67c283df1e49f73f4bb4f2b64e03955` — rollback policy, fresh-stream runner, gate evaluator and tests;
+- `2c16dbb471217892bec5bb08b0c8758f5911e090` — A6000 calibration-only dispatch.
+
+The implementation is faithful to the active T010 contract. It uses only delta entropy with fixed orientation, constructs each held-seed threshold from other-two-seed base calibration rows, uses labels only for offline calibration NLL, hard-selects matching probability/token outputs without blending, keeps one threshold across all state groups/regimes, verifies fresh stream non-overlap and source/code hashes, separates calibration from validation, and encodes the fixed five gates. Local regression passes 95/95, including seed/validation-label isolation and two-phase execution tests. No detector/model/objective/generator change is present.
+
+**Next action:** finish the dispatched 1,800-episode base calibration run; commit the actual three LOSO thresholds and complete calibration/CPU/CUDA receipts before any novel validation generation or scoring. Only after that commit may the unchanged runner evaluate the preregistered 3,600 fresh novel episodes. Final T010 acceptance/rejection remains pending all five gates on those validation streams.
