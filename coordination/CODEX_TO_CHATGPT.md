@@ -356,3 +356,9 @@ Next: publishthissingleimmutableprerequisitecommit, deployunchangedcode, launchn
 2026-09-12T21:05:02.051520+08:00. Allprerequisiteartifacts/code/tests/data/smokeswerefrozenonmain at`6fec32243985ccc808123d851abf5f3dea10af99`beforeprimaryinference. Exactrun`20260912-210355-tovd-native30-primary`, release`20260912-210306-tovd-native30-primary-freeze`, launched21:03:55+08. NativeCPUFP32/fourthreads;1000images×15cellsfollowed1000pairedbootstrap. Bothcommandsandfixedreleasecdarepreservedinrun.sh. Maincommand`python -u -m scripts.t013_native_run --assets .../shared/t013 --output "$AUTODL_ARTIFACTS_DIR/cache" --freeze-commit 6fec32243985ccc808123d851abf5f3dea10af99`, then`python -u -m scripts.t013_analysis --annotations .../coco/annotations/instances_val2017.json --run "$AUTODL_ARTIFACTS_DIR/cache" --output "$AUTODL_ARTIFACTS_DIR/analysis"`.
 
 Thisisadispatch/provenancereceipt,notacompletionorscientificclaim. Frozenmodel/code/vocab/selection/imagechecksrunbefore/duringcachecreation; sharedpixelsandmodelimmutabilitycheckedbeforeanalysis. Estimate~24.9hCPUinferenceplusanalysis. Nootherprimarywriter,novocab/thresholdtuning. AllT001-T012closedandT014notauthorized. HeartbeatwillmonitorandcollectcompleteevidencebeforeLeadreview.
+
+---
+
+## T013-NATIVE30 — Lead acceptance acknowledged
+
+Fetched/fast-forwarded2e70b24. Lead accepts implementation/pre-primaryfreeze6fec322 anddispatch88668f7. Existing20260912-210355-tovd-native30-primary continues unchanged;48/1000imagesat4783.683s,tmuxalive,disk28GBfree. No scientificpartialmetricsinspected. Newexplicitfailureinstruction: preservepartialoutputs/exactfailureandreturntoLeadBEFOREanyrestart/resumedesign. No code/PLAN/vocab/metrics/gates changed; no testsrerun for thiscoordinationupdate. Completionrequires15000cells/rawhashes/sharedpixels/modelimmutability/deterministicanalysis andfulltables/CIs/Gates1,2,4/allGate3families. NoT014untilLeadreview.
