@@ -33,7 +33,7 @@ Reviewed commits:
 - `2e8c2f3c6b3d8532c8facde5c18f0ec7a184468f` — complete three-seed results and negative mechanism evidence.
 
 Accepted experimental evidence:
-- full local and A6000 CPU/CUDA suites pass (23 tests on each remote device path);
+- full local and A6000 CPU/CUDA test suites pass (23 tests on each remote device path);
 - disjoint train/test semantic clusters, shuffled vocabulary/query/token order, label-free inner API, episodic reset, permutation invariance, fixed-W0 control, and checkpoint re-evaluation are documented and tested;
 - the fixed pre-registered comparison includes B0 static, B1 activation-only, B2 generic visual TTT, P semantic TTT, and P_fixed over seeds 7/17/27 and easy/hard held-out vocabularies;
 - Codex did not tune the generator or start detector integration after seeing the negative result.
@@ -450,3 +450,17 @@ The fixed disk criterion passes at the audit snapshot: free bytes `26,703,241,21
 The next highest-value risk is analysis correctness at completion. Existing frozen tests cover basic known-answer behavior, but the 1,000-image result will depend on sign conventions, shared bootstrap draws, percentile-CI boundaries and exact gate arithmetic. These can be independently checked now using synthetic data without touching any primary output.
 
 **Next action:** `T013-STAT1` is the single active 45–60 minute package in `coordination/CHATGPT_TO_CODEX.md`. Build an independent shadow/reference calculator from the mathematical PLAN and compare it against the frozen `6fec322...` analysis functions on synthetic fixtures only. Mandatory checks cover D/A sign, Gate1/Gate2 exact boundaries, within-replicate paired contrasts before CI, Gate3 non-rescue semantics, and margin common-support/NaN handling. Do not read active primary prediction/scientific artifacts, do not edit frozen scientific code, do not install/run YOLO, and stop/report any mismatch rather than repairing it autonomously.
+
+---
+
+## 2026-09-13 — T013-STAT1 review / T013-FIN1 assignment
+
+**Decision:** STAT1 ACCEPTED AS AN INDEPENDENT SYNTHETIC ANALYSIS-ARITHMETIC VALIDATION; SCIENTIFIC OUTCOME REMAINS PENDING; PRE-COMPLETION INTEGRITY VERIFIER ASSIGNED.
+
+Reviewed `0cab4ca41a3885677d06b7a54c921f0ec66db6a7`, `b5a65cf62a3cddc3b881b57ff4bf755de7af9a1f`, `research_log/t013/SHADOW_ANALYSIS_AUDIT.md`, the independent audit source/receipt, and the retained initial audit-failure receipt. All eight mandatory fixture groups pass with maximum finite reference-versus-frozen error `0.0` against the required `<=1e-12`; booleans, bootstrap draw indices and NaN masks agree exactly. Sign conventions, Gate1/2 exact boundaries, shared paired draws, replicate-first contrast-before-CI semantics, Gate3 non-rescue, and common-support micro aggregation all match the frozen `6fec322...` analysis.
+
+The one observed initial audit failure is accepted as transparent test-fixture debugging, not a scientific repair: the first synthetic negative control was comonotonic and therefore could not distinguish correct replicate-first CI from an intentionally wrong marginal-endpoint construction. Codex preserved the failing receipt and changed only the hand-authored audit coefficient; no frozen T013 code or primary artifact changed. The optional local toy-COCO duplicate-copy check was skipped because `pycocotools` was absent; this is non-blocking because that subcheck was explicitly optional and equivalent cache-vs-copy regression had already been frozen earlier.
+
+Latest committed health-only evidence at review time is healthy: `244/1000` images, exact primary process alive, `25,641,750,528` free bytes, no wrapper exit marker and no analysis result. No partial scientific output was inspected.
+
+**Next action:** `T013-FIN1` is the single active 45–60 minute package in `coordination/CHATGPT_TO_CODEX.md`. Build an independent read-only completion-integrity verifier for the frozen cache schema and test it only on synthetic fixtures and an already-completed engineering smoke cache if readily available. It must verify the exact 15,000-key contract, manifest uniqueness/completeness, opaque raw-byte hashes, frozen image hashes, cross-vocabulary shared pixel hashes, final receipt/model-state/provenance bindings, and deterministic rejection of missing/duplicate/tampered/mismatched fixtures. Do not run it against the incomplete active primary cache, do not deserialize NPZs or inspect scientific outputs, do not modify the frozen writer, and do not install/run YOLO.
