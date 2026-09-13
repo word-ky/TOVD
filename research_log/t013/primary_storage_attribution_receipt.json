@@ -1,6 +1,6 @@
 {
   "task": "T013-OPS4",
-  "status": "AWAITING_SECOND_HEARTBEAT_SNAPSHOT",
+  "status": "PASS",
   "task_start_head": "032de1a44ae19d0fda497fe43909b0fee98f63ab",
   "tests": {
     "command": "D:/anaconda3/python.exe -m unittest discover -s research_log/t013 -p test_primary_storage_attribution.py -v",
@@ -54,7 +54,45 @@
     "run_du": 8877875200,
     "cache_du": 8877797376
   },
-  "snapshot_B": null,
+  "snapshot_B": {
+    "timestamp": "2026-09-13T12:45:33+08:00",
+    "binding": {
+      "repository": "https://github.com/word-ky/TOVD.git",
+      "project_root": "/home/wenchang/asdasdsad/wjq/TOVD",
+      "run_id": "20260912-210355-tovd-native30-primary",
+      "release_id": "20260912-210306-tovd-native30-primary-freeze",
+      "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+      "dispatch_commit": "88668f76b22777459b5792dd28f88075f208c678",
+      "writer_pid": 721181,
+      "tmux_session": "autodl-20260912-210355-tovd-native30-primary",
+      "ops2_evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a"
+    },
+    "progress": {
+      "completed_images": 556,
+      "total_images": 1000,
+      "seconds": 56483.772476741025
+    },
+    "writer_state": "Rl+",
+    "ops2": {
+      "status": "SAFE",
+      "process_status": "PRIMARY_RUNNING",
+      "storage": {
+        "closed_image_count": 556,
+        "free_bytes": 18837422080,
+        "remaining": 444,
+        "projected_remaining": 7261765632,
+        "required_free": 17304053351,
+        "margin": 1533368729,
+        "status": "SAFE"
+      },
+      "writer_alive": true,
+      "tmux_alive": true,
+      "wrapper_exit_code": null
+    },
+    "analysis_result_exists": false,
+    "run_du": 9061552128,
+    "cache_du": 9061474304
+  },
   "raw_A_path": "research_log/t013/primary_storage_attribution_A_raw.json",
   "raw_A_sha256": "fa8e4e16e73c33afbb30c53aa5fc416c399b08a4393a2ac74537d56d1d03ceff",
   "source_sha256": {
@@ -62,8 +100,8 @@
     "test_primary_storage_attribution.py": "a536e2adccea296342bb1bff743508071c51edb6ae328a6007e72e1e75ed5292",
     "primary_storage_attribution_tests.txt": "28368b07d3cb05a5b07c969b3c216ebab1fc5b9332dcd5d92e69bd42fc5311fe"
   },
-  "live_snapshots_collected": 1,
-  "next_action": "At next existing approximately 15-minute heartbeat, collect B once with the same command into primary_storage_attribution_B_raw.json, parse health; stop and report on any return-to-Lead/completion-unverified state; otherwise attribute(A,B) and deliver. Do not recollect A or add a separate health query/loop.",
+  "live_snapshots_collected": 2,
+  "next_action": "OPS4 complete; stop and await Research Lead review. Resume ordinary scalar health cadence only; no repeated du attribution absent new authorization.",
   "interpretation": "outside_run_pressure is an accounting residual, not external process attribution or a safety threshold. Measurements are sequential on an active filesystem, not atomic.",
   "scope": {
     "aggregate_du_metadata_exception_used": true,
@@ -71,5 +109,18 @@
     "active_files_hashed_or_modified": false,
     "fin1_replay_science_run": false,
     "cleanup_restart_resume_yolo_t014": false
-  }
+  },
+  "raw_B_path": "research_log/t013/primary_storage_attribution_B_raw.json",
+  "raw_B_sha256": "c63bda0e94d5f114dca9875c6a386f55c39fbf409f302fd7a201b6863a6be1f3",
+  "attribution": {
+    "delta_images": 12,
+    "free_consumed": 511221760,
+    "active_run_growth": 183676928,
+    "cache_growth": 183676928,
+    "noncache_run_growth": 0,
+    "outside_run_pressure": 327544832,
+    "cache_growth_per_new_image": 15306410.666666666
+  },
+  "snapshot_interval_seconds": 1103.0,
+  "interval_note": "B collected at the next existing heartbeat; actual interval 18m23s including task/heartbeat dispatch timing, with no additional scheduler, polling loop or third snapshot."
 }

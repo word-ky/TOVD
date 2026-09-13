@@ -1,6 +1,6 @@
 # T013-OPS4 — two-snapshot storage accounting
 
-Status: AWAITING_SECOND_HEARTBEAT_SNAPSHOT. No attribution conclusion yet.
+Status: engineering PASS; awaiting Research Lead review.
 Task-start HEAD: `032de1a44ae19d0fda497fe43909b0fee98f63ab`.
 
 The helper reuses accepted OPS2 health_guard and fixed OPS3 primary identifiers.
@@ -53,13 +53,41 @@ SAFE/PRIMARY_RUNNING. Canonical metadata, raw SHA and source hashes are in
 primary_storage_attribution_receipt.json. Only local log/source/raw-transcript
 files are hashed; no active experiment file is hashed.
 
-Next existing approximately15-minute heartbeat: collect B ONCE using the same
-command, save stdout to primary_storage_attribution_B_raw.json, and run
-`snapshot(raw_B)` locally. Do not recollect A or issue a separate routine health
-query first. On incident/completion-unverified, preserve B and return to Lead.
-Otherwise call `attribute(raw_A, raw_B)`, update this note and the receipt with
-both endpoints/deltas, commit evidence, then report its SHA to the Lead. No new
-scheduler or polling loop. Do not mark OPS4 PASS before B is available.
+Snapshot B was collected once at the next existing heartbeat using the same
+command and retained in primary_storage_attribution_B_raw.json. Its timestamp
+is2026-09-13T12:45:33+08:00:556/1000,56483.772476741025s,writer721181 Rl+/tmux
+alive,no wrapper exit marker,analysis absent by existence only. Free18837422080,
+run_du9061552128,cache_du9061474304,required17304053351,margin1533368729,
+SAFE/PRIMARY_RUNNING. Exactly two live snapshots total; no additional normal
+health query or third du snapshot was issued. Actual spacing was1103 seconds
+(18m23s), reflecting the next heartbeat's dispatch timing rather than an exact
+15-minute timer. No scheduler/cadence change was made.
+
+`snapshot(raw_B)` and `attribute(raw_A,raw_B)` were executed locally with the
+unchanged tested helper. Stored A and helper/test receipt hashes still match.
+The finalized receipt preserves both endpoints, raw file SHA256 values and:
+
+| Quantity | Value |
+| --- | ---: |
+| delta_images | 12 |
+| free_consumed | 511221760 bytes |
+| active_run_growth | 183676928 bytes |
+| cache_growth | 183676928 bytes |
+| noncache_run_growth | 0 bytes |
+| outside_run_pressure | 327544832 bytes |
+| cache_growth_per_new_image | 15306410.666666666 bytes/image |
+
+During this interval the measured primary growth explains183676928 bytes of
+the511221760-byte free-space decline. The327544832-byte residual is not explained
+by the run's net allocated growth. This is descriptive accounting, with the
+non-atomic measurement limitation above; it does not prove an external writer's
+identity or quantify earlier intervals. No new threshold or cleanup
+recommendation follows from it. Existing OPS2 returns SAFE at both endpoints.
+
+OPS4 is complete. Stop and await Lead review; return to the existing scalar
+health cadence. Do not repeat du attribution without a new task. On later
+incident/completion-unverified preserve metadata and return to Lead before
+remediation or FIN1, following the current mailbox.
 
 User preference received during OPS4: prioritize GPU for subsequent new
 experiments and validate the GPU path during preparation. The current primary
