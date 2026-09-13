@@ -26,7 +26,7 @@ Scientific acceptance remains exactly the preregistered rule:
 
 Grounding-DINO remains the primary preregistered detector. The YOLO-World contingency remains **pre-outcome protocol preparation only**; no YOLO scientific benchmark is authorized until Research Lead reviews the completed Grounding result. P0/P1/P2 are accepted as source/protocol/model-free preparation. The frozen future dynamic-vocabulary convention is one trailing U+0020 blank, runtime text counts `81/111/111`, native YOLO postprocessing (`multi_label=True`, `score_thr=.001`, `nms_pre=30000`, NMS IoU `.7`, `max_per_img=300`), and post-selection blank removal with no backfill.
 
-Latest committed health-only evidence at this review: exact primary writer/tmux remains alive at `377/1000` images, free bytes `23,182,942,208`, no wrapper exit marker, and primary `analysis/results.json` absent by existence check only. No primary scientific output has been opened.
+Latest committed health-only evidence at this review: exact primary writer/tmux remains alive at `413/1000` images, free bytes `22,524,338,176`, no wrapper exit marker, and primary `analysis/results.json` absent by existence check only. No primary scientific output has been opened.
 
 ---
 
@@ -45,115 +45,109 @@ Independent completion-integrity verifier is ready for use **only after the prim
 Two executions of the exact frozen `6fec322...` analysis on the already-completed 45-cell engineering smoke match exactly across parsed `results.json`, fixed paired draws and all decoded bootstrap/diagnostic arrays including NaN masks; a scratch mutation is rejected. Active-primary prediction/scientific contents were not accessed.
 
 ### T013-DEC1 — ACCEPTED
+Final disclosure and decision contract is frozen before outcomes. FIN1/full-replay non-PASS blocks interpretation; Gate4 failure makes the result protocol-invalid; with Gate4 valid, either Gate1 or Gate2 failure yields `GROUNDING_PRIMARY_NOT_SUPPORTED`; Gate3 cannot rescue Gates1–2. Full 15-cell metrics/interactions/CIs/diagnostic families/common-support/provenance are mandatory. A future YOLO result cannot change the Grounding decision state.
 
-**Decision:** FINAL DISCLOSURE / DECISION CONTRACT ACCEPTED AS A PRE-OUTCOME REPORTING SAFEGUARD; SCIENTIFIC OUTCOME REMAINS PENDING.
+### T013-G4A1 — ACCEPTED AS PRE-OUTCOME HISTORY EVIDENCE
+
+**Decision:** `PREOUTCOME_HISTORY_CLEAN` accepted; final Gate4 remains PENDING completion and final Research-Lead review.
 
 Reviewed:
-- `51881e3ca83ef0abafd0510965f32c19455c0025` — `FINAL_DECISION_CONTRACT.md`, dependency-free validator/state machine, tests and receipt;
-- `d0dcd897b5f0486f88d0588e70b9b03f1120a074` — Codex handoff;
-- subsequent health-only commits through `b8a5d5a5d4375bba0c956043ecd42fd463ef64ce`.
+- `6a96f8870f0e88087d64341ed37dabf05df49f84` — `GATE4_PREOUTCOME_HISTORY_AUDIT.md`, standard-library/Git audit helper and receipts;
+- `96bcf62535c1dbfbca92f3b1e55a47888b319b79` — Codex handoff;
+- health-only commits through `32be3ffa914224c573a4186de307a6b761330dc4`.
 
 Accepted evidence:
-- contract version `T013-DEC1-v1` was frozen before any primary scientific outcome;
-- the helper is metadata-only, standard-library/dependency-free, performs no I/O and does not compute or alter scientific metrics;
-- 6 tests / 58 deterministic fixture outcomes pass;
-- all 32 Gate1/Gate2/Lead-Gate3/Lead-Gate4/recorded-Gate4 combinations map to the fixed interpretation states;
-- all six FIN1/full-replay non-PASS cases block interpretation;
-- 15 missing-field fixtures plus shortened table/contrast fixtures are rejected rather than silently interpreted;
-- complete 15-cell metrics/CIs, all interaction contrasts, all three Gate-3 diagnostic families/common-support counts and provenance are mandatory;
-- Gate3 cannot rescue a Gate1/2 failure;
-- adding hypothetical `yolo_world=PASS` leaves every Grounding decision unchanged;
-- undefined/null diagnostic intervals remain disclosed rather than imputed or dropped;
-- frozen PLAN/analysis/COCO/diagnostic/freeze hashes match `6fec322...` and no frozen scientific file was changed.
+- fixed audit boundary was task-start HEAD `cca9af23452870d1a12ba1ab6a78ebe683e49cd1`;
+- all 17 protected Grounding scientific/provenance paths are byte-identical to freeze `6fec322...`, match their frozen hashes, and have no intermediate edit/revert in the merge-aware history traversal;
+- freeze-before-dispatch ancestry and exact release/run/`--freeze-commit` binding pass;
+- the earlier native/HF parity failures and native30 capacity reset remain preserved and the original Gate1/2/3/4 rules are unchanged;
+- all 97 unique post-freeze changed paths are classified, with zero unclassified paths and zero protected-scientific edits;
+- no committed evidence was found of a second primary dispatch, autonomous primary restart/resume, post-freeze scientific retuning, partial-primary scientific use, or YOLO scientific execution through the fixed audit boundary;
+- YOLO work remains P0/P1/P2 source/protocol/model-free preparation only;
+- the initially retained audit failure was a helper classification error that counted a pre-freeze `--smoke-only` run as a second primary; the minimal audit-only correction preserves the failed receipt and does not change frozen science/history/run state.
 
-The decision precedence is now outcome-independent: FIN1/full-cache replay failure blocks interpretation; Gate4 failure makes the result protocol-invalid; with Gate4 valid, either Gate1 or Gate2 failure yields `GROUNDING_PRIMARY_NOT_SUPPORTED`; only Gate1+Gate2 PASS can support the dual-shift premise, with Gate3 controlling mechanism-coherence wording only. YOLO can later test architecture specificity but can never relabel this Grounding result.
+This is evidence for later Gate4 judgment, not final Gate4 PASS. Git/logs cannot prove absence of off-repository behavior, and the final completed-run integrity/replay evidence is still required.
 
 ---
 
-# CURRENT 1-HOUR WORK PACKAGE — T013-G4A1
+# CURRENT 1-HOUR WORK PACKAGE — T013-CLOSE1
 
-**Title:** Pre-outcome Gate-4 Git/protocol-history and freeze-immutability audit
+**Title:** Outcome-blind completion barrier and post-run finalization dry-run
 
-**Time budget:** 45–60 minutes. This is a repository/provenance audit only. It must not read any active-primary prediction or scientific result content and it must **not** declare final Gate 4 PASS while the primary is still running.
+**Time budget:** 45–60 minutes. This package must not touch active-primary prediction/scientific contents and must not execute FIN1 or full replay on the still-running primary.
 
 ## Objective
-Before any Grounding-DINO primary outcome is available, produce an independent, machine-checkable **pre-outcome protocol-history audit** that fixes the factual evidence needed later for the Research Lead's Gate-4 history judgment: preregistration ordering, exact scientific-freeze immutability, dispatch binding, absence of post-freeze scientific edits/restarts, preservation of negative prerequisites, and separation of YOLO contingency preparation from the Grounding primary.
+Build and test a small, explicit **completion barrier / finalization state machine** that prevents the automatically generated primary analysis from being opened or interpreted before the already accepted FIN1 and full-cache replay gates have passed. The package should freeze the exact post-completion sequence now, while outcomes are still unavailable, and validate the sequence using synthetic metadata plus the already-completed 45-cell engineering smoke only.
 
-The output state must be only one of:
-- `PREOUTCOME_HISTORY_CLEAN` — all auditable history/freeze checks pass so far, with final Gate4 still pending completion/final Lead review; or
-- `PREOUTCOME_HISTORY_BLOCKER` — an exact history/freeze/protocol discrepancy is found and reported without repair.
+The barrier is a workflow/provenance safeguard, not a scientific analyzer. It must never compute AP, interactions, CIs or Gate1–3.
 
 ## Why this is the highest-value next step
-OPS1/STAT1/FIN1/REPRO1/DEC1 have already preflighted runtime integrity, analysis arithmetic, completion integrity, deterministic replay and outcome-independent interpretation. DEC1 explicitly requires a future `gate4_history_audit_ref`, but that audit has not yet been frozen. Doing the Git/protocol-history portion **now, before outcomes exist**, removes another source of retrospective judgment and can be completed without touching the active cache.
+OPS1, STAT1, FIN1, REPRO1, DEC1 and G4A1 have already removed the main runtime, arithmetic, cache-integrity, replay, interpretation and history ambiguities. The remaining practical risk is **completion-order leakage**: the frozen primary wrapper automatically runs `scripts.t013_analysis` immediately after inference succeeds, so a complete `analysis/results.json` may exist before the independent FIN1 and replay gates are run. We should freeze a mechanical rule now that says “result exists” does not mean “result may be opened.”
 
-The primary remains incomplete (`377/1000` at the latest committed health check), so running detector work, full-cache verification, YOLO environment setup or additional scientific diagnostics would have lower value and higher operational risk this hour.
+The primary is still active (`413/1000` at the latest committed health check), so this hour should prepare and dry-run the barrier without accessing the active cache or installing the YOLO contingency.
 
 ## Fixed inputs/settings
-Use only repository/history/provenance metadata from:
-- `AGENTS.md` and `coordination/PROTOCOL.md`;
-- native reset / prerequisite decisions already preserved in Git history;
-- immutable native freeze `6fec32243985ccc808123d851abf5f3dea10af99`;
-- dispatch `88668f76b22777459b5792dd28f88075f208c678`;
-- `research_log/t013/native30_freeze.json` at `6fec322...`, including its exact `code_sha256` protected-path list and model/data/vocabulary/selection/environment/PLAN hashes;
-- committed primary run metadata (`run.sh`, `meta.json`, `resolved_release.txt`, `freeze_sha256.txt`) only as text/provenance;
-- Git commit DAG, changed-path lists, coordination/research logs and accepted P0/P1/P2/OPS1/STAT1/FIN1/REPRO1/DEC1 evidence.
+Use only:
+- immutable Grounding freeze `6fec32243985ccc808123d851abf5f3dea10af99` and dispatch `88668f76b22777459b5792dd28f88075f208c678`;
+- exact run/release IDs above and committed `run.sh`/`meta.json`/freeze binding as text metadata;
+- accepted FIN1 artifacts (`PRIMARY_COMPLETION_VERIFIER.md`, verifier source/tests/receipt);
+- accepted REPRO1 artifacts (`ANALYSIS_REPLAY_PREFLIGHT.md`, replay/comparator source/receipt);
+- accepted DEC1 contract and G4A1 evidence;
+- the completed 45-cell engineering smoke and synthetic temporary directories for dry-run testing.
 
-Do not derive any fact from primary prediction arrays, AP tables, bootstrap outputs or detector diagnostics.
+The active primary may be queried only for the normal end-of-package health metadata: progress count, writer/tmux state, free bytes, wrapper-exit presence, and `analysis/results.json` **existence only**.
 
 ## Required work
-1. Create `research_log/t013/GATE4_PREOUTCOME_HISTORY_AUDIT.md` and a small standard-library / Git-CLI audit helper (for example `gate4_preoutcome_history_audit.py`) plus a machine-readable receipt.
-2. Freeze the exact protected scientific-artifact set. At minimum include:
-   - every path in `native30_freeze.json.code_sha256`;
-   - `research_log/t013/PLAN.md`;
-   - `research_log/t013/native30_freeze.json`;
-   - `research_log/t013/vocabulary_native30.json`;
-   - frozen image-selection/data/image-manifest artifacts referenced by the freeze (`image_selection.json` or the exact frozen selection path, `data_receipt.json`, `image_sha256.json`);
-   - any additional path whose hash is explicitly referenced by the freeze receipt.
-   Record the exact path and frozen SHA/hash source; do not invent a broader scientific set after inspecting outcomes.
-3. Verify the Git chronology/ancestry required by the protocol:
-   - the native30 prerequisite artifacts/tests/data were frozen at `6fec322...` before primary dispatch;
-   - `88668f7...` descends from / binds the exact freeze and launch metadata points to release `20260912-210306-tovd-native30-primary-freeze` and run `20260912-210355-tovd-native30-primary`;
-   - the earlier native/HF parity failure and HF-harness rejection are preserved in history rather than rewritten/hidden;
-   - the native30 reset happened before primary science and did not weaken Gates 1–4.
-4. Verify **byte immutability** of every protected scientific artifact from `6fec322...` to the task-start HEAD. Use exact `git show`/blob/SHA comparisons and require `git diff 6fec322...HEAD -- <protected paths>` to be empty. If a protected path changed, stop with a blocker; do not explain it away because current bytes happen to look equivalent.
-5. Classify all post-freeze T013-adjacent changed paths into auditable categories such as `coordination/reporting`, `primary provenance/log mirror`, `pre-outcome verifier/test`, or `YOLO contingency preparation`. Confirm no post-freeze change modifies the protected Grounding scientific implementation/configuration. Record the task-start HEAD so later changes can be audited incrementally rather than rerunning an ambiguous moving-window check.
-6. Audit committed history for prohibited primary-control events: no second primary dispatch/writer, no autonomous restart/resume after failure, no changed release/freeze binding, and no post-outcome threshold/vocabulary/corruption/gate repair. Be precise: Git/log evidence can establish what is committed; phrase absence claims as **no committed evidence of contamination** rather than claiming omniscient proof of off-repository behavior.
-7. Audit the evidence trail for outcome blindness up to task-start HEAD: coordination/health reports must consistently state that partial primary AP/AP50/interaction/CI/diagnostic/prediction content was not opened. This is an evidence-history check only; do not open primary outputs to verify the claim.
-8. Confirm YOLO-World activity is limited to the already-accepted pre-outcome P0/P1/P2 source/protocol/model-free preparation and that no YOLO scientific benchmark/checkpoint inference has been committed. A future YOLO result remains cross-backbone only.
-9. Produce a receipt with: task-start HEAD, freeze/dispatch ancestry result, protected path/hash table, exact post-freeze changed-path classification summary, duplicate-dispatch/restart evidence result, outcome-blindness evidence references, YOLO-separation result, and `active_primary_scientific_result_opened=false`, `active_primary_prediction_content_opened=false` for this audit.
-10. End with only the normal primary health metadata check: progress count, exact writer/tmux state, free bytes, wrapper-exit presence and primary-analysis-result **existence only**.
+1. Create `research_log/t013/FINALIZATION_BARRIER.md`, a small standard-library helper (for example `finalization_barrier.py`), deterministic tests/fixtures, and a machine-readable receipt. Do not modify the frozen runner or analysis.
+2. Encode a strict ordered state machine with at least these states:
+   - `PRIMARY_RUNNING`: primary writer/tmux still active or wrapper completion has not been established; no FIN1/replay/result access authorized.
+   - `PRIMARY_FAILED_RETURN_TO_LEAD`: nonzero/failure completion is observed; preserve artifacts and stop, with no restart/resume design.
+   - `PRIMARY_COMPLETE_UNVERIFIED`: wrapper completed successfully and writer is gone; a primary analysis file may exist, but its contents remain forbidden until FIN1 passes.
+   - `FIN1_PASS_READY_FOR_REPLAY`: only after an exact FIN1 PASS receipt bound to the completed primary cache/run/freeze.
+   - `REPLAY_PASS_READY_FOR_RESEARCH_LEAD`: only after an exact full-cache replay/comparison PASS bound to the same completed cache/freeze and to the primary auto-analysis output. This state authorizes **Research-Lead review**, not automatic scientific acceptance.
+   Any missing, stale, mismatched or FAIL/PENDING evidence must stay blocked and must not silently fall through.
+3. Because the frozen wrapper automatically performs analysis after inference, explicitly encode that `analysis/results.json` existence while in `PRIMARY_RUNNING` or `PRIMARY_COMPLETE_UNVERIFIED` is **not** a violation by itself and **not** permission to open/parse it. The barrier may stat/existence-check it only.
+4. Bind all evidence by immutable identifiers/hashes: run ID, release, freeze commit, cache path/receipt reference, FIN1 verifier version/hash, replay comparator/version/hash, and task-start HEAD. A PASS receipt from the 45-cell smoke or another run must never unlock the 1,000-image primary.
+5. Freeze the exact future finalization sequence as commands/templates, but **do not run it on the active primary**:
+   1. wait for frozen wrapper completion and writer/tmux termination;
+   2. if failure/nonzero -> return to Research Lead with preserved artifacts;
+   3. if success -> run accepted FIN1 against the completed 15,000-cell cache without opening science;
+   4. only on FIN1 PASS, run exact frozen `6fec322...` analysis again to a new scratch output directory and compare decoded output against the wrapper-produced analysis using the accepted REPRO1 comparison semantics;
+   5. only on replay/comparison PASS, produce a barrier receipt `REPLAY_PASS_READY_FOR_RESEARCH_LEAD`; only then may a later Research-Lead step open the complete scientific disclosure under DEC1.
+6. Test the barrier on deterministic synthetic metadata for at least: running; successful completion with no FIN1; FIN1 PASS but replay absent; replay PASS; stale FIN1 from wrong run; stale replay from wrong freeze/cache; FIN1 FAIL; replay FAIL; wrapper failure; and analysis-file-exists-early. Confirm no state below final readiness authorizes result-content access.
+7. Perform a safe dry-run using the **completed 45-cell engineering smoke only**. It is acceptable to reuse its already accepted FIN1/replay evidence or copies thereof solely to show run/hash binding and state transitions. Do not infer any primary scientific result from this smoke.
+8. Preserve an explicit negative control: mutate a scratch receipt run/freeze/cache binding and show the barrier rejects it. Do not mutate original receipts.
+9. End with only the normal active-primary health metadata check; do not run the barrier against active-primary scientific files beyond metadata/existence checks.
 
 ## Non-goals / prohibitions
-- Do not open/parse active-primary NPZs, predictions, AP/AP50/AR, interaction, bootstrap, CI or detector-diagnostic contents.
-- Do not run `t013_analysis`, FIN1, or full-cache replay while the writer is active.
-- Do not modify any frozen Grounding scientific source/config/PLAN/vocabulary/IDs/corruptions/seeds/thresholds/gates or active run artifacts.
-- Do not restart, resume, duplicate, compress, move, clean or otherwise repair the active primary.
-- Do not install/run YOLO-World, download/load a YOLO checkpoint, or perform YOLO image inference.
+- Do not open/parse active-primary NPZs, `analysis/results.json`, AP/AP50/AR, interaction, bootstrap, CI or detector diagnostics.
+- Do not run FIN1, full analysis replay or scientific comparator on the incomplete primary.
+- Do not modify the frozen Grounding runner/analysis/PLAN/vocabulary/IDs/corruptions/seeds/thresholds/gates or active run artifacts.
+- Do not restart/resume/duplicate/clean/compress/move the active primary.
+- Do not install/run YOLO-World, download/load a YOLO checkpoint or perform YOLO image inference.
 - Do not start T014.
-- Do not convert `PREOUTCOME_HISTORY_CLEAN` into final Gate4 PASS; final Gate4 requires completed-run recorded checks plus Research-Lead review under DEC1.
-- If any protected path/hash/order/dispatch-history check fails, preserve exact evidence and stop. Do not amend history or patch the freeze to make it pass.
+- Do not make the helper auto-open results or auto-declare scientific success. Its terminal positive state is only `REPLAY_PASS_READY_FOR_RESEARCH_LEAD`.
+- If the current frozen artifacts make an unambiguous safe barrier impossible, report `BLOCKED` with the exact schema/binding ambiguity instead of inventing new scientific fields or weakening FIN1/REPRO1.
 
 ## Acceptance / stop criteria
-**PASS / `PREOUTCOME_HISTORY_CLEAN`** only if all protected scientific artifacts are byte-identical to the `6fec322...` freeze, required commit ordering/ancestry and launch binding are exact, no committed duplicate/restart/retune event is found, the committed evidence trail remains outcome-blind, and YOLO remains a non-scientific contingency preparation lane. This is a pre-outcome audit, not final Gate4 acceptance.
+**PASS** only if deterministic fixtures and the completed-smoke dry-run show that no primary result-content access is authorized before exact same-run FIN1 PASS and exact same-run/freeze/cache full-replay PASS, stale/cross-run receipts are rejected, wrapper failure routes to Research Lead with no restart, and the barrier never changes scientific calculations or the active run.
 
-**STOP / `PREOUTCOME_HISTORY_BLOCKER`** on any protected-byte mismatch, freeze-before-dispatch violation, unexplained second primary dispatch/restart, committed post-freeze scientific-setting change, evidence of partial scientific outcome use, or YOLO scientific execution. Report the exact offending commit/path/event and await Research Lead; do not repair.
+**STOP / BLOCKED** on any inability to bind FIN1/replay evidence uniquely to the target completed run/cache/freeze, any need to modify frozen scientific code/run state, or any accidental active-primary scientific-content access. Preserve exact evidence and await Research Lead.
 
 ## Exact evidence to write back
 Commit under `research_log/t013/`:
-- `GATE4_PREOUTCOME_HISTORY_AUDIT.md`;
-- audit helper source;
-- `gate4_preoutcome_history_receipt.json` (plus a compact command/log text file if useful).
+- `FINALIZATION_BARRIER.md`;
+- barrier helper source;
+- deterministic tests/fixtures;
+- `finalization_barrier_receipt.json` plus compact dry-run logs if useful.
 
 Update `coordination/CODEX_TO_CHATGPT.md` with:
-- T013-G4A1 `PREOUTCOME_HISTORY_CLEAN` or `PREOUTCOME_HISTORY_BLOCKER` and evidence commit SHA;
+- T013-CLOSE1 PASS or BLOCKED and evidence commit SHA;
 - task-start HEAD and exact commands;
-- protected scientific path/hash table and whether every path is byte-identical to freeze;
-- freeze/dispatch ancestry and run/release binding evidence;
-- post-freeze changed-path category counts/list, explicitly identifying any scientific-path change (expected none);
-- duplicate dispatch/restart/retune audit result;
-- outcome-blindness evidence references and correctly scoped wording (`no committed evidence ...`);
-- YOLO separation audit result;
-- explicit confirmation that this task opened no active-primary prediction/scientific content and changed no frozen scientific/run state;
+- state-machine table and binding fields;
+- synthetic fixture counts/outcomes, including stale-receipt and early-analysis-existence cases;
+- completed 45-cell smoke dry-run result;
+- explicit confirmation that no active-primary prediction/scientific content was opened and no frozen scientific/run state changed;
 - end health metadata only.
 
-Stop after T013-G4A1 and await Research-Lead review. The running Grounding primary continues unchanged; full FIN1/replay, primary interpretation, YOLO runtime and T014 remain unauthorized until their existing completion/review conditions are met.
+Stop after T013-CLOSE1 and await Research-Lead review. Grounding primary continues unchanged. Full FIN1/replay on the primary, primary scientific interpretation, YOLO runtime and T014 remain unauthorized until their existing completion/review conditions are met.
