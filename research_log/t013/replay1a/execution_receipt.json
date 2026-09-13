@@ -116,9 +116,49 @@
           "bytes": null
         }
       }
+    },
+    {
+      "timestamp": "2026-09-14T05:18:45+08:00",
+      "pid": 1104124,
+      "tmux_rc": 0,
+      "tmux_stderr": "",
+      "ps_rc": 0,
+      "process": "1104124 1104122 Rl+  /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -m scripts.t013_analysis --annotations /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations/instances_val2017.json --run /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/cache --output /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/close1-primary-replay",
+      "exit_exists": false,
+      "exit_code": null,
+      "finish_exists": false,
+      "finished": null,
+      "top_level": {
+        "stdout.txt": {
+          "exists": true,
+          "bytes": 992
+        },
+        "stderr.txt": {
+          "exists": true,
+          "bytes": 0
+        },
+        "results.json": {
+          "exists": false,
+          "bytes": null
+        },
+        "paired_image_draws.npy": {
+          "exists": true,
+          "bytes": 8000128
+        },
+        "bootstrap_samples.npz": {
+          "exists": true,
+          "bytes": 239672
+        },
+        "diagnostics_per_image.npz": {
+          "exists": false,
+          "bytes": null
+        }
+      }
     }
   ],
-  "next_observations": "Two remaining ordinary heartbeat points near 05:18 and 05:34 +08. Final observation within 05:29:53-05:44:53; stop on natural exit0/anomaly, otherwise REPLAY_RUNNING_HANDOFF at final point. No new launch.",
+  "next_observations": "ONE remaining ordinary heartbeat point near 05:35 +08. Final observation within original 05:29:53-05:44:53 window; no clock reset. Stop on natural exit0/anomaly, otherwise REPLAY_RUNNING_HANDOFF. Never relaunch.",
   "prohibitions": "No stdout/stderr/scientific contents, comparator/envelope/DEC1/CF/MECH/YOLO/T014 or second launch. Preserve frozen CPU analysis/environment.",
-  "launch_evidence_commit": "688f36b"
+  "launch_evidence_commit": "688f36b",
+  "refreshed_lead_instruction": "0a8a4a25ebea8840f0bf964902bce988dd51aa95",
+  "first_observation_commit": "244f44a8c3d5b1300a3540ab90caf1545edb9885"
 }
