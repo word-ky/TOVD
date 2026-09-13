@@ -1,0 +1,516 @@
+{
+  "task": "T013-CF1",
+  "status": "PASS",
+  "task_start_head": "56c80996fdbe274f583596db018cd10cd64f755c",
+  "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+  "smoke_run": "20260912-205428-tovd-native30-pipeline-smoke",
+  "smoke_cache": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache",
+  "environment": {
+    "python": "3.12.12 | packaged by conda-forge | (main, Jan 26 2026, 23:51:32) [GCC 14.3.0]",
+    "executable": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python",
+    "torch": "2.4.0+cu121",
+    "numpy": "1.26.4",
+    "device": "cpu"
+  },
+  "source_sha256": {
+    "canonical_topk_counterfactual.py": "cef3e87ea1a05b40dc36522022b50280f35e8caf78dbcedcb7a47ce27cf01539",
+    "test_canonical_topk_counterfactual.py": "bd7e7995f9b3264c4d13113582f09443bfaf05f17cb7afd5d35aceace716daf8",
+    "validate_canonical_topk_smoke.py": "edc8f2b04b41e7267ab92dfa24bb6788e0c9aa1b9b2e9da8e4ea8f45b20087cf",
+    "CANONICAL_TOPK_COUNTERFACTUAL.md": "2925d9bf419febb3cbfb40e8393ec1002a7705e6cdfc1a63069b80e15eabc57a"
+  },
+  "bindings": {
+    "/home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze/scripts/t013_native_detector.py": {
+      "expected": "b49f23f131777f08e23131ad55a94d9211c33b1c759adf86c6b52e2b95c34126",
+      "actual": "b49f23f131777f08e23131ad55a94d9211c33b1c759adf86c6b52e2b95c34126"
+    },
+    "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/run_receipt.json": {
+      "expected": "a1ec8408c5294935759b462f4f0663b8a5e7b9620acebd61bceb977a509bf0e5",
+      "actual": "a1ec8408c5294935759b462f4f0663b8a5e7b9620acebd61bceb977a509bf0e5"
+    },
+    "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/cache_manifest.jsonl": {
+      "expected": "3d3623c2a6d78edd63b35c3efbdaf733df48eb1ffb9cefe36ea7e2daf2355a5f",
+      "actual": "3d3623c2a6d78edd63b35c3efbdaf733df48eb1ffb9cefe36ea7e2daf2355a5f"
+    }
+  },
+  "cells": [
+    {
+      "condition": "clean",
+      "vocabulary": "V0",
+      "image_id": 139,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/clean/V0/000000000139.npz",
+      "status": "PASS",
+      "stored_v0_identity": true,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "clean",
+      "vocabulary": "V0",
+      "image_id": 285,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/clean/V0/000000000285.npz",
+      "status": "PASS",
+      "stored_v0_identity": true,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "clean",
+      "vocabulary": "V0",
+      "image_id": 632,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/clean/V0/000000000632.npz",
+      "status": "PASS",
+      "stored_v0_identity": true,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "clean",
+      "vocabulary": "Vhard30",
+      "image_id": 139,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/clean/Vhard30/000000000139.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "clean",
+      "vocabulary": "Vhard30",
+      "image_id": 285,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/clean/Vhard30/000000000285.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "clean",
+      "vocabulary": "Vhard30",
+      "image_id": 632,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/clean/Vhard30/000000000632.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "clean",
+      "vocabulary": "Vrand30",
+      "image_id": 139,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/clean/Vrand30/000000000139.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "clean",
+      "vocabulary": "Vrand30",
+      "image_id": 285,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/clean/Vrand30/000000000285.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "clean",
+      "vocabulary": "Vrand30",
+      "image_id": 632,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/clean/Vrand30/000000000632.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "gaussian_noise",
+      "vocabulary": "V0",
+      "image_id": 139,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/gaussian_noise/V0/000000000139.npz",
+      "status": "PASS",
+      "stored_v0_identity": true,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "gaussian_noise",
+      "vocabulary": "V0",
+      "image_id": 285,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/gaussian_noise/V0/000000000285.npz",
+      "status": "PASS",
+      "stored_v0_identity": true,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "gaussian_noise",
+      "vocabulary": "V0",
+      "image_id": 632,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/gaussian_noise/V0/000000000632.npz",
+      "status": "PASS",
+      "stored_v0_identity": true,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "gaussian_noise",
+      "vocabulary": "Vhard30",
+      "image_id": 139,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/gaussian_noise/Vhard30/000000000139.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "gaussian_noise",
+      "vocabulary": "Vhard30",
+      "image_id": 285,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/gaussian_noise/Vhard30/000000000285.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "gaussian_noise",
+      "vocabulary": "Vhard30",
+      "image_id": 632,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/gaussian_noise/Vhard30/000000000632.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "gaussian_noise",
+      "vocabulary": "Vrand30",
+      "image_id": 139,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/gaussian_noise/Vrand30/000000000139.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "gaussian_noise",
+      "vocabulary": "Vrand30",
+      "image_id": 285,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/gaussian_noise/Vrand30/000000000285.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "gaussian_noise",
+      "vocabulary": "Vrand30",
+      "image_id": 632,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/gaussian_noise/Vrand30/000000000632.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "motion_blur",
+      "vocabulary": "V0",
+      "image_id": 139,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/motion_blur/V0/000000000139.npz",
+      "status": "PASS",
+      "stored_v0_identity": true,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "motion_blur",
+      "vocabulary": "V0",
+      "image_id": 285,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/motion_blur/V0/000000000285.npz",
+      "status": "PASS",
+      "stored_v0_identity": true,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "motion_blur",
+      "vocabulary": "V0",
+      "image_id": 632,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/motion_blur/V0/000000000632.npz",
+      "status": "PASS",
+      "stored_v0_identity": true,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "motion_blur",
+      "vocabulary": "Vhard30",
+      "image_id": 139,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/motion_blur/Vhard30/000000000139.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "motion_blur",
+      "vocabulary": "Vhard30",
+      "image_id": 285,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/motion_blur/Vhard30/000000000285.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "motion_blur",
+      "vocabulary": "Vhard30",
+      "image_id": 632,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/motion_blur/Vhard30/000000000632.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "motion_blur",
+      "vocabulary": "Vrand30",
+      "image_id": 139,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/motion_blur/Vrand30/000000000139.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "motion_blur",
+      "vocabulary": "Vrand30",
+      "image_id": 285,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/motion_blur/Vrand30/000000000285.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "motion_blur",
+      "vocabulary": "Vrand30",
+      "image_id": 632,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/motion_blur/Vrand30/000000000632.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "fog",
+      "vocabulary": "V0",
+      "image_id": 139,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/fog/V0/000000000139.npz",
+      "status": "PASS",
+      "stored_v0_identity": true,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "fog",
+      "vocabulary": "V0",
+      "image_id": 285,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/fog/V0/000000000285.npz",
+      "status": "PASS",
+      "stored_v0_identity": true,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "fog",
+      "vocabulary": "V0",
+      "image_id": 632,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/fog/V0/000000000632.npz",
+      "status": "PASS",
+      "stored_v0_identity": true,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "fog",
+      "vocabulary": "Vhard30",
+      "image_id": 139,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/fog/Vhard30/000000000139.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "fog",
+      "vocabulary": "Vhard30",
+      "image_id": 285,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/fog/Vhard30/000000000285.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "fog",
+      "vocabulary": "Vhard30",
+      "image_id": 632,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/fog/Vhard30/000000000632.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "fog",
+      "vocabulary": "Vrand30",
+      "image_id": 139,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/fog/Vrand30/000000000139.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "fog",
+      "vocabulary": "Vrand30",
+      "image_id": 285,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/fog/Vrand30/000000000285.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "fog",
+      "vocabulary": "Vrand30",
+      "image_id": 632,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/fog/Vrand30/000000000632.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "jpeg_compression",
+      "vocabulary": "V0",
+      "image_id": 139,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/jpeg_compression/V0/000000000139.npz",
+      "status": "PASS",
+      "stored_v0_identity": true,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "jpeg_compression",
+      "vocabulary": "V0",
+      "image_id": 285,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/jpeg_compression/V0/000000000285.npz",
+      "status": "PASS",
+      "stored_v0_identity": true,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "jpeg_compression",
+      "vocabulary": "V0",
+      "image_id": 632,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/jpeg_compression/V0/000000000632.npz",
+      "status": "PASS",
+      "stored_v0_identity": true,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "jpeg_compression",
+      "vocabulary": "Vhard30",
+      "image_id": 139,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/jpeg_compression/Vhard30/000000000139.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "jpeg_compression",
+      "vocabulary": "Vhard30",
+      "image_id": 285,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/jpeg_compression/Vhard30/000000000285.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "jpeg_compression",
+      "vocabulary": "Vhard30",
+      "image_id": 632,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/jpeg_compression/Vhard30/000000000632.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "jpeg_compression",
+      "vocabulary": "Vrand30",
+      "image_id": 139,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/jpeg_compression/Vrand30/000000000139.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "jpeg_compression",
+      "vocabulary": "Vrand30",
+      "image_id": 285,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/jpeg_compression/Vrand30/000000000285.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    },
+    {
+      "condition": "jpeg_compression",
+      "vocabulary": "Vrand30",
+      "image_id": 632,
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/raw/jpeg_compression/Vrand30/000000000632.npz",
+      "status": "PASS",
+      "stored_v0_identity": null,
+      "canonical_reference_exact": true,
+      "scores_boxes_exact": true
+    }
+  ],
+  "scope": {
+    "active_primary_cache_accessed": false,
+    "active_primary_scientific_content_opened": false,
+    "annotations_or_coco_metrics": false,
+    "fin1_or_analysis_replay": false,
+    "detector_inference": false,
+    "run_mutation": false,
+    "yolo_runtime": false,
+    "t014_execution": false,
+    "primary_scientific_execution_authorized": false,
+    "primary_gates_or_decision_changed": false
+  },
+  "synthetic_tests": {
+    "command": [
+      "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python",
+      "-m",
+      "unittest",
+      "-v",
+      "test_canonical_topk_counterfactual"
+    ],
+    "count": 5,
+    "exit_code": 0,
+    "log_sha256": "6d4934c6188a7562ff99e53c7cc4684236d548d38c3de8c1f01b32d47b1152f4"
+  },
+  "v0_identity_exact_count": 15,
+  "hard_random_reference_exact_count": 30,
+  "labels_canonical_all": true,
+  "selected_scores_boxes_exact_all": true,
+  "finished_utc": "2026-09-13T07:31:07.034186+00:00"
+}

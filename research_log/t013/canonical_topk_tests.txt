@@ -1,0 +1,10 @@
+test_distractor_crowd_out (test_canonical_topk_counterfactual.CanonicalTopkTests.test_distractor_crowd_out) ... ok
+test_exact_index_mapping (test_canonical_topk_counterfactual.CanonicalTopkTests.test_exact_index_mapping) ... ok
+test_repeated_calls_with_ties (test_canonical_topk_counterfactual.CanonicalTopkTests.test_repeated_calls_with_ties) ... ok
+test_score_and_box_identity_and_no_mutation (test_canonical_topk_counterfactual.CanonicalTopkTests.test_score_and_box_identity_and_no_mutation) ... ok
+test_v0_original_selection (test_canonical_topk_counterfactual.CanonicalTopkTests.test_v0_original_selection) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.090s
+
+OK
