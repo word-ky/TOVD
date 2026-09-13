@@ -1,0 +1,2 @@
+0
+a22ac31a351080b8860838beda92eb318c2a7ddfb422e2a8be29082388110eef  /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/close1-primary-replay/comparison_receipt.json

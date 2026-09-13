@@ -1,0 +1,35 @@
+{
+  "checks": {
+    "comparator": {
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/research_log/t013/analysis_replay_compare.py",
+      "expected": "6270a32096c536deac8ec878d3cfbfeb1cc067d428781ab7beb09e78cb8acb76",
+      "actual": "6270a32096c536deac8ec878d3cfbfeb1cc067d428781ab7beb09e78cb8acb76",
+      "match": true
+    },
+    "fin1": {
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/fin1/primary_completion_receipt.json",
+      "expected": "ade691d9765ee09b740ba7a7e24262ee55b272d82d5fd79889659fd6d67df63e",
+      "actual": "ade691d9765ee09b740ba7a7e24262ee55b272d82d5fd79889659fd6d67df63e",
+      "match": true
+    },
+    "run_receipt": {
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/cache/run_receipt.json",
+      "expected": "75518df05b4a4c15a4c20d32a7764073d21c57c9e8b9880b4d737259c1b35366",
+      "actual": "75518df05b4a4c15a4c20d32a7764073d21c57c9e8b9880b4d737259c1b35366",
+      "match": true
+    },
+    "manifest": {
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/cache/cache_manifest.jsonl",
+      "expected": "88a31a45712f814d940ef894d0213108f9dca63c845abca01f7133ba44162adc",
+      "actual": "88a31a45712f814d940ef894d0213108f9dca63c845abca01f7133ba44162adc",
+      "match": true
+    }
+  },
+  "left": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/analysis",
+  "right": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/close1-primary-replay",
+  "left_exists": true,
+  "right_exists": true,
+  "comparison_preexists": false,
+  "interpreter": "3.12.12 | packaged by conda-forge | (main, Jan 26 2026, 23:51:32) [GCC 14.3.0]",
+  "status": "PASS"
+}

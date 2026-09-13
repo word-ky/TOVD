@@ -1,0 +1,319 @@
+{
+  "status": "PASS",
+  "artifacts": {
+    "results.json": {
+      "present_nonempty": true,
+      "equal": true,
+      "left_bytes": 15857,
+      "right_bytes": 15857,
+      "top_level_keys_equal": true,
+      "fields": {
+        "kind": true,
+        "image_count": true,
+        "conditions": true,
+        "vocabularies": true,
+        "metric_order": true,
+        "point_metrics": true,
+        "metric_ci95": true,
+        "replicates": true,
+        "seed": true,
+        "margin_common_localized_gt_counts": true,
+        "assessment": true
+      }
+    },
+    "paired_image_draws.npy": {
+      "present_nonempty": true,
+      "equal": true,
+      "left_bytes": 8000128,
+      "right_bytes": 8000128,
+      "left_shape": [
+        1000,
+        1000
+      ],
+      "right_shape": [
+        1000,
+        1000
+      ],
+      "left_dtype": "int64",
+      "right_dtype": "int64",
+      "nan_masks_equal": true
+    },
+    "bootstrap_samples.npz": {
+      "present_nonempty": true,
+      "equal": true,
+      "left_bytes": 796547,
+      "right_bytes": 796547,
+      "keys_equal": true,
+      "arrays": {
+        "margins": {
+          "equal": true,
+          "left_shape": [
+            1000,
+            4
+          ],
+          "right_shape": [
+            1000,
+            4
+          ],
+          "left_dtype": "float64",
+          "right_dtype": "float64",
+          "nan_masks_equal": true
+        },
+        "metrics": {
+          "equal": true,
+          "left_shape": [
+            1000,
+            5,
+            3,
+            8
+          ],
+          "right_shape": [
+            1000,
+            5,
+            3,
+            8
+          ],
+          "left_dtype": "float64",
+          "right_dtype": "float64",
+          "nan_masks_equal": true
+        }
+      }
+    },
+    "diagnostics_per_image.npz": {
+      "present_nonempty": true,
+      "equal": true,
+      "left_bytes": 93358,
+      "right_bytes": 93358,
+      "keys_equal": true,
+      "arrays": {
+        "c0_v0": {
+          "equal": true,
+          "left_shape": [
+            1000,
+            5
+          ],
+          "right_shape": [
+            1000,
+            5
+          ],
+          "left_dtype": "float64",
+          "right_dtype": "float64",
+          "nan_masks_equal": true
+        },
+        "c0_v1": {
+          "equal": true,
+          "left_shape": [
+            1000,
+            5
+          ],
+          "right_shape": [
+            1000,
+            5
+          ],
+          "left_dtype": "float64",
+          "right_dtype": "float64",
+          "nan_masks_equal": true
+        },
+        "c0_v2": {
+          "equal": true,
+          "left_shape": [
+            1000,
+            5
+          ],
+          "right_shape": [
+            1000,
+            5
+          ],
+          "left_dtype": "float64",
+          "right_dtype": "float64",
+          "nan_masks_equal": true
+        },
+        "c1_v0": {
+          "equal": true,
+          "left_shape": [
+            1000,
+            5
+          ],
+          "right_shape": [
+            1000,
+            5
+          ],
+          "left_dtype": "float64",
+          "right_dtype": "float64",
+          "nan_masks_equal": true
+        },
+        "c1_v1": {
+          "equal": true,
+          "left_shape": [
+            1000,
+            5
+          ],
+          "right_shape": [
+            1000,
+            5
+          ],
+          "left_dtype": "float64",
+          "right_dtype": "float64",
+          "nan_masks_equal": true
+        },
+        "c1_v2": {
+          "equal": true,
+          "left_shape": [
+            1000,
+            5
+          ],
+          "right_shape": [
+            1000,
+            5
+          ],
+          "left_dtype": "float64",
+          "right_dtype": "float64",
+          "nan_masks_equal": true
+        },
+        "c2_v0": {
+          "equal": true,
+          "left_shape": [
+            1000,
+            5
+          ],
+          "right_shape": [
+            1000,
+            5
+          ],
+          "left_dtype": "float64",
+          "right_dtype": "float64",
+          "nan_masks_equal": true
+        },
+        "c2_v1": {
+          "equal": true,
+          "left_shape": [
+            1000,
+            5
+          ],
+          "right_shape": [
+            1000,
+            5
+          ],
+          "left_dtype": "float64",
+          "right_dtype": "float64",
+          "nan_masks_equal": true
+        },
+        "c2_v2": {
+          "equal": true,
+          "left_shape": [
+            1000,
+            5
+          ],
+          "right_shape": [
+            1000,
+            5
+          ],
+          "left_dtype": "float64",
+          "right_dtype": "float64",
+          "nan_masks_equal": true
+        },
+        "c3_v0": {
+          "equal": true,
+          "left_shape": [
+            1000,
+            5
+          ],
+          "right_shape": [
+            1000,
+            5
+          ],
+          "left_dtype": "float64",
+          "right_dtype": "float64",
+          "nan_masks_equal": true
+        },
+        "c3_v1": {
+          "equal": true,
+          "left_shape": [
+            1000,
+            5
+          ],
+          "right_shape": [
+            1000,
+            5
+          ],
+          "left_dtype": "float64",
+          "right_dtype": "float64",
+          "nan_masks_equal": true
+        },
+        "c3_v2": {
+          "equal": true,
+          "left_shape": [
+            1000,
+            5
+          ],
+          "right_shape": [
+            1000,
+            5
+          ],
+          "left_dtype": "float64",
+          "right_dtype": "float64",
+          "nan_masks_equal": true
+        },
+        "c4_v0": {
+          "equal": true,
+          "left_shape": [
+            1000,
+            5
+          ],
+          "right_shape": [
+            1000,
+            5
+          ],
+          "left_dtype": "float64",
+          "right_dtype": "float64",
+          "nan_masks_equal": true
+        },
+        "c4_v1": {
+          "equal": true,
+          "left_shape": [
+            1000,
+            5
+          ],
+          "right_shape": [
+            1000,
+            5
+          ],
+          "left_dtype": "float64",
+          "right_dtype": "float64",
+          "nan_masks_equal": true
+        },
+        "c4_v2": {
+          "equal": true,
+          "left_shape": [
+            1000,
+            5
+          ],
+          "right_shape": [
+            1000,
+            5
+          ],
+          "left_dtype": "float64",
+          "right_dtype": "float64",
+          "nan_masks_equal": true
+        },
+        "margin_contrast_sum_count": {
+          "equal": true,
+          "left_shape": [
+            4,
+            1000,
+            2
+          ],
+          "right_shape": [
+            4,
+            1000,
+            2
+          ],
+          "left_dtype": "float64",
+          "right_dtype": "float64",
+          "nan_masks_equal": true
+        }
+      }
+    }
+  },
+  "comparison": "exact decoded JSON/arrays with equal NaNs; no compressed-byte equality requirement"
+}
