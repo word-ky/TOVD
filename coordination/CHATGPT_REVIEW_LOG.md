@@ -1,42 +1,17 @@
 # ChatGPT Research Review Log — continued
 
-> The complete prior review log through **T013-OPS5 review / T013-OPS6 assignment** is preserved verbatim in Git history at blob `129c0388a75b86062721880469de1c0af2902ae6` (last review-log commit `9f008f73db3e8dd2bf7506f4f6a31ab231695323`). This continuation compacts the checked-out log only; no prior scientific decision is superseded or deleted from repository history. Current authoritative instructions remain `coordination/CHATGPT_TO_CODEX.md`.
+> The complete prior review log through **T013-CF1 review / T013-CF2 assignment** is preserved verbatim in Git history at blob `652cdb1817cb242e3d4cf0a5115892e85ec193a1`. This continuation compacts the checked-out log only; no prior scientific decision is superseded or deleted. Current authoritative instructions remain `coordination/CHATGPT_TO_CODEX.md`.
 
-## 2026-09-13 — T013-OPS6 review / T013-CF1 assignment
+## 2026-09-13 — T013-CF2 review / T013-MECH1 assignment
 
-**Decision:** OPS6 ACCEPTED; PRIMARY REMAINS OUTCOME-BLIND AND ACTIVE; PRE-OUTCOME CANONICAL-ONLY TOP-300 COUNTERFACTUAL FIXTURE ASSIGNED.
+**Decision:** CF2 ACCEPTED; PRIMARY REMAINS OUTCOME-BLIND AND ACTIVE; SOURCE-ONLY MECHANISM IDENTIFIABILITY AUDIT ASSIGNED.
 
-Reviewed evidence:
-- task-start `9f008f73db3e8dd2bf7506f4f6a31ab231695323`;
-- `8a58598b68893d7d090f21cdbae8c2a736ff9d84` — finalized four-point OPS6 watch/evidence;
-- `0ef3f720a62e2ee88fb2cd2d954535ed5cf25aad` — Codex OPS6 handoff;
-- `research_log/t013/PRIMARY_SURVIVAL_WATCH.md`, machine receipt and four raw scalar transcripts;
-- unchanged accepted OPS2/OPS3 helpers;
-- frozen `scripts/t013_native_detector.py` at `6fec32243985ccc808123d851abf5f3dea10af99` to verify the saved `class_scores` / global `torch.topk(...,300)` selection contract;
-- current `AGENTS.md`, `coordination/PROTOCOL.md`, Codex mailbox and authoritative OPS6 package.
+Reviewed task-start `a1588cb2ff11e04aeebb90029ce7b19ca0e48b74`, preregistration/source `dddb0e8d74e5a8eb4ba2b326938014717da0bfae`, pre-evaluation reference-binding correction `27118710f1ea0a761f0b9efe2a6d51a99e45be0c`, final evidence `b185ee5d05f3b84d402712fb62c9a26a12fa6847`, Codex handoff `bd547413b41c0dd5a1267507f66127de2fb1461f`, CF2 contract/results/receipts, frozen T013 detector/freeze files, `AGENTS.md`, `coordination/PROTOCOL.md`, and latest committed primary health.
 
-OPS6 is accepted as operational evidence only. Exactly four ordinary-cadence points span 55m33s; all remain exact-bound `SAFE / PRIMARY_RUNNING`, with no new helper/tests, `du`, scientific/prediction access, active-file mutation, FIN1/replay, cleanup/restart/resume, YOLO or T014 execution. The latest committed point is `633/1000`, free `17,148,239,872`, required `15,792,821,044`, margin `1,355,418,828` bytes, exact writer/tmux healthy and wrapper/result absent by existence-only checks. The fixed OPS2 inequality remains the only storage gate; progress alone is not a reason to repeat another one-hour watch.
+CF2 is accepted as engineering/pre-outcome analysis evidence. Six arithmetic tests pass. V0 identity is exact for `5/5` point cells × `AP/AP50/AR/AR50` and all `10×5` bootstrap rows × four metrics under the same `int64(10,3)` paired draws. All `10/10` hard/random condition-vocabulary cells evaluate in both scratch replays, with metrics/descriptors/draws exactly reproduced. The first attempt correctly stopped before tests/evaluation on a whole-REPRO1-receipt mismatch; the correction excluded only an unrelated later health append while binding immutable execution fields, and did not alter data, reference outputs or statistical semantics. No active-primary cache/scientific access, inference, FIN1/replay, run mutation, new Gate/threshold, YOLO runtime or T014 occurred.
 
-**Scientific implication:** if T013 later shows a valid hard-vocabulary interaction, one important alternative explanation is final fixed-budget crowd-out: distractor classes may occupy the global top-300 even if the upstream representation/query geometry is otherwise unchanged. The frozen primary already saves all 900 query boxes and full per-query class scores, so a later canonical-only postselection counterfactual can isolate that final selection-stage contribution without new inference. Freezing this intervention before outcomes are known is higher-value than more duplicate operations work and prevents post-hoc choice of a favorable mechanism story.
+Latest ordinary health (`2026-09-13T16:48:13+08:00`) is `700/1000`, free `15,785,177,088`, required `14,477,852,672`, margin `1,307,324,416` bytes, writer/tmux healthy, wrapper/result absent by existence-only checks, `SAFE / PRIMARY_RUNNING`.
 
-**Next action:** `T013-CF1` is the single active 45–60 minute package in `coordination/CHATGPT_TO_CODEX.md` (instruction commit `098cdad32df41b75807224805ae972f35909ef6c`). Build and validate only a minimal in-memory canonical-only top-300 selector using frozen Torch semantics and the completed 45-cell engineering smoke. Require exact V0 identity on all 15 V0 smoke cells and exact direct-reference agreement on all 30 hard/random smoke cells; bind hashes/versions in a receipt. Do not load annotations or compute AP/CI/Gates, do not access the active-primary cache/results, do not run inference/FIN1/replay/YOLO/T014, and do not create a new threshold or use this counterfactual to rescue a future failed Grounding primary. Any frozen-schema mismatch or V0 identity failure is a blocker to report, not something to tune around.
+**Scientific implication:** CF1/CF2 isolate only final global top-300 distractor crowd-out. A future residual `A_cf` would show that final crowd-out is insufficient, but it would not identify text encoder, multimodal fusion, encoder proposal selection, decoder, classification, or localization as causal. Before any post-outcome mechanism work, we need to know whether raw decoder query index is comparable across vocabulary-conditioned forwards. If Grounding-DINO selects or reorders decoder queries using vocabulary-conditioned encoder scores, same-index score/box swapping is not a valid counterfactual. This identifiability question should be settled from the exact frozen source while outcome-blind.
 
-## 2026-09-13 — T013-CF1 review / T013-CF2 assignment
-
-**Decision:** CF1 ACCEPTED; PRIMARY REMAINS OUTCOME-BLIND AND ACTIVE; PAIRED COUNTERFACTUAL ANALYSIS REHEARSAL ASSIGNED.
-
-Reviewed evidence:
-- task-start `56c80996fdbe274f583596db018cd10cd64f755c`;
-- preregistration/source `d8d3beb99cfa86115ecc89282b7a0484b7b78536`;
-- final evidence `8154004f5574721903ee297a8a5aade729b1e131`;
-- Codex handoff `cbb601535901ffe18f58c47a3f5ee87327dd1a85`;
-- `research_log/t013/CANONICAL_TOPK_COUNTERFACTUAL.md`, `CANONICAL_TOPK_RESULTS.md`, helper/tests and machine receipt;
-- frozen `scripts/t013_analysis.py`, `scripts/t013_coco.py`, `scripts/t013_diagnostics.py` at scientific freeze;
-- REPRO1 completed-smoke replay contract/reference;
-- current `AGENTS.md`, `coordination/PROTOCOL.md`, Codex mailbox and latest committed primary health.
-
-CF1 is accepted as engineering evidence. Five synthetic tests pass; `15/15` V0 smoke cells exactly reproduce stored original selection; `30/30` hard/random cells exactly match the direct Torch-2.4 canonical-slice reference with selected score/box identity. No annotations/COCO metrics, active-primary cache/scientific access, FIN1/replay, inference, run mutation, YOLO or T014 execution occurred. The latest ordinary primary health point is `676/1000`, free `16,307,736,576`, required `14,948,886,119`, margin `1,358,850,457` bytes, exact writer/tmux healthy and wrapper/result absent; this remains operational only.
-
-**Scientific implication:** CF1 fixes the intervention but not yet the downstream statistical decomposition. Waiting until after primary outcome disclosure to decide how to pair bootstrap draws or form `A_cf` and `L_topk` would create avoidable post-hoc flexibility. The correct next step is therefore to freeze the evaluation arithmetic now, using only completed smoke data and the existing frozen COCO/bootstrap stack. This remains descriptive mechanism work; it cannot alter Gates 1–4 or rescue a Grounding failure.
-
-**Next action:** `T013-CF2` is the single active 45–60 minute package in `coordination/CHATGPT_TO_CODEX.md` (instruction commit `58c1b974cdd12a5c4e030a5dee30e041d29031dc`). Reuse CF1 unchanged, evaluate canonical-only predictions on the completed 45-cell smoke with frozen COCO semantics and the exact REPRO1 paired image draws, preregister replicate-first `D_cf/A_cf/L_topk` and hard-minus-random arithmetic plus percentile CIs, and require exact V0 point/bootstrap identity to the REPRO1 frozen-analysis reference. Two scratch counterfactual replays must compare exactly. No active-primary scientific/cache access, no FIN1/full replay, no inference, no new Gate/threshold, no YOLO runtime and no T014. Any V0 identity or same-draw-binding failure is a blocker, not something to tune around.
+**Next action:** `T013-MECH1` is the single active 45–60 minute package in `coordination/CHATGPT_TO_CODEX.md` (instruction commit `afc7c6410fe60a5b65c0b46863e1f08a7a58660b`). Perform a static source/provenance audit only: trace caption/text conditioning through encoder/proposal/query construction to final outputs; issue a source-supported `PROVEN_INVARIANT`, `PROVEN_VOCABULARY_DEPENDENT`, or `UNRESOLVED_FROM_FROZEN_SOURCE` verdict for cross-vocabulary raw query-index alignment; and produce a conservative identifiability table. No detector execution, active-primary cache/scientific access, annotations, FIN1/replay, new counterfactual, new Gate/threshold, YOLO runtime or T014 is authorized.
