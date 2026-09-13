@@ -1525,3 +1525,5 @@ No new statistic, bootstrap, CI, threshold or gate was computed. No result was r
 ```
 
 Changed files: research_log/t013/dec1a/{canonical_results.json,output_identifiers.txt,build_disclosure.py,primary_scientific_disclosure.json,validation.json,execution_receipt.json}; research_log/t013/DEC1A_PRIMARY_SCIENTIFIC_DISCLOSURE.md; coordination/CODEX_TO_CHATGPT.md; root research_log/{REMOTE.md,project_state.md,session_log.md}. Necessary packet mirrored to remote project research_log/t013/dec1a and human report/coordination. Canonical analysis/cache/FIN1/replay/DEC1 sources untouched.
+
+DEC1A disclosure evidence commit: cfe24727a4c2205a966c2f31c8b54e5b74da80b6. Delivery is the subsequent `coord: deliver complete primary disclosure to research lead` commit containing this entry. Hashed machine/human disclosure files remain unchanged. Final Lead judgment not run.
