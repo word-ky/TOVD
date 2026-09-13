@@ -1,0 +1,114 @@
+{
+  "sources": {
+    "primary_survival_guard.py": {
+      "evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a",
+      "git_content_sha256": "8d58f01259387c4327cee0f1ac05e4dfef1dd3fd47a4c8b0f6542820202852c6",
+      "unchanged": true
+    },
+    "primary_incident_snapshot.py": {
+      "evidence_commit": "6ecbc36bd66eb2e4ca6057f9a33c81863ed7eff7",
+      "git_content_sha256": "e2573a10683d5dbdf9eb43cd9a5c9d6e13a8966df616646cbbb8f03d8dcc3e82",
+      "unchanged": true
+    },
+    "finalization_barrier.py": {
+      "evidence_commit": "0acbd4f6417d2946f2009979ec8461df351eb07b",
+      "git_content_sha256": "a227933e266090e1adab5395409ddf8ab037beb43c27f92b96713586d03d6c14",
+      "unchanged": true
+    }
+  },
+  "evaluation": "accepted canonical_snapshot(raw) -> OPS2; CLOSE1 operational state semantics read from unchanged finalization_barrier.evaluate. No completed-cache binding hashes collected or fabricated; no full finalization evaluate/FIN1/replay invoked.",
+  "scope": {
+    "scientific_content_opened": false,
+    "fin1_or_replay": false,
+    "deletion_or_cleanup": false,
+    "du_or_scan": false,
+    "restart_or_resume": false,
+    "new_threshold_or_forecast": false,
+    "frozen_source_mutated": false,
+    "yolo_or_t014": false
+  },
+  "scalar_collection_commands": [
+    "date -Is",
+    "tmux has-session -t autodl-20260912-210355-tovd-native30-primary; echo TMUX_RC=$?",
+    "ps -p 721181 -o pid=,stat=; echo WRITER_RC=$?",
+    "grep completed_images /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/train.log | tail -n 1",
+    "grep \"^\\[autodl\\] exit_code=\" /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/train.log",
+    "LC_ALL=C df -B1 --output=avail /home/wenchang/asdasdsad/wjq/TOVD",
+    "if test -f /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/analysis/results.json; then echo ANALYSIS_EXISTS; else echo ANALYSIS_ABSENT; fi"
+  ],
+  "task": "T013-CLOSE2",
+  "status": "IN_PROGRESS",
+  "task_start_head": "53dcd036cbf8c72df08d9faaa57c015e4282015d",
+  "lead_instruction_commit": "0155bde95cff9831d44cfa151235623a773867a9",
+  "points": [
+    {
+      "schema_version": "T013-OPS3-v1",
+      "binding": {
+        "repository": "https://github.com/word-ky/TOVD.git",
+        "project_root": "/home/wenchang/asdasdsad/wjq/TOVD",
+        "run_id": "20260912-210355-tovd-native30-primary",
+        "release_id": "20260912-210306-tovd-native30-primary-freeze",
+        "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+        "dispatch_commit": "88668f76b22777459b5792dd28f88075f208c678",
+        "writer_pid": 721181,
+        "tmux_session": "autodl-20260912-210355-tovd-native30-primary",
+        "ops2_evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a"
+      },
+      "timestamp": "2026-09-14T00:47:10+08:00",
+      "git_head": "53dcd036cbf8c72df08d9faaa57c015e4282015d",
+      "raw_sources": {
+        "binding": "accepted primary dispatch 88668f76b22777459b5792dd28f88075f208c678",
+        "timestamp": "CLOSE2 point1 date -Is",
+        "git_head": "local git rev-parse HEAD 53dcd036cbf8c72df08d9faaa57c015e4282015d",
+        "writer": "CLOSE2 point1 exact ps -p721181 Rl+ row WRITER_RC=0",
+        "tmux": "CLOSE2 point1 exact tmux has-session TMUX_RC=0",
+        "progress": "CLOSE2 point1 exact run train.log latest completed_images scalar",
+        "wrapper_exit": "CLOSE2 point1 anchored wrapper exit grep no lines",
+        "filesystem": "CLOSE2 point1 df -B1 --output=avail project root",
+        "analysis_existence": "CLOSE2 point1 exact test -f analysis/results.json conditional ANALYSIS_ABSENT"
+      },
+      "progress": {
+        "completed_images": 984,
+        "total_images": 1000,
+        "seconds": 99725.94160745101
+      },
+      "writer_pid_exists": true,
+      "writer_state": "Rl+",
+      "analysis_result_exists": false,
+      "ops2": {
+        "status": "SAFE",
+        "process_status": "PRIMARY_RUNNING",
+        "storage": {
+          "closed_image_count": 984,
+          "free_bytes": 184319975424,
+          "remaining": 16,
+          "projected_remaining": 261685248,
+          "required_free": 8903956890,
+          "margin": 175416018534,
+          "status": "SAFE"
+        },
+        "writer_alive": true,
+        "tmux_alive": true,
+        "wrapper_exit_code": null
+      },
+      "status": "SAFE",
+      "scope_attestation": {
+        "scientific_payloads_opened": false,
+        "cache_recursively_scanned": false,
+        "experiment_mutated": false
+      },
+      "scientific_content_access_authorized": false,
+      "fin1_execution_authorized": false,
+      "remediation_authorized": false,
+      "close1_state": "PRIMARY_RUNNING",
+      "close1_reason": "successful wrapper exit0 and exact writer/tmux termination not established; result existence is irrelevant"
+    }
+  ],
+  "point_count": 1,
+  "spacing_seconds": [],
+  "window_seconds": 0,
+  "operational_events": [
+    "Previously unexplained free-space increase persists: current df184319975424 bytes. No causal attribution or investigation. No connection failure."
+  ],
+  "continuation": "Resume existing15min heartbeat, up to4total points over45-60min from00:47:10+08 (final01:32:10-01:47:10), stopping immediately on accepted OPS2 incident or exact CLOSE1 PRIMARY_COMPLETE_UNVERIFIED. No FIN1, cache hashing, replay, science or remediation. 1000 images alone never means completion. No second hour."
+}
