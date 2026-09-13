@@ -1432,3 +1432,7 @@ forecast,depletion-rate or time-to-failure rule. Existing primary continues
 unchanged; future GPU preference retained. Scientific results remain unopened.
 
 Final evidence commit: 7909fa4009ceda78377eddcbd0e9b764bfc9f287.
+
+
+## T013-OPS9 IN_PROGRESS — point1/4 (2026-09-13T21:52:44+08:00)
+Lead8dfea8e/fe6fef0 accepts OPS8, assigns OPS9. Task-startfe6fef0dd2e7a7a1066eaf4af9eb1ddd20667e71. Source of truth research_log/t013/ops9_completion_watch_receipt.json; point1 raw+OPS3 snapshotops9_point1_*.json. OPS2e380d14/OPS3 6ecbc36/CLOSE1 0acbd4f local bytes verified equal accepted Git after lineending normalization; no edits or repeated tests. Exactprimary20260912-210355-tovd-native30-primary,writer721181 Rl+/tmuxalive,882/1000 at89266.92687750404s,wrapperexitabsent,analysis/results.json absent(existenceonly),free11552944128,remaining118,projected1929928704,required10905849037,margin647095091,SAFE/PRIMARY_RUNNING; CLOSE1 semantic statePRIMARY_RUNNING because successfulwrapperexit0+termination not established. Full finalization evaluator not invoked (completedcachehashes unavailable and not fabricated); noFIN1/replay. OPS9 incomplete: resume ordinary15min heartbeat, up to4total points45–60min from21:52:44 (final22:37:44–22:52:44). Any established storage/process/completion state -> OPS3 preserve/stop/returnLead immediately; no cleanup/FIN1 even ifcomplete. No newmonitor/scheduler/threshold/forecast/du/scan/deletion/restart/resume/scientificcontent/runmutation/YOLO/T014. Existingprimary frozenCPU unchanged; futureGPUpreference retained.

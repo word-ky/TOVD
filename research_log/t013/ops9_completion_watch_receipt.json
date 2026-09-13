@@ -1,0 +1,111 @@
+{
+  "task": "T013-OPS9",
+  "status": "IN_PROGRESS",
+  "task_start_head": "fe6fef0dd2e7a7a1066eaf4af9eb1ddd20667e71",
+  "lead_instruction_commit": "8dfea8e8983d93efd2f0435104406472d0fe6598",
+  "sources": {
+    "primary_survival_guard.py": {
+      "evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a",
+      "git_content_sha256": "8d58f01259387c4327cee0f1ac05e4dfef1dd3fd47a4c8b0f6542820202852c6",
+      "unchanged": true
+    },
+    "primary_incident_snapshot.py": {
+      "evidence_commit": "6ecbc36bd66eb2e4ca6057f9a33c81863ed7eff7",
+      "git_content_sha256": "e2573a10683d5dbdf9eb43cd9a5c9d6e13a8966df616646cbbb8f03d8dcc3e82",
+      "unchanged": true
+    },
+    "finalization_barrier.py": {
+      "evidence_commit": "0acbd4f6417d2946f2009979ec8461df351eb07b",
+      "git_content_sha256": "a227933e266090e1adab5395409ddf8ab037beb43c27f92b96713586d03d6c14",
+      "unchanged": true
+    }
+  },
+  "points": [
+    {
+      "schema_version": "T013-OPS3-v1",
+      "binding": {
+        "repository": "https://github.com/word-ky/TOVD.git",
+        "project_root": "/home/wenchang/asdasdsad/wjq/TOVD",
+        "run_id": "20260912-210355-tovd-native30-primary",
+        "release_id": "20260912-210306-tovd-native30-primary-freeze",
+        "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+        "dispatch_commit": "88668f76b22777459b5792dd28f88075f208c678",
+        "writer_pid": 721181,
+        "tmux_session": "autodl-20260912-210355-tovd-native30-primary",
+        "ops2_evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a"
+      },
+      "timestamp": "2026-09-13T21:52:44+08:00",
+      "git_head": "fe6fef0dd2e7a7a1066eaf4af9eb1ddd20667e71",
+      "raw_sources": {
+        "binding": "accepted primary dispatch 88668f76b22777459b5792dd28f88075f208c678",
+        "timestamp": "OPS9 point1 date -Is",
+        "git_head": "local git rev-parse HEAD fe6fef0dd2e7a7a1066eaf4af9eb1ddd20667e71",
+        "writer": "OPS9 point1 ps -p 721181 -o pid=,stat= matching Rl+ row",
+        "tmux": "OPS9 point1 tmux has-session conditional success marker",
+        "progress": "OPS9 point1 exact run train.log latest completed_images scalar",
+        "wrapper_exit": "OPS9 point1 anchored wrapper exit grep no lines",
+        "filesystem": "OPS9 point1 df -B1 --output=avail project root",
+        "analysis_existence": "OPS9 point1 test ! -f exact analysis/results.json"
+      },
+      "progress": {
+        "completed_images": 882,
+        "total_images": 1000,
+        "seconds": 89266.92687750404
+      },
+      "writer_pid_exists": true,
+      "writer_state": "Rl+",
+      "analysis_result_exists": false,
+      "ops2": {
+        "status": "SAFE",
+        "process_status": "PRIMARY_RUNNING",
+        "storage": {
+          "closed_image_count": 882,
+          "free_bytes": 11552944128,
+          "remaining": 118,
+          "projected_remaining": 1929928704,
+          "required_free": 10905849037,
+          "margin": 647095091,
+          "status": "SAFE"
+        },
+        "writer_alive": true,
+        "tmux_alive": true,
+        "wrapper_exit_code": null
+      },
+      "status": "SAFE",
+      "scope_attestation": {
+        "scientific_payloads_opened": false,
+        "cache_recursively_scanned": false,
+        "experiment_mutated": false
+      },
+      "scientific_content_access_authorized": false,
+      "fin1_execution_authorized": false,
+      "remediation_authorized": false,
+      "close1_state": "PRIMARY_RUNNING",
+      "close1_reason": "successful wrapper exit0 and exact writer/tmux termination not established; result existence is irrelevant"
+    }
+  ],
+  "point_count": 1,
+  "spacing_seconds": [],
+  "window_seconds": 0,
+  "scalar_collection_commands": [
+    "date -Is",
+    "tmux has-session -t autodl-20260912-210355-tovd-native30-primary",
+    "ps -p 721181 -o pid=,stat=",
+    "grep completed_images /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/train.log | tail -n 1",
+    "grep \"^\\[autodl\\] exit_code=\" /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/train.log",
+    "LC_ALL=C df -B1 --output=avail /home/wenchang/asdasdsad/wjq/TOVD",
+    "test ! -f /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/analysis/results.json"
+  ],
+  "evaluation": "accepted canonical_snapshot(raw) -> OPS2; CLOSE1 operational state semantics read from unchanged finalization_barrier.evaluate. No completed-cache binding hashes collected or fabricated; no full finalization evaluate/FIN1/replay invoked.",
+  "continuation": "Resume existing receipt next ordinary15-minute heartbeat, up to four total points over45\u201360min from21:52:44+08 (final22:37:44\u201322:52:44). No new scheduler. Stop immediately on existing storage/process risk or PRIMARY_COMPLETE_UNVERIFIED via OPS3. No cleanup or FIN1 even after completion; return Lead.",
+  "scope": {
+    "scientific_content_opened": false,
+    "fin1_or_replay": false,
+    "deletion_or_cleanup": false,
+    "du_or_scan": false,
+    "restart_or_resume": false,
+    "new_threshold_or_forecast": false,
+    "frozen_source_mutated": false,
+    "yolo_or_t014": false
+  }
+}
