@@ -1,7 +1,7 @@
 {
   "task": "T013-OPS6",
   "task_start_head": "9f008f73db3e8dd2bf7506f4f6a31ab231695323",
-  "status": "ACTIVE_WATCH_3_OF_4",
+  "status": "PASS",
   "source_evidence": [
     {
       "path": "research_log/t013/primary_survival_guard.py",
@@ -331,12 +331,117 @@
         "fin1_execution_authorized": false,
         "remediation_authorized": false
       }
+    },
+    {
+      "index": 4,
+      "raw_transcript": "research_log/t013/primary_survival_watch_point4.txt",
+      "supplied_metadata": {
+        "binding": {
+          "repository": "https://github.com/word-ky/TOVD.git",
+          "project_root": "/home/wenchang/asdasdsad/wjq/TOVD",
+          "run_id": "20260912-210355-tovd-native30-primary",
+          "release_id": "20260912-210306-tovd-native30-primary-freeze",
+          "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+          "dispatch_commit": "88668f76b22777459b5792dd28f88075f208c678",
+          "writer_pid": 721181,
+          "tmux_session": "autodl-20260912-210355-tovd-native30-primary",
+          "ops2_evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a"
+        },
+        "git_head": "c2791991625d9eb7b40fe0ddca93d5c7ecfee683",
+        "timestamp": "2026-09-13T14:53:33+08:00",
+        "raw_sources": {
+          "binding": "accepted immutable primary metadata/dispatch 88668f76b22777459b5792dd28f88075f208c678",
+          "timestamp": "research_log/t013/primary_survival_watch_point4.txt#timestamp",
+          "git_head": "local git rev-parse HEAD c2791991625d9eb7b40fe0ddca93d5c7ecfee683",
+          "writer": "research_log/t013/primary_survival_watch_point4.txt#writer",
+          "tmux": "research_log/t013/primary_survival_watch_point4.txt#tmux",
+          "progress": "research_log/t013/primary_survival_watch_point4.txt#progress",
+          "wrapper_exit": "research_log/t013/primary_survival_watch_point4.txt#wrapper_exit",
+          "filesystem": "research_log/t013/primary_survival_watch_point4.txt#filesystem",
+          "analysis_existence": "research_log/t013/primary_survival_watch_point4.txt#analysis_existence"
+        },
+        "writer": {
+          "pid": 721181,
+          "returncode": 0,
+          "stdout": " 721181 Rl+\n"
+        },
+        "tmux_returncode": 0,
+        "progress_line": "{\"completed_images\": 633, \"total_images\": 1000, \"seconds\": 64090.50475404601}",
+        "wrapper_exit_lines": [],
+        "df_stdout": "      Avail\n17148239872\n",
+        "analysis_result_exists": false,
+        "scope_attestation": {
+          "scientific_payloads_opened": false,
+          "cache_recursively_scanned": false,
+          "experiment_mutated": false
+        }
+      },
+      "snapshot": {
+        "schema_version": "T013-OPS3-v1",
+        "binding": {
+          "repository": "https://github.com/word-ky/TOVD.git",
+          "project_root": "/home/wenchang/asdasdsad/wjq/TOVD",
+          "run_id": "20260912-210355-tovd-native30-primary",
+          "release_id": "20260912-210306-tovd-native30-primary-freeze",
+          "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+          "dispatch_commit": "88668f76b22777459b5792dd28f88075f208c678",
+          "writer_pid": 721181,
+          "tmux_session": "autodl-20260912-210355-tovd-native30-primary",
+          "ops2_evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a"
+        },
+        "timestamp": "2026-09-13T14:53:33+08:00",
+        "git_head": "c2791991625d9eb7b40fe0ddca93d5c7ecfee683",
+        "raw_sources": {
+          "binding": "accepted immutable primary metadata/dispatch 88668f76b22777459b5792dd28f88075f208c678",
+          "timestamp": "research_log/t013/primary_survival_watch_point4.txt#timestamp",
+          "git_head": "local git rev-parse HEAD c2791991625d9eb7b40fe0ddca93d5c7ecfee683",
+          "writer": "research_log/t013/primary_survival_watch_point4.txt#writer",
+          "tmux": "research_log/t013/primary_survival_watch_point4.txt#tmux",
+          "progress": "research_log/t013/primary_survival_watch_point4.txt#progress",
+          "wrapper_exit": "research_log/t013/primary_survival_watch_point4.txt#wrapper_exit",
+          "filesystem": "research_log/t013/primary_survival_watch_point4.txt#filesystem",
+          "analysis_existence": "research_log/t013/primary_survival_watch_point4.txt#analysis_existence"
+        },
+        "progress": {
+          "completed_images": 633,
+          "total_images": 1000,
+          "seconds": 64090.50475404601
+        },
+        "writer_pid_exists": true,
+        "writer_state": "Rl+",
+        "analysis_result_exists": false,
+        "ops2": {
+          "status": "SAFE",
+          "process_status": "PRIMARY_RUNNING",
+          "storage": {
+            "closed_image_count": 633,
+            "free_bytes": 17148239872,
+            "remaining": 367,
+            "projected_remaining": 6002405376,
+            "required_free": 15792821044,
+            "margin": 1355418828,
+            "status": "SAFE"
+          },
+          "writer_alive": true,
+          "tmux_alive": true,
+          "wrapper_exit_code": null
+        },
+        "status": "SAFE",
+        "scope_attestation": {
+          "scientific_payloads_opened": false,
+          "cache_recursively_scanned": false,
+          "experiment_mutated": false
+        },
+        "scientific_content_access_authorized": false,
+        "fin1_execution_authorized": false,
+        "remediation_authorized": false
+      }
     }
   ],
-  "point_count": 3,
+  "point_count": 4,
   "maximum_points": 4,
   "watch_start": "2026-09-13T13:58:00+08:00",
-  "next_action": "Next existing approximately15-minute heartbeat collects ONE point4; if four healthy points span45-60minutes finalize watch evidence and Lead report. Incident/completion preserves exact OPS3 snapshot and stops/returns Lead. No du/newhelper/extraquery/FIN1.",
+  "next_action": "Stop OPS6 and await Research Lead review. Immutable primary continues unchanged. Existing ordinary scalar health cadence only; incident/completion preserves OPS3 metadata and returns Lead before remediation or FIN1. Do not repeat watch or du.",
   "prohibitions_observed": {
     "du": false,
     "scientific_payload_access": false,
@@ -347,6 +452,9 @@
   },
   "spacing_seconds": [
     1084.0,
-    1238.0
-  ]
+    1238.0,
+    1011.0
+  ],
+  "watch_end": "2026-09-13T14:53:33+08:00",
+  "window_seconds": 3333.0
 }
