@@ -1528,3 +1528,6 @@ No result/prediction/NPZ/scientific contents opened. No FIN1, full replay/compar
 Stop OPS10 now and return to Research Lead. No second hour or automatic finalization. Existing heartbeat may check the mailbox for new authorized work. Primary completion has not been established; FIN1/replay remain deferred.
 
 Final OPS10 evidence commit: 789a00a7f4f3b998d2ce1c1e8c66b16c272a60ff.
+
+
+Delivery event after OPS10 observations: remote receipt SCP upload failed (port8220 connection closed), including existing legacy retry. GitHub report remains delivered. This is a receipt-delivery failure, not evidence of primary process failure; last observed primary remains23:56:39 SAFE/PRIMARY_RUNNING. One bounded later retry is attempted; no new health point or scientific read.

@@ -298,7 +298,8 @@
   ],
   "window_seconds": 3031.0,
   "operational_events": [
-    "Final df available bytes185047437312 versus prior10228473856. Cause unknown; no cleanup or storage mutation performed by Codex, and no attribution scan or investigation undertaken. No connection or process failure observed."
+    "Final df available bytes185047437312 versus prior10228473856. Cause unknown; no cleanup or storage mutation performed by Codex, and no attribution scan or investigation undertaken. No connection or process failure observed.",
+    "After observation/report push, remote receipt upload failed: SSH port8220 connection closed for both default SCP and existing legacy retry. Observation itself succeeded; no inference about primary state. One later bounded retry will attempt receipt delivery."
   ],
   "continuation": "OPS10 complete. Return to Lead for review; no second hour, cleanup, FIN1, replay or scientific access authorized. Existing heartbeat checks mailbox for new tasks."
 }

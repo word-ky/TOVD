@@ -29,3 +29,6 @@ Evidence files in research_log/t013: ops10_terminal_watch_receipt.json; ops10_po
 No result/prediction/NPZ/scientific contents opened. No FIN1, full replay/comparison, AP/AP50/AR, D/A, bootstrap, Gate, CF/MECH execution or scientific interpretation. No cleanup/deletion/compression/movement/quota change, du/scan/search, kill/pause/restart/resume/duplicate writer/runner patch, new threshold/warning band/forecast, YOLO/T014, install/update/driverrepair or frozen scientific source/config/vocabulary/IDs/seeds/gates/run mutation. Frozen CPU FP32 four-thread primary continues; GPU preference retained for future experiments.
 
 Stop OPS10 now and return to Research Lead. No second hour or automatic finalization. Existing heartbeat may check the mailbox for new authorized work. Primary completion has not been established; FIN1/replay remain deferred.
+
+
+Delivery event after OPS10 observations: remote receipt SCP upload failed (port8220 connection closed), including existing legacy retry. GitHub report remains delivered. This is a receipt-delivery failure, not evidence of primary process failure; last observed primary remains23:56:39 SAFE/PRIMARY_RUNNING. One bounded later retry is attempted; no new health point or scientific read.
