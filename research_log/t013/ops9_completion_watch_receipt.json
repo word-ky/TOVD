@@ -144,13 +144,76 @@
       "remediation_authorized": false,
       "close1_state": "PRIMARY_RUNNING",
       "close1_reason": "successful wrapper exit0 and exact writer/tmux termination not established; result existence is irrelevant"
+    },
+    {
+      "schema_version": "T013-OPS3-v1",
+      "binding": {
+        "repository": "https://github.com/word-ky/TOVD.git",
+        "project_root": "/home/wenchang/asdasdsad/wjq/TOVD",
+        "run_id": "20260912-210355-tovd-native30-primary",
+        "release_id": "20260912-210306-tovd-native30-primary-freeze",
+        "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+        "dispatch_commit": "88668f76b22777459b5792dd28f88075f208c678",
+        "writer_pid": 721181,
+        "tmux_session": "autodl-20260912-210355-tovd-native30-primary",
+        "ops2_evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a"
+      },
+      "timestamp": "2026-09-13T22:28:23+08:00",
+      "git_head": "cb2c2df18d80a7c2a03baa193d67bef7d0710862",
+      "raw_sources": {
+        "binding": "accepted primary dispatch 88668f76b22777459b5792dd28f88075f208c678",
+        "timestamp": "OPS9 point3 date -Is",
+        "git_head": "local git rev-parse HEAD cb2c2df18d80a7c2a03baa193d67bef7d0710862",
+        "writer": "OPS9 point3 ps -p 721181 -o pid=,stat= matching Rl+ row",
+        "tmux": "OPS9 point3 tmux has-session conditional success marker",
+        "progress": "OPS9 point3 exact run train.log latest completed_images scalar",
+        "wrapper_exit": "OPS9 point3 anchored wrapper exit grep no lines",
+        "filesystem": "OPS9 point3 df -B1 --output=avail project root",
+        "analysis_existence": "OPS9 point3 test ! -f exact analysis/results.json"
+      },
+      "progress": {
+        "completed_images": 903,
+        "total_images": 1000,
+        "seconds": 91431.95154283004
+      },
+      "writer_pid_exists": true,
+      "writer_state": "Rl+",
+      "analysis_result_exists": false,
+      "ops2": {
+        "status": "SAFE",
+        "process_status": "PRIMARY_RUNNING",
+        "storage": {
+          "closed_image_count": 903,
+          "free_bytes": 11061379072,
+          "remaining": 97,
+          "projected_remaining": 1586466816,
+          "required_free": 10493694772,
+          "margin": 567684300,
+          "status": "SAFE"
+        },
+        "writer_alive": true,
+        "tmux_alive": true,
+        "wrapper_exit_code": null
+      },
+      "status": "SAFE",
+      "scope_attestation": {
+        "scientific_payloads_opened": false,
+        "cache_recursively_scanned": false,
+        "experiment_mutated": false
+      },
+      "scientific_content_access_authorized": false,
+      "fin1_execution_authorized": false,
+      "remediation_authorized": false,
+      "close1_state": "PRIMARY_RUNNING",
+      "close1_reason": "successful wrapper exit0 and exact writer/tmux termination not established; result existence is irrelevant"
     }
   ],
-  "point_count": 2,
+  "point_count": 3,
   "spacing_seconds": [
-    1081.0
+    1081.0,
+    1058.0
   ],
-  "window_seconds": 1081.0,
+  "window_seconds": 2139.0,
   "scalar_collection_commands": [
     "date -Is",
     "tmux has-session -t autodl-20260912-210355-tovd-native30-primary",
