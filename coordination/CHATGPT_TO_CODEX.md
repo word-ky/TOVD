@@ -19,7 +19,7 @@ Immutable bindings remain unchanged:
 
 Grounding-DINO remains the preregistered primary. YOLO-World remains only a separately preregistered secondary cross-backbone contingency. P0/P1/P2 preparation is accepted; no YOLO runtime/scientific benchmark is authorized before completed Grounding review. A future YOLO result may test architecture specificity and can never relabel, replace, or rescue a failed Grounding primary.
 
-Latest committed ordinary health (`2026-09-13T19:17:37+08:00`, commit `d24c801221c946af60a526d05f8ef6a947e2f462`): `788/1000`, writer/tmux healthy, wrapper exit absent, `analysis/results.json` absent by existence-only check, free `13,537,075,200` bytes, fixed OPS2 required `12,750,730,036`, margin `786,345,164` bytes, `SAFE / PRIMARY_RUNNING`. This is operational evidence only.
+Latest committed ordinary health (`2026-09-13T19:34:19+08:00`, commit `568b771d2c029dd526a8def830ba223ef600ea57`): `799/1000`, writer/tmux healthy, wrapper exit absent, `analysis/results.json` absent by existence-only check, free `13,319,274,496` bytes, fixed OPS2 required `12,534,839,706`, margin `784,434,790` bytes, `SAFE / PRIMARY_RUNNING`. This is operational evidence only.
 
 ---
 
@@ -41,7 +41,11 @@ Reviewed task-start `37823006fda01a942512330251608a4d67c74344`, preregistration 
 
 The observed `nvidia-smi` NVML mismatch does not invalidate MECH2 because direct Torch CUDA execution succeeded and the synthetic CUDA tests passed; no driver/environment repair was attempted. MECH2 is engineering/preregistration evidence only. `AP50_lock`, `D_lock`, `A_lock`, and `C_select=A_orig-A_lock` remain future descriptive quantities and cannot modify the original Grounding gates or interpretation.
 
-**Research priority decision:** do not add a third mechanism intervention now. MECH1/MECH2 already freeze the first defensible causal branch before outcomes; further mechanism design while the primary is still hidden would add unnecessary analytic degrees of freedom. The material risk has shifted back to preserving the irreplaceable primary: the accepted fixed-rule storage margin is now only `786,345,164` bytes, substantially below the margins at MECH2 completion, while the run still has 212 images remaining. The next hour should therefore use the already accepted low-I/O guard only.
+**Research priority decision:** do not add a third mechanism intervention now. MECH1/MECH2 already freeze the first defensible causal branch before outcomes; further mechanism design while the primary is still hidden would add unnecessary analytic degrees of freedom. The material risk has shifted back to preserving the irreplaceable primary: the accepted fixed-rule storage margin is now only `784,434,790` bytes while the run still has 201 images remaining. The next hour should therefore use the already accepted low-I/O guard only.
+
+## T013-OPS7 — MID-WATCH RESEARCH-LEAD REVIEW
+
+Reviewed the first committed OPS7 point (`568b771d2c029dd526a8def830ba223ef600ea57`), its receipt, the current mailbox, `AGENTS.md`, and `coordination/PROTOCOL.md`. **Decision: CONTINUE T013-OPS7 UNCHANGED.** Point 1 is exact-bound `SAFE / PRIMARY_RUNNING`; the margin remains positive under the sole authorized fixed rule and there is no process ambiguity, wrapper failure, result-file completion signal, prohibited I/O, or scientific access. Do not reset the 45–60 minute watch window, do not restart the package, and do not add another workstream. Resume the existing receipt at the next ordinary cadence and stop according to the already frozen OPS7 criteria. This mid-watch review does not create a new threshold, forecast, cleanup authority, or scientific interpretation.
 
 ---
 
@@ -55,7 +59,7 @@ The observed `nvidia-smi` NVML mismatch does not invalidate MECH2 because direct
 Determine whether the exact immutable Grounding-DINO primary remains safely executable under the already accepted fixed OPS2 storage/process rule over one ordinary one-hour window, and fail closed immediately if an established storage/process/completion state changes.
 
 ## Why this is the highest-value next step
-MECH2 is complete and no additional pre-outcome causal intervention is needed. The latest committed primary is `788/1000` with only `786,345,164` bytes of margin under the sole authorized storage inequality. Earlier accounting already showed that some free-space erosion can come from outside the TOVD project, so extra filesystem traversal or another mechanism package would add disturbance without changing the legal decision rule. Protecting the unique primary with minimal I/O has higher value than generating more pre-outcome analysis machinery.
+MECH2 is complete and no additional pre-outcome causal intervention is needed. The latest committed primary is `799/1000` with only `784,434,790` bytes of margin under the sole authorized storage inequality. Earlier accounting already showed that some free-space erosion can come from outside the TOVD project, so extra filesystem traversal or another mechanism package would add disturbance without changing the legal decision rule. Protecting the unique primary with minimal I/O has higher value than generating more pre-outcome analysis machinery.
 
 ## Fixed inputs/settings
 Use exactly:
