@@ -1,0 +1,60 @@
+{
+  "schema_version": "T013-OPS3-v1",
+  "binding": {
+    "repository": "https://github.com/word-ky/TOVD.git",
+    "project_root": "/home/wenchang/asdasdsad/wjq/TOVD",
+    "run_id": "20260912-210355-tovd-native30-primary",
+    "release_id": "20260912-210306-tovd-native30-primary-freeze",
+    "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+    "dispatch_commit": "88668f76b22777459b5792dd28f88075f208c678",
+    "writer_pid": 721181,
+    "tmux_session": "autodl-20260912-210355-tovd-native30-primary",
+    "ops2_evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a"
+  },
+  "timestamp": "2026-09-14T01:20:36+08:00",
+  "git_head": "a8f872914e8ba81720a3241cb420f9149ac06063",
+  "raw_sources": {
+    "binding": "accepted primary dispatch 88668f76b22777459b5792dd28f88075f208c678",
+    "timestamp": "CLOSE2 point3 date -Is",
+    "git_head": "local git rev-parse HEAD a8f872914e8ba81720a3241cb420f9149ac06063",
+    "writer": "CLOSE2 point3 ps -p721181 no row; WRITER_RC=1",
+    "tmux": "CLOSE2 point3 exact tmux has-session TMUX_RC=0",
+    "progress": "CLOSE2 point3 exact run train.log latest completed_images scalar",
+    "wrapper_exit": "CLOSE2 point3 anchored wrapper exit grep no lines",
+    "filesystem": "CLOSE2 point3 df -B1 --output=avail project root",
+    "analysis_existence": "CLOSE2 point3 exact test -f analysis/results.json conditional ANALYSIS_ABSENT"
+  },
+  "progress": {
+    "completed_images": 1000,
+    "total_images": 1000,
+    "seconds": 101363.274547162
+  },
+  "writer_pid_exists": false,
+  "writer_state": null,
+  "analysis_result_exists": false,
+  "ops2": {
+    "status": "PROCESS_STATE_AMBIGUOUS_RETURN_TO_LEAD",
+    "process_status": "PROCESS_STATE_AMBIGUOUS_RETURN_TO_LEAD",
+    "storage": {
+      "closed_image_count": 1000,
+      "free_bytes": 184061218816,
+      "remaining": 0,
+      "projected_remaining": 0,
+      "required_free": 8589934592,
+      "margin": 175471284224,
+      "status": "SAFE"
+    },
+    "writer_alive": false,
+    "tmux_alive": true,
+    "wrapper_exit_code": null
+  },
+  "status": "PROCESS_STATE_AMBIGUOUS_RETURN_TO_LEAD",
+  "scope_attestation": {
+    "scientific_payloads_opened": false,
+    "cache_recursively_scanned": false,
+    "experiment_mutated": false
+  },
+  "scientific_content_access_authorized": false,
+  "fin1_execution_authorized": false,
+  "remediation_authorized": false
+}

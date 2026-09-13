@@ -37,7 +37,7 @@
     "if test -f /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/analysis/results.json; then echo ANALYSIS_EXISTS; else echo ANALYSIS_ABSENT; fi"
   ],
   "task": "T013-CLOSE2",
-  "status": "IN_PROGRESS",
+  "status": "PROCESS_STATE_AMBIGUOUS_RETURN_TO_LEAD",
   "task_start_head": "53dcd036cbf8c72df08d9faaa57c015e4282015d",
   "lead_instruction_commit": "0155bde95cff9831d44cfa151235623a773867a9",
   "points": [
@@ -164,15 +164,79 @@
       "remediation_authorized": false,
       "close1_state": "PRIMARY_RUNNING",
       "close1_reason": "successful wrapper exit0 and exact writer/tmux termination not established; result existence is irrelevant"
+    },
+    {
+      "schema_version": "T013-OPS3-v1",
+      "binding": {
+        "repository": "https://github.com/word-ky/TOVD.git",
+        "project_root": "/home/wenchang/asdasdsad/wjq/TOVD",
+        "run_id": "20260912-210355-tovd-native30-primary",
+        "release_id": "20260912-210306-tovd-native30-primary-freeze",
+        "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+        "dispatch_commit": "88668f76b22777459b5792dd28f88075f208c678",
+        "writer_pid": 721181,
+        "tmux_session": "autodl-20260912-210355-tovd-native30-primary",
+        "ops2_evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a"
+      },
+      "timestamp": "2026-09-14T01:20:36+08:00",
+      "git_head": "a8f872914e8ba81720a3241cb420f9149ac06063",
+      "raw_sources": {
+        "binding": "accepted primary dispatch 88668f76b22777459b5792dd28f88075f208c678",
+        "timestamp": "CLOSE2 point3 date -Is",
+        "git_head": "local git rev-parse HEAD a8f872914e8ba81720a3241cb420f9149ac06063",
+        "writer": "CLOSE2 point3 ps -p721181 no row; WRITER_RC=1",
+        "tmux": "CLOSE2 point3 exact tmux has-session TMUX_RC=0",
+        "progress": "CLOSE2 point3 exact run train.log latest completed_images scalar",
+        "wrapper_exit": "CLOSE2 point3 anchored wrapper exit grep no lines",
+        "filesystem": "CLOSE2 point3 df -B1 --output=avail project root",
+        "analysis_existence": "CLOSE2 point3 exact test -f analysis/results.json conditional ANALYSIS_ABSENT"
+      },
+      "progress": {
+        "completed_images": 1000,
+        "total_images": 1000,
+        "seconds": 101363.274547162
+      },
+      "writer_pid_exists": false,
+      "writer_state": null,
+      "analysis_result_exists": false,
+      "ops2": {
+        "status": "PROCESS_STATE_AMBIGUOUS_RETURN_TO_LEAD",
+        "process_status": "PROCESS_STATE_AMBIGUOUS_RETURN_TO_LEAD",
+        "storage": {
+          "closed_image_count": 1000,
+          "free_bytes": 184061218816,
+          "remaining": 0,
+          "projected_remaining": 0,
+          "required_free": 8589934592,
+          "margin": 175471284224,
+          "status": "SAFE"
+        },
+        "writer_alive": false,
+        "tmux_alive": true,
+        "wrapper_exit_code": null
+      },
+      "status": "PROCESS_STATE_AMBIGUOUS_RETURN_TO_LEAD",
+      "scope_attestation": {
+        "scientific_payloads_opened": false,
+        "cache_recursively_scanned": false,
+        "experiment_mutated": false
+      },
+      "scientific_content_access_authorized": false,
+      "fin1_execution_authorized": false,
+      "remediation_authorized": false,
+      "close1_state": "PRIMARY_RUNNING",
+      "close1_reason": "successful wrapper exit0 and exact writer/tmux termination not established; count1000 alone is insufficient"
     }
   ],
-  "point_count": 2,
+  "point_count": 3,
   "spacing_seconds": [
-    1019.0
+    1019.0,
+    987.0
   ],
-  "window_seconds": 1019.0,
+  "window_seconds": 2006.0,
   "operational_events": [
-    "Previously unexplained free-space increase persists: current df184319975424 bytes. No causal attribution or investigation. No connection failure."
+    "Previously unexplained free-space increase persists: current df184319975424 bytes. No causal attribution or investigation. No connection failure.",
+    "Point3: exact writer721181 absent (ps return1, no row), exact tmux still present(return0), no wrapper exit marker. OPS2 process state ambiguous; stopped immediately. No connection interruption; free-space increase persists without attribution."
   ],
-  "continuation": "Resume existing15min heartbeat, up to4total points over45-60min from00:47:10+08 (final01:32:10-01:47:10), stopping immediately on accepted OPS2 incident or exact CLOSE1 PRIMARY_COMPLETE_UNVERIFIED. No FIN1, cache hashing, replay, science or remediation. 1000 images alone never means completion. No second hour."
+  "continuation": "Immediate stop and return to Lead on accepted OPS2 PROCESS_STATE_AMBIGUOUS_RETURN_TO_LEAD. No fourth point or process hunt/remediation/FIN1/replay/science. Count1000 is not completion."
 }
