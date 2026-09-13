@@ -1,0 +1,60 @@
+{
+  "schema_version": "T013-OPS3-v1",
+  "binding": {
+    "repository": "https://github.com/word-ky/TOVD.git",
+    "project_root": "/home/wenchang/asdasdsad/wjq/TOVD",
+    "run_id": "20260912-210355-tovd-native30-primary",
+    "release_id": "20260912-210306-tovd-native30-primary-freeze",
+    "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+    "dispatch_commit": "88668f76b22777459b5792dd28f88075f208c678",
+    "writer_pid": 721181,
+    "tmux_session": "autodl-20260912-210355-tovd-native30-primary",
+    "ops2_evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a"
+  },
+  "timestamp": "2026-09-13T21:02:09+08:00",
+  "git_head": "81feb1f95173403eb1dea2396f4cfb7325201f42",
+  "raw_sources": {
+    "binding": "accepted primary dispatch 88668f76b22777459b5792dd28f88075f208c678",
+    "timestamp": "OPS8 later point1 date -Is",
+    "git_head": "local git rev-parse HEAD 81feb1f95173403eb1dea2396f4cfb7325201f42",
+    "writer": "OPS8 later point1 ps -p 721181 -o pid=,stat= matching Rl+ row",
+    "tmux": "OPS8 later point1 tmux has-session conditional success marker",
+    "progress": "OPS8 later point1 exact run train.log latest completed_images scalar",
+    "wrapper_exit": "OPS8 later point1 anchored wrapper exit grep no lines",
+    "filesystem": "OPS8 later point1 df -B1 --output=avail project root",
+    "analysis_existence": "OPS8 later point1 test ! -f exact analysis/results.json"
+  },
+  "progress": {
+    "completed_images": 852,
+    "total_images": 1000,
+    "seconds": 86260.61986363702
+  },
+  "writer_pid_exists": true,
+  "writer_state": "Rl+",
+  "analysis_result_exists": false,
+  "ops2": {
+    "status": "SAFE",
+    "process_status": "PRIMARY_RUNNING",
+    "storage": {
+      "closed_image_count": 852,
+      "free_bytes": 12067106816,
+      "remaining": 148,
+      "projected_remaining": 2420588544,
+      "required_free": 11494640845,
+      "margin": 572465971,
+      "status": "SAFE"
+    },
+    "writer_alive": true,
+    "tmux_alive": true,
+    "wrapper_exit_code": null
+  },
+  "status": "SAFE",
+  "scope_attestation": {
+    "scientific_payloads_opened": false,
+    "cache_recursively_scanned": false,
+    "experiment_mutated": false
+  },
+  "scientific_content_access_authorized": false,
+  "fin1_execution_authorized": false,
+  "remediation_authorized": false
+}

@@ -1350,3 +1350,7 @@ forecast,depletion-rate or time-to-failure rule. Existing primary continues
 unchanged; future GPU preference retained. Scientific results remain unopened.
 
 Reclamation evidence commit: b73871167a4f9f52ced8fa5d8a97b197960f5303.
+
+
+## T013-OPS8 IN_PROGRESS — later point1/2 (2026-09-13T21:02:09+08:00)
+GitHub synchronized81feb1f; project handoffs and AGENTS/protocol/mailbox/spec read, no newLead instruction. Two allowlisted ZIPs already deleted inb738711; no repeated deletion or precondition scan. Existing ordinary heartbeat collected later point1,1139s after immediatepost,1196s afterpre. Exact primary20260912-210355-tovd-native30-primary,writer721181 Rl+/tmuxalive,852/1000 at86260.61986363702s,wrapperexitabsent,analysis/results.json absent(existenceonly),free12067106816,remaining148,projected2420588544,required11494640845,margin572465971,SAFE/PRIMARY_RUNNING. Accepted unchanged OPS3 canonical_snapshot/OPS2 used; raw/snapshot storedops8_later1_*.json and appendedops8_reclamation_receipt.json. OPS8 NOT COMPLETE. Reserve second/final scalar point for21:27:13–21:42:13+08 (45–60min from20:42:13); intermediate heartbeat before21:27:13 only syncs mailbox, no extra remote point. No new scheduler/threshold/forecast/cleanup or science. No archivehash/du/scans/nonallowlisteddeletion/runmutation/FIN1/replay/kill/restart/resume/driverrepair/YOLO/T014. On established risk/process/completion state immediately stop viaOPS3 and returnLead. Otherwise final report afterwindow. FrozenCPUprimary unchanged;futureGPUpreference retained.
