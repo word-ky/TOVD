@@ -1,6 +1,6 @@
 # T013-OPS5 — project-boundary accounting
 
-Status: AWAITING_SECOND_HEARTBEAT_SNAPSHOT; no attribution conclusion yet.
+Status: engineering PASS; awaiting Research Lead review.
 Task-start HEAD b3b27c6258bda129968cac10e74a8080fed392a9 accepts OPS4.
 
 Minimal OPS5 variant of the tested OPS4 metadata parser/collector, with project
@@ -58,12 +58,39 @@ OPS2 remaining433/projected7081857024/required17088163021/margin1554600755;
 SAFE/PRIMARY_RUNNING. One live invocation; raw A, canonical snapshot and source
 hashes are retained in primary_project_storage_attribution_receipt.json.
 
-NEXT EXISTING HEARTBEAT: after mailbox synchronization collect B ONCE with the
-same command, saving primary_project_storage_attribution_B_raw.json. Do not
-recollect A or issue a separate routine health query/cache du. Parse snapshot(B).
-Incident/completion-unverified -> preserve/return Lead, no attribution/remediation.
-Bothhealthy -> attribute(A,B), finalize receipt/note and commit/report evidence.
-No new scheduler/loop; this task is pending until B and final delivery.
+B was collected once at the next existing heartbeat, using the same command,
+and saved as primary_project_storage_attribution_B_raw.json. At
+2026-09-13T13:22:56+08:00:578/1000,58648.58749427201s,
+same writer721181 Rl+/tmux alive,wrapper absent,analysis absent(existence only).
+Free18248122368;project_du16233095168;run_du9433272320;
+OPS2 remaining422/projected6901948416/required16872272692/margin1375849676;
+SAFE/PRIMARY_RUNNING. Exactly two snapshots; no extra health query, cache du,
+third snapshot or new scheduler. Actual interval1102s=18m22s reflects the next
+heartbeat's dispatch timing; an exact15-minute interval is not claimed.
+
+Local snapshot(B)/attribute(A,B) used unchanged tested source; recorded source,
+test evidence and A-raw hashes still match. Final receipt retains both raw
+references/hashes, canonical endpoints, actual interval and exact accounting:
+
+| Quantity | Bytes unless stated |
+| --- | ---: |
+| delta_images | 11 images |
+| free_consumed | 394641408 |
+| project_growth | 177356800 |
+| active_run_growth | 177336320 |
+| other_project_growth | 20480 |
+| outside_project_pressure | 217284608 |
+
+The measured project grew177356800 bytes, almost entirely in the active run;
+other-project growth was20480 bytes. The remaining217284608 bytes of the
+394641408-byte filesystem free-space decline are outside the measured project
+net growth. These are sequential non-atomic accounting residuals, not proof of
+writer identity or explanation of earlier intervals. No new threshold, forecast
+gate or cleanup recommendation follows. OPS2 remains SAFE at both endpoints.
+
+OPS5 is complete; stop and await Lead review. Resume ordinary scalar health
+checks without more du attribution. Incident/completion-unverified still
+requires preserving evidence and returning to Lead before remediation/FIN1.
 
 No scientific/prediction contents opened, active files hashed/modified,
 FIN1/replay/scientific analysis, cleanup/restart/resume/YOLO/T014 occurred.
