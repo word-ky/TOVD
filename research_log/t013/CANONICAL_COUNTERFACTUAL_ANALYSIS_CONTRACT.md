@@ -52,3 +52,12 @@ an established incident/completion-unverified state returns to Lead.
 Frozen environment: Torch2.4.0 CPU, NumPy1.26.4, pycocotools2.0.8, existing
 Python3.12.12. No install/update. GPU preference for new experiments remains;
 this task requires CPU top-k identity and frozen COCO accumulation semantics.
+
+Pre-evaluation binding correction: the first driver attempt stopped before
+tests or smoke evaluation because the committed REPRO1 receipt includes a
+later appended end_primary_health field absent from the original remote
+receipt. Every other decoded field matches exactly. Bind all REPRO1 execution
+fields except this one unrelated health append; canonical JSON SHA256 is
+a490f9ddab943734b5b22650d8b43c124a5d66225343d38f4395327ef304ebbc.
+The initial failure receipt and exact remote receipt are retained. No data,
+reference output, selection or statistical rule changes are involved.

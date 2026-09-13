@@ -1,0 +1,776 @@
+{
+  "task": "T013-REPRO1",
+  "status": "PASS",
+  "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+  "started_utc": "2026-09-12T21:36:59.731029+00:00",
+  "bindings": {
+    "/home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze/research_log/t013/native30_freeze.json": {
+      "expected": "50addfb8e247333b49fb22cda14570166b294101bb435b5a1b5bf688b4b3a91e",
+      "actual": "50addfb8e247333b49fb22cda14570166b294101bb435b5a1b5bf688b4b3a91e",
+      "equal": true
+    },
+    "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations/instances_val2017.json": {
+      "expected": "e8c7f7908f1d7278341fae127d0da654f102f11bd7b21d8aeefa635b8c810b6f",
+      "actual": "e8c7f7908f1d7278341fae127d0da654f102f11bd7b21d8aeefa635b8c810b6f",
+      "equal": true
+    },
+    "/home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze/research_log/t013/PLAN.md": {
+      "expected": "5d977aceb3c06a7915396aea9c7cc2504759e584ce79b459a287b18fb67e4beb",
+      "actual": "5d977aceb3c06a7915396aea9c7cc2504759e584ce79b459a287b18fb67e4beb",
+      "equal": true
+    },
+    "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/run_receipt.json": {
+      "expected": "a1ec8408c5294935759b462f4f0663b8a5e7b9620acebd61bceb977a509bf0e5",
+      "actual": "a1ec8408c5294935759b462f4f0663b8a5e7b9620acebd61bceb977a509bf0e5",
+      "equal": true
+    },
+    "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/cache_manifest.jsonl": {
+      "expected": "3d3623c2a6d78edd63b35c3efbdaf733df48eb1ffb9cefe36ea7e2daf2355a5f",
+      "actual": "3d3623c2a6d78edd63b35c3efbdaf733df48eb1ffb9cefe36ea7e2daf2355a5f",
+      "equal": true
+    },
+    "/home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze/scripts/t013_analysis.py": {
+      "expected": "74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c",
+      "actual": "74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c",
+      "equal": true
+    },
+    "/home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze/scripts/t013_coco.py": {
+      "expected": "bd3245235a6dcd455224ea7eb737b07875920b0a08b34f30e706dfc6a9ca9e81",
+      "actual": "bd3245235a6dcd455224ea7eb737b07875920b0a08b34f30e706dfc6a9ca9e81",
+      "equal": true
+    },
+    "/home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze/scripts/t013_diagnostics.py": {
+      "expected": "ae7e61feaa5701ca9580c9c48901f99d09e9986b560c2821073100c94645a41e",
+      "actual": "ae7e61feaa5701ca9580c9c48901f99d09e9986b560c2821073100c94645a41e",
+      "equal": true
+    }
+  },
+  "runs": [
+    {
+      "tag": "replay_a",
+      "command": [
+        "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python",
+        "-m",
+        "scripts.t013_analysis",
+        "--annotations",
+        "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations/instances_val2017.json",
+        "--run",
+        "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache",
+        "--output",
+        "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/repro1/replay_a",
+        "--smoke-only"
+      ],
+      "cwd": "/home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze",
+      "exit_code": 0,
+      "wall_seconds": 19.169558474997757,
+      "output": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/repro1/replay_a"
+    },
+    {
+      "tag": "replay_b",
+      "command": [
+        "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python",
+        "-m",
+        "scripts.t013_analysis",
+        "--annotations",
+        "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations/instances_val2017.json",
+        "--run",
+        "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache",
+        "--output",
+        "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/repro1/replay_b",
+        "--smoke-only"
+      ],
+      "cwd": "/home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze",
+      "exit_code": 0,
+      "wall_seconds": 19.055517392000183,
+      "output": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/repro1/replay_b"
+    }
+  ],
+  "active_primary_cache_accessed": false,
+  "primary_scientific_result_opened": false,
+  "frozen_source_or_environment_modified": false,
+  "environment": {
+    "python": "3.12.12 | packaged by conda-forge | (main, Jan 26 2026, 23:51:32) [GCC 14.3.0]",
+    "executable": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python",
+    "packages": {
+      "numpy": "1.26.4",
+      "pycocotools": "2.0.8",
+      "torch": "2.4.0",
+      "torchvision": "0.19.0+cu121",
+      "transformers": "4.44.2"
+    },
+    "thread_environment": {
+      "OMP_NUM_THREADS": null,
+      "MKL_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null
+    },
+    "pip_freeze_sha256": "6fdb8b3da35dddb24c5ea602e81b160ab864e792ca29fa27236dd759a6b4f090"
+  },
+  "replay_comparison": {
+    "status": "PASS",
+    "artifacts": {
+      "results.json": {
+        "present_nonempty": true,
+        "equal": true,
+        "left_bytes": 15818,
+        "right_bytes": 15818,
+        "top_level_keys_equal": true,
+        "fields": {
+          "kind": true,
+          "image_count": true,
+          "conditions": true,
+          "vocabularies": true,
+          "metric_order": true,
+          "point_metrics": true,
+          "metric_ci95": true,
+          "replicates": true,
+          "seed": true,
+          "margin_common_localized_gt_counts": true,
+          "assessment": true
+        }
+      },
+      "paired_image_draws.npy": {
+        "present_nonempty": true,
+        "equal": true,
+        "left_bytes": 368,
+        "right_bytes": 368,
+        "left_shape": [
+          10,
+          3
+        ],
+        "right_shape": [
+          10,
+          3
+        ],
+        "left_dtype": "int64",
+        "right_dtype": "int64",
+        "nan_masks_equal": true
+      },
+      "bootstrap_samples.npz": {
+        "present_nonempty": true,
+        "equal": true,
+        "left_bytes": 3087,
+        "right_bytes": 3087,
+        "keys_equal": true,
+        "arrays": {
+          "margins": {
+            "equal": true,
+            "left_shape": [
+              10,
+              4
+            ],
+            "right_shape": [
+              10,
+              4
+            ],
+            "left_dtype": "float64",
+            "right_dtype": "float64",
+            "nan_masks_equal": true
+          },
+          "metrics": {
+            "equal": true,
+            "left_shape": [
+              10,
+              5,
+              3,
+              8
+            ],
+            "right_shape": [
+              10,
+              5,
+              3,
+              8
+            ],
+            "left_dtype": "float64",
+            "right_dtype": "float64",
+            "nan_masks_equal": true
+          }
+        }
+      },
+      "diagnostics_per_image.npz": {
+        "present_nonempty": true,
+        "equal": true,
+        "left_bytes": 3566,
+        "right_bytes": 3566,
+        "keys_equal": true,
+        "arrays": {
+          "c0_v0": {
+            "equal": true,
+            "left_shape": [
+              3,
+              5
+            ],
+            "right_shape": [
+              3,
+              5
+            ],
+            "left_dtype": "float64",
+            "right_dtype": "float64",
+            "nan_masks_equal": true
+          },
+          "c0_v1": {
+            "equal": true,
+            "left_shape": [
+              3,
+              5
+            ],
+            "right_shape": [
+              3,
+              5
+            ],
+            "left_dtype": "float64",
+            "right_dtype": "float64",
+            "nan_masks_equal": true
+          },
+          "c0_v2": {
+            "equal": true,
+            "left_shape": [
+              3,
+              5
+            ],
+            "right_shape": [
+              3,
+              5
+            ],
+            "left_dtype": "float64",
+            "right_dtype": "float64",
+            "nan_masks_equal": true
+          },
+          "c1_v0": {
+            "equal": true,
+            "left_shape": [
+              3,
+              5
+            ],
+            "right_shape": [
+              3,
+              5
+            ],
+            "left_dtype": "float64",
+            "right_dtype": "float64",
+            "nan_masks_equal": true
+          },
+          "c1_v1": {
+            "equal": true,
+            "left_shape": [
+              3,
+              5
+            ],
+            "right_shape": [
+              3,
+              5
+            ],
+            "left_dtype": "float64",
+            "right_dtype": "float64",
+            "nan_masks_equal": true
+          },
+          "c1_v2": {
+            "equal": true,
+            "left_shape": [
+              3,
+              5
+            ],
+            "right_shape": [
+              3,
+              5
+            ],
+            "left_dtype": "float64",
+            "right_dtype": "float64",
+            "nan_masks_equal": true
+          },
+          "c2_v0": {
+            "equal": true,
+            "left_shape": [
+              3,
+              5
+            ],
+            "right_shape": [
+              3,
+              5
+            ],
+            "left_dtype": "float64",
+            "right_dtype": "float64",
+            "nan_masks_equal": true
+          },
+          "c2_v1": {
+            "equal": true,
+            "left_shape": [
+              3,
+              5
+            ],
+            "right_shape": [
+              3,
+              5
+            ],
+            "left_dtype": "float64",
+            "right_dtype": "float64",
+            "nan_masks_equal": true
+          },
+          "c2_v2": {
+            "equal": true,
+            "left_shape": [
+              3,
+              5
+            ],
+            "right_shape": [
+              3,
+              5
+            ],
+            "left_dtype": "float64",
+            "right_dtype": "float64",
+            "nan_masks_equal": true
+          },
+          "c3_v0": {
+            "equal": true,
+            "left_shape": [
+              3,
+              5
+            ],
+            "right_shape": [
+              3,
+              5
+            ],
+            "left_dtype": "float64",
+            "right_dtype": "float64",
+            "nan_masks_equal": true
+          },
+          "c3_v1": {
+            "equal": true,
+            "left_shape": [
+              3,
+              5
+            ],
+            "right_shape": [
+              3,
+              5
+            ],
+            "left_dtype": "float64",
+            "right_dtype": "float64",
+            "nan_masks_equal": true
+          },
+          "c3_v2": {
+            "equal": true,
+            "left_shape": [
+              3,
+              5
+            ],
+            "right_shape": [
+              3,
+              5
+            ],
+            "left_dtype": "float64",
+            "right_dtype": "float64",
+            "nan_masks_equal": true
+          },
+          "c4_v0": {
+            "equal": true,
+            "left_shape": [
+              3,
+              5
+            ],
+            "right_shape": [
+              3,
+              5
+            ],
+            "left_dtype": "float64",
+            "right_dtype": "float64",
+            "nan_masks_equal": true
+          },
+          "c4_v1": {
+            "equal": true,
+            "left_shape": [
+              3,
+              5
+            ],
+            "right_shape": [
+              3,
+              5
+            ],
+            "left_dtype": "float64",
+            "right_dtype": "float64",
+            "nan_masks_equal": true
+          },
+          "c4_v2": {
+            "equal": true,
+            "left_shape": [
+              3,
+              5
+            ],
+            "right_shape": [
+              3,
+              5
+            ],
+            "left_dtype": "float64",
+            "right_dtype": "float64",
+            "nan_masks_equal": true
+          },
+          "margin_contrast_sum_count": {
+            "equal": true,
+            "left_shape": [
+              4,
+              3,
+              2
+            ],
+            "right_shape": [
+              4,
+              3,
+              2
+            ],
+            "left_dtype": "float64",
+            "right_dtype": "float64",
+            "nan_masks_equal": true
+          }
+        }
+      }
+    },
+    "comparison": "exact decoded JSON/arrays with equal NaNs; no compressed-byte equality requirement"
+  },
+  "smoke_contract": {
+    "image_count": 3,
+    "replicates": 10,
+    "seed": 20260913,
+    "draw_shape": [
+      10,
+      3
+    ],
+    "draw_dtype": "int64",
+    "fixed_draws_exact": true
+  },
+  "negative_control": {
+    "status": "PASS",
+    "expected_comparator_status": "FAIL",
+    "mutation": "scratch bootstrap metrics[0,0,0,0] += 1",
+    "comparison": {
+      "status": "FAIL",
+      "artifacts": {
+        "results.json": {
+          "present_nonempty": true,
+          "equal": true,
+          "left_bytes": 15818,
+          "right_bytes": 15818,
+          "top_level_keys_equal": true,
+          "fields": {
+            "kind": true,
+            "image_count": true,
+            "conditions": true,
+            "vocabularies": true,
+            "metric_order": true,
+            "point_metrics": true,
+            "metric_ci95": true,
+            "replicates": true,
+            "seed": true,
+            "margin_common_localized_gt_counts": true,
+            "assessment": true
+          }
+        },
+        "paired_image_draws.npy": {
+          "present_nonempty": true,
+          "equal": true,
+          "left_bytes": 368,
+          "right_bytes": 368,
+          "left_shape": [
+            10,
+            3
+          ],
+          "right_shape": [
+            10,
+            3
+          ],
+          "left_dtype": "int64",
+          "right_dtype": "int64",
+          "nan_masks_equal": true
+        },
+        "bootstrap_samples.npz": {
+          "present_nonempty": true,
+          "equal": false,
+          "left_bytes": 3087,
+          "right_bytes": 3086,
+          "keys_equal": true,
+          "arrays": {
+            "margins": {
+              "equal": true,
+              "left_shape": [
+                10,
+                4
+              ],
+              "right_shape": [
+                10,
+                4
+              ],
+              "left_dtype": "float64",
+              "right_dtype": "float64",
+              "nan_masks_equal": true
+            },
+            "metrics": {
+              "equal": false,
+              "left_shape": [
+                10,
+                5,
+                3,
+                8
+              ],
+              "right_shape": [
+                10,
+                5,
+                3,
+                8
+              ],
+              "left_dtype": "float64",
+              "right_dtype": "float64",
+              "nan_masks_equal": true
+            }
+          }
+        },
+        "diagnostics_per_image.npz": {
+          "present_nonempty": true,
+          "equal": true,
+          "left_bytes": 3566,
+          "right_bytes": 3566,
+          "keys_equal": true,
+          "arrays": {
+            "c0_v0": {
+              "equal": true,
+              "left_shape": [
+                3,
+                5
+              ],
+              "right_shape": [
+                3,
+                5
+              ],
+              "left_dtype": "float64",
+              "right_dtype": "float64",
+              "nan_masks_equal": true
+            },
+            "c0_v1": {
+              "equal": true,
+              "left_shape": [
+                3,
+                5
+              ],
+              "right_shape": [
+                3,
+                5
+              ],
+              "left_dtype": "float64",
+              "right_dtype": "float64",
+              "nan_masks_equal": true
+            },
+            "c0_v2": {
+              "equal": true,
+              "left_shape": [
+                3,
+                5
+              ],
+              "right_shape": [
+                3,
+                5
+              ],
+              "left_dtype": "float64",
+              "right_dtype": "float64",
+              "nan_masks_equal": true
+            },
+            "c1_v0": {
+              "equal": true,
+              "left_shape": [
+                3,
+                5
+              ],
+              "right_shape": [
+                3,
+                5
+              ],
+              "left_dtype": "float64",
+              "right_dtype": "float64",
+              "nan_masks_equal": true
+            },
+            "c1_v1": {
+              "equal": true,
+              "left_shape": [
+                3,
+                5
+              ],
+              "right_shape": [
+                3,
+                5
+              ],
+              "left_dtype": "float64",
+              "right_dtype": "float64",
+              "nan_masks_equal": true
+            },
+            "c1_v2": {
+              "equal": true,
+              "left_shape": [
+                3,
+                5
+              ],
+              "right_shape": [
+                3,
+                5
+              ],
+              "left_dtype": "float64",
+              "right_dtype": "float64",
+              "nan_masks_equal": true
+            },
+            "c2_v0": {
+              "equal": true,
+              "left_shape": [
+                3,
+                5
+              ],
+              "right_shape": [
+                3,
+                5
+              ],
+              "left_dtype": "float64",
+              "right_dtype": "float64",
+              "nan_masks_equal": true
+            },
+            "c2_v1": {
+              "equal": true,
+              "left_shape": [
+                3,
+                5
+              ],
+              "right_shape": [
+                3,
+                5
+              ],
+              "left_dtype": "float64",
+              "right_dtype": "float64",
+              "nan_masks_equal": true
+            },
+            "c2_v2": {
+              "equal": true,
+              "left_shape": [
+                3,
+                5
+              ],
+              "right_shape": [
+                3,
+                5
+              ],
+              "left_dtype": "float64",
+              "right_dtype": "float64",
+              "nan_masks_equal": true
+            },
+            "c3_v0": {
+              "equal": true,
+              "left_shape": [
+                3,
+                5
+              ],
+              "right_shape": [
+                3,
+                5
+              ],
+              "left_dtype": "float64",
+              "right_dtype": "float64",
+              "nan_masks_equal": true
+            },
+            "c3_v1": {
+              "equal": true,
+              "left_shape": [
+                3,
+                5
+              ],
+              "right_shape": [
+                3,
+                5
+              ],
+              "left_dtype": "float64",
+              "right_dtype": "float64",
+              "nan_masks_equal": true
+            },
+            "c3_v2": {
+              "equal": true,
+              "left_shape": [
+                3,
+                5
+              ],
+              "right_shape": [
+                3,
+                5
+              ],
+              "left_dtype": "float64",
+              "right_dtype": "float64",
+              "nan_masks_equal": true
+            },
+            "c4_v0": {
+              "equal": true,
+              "left_shape": [
+                3,
+                5
+              ],
+              "right_shape": [
+                3,
+                5
+              ],
+              "left_dtype": "float64",
+              "right_dtype": "float64",
+              "nan_masks_equal": true
+            },
+            "c4_v1": {
+              "equal": true,
+              "left_shape": [
+                3,
+                5
+              ],
+              "right_shape": [
+                3,
+                5
+              ],
+              "left_dtype": "float64",
+              "right_dtype": "float64",
+              "nan_masks_equal": true
+            },
+            "c4_v2": {
+              "equal": true,
+              "left_shape": [
+                3,
+                5
+              ],
+              "right_shape": [
+                3,
+                5
+              ],
+              "left_dtype": "float64",
+              "right_dtype": "float64",
+              "nan_masks_equal": true
+            },
+            "margin_contrast_sum_count": {
+              "equal": true,
+              "left_shape": [
+                4,
+                3,
+                2
+              ],
+              "right_shape": [
+                4,
+                3,
+                2
+              ],
+              "left_dtype": "float64",
+              "right_dtype": "float64",
+              "nan_masks_equal": true
+            }
+          }
+        }
+      },
+      "comparison": "exact decoded JSON/arrays with equal NaNs; no compressed-byte equality requirement"
+    }
+  },
+  "original_analysis_source_hashes": {
+    "scripts/t013_analysis.py": "f472c3cc3fb8eeab9b4de7cb37afa4c54ae90e9ecd0263a06497204b0edf5224",
+    "scripts/t013_coco.py": "bd3245235a6dcd455224ea7eb737b07875920b0a08b34f30e706dfc6a9ca9e81",
+    "scripts/t013_diagnostics.py": "ae7e61feaa5701ca9580c9c48901f99d09e9986b560c2821073100c94645a41e"
+  },
+  "original_smoke_comparison": {
+    "status": "NOT COMPARED",
+    "reason": "SOURCE VERSION NOT IDENTICAL/UNPROVEN"
+  },
+  "finished_utc": "2026-09-12T21:37:38.335857+00:00",
+  "audit_sources_sha256": {
+    "analysis_replay_compare.py": "6270a32096c536deac8ec878d3cfbfeb1cc067d428781ab7beb09e78cb8acb76",
+    "analysis_replay_preflight.py": "271be7c1aaa85f658edd9300188db29a7f2ee9558a48679ee698930c485bab62"
+  }
+}

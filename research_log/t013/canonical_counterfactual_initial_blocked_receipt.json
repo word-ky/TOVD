@@ -1,0 +1,74 @@
+{
+  "task": "T013-CF2",
+  "status": "BLOCKED",
+  "task_start_head": "a1588cb2ff11e04aeebb90029ce7b19ca0e48b74",
+  "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+  "cf1_commit": "8154004f5574721903ee297a8a5aade729b1e131",
+  "bindings": {
+    "/home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze/scripts/t013_coco.py": {
+      "expected": "bd3245235a6dcd455224ea7eb737b07875920b0a08b34f30e706dfc6a9ca9e81",
+      "actual": "bd3245235a6dcd455224ea7eb737b07875920b0a08b34f30e706dfc6a9ca9e81"
+    },
+    "/home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze/scripts/t013_analysis.py": {
+      "expected": "74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c",
+      "actual": "74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c"
+    },
+    "/home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze/scripts/t013_diagnostics.py": {
+      "expected": "ae7e61feaa5701ca9580c9c48901f99d09e9986b560c2821073100c94645a41e",
+      "actual": "ae7e61feaa5701ca9580c9c48901f99d09e9986b560c2821073100c94645a41e"
+    },
+    "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/cf2/canonical_topk_counterfactual.py": {
+      "expected": "cef3e87ea1a05b40dc36522022b50280f35e8caf78dbcedcb7a47ce27cf01539",
+      "actual": "cef3e87ea1a05b40dc36522022b50280f35e8caf78dbcedcb7a47ce27cf01539"
+    },
+    "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations/instances_val2017.json": {
+      "expected": "e8c7f7908f1d7278341fae127d0da654f102f11bd7b21d8aeefa635b8c810b6f",
+      "actual": "e8c7f7908f1d7278341fae127d0da654f102f11bd7b21d8aeefa635b8c810b6f"
+    },
+    "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/run_receipt.json": {
+      "expected": "a1ec8408c5294935759b462f4f0663b8a5e7b9620acebd61bceb977a509bf0e5",
+      "actual": "a1ec8408c5294935759b462f4f0663b8a5e7b9620acebd61bceb977a509bf0e5"
+    },
+    "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/cache_manifest.jsonl": {
+      "expected": "3d3623c2a6d78edd63b35c3efbdaf733df48eb1ffb9cefe36ea7e2daf2355a5f",
+      "actual": "3d3623c2a6d78edd63b35c3efbdaf733df48eb1ffb9cefe36ea7e2daf2355a5f"
+    }
+  },
+  "reference": {},
+  "replays": [],
+  "environment": {
+    "python": "3.12.12 | packaged by conda-forge | (main, Jan 26 2026, 23:51:32) [GCC 14.3.0]",
+    "executable": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python",
+    "torch": "2.4.0+cu121",
+    "numpy": "1.26.4",
+    "pycocotools": "2.0.8",
+    "topk_device": "cpu",
+    "threads": {
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  "scope": {
+    "active_primary_cache_accessed": false,
+    "primary_scientific_content_opened": false,
+    "primary_fin1_or_replay": false,
+    "detector_inference": false,
+    "original_run_reference_release_mutation": false,
+    "new_gate_or_threshold": false,
+    "yolo_runtime": false,
+    "t014_execution": false,
+    "annotations_used_only_for_completed_smoke": true,
+    "primary_counterfactual_execution_authorized": false
+  },
+  "source_sha256": {
+    "canonical_topk_counterfactual.py": "cef3e87ea1a05b40dc36522022b50280f35e8caf78dbcedcb7a47ce27cf01539",
+    "canonical_counterfactual_analysis.py": "93d91fa377e1557573d1cabae5008f529fc8104a98930f188bf98a97ef59453e",
+    "test_canonical_counterfactual_analysis.py": "cf34c7227f68d8b7fb3f9be902f009bbed2a36c5ff67873acd43bb15c471ef35",
+    "rehearse_canonical_counterfactual.py": "6492621836d4fa621a84b7c39de34b4d6689e41c7153255cf67aba70d21c058b",
+    "CANONICAL_COUNTERFACTUAL_ANALYSIS_CONTRACT.md": "4c9db5cb2442fb91f657b9e4c1d3f52185858941f08aea0ddec7173c96619d7b"
+  },
+  "failure": {
+    "type": "AssertionError",
+    "detail": "accepted REPRO1 receipt mismatch"
+  }
+}
