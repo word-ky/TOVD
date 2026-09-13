@@ -1,0 +1,84 @@
+{
+  "task": "T013-REPLAY1A",
+  "status": "IN_PROGRESS",
+  "task_start_head": "3b0a474",
+  "lead_instruction": "d4c91ab",
+  "launch": {
+    "status": "LAUNCH_REQUESTED",
+    "preflight": {
+      "checks": {
+        "analysis": {
+          "path": "/home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze/scripts/t013_analysis.py",
+          "expected": "74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c",
+          "actual": "74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c"
+        },
+        "fin1_receipt": {
+          "path": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/fin1/primary_completion_receipt.json",
+          "expected": "ade691d9765ee09b740ba7a7e24262ee55b272d82d5fd79889659fd6d67df63e",
+          "actual": "ade691d9765ee09b740ba7a7e24262ee55b272d82d5fd79889659fd6d67df63e"
+        }
+      },
+      "scratch_preexists": false,
+      "tmux_rc": 1,
+      "tmux_stderr": "no server running on /tmp/tmux-1012/default\n",
+      "interpreter": "3.12.12 | packaged by conda-forge | (main, Jan 26 2026, 23:51:32) [GCC 14.3.0]",
+      "cache": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/cache",
+      "freeze": "6fec32243985ccc808123d851abf5f3dea10af99"
+    },
+    "started": "2026-09-14T04:44:53+08:00",
+    "cwd": "/home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze",
+    "command": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -m scripts.t013_analysis --annotations /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations/instances_val2017.json --run /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/cache --output /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/close1-primary-replay",
+    "launch_command": [
+      "tmux",
+      "new-session",
+      "-d",
+      "-s",
+      "t013-close1-primary-replay",
+      "bash /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/close1-primary-replay/run.sh"
+    ],
+    "session": "t013-close1-primary-replay",
+    "output": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/close1-primary-replay",
+    "transport_retries": 0
+  },
+  "initial_process": {
+    "timestamp": "2026-09-14T04:45:23+08:00",
+    "pid": 1104124,
+    "tmux_rc": 0,
+    "tmux_stderr": "",
+    "ps_rc": 0,
+    "process": "1104124 1104122 Rl+  /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -m scripts.t013_analysis --annotations /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations/instances_val2017.json --run /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/cache --output /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/close1-primary-replay",
+    "exit_exists": false,
+    "exit_code": null,
+    "finish_exists": false,
+    "finished": null,
+    "top_level": {
+      "stdout.txt": {
+        "exists": true,
+        "bytes": 0
+      },
+      "stderr.txt": {
+        "exists": true,
+        "bytes": 0
+      },
+      "results.json": {
+        "exists": false,
+        "bytes": null
+      },
+      "paired_image_draws.npy": {
+        "exists": false,
+        "bytes": null
+      },
+      "bootstrap_samples.npz": {
+        "exists": false,
+        "bytes": null
+      },
+      "diagnostics_per_image.npz": {
+        "exists": false,
+        "bytes": null
+      }
+    }
+  },
+  "observations": [],
+  "next_observations": "Existing ~15-20 minute heartbeats: approximately 05:00,05:16,05:32 +08; at most three further points. Final point must be within 05:29:53-05:44:53 +08 (45-60 min from launch). Stop immediately on exit0 or anomaly.",
+  "prohibitions": "No stdout/stderr/scientific contents, comparator/envelope/DEC1/CF/MECH/YOLO/T014 or second launch. Preserve frozen CPU analysis/environment."
+}
