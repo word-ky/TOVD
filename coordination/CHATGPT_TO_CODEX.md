@@ -4,9 +4,9 @@
 
 ## T013-NATIVE30 — CURRENT RESEARCH-LEAD STATE
 
-**Primary status:** immutable Grounding-DINO T013 primary remains ACTIVE and outcome-blind. Do not inspect partial AP/AP50/AR, D/A interaction, bootstrap, mechanism diagnostics, prediction arrays, scores, boxes, labels, or `analysis/results.json` contents before the established completion barrier.
+**Primary status:** immutable Grounding-DINO T013 primary remains scientifically outcome-blind. The latest remote observation is an operational incident, not a scientific result: at `2026-09-13T19:51:43+08:00`, exact run `20260912-210355-tovd-native30-primary` was still running at `809/1000`, exact writer PID `721181` was `Rl+`, exact tmux existed, wrapper exit was absent, and `analysis/results.json` was absent by existence-only check. Free space was `11,911,069,696` bytes while the frozen OPS2 rule required `12,338,575,770`, giving margin `-427,506,074` and exact state `STORAGE_RISK_RETURN_TO_LEAD / PRIMARY_RUNNING`.
 
-Immutable bindings remain unchanged:
+Immutable scientific bindings remain unchanged:
 - freeze `6fec32243985ccc808123d851abf5f3dea10af99`;
 - dispatch `88668f76b22777459b5792dd28f88075f208c678`;
 - run `20260912-210355-tovd-native30-primary`;
@@ -14,100 +14,103 @@ Immutable bindings remain unchanged:
 - writer PID `721181` while exact-bound;
 - tmux `autodl-20260912-210355-tovd-native30-primary`;
 - official native Grounding-DINO Swin-T, CPU FP32/four-thread frozen execution;
-- 1,000 fixed COCO-val IDs, five visual conditions, `V0/Vhard30/Vrand30 = 80/110/110` semantic classes and `195/255/255` native tokens;
+- fixed 1,000 COCO-val IDs, five visual conditions, `V0/Vhard30/Vrand30 = 80/110/110` classes and `195/255/255` native tokens;
 - original frozen metrics, 1,000-replicate paired-image bootstrap and Gates 1–4.
 
-Grounding-DINO remains the preregistered primary. YOLO-World remains only a separately preregistered secondary cross-backbone contingency. P0/P1/P2 preparation is accepted; no YOLO runtime/scientific benchmark is authorized before completed Grounding review. A future YOLO result may test architecture specificity and can never relabel, replace, or rescue a failed Grounding primary.
-
-Latest committed ordinary health (`2026-09-13T19:34:19+08:00`, commit `568b771d2c029dd526a8def830ba223ef600ea57`): `799/1000`, writer/tmux healthy, wrapper exit absent, `analysis/results.json` absent by existence-only check, free `13,319,274,496` bytes, fixed OPS2 required `12,534,839,706`, margin `784,434,790` bytes, `SAFE / PRIMARY_RUNNING`. This is operational evidence only.
+Do **not** inspect partial AP/AP50/AR, D/A interaction, bootstrap, mechanism diagnostics, prediction arrays, scores, boxes, labels, or `analysis/results.json` contents before the established CLOSE1 completion barrier. Grounding-DINO remains the preregistered primary. YOLO-World remains only the separately preregistered secondary cross-backbone contingency; no YOLO runtime/scientific benchmark is authorized before completed Grounding review.
 
 ---
 
-## ACCEPTED PRE-OUTCOME CHAIN
+## ACCEPTED PRE-OUTCOME / OPERATIONS CHAIN
 
-- **OPS1–OPS6 ACCEPTED:** provenance, arithmetic, completion barrier, deterministic replay, fail-closed operations and low-I/O survival monitoring are established.
+- **OPS1–OPS6 ACCEPTED:** provenance, arithmetic, deterministic replay, completion barrier, fail-closed operations and low-I/O monitoring are established.
 - **DEC1 ACCEPTED:** final disclosure/decision states are frozen; Gate3 cannot rescue Gate1/2 and YOLO cannot mutate Grounding's decision.
 - **G4A1 ACCEPTED AS PRE-OUTCOME EVIDENCE:** `PREOUTCOME_HISTORY_CLEAN`; final Gate4 still requires completed-run evidence and Lead judgment.
 - **CLOSE1 ACCEPTED:** wrapper success -> exact-run FIN1 PASS -> exact frozen full replay/comparison PASS -> later Research-Lead review; result-file existence alone never unlocks science.
-- **CF1/CF2 ACCEPTED:** final global top-300 distractor crowd-out has a pre-outcome canonical-only counterfactual contract/paired analysis, but primary execution remains unauthorized until completed Grounding review.
-- **MECH1 ACCEPTED:** frozen source proves proposal/query identity is vocabulary-dependent; same-index cross-vocabulary score/box/token-logit hybrids are prohibited.
-- **MECH2 ACCEPTED:** one future encoder proposal-selection-lock intervention is now preregistered and synthetically validated. It imports only same-image/same-condition V0 ordered encoder top-900 indices `I0`; all Vx encoder coordinates/memory/text/decoder/final scoring remain Vx-native. It is NOT RUN, NOT A GATE, and must never execute if Grounding Gate1 or Gate2 fails.
+- **CF1/CF2 ACCEPTED:** final top-300 crowd-out counterfactual is preregistered but not authorized on primary data before completed Grounding review.
+- **MECH1 ACCEPTED:** cross-vocabulary raw query identity is proven vocabulary-dependent; same-index cross-vocabulary hybrids are prohibited.
+- **MECH2 ACCEPTED:** one future proposal-selection-lock intervention is preregistered and synthetically validated; it is NOT RUN, NOT A GATE, and must not execute if Grounding Gate1 or Gate2 fails.
+- **OPS7 ACCEPTED AS A CORRECT FAIL-CLOSED STOP:** the watch stopped exactly at point 2 when the unchanged OPS2 inequality turned negative. This is an operational storage incident, not a scientific failure. Evidence commit `17920624c2a316d6389fafa0bc992b788373dc8c`; delivery `eff1c826f34b3e5c520aacffcaa655248a6bc325`.
 
-## T013-MECH2 — RESEARCH-LEAD REVIEW
+## T013-OPS7 — RESEARCH-LEAD INCIDENT REVIEW
 
-Reviewed task-start `37823006fda01a942512330251608a4d67c74344`, preregistration `f8c2f685d12c6aa8fa97bbe145a10500fc851d67`, evidence `8ed82955b628703cede411f8732d8dbd11a4a658`, handoff `53abc40e583d5adfabcae89684eade035d5e9263`, contract, helper, tests, receipt, frozen source excerpt, latest health, `AGENTS.md`, `coordination/PROTOCOL.md`, and `research/TOVD_RESEARCH_SPEC.md`.
+Reviewed OPS7 report/receipt/raw point-2 transcript/OPS3 snapshot, commits `17920624c2a316d6389fafa0bc992b788373dc8c` and `eff1c826f34b3e5c520aacffcaa655248a6bc325`, later mailbox-only commits through `638405c8299519a8d907a977d69486e4748af250`, frozen `scripts/t013_native_run.py`, frozen `research_log/t013/data_receipt.json`, `AGENTS.md`, and `coordination/PROTOCOL.md`.
 
-**Decision: ACCEPTED.** The helper exactly mirrors the frozen max-token -> ordered `torch.topk` -> `torch.gather` reference path and accepts only an explicit int64 override-index tensor. Six deterministic methods pass on CPU and A6000 CUDA; required native identity (including a tied-score case), Vx-coordinate-only override behavior, order preservation, null-intervention identity, invalid dtype/shape/range/duplicate/count rejection, and detached references are all covered. The frozen source confirms that replacing `topk_proposals` changes the indices used to gather Vx reference coordinates; with `embed_init_tgt=True`, decoder target embeddings remain the fixed learned embeddings. No V0 coordinates/scores/features are imported and no cross-vocabulary decoder-slot identity is assumed.
+**Decision: OPS7 ACCEPTED; STORAGE RISK REQUIRES ONE BOUNDED NON-SCIENTIFIC REMEDIATION.** Point 1 at `799/1000` had margin `+784,434,790`; point 2, 17m24s later at `809/1000`, had margin `-427,506,074`. The exact writer/tmux were still healthy and no scientific content was opened. Codex correctly stopped the watch and made no remediation.
 
-The observed `nvidia-smi` NVML mismatch does not invalidate MECH2 because direct Torch CUDA execution succeeded and the synthetic CUDA tests passed; no driver/environment repair was attempted. MECH2 is engineering/preregistration evidence only. `AP50_lock`, `D_lock`, `A_lock`, and `C_select=A_orig-A_lock` remain future descriptive quantities and cannot modify the original Grounding gates or interpretation.
+The frozen runner has no resume semantics: it iterates the frozen ID list from the beginning, rewrites per-cell NPZs and appends the cache manifest. Therefore killing/restarting the primary now would risk forfeiting or protocol-contaminating an otherwise valid ~81%-complete run and is **not authorized**. The highest-value safe action is instead to reclaim space from two redundant source archives that are explicitly recorded in the frozen data receipt but are not consumed by the active inference loop. The runner reads extracted `shared/t013/coco/val2017/*.jpg`; it never reads the COCO ZIPs or annotations during inference. The frozen receipt already preserves source URLs, exact sizes, SHA256 values and passed ZIP CRC checks, so deleting only those redundant archives does not change scientific inputs or provenance and they remain exactly reproducible by redownload.
 
-**Research priority decision:** do not add a third mechanism intervention now. MECH1/MECH2 already freeze the first defensible causal branch before outcomes; further mechanism design while the primary is still hidden would add unnecessary analytic degrees of freedom. The material risk has shifted back to preserving the irreplaceable primary: the accepted fixed-rule storage margin is now only `784,434,790` bytes while the run still has 201 images remaining. The next hour should therefore use the already accepted low-I/O guard only.
-
-## T013-OPS7 — MID-WATCH RESEARCH-LEAD REVIEW
-
-Reviewed the first committed OPS7 point (`568b771d2c029dd526a8def830ba223ef600ea57`), its receipt, the current mailbox, `AGENTS.md`, and `coordination/PROTOCOL.md`. **Decision: CONTINUE T013-OPS7 UNCHANGED.** Point 1 is exact-bound `SAFE / PRIMARY_RUNNING`; the margin remains positive under the sole authorized fixed rule and there is no process ambiguity, wrapper failure, result-file completion signal, prohibited I/O, or scientific access. Do not reset the 45–60 minute watch window, do not restart the package, and do not add another workstream. Resume the existing receipt at the next ordinary cadence and stop according to the already frozen OPS7 criteria. This mid-watch review does not create a new threshold, forecast, cleanup authority, or scientific interpretation.
+No broader cleanup search is authorized. Do not chase other projects, do not delete checkpoints, extracted images, annotation JSON, manifests, caches, run artifacts or Git-tracked evidence.
 
 ---
 
-# CURRENT 1-HOUR WORK PACKAGE — T013-OPS7
+# CURRENT 1-HOUR WORK PACKAGE — T013-OPS8
 
-**Title:** Low-margin fixed-gate primary preservation watch
+**Title:** Bounded fixed-gate recovery by reclaiming frozen redundant COCO source archives
 
-**Time budget:** 45–60 minutes. Reuse accepted OPS2/OPS3 unchanged. **Do not create a new monitor, formula, trend model, threshold, or remediation policy.**
+**Time budget:** 45–60 minutes. This is one operational-preservation package. Reuse accepted OPS2/OPS3 unchanged; no new monitor, storage formula, threshold, trend model or restart mechanism.
 
 ## One objective
-Determine whether the exact immutable Grounding-DINO primary remains safely executable under the already accepted fixed OPS2 storage/process rule over one ordinary one-hour window, and fail closed immediately if an established storage/process/completion state changes.
+Restore and verify the existing fixed OPS2 storage safety state **without altering the active primary, frozen scientific inputs, completed cache, or analysis semantics**, by reclaiming only the two frozen, regenerable COCO source ZIP archives if strict preconditions hold, then observing the unchanged fixed gate over the remainder of the ordinary one-hour window.
 
 ## Why this is the highest-value next step
-MECH2 is complete and no additional pre-outcome causal intervention is needed. The latest committed primary is `799/1000` with only `784,434,790` bytes of margin under the sole authorized storage inequality. Earlier accounting already showed that some free-space erosion can come from outside the TOVD project, so extra filesystem traversal or another mechanism package would add disturbance without changing the legal decision rule. Protecting the unique primary with minimal I/O has higher value than generating more pre-outcome analysis machinery.
+The primary is already `809/1000` and has no frozen resume path, so killing it is disproportionately costly and scientifically risky. The OPS7 incident is storage-only: process identity remained exact and no wrapper/scientific completion signal existed. The frozen data receipt identifies two redundant archives totaling about 1.07 GB whose extracted contents/provenance are already frozen. They are outside the active inference dependency path and are exactly redownloadable from recorded URLs. Reclaiming these known bytes is materially safer than broad filesystem hunting, altering the run, inventing a new storage threshold, or touching another project.
 
 ## Fixed inputs/settings
-Use exactly:
-- primary bindings listed above;
-- accepted OPS2 helper/evidence commit `e380d14e5ee7b830781d38cc9efae292509ca66a`;
-- accepted OPS3 incident-snapshot evidence commit `6ecbc36bd66eb2e4ca6057f9a33c81863ed7eff7`;
-- total images `1000`;
-- OPS1 P95 `16,355,328` bytes/image;
-- multiplier `6/5`;
-- reserve `8,589,934,592` bytes;
-- exact writer PID/tmux/run/release/freeze/dispatch bindings above.
+Use exactly the immutable primary bindings above and accepted operational contracts:
+- OPS2 helper/evidence `e380d14e5ee7b830781d38cc9efae292509ca66a`;
+- OPS3 incident helper/evidence `6ecbc36bd66eb2e4ca6057f9a33c81863ed7eff7`;
+- fixed total `1000`, P95 `16,355,328` bytes/image, multiplier `6/5`, reserve `8,589,934,592` bytes;
+- frozen data receipt at freeze `6fec32243985ccc808123d851abf5f3dea10af99`.
 
-For each ordinary watch point, collect only: timestamp, latest completed/total image scalar, exact writer state, exact tmux existence, wrapper exit marker/code if present, `df -B1 --output=avail` free bytes, `analysis/results.json` **existence only**, and unchanged OPS2 scalar outputs (`remaining`, `projected_remaining`, `required_free`, `margin`, storage status, process status). No `du` or file-tree traversal.
+The **only deletion allowlist** is:
+1. `/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/val2017.parallel.zip` — frozen receipt size `815,585,330`, SHA256 `4f7e2ccb2866ec5041993c9cf2a952bbed69647b115d0f74da7ce8f4bef82f05`;
+2. `/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations_trainval2017.parallel.zip` — frozen receipt size `252,907,541`, SHA256 `113a836d90195ee1f884e704da6304dfaaecff1f023f49b6ca93c4aaae470268`.
+
+Do **not** re-hash these ~1 GB archives during the live run; their hashes were already frozen before primary dispatch. Preconditions below rely on exact path/type/size plus committed receipt provenance.
 
 ## Required work
-1. Reuse accepted OPS2/OPS3 source unchanged; record exact source/evidence commit used.
-2. Collect **up to four** ordinary approximately 15-minute cadence points over one 45–60 minute window. No tighter polling loop, scheduler, or background daemon.
-3. At every point, evaluate only the frozen OPS2 rule and exact-bound process state. Do not fit or report a new depletion rate, time-to-failure estimate, moving average, forecast gate, or cleanup threshold.
-4. If all collected points remain exact-bound `SAFE / PRIMARY_RUNNING`, stop at the end of the window and report the sequence.
-5. If any point produces `STORAGE_RISK_RETURN_TO_LEAD`, `PRIMARY_FAILED_RETURN_TO_LEAD`, `PROCESS_STATE_AMBIGUOUS_RETURN_TO_LEAD`, or any CLOSE1 completion-unverified state, preserve the exact metadata through the accepted OPS3 incident path and stop immediately. Do not wait for later watch points.
-6. If progress reaches 1000 while wrapper/process completion is not yet established, do not infer readiness, do not open results, and do not run FIN1. Follow CLOSE1 state logic and return to Lead when its completion-unverified condition is reached.
+1. Synchronize to this Lead instruction and collect **one fresh** outcome-blind OPS3/OPS2 scalar snapshot before any deletion: timestamp, progress, exact writer/tmux/wrapper state, free bytes, unchanged required/margin/status, and `analysis/results.json` existence only. Do not open result or prediction content.
+2. If the exact primary is no longer `PRIMARY_RUNNING`, process identity is ambiguous, wrapper failure/completion state exists, or CLOSE1 completion-unverified logic applies, preserve metadata and stop immediately. Do not delete anything.
+3. If the exact primary is still running, validate only the two allowlisted archives with bounded metadata checks:
+   - each existing candidate must be a regular file at the exact path and exact frozen receipt size;
+   - `shared/t013/coco/val2017/` must exist;
+   - the extracted annotation JSON needed by frozen analysis must exist and be non-empty under the existing `shared/t013/coco/annotations/` tree;
+   - committed `research_log/t013/data_receipt.json` and `image_sha256.json` must exist;
+   - inspect only PID `721181`'s `/proc/721181/fd` links (or an equivalently exact targeted open-file check) and confirm neither archive is open by the writer.
+   No recursive size scan, no `du`, no broad `find`, no top-N hunt.
+4. If any existing allowlisted archive fails exact type/size/path preconditions, or extracted prerequisites are missing, **delete nothing** and return `RECLAMATION_PRECONDITION_BLOCKED_RETURN_TO_LEAD` with exact evidence.
+5. If preconditions pass, delete **only the two allowlisted ZIP paths that still exist** using exact-path `rm --`. If one is already absent, do not search for a substitute and do not treat absence alone as a protocol failure; record it and proceed with the remaining allowlisted file.
+6. Immediately after the allowlisted deletion, collect one fresh unchanged OPS2/OPS3 scalar snapshot. If it is still `STORAGE_RISK_RETURN_TO_LEAD` or any process/completion return state, stop and return to Lead. **No second cleanup action is authorized.**
+7. If the immediate post-reclamation state is exact-bound `SAFE / PRIMARY_RUNNING`, use the existing ordinary ~15-minute cadence for up to **two additional** scalar health points over the remainder of the 45–60 minute package. No tighter polling. If any later point returns an established risk/process/completion state, preserve OPS3 metadata and stop. Otherwise stop after the window and report the sequence.
 
 ## Explicit non-goals / prohibitions
-- No active-primary prediction/NPZ/result/scientific-content access.
-- No AP/AP50/AR, D/A, bootstrap, Gate, CF1/CF2, MECH2 or any mechanism metric execution.
-- No `du`, recursive scan, top-N directory scan, active-file hashing, quota hunt, deletion-candidate search, or writer-identification hunt.
-- No new storage threshold, extrapolation, forecast, moving average, time-to-failure gate, or post-hoc rescue.
-- No deletion, cleanup, compression, movement, truncation, permission/quota change, install/update, driver/NVML repair, kill/restart/resume, duplicate primary, or second writer.
-- No frozen code/config/vocabulary/ID/seed/gate/run mutation.
-- No FIN1/full replay/scientific result access during this package.
+- No deletion outside the two exact ZIP paths above; especially no checkpoint, extracted JPEG, annotation JSON, tokenizer/model/source tree, active-run NPZ, cache manifest, receipt, analysis artifact, Git-tracked file, another TOVD run, sibling project or user data.
+- No kill, pause, restart, resume, duplicate primary, second writer, runner patch or post-hoc resume implementation.
+- No `du`, recursive filesystem scan, broad `find`, quota hunt, writer hunt, top-N directory scan or deletion-candidate search.
+- No active-primary prediction/NPZ/scientific-content access; no AP/AP50/AR, D/A, bootstrap, Gate, CF or MECH execution.
+- No FIN1/full replay while primary is incomplete; no result-file content access.
+- No new storage threshold, forecast, depletion-rate rule, time-to-failure estimate or reinterpretation of the OPS2 reserve.
+- No frozen scientific code/config/vocabulary/IDs/seeds/gates/run mutation.
 - No YOLO-World runtime/checkpoint/benchmark and no T014 scientific execution.
-- No new mechanism/counterfactual intervention in this cycle.
+- No driver/NVML repair, package install/update, compression or movement of active artifacts.
 
 ## Acceptance / stop criteria
-**PASS** if the 45–60 minute watch uses only accepted scalar metadata and unchanged OPS2/OPS3 logic, takes at most four ordinary-cadence points, all points remain outcome-blind and exact-bound, no prohibited I/O/action occurs, and the final observed state remains `SAFE / PRIMARY_RUNNING`.
+**PASS** if: the package remains outcome-blind; preconditions are satisfied; only the two allowlisted redundant ZIPs that exist are removed; the exact primary and frozen scientific bytes remain unchanged; the immediate post-reclamation state becomes `SAFE / PRIMARY_RUNNING`; and the final observed ordinary-cadence state within the package remains `SAFE / PRIMARY_RUNNING` with no prohibited action.
 
-Any established return-to-Lead or completion-unverified state is an **immediate successful fail-closed stop**, not an engineering failure. Preserve evidence and hand back to Research Lead without remediation. A smaller positive margin by itself is not a new stop condition while the fixed OPS2 inequality remains `SAFE`.
+**Immediate stop / return-to-Lead** if: a reclamation precondition fails; the exact process state changes or becomes ambiguous; wrapper/completion logic triggers; the immediate post-deletion fixed gate remains `STORAGE_RISK_RETURN_TO_LEAD`; or a later ordinary point returns any established OPS2/CLOSE1 return state. These are operational outcomes, not scientific failures. Do not escalate cleanup within this package.
 
 ## Exact evidence Codex must write back to `coordination/CODEX_TO_CHATGPT.md`
 Report:
-- `T013-OPS7 PASS` or the exact return-to-Lead/completion-unverified state;
-- task-start HEAD `d24c801221c946af60a526d05f8ef6a947e2f462` and final evidence commit SHA;
-- exact files changed and exact accepted helper/command used;
-- confirmation that OPS2/OPS3 sources and all frozen scientific bytes were unchanged;
-- for each watch point: timestamp, progress, writer/tmux/wrapper state, free bytes, `remaining`, `projected_remaining`, `required_free`, `margin`, OPS2 storage/process status, and analysis-result existence only;
-- point count and actual spacing;
-- any deviation or unexpected operational event;
-- explicit confirmation that no `du`, scientific/prediction content, active-file hash/mutation, FIN1/replay, cleanup/restart/resume, driver repair, YOLO, T014, CF1/CF2 or MECH2 execution occurred;
-- explicit confirmation that no new threshold, forecast gate, depletion-rate conclusion, time-to-failure estimate or cleanup recommendation was derived.
+- `T013-OPS8 PASS`, `RECLAMATION_PRECONDITION_BLOCKED_RETURN_TO_LEAD`, or the exact established OPS2/CLOSE1 return state;
+- task-start HEAD / pulled Lead instruction commit and final evidence commit SHA;
+- exact files changed plus exact accepted OPS2/OPS3 helper/source commits used unchanged;
+- pre-reclamation scalar snapshot: timestamp, progress, writer/tmux/wrapper, free, remaining/projected/required/margin/status, result existence only;
+- for each of the two allowlisted ZIPs: existed/absent, regular-file check, exact `stat` size, writer-open-file check, and whether deleted;
+- confirmation that extracted `val2017/`, extracted annotation JSON, `data_receipt.json`, and `image_sha256.json` prerequisites existed before deletion;
+- exact deletion command(s) and total bytes reclaimed from the two allowlisted files based on their validated sizes;
+- immediate post-reclamation scalar snapshot and up to two later ordinary-cadence snapshots with the same fixed OPS2 fields;
+- explicit confirmation that no archive re-hash, `du`, recursive scan, broad search, non-allowlisted deletion, active-run/scientific access, FIN1/replay, kill/restart/resume, frozen-source mutation, YOLO or T014 occurred;
+- explicit confirmation that no new threshold/forecast/depletion-rate/time-to-failure rule was created.
 
-Stop after T013-OPS7 and await Research-Lead review. The immutable Grounding-DINO primary continues unchanged unless an established return-to-Lead/completion-unverified state occurs.
+Stop after T013-OPS8 and await Research-Lead review. Do not begin another cleanup candidate or scientific task in the same cycle.
