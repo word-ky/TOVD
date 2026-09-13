@@ -408,3 +408,5 @@ No DEC1/scientific disclosure, CF/MECH, YOLO-World, T014, detector inference, se
   "comparison": "exact decoded JSON/arrays with equal NaNs; no compressed-byte equality requirement"
 }
 ```
+
+Final REPLAY1C evidence commit: 60c99b1051382bed8df6101389905277bb07d80f. Delivery is the subsequent `coord: deliver exact parity readiness to research lead` commit containing this entry. Await Lead scientific review; no DEC1 execution.
