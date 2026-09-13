@@ -1,0 +1,192 @@
+{
+  "task": "T013-CF2",
+  "status": "PASS",
+  "task_start_head": "a1588cb2ff11e04aeebb90029ce7b19ca0e48b74",
+  "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+  "cf1_commit": "8154004f5574721903ee297a8a5aade729b1e131",
+  "bindings": {
+    "/home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze/scripts/t013_coco.py": {
+      "expected": "bd3245235a6dcd455224ea7eb737b07875920b0a08b34f30e706dfc6a9ca9e81",
+      "actual": "bd3245235a6dcd455224ea7eb737b07875920b0a08b34f30e706dfc6a9ca9e81"
+    },
+    "/home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze/scripts/t013_analysis.py": {
+      "expected": "74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c",
+      "actual": "74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c"
+    },
+    "/home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze/scripts/t013_diagnostics.py": {
+      "expected": "ae7e61feaa5701ca9580c9c48901f99d09e9986b560c2821073100c94645a41e",
+      "actual": "ae7e61feaa5701ca9580c9c48901f99d09e9986b560c2821073100c94645a41e"
+    },
+    "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/cf2/canonical_topk_counterfactual.py": {
+      "expected": "cef3e87ea1a05b40dc36522022b50280f35e8caf78dbcedcb7a47ce27cf01539",
+      "actual": "cef3e87ea1a05b40dc36522022b50280f35e8caf78dbcedcb7a47ce27cf01539"
+    },
+    "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations/instances_val2017.json": {
+      "expected": "e8c7f7908f1d7278341fae127d0da654f102f11bd7b21d8aeefa635b8c810b6f",
+      "actual": "e8c7f7908f1d7278341fae127d0da654f102f11bd7b21d8aeefa635b8c810b6f"
+    },
+    "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/run_receipt.json": {
+      "expected": "a1ec8408c5294935759b462f4f0663b8a5e7b9620acebd61bceb977a509bf0e5",
+      "actual": "a1ec8408c5294935759b462f4f0663b8a5e7b9620acebd61bceb977a509bf0e5"
+    },
+    "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-205428-tovd-native30-pipeline-smoke/artifacts/cache/cache_manifest.jsonl": {
+      "expected": "3d3623c2a6d78edd63b35c3efbdaf733df48eb1ffb9cefe36ea7e2daf2355a5f",
+      "actual": "3d3623c2a6d78edd63b35c3efbdaf733df48eb1ffb9cefe36ea7e2daf2355a5f"
+    }
+  },
+  "reference": {
+    "accepted_receipt": {
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/repro1/analysis_replay_receipt.json",
+      "sha256": "027e5a05d296fb9b74ffd0249cecbbcee0bf12728cdcb63f6be2f93236b1bb2d",
+      "semantic_sha256": "a490f9ddab943734b5b22650d8b43c124a5d66225343d38f4395327ef304ebbc"
+    },
+    "results.json": {
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/repro1/replay_a/results.json",
+      "sha256": "6f0e93a90cfb59ae583f1069f01637d84f88ce3ccb407ef63524d5fe7adf8aef"
+    },
+    "bootstrap_samples.npz": {
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/repro1/replay_a/bootstrap_samples.npz",
+      "sha256": "6dc5c80a77e687a8f5a4f96a166b0e892c23cae1893c5c38b191ca000fe627aa"
+    },
+    "paired_image_draws.npy": {
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/repro1/replay_a/paired_image_draws.npy",
+      "sha256": "0bc6714a6034a8211a004d374b94f096a6928604adaff98b3a041df09a4cc267"
+    }
+  },
+  "replays": [
+    {
+      "tag": "replay_a",
+      "output": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/cf2/replay_a",
+      "wall_seconds": 17.531221307988744,
+      "v0_point_exact": "5x4",
+      "v0_bootstrap_exact": "10x5x4",
+      "hard_random_cells_completed": 10,
+      "smoke_raw_cells": 45,
+      "descriptor_fields": [
+        "D_cf",
+        "A_cf",
+        "L_topk",
+        "H_cf",
+        "L_topk_hard_minus_random",
+        "mean_A_cf_hard",
+        "mean_L_topk_hard",
+        "mean_H_cf",
+        "mean_L_topk_hard_minus_random"
+      ],
+      "artifact_sha256": {
+        "paired_image_draws.npy": "0bc6714a6034a8211a004d374b94f096a6928604adaff98b3a041df09a4cc267",
+        "metrics.npz": "3ff63f4ad09265167f4aa1daf3175244ebb4a3ac429f873e64408ac77d4dbadd",
+        "descriptor_samples.npz": "90595f1d23dda4189eb27e40fd24e5bd5fc5065e1fd9cb1e3cad4b0a514f1502",
+        "descriptors.json": "b3c21547c146967f29d2e73763ce0ecbaa46b09f3b36283921eed367027fca8f"
+      }
+    },
+    {
+      "tag": "replay_b",
+      "output": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/cf2/replay_b",
+      "wall_seconds": 17.062174855032936,
+      "v0_point_exact": "5x4",
+      "v0_bootstrap_exact": "10x5x4",
+      "hard_random_cells_completed": 10,
+      "smoke_raw_cells": 45,
+      "descriptor_fields": [
+        "D_cf",
+        "A_cf",
+        "L_topk",
+        "H_cf",
+        "L_topk_hard_minus_random",
+        "mean_A_cf_hard",
+        "mean_L_topk_hard",
+        "mean_H_cf",
+        "mean_L_topk_hard_minus_random"
+      ],
+      "artifact_sha256": {
+        "paired_image_draws.npy": "0bc6714a6034a8211a004d374b94f096a6928604adaff98b3a041df09a4cc267",
+        "metrics.npz": "3ff63f4ad09265167f4aa1daf3175244ebb4a3ac429f873e64408ac77d4dbadd",
+        "descriptor_samples.npz": "90595f1d23dda4189eb27e40fd24e5bd5fc5065e1fd9cb1e3cad4b0a514f1502",
+        "descriptors.json": "b3c21547c146967f29d2e73763ce0ecbaa46b09f3b36283921eed367027fca8f"
+      }
+    }
+  ],
+  "environment": {
+    "python": "3.12.12 | packaged by conda-forge | (main, Jan 26 2026, 23:51:32) [GCC 14.3.0]",
+    "executable": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python",
+    "torch": "2.4.0+cu121",
+    "numpy": "1.26.4",
+    "pycocotools": "2.0.8",
+    "topk_device": "cpu",
+    "threads": {
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  "scope": {
+    "active_primary_cache_accessed": false,
+    "primary_scientific_content_opened": false,
+    "primary_fin1_or_replay": false,
+    "detector_inference": false,
+    "original_run_reference_release_mutation": false,
+    "new_gate_or_threshold": false,
+    "yolo_runtime": false,
+    "t014_execution": false,
+    "annotations_used_only_for_completed_smoke": true,
+    "primary_counterfactual_execution_authorized": false
+  },
+  "source_sha256": {
+    "canonical_topk_counterfactual.py": "cef3e87ea1a05b40dc36522022b50280f35e8caf78dbcedcb7a47ce27cf01539",
+    "canonical_counterfactual_analysis.py": "93d91fa377e1557573d1cabae5008f529fc8104a98930f188bf98a97ef59453e",
+    "test_canonical_counterfactual_analysis.py": "cf34c7227f68d8b7fb3f9be902f009bbed2a36c5ff67873acd43bb15c471ef35",
+    "rehearse_canonical_counterfactual.py": "da40b6fe83eebd9edb751a53457e801f2a802d81d6f7cc72223052e9d4a85031",
+    "CANONICAL_COUNTERFACTUAL_ANALYSIS_CONTRACT.md": "884847c8b1290418a4240ff4acabcf95e21c7a8eecc865a4478a1e5466254a35"
+  },
+  "draws": {
+    "shape": [
+      10,
+      3
+    ],
+    "dtype": "int64",
+    "sha256": "0bc6714a6034a8211a004d374b94f096a6928604adaff98b3a041df09a4cc267",
+    "exact_reference_matrix_used": true,
+    "regenerated_exact": true
+  },
+  "tests": {
+    "command": [
+      "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python",
+      "-m",
+      "unittest",
+      "-v",
+      "test_canonical_counterfactual_analysis"
+    ],
+    "count": 6,
+    "exit_code": 0,
+    "log_sha256": "1742a8fe55b64b0dd1b0ee597133dd48f6051669831777a75d29392ebbf81427"
+  },
+  "replay_comparison": {
+    "metrics.npz": {
+      "exact": true,
+      "arrays": [
+        "point",
+        "samples"
+      ]
+    },
+    "descriptor_samples.npz": {
+      "exact": true,
+      "arrays": [
+        "D_cf",
+        "A_cf",
+        "L_topk",
+        "H_cf",
+        "L_topk_hard_minus_random",
+        "mean_A_cf_hard",
+        "mean_L_topk_hard",
+        "mean_H_cf",
+        "mean_L_topk_hard_minus_random"
+      ]
+    },
+    "paired_image_draws.npy": {
+      "exact": true
+    },
+    "descriptors.json": {
+      "exact": true
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "canonical_counterfactual_receipt.json": "3435aa7ea610eb280320e933673b5d060e381520deacff755bd79905fae9f18d",
+  "canonical_counterfactual_initial_blocked_receipt.json": "172a0ff4ec9064e8c96b0535b2f50272132ee635ae552d85fbbbcaede0b088b0",
+  "cf2_remote_repro1_receipt.json": "027e5a05d296fb9b74ffd0249cecbbcee0bf12728cdcb63f6be2f93236b1bb2d",
+  "canonical_counterfactual_tests.txt": "1742a8fe55b64b0dd1b0ee597133dd48f6051669831777a75d29392ebbf81427"
+}

@@ -1,0 +1,11 @@
+test_drops_amplifications_removed_and_contrasts (test_canonical_counterfactual_analysis.CounterfactualArithmeticTests.test_drops_amplifications_removed_and_contrasts) ... ok
+test_identical_original_counterfactual_zero_removed (test_canonical_counterfactual_analysis.CounterfactualArithmeticTests.test_identical_original_counterfactual_zero_removed) ... ok
+test_mean_before_interval_not_mean_of_intervals (test_canonical_counterfactual_analysis.CounterfactualArithmeticTests.test_mean_before_interval_not_mean_of_intervals) ... ok
+test_nonfinite_ci_matches_frozen_convention (test_canonical_counterfactual_analysis.CounterfactualArithmeticTests.test_nonfinite_ci_matches_frozen_convention) ... ok
+test_percentile_linear_on_replicate_contrasts (test_canonical_counterfactual_analysis.CounterfactualArithmeticTests.test_percentile_linear_on_replicate_contrasts) ... ok
+test_replicate_first_means (test_canonical_counterfactual_analysis.CounterfactualArithmeticTests.test_replicate_first_means) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.060s
+
+OK
