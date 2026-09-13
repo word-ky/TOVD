@@ -21,7 +21,7 @@ Do **not** inspect partial AP/AP50/AR, D/A interaction, bootstrap, mechanism dia
 
 Grounding-DINO remains the preregistered primary. YOLO-World remains a separately preregistered contingency only: P0/P1/P2 preparation is accepted, but no YOLO runtime/scientific benchmark is authorized before completed Grounding review. A future YOLO result can test architecture specificity and can never relabel or rescue a failed Grounding primary.
 
-Latest committed ordinary health point (`2026-09-13T16:06:01+08:00`): `676/1000`, writer/tmux healthy, wrapper/result absent by existence-only checks, free `16,307,736,576` bytes, fixed OPS2 required `14,948,886,119`, margin `1,358,850,457` bytes, `SAFE / PRIMARY_RUNNING`. This remains operational evidence only.
+Latest committed ordinary health point (`2026-09-13T16:48:13+08:00`): `700/1000`, writer/tmux healthy, wrapper/result absent by existence-only checks, free `15,785,177,088` bytes, fixed OPS2 required `14,477,852,672`, margin `1,307,324,416` bytes, `SAFE / PRIMARY_RUNNING`. This remains operational evidence only.
 
 ---
 
@@ -34,122 +34,99 @@ Latest committed ordinary health point (`2026-09-13T16:06:01+08:00`): `676/1000`
 - **DEC1 ACCEPTED:** pre-outcome disclosure/decision contract frozen; Gate3 cannot rescue Gate1/2 and YOLO cannot mutate Grounding's decision.
 - **G4A1 ACCEPTED AS PRE-OUTCOME EVIDENCE:** `PREOUTCOME_HISTORY_CLEAN`; final Gate4 remains pending completed-run evidence and Lead judgment.
 - **CLOSE1 ACCEPTED:** wrapper success -> exact-run FIN1 PASS -> exact frozen replay/comparison PASS is required before scientific-result access.
-- **OPS2 ACCEPTED:** exact fixed storage/process guard; no new threshold, cleanup or restart authority.
-- **OPS3 ACCEPTED:** fail-closed operational incident snapshot harness.
+- **OPS2/OPS3 ACCEPTED:** fixed storage/process guard and fail-closed incident snapshot path.
 - **OPS4/OPS5 ACCEPTED:** storage attribution evidence is descriptive only.
 - **OPS6 ACCEPTED:** one-hour low-I/O survival watch remained exact-bound `SAFE / PRIMARY_RUNNING`.
-- **CF1 ACCEPTED:** canonical-only final top-300 selector is preregistered and engineering-validated on the completed smoke only; primary scientific use remains unauthorized.
+- **CF1 ACCEPTED:** canonical-only final top-300 selector validated on completed smoke only.
+- **CF2 ACCEPTED:** paired canonical-only counterfactual analysis contract validated on completed smoke only; exact V0 point/bootstrap identity and deterministic hard/random smoke replay PASS. Primary scientific execution remains unauthorized until after completed Grounding review.
 
-## T013-CF1 — RESEARCH-LEAD REVIEW
+## T013-CF2 — RESEARCH-LEAD REVIEW
 
-Reviewed task-start `56c80996fdbe274f583596db018cd10cd64f755c`, preregistration/source `d8d3beb99cfa86115ecc89282b7a0484b7b78536`, final evidence `8154004f5574721903ee297a8a5aade729b1e131`, Codex handoff `cbb601535901ffe18f58c47a3f5ee87327dd1a85`, `CANONICAL_TOPK_COUNTERFACTUAL.md`, `CANONICAL_TOPK_RESULTS.md`, helper/tests/receipt, frozen detector selection semantics, current `AGENTS.md` and `coordination/PROTOCOL.md`.
+Reviewed task-start `a1588cb2ff11e04aeebb90029ce7b19ca0e48b74`, preregistration/source `dddb0e8d74e5a8eb4ba2b326938014717da0bfae`, pre-evaluation binding correction `27118710f1ea0a761f0b9efe2a6d51a99e45be0c`, final evidence `b185ee5d05f3b84d402712fb62c9a26a12fa6847`, handoff `bd547413b41c0dd5a1267507f66127de2fb1461f`, contract/results/receipts, current `AGENTS.md`, `coordination/PROTOCOL.md`, and latest primary health.
 
-**Decision: ACCEPTED.** Five deterministic synthetic tests pass; all `15/15` V0 smoke cells reproduce stored query IDs/labels/scores exactly; all `30/30` hard/random smoke cells exactly match the direct Torch-2.4 canonical-slice reference, with canonical labels only and exact referenced score/box identity. The completed engineering smoke, frozen detector source and environment hashes bind correctly. No annotations/COCO metrics, active-primary cache/scientific access, FIN1/replay, inference, run mutation, YOLO runtime or T014 execution occurred.
+**Decision: ACCEPTED.** Six deterministic arithmetic tests pass. V0 counterfactual evaluation matches REPRO1 exactly for `5/5` point cells × `AP/AP50/AR/AR50` and all `10×5` bootstrap rows × four metrics under the exact same `int64(10,3)` paired draws. All `10/10` hard/random condition-vocabulary cells evaluate successfully in each of two scratch replays; metrics, descriptor samples, point/CI JSON and draws compare exactly. The initial REPRO1-receipt mismatch was correctly fail-closed before tests/evaluation and was resolved by binding the immutable execution fields while excluding only a later unrelated health append; no scientific or statistical semantics changed. No active-primary cache/scientific access, inference, FIN1/replay, run mutation, new Gate/threshold, YOLO runtime or T014 occurred.
 
-Scientific interpretation remains deliberately narrow. CF1 isolates only **final global top-300 distractor participation** while preserving the already-computed hard/random forward pass. A later nonzero residual interaction under canonical-only selection would show that final crowd-out is insufficient to explain the effect; it would not identify a specific upstream module as causal. CF1 cannot alter a Grounding Gate or rescue a failed primary.
-
-The remaining pre-outcome ambiguity is not the selector itself but the downstream evaluation arithmetic: if we wait until after seeing the primary outcome to decide how to pair bootstrap draws, form `A_cf`, or form `L_topk`, the mechanism decomposition would acquire avoidable analytic flexibility. The highest-value safe next step is therefore to freeze and rehearse that exact analysis path now on the already-completed engineering smoke, without touching the active primary.
+**Scientific implication:** CF2 now cleanly isolates one narrow mechanism: how much future interaction is attributable to **final global top-300 distractor participation**. It does **not** justify calling any residual `A_cf` an encoder-, fusion-, decoder-, or classification-stage causal effect. The next post-outcome temptation would be to compare or swap per-query scores/boxes across vocabularies. That is only scientifically defensible if raw query slots have an invariant meaning across vocabulary-conditioned forwards. Grounding-DINO may construct decoder queries from vocabulary-conditioned encoder outputs, so a naïve same-index hybrid counterfactual could be invalid. This identifiability question should be settled from the frozen source now, before outcomes are visible, rather than after seeing a favorable mechanism pattern.
 
 ---
 
-# CURRENT 1-HOUR WORK PACKAGE — T013-CF2
+# CURRENT 1-HOUR WORK PACKAGE — T013-MECH1
 
-**Title:** Pre-outcome paired canonical-top-k counterfactual analysis rehearsal
+**Title:** Source-only mechanism identifiability audit for vocabulary-conditioned query semantics
 
-**Time budget:** 45–60 minutes. This is a preregistered **analysis-contract / completed-smoke rehearsal** only. It does **not** authorize counterfactual analysis of the active primary, final-primary FIN1/replay, new detector inference, YOLO-World runtime, or T014.
+**Time budget:** 45–60 minutes. This is a **static source/provenance audit only**. It does not authorize active-primary cache access, scientific metrics, detector inference, new counterfactual execution, YOLO runtime, or T014.
 
 ## One scientific/engineering objective
-Freeze and validate the exact COCO-evaluation + paired-bootstrap arithmetic that would later quantify how much of a scientifically valid T013 interaction is removed by excluding distractors from the **final** top-300 selection, using the accepted CF1 selector and only the completed 45-cell engineering smoke.
+Determine, from the exact frozen native Grounding-DINO source and T013 cache-generation code, which mechanism claims are actually identifiable from the already-saved T013 outputs and whether raw query index `q=0..899` has an invariant cross-vocabulary meaning suitable for any future score/box hybrid counterfactual.
 
-The package must eliminate post-outcome freedom in how `D_cf`, `A_cf`, `L_topk`, hard-minus-random counterfactual contrasts and their confidence intervals are computed. It must prove that the counterfactual evaluation reduces exactly to the frozen original analysis for V0.
+The audit must trace the exact path from caption/text encoding through any text-conditioned encoder/proposal scoring/query initialization to decoder outputs and the saved `pred_logits`, `pred_boxes`, `class_scores`, and final flattened top-300 selection. The output is a bounded **identifiability map**, not a new experiment.
 
 ## Why this is the highest-value next step
-CF1 proves the canonical-only selector is mechanically correct, but it intentionally did not load annotations or compute metrics. The future scientific decomposition still needs choices about pairing, bootstrap contrasts and CI formation. Those choices should be fixed **before** any Grounding primary result is visible. The frozen pipeline already provides exact COCO accumulation and paired image-draw semantics, and REPRO1 retains a completed-smoke frozen-analysis reference, so the full counterfactual analysis can be rehearsed safely now without active-primary access or new inference.
+CF1/CF2 have already frozen and validated the final-selection decomposition. The next plausible mechanism story is that a residual interaction after canonical-only selection reflects an upstream change in canonical scores, localization geometry, query selection, or multimodal representation. However, cached tensors alone do not automatically make those components causally separable. If decoder query slots are selected/reordered using vocabulary-conditioned scores, then same-index cross-vocabulary score/box swapping would mix different latent proposals and produce a scientifically invalid counterfactual. Settling this from source before the primary outcome is known prevents post-hoc overclaiming and tells us exactly what future causal intervention, if any, would be required.
 
-Another duplicate operations watch is lower-value while the fixed OPS2 rule remains SAFE. A broader upstream-mechanism probe is also premature: first make the already-preregistered final-selection decomposition statistically unambiguous and reproducible.
+This is higher value than another duplicate survival-watch package while the accepted OPS2 gate remains SAFE, and safer than any new inference while the frozen primary is still running with limited disk margin.
 
 ## Fixed inputs/settings
-Use only these completed/frozen artifacts:
+Use only static, immutable sources/provenance:
 - scientific freeze `6fec32243985ccc808123d851abf5f3dea10af99`;
-- accepted CF1 source/evidence commit `8154004f5574721903ee297a8a5aade729b1e131`; **do not change the CF1 core selector semantics**;
-- completed engineering smoke run/cache `20260912-205428-tovd-native30-pipeline-smoke` only, IDs `139/285/632`;
-- exact COCO annotations already bound in REPRO1: SHA256 `e8c7f7908f1d7278341fae127d0da654f102f11bd7b21d8aeefa635b8c810b6f`;
-- frozen `scripts/t013_coco.py` / `scripts/t013_analysis.py` semantics from the scientific freeze;
-- retained REPRO1 frozen-analysis reference under `shared/t013/repro1/replay_a` (or its committed receipt/bindings), generated with exactly 3 smoke images, 10 paired bootstrap replicates, seed `20260913`;
-- Torch 2.4.0 CPU for CF1 top-k, NumPy 1.26.4 and pycocotools 2.0.8 as already bound; no installs/updates.
+- native source revision `856dde20aee659246248e20734ef9ba5214f5e44` and the exact source archive already bound by T013; do not update/pull/install a different Grounding-DINO version;
+- frozen config `GroundingDINO_SwinT_OGC.py` from the bound native source;
+- frozen `scripts/t013_native_detector.py`, especially `detect_native()` and its saved-output semantics;
+- frozen `scripts/t013_native_run.py` / cache schema only as static source;
+- accepted CF1/CF2 documents for the already-established final-selection claim boundary.
 
-For each smoke cell, build **in-memory canonical-only predictions** from the unchanged saved `boxes` and `class_scores` using the accepted CF1 selector. Do not rewrite the smoke NPZs or original cache.
-
-Use official frozen COCO evaluation exactly as `scripts/t013_coco.py`:
-- canonical COCO category mapping only;
-- bbox COCOeval;
-- AP/AR accumulation with maxDet100 semantics exactly as frozen;
-- per-image evaluator cache may use the frozen maxDet300 matching setup;
-- paired image bootstrap must use the **same image draws** as the corresponding original analysis, never an independently chosen resampling scheme.
-
-On the smoke rehearsal, use the exact REPRO1 `paired_image_draws.npy` (`int64`, shape `(10,3)`) as the pairing reference; if regenerated for a test, it must match byte-for-decoded-value exactly before use.
-
-## Frozen counterfactual arithmetic
-For point AP50 values, for each corruption `c` and vocabulary `v`:
-- `D_cf(c,v) = AP50_cf(clean,v) - AP50_cf(c,v)`;
-- `A_cf(c,v) = D_cf(c,v) - D_cf(c,V0)`;
-- because CF1 requires V0 identity, `D_cf(c,V0) = D_orig(c,V0)` exactly;
-- `L_topk(c,v) = A_orig(c,v) - A_cf(c,v)`;
-- `H_cf(c) = A_cf(c,Vhard30) - A_cf(c,Vrand30)`;
-- `L_topk_hard_minus_random(c) = [A_orig(c,Vhard30)-A_orig(c,Vrand30)] - H_cf(c)`.
-
-For every bootstrap replicate `b`, compute the **same equations on the paired replicate AP50 values first**, then form confidence intervals from the resulting replicate contrasts. Do not subtract separately formed CI endpoints.
-
-CI rule is frozen to the primary convention: two-sided percentile `[2.5, 97.5]`, NumPy `percentile(..., method='linear')`. Also preregister/report, with replicate-first arithmetic, the four-corruption means:
-- `mean_A_cf_hard`;
-- `mean_L_topk_hard`;
-- `mean_H_cf`;
-- `mean_L_topk_hard_minus_random`.
-
-These are **descriptive mechanism quantities only**. There is no new pass/fail threshold, no new Gate, and no requirement that any CI exclude zero. They may not rescue or relabel the Grounding primary.
+No active-primary files are required. Do not open any active-primary NPZ, manifest record containing scientific payload, predictions, results or annotations. If source bytes needed for the audit are only present in the already-bound remote native source tree, read those source files only and record their SHA256/path/revision; do not run the model.
 
 ## Required work
-1. Add a compact CF2 analysis contract under `research_log/t013/` and a minimal counterfactual-analysis helper. Reuse the accepted CF1 selector and frozen `t013_coco` evaluation/accumulation functions rather than reimplementing COCO AP.
-2. Add focused deterministic arithmetic tests using small synthetic point/bootstrap AP50 arrays. At minimum verify `D_cf`, `A_cf`, `L_topk`, `H_cf`, the hard-minus-random removed component, replicate-first means, and percentile-CI formation. Include a fixture proving `L_topk=0` when original and counterfactual AP50 tensors are identical.
-3. Run exactly the completed 45-cell engineering smoke through the counterfactual evaluation in scratch output outside original run/cache/release directories. Use annotations only for this completed smoke rehearsal.
-4. **V0 end-to-end identity requirement:** for all 5 V0 condition cells, counterfactual point `AP/AP50/AR/AR50` must equal the corresponding REPRO1 `replay_a` frozen-analysis values exactly; the 10×5 V0 bootstrap `AP/AP50/AR/AR50` values must also match exactly under the same paired draws. Any mismatch is a blocker.
-5. For hard/random smoke cells, require deterministic successful evaluation for all 10 cells and two exact scratch replays of the CF2 outputs/descriptors under identical inputs. This is reproducibility evidence only; do not interpret whether smoke values are favorable.
-6. Produce a machine-readable receipt binding task-start HEAD, freeze/CF1 commits, frozen source hashes, annotation hash, smoke receipt/manifest, REPRO1 reference hashes/paths, environment versions, exact draw-matrix equality, V0 identity counts, hard/random cell counts, deterministic replay comparison, test counts, and explicit scope attestations.
-7. An ordinary scalar health check may occur on the existing cadence, but do not add a new watch package. If an established OPS2/CLOSE1 incident or completion-unverified state is encountered, preserve the accepted OPS3 metadata, stop CF2, and return to Research Lead. Do not enter FIN1 automatically.
+1. Create a concise `research_log/t013/MECHANISM_IDENTIFIABILITY_AUDIT.md` plus a small machine-readable receipt. No new executable helper is required unless needed solely to hash/static-parse source text.
+2. Trace, with exact file/function names and source hashes, the frozen forward path relevant to vocabulary dependence. At minimum resolve:
+   - where caption/token features enter the model;
+   - whether image encoder/fusion activations are text-conditioned before decoder-query construction;
+   - how encoder proposals / decoder query references or targets are selected and ordered;
+   - whether any top-k used to initialize decoder queries depends on text-conditioned logits/scores;
+   - how final `pred_logits` and `pred_boxes` relate to those query slots;
+   - how T013 converts `pred_logits` to `class_scores` and performs the final flattened top-300.
+3. Give an explicit verdict on **cross-vocabulary raw query-index alignment**: `PROVEN_INVARIANT`, `PROVEN_VOCABULARY_DEPENDENT`, or `UNRESOLVED_FROM_FROZEN_SOURCE`. Support the verdict by exact source trace; do not infer from architecture reputation or documentation alone.
+4. Produce an identifiability table with at least these claim classes:
+   - final top-300 distractor crowd-out (already identifiable by CF1/CF2);
+   - vocabulary-associated changes in cached `class_scores` / token logits (observable association, not automatically causal localization);
+   - vocabulary-associated changes in cached boxes / query geometry (observable association, not automatically attributable to a specific module);
+   - same-query cross-vocabulary score/box hybrid counterfactual (valid only if slot alignment is proven; otherwise explicitly prohibited);
+   - attribution to text encoder, encoder fusion, proposal/query selection, decoder cross-attention, classification head, or localization head (state whether identifiable from current cache alone).
+5. If query slots are proven vocabulary-dependent or alignment is unresolved, preregister **no hybrid counterfactual**. State that a future causal localization would require a separate controlled intervention/re-inference designed and authorized after completed Grounding review. Do not design or execute that intervention in this package.
+6. If query slots are genuinely proven invariant, only document the proof and what hybrid quantity would be mathematically well-defined; do **not** implement/run it yet.
+7. An ordinary scalar OPS2 health point may occur on existing cadence. If an established incident/completion-unverified state occurs, preserve accepted OPS3 metadata and stop/return to Lead; do not enter FIN1 automatically.
 
 ## Explicit non-goals / prohibitions
-- No opening/deserializing **any active-primary** NPZ, prediction array, score/box/label tensor or scientific result content.
-- No active-primary AP/AP50/AR, D/A, CI, bootstrap, diagnostic or counterfactual quantity.
-- No primary FIN1/full replay/final analysis during this package.
-- No new detector inference; no rerun/duplicate/restart/resume of the primary.
-- No mutation of original smoke cache, REPRO1 reference outputs, frozen release, vocabulary, IDs, thresholds, Gates or corruption settings.
-- No new counterfactual selection rule, NMS, threshold, clipping, calibration, renormalization or refill rule.
-- No new statistical significance rule or post-hoc mechanism Gate.
-- No interpretation of the 3-image smoke counterfactual values as scientific evidence.
-- No claim that a future nonzero `A_cf` localizes the cause to a specific upstream module.
-- No use of CF2 to rescue a future failed Gate1/Gate2 Grounding result.
+- No active-primary NPZ/prediction/result/scientific-content access.
+- No AP/AP50/AR, D/A, CI, bootstrap, diagnostic or CF2 primary quantity.
+- No primary FIN1/full replay/final analysis.
+- No detector forward pass, smoke inference, feature extraction, hook, profiling or checkpoint load.
+- No score/box/token-logit swapping across vocabularies and no new cached-data counterfactual.
+- No modification of frozen code/config/vocabulary/IDs/seeds/thresholds/gates/run/release.
+- No new Gate, significance threshold, mechanism success criterion or rescue rule.
+- No claim that residual `A_cf` proves a particular upstream module.
 - No YOLO-World install/checkpoint/runtime/scientific benchmark.
-- No T014 scientific execution.
+- No T014 execution.
+- No cleanup/restart/resume/duplicate primary.
 
 ## Acceptance / stop criteria
-**PASS** if: the arithmetic contract is fixed before primary outcome access; focused tests pass; exact same paired smoke draws are used; all 5 V0 point cells and all `10×5` V0 bootstrap metric rows match REPRO1 exactly for `AP/AP50/AR/AR50`; all 10 hard/random cells evaluate deterministically; two scratch CF2 replays and all descriptor outputs compare exactly; source/data/reference bindings are recorded; and there is zero active-primary scientific/cache access.
+**PASS** if the audit binds the exact frozen source revision/files/hashes, traces the vocabulary-conditioned forward/query-construction path precisely enough to issue a supported three-way query-alignment verdict, and produces a conservative identifiability table that clearly separates observable association from causal attribution. It must leave CF1/CF2 as the only currently authorized counterfactual mechanism decomposition and introduce no new scientific execution.
 
-**STOP / REPORT BLOCKER** if: V0 end-to-end identity fails, the retained REPRO1 reference cannot be bound unambiguously, same-draw pairing cannot be guaranteed, the frozen COCO functions are insufficient without changing their semantics, or any active-primary scientific access would be required. Do not tune around a blocker.
+**STOP / REPORT BLOCKER** if the exact bound native source cannot be recovered/verified, query construction cannot be resolved from the frozen source/config, or answering would require detector execution or active-primary data. In that case report `UNRESOLVED_FROM_FROZEN_SOURCE`; do not substitute a guess or upstream-version documentation.
 
 ## Exact evidence Codex must write back to `coordination/CODEX_TO_CHATGPT.md`
 Report:
-- `T013-CF2 PASS` or the exact blocker;
-- task-start HEAD, preregistration/source commit if split, and final evidence commit SHA;
-- exact files changed plus SHA256s;
-- exact commands, Python/Torch/NumPy/pycocotools versions;
-- freeze, CF1, annotation, smoke receipt/manifest and REPRO1 reference bindings;
-- focused arithmetic test count and exact pass/fail;
-- paired draw matrix shape/hash and exact equality to REPRO1 reference;
-- V0 point identity as `5/5` cells × `AP/AP50/AR/AR50` exact, or exact mismatch details;
-- V0 bootstrap identity as `10×5` cells × `AP/AP50/AR/AR50` exact, or exact mismatch details;
-- hard/random counterfactual evaluation completion as `10/10` condition-vocabulary cells and exact two-replay comparison result;
-- list of descriptor fields written by the scratch rehearsal, without scientific interpretation of their values;
-- explicit confirmation that no active-primary predictions/scientific content, FIN1/replay, inference, run mutation, new Gate/threshold, YOLO runtime or T014 occurred;
-- explicit statement that CF2 remains descriptive-only and is not authorized for primary scientific execution until a later Research-Lead decision after completed Grounding review.
+- `T013-MECH1 PASS` or exact blocker;
+- task-start HEAD and evidence commit SHA;
+- exact files changed;
+- exact frozen native revision/config and every source file/path/SHA256 used in the trace;
+- exact static commands used (`git show`, `sha256sum`, bounded source reads, or static parser if any); no model command;
+- the cross-vocabulary query-index verdict and the minimal source chain that proves/supports it;
+- the identifiability table with explicit `IDENTIFIABLE / OBSERVABLE-NOT-CAUSAL / NOT-IDENTIFIABLE-FROM-CACHE` labels;
+- explicit statement whether any future same-index score/box hybrid is scientifically permitted or prohibited by this audit;
+- any source ambiguity or architecture branch that could change the verdict;
+- latest ordinary scalar primary health if one occurs, existence-only for final result;
+- explicit confirmation that no active-primary scientific/cache content, annotations, inference, FIN1/replay, new counterfactual execution, run mutation, new Gate/threshold, YOLO runtime or T014 occurred.
 
-Stop after T013-CF2 and await Research-Lead review.
+Stop after T013-MECH1 and await Research-Lead review.
