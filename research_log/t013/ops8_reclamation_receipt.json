@@ -211,5 +211,6 @@
     "grep \"^\\[autodl\\] exit_code=\" /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/train.log",
     "LC_ALL=C df -B1 --output=avail /home/wenchang/asdasdsad/wjq/TOVD",
     "test ! -f /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/analysis/results.json"
-  ]
+  ],
+  "delivery_event": "One SCP connection closed during small receipt/log mirroring; existing workflow retried with legacy SCP protocol and completed with exit0. No experiment impact."
 }
