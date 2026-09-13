@@ -517,3 +517,52 @@ Frozen interval() can return null and margins can be NaN. The contract requires 
 End health only,2026-09-13T07:11:24+08:00: exact primary20260912-210355-tovd-native30-primary tmux alive,writer721181 Rl+,356/1000 at36421.546857393s,free23537688576bytes; no wrapper exit marker,analysis/results.json absent (existence only). active_primary_scientific_result_opened=false; active_primary_prediction_content_opened=false; frozen source/config/run unchanged. No TTT in this task; inner-loss/update/gradient/reset diagnostics N/A.
 
 Initial Git fetch hit transient schannel TLS failure; bounded retry succeeded before reading new Lead scope. No operational repair was needed. Recommend Lead review DEC1; stop this package. Continue immutable primary and quiet15-minute heartbeat. Do not repeat DEC1 while its heading persists; no YOLO runtime,T014 or primary interpretation authorized before existing completion/review prerequisites.
+
+## T013-G4A1 — PREOUTCOME_HISTORY_CLEAN; final Gate4 remains PENDING
+
+Lead9b59ab9/cca9af2 accepts DEC1 and assigns the history audit. Evidence commit **6a96f8870f0e88087d64341ed37dabf05df49f84**. Fixed task-start HEAD **cca9af23452870d1a12ba1ab6a78ebe683e49cd1**. Scientific freeze6fec32243985ccc808123d851abf5f3dea10af99; dispatch88668f76b22777459b5792dd28f88075f208c678. Later audit/delivery commits are outside this snapshot. Final Gate4 requires completed-run recorded checks and Research-Lead review under DEC1; this report does not supply final Gate4 PASS.
+
+Files: research_log/t013/GATE4_PREOUTCOME_HISTORY_AUDIT.md, gate4_preoutcome_history_audit.py, gate4_preoutcome_history_receipt.json, gate4_preoutcome_history_initial_receipt.json. Handoff appends CODEX_TO_CHATGPT.md, project_state.md, REMOTE.md, session_log.md.
+
+Command: D:/anaconda3/python.exe research_log/t013/gate4_preoutcome_history_audit.py (pinned task-start HEAD by default). Windows Python3.12.7, standard library and Git CLI only. It uses git show/rev-parse/merge-base/rev-list/diff/log/ls-tree; no detector/scientific imports, NPZ parsing or remote cache access. Final execution exit0, all13 mechanical checks true. git diff --check passes. The receipt records59 commits with parents/changed paths,97 unique changed-path classifications,17 protected hashes/blob IDs,17 evidence anchors and122 contextual reporting-search hits. Semantic absence findings are explicitly engineering review of committed evidence, not an automatic language proof.
+
+Protected artifacts:10code_sha256 entries plus PLAN,vocabulary,selection,data receipt,image manifest,environment and freeze JSON. All17 exact git-show bytes equal the freeze hashes; endpoint git diff is empty; full-history merge-aware traversal has no intermediate protected edit/revert. Complete table:
+
+| Protected path | Frozen and task-start SHA256 | Result |
+| --- | --- | --- |
+| scripts/t013_native_detector.py | b49f23f131777f08e23131ad55a94d9211c33b1c759adf86c6b52e2b95c34126 | identical |
+| scripts/t013_native_run.py | 177176fdb1c133b98770f8e6719b22e3ead0a00adbdced598e92326aec723429 | identical |
+| scripts/t013_native_smoke.py | d30430f324d0577afc6997c38d78d6f46b78679cb2adaf96055986344928a421 | identical |
+| scripts/t013_analysis.py | 74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c | identical |
+| scripts/t013_coco.py | bd3245235a6dcd455224ea7eb737b07875920b0a08b34f30e706dfc6a9ca9e81 | identical |
+| scripts/t013_diagnostics.py | ae7e61feaa5701ca9580c9c48901f99d09e9986b560c2821073100c94645a41e | identical |
+| scripts/t013_detector.py | 4800f1471f2de8f964700b683505c7230e078b6833a57afa1e09af6b42babd0d | identical |
+| scripts/t013_text.py | 2c175a779304f045267e3419eda04dbc2e5c4730ae19cce23727043832102018 | identical |
+| scripts/t013_native_vocab.py | 61d40e7f4107a2a13eaa7cd872667acaa4db3dffb3a257e2cddbaece4f943351 | identical |
+| scripts/t013_data_receipt.py | 9ef780aa724d3a8a6f685dc0a273a285e7ce17942985fb107c2638810f54305e | identical |
+| research_log/t013/PLAN.md | 5d977aceb3c06a7915396aea9c7cc2504759e584ce79b459a287b18fb67e4beb | identical |
+| research_log/t013/vocabulary_native30.json | 3bb4a0ebada1f9da407ae6a94f1135798dba7117bd658a6ecba97b2ebfad0967 | identical |
+| research_log/t013/image_selection.json | 8039a70f25c34f295345e63d1980f692631b6bbdaa5c37267a10852acbf3833b | identical |
+| research_log/t013/data_receipt.json | 4dc1361b17a9221b278dd70ac805afb4d87742451b310af5381dc69900fe8c50 | identical |
+| research_log/t013/image_sha256.json | 38eb39894b8c0f1924e099b3a1ec0b885fdf7ec43c86933e1dc28186d85c3ba8 | identical |
+| research_log/t013/native30_environment.txt | 6fdb8b3da35dddb24c5ea602e81b160ab864e792ca29fa27236dd759a6b4f090 | identical |
+| research_log/t013/native30_freeze.json | 50addfb8e247333b49fb22cda14570166b294101bb435b5a1b5bf688b4b3a91e | identical |
+Checkpoint/model-state/annotation hashes are external-asset metadata preserved in the frozen JSON; this audit does not reopen those assets. Both archives and5000 JPEG hashes remain bound by protected data/image manifests. No additional Git path is directly hash-referenced by the freeze.
+
+Chronology PASS: c07ce16 -> f63f571 ->6548870 ->02ba123 ->259217c ->eed8d1a ->d5dc807 ->35fbfb7 ->6fec322 ->88668f7 ->task-startHEAD, verified by ancestry. Original native/HF negative JSON, PARITY_B_RESULTS.md and parity_b.json are retained byte-identically with origin/head SHA in receipt. Native reset02ba123 at20:38:21+08/review259217c precedes freeze21:02:52 and logged launch21:03:55; dispatch receipt commits21:05:49. Original/reset/PLAN Gate1 thresholds1.0/lowerCI>0/>=2corruptions, Gate2 .75/.50/>=2positive contrasts, Gate3 non-rescue and Gate4 no outcome tuning are unchanged. Native30 capacity reset is explicit pre-outcome redesign, not parity rescue. Freeze includes17/17test evidence, exact data/vocabulary/environment bindings and pre-existing native-smoke/cached-smoke receipts. No primary outcome is used for this chronology claim.
+
+Exact dispatch binding PASS: run20260912-210355-tovd-native30-primary/release20260912-210306-tovd-native30-primary-freeze/tmuxautodl-<run>, explicit immutable-release cd, single native_run --freeze-commit6fec322 followed by analysis only after inference success. Four text artifacts remain unchanged fromdispatch toHEAD: run.sh SHAcde77d0e8a4db8904d8ecd178efb71200013c0ed616d2bf471c88f6dfd8c1b27;meta.json SHAe9c8bd67854a9c1ee9d1a5b2f1470495cf4c616822102b226644b6fdf09dd6b0;resolved_release.txt SHA48599c3f821153bcd2e5d2ec1914a50a8bea614f8c9a270b98ae32c6baae3b55;freeze_sha256.txt SHA591e799f92b29a03b924fd9b3d32876d27f00732003177e8d5b9237edaf75757.
+
+Post-freeze categories: coordination/reporting4 paths (three coordination files plus IMPLEMENTATION_NEXT.md); primary provenance/log mirror8 (three project logs plus five primary run-mirror files); pre-outcome verifier/test25 (OPS1/STAT1/FIN1/REPRO1/DEC1); YOLO contingency60 (contingency doc plus59source/metadata/protocol/fixture paths). Exact97-path list and every commit's changed paths are in receipt.postfreeze_changed_paths/commit_history; table and category interpretation in audit document. Zero unclassified paths, zero protected scientific edits, zero scripts/ or tests/ edits after freeze.
+
+Control-history finding: **no committed evidence of contamination** from duplicate primary dispatch/writer, autonomous primary restart/resume or post-freeze scientific retuning. Only primary run-mirror files added at88668f7, no later mirror edit; inventory has one non-smoke native command plus the known earlier --smoke-only command. OPS1 independently recorded single writer721181; later health keeps samewriter/run. Existing COCO download resume and earlier smoke retries precede primary; FIN1 retry and REPRO1 mutation affect only completed engineering smoke/scratch. Git/logs cannot establish omniscient absence of off-repository behavior.
+
+Outcome-blindness references cover dispatch/Lead acceptance, P0/P1/P2, OPS1,STAT1,FIN1,REPRO1,DEC1 and all health entries throughb8a5d5a. Receipt references pin commit,path,line,text andSHA, including p0_blindness,p1_blindness,p2_blindness,stat1_blindness,fin1_blindness,repro1_blindness,dec1_blindness,latest_health_blindness. Reports consistently distinguish opaque operational checks/synthetic/completedsmoke from activeprimary; no committed primary scientific output or claim found. REPRO1 old-smoke comparison correction remains disclosed and is not primary outcome access.
+
+YOLO separation: accepted P0/P1/P2 only, source/tokenizer/metadata/protocol/model-freefixtures; no committed install/checkpoint payload/load/image inference/benchmark run. Upstream configs/demo/test code and model-card numbers are snapshots, not local execution. Native postprocessing/background conventions belong only to YOLO preparation; protected Grounding files untouched. FutureYOLO can test architecture specificity/cross-backbone replication, never mutate Grounding's state.
+
+Observed audit-only error retained: initial helper exit1 incorrectly counted the known pre-freeze native pipeline smoke as a second primary because both invoke native_run. Its exact command contains --smoke-only before&&. Minimal classification fix distinguishes that flag, retains both entries, final13checksPASS. Initial receipt preserved; no actual protected-byte/order/primary-dispatch discrepancy and no scientific/history/run repair. No other task test/experiment failed.
+
+End health only2026-09-13T08:10:43+08: exactprimary tmuxalive,writer721181 Rl+,392/1000 at39945.37502930101s,free22873034752bytes,no wrapper exit marker,analysis/results.json absent (existence only). active_primary_scientific_result_opened=false; active_primary_prediction_content_opened=false; frozen scientific/run state unchanged. No inference/YOLO/TTT work; inner-loss/gradient/update/reset diagnostics N/A.
+
+Recommend Lead review G4A1 and use this fixed snapshot as pre-outcome history evidence only. Stop package; do not repeat whileheadingpersists. Continue immutableprimary and15-minutehealthmonitoring. No current FIN1/full-cache replay/primary interpretation,YOLO runtime,T014 orrestart/resume authorization beyond existing completion/failure procedures.
