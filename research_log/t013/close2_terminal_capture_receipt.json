@@ -236,7 +236,8 @@
   "window_seconds": 2006.0,
   "operational_events": [
     "Previously unexplained free-space increase persists: current df184319975424 bytes. No causal attribution or investigation. No connection failure.",
-    "Point3: exact writer721181 absent (ps return1, no row), exact tmux still present(return0), no wrapper exit marker. OPS2 process state ambiguous; stopped immediately. No connection interruption; free-space increase persists without attribution."
+    "Point3: exact writer721181 absent (ps return1, no row), exact tmux still present(return0), no wrapper exit marker. OPS2 process state ambiguous; stopped immediately. No connection interruption; free-space increase persists without attribution.",
+    "Incident report delivery: one default SCP upload connection closed on port8220; existing legacy SCP retry succeeded, complete eight-file copy exited0. Observation SSH itself succeeded."
   ],
   "continuation": "Immediate stop and return to Lead on accepted OPS2 PROCESS_STATE_AMBIGUOUS_RETURN_TO_LEAD. No fourth point or process hunt/remediation/FIN1/replay/science. Count1000 is not completion."
 }
