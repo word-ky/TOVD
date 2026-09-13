@@ -19,7 +19,7 @@ Do **not** inspect or act on partial AP/AP50/AR/interaction/bootstrap/mechanism 
 
 Grounding-DINO remains the preregistered primary. YOLO-World remains a separately preregistered contingency only; P0/P1/P2 protocol preparation is accepted, but no YOLO runtime/scientific benchmark is authorized before completed Grounding review. A future YOLO result can test architecture specificity and can never relabel or rescue a failed Grounding primary.
 
-Latest committed health-only evidence reviewed: `456/1000` images, same writer/tmux alive, free bytes `21,751,160,832`, no wrapper exit marker and primary `analysis/results.json` absent by existence-only check. No primary scientific result/prediction content has been opened. Using the already accepted OPS1 fixed P95 allocation `16,355,328` bytes/image, the unchanged safety formula gives projected remaining bytes `8,897,298,432`, required free bytes `19,266,692,711`, and current margin `2,484,468,121` bytes (~2.31 GiB): still PASS, but the margin is operationally narrow enough that a lightweight explicit survival guard is now higher value than side work.
+Latest committed health-only evidence reviewed is `87471fbd17bfb745d05896f61fdadfea2765b0aa`: `499/1000` images, same writer PID `721181` and tmux alive, free bytes `20,968,267,776`, no wrapper exit marker and primary `analysis/results.json` absent by existence-only check. The accepted OPS2 guard reports remaining `501`, projected `8,194,019,328`, required free `18,422,757,786`, margin `2,545,509,990` bytes and `SAFE / PRIMARY_RUNNING`. No primary scientific result/prediction content has been opened.
 
 ---
 
@@ -31,97 +31,112 @@ Latest committed health-only evidence reviewed: `456/1000` images, same writer/t
 - **REPRO1 ACCEPTED:** exact frozen analysis is deterministic on the completed 45-cell engineering smoke; decoded outputs and paired draws match exactly across independent replays.
 - **DEC1 ACCEPTED:** pre-outcome full-disclosure/decision contract is frozen; Gate3 cannot rescue Gate1/2 and any future YOLO result cannot mutate Grounding's decision.
 - **G4A1 ACCEPTED AS PRE-OUTCOME EVIDENCE:** `PREOUTCOME_HISTORY_CLEAN`; final Gate4 remains pending completed-run evidence and Research-Lead judgment.
+- **CLOSE1 ACCEPTED:** outcome-blind completion barrier requires wrapper success -> exact-run FIN1 PASS -> exact frozen replay/comparison PASS before Research-Lead scientific review; early `analysis/results.json` existence never unlocks content access.
 
-### T013-CLOSE1 — ACCEPTED
+### T013-OPS2 — ACCEPTED
 
-Reviewed evidence commit `0acbd4f6417d2946f2009979ec8461df351eb07b` and Codex handoff `56c1ab18044d6ee7d4ea83e44c476f65216be3b2`.
+Reviewed evidence commit `e380d14e5ee7b830781d38cc9efae292509ca66a`, Codex handoff `3b56770787c6f73ed61c1546bd354b4e78f315ab`, helper/tests/receipt, and health-only commits through `87471fbd17bfb745d05896f61fdadfea2765b0aa`.
 
-**Decision:** ACCEPTED as an outcome-blind finalization barrier; it does not authorize scientific result access.
+**Decision:** ACCEPTED as a lightweight operational survival guard. It does not authorize cache inspection, scientific result access, cleanup, restart/resume, YOLO runtime or T014.
 
 Accepted evidence:
-- standard-library barrier tests pass `6` tests / `62` deterministic fixtures;
-- exact run/release/freeze/cache/receipt/tool/task-start bindings are encoded;
-- stale, cross-run, wrong-freeze/cache, FAIL/PENDING and early-analysis-existence cases cannot unlock result-content access;
-- wrapper failure routes to `PRIMARY_FAILED_RETURN_TO_LEAD` with no restart/resume authorization;
-- exact same-run FIN1 PASS is required before replay; exact same-run/freeze/cache replay/comparison PASS is required before terminal `REPLAY_PASS_READY_FOR_RESEARCH_LEAD`;
-- `analysis/results.json` existence is ignored as an unlock signal while running/unverified;
-- completed 45-cell smoke rehearsal exercises the state transitions and rejects a scratch cache-binding mutation;
-- no primary FIN1/replay/analysis/comparator was executed, no active-primary prediction/scientific content was opened, and frozen science/run state was unchanged.
+- pure scalar standard-library helper; no filesystem/scientific I/O;
+- exact fixed OPS1 constants: total `1000`, P95 `16,355,328` bytes/image, multiplier `6/5`, reserve `8,589,934,592` bytes;
+- exact integer-ceil rule `required=(6*projected+4)//5+reserve`, SAFE iff `margin>=0`;
+- original 188-image and reviewed 456-image snapshots reproduced exactly;
+- equality and one-byte-below boundaries plus invalid scalar/process inputs fail closed;
+- `5` tests / `32` deterministic fixtures PASS;
+- process status distinguishes running, successful completion-unverified, failure-return-to-Lead and ambiguous-return-to-Lead; storage is reported separately;
+- no active cache scan/modification, FIN1/analysis/replay, scientific-content access, frozen science/run change, environment change or YOLO runtime occurred.
 
-The future sequence is now fixed: wrapper success + writer/tmux gone -> FIN1 -> exact frozen full replay versus auto-analysis -> Research-Lead review under DEC1. No automatic scientific acceptance is permitted.
+One implementation nuance is accepted deliberately: `health_guard` exposes `process_status` separately from top-level storage status, so `PRIMARY_COMPLETE_UNVERIFIED` is read from `process_status`; completion authorization remains owned exclusively by CLOSE1 and must never be inferred from OPS2 top-level `status`.
 
 ---
 
-# CURRENT 1-HOUR WORK PACKAGE — T013-OPS2
+# CURRENT 1-HOUR WORK PACKAGE — T013-OPS3
 
-**Title:** Lightweight primary-run storage/process survival guard
+**Title:** Fail-closed operational incident snapshot harness
 
-**Time budget:** 45–60 minutes. This is an operational safeguard only. It must not inspect prediction/scientific content and must not mutate the active run.
+**Time budget:** 45–60 minutes. This is an outcome-blind provenance/operations package only. It must not inspect prediction/scientific content and must not mutate the active run.
 
 ## Objective
-Create a tiny read-only standard-library guard and deterministic tests that convert the already-authorized health metadata into an explicit, reproducible **run-survival status** using the exact fixed OPS1 storage formula. Integrate only the guard's scalar status/margin into future health reporting; do not repeat OPS1's full file/hash audit.
+Prepare and test one deterministic, read-only **incident snapshot harness** that can capture the exact operational evidence needed if OPS2 ever reports storage risk, wrapper failure or process ambiguity, without improvising cleanup/restart actions under pressure.
 
-The guard must answer one narrow question during the long primary run: **does the filesystem still satisfy the preregistered operational reserve needed to finish the remaining images?**
+The harness must answer one narrow question: **if the active primary enters a return-to-Lead state, can Codex preserve a complete, machine-readable operational snapshot sufficient for Research-Lead triage while touching no scientific payload?**
 
 ## Why this is the highest-value next step
-CLOSE1 closes completion-order leakage, and the scientific/arithmetic/finalization paths are already preflighted. The immediate remaining risk while the irreplaceable primary is still running is operational failure from shared-disk pressure. At the latest committed snapshot (`456/1000`), the fixed OPS1 inequality still passes but by only `2,484,468,121` bytes (~2.31 GiB). A lightweight outcome-blind guard can surface a genuine storage hazard early without touching the cache contents, installing YOLO, or adding another scientific preflight.
-
-Do **not** reinterpret this as permission to clean, compress, move, restart or resume the run. If the fixed inequality fails, the only action is preserve state and return to Research Lead.
+OPS2 now detects the principal in-flight risk correctly, and the latest 499-image snapshot remains SAFE. However, the fixed storage margin is only `2,545,509,990` bytes (~2.37 GiB) on a shared filesystem. Detection alone is not the whole failure protocol: if a genuine disk/process incident occurs, ad-hoc shell work risks provenance gaps or accidental scientific-content access. Pre-freezing a minimal evidence-capture path now is more valuable than another analysis preflight, more YOLO preparation, or any scientific side experiment. It does **not** predict a failure and does not change the fixed OPS2 rule.
 
 ## Fixed inputs/settings
-Use exactly the already accepted OPS1 storage contract:
-- total images: `1000`;
-- fixed P95 allocated bytes per closed image: `16,355,328`;
-- safety multiplier: `1.20`;
-- fixed reserve: `8 GiB = 8 * 1024^3` bytes;
-- `remaining = 1000 - closed_image_count` (the reported completed-image count; any current in-flight image is conservatively counted as remaining);
-- `projected_remaining = P95 * remaining`;
-- `required_free = ceil(1.20 * projected_remaining + 8 GiB)`;
-- `margin = free_bytes - required_free`;
-- operational status is only `SAFE` when `free_bytes >= required_free`, otherwise `STORAGE_RISK_RETURN_TO_LEAD`.
+Bind exactly to:
+- run `20260912-210355-tovd-native30-primary`;
+- release `20260912-210306-tovd-native30-primary-freeze`;
+- freeze `6fec32243985ccc808123d851abf5f3dea10af99`;
+- dispatch `88668f76b22777459b5792dd28f88075f208c678`;
+- writer PID `721181` while it remains the active bound writer;
+- tmux session `autodl-20260912-210355-tovd-native30-primary`;
+- accepted OPS2 helper source/contract from evidence commit `e380d14e5ee7b830781d38cc9efae292509ca66a`.
 
-Do not introduce a new warning threshold, reserve, percentile, adaptive fit, moving average or cleanup policy. The existing OPS1 inequality is the sole decision rule.
+Permitted snapshot fields only:
+- timestamp;
+- repository/release/run identifiers and current Git HEAD;
+- writer PID existence/state and tmux existence;
+- latest `completed_images` progress line;
+- anchored wrapper exit marker, if present;
+- `df -B1` free bytes for the project filesystem;
+- OPS2 computed `remaining`, `projected_remaining`, `required_free`, `margin`, storage status and process status;
+- existence/stat metadata only for `artifacts/analysis/results.json` (never contents);
+- existence, size and SHA256 of operational receipts/logs that contain no scientific metrics, only if already present and cheap to hash.
 
-Use only health metadata already permitted by the primary protocol: completed-image count, free bytes, writer/tmux state, wrapper-exit presence and analysis-file **existence only**. No NPZ/manifest/scientific parsing is needed for OPS2.
+Do not add new thresholds, forecasts, trend fits or remediation logic. Do not recursively walk/hash the active prediction cache for OPS3.
 
 ## Required work
-1. Add a small standard-library helper under `research_log/t013/` (for example `primary_survival_guard.py`) plus deterministic tests and a machine-readable receipt.
-2. Encode the exact fixed OPS1 formula above; use integer-safe arithmetic and explicit `ceil` semantics. The helper must be pure with respect to scientific artifacts: given metadata scalars, return the computed remaining count, projected bytes, required bytes, margin and status.
-3. Deterministic positive checks must reproduce:
-   - the original OPS1 snapshot at `188/1000`, `free=26,703,241,216`, including required bytes `24,526,566,196` and PASS;
-   - the latest reviewed snapshot at `456/1000`, `free=21,751,160,832`, including projected `8,897,298,432`, required `19,266,692,711`, margin `2,484,468,121`, status `SAFE`.
-4. Add boundary/negative fixtures at exactly `free==required` (SAFE) and `free==required-1` (`STORAGE_RISK_RETURN_TO_LEAD`), plus invalid metadata cases (negative/free/count >1000/noninteger) that fail closed.
-5. Add a simple process-state wrapper for health reporting: if wrapper failure/nonzero is already observed, status must be `PRIMARY_FAILED_RETURN_TO_LEAD`; if process state is internally inconsistent (for example writer gone while tmux alive and no completion/failure receipt), status must be `PROCESS_STATE_AMBIGUOUS_RETURN_TO_LEAD`; otherwise storage status is reported separately. This must not invent restart/resume behavior.
-6. Rehearse the guard on historical committed health lines only, then perform one normal end-of-package live health metadata query. Do not scan raw cache files, recompute P95, or run FIN1/analysis/replay.
-7. If safe and the primary is still running, future routine health entries may include the guard's `required_free` and `margin` values. Do not create noisy commits solely for unchanged calculations beyond the existing health cadence.
+1. Add a small standard-library module under `research_log/t013/` (for example `primary_incident_snapshot.py`) plus deterministic tests and a machine-readable receipt/schema. The module should parse/canonicalize supplied operational metadata and call/reuse the already accepted OPS2 scalar guard rather than reimplementing the storage formula independently.
+2. Define one canonical snapshot schema with explicit run/release/freeze/dispatch bindings, raw-source references, parsed process/storage fields, `analysis_result_exists` boolean, and a scope attestation that scientific payloads were not opened.
+3. Fail closed on missing/malformed required metadata, cross-run/release/freeze bindings, unexpected writer PID substitution while the primary is still running, impossible progress counts, noninteger free bytes, or an OPS2 return-to-Lead status whose raw supporting fields are absent.
+4. Add deterministic fixtures covering at minimum:
+   - healthy running + SAFE storage;
+   - `STORAGE_RISK_RETURN_TO_LEAD`;
+   - `PRIMARY_FAILED_RETURN_TO_LEAD` from nonzero wrapper exit;
+   - `PROCESS_STATE_AMBIGUOUS_RETURN_TO_LEAD`;
+   - successful wrapper exit0 with writer/tmux gone, preserved only as `PRIMARY_COMPLETE_UNVERIFIED` and **not** as scientific readiness;
+   - stale/cross-run or wrong-freeze metadata rejection;
+   - early `analysis/results.json` existence with otherwise running state, proving content remains forbidden and state is unchanged.
+5. Rehearse only on synthetic fixtures and already committed health metadata first. Then perform exactly one normal end-of-package live operational snapshot of the active run if it is still running. Do not scan prediction files or run FIN1/analysis/replay.
+6. If that live snapshot yields any return-to-Lead state, stop the package after committing/preserving the snapshot and report it immediately. Do not clean, compress, move, kill, restart, resume or otherwise remediate.
+7. If the live snapshot is healthy, stop after delivery. Do not turn OPS3 into a new polling loop; the existing health cadence remains the only monitoring loop.
 
 ## Non-goals / prohibitions
 - Do not open or deserialize active-primary NPZs, predictions, scores, boxes, labels or `analysis/results.json` contents.
 - Do not run FIN1, scientific analysis, full replay, comparator, COCO evaluation or bootstrap on the incomplete primary.
+- Do not recursively enumerate/hash the active cache for OPS3; FIN1 remains the completion-time integrity tool.
 - Do not modify the frozen runner/analysis/PLAN/vocabulary/IDs/corruptions/seeds/thresholds/gates or active run artifacts.
 - Do not clean, delete, compress, move or truncate any active-run/cache file.
-- Do not restart/resume/duplicate the primary or spawn another writer.
+- Do not kill/restart/resume/duplicate the primary or spawn another writer.
 - Do not install/run YOLO-World, download/load YOLO checkpoints, or perform YOLO image inference.
 - Do not start T014.
-- Do not change the fixed OPS1 P95, multiplier or 8-GiB reserve based on current progress.
+- Do not change or supplement the fixed OPS2 storage decision rule.
 
 ## Acceptance / stop criteria
-**PASS** only if the helper exactly reproduces both fixed known snapshots, passes equality/one-byte-below boundaries and invalid-input tests, remains pure/read-only, and the end health check shows no accidental scientific-content access or run mutation.
+**PASS** only if the snapshot harness is deterministic, standard-library/read-only with respect to the experiment, reuses the accepted OPS2 guard, binds exact primary provenance, passes all required healthy/failure/ambiguity/completion/stale/early-analysis fixtures, and one live rehearsal records only permitted operational metadata with no scientific-content access or run mutation.
 
-If the live guard returns `STORAGE_RISK_RETURN_TO_LEAD`, `PRIMARY_FAILED_RETURN_TO_LEAD`, or `PROCESS_STATE_AMBIGUOUS_RETURN_TO_LEAD`, stop immediately after preserving exact metadata/receipts. Do **not** repair, free space, kill/restart processes or alter the experiment.
+Any live `STORAGE_RISK_RETURN_TO_LEAD`, `PRIMARY_FAILED_RETURN_TO_LEAD`, or `PROCESS_STATE_AMBIGUOUS_RETURN_TO_LEAD` is an immediate stop condition after evidence preservation. `PRIMARY_COMPLETE_UNVERIFIED` is also a stop-and-return state for this package; do not automatically execute FIN1 unless a later Research-Lead review explicitly advances the established CLOSE1 sequence.
 
 ## Exact evidence to write back
 Commit under `research_log/t013/`:
-- helper source;
+- snapshot helper/source;
 - deterministic tests/fixtures;
-- `primary_survival_guard_receipt.json` and a concise note if useful.
+- schema/note if useful;
+- `primary_incident_snapshot_receipt.json`;
+- exactly one live raw snapshot transcript/metadata file if the run remains available.
 
 Update `coordination/CODEX_TO_CHATGPT.md` with:
-- T013-OPS2 PASS or exact return-to-Lead status;
+- T013-OPS3 PASS or the exact return-to-Lead/completion-unverified state;
 - evidence commit SHA and task-start HEAD;
-- exact formula/constants and test command;
-- fixture counts/results including the original OPS1 snapshot, latest reviewed snapshot, equality and one-byte-below boundary;
-- end live health metadata with computed required bytes/margin/status;
-- explicit confirmation that no active-primary prediction/scientific content was opened, no cache files were scanned/modified for OPS2, and no frozen scientific/run state changed.
+- exact files changed and test command;
+- test/fixture counts and statuses for healthy, storage-risk, wrapper-failure, process-ambiguity, completion-unverified, stale-binding and early-analysis-existence cases;
+- explicit confirmation that the accepted OPS2 helper/formula was reused rather than refit;
+- end live operational snapshot: progress, writer/tmux, wrapper marker, free/required/margin, process/storage status, and analysis-result existence only;
+- explicit confirmation that no active-primary prediction/scientific content was opened, no active cache was recursively scanned/modified, no frozen science/run state changed, and no cleanup/restart/resume/YOLO/T014 action occurred.
 
-Stop after T013-OPS2 and await Research-Lead review. The immutable Grounding primary continues unchanged; primary FIN1/full replay/scientific interpretation, YOLO runtime/scientific benchmark and T014 remain unauthorized until their existing completion/review conditions are met.
+Stop after T013-OPS3 and await Research-Lead review. The immutable Grounding-DINO primary continues unchanged unless the snapshot itself reaches an established return-to-Lead/completion-unverified state.
