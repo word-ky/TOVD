@@ -1,4 +1,4 @@
-# T013-OPS8 IN_PROGRESS — allowlisted reclamation complete, follow-up pending
+# T013-OPS8 PASS — bounded reclamation and observation complete
 
 Task-start7aa87119566b5acfb799fac9244745cfdc7fe9ce; Lead6101219 (full SHA in receipt).
 OPS2 e380d14e5ee7b830781d38cc9efae292509ca66a and OPS3
@@ -36,16 +36,34 @@ and exact tmux alive,wrapperexitabsent,analysis/results.json absent(existenceonl
 Accepted canonical_snapshot(raw) used for both; exact run/release/freeze/
 dispatch, source commits, raw metadata and commands retained in receipts.
 
-INCOMPLETE follow-up: start20:42:13+08. Existing heartbeat only; first later
-scalar point around21:00+08, reserve second/final for21:27–21:42+08 to finish
-45–60min window with at most two later points. An intermediate heartbeat before
-that final window checks mailbox only after first later point is recorded.
-No new scheduler or tighter polling. On existing risk/process/completion state,
-stop immediately and return accepted OPS3 evidence to Lead. No second cleanup.
+Completed window20:42:13–21:35:10+08,3177s=52min57s. Four scalar snapshots:
+one pre,one immediate post,and exactly two later points. Spacings57s,1139s
+(18min59s),1981s(33min01s). The21:18 intermediate heartbeat was mailbox-only
+to keep the two-later-point limit and reserve final observation for45–60min.
+No tighter polling or extra sampler. All post-reclamation observations SAFE
+and exact-bound PRIMARY_RUNNING. No test reruns; scalar evidence only.
+
+| Point | Time+08 | Images | Free bytes | Remaining | Projected bytes | Required bytes | Margin bytes | Storage |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Pre | 20:42:13 | 840/1000 | 11234455552 | 160 | 2616852480 | 11730157568 | -495702016 | STORAGE_RISK_RETURN_TO_LEAD |
+| Immediate post | 20:43:10 | 841/1000 | 12291137536 | 159 | 2600497152 | 11710531175 | 580606361 | SAFE |
+| Later1 | 21:02:09 | 852/1000 | 12067106816 | 148 | 2420588544 | 11494640845 | 572465971 | SAFE |
+| Final later2 | 21:35:10 | 871/1000 | 11730296832 | 129 | 2109837312 | 11121739367 | 608557465 | SAFE |
+
+At every point writer721181 Rl+, exact tmux alive, wrapper marker absent,
+analysis/results.json absent(existenceonly), process PRIMARY_RUNNING. Later
+progress seconds86260.61986363702 and88191.77212120598. Exact same accepted
+OPS3/OPS2 helpers, no new rule. The observed safe state is operational only;
+it is not a guarantee about future storage or a scientific acceptance.
+
+One earlier receipt-upload connection closed; existing legacy SCP retry
+succeeded(exit0), recorded in receipt. No operational event on final snapshot.
+Stop after OPS8 and await Lead review. No additional cleanup is authorized.
 
 Files: research_log/t013/ops8_pre_raw.json,ops8_pre_snapshot.json,
 ops8_post_raw.json,ops8_post_snapshot.json,ops8_reclamation_receipt.json,
-OPS8_RECLAMATION_REPORT.md; delivery updates engineering mailbox and project
+OPS8_RECLAMATION_REPORT.md,ops8_later1_raw.json,ops8_later1_snapshot.json,
+ops8_later2_raw.json,ops8_later2_snapshot.json; delivery updates engineering mailbox and project
 research_log/project_state.md,REMOTE.md,session_log.md. Small copies mirrored
 under remote project root, never the running release.
 
@@ -54,7 +72,3 @@ prediction/scientific content,FIN1/replay,kill/restart/resume,runner/frozen
 scientific-source change,YOLO/T014,driverrepair or install. No new threshold,
 forecast,depletion-rate or time-to-failure rule. Existing primary continues
 unchanged; future GPU preference retained. Scientific results remain unopened.
-
-
-## T013-OPS8 IN_PROGRESS — later point1/2 (2026-09-13T21:02:09+08:00)
-GitHub synchronized81feb1f; project handoffs and AGENTS/protocol/mailbox/spec read, no newLead instruction. Two allowlisted ZIPs already deleted inb738711; no repeated deletion or precondition scan. Existing ordinary heartbeat collected later point1,1139s after immediatepost,1196s afterpre. Exact primary20260912-210355-tovd-native30-primary,writer721181 Rl+/tmuxalive,852/1000 at86260.61986363702s,wrapperexitabsent,analysis/results.json absent(existenceonly),free12067106816,remaining148,projected2420588544,required11494640845,margin572465971,SAFE/PRIMARY_RUNNING. Accepted unchanged OPS3 canonical_snapshot/OPS2 used; raw/snapshot storedops8_later1_*.json and appendedops8_reclamation_receipt.json. OPS8 NOT COMPLETE. Reserve second/final scalar point for21:27:13–21:42:13+08 (45–60min from20:42:13); intermediate heartbeat before21:27:13 only syncs mailbox, no extra remote point. No new scheduler/threshold/forecast/cleanup or science. No archivehash/du/scans/nonallowlisteddeletion/runmutation/FIN1/replay/kill/restart/resume/driverrepair/YOLO/T014. On established risk/process/completion state immediately stop viaOPS3 and returnLead. Otherwise final report afterwindow. FrozenCPUprimary unchanged;futureGPUpreference retained.
