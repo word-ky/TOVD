@@ -1,6 +1,6 @@
 {
   "task": "T013-OPS7",
-  "status": "IN_PROGRESS",
+  "status": "STORAGE_RISK_RETURN_TO_LEAD",
   "task_start_head_as_assigned": "d24c801221c946af60a526d05f8ef6a947e2f462",
   "execution_start_head": "f1cf362eea45460edd60e908c09006b10e853008",
   "binding": {
@@ -65,12 +65,44 @@
         "tmux_alive": true,
         "wrapper_exit_code": null
       }
+    },
+    {
+      "timestamp": "2026-09-13T19:51:43+08:00",
+      "completed_images": 809,
+      "total_images": 1000,
+      "elapsed_seconds": 81988.280330254,
+      "writer_pid": 721181,
+      "writer_state": "Rl+",
+      "writer_alive": true,
+      "tmux_alive": true,
+      "wrapper_exit_code": null,
+      "analysis_results_exists": false,
+      "free_bytes": 11911069696,
+      "ops2": {
+        "status": "STORAGE_RISK_RETURN_TO_LEAD",
+        "process_status": "PRIMARY_RUNNING",
+        "storage": {
+          "closed_image_count": 809,
+          "free_bytes": 11911069696,
+          "remaining": 191,
+          "projected_remaining": 3123867648,
+          "required_free": 12338575770,
+          "margin": -427506074,
+          "status": "STORAGE_RISK_RETURN_TO_LEAD"
+        },
+        "writer_alive": true,
+        "tmux_alive": true,
+        "wrapper_exit_code": null
+      },
+      "incident_snapshot": "research_log/t013/ops7_incident_snapshot.json"
     }
   ],
-  "point_count": 1,
-  "spacing_seconds": [],
-  "window_seconds": 0,
-  "continuation": "Use existing tovD 15-minute heartbeat (no new scheduler). Next point approximately19:50+08; up to four points, final approximately20:20\u201320:34+08. Stop immediately on existing return-to-Lead/completion-unverified state via accepted OPS3. Otherwise report after45\u201360min.",
+  "point_count": 2,
+  "spacing_seconds": [
+    1044.0
+  ],
+  "window_seconds": 1044.0,
+  "continuation": "STOPPED immediately at point2 under existing OPS7 criteria. Return to Lead. No further OPS7 points or remediation; await explicit next instruction. Primary not killed or altered.",
   "scope": {
     "scientific_content_opened": false,
     "recursive_scan_or_du": false,
@@ -79,5 +111,10 @@
     "new_monitor_or_rule": false,
     "forecast_derived": false,
     "remediation_performed": false
-  }
+  },
+  "incident_evidence": [
+    "ops7_incident_point2.txt",
+    "ops7_incident_raw.json",
+    "ops7_incident_snapshot.json"
+  ]
 }
