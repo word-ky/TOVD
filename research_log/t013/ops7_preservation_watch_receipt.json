@@ -1,0 +1,83 @@
+{
+  "task": "T013-OPS7",
+  "status": "IN_PROGRESS",
+  "task_start_head_as_assigned": "d24c801221c946af60a526d05f8ef6a947e2f462",
+  "execution_start_head": "f1cf362eea45460edd60e908c09006b10e853008",
+  "binding": {
+    "repository": "https://github.com/word-ky/TOVD.git",
+    "project_root": "/home/wenchang/asdasdsad/wjq/TOVD",
+    "run_id": "20260912-210355-tovd-native30-primary",
+    "release_id": "20260912-210306-tovd-native30-primary-freeze",
+    "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+    "dispatch_commit": "88668f76b22777459b5792dd28f88075f208c678",
+    "writer_pid": 721181,
+    "tmux_session": "autodl-20260912-210355-tovd-native30-primary",
+    "ops2_evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a"
+  },
+  "source": {
+    "primary_survival_guard.py": {
+      "evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a",
+      "git_blob_content_sha256": "8d58f01259387c4327cee0f1ac05e4dfef1dd3fd47a4c8b0f6542820202852c6",
+      "unchanged": true
+    },
+    "primary_incident_snapshot.py": {
+      "evidence_commit": "6ecbc36bd66eb2e4ca6057f9a33c81863ed7eff7",
+      "git_blob_content_sha256": "e2573a10683d5dbdf9eb43cd9a5c9d6e13a8966df616646cbbb8f03d8dcc3e82",
+      "unchanged": true
+    }
+  },
+  "collection_commands": [
+    "date -Is",
+    "tmux has-session -t autodl-20260912-210355-tovd-native30-primary",
+    "ps -p 721181 -o pid=,stat=",
+    "grep completed_images /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/train.log | tail -n 1",
+    "grep \"^\\[autodl\\] exit_code=\" /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/train.log",
+    "LC_ALL=C df -B1 --output=avail /home/wenchang/asdasdsad/wjq/TOVD",
+    "test ! -f /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/analysis/results.json"
+  ],
+  "evaluation_command": "health_guard(completed_images, free_bytes, writer_alive=True, tmux_alive=True, wrapper_exit_code=None)",
+  "points": [
+    {
+      "timestamp": "2026-09-13T19:34:19+08:00",
+      "completed_images": 799,
+      "total_images": 1000,
+      "elapsed_seconds": 81009.45043654303,
+      "writer_pid": 721181,
+      "writer_state": "Rl+",
+      "writer_alive": true,
+      "tmux_alive": true,
+      "wrapper_exit_code": null,
+      "analysis_results_exists": false,
+      "free_bytes": 13319274496,
+      "ops2": {
+        "status": "SAFE",
+        "process_status": "PRIMARY_RUNNING",
+        "storage": {
+          "closed_image_count": 799,
+          "free_bytes": 13319274496,
+          "remaining": 201,
+          "projected_remaining": 3287420928,
+          "required_free": 12534839706,
+          "margin": 784434790,
+          "status": "SAFE"
+        },
+        "writer_alive": true,
+        "tmux_alive": true,
+        "wrapper_exit_code": null
+      }
+    }
+  ],
+  "point_count": 1,
+  "spacing_seconds": [],
+  "window_seconds": 0,
+  "continuation": "Use existing tovD 15-minute heartbeat (no new scheduler). Next point approximately19:50+08; up to four points, final approximately20:20\u201320:34+08. Stop immediately on existing return-to-Lead/completion-unverified state via accepted OPS3. Otherwise report after45\u201360min.",
+  "scope": {
+    "scientific_content_opened": false,
+    "recursive_scan_or_du": false,
+    "active_file_hash": false,
+    "experiment_mutated": false,
+    "new_monitor_or_rule": false,
+    "forecast_derived": false,
+    "remediation_performed": false
+  }
+}
