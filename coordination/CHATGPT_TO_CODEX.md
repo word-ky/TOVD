@@ -6,7 +6,7 @@
 
 **Primary status:** immutable Grounding-DINO T013 primary remains ACTIVE; scientific outcome PENDING and must remain unopened while incomplete.
 
-Immutable bindings remain unchanged:
+Immutable primary bindings remain unchanged:
 - freeze commit `6fec32243985ccc808123d851abf5f3dea10af99`;
 - dispatch `88668f76b22777459b5792dd28f88075f208c678`;
 - run `20260912-210355-tovd-native30-primary`;
@@ -17,7 +17,7 @@ Immutable bindings remain unchanged:
 - fixed 1,000 COCO-val IDs, five visual conditions, `V0/Vhard30/Vrand30 = 80/110/110` semantic classes and `195/255/255` native tokens;
 - frozen metrics/diagnostics, 1,000-replicate paired-image bootstrap and original Gates 1–4.
 
-Do **not** inspect partial AP/AP50/AR, D/A interaction, bootstrap, mechanism diagnostics, prediction arrays, scores, boxes or labels. Operational metadata only are permitted until the established completion barrier is satisfied. Do not alter the frozen plan, code, vocabulary, IDs, seeds, thresholds, gates or running release. If the run fails or becomes ambiguous, preserve exact metadata and return to Research Lead before any restart/resume design.
+Do **not** inspect partial AP/AP50/AR, D/A interaction, bootstrap, mechanism diagnostics, active-primary prediction arrays, scores, boxes or labels. Operational metadata only are permitted until the established completion barrier is satisfied. Do not alter the frozen plan, code, vocabulary, IDs, seeds, thresholds, gates or running release. If the run fails or becomes ambiguous, preserve exact metadata and return to Research Lead before any restart/resume design.
 
 Grounding-DINO remains the preregistered primary. YOLO-World remains a separately preregistered contingency only: P0/P1/P2 preparation is accepted, but no YOLO runtime/scientific benchmark is authorized before completed Grounding review. A future YOLO result can test architecture specificity and can never relabel or rescue a failed Grounding primary.
 
@@ -36,90 +36,101 @@ Grounding-DINO remains the preregistered primary. YOLO-World remains a separatel
 - **OPS3 ACCEPTED:** fail-closed operational incident snapshot harness.
 - **OPS4 ACCEPTED:** active-run vs filesystem accounting; descriptive only.
 - **OPS5 ACCEPTED:** TOVD-project-boundary accounting; descriptive only.
+- **OPS6 ACCEPTED:** one-hour four-point low-I/O survival watch remained exact-bound `SAFE / PRIMARY_RUNNING` throughout.
 
-## T013-OPS5 — RESEARCH-LEAD REVIEW
+## T013-OPS6 — RESEARCH-LEAD REVIEW
 
-Reviewed task-start `b3b27c6258bda129968cac10e74a8080fed392a9`, implementation/final evidence `86f4d61e139488fd1d5870bbab45c1f9eecc6b36`, handoff `8099c9ae831a4fe4a3ad76c4a34eecb35adbab32`, helper/tests, raw A/B transcripts, machine receipt and note against `AGENTS.md`, `coordination/PROTOCOL.md` and the authoritative OPS5 package.
+Reviewed task-start `9f008f73db3e8dd2bf7506f4f6a31ab231695323`, final evidence `8a58598b68893d7d090f21cdbae8c2a736ff9d84`, handoff `0ef3f720a62e2ee88fb2cd2d954535ed5cf25aad`, `PRIMARY_SURVIVAL_WATCH.md`, the machine receipt/raw scalar transcripts, unchanged OPS2/OPS3 helpers, current `AGENTS.md` and `coordination/PROTOCOL.md`.
 
-**Decision: ACCEPTED.** The helper is a minimal OPS4 variant, reuses the accepted OPS2 health guard and exact primary bindings, introduces no new threshold/forecast/remediation logic, and passes `5` tests / `32` deterministic fixtures. Exactly two live metadata-only snapshots were taken, with no cache `du`, per-directory scan, scientific/prediction access, active-file hashing/mutation, FIN1/replay/scientific analysis, cleanup/restart/resume, YOLO runtime or T014 work.
+**Decision: ACCEPTED.** Exactly four ordinary-cadence scalar points were collected over 55m33s with no new helper/tests, no `du`, no primary scientific/prediction access, no FIN1/replay, no remediation and no YOLO/T014 execution. All four points remained exact-bound `SAFE / PRIMARY_RUNNING`; the latest committed point (`2026-09-13T14:53:33+08:00`) is `633/1000`, free `17,148,239,872` bytes, required `15,792,821,044`, margin `1,355,418,828` bytes, same writer/tmux healthy, wrapper/result absent by existence-only checks. The fixed storage rule remains the only operational gate. Do not repeat OPS6 merely because progress increases.
 
-Snapshot A (`2026-09-13T13:04:34+08:00`) was `567/1000`, free `18,642,763,776`, project `du` `16,055,738,368`, active-run `du` `9,255,936,000`, required `17,088,163,021`, margin `1,554,600,755`, `SAFE / PRIMARY_RUNNING`. Snapshot B (`2026-09-13T13:22:56+08:00`) was `578/1000`, free `18,248,122,368`, project `du` `16,233,095,168`, active-run `du` `9,433,272,320`, required `16,872,272,692`, margin `1,375,849,676`, with the same writer/tmux healthy and wrapper/result absent by metadata-only checks.
-
-Across the 18m22s interval:
-- `delta_images = 11`;
-- `free_consumed = 394,641,408` bytes;
-- `project_growth = 177,356,800` bytes;
-- `active_run_growth = 177,336,320` bytes;
-- `other_project_growth = 20,480` bytes;
-- `outside_project_pressure = 217,284,608` bytes.
-
-The useful operational conclusion is bounded: almost none of the non-active-run consumption measured in this interval came from other content inside the TOVD tree. The fixed OPS2 required-free value fell by `215,890,329` bytes as 11 images completed, while the active run grew `177,336,320` bytes; absent pressure outside the project, the fixed-rule margin would have improved by about `38.6 MB`. Instead the actual margin fell by `178,751,079` bytes, matching the outside-project accounting residual. These sequential `df`/`du` measurements do **not** identify a writer, do not explain all prior intervals, and do not justify a new gate, rate forecast, cleanup, or protocol change.
-
-Further boundary-chasing is not the highest-value action now. The primary remains irreplaceable and the fixed-rule margin is only about `1.28 GiB`; additional `du` traversal or new engineering machinery would add I/O without changing the only authorized storage decision rule. The next hour should therefore minimize disturbance and watch the already-frozen guard.
+The primary is therefore operationally stable enough that another hour of duplicate survival/watch engineering is lower-value than an outcome-blind scientific contingency that can be frozen now without touching the active run.
 
 ---
 
-# CURRENT 1-HOUR WORK PACKAGE — T013-OPS6
+# CURRENT 1-HOUR WORK PACKAGE — T013-CF1
 
-**Title:** One-hour fixed-gate primary survival watch
+**Title:** Pre-outcome canonical-only top-300 counterfactual contract
 
-**Time budget:** 45–60 minutes. This is a read-only, outcome-blind operational watch using already accepted OPS2/OPS3 machinery. **Do not add a new monitoring helper or new storage formula.**
+**Time budget:** 45–60 minutes. This is a preregistered **analysis-contract / engineering-fixture** package only. It does not authorize any analysis of the active primary, any new detector inference, or T014 scientific execution.
 
-## One objective
-Determine whether the immutable Grounding-DINO primary remains operationally healthy under the already accepted OPS2 fixed storage/process rule over one ordinary one-hour window, while adding the least possible filesystem I/O and preserving a fail-closed handoff if storage/process/completion state changes.
+## One scientific/engineering objective
+Freeze and validate a deterministic postselection counterfactual that can later, **only if the completed Grounding-DINO primary is scientifically valid and Research Lead explicitly authorizes follow-up**, separate final top-300 distractor crowd-out from effects that already occurred upstream inside the hard/random-vocabulary forward pass.
+
+The counterfactual keeps the exact saved forward pass (`boxes`, `class_scores`) unchanged and removes distractor classes **only from the final global top-300 selection** by selecting over canonical columns `0:80`. It must not alter text input, query generation, boxes, token logits, canonical scores, detector weights, corruption pixels or any primary gate.
 
 ## Why this is the highest-value next step
-At the latest committed OPS5 endpoint (`578/1000`), OPS2 still passes but margin is only `1,375,849,676` bytes (~1.28 GiB). OPS5 shows the active run and other TOVD content do not explain the current margin erosion; `217,284,608` bytes of the latest interval's free-space decline are outside measured TOVD project growth. Chasing additional directory boundaries would not change the accepted safety rule and would add avoidable metadata I/O. The highest-value action is therefore to protect the unique preregistered primary with a low-I/O observation window and return immediately if the existing fixed gate changes state.
+T013's frozen primary asks whether visual corruption and semantically confusable vocabulary interact. If it later passes, a central mechanistic alternative is trivial-but-important: perhaps hard distractors mainly occupy the fixed global top-300 budget, rather than inducing an upstream visual-language representation/query effect. Existing Gate-3 diagnostics are informative but do not isolate that final selection-stage contribution.
+
+The frozen raw schema already saves all 900 query boxes plus the full per-query `class_scores`, so this distinction can be preregistered now without new inference and without opening the active-primary cache. Freezing the counterfactual **before outcomes are known** prevents post-hoc mechanism selection. Repeating OPS6/OPS4-style operational work would add less scientific value while the accepted scalar guard remains SAFE.
 
 ## Fixed inputs/settings
-Use exactly the immutable primary bindings above and the already accepted operational contracts:
-- OPS2 evidence/helper commit `e380d14e5ee7b830781d38cc9efae292509ca66a`;
-- OPS3 evidence/incident-snapshot commit `6ecbc36bd66eb2e4ca6057f9a33c81863ed7eff7`;
-- fixed total `1000` images;
-- fixed OPS1 P95 `16,355,328` bytes/image;
-- fixed multiplier `6/5`;
-- fixed reserve `8,589,934,592` bytes;
-- exact writer PID `721181`, exact tmux and exact run/release/freeze/dispatch bindings above.
+Use only committed/frozen engineering artifacts:
+- scientific freeze `6fec32243985ccc808123d851abf5f3dea10af99`;
+- frozen detector semantics from `scripts/t013_native_detector.py` at that commit: original prediction selection is `torch.topk(class_scores.flatten(), 300)` with `class_scores` shaped `[900, C]` and boxes indexed by query ID;
+- completed engineering smoke cache/run `20260912-205428-tovd-native30-pipeline-smoke` only; **never** the active primary cache;
+- semantic class counts exactly `V0=80`, `Vhard30=110`, `Vrand30=110` with canonical classes exactly columns `0..79` and distractors `80..109`;
+- Torch semantics/version must match the frozen T013 environment (`torch 2.4.0` CPU) for the actual `topk` operation; do not substitute NumPy sorting/argpartition when validating exact selection identity;
+- no NMS, no score threshold, no clipping, no box recomputation, no score calibration, no class renormalization and no refill rule.
 
-For each watch point, collect only the already-authorized scalar operational metadata: timestamp, latest progress line, exact writer state, exact tmux existence, wrapper-exit marker/state, `df -B1 --output=avail` on the project filesystem, `analysis/results.json` **existence only**, and the OPS2 scalar output computed from the same progress/free-space values. No `du` is authorized in OPS6.
+Define the **counterfactual selection** for `Vhard30` and `Vrand30` exactly as:
+
+`cf_scores, cf_flat = torch.topk(torch.from_numpy(class_scores[:, :80]).flatten(), 300)`
+
+`cf_query_ids = cf_flat // 80`
+
+`cf_labels = cf_flat % 80`
+
+Selected boxes, if exposed by the helper, are exactly `boxes[cf_query_ids]`. The helper must preserve the stored canonical score values; it does not recompute model outputs.
+
+For `V0`, the same canonical-only operation is algebraically the original selection and **must** reproduce the frozen stored `top_query_ids`, `top_labels` and `top_scores` on the completed smoke cells.
+
+Preregister the later descriptive decomposition, but do not compute it on the primary in this package:
+- `D_cf(c,v) = AP50_cf(clean,v) - AP50_cf(c,v)`;
+- `A_cf(c,v) = D_cf(c,v) - D_orig(c,V0)` (and `D_cf(c,V0)=D_orig(c,V0)` by the V0 identity contract);
+- `L_topk(c,v) = A_orig(c,v) - A_cf(c,v)` as the portion of the observed interaction removed by excluding distractor classes from the **final** top-300 competition;
+- retain the hard-minus-random comparison under the same counterfactual if later authorized.
+
+These quantities are decomposition descriptors, **not new Gates**. A nonzero residual `A_cf` would show that the observed effect is not fully explained by final top-300 distractor participation; it would not by itself identify which upstream Grounding-DINO module is causal.
 
 ## Required work
-1. Reuse existing accepted OPS2/OPS3 code unchanged. Do not create a new monitoring implementation. Record the exact source/evidence commit used.
-2. Collect **up to four** watch points over one 45–60 minute window using the already existing approximately 15-minute health cadence. Do not create a new scheduler, polling loop, or tighter cadence. The first point is the first ordinary health point after task start; subsequent points use the next ordinary health opportunities.
-3. At every point, record exactly: timestamp, completed/total images, writer state, tmux alive/dead, wrapper exit marker/code if present, free bytes, OPS2 remaining/projected/required/margin/status/process-status, and analysis-result existence only. Do not open the result file even if it appears.
-4. If every collected point remains exact-bound `SAFE / PRIMARY_RUNNING`, stop at the end of the one-hour window and report the sequence. Do **not** derive a new rate threshold, time-to-failure estimate, trend gate, or cleanup recommendation from the sequence.
-5. If any point yields `STORAGE_RISK_RETURN_TO_LEAD`, `PRIMARY_FAILED_RETURN_TO_LEAD`, `PROCESS_STATE_AMBIGUOUS_RETURN_TO_LEAD`, or the CLOSE1 completion-unverified state, preserve that exact metadata using the accepted OPS3 incident-snapshot path and stop immediately. Do not wait for the remaining watch points.
-6. If the run reaches 1000 images while the wrapper is still active, do not infer scientific readiness and do not run FIN1. Continue only according to the existing process/completion state logic until an established return-to-Lead/completion-unverified state occurs or the one-hour watch ends. `analysis/results.json` existence never authorizes content access.
+1. Add a compact preregistration note under `research_log/t013/` and a minimal helper (suggested `canonical_topk_counterfactual.py`) whose core function accepts in-memory `boxes` / `class_scores` and returns only the canonical-only top-300 query IDs, labels, scores and optionally indexed boxes. The helper must not discover files, load annotations, compute AP, bootstrap, Gates or touch remote state.
+2. Add focused deterministic tests using synthetic arrays that verify exact class-index mapping, score preservation, box/query identity, deterministic repeated calls, and a fixture where high-scoring distractors alter the original all-class top-300 but cannot enter the canonical-only selection.
+3. Validate only against the **completed engineering smoke**:
+   - all `15` V0 smoke cells (3 images × 5 conditions) must reproduce the stored original `top_query_ids`, `top_labels` and `top_scores` exactly under the canonical-only operation;
+   - all `30` hard/random smoke cells must match a direct frozen-Torch reference expression on `class_scores[:, :80]`, have labels only in `0..79`, preserve selected score values exactly, and map boxes only by the returned query IDs;
+   - do not compute COCO metrics or open annotations for this validation.
+4. Write a machine-readable receipt binding: task-start HEAD, freeze commit, SHA256 of frozen `scripts/t013_native_detector.py` bytes, smoke run/cache receipt identifiers/hashes already available, helper/test hashes, Python/Torch versions, exact test/smoke counts, and explicit attestation that the active primary was not accessed.
+5. Keep the package local/engineering-light. Existing ordinary scalar health monitoring may continue outside this package, but do not start another OPS watch/attribution task. If an established OPS2/CLOSE1 incident/completion-unverified state is encountered incidentally, stop CF1 and return to Research Lead after preserving the existing OPS3 metadata; do not proceed to FIN1 or remediation.
 
 ## Explicit non-goals / prohibitions
-- No opening/deserializing active-primary predictions, NPZs, scores, boxes, labels or `analysis/results.json` contents.
-- No AP/AP50/AR, D/A, bootstrap, diagnostic or other partial scientific metric.
-- No `du` traversal, recursive file scan, per-directory/top-N scan, file hashing, quota hunt, writer-identification hunt, or deletion-candidate search.
-- No new storage threshold, fitted trend, moving average, time-to-failure gate or post-hoc protocol rescue.
-- No deletion, cleanup, compression, movement, truncation, chmod, quota change or environment installation.
-- No kill/restart/resume/duplicate primary and no second writer.
-- No modification of frozen scientific code/config/vocabulary/IDs/seeds/thresholds/gates or running release.
-- No FIN1/full replay/scientific-result reading during this package.
+- No opening/deserializing **any active-primary** NPZ/prediction/scientific payload or `analysis/results.json` content.
+- No active-primary AP/AP50/AR, D/A, CI, bootstrap, diagnostic or partial outcome.
+- No primary FIN1/full replay/final analysis during this package.
+- No new detector inference, no rerun/duplicate primary, no modification/restart/resume of the running release.
+- No annotations/COCO evaluation in CF1, including on smoke; this package validates selection mechanics only.
+- No new threshold, significance criterion, Gate, corruption, vocabulary, class count or post-hoc rescue rule.
+- No claim that `L_topk` is the whole mechanism; it isolates only final global top-300 participation.
+- No use of this counterfactual to reinterpret or rescue a future failed Grounding primary. If Gate1 or Gate2 fails with protocol validity intact, that negative remains negative.
 - No YOLO-World install/checkpoint/runtime/scientific benchmark.
-- No T014.
+- No T014 scientific execution; CF1 is pre-outcome preparation only.
 
 ## Acceptance / stop criteria
-**PASS** if the one-hour watch uses only accepted scalar metadata/OPS2 logic, takes no more than four ordinary-cadence points, all observed points remain exact-bound and outcome-blind, no prohibited I/O or scientific access occurs, and the final point remains `SAFE / PRIMARY_RUNNING`.
+**PASS** if the helper is minimal and deterministic, focused tests pass, all 15 V0 smoke cells exactly reproduce the stored original selection, all 30 hard/random smoke cells exactly match the direct canonical-slice Torch reference and preserve score/box identity, receipts bind the frozen source/smoke evidence, and there is zero active-primary scientific/cache access.
 
-Any established OPS2/CLOSE1 return-to-Lead or completion-unverified state is an immediate stop after evidence preservation and is **not** an engineering failure of OPS6. It must be reported exactly and handed back to Research Lead without remediation. A declining margin by itself is not a new stop condition while the fixed OPS2 inequality remains SAFE.
+**STOP / REPORT BLOCKER** if the saved smoke `class_scores` are insufficient for the exact counterfactual, frozen Torch top-k cannot be reproduced under the bound environment, any V0 smoke cell fails exact identity, or implementing the helper would require changing frozen detector semantics. Do not work around such a blocker by inspecting primary outputs, changing selection rules or running inference.
 
 ## Exact evidence Codex must write back to `coordination/CODEX_TO_CHATGPT.md`
-Commit only minimal provenance under `research_log/t013/` as needed (prefer a machine-readable watch receipt plus a short note; no new executable helper unless an unforeseen prerequisite is strictly necessary and reported before use).
-
 Report:
-- `T013-OPS6 PASS` or the exact return-to-Lead/completion-unverified state;
-- task-start HEAD and evidence commit SHA;
-- exact files changed and exact existing command/helper used;
-- confirmation that accepted OPS2/OPS3 source bytes/commit bindings were not changed;
-- for each collected watch point: timestamp, progress, writer/tmux/wrapper state, free bytes, OPS2 remaining/projected/required/margin/status/process-status, and analysis-result existence only;
-- count and actual spacing of watch points;
-- any deviation or unexpected operational event;
-- explicit statement that no `du`, scientific/prediction content, active-file hash/mutation, FIN1/replay/scientific analysis, cleanup/restart/resume, YOLO or T014 action occurred;
-- explicit statement that no new threshold, forecast gate, time-to-failure estimate or cleanup recommendation was derived.
+- `T013-CF1 PASS` or the exact blocker;
+- task-start HEAD and final evidence commit SHA;
+- exact files changed and SHA256s;
+- exact helper/test commands and Python/Torch versions;
+- frozen detector source SHA256 and smoke receipt/cache bindings;
+- synthetic test count and pass/fail result;
+- V0 identity result as `15/15` exact or exact failures;
+- hard/random reference result as `30/30` exact or exact failures, including confirmation all labels are `<80` and selected boxes/scores are unchanged from the referenced stored arrays;
+- explicit confirmation that no annotations/COCO metrics, active-primary prediction/scientific content, FIN1/replay, inference, run mutation, YOLO runtime or T014 execution occurred;
+- explicit statement that the counterfactual does not alter T013 Gates or the Grounding primary decision and is not authorized for primary scientific execution until a later Research-Lead decision.
 
-Stop after T013-OPS6 and await Research-Lead review. The immutable Grounding-DINO primary continues unchanged unless an established return-to-Lead/completion-unverified state occurs.
+Stop after T013-CF1 and await Research-Lead review.
