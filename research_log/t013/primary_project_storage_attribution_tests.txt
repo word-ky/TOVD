@@ -1,0 +1,10 @@
+test_accounting_residuals (test_primary_project_storage_attribution.AttributionTests.test_accounting_residuals) ... ok
+test_bindings_and_time (test_primary_project_storage_attribution.AttributionTests.test_bindings_and_time) ... ok
+test_malformed_evidence (test_primary_project_storage_attribution.AttributionTests.test_malformed_evidence) ... ok
+test_unhealthy_states (test_primary_project_storage_attribution.AttributionTests.test_unhealthy_states) ... ok
+test_zero_image_delta (test_primary_project_storage_attribution.AttributionTests.test_zero_image_delta) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+OK

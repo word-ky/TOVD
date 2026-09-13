@@ -1,0 +1,76 @@
+{
+  "task": "T013-OPS5",
+  "status": "AWAITING_SECOND_HEARTBEAT_SNAPSHOT",
+  "task_start_head": "b3b27c6258bda129968cac10e74a8080fed392a9",
+  "tests": {
+    "command": "D:/anaconda3/python.exe -m unittest discover -s research_log/t013 -p test_primary_project_storage_attribution.py -v",
+    "tests": 5,
+    "fixtures": 32,
+    "status": "PASS",
+    "groups": {
+      "zero_positive_negative_residuals": 3,
+      "zero_image_delta": 1,
+      "bindings_time_progress": 7,
+      "malformed_missing_evidence": 17,
+      "unhealthy_states": 4
+    }
+  },
+  "snapshot_A": {
+    "timestamp": "2026-09-13T13:04:34+08:00",
+    "binding": {
+      "repository": "https://github.com/word-ky/TOVD.git",
+      "project_root": "/home/wenchang/asdasdsad/wjq/TOVD",
+      "run_id": "20260912-210355-tovd-native30-primary",
+      "release_id": "20260912-210306-tovd-native30-primary-freeze",
+      "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+      "dispatch_commit": "88668f76b22777459b5792dd28f88075f208c678",
+      "writer_pid": 721181,
+      "tmux_session": "autodl-20260912-210355-tovd-native30-primary",
+      "ops2_evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a"
+    },
+    "progress": {
+      "completed_images": 567,
+      "total_images": 1000,
+      "seconds": 57517.53246723002
+    },
+    "writer_state": "Rl+",
+    "ops2": {
+      "status": "SAFE",
+      "process_status": "PRIMARY_RUNNING",
+      "storage": {
+        "closed_image_count": 567,
+        "free_bytes": 18642763776,
+        "remaining": 433,
+        "projected_remaining": 7081857024,
+        "required_free": 17088163021,
+        "margin": 1554600755,
+        "status": "SAFE"
+      },
+      "writer_alive": true,
+      "tmux_alive": true,
+      "wrapper_exit_code": null
+    },
+    "analysis_result_exists": false,
+    "run_du": 9255936000,
+    "project_du": 16055738368
+  },
+  "snapshot_B": null,
+  "raw_A_path": "research_log/t013/primary_project_storage_attribution_A_raw.json",
+  "raw_A_sha256": "26c00ed786ae3ae8efe55448a22eef77030cbb0785c561b1670fdb4591b0e5c4",
+  "source_sha256": {
+    "primary_project_storage_attribution.py": "8f832638b331377475eaab24f8bb9dab0d445fdf6f11e4beb9522523f14e143c",
+    "test_primary_project_storage_attribution.py": "ee855bcdfd55541a843b4de80c192d0f1b6d3b35f3f1686f6a07c0ef26fa6d7a",
+    "primary_project_storage_attribution_tests.txt": "d5904b823c6e569707b4039b0abb64bcaf23b65f07fe62be446eb44697c3294f"
+  },
+  "live_snapshots_collected": 1,
+  "next_action": "Next existing heartbeat: collect B once using primary_project_storage_attribution.py into primary_project_storage_attribution_B_raw.json; no separate health/cache du/third snapshot. Parse snapshot; any return-to-Lead/completion state preserves evidence and stops. Bothhealthy -> attribute(A,B), finalize receipt/note and deliver evidence commit to Lead.",
+  "interpretation": "other_project_growth and outside_project_pressure are accounting residuals from sequential non-atomic measurements; not writer identity, thresholds, forecasts or cleanup triggers.",
+  "scope": {
+    "project_run_aggregate_du_only": true,
+    "cache_du_executed": false,
+    "scientific_payloads_opened": false,
+    "active_files_hashed_or_modified": false,
+    "fin1_replay_science_executed": false,
+    "cleanup_restart_resume_yolo_t014": false
+  }
+}
