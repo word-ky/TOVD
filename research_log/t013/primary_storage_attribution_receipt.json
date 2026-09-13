@@ -1,0 +1,75 @@
+{
+  "task": "T013-OPS4",
+  "status": "AWAITING_SECOND_HEARTBEAT_SNAPSHOT",
+  "task_start_head": "032de1a44ae19d0fda497fe43909b0fee98f63ab",
+  "tests": {
+    "command": "D:/anaconda3/python.exe -m unittest discover -s research_log/t013 -p test_primary_storage_attribution.py -v",
+    "tests": 5,
+    "fixtures": 31,
+    "status": "PASS",
+    "groups": {
+      "accounting_residuals": 3,
+      "zero_image_delta": 1,
+      "bindings_and_time": 6,
+      "malformed_evidence": 17,
+      "unhealthy_states": 4
+    }
+  },
+  "snapshot_A": {
+    "timestamp": "2026-09-13T12:27:10+08:00",
+    "binding": {
+      "repository": "https://github.com/word-ky/TOVD.git",
+      "project_root": "/home/wenchang/asdasdsad/wjq/TOVD",
+      "run_id": "20260912-210355-tovd-native30-primary",
+      "release_id": "20260912-210306-tovd-native30-primary-freeze",
+      "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+      "dispatch_commit": "88668f76b22777459b5792dd28f88075f208c678",
+      "writer_pid": 721181,
+      "tmux_session": "autodl-20260912-210355-tovd-native30-primary",
+      "ops2_evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a"
+    },
+    "progress": {
+      "completed_images": 544,
+      "total_images": 1000,
+      "seconds": 55303.571372162
+    },
+    "writer_state": "Rl+",
+    "ops2": {
+      "status": "SAFE",
+      "process_status": "PRIMARY_RUNNING",
+      "storage": {
+        "closed_image_count": 544,
+        "free_bytes": 19348643840,
+        "remaining": 456,
+        "projected_remaining": 7458029568,
+        "required_free": 17539570074,
+        "margin": 1809073766,
+        "status": "SAFE"
+      },
+      "writer_alive": true,
+      "tmux_alive": true,
+      "wrapper_exit_code": null
+    },
+    "analysis_result_exists": false,
+    "run_du": 8877875200,
+    "cache_du": 8877797376
+  },
+  "snapshot_B": null,
+  "raw_A_path": "research_log/t013/primary_storage_attribution_A_raw.json",
+  "raw_A_sha256": "fa8e4e16e73c33afbb30c53aa5fc416c399b08a4393a2ac74537d56d1d03ceff",
+  "source_sha256": {
+    "primary_storage_attribution.py": "1d17ce1083c3be68876994517dbe31e186cd88f2d819d7d00d15cbd8fa54b41b",
+    "test_primary_storage_attribution.py": "a536e2adccea296342bb1bff743508071c51edb6ae328a6007e72e1e75ed5292",
+    "primary_storage_attribution_tests.txt": "28368b07d3cb05a5b07c969b3c216ebab1fc5b9332dcd5d92e69bd42fc5311fe"
+  },
+  "live_snapshots_collected": 1,
+  "next_action": "At next existing approximately 15-minute heartbeat, collect B once with the same command into primary_storage_attribution_B_raw.json, parse health; stop and report on any return-to-Lead/completion-unverified state; otherwise attribute(A,B) and deliver. Do not recollect A or add a separate health query/loop.",
+  "interpretation": "outside_run_pressure is an accounting residual, not external process attribution or a safety threshold. Measurements are sequential on an active filesystem, not atomic.",
+  "scope": {
+    "aggregate_du_metadata_exception_used": true,
+    "scientific_prediction_contents_opened": false,
+    "active_files_hashed_or_modified": false,
+    "fin1_replay_science_run": false,
+    "cleanup_restart_resume_yolo_t014": false
+  }
+}
