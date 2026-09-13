@@ -1,0 +1,215 @@
+{
+  "task": "T013-OPS8",
+  "status": "IN_PROGRESS_POST_RECLAMATION_SAFE",
+  "task_start_head": "7aa87119566b5acfb799fac9244745cfdc7fe9ce",
+  "lead_instruction_commit": "61012198868dd5b11cc57d58de694f3754e20628",
+  "ops2_evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a",
+  "ops3_evidence_commit": "6ecbc36bd66eb2e4ca6057f9a33c81863ed7eff7",
+  "helpers_unchanged_verified": true,
+  "frozen_data_receipt_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+  "archives": [
+    {
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/val2017.parallel.zip",
+      "existed": true,
+      "regular_file": true,
+      "resolved_path_exact": true,
+      "stat_size": 815585330,
+      "frozen_sha256": "4f7e2ccb2866ec5041993c9cf2a952bbed69647b115d0f74da7ce8f4bef82f05",
+      "open_by_writer": false,
+      "deleted": true
+    },
+    {
+      "path": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations_trainval2017.parallel.zip",
+      "existed": true,
+      "regular_file": true,
+      "resolved_path_exact": true,
+      "stat_size": 252907541,
+      "frozen_sha256": "113a836d90195ee1f884e704da6304dfaaecff1f023f49b6ca93c4aaae470268",
+      "open_by_writer": false,
+      "deleted": true
+    }
+  ],
+  "prerequisites": {
+    "extracted_val2017_directory_exists": true,
+    "annotation_path": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations/instances_val2017.json",
+    "annotation_regular_file_size": 19987840,
+    "frozen_release_data_receipt_size": 1064,
+    "frozen_release_image_sha256_size": 450003,
+    "local_data_receipt_and_image_sha256_committed": true,
+    "exact_writer_fd_targets": [
+      "/dev/pts/1",
+      "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/train.log",
+      "/dev/nvidia0",
+      "/dev/nvidia1",
+      "/dev/nvidia0",
+      "/dev/nvidia0",
+      "/dev/nvidia0",
+      "/dev/nvidia1",
+      "/dev/nvidia1",
+      "/dev/nvidia1",
+      "socket:[23867320]",
+      "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/train.log",
+      "anon_inode:[eventfd]",
+      "pipe:[23798645]",
+      "pipe:[23798645]",
+      "pipe:[23798646]",
+      "pipe:[23798646]",
+      "/dev/nvidiactl",
+      "/dev/nvidia-uvm"
+    ],
+    "writer_archive_open": false
+  },
+  "metadata_commands": [
+    "stat --printf=\"%n|%F|%s\\n\" -- exact_allowlisted_paths",
+    "readlink -f -- exact_allowlisted_path",
+    "test -d /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/val2017",
+    "stat --printf=\"%n|%F|%s\\n\" -- /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations/instances_val2017.json /home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze/research_log/t013/data_receipt.json /home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze/research_log/t013/image_sha256.json",
+    "for writer_fd in /proc/721181/fd/*; do readlink -- \"$writer_fd\"; done"
+  ],
+  "deletion_command": "rm -- /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/val2017.parallel.zip /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations_trainval2017.parallel.zip",
+  "deletion_success_marker": "OPS8_ALLOWLIST_DELETION_SUCCEEDED",
+  "reclaimed_validated_file_bytes": 1068492871,
+  "pre": {
+    "schema_version": "T013-OPS3-v1",
+    "binding": {
+      "repository": "https://github.com/word-ky/TOVD.git",
+      "project_root": "/home/wenchang/asdasdsad/wjq/TOVD",
+      "run_id": "20260912-210355-tovd-native30-primary",
+      "release_id": "20260912-210306-tovd-native30-primary-freeze",
+      "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+      "dispatch_commit": "88668f76b22777459b5792dd28f88075f208c678",
+      "writer_pid": 721181,
+      "tmux_session": "autodl-20260912-210355-tovd-native30-primary",
+      "ops2_evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a"
+    },
+    "timestamp": "2026-09-13T20:42:13+08:00",
+    "git_head": "7aa87119566b5acfb799fac9244745cfdc7fe9ce",
+    "raw_sources": {
+      "binding": "accepted primary dispatch 88668f76b22777459b5792dd28f88075f208c678",
+      "timestamp": "OPS8 pre date -Is",
+      "git_head": "local git rev-parse HEAD 7aa87119566b5acfb799fac9244745cfdc7fe9ce",
+      "writer": "OPS8 pre ps -p 721181 -o pid=,stat= matching Rl+ row",
+      "tmux": "OPS8 pre tmux has-session conditional success marker",
+      "progress": "OPS8 pre exact run train.log latest completed_images scalar",
+      "wrapper_exit": "OPS8 pre anchored wrapper exit grep no lines",
+      "filesystem": "OPS8 pre df -B1 --output=avail project root",
+      "analysis_existence": "OPS8 pre test ! -f exact analysis/results.json"
+    },
+    "progress": {
+      "completed_images": 840,
+      "total_images": 1000,
+      "seconds": 85033.70864075999
+    },
+    "writer_pid_exists": true,
+    "writer_state": "Rl+",
+    "analysis_result_exists": false,
+    "ops2": {
+      "status": "STORAGE_RISK_RETURN_TO_LEAD",
+      "process_status": "PRIMARY_RUNNING",
+      "storage": {
+        "closed_image_count": 840,
+        "free_bytes": 11234455552,
+        "remaining": 160,
+        "projected_remaining": 2616852480,
+        "required_free": 11730157568,
+        "margin": -495702016,
+        "status": "STORAGE_RISK_RETURN_TO_LEAD"
+      },
+      "writer_alive": true,
+      "tmux_alive": true,
+      "wrapper_exit_code": null
+    },
+    "status": "STORAGE_RISK_RETURN_TO_LEAD",
+    "scope_attestation": {
+      "scientific_payloads_opened": false,
+      "cache_recursively_scanned": false,
+      "experiment_mutated": false
+    },
+    "scientific_content_access_authorized": false,
+    "fin1_execution_authorized": false,
+    "remediation_authorized": false
+  },
+  "immediate_post": {
+    "schema_version": "T013-OPS3-v1",
+    "binding": {
+      "repository": "https://github.com/word-ky/TOVD.git",
+      "project_root": "/home/wenchang/asdasdsad/wjq/TOVD",
+      "run_id": "20260912-210355-tovd-native30-primary",
+      "release_id": "20260912-210306-tovd-native30-primary-freeze",
+      "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+      "dispatch_commit": "88668f76b22777459b5792dd28f88075f208c678",
+      "writer_pid": 721181,
+      "tmux_session": "autodl-20260912-210355-tovd-native30-primary",
+      "ops2_evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a"
+    },
+    "timestamp": "2026-09-13T20:43:10+08:00",
+    "git_head": "7aa87119566b5acfb799fac9244745cfdc7fe9ce",
+    "raw_sources": {
+      "binding": "accepted primary dispatch 88668f76b22777459b5792dd28f88075f208c678",
+      "timestamp": "OPS8 immediate post date -Is",
+      "git_head": "local git rev-parse HEAD 7aa87119566b5acfb799fac9244745cfdc7fe9ce",
+      "writer": "OPS8 immediate post ps -p 721181 -o pid=,stat= matching Rl+ row",
+      "tmux": "OPS8 immediate post tmux has-session conditional success marker",
+      "progress": "OPS8 immediate post exact run train.log latest completed_images scalar",
+      "wrapper_exit": "OPS8 immediate post anchored wrapper exit grep no lines",
+      "filesystem": "OPS8 immediate post df -B1 --output=avail project root",
+      "analysis_existence": "OPS8 immediate post test ! -f exact analysis/results.json"
+    },
+    "progress": {
+      "completed_images": 841,
+      "total_images": 1000,
+      "seconds": 85126.45402577001
+    },
+    "writer_pid_exists": true,
+    "writer_state": "Rl+",
+    "analysis_result_exists": false,
+    "ops2": {
+      "status": "SAFE",
+      "process_status": "PRIMARY_RUNNING",
+      "storage": {
+        "closed_image_count": 841,
+        "free_bytes": 12291137536,
+        "remaining": 159,
+        "projected_remaining": 2600497152,
+        "required_free": 11710531175,
+        "margin": 580606361,
+        "status": "SAFE"
+      },
+      "writer_alive": true,
+      "tmux_alive": true,
+      "wrapper_exit_code": null
+    },
+    "status": "SAFE",
+    "scope_attestation": {
+      "scientific_payloads_opened": false,
+      "cache_recursively_scanned": false,
+      "experiment_mutated": false
+    },
+    "scientific_content_access_authorized": false,
+    "fin1_execution_authorized": false,
+    "remediation_authorized": false
+  },
+  "later_points": [],
+  "continuation": "No further deletion. Existing heartbeat: first later scalar point about21:00+08; reserve second/final later point for21:27\u201321:42+08 (45\u201360min from20:42:13). An intermediate heartbeat before final window should only check mailbox if first later point already recorded, to respect at most two later points. No new scheduler. On any existing risk/process/completion return state stop immediately via OPS3; otherwise final report after window.",
+  "scope": {
+    "archive_rehash": false,
+    "du_or_recursive_scan": false,
+    "broad_search": false,
+    "non_allowlisted_deletion": false,
+    "scientific_content_opened": false,
+    "fin1_or_replay": false,
+    "primary_kill_restart_resume": false,
+    "frozen_scientific_inputs_mutated": false,
+    "new_threshold_or_forecast": false,
+    "yolo_or_t014": false
+  },
+  "scalar_collection_commands": [
+    "date -Is",
+    "tmux has-session -t autodl-20260912-210355-tovd-native30-primary",
+    "ps -p 721181 -o pid=,stat=",
+    "grep completed_images /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/train.log | tail -n 1",
+    "grep \"^\\[autodl\\] exit_code=\" /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/train.log",
+    "LC_ALL=C df -B1 --output=avail /home/wenchang/asdasdsad/wjq/TOVD",
+    "test ! -f /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/analysis/results.json"
+  ]
+}
