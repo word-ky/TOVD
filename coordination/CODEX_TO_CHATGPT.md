@@ -596,3 +596,17 @@ Future commands/templates are frozen in FINALIZATION_BARRIER.md: waitwrapperexit
 End health2026-09-13T09:08:07+08: exactprimary20260912-210355-tovd-native30-primary tmuxalive,writer721181 Rl+,426/1000 at43353.357239504025s,free22307053568bytes; no wrapper exitmarker,analysis/results.json absent(existenceonly). active_primary_scientific_result_opened=false; active_primary_prediction_content_opened=false; frozen scientific/run state unchanged. No TTT; innerloss/gradient/update/resetN/A.
 
 Recommend Lead review CLOSE1. Stop package, do not repeat unchangedheading. Continue immutableprimary and15-minutehealthmonitor. Finalization/interpretation only when the established completion/Lead conditions apply; noYOLO/T014/restart/resume authorization.
+
+## T013-OPS2 — PASS / awaiting Research Lead review
+
+Evidence commit **e380d14e5ee7b830781d38cc9efae292509ca66a**; task-start HEAD **7ccfe778148930a0fe67808f84726de7aca229ae**. Lead bc74aa6/0f39342 accepts CLOSE1 and assigns OPS2. The heartbeat push encountered concurrent Lead updates; merged both histories before executing the package.
+
+Files under research_log/t013: PRIMARY_SURVIVAL_GUARD.md, primary_survival_guard.py, test_primary_survival_guard.py, primary_survival_guard_tests.txt, primary_survival_guard_receipt.json, primary_survival_guard_live_health.txt. Exact remote health command is in the note; test command: `D:/anaconda3/python.exe -m unittest discover -s research_log/t013 -p test_primary_survival_guard.py -v`.
+
+Pure scalar helper, fixed total 1000 / P95 16355328 bytes / multiplier 6/5 / reserve 8589934592 bytes. remaining=1000-closed; projected=P95*remaining; required=(6*projected+4)//5+reserve; margin=free-required. This exactly implements ceil(1.20*projected+8GiB); SAFE iff margin>=0. No new threshold. Process failure/nonzero takes precedence; inconsistent process/exit metadata returns PROCESS_STATE_AMBIGUOUS_RETURN_TO_LEAD; storage is always reported separately for valid inputs. Invalid scalars raise ValueError and cannot return SAFE. No repair/restart/resume behavior.
+
+5 tests / 32 fixtures PASS: 2 known snapshots, 6 equality/one-byte-below boundary cases, 12 invalid storage, 8 process states, 4 invalid process. At188, required24526566196 and margin2176675020 reproduce OPS1; at456, projected8897298432, required19266692711, margin2484468121 exactly match Lead. Three historical rehearsals (188/456/467) from committed session_log lines at task-start HEAD are SAFE; exact lines and source commit retained. No failed tests or formula deviation.
+
+One end-of-package live metadata query at2026-09-13T10:20:53+08:00: exact primary20260912-210355-tovd-native30-primary, writer721181 Rl+ and tmux alive;469/1000 at47754.84462102302s; free21460013056 bytes; projected8684679168, required19011549594, margin2448463462; SAFE / PRIMARY_RUNNING. No wrapper exit marker, analysis/results.json absent by existence only. Raw metadata and computed receipt retained.
+
+No active-primary prediction/scientific content opened; no cache files scanned or modified for OPS2; no frozen scientific/run state or environment change. No FIN1/analysis/replay/comparator, no YOLO runtime, no T014. TTT diagnostics N/A for this scalar helper. Stop OPS2 and await Lead review. Future existing15-minute health reports include required_free/margin/status; any specified return-to-Lead state is reported without remediation. Existing immutable-primary completion/CLOSE1/DEC1 conditions remain unchanged.
