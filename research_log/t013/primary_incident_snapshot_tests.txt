@@ -1,0 +1,9 @@
+test_all_binding_fields (test_primary_incident_snapshot.IncidentSnapshotTests.test_all_binding_fields) ... ok
+test_malformed_metadata (test_primary_incident_snapshot.IncidentSnapshotTests.test_malformed_metadata) ... ok
+test_required_raw_evidence (test_primary_incident_snapshot.IncidentSnapshotTests.test_required_raw_evidence) ... ok
+test_required_states_and_determinism (test_primary_incident_snapshot.IncidentSnapshotTests.test_required_states_and_determinism) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.002s
+
+OK

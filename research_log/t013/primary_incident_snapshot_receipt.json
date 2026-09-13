@@ -1,0 +1,200 @@
+{
+  "task": "T013-OPS3",
+  "status": "PASS",
+  "task_start_head": "65b1075be239e0fb8caaf451a9769e4a48aec040",
+  "tests": {
+    "command": "D:/anaconda3/python.exe -m unittest discover -s research_log/t013 -p test_primary_incident_snapshot.py -v",
+    "tests": 4,
+    "fixtures": 55,
+    "status": "PASS",
+    "groups": {
+      "required_states_and_determinism": 7,
+      "binding_rejections": 9,
+      "missing_metadata_or_raw_reference": 20,
+      "malformed_metadata": 19
+    }
+  },
+  "ops2_reuse": {
+    "evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a",
+    "git_blob_sha256": "8d58f01259387c4327cee0f1ac05e4dfef1dd3fd47a4c8b0f6542820202852c6",
+    "working_file_sha256": "8d58f01259387c4327cee0f1ac05e4dfef1dd3fd47a4c8b0f6542820202852c6",
+    "matches_accepted_source_after_git_line_ending_normalization": true,
+    "formula_reimplemented_or_refit": false
+  },
+  "historical_rehearsal": {
+    "source_commit": "65b1075be239e0fb8caaf451a9769e4a48aec040",
+    "source_line": "GitHub main synchronized at 1c6bc39; project handoffs/logs and required coordination/specification files read. No new Lead task; OPS2 already delivered, no repeated implementation/tests/audit. Exact primary 20260912-210355-tovd-native30-primary tmux and writer 721181 Rl+ alive, 499/1000 images at 50824.272255068005s, free 20968267776 bytes; no wrapper exit marker and analysis/results.json absent (existence only). Existing primary_survival_guard.health_guard on these scalar inputs returns SAFE / PRIMARY_RUNNING: remaining501, projected8194019328, required_free18422757786, margin2545509990 bytes. No partial scientific outputs inspected, cache scan, code/environment/run changes or YOLO work. Continue existing frozen primary and quiet 15-minute monitoring; await Lead review of OPS2.",
+    "raw": {
+      "binding": {
+        "repository": "https://github.com/word-ky/TOVD.git",
+        "project_root": "/home/wenchang/asdasdsad/wjq/TOVD",
+        "run_id": "20260912-210355-tovd-native30-primary",
+        "release_id": "20260912-210306-tovd-native30-primary-freeze",
+        "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+        "dispatch_commit": "88668f76b22777459b5792dd28f88075f208c678",
+        "writer_pid": 721181,
+        "tmux_session": "autodl-20260912-210355-tovd-native30-primary",
+        "ops2_evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a"
+      },
+      "git_head": "65b1075be239e0fb8caaf451a9769e4a48aec040",
+      "timestamp": "2026-09-13T11:12:29+08:00",
+      "raw_sources": {
+        "binding": "git:88668f76b22777459b5792dd28f88075f208c678:research_log/remote_runs/20260912-210355-tovd-native30-primary/meta.json; fixed Lead binding",
+        "timestamp": "git:65b1075be239e0fb8caaf451a9769e4a48aec040:research_log/session_log.md; 2026-09-13T11:12:29+08:00",
+        "git_head": "git rev-parse HEAD at task start: 65b1075be239e0fb8caaf451a9769e4a48aec040",
+        "writer": "git:65b1075be239e0fb8caaf451a9769e4a48aec040:research_log/session_log.md; 2026-09-13T11:12:29+08:00",
+        "tmux": "git:65b1075be239e0fb8caaf451a9769e4a48aec040:research_log/session_log.md; 2026-09-13T11:12:29+08:00",
+        "progress": "git:65b1075be239e0fb8caaf451a9769e4a48aec040:research_log/session_log.md; 2026-09-13T11:12:29+08:00",
+        "wrapper_exit": "git:65b1075be239e0fb8caaf451a9769e4a48aec040:research_log/session_log.md; 2026-09-13T11:12:29+08:00",
+        "filesystem": "git:65b1075be239e0fb8caaf451a9769e4a48aec040:research_log/session_log.md; 2026-09-13T11:12:29+08:00",
+        "analysis_existence": "git:65b1075be239e0fb8caaf451a9769e4a48aec040:research_log/session_log.md; 2026-09-13T11:12:29+08:00"
+      },
+      "writer": {
+        "pid": 721181,
+        "returncode": 0,
+        "stdout": " 721181 Rl+\n"
+      },
+      "tmux_returncode": 0,
+      "progress_line": "{\"completed_images\":499,\"total_images\":1000,\"seconds\":50824.272255068005}",
+      "wrapper_exit_lines": [],
+      "df_stdout": "      Avail\n20968267776\n",
+      "analysis_result_exists": false,
+      "scope_attestation": {
+        "scientific_payloads_opened": false,
+        "cache_recursively_scanned": false,
+        "experiment_mutated": false
+      }
+    },
+    "snapshot": {
+      "schema_version": "T013-OPS3-v1",
+      "binding": {
+        "repository": "https://github.com/word-ky/TOVD.git",
+        "project_root": "/home/wenchang/asdasdsad/wjq/TOVD",
+        "run_id": "20260912-210355-tovd-native30-primary",
+        "release_id": "20260912-210306-tovd-native30-primary-freeze",
+        "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+        "dispatch_commit": "88668f76b22777459b5792dd28f88075f208c678",
+        "writer_pid": 721181,
+        "tmux_session": "autodl-20260912-210355-tovd-native30-primary",
+        "ops2_evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a"
+      },
+      "timestamp": "2026-09-13T11:12:29+08:00",
+      "git_head": "65b1075be239e0fb8caaf451a9769e4a48aec040",
+      "raw_sources": {
+        "binding": "git:88668f76b22777459b5792dd28f88075f208c678:research_log/remote_runs/20260912-210355-tovd-native30-primary/meta.json; fixed Lead binding",
+        "timestamp": "git:65b1075be239e0fb8caaf451a9769e4a48aec040:research_log/session_log.md; 2026-09-13T11:12:29+08:00",
+        "git_head": "git rev-parse HEAD at task start: 65b1075be239e0fb8caaf451a9769e4a48aec040",
+        "writer": "git:65b1075be239e0fb8caaf451a9769e4a48aec040:research_log/session_log.md; 2026-09-13T11:12:29+08:00",
+        "tmux": "git:65b1075be239e0fb8caaf451a9769e4a48aec040:research_log/session_log.md; 2026-09-13T11:12:29+08:00",
+        "progress": "git:65b1075be239e0fb8caaf451a9769e4a48aec040:research_log/session_log.md; 2026-09-13T11:12:29+08:00",
+        "wrapper_exit": "git:65b1075be239e0fb8caaf451a9769e4a48aec040:research_log/session_log.md; 2026-09-13T11:12:29+08:00",
+        "filesystem": "git:65b1075be239e0fb8caaf451a9769e4a48aec040:research_log/session_log.md; 2026-09-13T11:12:29+08:00",
+        "analysis_existence": "git:65b1075be239e0fb8caaf451a9769e4a48aec040:research_log/session_log.md; 2026-09-13T11:12:29+08:00"
+      },
+      "progress": {
+        "completed_images": 499,
+        "total_images": 1000,
+        "seconds": 50824.272255068005
+      },
+      "writer_pid_exists": true,
+      "writer_state": "Rl+",
+      "analysis_result_exists": false,
+      "ops2": {
+        "status": "SAFE",
+        "process_status": "PRIMARY_RUNNING",
+        "storage": {
+          "closed_image_count": 499,
+          "free_bytes": 20968267776,
+          "remaining": 501,
+          "projected_remaining": 8194019328,
+          "required_free": 18422757786,
+          "margin": 2545509990,
+          "status": "SAFE"
+        },
+        "writer_alive": true,
+        "tmux_alive": true,
+        "wrapper_exit_code": null
+      },
+      "status": "SAFE",
+      "scope_attestation": {
+        "scientific_payloads_opened": false,
+        "cache_recursively_scanned": false,
+        "experiment_mutated": false
+      },
+      "scientific_content_access_authorized": false,
+      "fin1_execution_authorized": false,
+      "remediation_authorized": false
+    }
+  },
+  "source_sha256": {
+    "primary_incident_snapshot.py": "e2573a10683d5dbdf9eb43cd9a5c9d6e13a8966df616646cbbb8f03d8dcc3e82",
+    "collect_primary_incident_metadata.py": "764b277b228655f6387da65698604852955df9fce35a4e49db10b191183f23ee",
+    "test_primary_incident_snapshot.py": "b1ca446f43a27dddc6621c488f62df24e3e307f3935a624cf80770c36788fe65",
+    "primary_incident_snapshot_tests.txt": "bb1118fa08daee95512909d8f56f1dc3702905dc80be7018a4d7c952da337606"
+  },
+  "live": {
+    "raw_path": "research_log/t013/primary_incident_snapshot_live_raw.json",
+    "raw_sha256": "a4b73394e72a5f460b3b57e3c48aaadf61ef52782b6b46dfbd903727a2dffb7e",
+    "snapshot": {
+      "schema_version": "T013-OPS3-v1",
+      "binding": {
+        "repository": "https://github.com/word-ky/TOVD.git",
+        "project_root": "/home/wenchang/asdasdsad/wjq/TOVD",
+        "run_id": "20260912-210355-tovd-native30-primary",
+        "release_id": "20260912-210306-tovd-native30-primary-freeze",
+        "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+        "dispatch_commit": "88668f76b22777459b5792dd28f88075f208c678",
+        "writer_pid": 721181,
+        "tmux_session": "autodl-20260912-210355-tovd-native30-primary",
+        "ops2_evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a"
+      },
+      "timestamp": "2026-09-13T11:33:01+08:00",
+      "git_head": "65b1075be239e0fb8caaf451a9769e4a48aec040",
+      "raw_sources": {
+        "binding": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/meta.json; resolved_release.txt; dispatch commit 88668f76b22777459b5792dd28f88075f208c678",
+        "timestamp": "date -Is",
+        "git_head": "caller git rev-parse HEAD; 65b1075be239e0fb8caaf451a9769e4a48aec040",
+        "writer": "ps -p 721181 -o pid=,stat=",
+        "tmux": "tmux has-session -t autodl-20260912-210355-tovd-native30-primary",
+        "progress": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/train.log anchored completed_images lines, latest only",
+        "wrapper_exit": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/train.log anchored [autodl] exit_code= lines only",
+        "filesystem": "df -B1 --output=avail /home/wenchang/asdasdsad/wjq/TOVD",
+        "analysis_existence": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/analysis/results.json Path.exists only"
+      },
+      "progress": {
+        "completed_images": 512,
+        "total_images": 1000,
+        "seconds": 52080.396239708
+      },
+      "writer_pid_exists": true,
+      "writer_state": "Rl+",
+      "analysis_result_exists": false,
+      "ops2": {
+        "status": "SAFE",
+        "process_status": "PRIMARY_RUNNING",
+        "storage": {
+          "closed_image_count": 512,
+          "free_bytes": 20627927040,
+          "remaining": 488,
+          "projected_remaining": 7981400064,
+          "required_free": 18167614669,
+          "margin": 2460312371,
+          "status": "SAFE"
+        },
+        "writer_alive": true,
+        "tmux_alive": true,
+        "wrapper_exit_code": null
+      },
+      "status": "SAFE",
+      "scope_attestation": {
+        "scientific_payloads_opened": false,
+        "cache_recursively_scanned": false,
+        "experiment_mutated": false
+      },
+      "scientific_content_access_authorized": false,
+      "fin1_execution_authorized": false,
+      "remediation_authorized": false
+    },
+    "collector_invocations": 1
+  }
+}
