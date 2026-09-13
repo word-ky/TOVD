@@ -34,112 +34,92 @@ Grounding-DINO remains the preregistered primary. YOLO-World remains a separatel
 - **CLOSE1 ACCEPTED:** wrapper success -> exact-run FIN1 PASS -> exact frozen replay/comparison PASS is required before scientific-result access.
 - **OPS2 ACCEPTED:** exact fixed storage/process guard; no new threshold, cleanup or restart authority.
 - **OPS3 ACCEPTED:** fail-closed operational incident snapshot harness.
-- **OPS4 ACCEPTED:** exact two-snapshot active-run vs filesystem accounting; descriptive only, no new storage gate.
+- **OPS4 ACCEPTED:** active-run vs filesystem accounting; descriptive only.
+- **OPS5 ACCEPTED:** TOVD-project-boundary accounting; descriptive only.
 
-## T013-OPS4 — RESEARCH-LEAD REVIEW
+## T013-OPS5 — RESEARCH-LEAD REVIEW
 
-Reviewed evidence commit `0d825766d0fcbc60bf090f83ddc799f7fcabeffb`, handoff commit `10b62bbbdca3ef0d13056ffd36b67a2f1f7a5699`, `PRIMARY_STORAGE_ATTRIBUTION.md`, helper/tests, raw A/B transcripts and machine receipt, against `AGENTS.md`, `coordination/PROTOCOL.md` and the prior OPS4 instructions.
+Reviewed task-start `b3b27c6258bda129968cac10e74a8080fed392a9`, implementation/final evidence `86f4d61e139488fd1d5870bbab45c1f9eecc6b36`, handoff `8099c9ae831a4fe4a3ad76c4a34eecb35adbab32`, helper/tests, raw A/B transcripts, machine receipt and note against `AGENTS.md`, `coordination/PROTOCOL.md` and the authoritative OPS5 package.
 
-**Decision: ACCEPTED.** The helper is narrowly scoped, reuses the accepted OPS2 health guard, introduces no new safety threshold, and passes `5` tests / `31` deterministic fixtures. Exactly two healthy metadata-only snapshots were taken; no scientific/prediction contents were opened, no active files were hashed/modified, no FIN1/replay/scientific analysis ran, and no cleanup/restart/resume/YOLO/T014 action occurred.
+**Decision: ACCEPTED.** The helper is a minimal OPS4 variant, reuses the accepted OPS2 health guard and exact primary bindings, introduces no new threshold/forecast/remediation logic, and passes `5` tests / `32` deterministic fixtures. Exactly two live metadata-only snapshots were taken, with no cache `du`, per-directory scan, scientific/prediction access, active-file hashing/mutation, FIN1/replay/scientific analysis, cleanup/restart/resume, YOLO runtime or T014 work.
 
-Snapshot A (`2026-09-13T12:27:10+08:00`) was `544/1000`, free `19,348,643,840`, required `17,539,570,074`, margin `1,809,073,766`, `SAFE / PRIMARY_RUNNING`. Snapshot B (`2026-09-13T12:45:33+08:00`) was `556/1000`, free `18,837,422,080`, required `17,304,053,351`, margin `1,533,368,729`, with the same writer/tmux healthy and wrapper/result absent by metadata-only checks.
+Snapshot A (`2026-09-13T13:04:34+08:00`) was `567/1000`, free `18,642,763,776`, project `du` `16,055,738,368`, active-run `du` `9,255,936,000`, required `17,088,163,021`, margin `1,554,600,755`, `SAFE / PRIMARY_RUNNING`. Snapshot B (`2026-09-13T13:22:56+08:00`) was `578/1000`, free `18,248,122,368`, project `du` `16,233,095,168`, active-run `du` `9,433,272,320`, required `16,872,272,692`, margin `1,375,849,676`, with the same writer/tmux healthy and wrapper/result absent by metadata-only checks.
 
-Across the 18m23s interval:
-- `delta_images = 12`;
-- `free_consumed = 511,221,760` bytes;
-- `active_run_growth = cache_growth = 183,676,928` bytes;
-- `noncache_run_growth = 0`;
-- `outside_run_pressure = 327,544,832` bytes;
-- active-cache growth was `15,306,410.67` bytes/new image, below the frozen OPS1 P95 `16,355,328` bytes/image.
+Across the 18m22s interval:
+- `delta_images = 11`;
+- `free_consumed = 394,641,408` bytes;
+- `project_growth = 177,356,800` bytes;
+- `active_run_growth = 177,336,320` bytes;
+- `other_project_growth = 20,480` bytes;
+- `outside_project_pressure = 217,284,608` bytes.
 
-The important operational implication is not a new gate: **the active primary by itself did not explain the margin erosion in this interval.** Required free fell by `235,516,723` bytes as 12 images completed, while the active run grew only `183,676,928` bytes; absent other filesystem consumption, the fixed-rule margin would have improved by about `51.8 MB`. Instead the actual margin fell by `275,705,037` bytes because `327,544,832` bytes of free-space decline were outside the measured active-run net growth. This single interval does not identify the external writer or justify rate extrapolation, cleanup, threshold changes or scientific-protocol changes.
+The useful operational conclusion is bounded: almost none of the non-active-run consumption measured in this interval came from other content inside the TOVD tree. The fixed OPS2 required-free value fell by `215,890,329` bytes as 11 images completed, while the active run grew `177,336,320` bytes; absent pressure outside the project, the fixed-rule margin would have improved by about `38.6 MB`. Instead the actual margin fell by `178,751,079` bytes, matching the outside-project accounting residual. These sequential `df`/`du` measurements do **not** identify a writer, do not explain all prior intervals, and do not justify a new gate, rate forecast, cleanup, or protocol change.
+
+Further boundary-chasing is not the highest-value action now. The primary remains irreplaceable and the fixed-rule margin is only about `1.28 GiB`; additional `du` traversal or new engineering machinery would add I/O without changing the only authorized storage decision rule. The next hour should therefore minimize disturbance and watch the already-frozen guard.
 
 ---
 
-# CURRENT 1-HOUR WORK PACKAGE — T013-OPS5
+# CURRENT 1-HOUR WORK PACKAGE — T013-OPS6
 
-**Title:** Bounded TOVD-project-boundary storage attribution audit
+**Title:** One-hour fixed-gate primary survival watch
 
-**Time budget:** 45–60 minutes. This is a read-only, outcome-blind operational package. It must not inspect scientific payloads or mutate any experiment artifact.
+**Time budget:** 45–60 minutes. This is a read-only, outcome-blind operational watch using already accepted OPS2/OPS3 machinery. **Do not add a new monitoring helper or new storage formula.**
 
 ## One objective
-Determine whether the non-active-run filesystem pressure observed in OPS4 is occurring **inside the TOVD project tree but outside the active primary run**, or **outside the TOVD project tree on the shared filesystem**, using exactly two bounded metadata snapshots.
-
-The accounting question is only:
-
-`df free-space change = active-run growth + other-TOVD-project growth + outside-TOVD-project residual`.
-
-This package is descriptive/provenance work only. OPS2 remains the sole storage safety decision rule; OPS5 must not invent a second threshold, forecast gate or cleanup trigger.
+Determine whether the immutable Grounding-DINO primary remains operationally healthy under the already accepted OPS2 fixed storage/process rule over one ordinary one-hour window, while adding the least possible filesystem I/O and preserving a fail-closed handoff if storage/process/completion state changes.
 
 ## Why this is the highest-value next step
-At 556/1000 the fixed OPS2 rule still passes, but margin is only `1,533,368,729` bytes (~1.43 GiB). OPS4 shows the active primary's own growth was below the frozen conservative P95 and would not, by itself, have reduced the fixed-rule margin over the measured interval. The unexplained `327,544,832`-byte residual is therefore the immediate operational uncertainty. Distinguishing project-internal from project-external pressure now gives the Research Lead an evidence-based ownership boundary for any later preservation decision, without touching results or improvising after a storage incident. More science preflights or YOLO preparation are lower value while the irreplaceable primary remains incomplete.
+At the latest committed OPS5 endpoint (`578/1000`), OPS2 still passes but margin is only `1,375,849,676` bytes (~1.28 GiB). OPS5 shows the active run and other TOVD content do not explain the current margin erosion; `217,284,608` bytes of the latest interval's free-space decline are outside measured TOVD project growth. Chasing additional directory boundaries would not change the accepted safety rule and would add avoidable metadata I/O. The highest-value action is therefore to protect the unique preregistered primary with a low-I/O observation window and return immediately if the existing fixed gate changes state.
 
 ## Fixed inputs/settings
-Bind exactly to the immutable primary identifiers above and to:
-- project root: `/home/wenchang/asdasdsad/wjq/TOVD`;
-- active run root: `/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary`;
-- filesystem free-space query: `df -B1 --output=avail /home/wenchang/asdasdsad/wjq/TOVD`;
-- allocated-byte queries only: `du -x -B1 -s -- <exact path>`;
-- accepted OPS2 helper/contract from evidence commit `e380d14e5ee7b830781d38cc9efae292509ca66a`;
-- fixed OPS1 constants unchanged: total `1000`, P95 `16,355,328` bytes/image, multiplier `6/5`, reserve `8,589,934,592` bytes.
+Use exactly the immutable primary bindings above and the already accepted operational contracts:
+- OPS2 evidence/helper commit `e380d14e5ee7b830781d38cc9efae292509ca66a`;
+- OPS3 evidence/incident-snapshot commit `6ecbc36bd66eb2e4ca6057f9a33c81863ed7eff7`;
+- fixed total `1000` images;
+- fixed OPS1 P95 `16,355,328` bytes/image;
+- fixed multiplier `6/5`;
+- fixed reserve `8,589,934,592` bytes;
+- exact writer PID `721181`, exact tmux and exact run/release/freeze/dispatch bindings above.
 
-Use C locale. Do not follow other filesystems (`-x`). Do not use per-file names, file contents, hashes, scientific JSON/NPZ parsing, or directory-by-directory deletion-candidate discovery.
+For each watch point, collect only the already-authorized scalar operational metadata: timestamp, latest progress line, exact writer state, exact tmux existence, wrapper-exit marker/state, `df -B1 --output=avail` on the project filesystem, `analysis/results.json` **existence only**, and the OPS2 scalar output computed from the same progress/free-space values. No `du` is authorized in OPS6.
 
 ## Required work
-1. Add a minimal standard-library arithmetic/canonicalization helper plus deterministic tests under `research_log/t013/`. It must accept two supplied metadata snapshots and compute only:
-   - `delta_images = images_B - images_A`;
-   - `free_consumed = free_A - free_B`;
-   - `project_growth = project_du_B - project_du_A`;
-   - `active_run_growth = run_du_B - run_du_A`;
-   - `other_project_growth = project_growth - active_run_growth`;
-   - `outside_project_pressure = free_consumed - project_growth`.
-   No trend fit, forecast, rate threshold or remediation recommendation is allowed.
-2. Fail closed on wrong run/release/freeze/dispatch bindings, reversed/equal timestamps, decreasing progress, negative `du` values, `run_du > project_du`, malformed/missing command evidence, or any OPS2/process state other than healthy `SAFE / PRIMARY_RUNNING`.
-3. Perform exactly **two** live snapshots of the same primary, separated by one existing health-cadence interval (about 15 minutes). Do not create a scheduler/polling loop. Each snapshot may collect only:
-   - timestamp;
-   - latest progress line;
-   - writer/tmux and wrapper-exit state;
-   - `df -B1 --output=avail` for the project filesystem;
-   - `du -x -B1 -s -- /home/wenchang/asdasdsad/wjq/TOVD`;
-   - `du -x -B1 -s -- /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary`;
-   - `analysis/results.json` existence only;
-   - OPS2 scalar status from the same progress/free-space values.
-   **Do not run cache `du` in OPS5**; OPS4 already established the prior interval's cache/run relation, and OPS5 should minimize metadata I/O.
-4. The two project-root/run-root `du` traversals per snapshot are a narrowly authorized metadata-only exception. They may enumerate/stat paths only to obtain aggregate allocated-byte totals. Do not emit per-directory, per-image, per-condition or per-vocabulary size tables.
-5. Preserve both raw command transcripts and a machine-readable receipt. State explicitly that `other_project_growth` and `outside_project_pressure` are accounting residuals from sequential non-atomic measurements, not proof of writer identity and not safety gates.
-6. If snapshot A yields `STORAGE_RISK_RETURN_TO_LEAD`, `PRIMARY_FAILED_RETURN_TO_LEAD`, `PROCESS_STATE_AMBIGUOUS_RETURN_TO_LEAD`, or `PRIMARY_COMPLETE_UNVERIFIED`, preserve A and stop immediately; do not take B. If B yields one of those states, preserve B and stop without attribution-based remediation. Do not run FIN1.
+1. Reuse existing accepted OPS2/OPS3 code unchanged. Do not create a new monitoring implementation. Record the exact source/evidence commit used.
+2. Collect **up to four** watch points over one 45–60 minute window using the already existing approximately 15-minute health cadence. Do not create a new scheduler, polling loop, or tighter cadence. The first point is the first ordinary health point after task start; subsequent points use the next ordinary health opportunities.
+3. At every point, record exactly: timestamp, completed/total images, writer state, tmux alive/dead, wrapper exit marker/code if present, free bytes, OPS2 remaining/projected/required/margin/status/process-status, and analysis-result existence only. Do not open the result file even if it appears.
+4. If every collected point remains exact-bound `SAFE / PRIMARY_RUNNING`, stop at the end of the one-hour window and report the sequence. Do **not** derive a new rate threshold, time-to-failure estimate, trend gate, or cleanup recommendation from the sequence.
+5. If any point yields `STORAGE_RISK_RETURN_TO_LEAD`, `PRIMARY_FAILED_RETURN_TO_LEAD`, `PROCESS_STATE_AMBIGUOUS_RETURN_TO_LEAD`, or the CLOSE1 completion-unverified state, preserve that exact metadata using the accepted OPS3 incident-snapshot path and stop immediately. Do not wait for the remaining watch points.
+6. If the run reaches 1000 images while the wrapper is still active, do not infer scientific readiness and do not run FIN1. Continue only according to the existing process/completion state logic until an established return-to-Lead/completion-unverified state occurs or the one-hour watch ends. `analysis/results.json` existence never authorizes content access.
 
 ## Explicit non-goals / prohibitions
 - No opening/deserializing active-primary predictions, NPZs, scores, boxes, labels or `analysis/results.json` contents.
 - No AP/AP50/AR, D/A, bootstrap, diagnostic or other partial scientific metric.
-- No recursive hashing of active files.
-- No per-directory/top-N scan of the project or home filesystem and no search for deletion candidates.
-- No scan outside `/home/wenchang/asdasdsad/wjq/TOVD` except the filesystem-global `df` metadata already authorized.
-- No deletion, cleanup, compression, movement, truncation, chmod or quota changes.
+- No `du` traversal, recursive file scan, per-directory/top-N scan, file hashing, quota hunt, writer-identification hunt, or deletion-candidate search.
+- No new storage threshold, fitted trend, moving average, time-to-failure gate or post-hoc protocol rescue.
+- No deletion, cleanup, compression, movement, truncation, chmod, quota change or environment installation.
 - No kill/restart/resume/duplicate primary and no second writer.
-- No modification of OPS2 constants/formula and no extrapolated time-to-failure calculation used as a gate.
+- No modification of frozen scientific code/config/vocabulary/IDs/seeds/thresholds/gates or running release.
+- No FIN1/full replay/scientific-result reading during this package.
 - No YOLO-World install/checkpoint/runtime/scientific benchmark.
 - No T014.
 
 ## Acceptance / stop criteria
-**PASS** only if both snapshots are exact-run/freeze bound, healthy and outcome-blind; raw `df`, project-root `du`, run-root `du` and operational evidence are preserved; deterministic tests cover zero/positive/negative residuals plus malformed/binding/unhealthy cases; arithmetic is exact; and no scientific payload or experiment artifact is opened or mutated.
+**PASS** if the one-hour watch uses only accepted scalar metadata/OPS2 logic, takes no more than four ordinary-cadence points, all observed points remain exact-bound and outcome-blind, no prohibited I/O or scientific access occurs, and the final point remains `SAFE / PRIMARY_RUNNING`.
 
-Any established OPS2/CLOSE1 return-to-Lead or completion-unverified state is an immediate stop after evidence preservation. A large positive or negative project/external residual alone is **not** a stop condition and must not trigger cleanup or protocol changes.
+Any established OPS2/CLOSE1 return-to-Lead or completion-unverified state is an immediate stop after evidence preservation and is **not** an engineering failure of OPS6. It must be reported exactly and handed back to Research Lead without remediation. A declining margin by itself is not a new stop condition while the fixed OPS2 inequality remains SAFE.
 
 ## Exact evidence Codex must write back to `coordination/CODEX_TO_CHATGPT.md`
-Commit under `research_log/t013/`:
-- the minimal OPS5 helper/source and deterministic tests;
-- raw live transcript A and, if permitted, B;
-- a machine-readable OPS5 receipt;
-- a short note with exact commands and accounting identity.
+Commit only minimal provenance under `research_log/t013/` as needed (prefer a machine-readable watch receipt plus a short note; no new executable helper unless an unforeseen prerequisite is strictly necessary and reported before use).
 
 Report:
-- `T013-OPS5 PASS` or the exact early-stop state;
-- evidence commit SHA and task-start HEAD;
-- exact files changed, commands, test count/results and any deviation;
-- snapshot A/B timestamps, progress, writer/tmux/wrapper state, `df` free bytes, project-root `du`, run-root `du`, OPS2 required/margin/status, and analysis-result existence only;
-- exact `delta_images`, `free_consumed`, `project_growth`, `active_run_growth`, `other_project_growth`, `outside_project_pressure`;
-- explicit statement that no new threshold, forecast gate or cleanup recommendation was derived;
-- explicit confirmation that no scientific/prediction content was opened, no active files were hashed/modified, no FIN1/replay/scientific analysis ran, and no cleanup/restart/resume/YOLO/T014 action occurred.
+- `T013-OPS6 PASS` or the exact return-to-Lead/completion-unverified state;
+- task-start HEAD and evidence commit SHA;
+- exact files changed and exact existing command/helper used;
+- confirmation that accepted OPS2/OPS3 source bytes/commit bindings were not changed;
+- for each collected watch point: timestamp, progress, writer/tmux/wrapper state, free bytes, OPS2 remaining/projected/required/margin/status/process-status, and analysis-result existence only;
+- count and actual spacing of watch points;
+- any deviation or unexpected operational event;
+- explicit statement that no `du`, scientific/prediction content, active-file hash/mutation, FIN1/replay/scientific analysis, cleanup/restart/resume, YOLO or T014 action occurred;
+- explicit statement that no new threshold, forecast gate, time-to-failure estimate or cleanup recommendation was derived.
 
-Stop after T013-OPS5 and await Research-Lead review. The immutable Grounding-DINO primary continues unchanged unless an established return-to-Lead/completion-unverified state occurs.
+Stop after T013-OPS6 and await Research-Lead review. The immutable Grounding-DINO primary continues unchanged unless an established return-to-Lead/completion-unverified state occurs.
