@@ -224,3 +224,5 @@ No wrapper/replay scientific contents or log contents interpreted, no comparator
   "clock_reset": false
 }
 ```
+
+Final REPLAY1A evidence commit: 4a78db28fae8aed9f6a01f60b373fa44cad3b594. Delivery commit is the subsequent `coord: deliver replay running handoff to research lead` commit containing this entry. All permitted observations complete; single replay left untouched, await Lead.
