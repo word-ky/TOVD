@@ -1,0 +1,152 @@
+{
+  "task": "T013-MECH1",
+  "status": "PASS",
+  "task_start_head": "65fc1208342f2fa8e3835bae20836bfcd9a64e27",
+  "lead_task_commit": "afc7c64",
+  "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+  "native_revision": "856dde20aee659246248e20734ef9ba5214f5e44",
+  "native_revision_binding": "frozen PLAN/native30_freeze provenance; archive SHA256 and exact member/tree comparisons",
+  "archive": {
+    "local_path": "research_log/t013/mech1/native_source.tar.gz",
+    "remote_path": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/native_source.tar.gz",
+    "sha256": "8a0270b0ed22391b25fba9c1ddb32cd990c33a3321d26cbc0d9d3a07995fa214",
+    "bytes": 74051
+  },
+  "sources": [
+    {
+      "path": "groundingdino/config/GroundingDINO_SwinT_OGC.py",
+      "local_path": "research_log/t013/mech1/groundingdino/config/GroundingDINO_SwinT_OGC.py",
+      "remote_path": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/native/groundingdino/config/GroundingDINO_SwinT_OGC.py",
+      "sha256": "5d7093aaaeaafbf8eec07a1aef5bee976dff5615d54e0ca88293cd92e008a7c8",
+      "archive_member_exact": true,
+      "remote_tree_exact": true
+    },
+    {
+      "path": "groundingdino/models/GroundingDINO/groundingdino.py",
+      "local_path": "research_log/t013/mech1/groundingdino/models/GroundingDINO/groundingdino.py",
+      "remote_path": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/native/groundingdino/models/GroundingDINO/groundingdino.py",
+      "sha256": "f9f9fef478ad811565f34aad9f5eaeab0cd69f7379fc0ee3861c58ce4f55b29f",
+      "archive_member_exact": true,
+      "remote_tree_exact": true
+    },
+    {
+      "path": "groundingdino/models/GroundingDINO/transformer.py",
+      "local_path": "research_log/t013/mech1/groundingdino/models/GroundingDINO/transformer.py",
+      "remote_path": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/native/groundingdino/models/GroundingDINO/transformer.py",
+      "sha256": "7436a0daf8002cb4078bc56ab4343c7ec6d1f5dfe15b41747dc357cabad1760e",
+      "archive_member_exact": true,
+      "remote_tree_exact": true
+    },
+    {
+      "path": "groundingdino/models/GroundingDINO/fuse_modules.py",
+      "local_path": "research_log/t013/mech1/groundingdino/models/GroundingDINO/fuse_modules.py",
+      "remote_path": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/native/groundingdino/models/GroundingDINO/fuse_modules.py",
+      "sha256": "a4b738a4ae3ca90cc5ae339241a9e0c24026bda96aedffb549b161bbdff96cd1",
+      "archive_member_exact": true,
+      "remote_tree_exact": true
+    },
+    {
+      "path": "groundingdino/models/GroundingDINO/bertwarper.py",
+      "local_path": "research_log/t013/mech1/groundingdino/models/GroundingDINO/bertwarper.py",
+      "remote_path": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/native/groundingdino/models/GroundingDINO/bertwarper.py",
+      "sha256": "666e345c3450a6a276b37d09f2556926737e04f0c98b2526a7f6871b624ce546",
+      "archive_member_exact": true,
+      "remote_tree_exact": true
+    },
+    {
+      "path": "groundingdino/models/GroundingDINO/utils.py",
+      "local_path": "research_log/t013/mech1/groundingdino/models/GroundingDINO/utils.py",
+      "remote_path": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/native/groundingdino/models/GroundingDINO/utils.py",
+      "sha256": "543d241b19e5592b99cbef42ce6406360bd70760da5acca14863e56f83205233",
+      "archive_member_exact": true,
+      "remote_tree_exact": true
+    },
+    {
+      "path": "groundingdino/models/GroundingDINO/transformer_vanilla.py",
+      "local_path": "research_log/t013/mech1/groundingdino/models/GroundingDINO/transformer_vanilla.py",
+      "remote_path": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/native/groundingdino/models/GroundingDINO/transformer_vanilla.py",
+      "sha256": "540ba06a1d6c9b603ae0695e72a7a3cebae5f62c35ec5ec5e92490581f5b61f9",
+      "archive_member_exact": true,
+      "remote_tree_exact": true
+    },
+    {
+      "path": "scripts/t013_native_detector.py",
+      "local_path": "research_log/t013/mech1/frozen/scripts/t013_native_detector.py",
+      "origin": "git show 6fec32243985ccc808123d851abf5f3dea10af99:scripts/t013_native_detector.py",
+      "sha256": "b49f23f131777f08e23131ad55a94d9211c33b1c759adf86c6b52e2b95c34126",
+      "frozen_hash_exact": true
+    },
+    {
+      "path": "scripts/t013_native_run.py",
+      "local_path": "research_log/t013/mech1/frozen/scripts/t013_native_run.py",
+      "origin": "git show 6fec32243985ccc808123d851abf5f3dea10af99:scripts/t013_native_run.py",
+      "sha256": "177176fdb1c133b98770f8e6719b22e3ead0a00adbdced598e92326aec723429",
+      "frozen_hash_exact": true
+    },
+    {
+      "path": "scripts/t013_text.py",
+      "local_path": "research_log/t013/mech1/frozen/scripts/t013_text.py",
+      "origin": "git show 6fec32243985ccc808123d851abf5f3dea10af99:scripts/t013_text.py",
+      "sha256": "2c175a779304f045267e3419eda04dbc2e5c4730ae19cce23727043832102018",
+      "frozen_hash_exact": true
+    }
+  ],
+  "query_alignment_verdict": "PROVEN_VOCABULARY_DEPENDENT",
+  "verdict_scope": "Structural vocabulary-conditioned proposal selection/order and references; not a claim every image/vocabulary pair numerically changes slots. Fixed learned target embeddings do not establish proposal identity.",
+  "same_index_hybrid_permitted": false,
+  "future_intervention_designed_or_executed": false,
+  "tests": "No model or arithmetic tests; static 7 archive-member/remote-tree byte matches and 3 frozen code matches PASS",
+  "configuration": {
+    "two_stage_type": "standard",
+    "num_queries": 900,
+    "embed_init_tgt": true,
+    "use_text_enhancer": true,
+    "use_fusion_layer": true,
+    "use_text_cross_attention": true,
+    "sub_sentence_present": true,
+    "enc_layers": 6,
+    "dec_layers": 6,
+    "max_text_len": 256
+  },
+  "scope": {
+    "active_primary_cache_accessed": false,
+    "scientific_payloads_opened": false,
+    "annotations_opened": false,
+    "checkpoint_loaded": false,
+    "model_imported_or_forward_run": false,
+    "hook_or_profiling": false,
+    "fin1_or_replay": false,
+    "new_counterfactual_execution": false,
+    "frozen_run_or_source_mutation": false,
+    "new_gate_or_threshold": false,
+    "yolo_runtime": false,
+    "t014_execution": false,
+    "cleanup_restart_resume": false
+  },
+  "health": {
+    "timestamp": "2026-09-13T17:05:05+08:00",
+    "completed_images": 710,
+    "total_images": 1000,
+    "seconds": 71953.82984643703,
+    "writer_pid": 721181,
+    "writer_state": "Rl+",
+    "tmux_alive": true,
+    "wrapper_exit_code": null,
+    "analysis_result_exists": false,
+    "free_bytes": 15523610624,
+    "remaining": 290,
+    "projected_remaining": 4743045120,
+    "required_free": 14281588736,
+    "margin": 1242021888,
+    "status": "SAFE",
+    "process_status": "PRIMARY_RUNNING"
+  },
+  "accepted_counterfactual_documents": {
+    "CANONICAL_TOPK_COUNTERFACTUAL.md": "2925d9bf419febb3cbfb40e8393ec1002a7705e6cdfc1a63069b80e15eabc57a",
+    "CANONICAL_TOPK_RESULTS.md": "fef4bf86589dea2eef1754c48c24e1211f094500ca6a008ef30b077fbd8f937b",
+    "CANONICAL_COUNTERFACTUAL_ANALYSIS_CONTRACT.md": "884847c8b1290418a4240ff4acabcf95e21c7a8eecc865a4478a1e5466254a35",
+    "CANONICAL_COUNTERFACTUAL_ANALYSIS_RESULTS.md": "7923e5e989e423e0ff0fc5546c6c5f5b2c45e4b5fe2498c006e5190698fa6ef1"
+  },
+  "audit_sha256": "9d0944b2a4b7a8c0bbdca43684d00e79543f0d6dc553d963da2cda107aad8ce9",
+  "commands_sha256": "c6631214ce3cc8379ceeea06a699e96792f9761a8bb0fe508b26b5ed02107333"
+}
