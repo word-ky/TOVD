@@ -1,0 +1,2191 @@
+{
+  "task": "T013-G4A1",
+  "task_start_head": "cca9af23452870d1a12ba1ab6a78ebe683e49cd1",
+  "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+  "dispatch_commit": "88668f76b22777459b5792dd28f88075f208c678",
+  "recorded_utc": "2026-09-13T00:06:51.737806+00:00",
+  "status": "PREOUTCOME_HISTORY_BLOCKER",
+  "final_gate4": "PENDING_COMPLETION_AND_RESEARCH_LEAD_REVIEW",
+  "checks": {
+    "all_protected_bytes_match": true,
+    "protected_endpoint_diff_empty": true,
+    "no_intermediate_protected_edit": true,
+    "all_postfreeze_paths_classified": true,
+    "no_postfreeze_scripts_or_tests_edits": true,
+    "chronology_ancestry": true,
+    "dispatch_binding": true,
+    "dispatch_metadata_unchanged": true,
+    "only_one_postfreeze_run_mirror": true,
+    "no_run_mirror_edits_after_dispatch": true,
+    "one_committed_native_primary_command": false,
+    "negative_prerequisite_artifacts_preserved": true,
+    "review_evidence_references_exist": true
+  },
+  "protected_paths": [
+    {
+      "path": "scripts/t013_native_detector.py",
+      "hash_source": "code_sha256.scripts/t013_native_detector.py",
+      "expected_sha256": "b49f23f131777f08e23131ad55a94d9211c33b1c759adf86c6b52e2b95c34126",
+      "freeze_sha256": "b49f23f131777f08e23131ad55a94d9211c33b1c759adf86c6b52e2b95c34126",
+      "head_sha256": "b49f23f131777f08e23131ad55a94d9211c33b1c759adf86c6b52e2b95c34126",
+      "freeze_git_blob": "125689c7e0a5b6eca67e46d17fcd91a7c7118d33",
+      "head_git_blob": "125689c7e0a5b6eca67e46d17fcd91a7c7118d33",
+      "equal": true
+    },
+    {
+      "path": "scripts/t013_native_run.py",
+      "hash_source": "code_sha256.scripts/t013_native_run.py",
+      "expected_sha256": "177176fdb1c133b98770f8e6719b22e3ead0a00adbdced598e92326aec723429",
+      "freeze_sha256": "177176fdb1c133b98770f8e6719b22e3ead0a00adbdced598e92326aec723429",
+      "head_sha256": "177176fdb1c133b98770f8e6719b22e3ead0a00adbdced598e92326aec723429",
+      "freeze_git_blob": "3f8676a61b956d127463b52d317f918add0ecda6",
+      "head_git_blob": "3f8676a61b956d127463b52d317f918add0ecda6",
+      "equal": true
+    },
+    {
+      "path": "scripts/t013_native_smoke.py",
+      "hash_source": "code_sha256.scripts/t013_native_smoke.py",
+      "expected_sha256": "d30430f324d0577afc6997c38d78d6f46b78679cb2adaf96055986344928a421",
+      "freeze_sha256": "d30430f324d0577afc6997c38d78d6f46b78679cb2adaf96055986344928a421",
+      "head_sha256": "d30430f324d0577afc6997c38d78d6f46b78679cb2adaf96055986344928a421",
+      "freeze_git_blob": "937a144c0b975657fba60b51f80b89749f16a539",
+      "head_git_blob": "937a144c0b975657fba60b51f80b89749f16a539",
+      "equal": true
+    },
+    {
+      "path": "scripts/t013_analysis.py",
+      "hash_source": "code_sha256.scripts/t013_analysis.py",
+      "expected_sha256": "74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c",
+      "freeze_sha256": "74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c",
+      "head_sha256": "74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c",
+      "freeze_git_blob": "c98cf955f334a841444df8b2e9441cd4fe89a60f",
+      "head_git_blob": "c98cf955f334a841444df8b2e9441cd4fe89a60f",
+      "equal": true
+    },
+    {
+      "path": "scripts/t013_coco.py",
+      "hash_source": "code_sha256.scripts/t013_coco.py",
+      "expected_sha256": "bd3245235a6dcd455224ea7eb737b07875920b0a08b34f30e706dfc6a9ca9e81",
+      "freeze_sha256": "bd3245235a6dcd455224ea7eb737b07875920b0a08b34f30e706dfc6a9ca9e81",
+      "head_sha256": "bd3245235a6dcd455224ea7eb737b07875920b0a08b34f30e706dfc6a9ca9e81",
+      "freeze_git_blob": "fe63caea734b7ea82eaff09bb47d5bc98beae54a",
+      "head_git_blob": "fe63caea734b7ea82eaff09bb47d5bc98beae54a",
+      "equal": true
+    },
+    {
+      "path": "scripts/t013_diagnostics.py",
+      "hash_source": "code_sha256.scripts/t013_diagnostics.py",
+      "expected_sha256": "ae7e61feaa5701ca9580c9c48901f99d09e9986b560c2821073100c94645a41e",
+      "freeze_sha256": "ae7e61feaa5701ca9580c9c48901f99d09e9986b560c2821073100c94645a41e",
+      "head_sha256": "ae7e61feaa5701ca9580c9c48901f99d09e9986b560c2821073100c94645a41e",
+      "freeze_git_blob": "740c040648c0dcf25e94c36bb311d3bb3e67043c",
+      "head_git_blob": "740c040648c0dcf25e94c36bb311d3bb3e67043c",
+      "equal": true
+    },
+    {
+      "path": "scripts/t013_detector.py",
+      "hash_source": "code_sha256.scripts/t013_detector.py",
+      "expected_sha256": "4800f1471f2de8f964700b683505c7230e078b6833a57afa1e09af6b42babd0d",
+      "freeze_sha256": "4800f1471f2de8f964700b683505c7230e078b6833a57afa1e09af6b42babd0d",
+      "head_sha256": "4800f1471f2de8f964700b683505c7230e078b6833a57afa1e09af6b42babd0d",
+      "freeze_git_blob": "e2713f8127e772ad9c0772c8dafabd1d0deffb2e",
+      "head_git_blob": "e2713f8127e772ad9c0772c8dafabd1d0deffb2e",
+      "equal": true
+    },
+    {
+      "path": "scripts/t013_text.py",
+      "hash_source": "code_sha256.scripts/t013_text.py",
+      "expected_sha256": "2c175a779304f045267e3419eda04dbc2e5c4730ae19cce23727043832102018",
+      "freeze_sha256": "2c175a779304f045267e3419eda04dbc2e5c4730ae19cce23727043832102018",
+      "head_sha256": "2c175a779304f045267e3419eda04dbc2e5c4730ae19cce23727043832102018",
+      "freeze_git_blob": "79927cef45dced6b91a330969390abb4eb4eea03",
+      "head_git_blob": "79927cef45dced6b91a330969390abb4eb4eea03",
+      "equal": true
+    },
+    {
+      "path": "scripts/t013_native_vocab.py",
+      "hash_source": "code_sha256.scripts/t013_native_vocab.py",
+      "expected_sha256": "61d40e7f4107a2a13eaa7cd872667acaa4db3dffb3a257e2cddbaece4f943351",
+      "freeze_sha256": "61d40e7f4107a2a13eaa7cd872667acaa4db3dffb3a257e2cddbaece4f943351",
+      "head_sha256": "61d40e7f4107a2a13eaa7cd872667acaa4db3dffb3a257e2cddbaece4f943351",
+      "freeze_git_blob": "fdf2b79923f46d1649d605f581ca080117506a14",
+      "head_git_blob": "fdf2b79923f46d1649d605f581ca080117506a14",
+      "equal": true
+    },
+    {
+      "path": "scripts/t013_data_receipt.py",
+      "hash_source": "code_sha256.scripts/t013_data_receipt.py",
+      "expected_sha256": "9ef780aa724d3a8a6f685dc0a273a285e7ce17942985fb107c2638810f54305e",
+      "freeze_sha256": "9ef780aa724d3a8a6f685dc0a273a285e7ce17942985fb107c2638810f54305e",
+      "head_sha256": "9ef780aa724d3a8a6f685dc0a273a285e7ce17942985fb107c2638810f54305e",
+      "freeze_git_blob": "e06f07e58218ac82f4cc5bff51b35eeccba00e6e",
+      "head_git_blob": "e06f07e58218ac82f4cc5bff51b35eeccba00e6e",
+      "equal": true
+    },
+    {
+      "path": "research_log/t013/PLAN.md",
+      "hash_source": "plan_sha256",
+      "expected_sha256": "5d977aceb3c06a7915396aea9c7cc2504759e584ce79b459a287b18fb67e4beb",
+      "freeze_sha256": "5d977aceb3c06a7915396aea9c7cc2504759e584ce79b459a287b18fb67e4beb",
+      "head_sha256": "5d977aceb3c06a7915396aea9c7cc2504759e584ce79b459a287b18fb67e4beb",
+      "freeze_git_blob": "45348a6f2d0ce7365d11985e6821be4917796936",
+      "head_git_blob": "45348a6f2d0ce7365d11985e6821be4917796936",
+      "equal": true
+    },
+    {
+      "path": "research_log/t013/vocabulary_native30.json",
+      "hash_source": "vocabulary_sha256",
+      "expected_sha256": "3bb4a0ebada1f9da407ae6a94f1135798dba7117bd658a6ecba97b2ebfad0967",
+      "freeze_sha256": "3bb4a0ebada1f9da407ae6a94f1135798dba7117bd658a6ecba97b2ebfad0967",
+      "head_sha256": "3bb4a0ebada1f9da407ae6a94f1135798dba7117bd658a6ecba97b2ebfad0967",
+      "freeze_git_blob": "808e35cddef366d5f5292035eb197f8fc1f5b703",
+      "head_git_blob": "808e35cddef366d5f5292035eb197f8fc1f5b703",
+      "equal": true
+    },
+    {
+      "path": "research_log/t013/image_selection.json",
+      "hash_source": "selection_sha256",
+      "expected_sha256": "8039a70f25c34f295345e63d1980f692631b6bbdaa5c37267a10852acbf3833b",
+      "freeze_sha256": "8039a70f25c34f295345e63d1980f692631b6bbdaa5c37267a10852acbf3833b",
+      "head_sha256": "8039a70f25c34f295345e63d1980f692631b6bbdaa5c37267a10852acbf3833b",
+      "freeze_git_blob": "bcdb637169d578d7932787eded7b848bbd471ed2",
+      "head_git_blob": "bcdb637169d578d7932787eded7b848bbd471ed2",
+      "equal": true
+    },
+    {
+      "path": "research_log/t013/data_receipt.json",
+      "hash_source": "data_receipt_sha256",
+      "expected_sha256": "4dc1361b17a9221b278dd70ac805afb4d87742451b310af5381dc69900fe8c50",
+      "freeze_sha256": "4dc1361b17a9221b278dd70ac805afb4d87742451b310af5381dc69900fe8c50",
+      "head_sha256": "4dc1361b17a9221b278dd70ac805afb4d87742451b310af5381dc69900fe8c50",
+      "freeze_git_blob": "f36d4d8369a3a6c38844104cfafa09a4015aa9c1",
+      "head_git_blob": "f36d4d8369a3a6c38844104cfafa09a4015aa9c1",
+      "equal": true
+    },
+    {
+      "path": "research_log/t013/image_sha256.json",
+      "hash_source": "image_manifest_sha256",
+      "expected_sha256": "38eb39894b8c0f1924e099b3a1ec0b885fdf7ec43c86933e1dc28186d85c3ba8",
+      "freeze_sha256": "38eb39894b8c0f1924e099b3a1ec0b885fdf7ec43c86933e1dc28186d85c3ba8",
+      "head_sha256": "38eb39894b8c0f1924e099b3a1ec0b885fdf7ec43c86933e1dc28186d85c3ba8",
+      "freeze_git_blob": "f401d09d5651b43434cf342f9c031b01a95bc871",
+      "head_git_blob": "f401d09d5651b43434cf342f9c031b01a95bc871",
+      "equal": true
+    },
+    {
+      "path": "research_log/t013/native30_environment.txt",
+      "hash_source": "environment_sha256",
+      "expected_sha256": "6fdb8b3da35dddb24c5ea602e81b160ab864e792ca29fa27236dd759a6b4f090",
+      "freeze_sha256": "6fdb8b3da35dddb24c5ea602e81b160ab864e792ca29fa27236dd759a6b4f090",
+      "head_sha256": "6fdb8b3da35dddb24c5ea602e81b160ab864e792ca29fa27236dd759a6b4f090",
+      "freeze_git_blob": "4c85a42e37f0ba79ead63a6d44927e8bafd9129a",
+      "head_git_blob": "4c85a42e37f0ba79ead63a6d44927e8bafd9129a",
+      "equal": true
+    },
+    {
+      "path": "research_log/t013/native30_freeze.json",
+      "hash_source": "Git freeze blob SHA256",
+      "expected_sha256": "50addfb8e247333b49fb22cda14570166b294101bb435b5a1b5bf688b4b3a91e",
+      "freeze_sha256": "50addfb8e247333b49fb22cda14570166b294101bb435b5a1b5bf688b4b3a91e",
+      "head_sha256": "50addfb8e247333b49fb22cda14570166b294101bb435b5a1b5bf688b4b3a91e",
+      "freeze_git_blob": "8ef1c2869f58b3243aeb905d9be902528f87936a",
+      "head_git_blob": "8ef1c2869f58b3243aeb905d9be902528f87936a",
+      "equal": true
+    }
+  ],
+  "protected_endpoint_diff": "",
+  "protected_intermediate_history": [],
+  "chronology_ancestry": {
+    "c07ce16 -> f63f571": true,
+    "f63f571 -> 6548870": true,
+    "6548870 -> 02ba123": true,
+    "02ba123 -> 259217c": true,
+    "259217c -> eed8d1a": true,
+    "eed8d1a -> d5dc807": true,
+    "d5dc807 -> 35fbfb7": true,
+    "35fbfb7 -> 6fec32243985ccc808123d851abf5f3dea10af99": true,
+    "6fec32243985ccc808123d851abf5f3dea10af99 -> 88668f76b22777459b5792dd28f88075f208c678": true,
+    "88668f76b22777459b5792dd28f88075f208c678 -> cca9af23452870d1a12ba1ab6a78ebe683e49cd1": true
+  },
+  "commit_history": [
+    {
+      "commit": "88668f76b22777459b5792dd28f88075f208c678",
+      "parents": [
+        "6fec32243985ccc808123d851abf5f3dea10af99"
+      ],
+      "committer_time": "2026-09-12T21:05:49+08:00",
+      "subject": "exp: launch frozen native30 primary audit and record recovery state",
+      "changed_paths_against_all_parents": [
+        "coordination/CODEX_TO_CHATGPT.md",
+        "research_log/REMOTE.md",
+        "research_log/project_state.md",
+        "research_log/remote_runs/20260912-210355-tovd-native30-primary/artifacts/freeze_sha256.txt",
+        "research_log/remote_runs/20260912-210355-tovd-native30-primary/artifacts/resolved_release.txt",
+        "research_log/remote_runs/20260912-210355-tovd-native30-primary/meta.json",
+        "research_log/remote_runs/20260912-210355-tovd-native30-primary/run.sh",
+        "research_log/remote_runs/20260912-210355-tovd-native30-primary/train.log",
+        "research_log/session_log.md",
+        "research_log/t013/IMPLEMENTATION_NEXT.md"
+      ]
+    },
+    {
+      "commit": "2e70b24ccb73e02c622cdac808baf6e44fcfb616",
+      "parents": [
+        "88668f76b22777459b5792dd28f88075f208c678"
+      ],
+      "committer_time": "2026-09-12T22:22:41+08:00",
+      "subject": "coord: accept T013 native30 pre-primary freeze and continue primary run",
+      "changed_paths_against_all_parents": [
+        "coordination/CHATGPT_TO_CODEX.md"
+      ]
+    },
+    {
+      "commit": "1b85aa0170ca7bcc9214283ee3ec871c7aaba588",
+      "parents": [
+        "2e70b24ccb73e02c622cdac808baf6e44fcfb616"
+      ],
+      "committer_time": "2026-09-12T22:24:52+08:00",
+      "subject": "coord: acknowledge native30 freeze acceptance and failure review rule",
+      "changed_paths_against_all_parents": [
+        "coordination/CODEX_TO_CHATGPT.md",
+        "research_log/REMOTE.md",
+        "research_log/project_state.md",
+        "research_log/session_log.md",
+        "research_log/t013/IMPLEMENTATION_NEXT.md"
+      ]
+    },
+    {
+      "commit": "1833bf3aef888f6bcb337acc24930c0a7c305bcf",
+      "parents": [
+        "2e70b24ccb73e02c622cdac808baf6e44fcfb616"
+      ],
+      "committer_time": "2026-09-12T22:24:20+08:00",
+      "subject": "coord: append T013 native30 pre-primary freeze review",
+      "changed_paths_against_all_parents": [
+        "coordination/CHATGPT_REVIEW_LOG.md"
+      ]
+    },
+    {
+      "commit": "ece6d38b3d9ffece843102eae76e350f74f85a9e",
+      "parents": [
+        "1b85aa0170ca7bcc9214283ee3ec871c7aaba588",
+        "1833bf3aef888f6bcb337acc24930c0a7c305bcf"
+      ],
+      "committer_time": "2026-09-12T22:25:12+08:00",
+      "subject": "Merge remote-tracking branch 'origin/main'",
+      "changed_paths_against_all_parents": [
+        "coordination/CHATGPT_REVIEW_LOG.md",
+        "coordination/CODEX_TO_CHATGPT.md",
+        "research_log/REMOTE.md",
+        "research_log/project_state.md",
+        "research_log/session_log.md",
+        "research_log/t013/IMPLEMENTATION_NEXT.md"
+      ]
+    },
+    {
+      "commit": "279ac4bb5a1b3465ef19e9524dfef8c8676f7826",
+      "parents": [
+        "ece6d38b3d9ffece843102eae76e350f74f85a9e"
+      ],
+      "committer_time": "2026-09-12T23:01:23+08:00",
+      "subject": "coord: add hourly work-package cadence and preregister YOLO-World contingency",
+      "changed_paths_against_all_parents": [
+        "coordination/CHATGPT_TO_CODEX.md"
+      ]
+    },
+    {
+      "commit": "976f36d236a7d4eaecdbe69ed43e36bcadacf298",
+      "parents": [
+        "279ac4bb5a1b3465ef19e9524dfef8c8676f7826"
+      ],
+      "committer_time": "2026-09-12T23:26:46+08:00",
+      "subject": "docs: preregister YOLO-World contingency before T013 outcomes",
+      "changed_paths_against_all_parents": [
+        "coordination/CODEX_TO_CHATGPT.md",
+        "research/T013_YOLOWORLD_CONTINGENCY.md",
+        "research_log/REMOTE.md",
+        "research_log/project_state.md",
+        "research_log/session_log.md",
+        "research_log/t013/IMPLEMENTATION_NEXT.md",
+        "research_log/t013_yoloworld/FEASIBILITY.md",
+        "research_log/t013_yoloworld/artifact_sha256.json",
+        "research_log/t013_yoloworld/clip_config.json",
+        "research_log/t013_yoloworld/clip_metadata.json",
+        "research_log/t013_yoloworld/clip_tokenizer.json",
+        "research_log/t013_yoloworld/hf_v21_metadata.json",
+        "research_log/t013_yoloworld/hf_v21_readme.md",
+        "research_log/t013_yoloworld/hf_v2_metadata.json",
+        "research_log/t013_yoloworld/inspection_receipt.json",
+        "research_log/t013_yoloworld/mmcv_wheels_torch21_cu118.html",
+        "research_log/t013_yoloworld/mmdet_300_init.py",
+        "research_log/t013_yoloworld/mmyolo_base_config.py",
+        "research_log/t013_yoloworld/mmyolo_init.py",
+        "research_log/t013_yoloworld/token_capacity.json",
+        "research_log/t013_yoloworld/upstream_snapshot/.gitmodules",
+        "research_log/t013_yoloworld/upstream_snapshot/LICENSE",
+        "research_log/t013_yoloworld/upstream_snapshot/README.md",
+        "research_log/t013_yoloworld/upstream_snapshot/configs/pretrain/yolo_world_v2_s_vlpan_bn_2e-3_100e_4x8gpus_obj365v1_goldg_train_1280ft_lvis_minival.py",
+        "research_log/t013_yoloworld/upstream_snapshot/demo/gradio_demo.py",
+        "research_log/t013_yoloworld/upstream_snapshot/docs/installation.md",
+        "research_log/t013_yoloworld/upstream_snapshot/docs/reparameterize.md",
+        "research_log/t013_yoloworld/upstream_snapshot/docs/update_20250123.md",
+        "research_log/t013_yoloworld/upstream_snapshot/pyproject.toml",
+        "research_log/t013_yoloworld/upstream_snapshot/requirements/basic_requirements.txt",
+        "research_log/t013_yoloworld/upstream_snapshot/yolo_world/datasets/transformers/mm_transforms.py",
+        "research_log/t013_yoloworld/upstream_snapshot/yolo_world/models/backbones/mm_backbone.py",
+        "research_log/t013_yoloworld/upstream_snapshot/yolo_world/models/dense_heads/yolo_world_head.py",
+        "research_log/t013_yoloworld/upstream_snapshot/yolo_world/models/detectors/yolo_world.py"
+      ]
+    },
+    {
+      "commit": "a0a74c1ce6d244a9cdcbddb88c884849d6ee51fc",
+      "parents": [
+        "976f36d236a7d4eaecdbe69ed43e36bcadacf298"
+      ],
+      "committer_time": "2026-09-12T23:27:44+08:00",
+      "subject": "coord: record T013-YW-P0 delivery and remote mirror",
+      "changed_paths_against_all_parents": [
+        "coordination/CODEX_TO_CHATGPT.md",
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "90b3cd0eeefa05d740a7c2cc215e65dfeb3b9e7b",
+      "parents": [
+        "a0a74c1ce6d244a9cdcbddb88c884849d6ee51fc"
+      ],
+      "committer_time": "2026-09-12T23:44:19+08:00",
+      "subject": "coord: record unchanged primary health at 94 images",
+      "changed_paths_against_all_parents": [
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "c2f24e28d0579f2b0c55a8181c4532a721c354db",
+      "parents": [
+        "90b3cd0eeefa05d740a7c2cc215e65dfeb3b9e7b"
+      ],
+      "committer_time": "2026-09-12T23:50:43+08:00",
+      "subject": "coord: accept YOLO contingency P0 and assign protocol freeze P1",
+      "changed_paths_against_all_parents": [
+        "coordination/CHATGPT_TO_CODEX.md"
+      ]
+    },
+    {
+      "commit": "6694fcc3a94ef4bb310815770998b380854a4d6e",
+      "parents": [
+        "c2f24e28d0579f2b0c55a8181c4532a721c354db"
+      ],
+      "committer_time": "2026-09-13T00:07:00+08:00",
+      "subject": "docs: freeze native YOLO postprocessing and report background ambiguity",
+      "changed_paths_against_all_parents": [
+        "research/T013_YOLOWORLD_CONTINGENCY.md",
+        "research_log/t013_yoloworld/PROTOCOL_FREEZE.md",
+        "research_log/t013_yoloworld/inspect_p1_sources.py",
+        "research_log/t013_yoloworld/p1_artifact_sha256.json",
+        "research_log/t013_yoloworld/p1_source/mmyolo/LICENSE",
+        "research_log/t013_yoloworld/p1_source/mmyolo/configs/_base_/default_runtime.py",
+        "research_log/t013_yoloworld/p1_source/mmyolo/configs/_base_/det_p5_tta.py",
+        "research_log/t013_yoloworld/p1_source/mmyolo/configs/yolov8/yolov8_s_syncbn_fast_8xb16-500e_coco.py",
+        "research_log/t013_yoloworld/p1_source/mmyolo/mmyolo/models/dense_heads/yolov5_head.py",
+        "research_log/t013_yoloworld/p1_source/mmyolo/mmyolo/models/dense_heads/yolov8_head.py",
+        "research_log/t013_yoloworld/p1_source/mmyolo/mmyolo/models/detectors/yolo_detector.py",
+        "research_log/t013_yoloworld/p1_source/yolo_world/LICENSE",
+        "research_log/t013_yoloworld/p1_source/yolo_world/README.md",
+        "research_log/t013_yoloworld/p1_source/yolo_world/configs/pretrain/yolo_world_v2_s_vlpan_bn_2e-3_100e_4x8gpus_obj365v1_goldg_train_1280ft_lvis_minival.py",
+        "research_log/t013_yoloworld/p1_source/yolo_world/data/texts/coco_class_texts.json",
+        "research_log/t013_yoloworld/p1_source/yolo_world/data/texts/lvis_v1_class_texts.json",
+        "research_log/t013_yoloworld/p1_source/yolo_world/demo/gradio_demo.py",
+        "research_log/t013_yoloworld/p1_source/yolo_world/demo/image_demo.py",
+        "research_log/t013_yoloworld/p1_source/yolo_world/docs/update_20250123.md",
+        "research_log/t013_yoloworld/p1_source/yolo_world/tools/test.py",
+        "research_log/t013_yoloworld/p1_source/yolo_world/yolo_world/datasets/mm_dataset.py",
+        "research_log/t013_yoloworld/p1_source/yolo_world/yolo_world/datasets/transformers/mm_transforms.py",
+        "research_log/t013_yoloworld/p1_source/yolo_world/yolo_world/models/backbones/mm_backbone.py",
+        "research_log/t013_yoloworld/p1_source/yolo_world/yolo_world/models/dense_heads/yolo_world_head.py",
+        "research_log/t013_yoloworld/p1_source/yolo_world/yolo_world/models/detectors/yolo_world.py",
+        "research_log/t013_yoloworld/protocol_freeze.json"
+      ]
+    },
+    {
+      "commit": "26d3e7eeb7bf5ef872ce8691fd564ee587cc3499",
+      "parents": [
+        "6694fcc3a94ef4bb310815770998b380854a4d6e"
+      ],
+      "committer_time": "2026-09-13T00:07:46+08:00",
+      "subject": "coord: return P1 background ambiguity to research lead",
+      "changed_paths_against_all_parents": [
+        "coordination/CODEX_TO_CHATGPT.md",
+        "research_log/REMOTE.md",
+        "research_log/project_state.md",
+        "research_log/session_log.md",
+        "research_log/t013/IMPLEMENTATION_NEXT.md"
+      ]
+    },
+    {
+      "commit": "68903585e56fd21f48048c0f6c29a1b923869f0e",
+      "parents": [
+        "26d3e7eeb7bf5ef872ce8691fd564ee587cc3499"
+      ],
+      "committer_time": "2026-09-13T00:24:32+08:00",
+      "subject": "coord: record primary health at 117 images",
+      "changed_paths_against_all_parents": [
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "946d091c0517bf0cba613ec7dab4e9fc0889fd27",
+      "parents": [
+        "68903585e56fd21f48048c0f6c29a1b923869f0e"
+      ],
+      "committer_time": "2026-09-13T00:40:26+08:00",
+      "subject": "coord: record primary health at 126 images",
+      "changed_paths_against_all_parents": [
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "5c92e5fd6dc47ebcc4bd0a16d94e2f9a28e9ce92",
+      "parents": [
+        "946d091c0517bf0cba613ec7dab4e9fc0889fd27"
+      ],
+      "committer_time": "2026-09-13T00:56:27+08:00",
+      "subject": "coord: record primary health at 136 images",
+      "changed_paths_against_all_parents": [
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "78d8ed72db5fa9c44c96dde62bfe1b7d12cb484f",
+      "parents": [
+        "5c92e5fd6dc47ebcc4bd0a16d94e2f9a28e9ce92"
+      ],
+      "committer_time": "2026-09-13T01:04:20+08:00",
+      "subject": "coord: resolve YOLO background convention and assign one-hour P2",
+      "changed_paths_against_all_parents": [
+        "coordination/CHATGPT_TO_CODEX.md"
+      ]
+    },
+    {
+      "commit": "ccec9fdaceba10f768da1dfa3aa7843712128f16",
+      "parents": [
+        "78d8ed72db5fa9c44c96dde62bfe1b7d12cb484f"
+      ],
+      "committer_time": "2026-09-13T01:06:11+08:00",
+      "subject": "coord: append T013-YW-P1 review and P2 assignment",
+      "changed_paths_against_all_parents": [
+        "coordination/CHATGPT_REVIEW_LOG.md"
+      ]
+    },
+    {
+      "commit": "41ca40c3860e920714ecfb17273901916a635df8",
+      "parents": [
+        "ccec9fdaceba10f768da1dfa3aa7843712128f16"
+      ],
+      "committer_time": "2026-09-13T01:16:15+08:00",
+      "subject": "test: encode one-blank YOLO protocol with model-free fixtures",
+      "changed_paths_against_all_parents": [
+        "research/T013_YOLOWORLD_CONTINGENCY.md",
+        "research_log/t013_yoloworld/PROTOCOL_FREEZE.md",
+        "research_log/t013_yoloworld/p2_artifact_sha256.json",
+        "research_log/t013_yoloworld/p2_execution_receipt.json",
+        "research_log/t013_yoloworld/p2_tests.txt",
+        "research_log/t013_yoloworld/protocol_adapter.py",
+        "research_log/t013_yoloworld/protocol_adapter_receipt.json",
+        "research_log/t013_yoloworld/test_protocol_adapter.py"
+      ]
+    },
+    {
+      "commit": "f919e2f2bb0ab91e955fc42c5cb89b37a7762896",
+      "parents": [
+        "41ca40c3860e920714ecfb17273901916a635df8"
+      ],
+      "committer_time": "2026-09-13T01:17:03+08:00",
+      "subject": "coord: deliver verified P2 protocol fixture",
+      "changed_paths_against_all_parents": [
+        "coordination/CODEX_TO_CHATGPT.md",
+        "research_log/REMOTE.md",
+        "research_log/project_state.md",
+        "research_log/session_log.md",
+        "research_log/t013/IMPLEMENTATION_NEXT.md"
+      ]
+    },
+    {
+      "commit": "14a9d7e9e21dd990af6ee78f8514a3d5fb198cba",
+      "parents": [
+        "f919e2f2bb0ab91e955fc42c5cb89b37a7762896"
+      ],
+      "committer_time": "2026-09-13T01:33:39+08:00",
+      "subject": "coord: record primary health at 158 images",
+      "changed_paths_against_all_parents": [
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "4232db992af01a02f44d50d8e3c647d745cf7ce2",
+      "parents": [
+        "14a9d7e9e21dd990af6ee78f8514a3d5fb198cba"
+      ],
+      "committer_time": "2026-09-13T01:50:00+08:00",
+      "subject": "coord: record primary health at 167 images",
+      "changed_paths_against_all_parents": [
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "c5981c7e5aeddbdefb0cf2d8ca052fcb74bd4dcf",
+      "parents": [
+        "4232db992af01a02f44d50d8e3c647d745cf7ce2"
+      ],
+      "committer_time": "2026-09-13T02:05:59+08:00",
+      "subject": "coord: record primary health at 176 images",
+      "changed_paths_against_all_parents": [
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "bc041cb8b1c4eab9bb4215e6ebb41a57e32e1862",
+      "parents": [
+        "c5981c7e5aeddbdefb0cf2d8ca052fcb74bd4dcf"
+      ],
+      "committer_time": "2026-09-13T02:20:02+08:00",
+      "subject": "coord: accept YOLO P2 fixture and assign primary ops audit",
+      "changed_paths_against_all_parents": [
+        "coordination/CHATGPT_TO_CODEX.md"
+      ]
+    },
+    {
+      "commit": "67baf3892a41604f98543231692c54879a5ddfd2",
+      "parents": [
+        "bc041cb8b1c4eab9bb4215e6ebb41a57e32e1862"
+      ],
+      "committer_time": "2026-09-13T02:27:40+08:00",
+      "subject": "docs: verify frozen primary structure and disk headroom",
+      "changed_paths_against_all_parents": [
+        "research_log/t013/PRIMARY_OPS_CHECK.md",
+        "research_log/t013/primary_ops_check.py",
+        "research_log/t013/primary_ops_receipt.json"
+      ]
+    },
+    {
+      "commit": "784d7a1f6745ba2a9b325513a0f354968677ac32",
+      "parents": [
+        "bc041cb8b1c4eab9bb4215e6ebb41a57e32e1862"
+      ],
+      "committer_time": "2026-09-13T02:22:20+08:00",
+      "subject": "coord: append YOLO P2 review and primary ops task",
+      "changed_paths_against_all_parents": [
+        "coordination/CHATGPT_REVIEW_LOG.md"
+      ]
+    },
+    {
+      "commit": "0b4c57af7d2d6244a8c82fff4306ed7ca54d9382",
+      "parents": [
+        "67baf3892a41604f98543231692c54879a5ddfd2",
+        "784d7a1f6745ba2a9b325513a0f354968677ac32"
+      ],
+      "committer_time": "2026-09-13T02:28:23+08:00",
+      "subject": "Merge remote-tracking branch 'origin/main'",
+      "changed_paths_against_all_parents": [
+        "coordination/CHATGPT_REVIEW_LOG.md",
+        "research_log/t013/PRIMARY_OPS_CHECK.md",
+        "research_log/t013/primary_ops_check.py",
+        "research_log/t013/primary_ops_receipt.json"
+      ]
+    },
+    {
+      "commit": "f6ce00fc5ebea6846a3ac76f7a2ac24916e6b6d1",
+      "parents": [
+        "0b4c57af7d2d6244a8c82fff4306ed7ca54d9382"
+      ],
+      "committer_time": "2026-09-13T02:29:24+08:00",
+      "subject": "coord: deliver primary ops audit and capacity receipt",
+      "changed_paths_against_all_parents": [
+        "coordination/CODEX_TO_CHATGPT.md",
+        "research_log/REMOTE.md",
+        "research_log/project_state.md",
+        "research_log/session_log.md",
+        "research_log/t013/IMPLEMENTATION_NEXT.md",
+        "research_log/t013/PRIMARY_OPS_CHECK.md"
+      ]
+    },
+    {
+      "commit": "543cd60ff5d786dd6988ad8b38f8e10f785cb5c8",
+      "parents": [
+        "f6ce00fc5ebea6846a3ac76f7a2ac24916e6b6d1"
+      ],
+      "committer_time": "2026-09-13T02:49:22+08:00",
+      "subject": "coord: record primary health at 201 images",
+      "changed_paths_against_all_parents": [
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "1fd2c522a502003703069ffd2009088c191d7397",
+      "parents": [
+        "543cd60ff5d786dd6988ad8b38f8e10f785cb5c8"
+      ],
+      "committer_time": "2026-09-13T03:03:11+08:00",
+      "subject": "coord: accept OPS1 and assign T013 statistical shadow audit",
+      "changed_paths_against_all_parents": [
+        "coordination/CHATGPT_TO_CODEX.md"
+      ]
+    },
+    {
+      "commit": "2109c88f10e851634fbb5c4d3bf2ea6adf7bd1a5",
+      "parents": [
+        "1fd2c522a502003703069ffd2009088c191d7397"
+      ],
+      "committer_time": "2026-09-13T03:05:06+08:00",
+      "subject": "coord: append OPS1 review and T013-STAT1 assignment",
+      "changed_paths_against_all_parents": [
+        "coordination/CHATGPT_REVIEW_LOG.md"
+      ]
+    },
+    {
+      "commit": "0cab4ca41a3885677d06b7a54c921f0ec66db6a7",
+      "parents": [
+        "2109c88f10e851634fbb5c4d3bf2ea6adf7bd1a5"
+      ],
+      "committer_time": "2026-09-13T03:12:41+08:00",
+      "subject": "test: audit frozen T013 arithmetic with independent synthetic fixtures",
+      "changed_paths_against_all_parents": [
+        "research_log/t013/SHADOW_ANALYSIS_AUDIT.md",
+        "research_log/t013/shadow_analysis_audit.py",
+        "research_log/t013/shadow_analysis_initial_receipt.json",
+        "research_log/t013/shadow_analysis_receipt.json"
+      ]
+    },
+    {
+      "commit": "b5a65cf62a3cddc3b881b57ff4bf755de7af9a1f",
+      "parents": [
+        "0cab4ca41a3885677d06b7a54c921f0ec66db6a7"
+      ],
+      "committer_time": "2026-09-13T03:13:33+08:00",
+      "subject": "coord: deliver T013 STAT1 synthetic analysis audit",
+      "changed_paths_against_all_parents": [
+        "coordination/CODEX_TO_CHATGPT.md",
+        "research_log/REMOTE.md",
+        "research_log/project_state.md",
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "ed32f477d7bbf5d1bc203886198a1e2abda2f4c6",
+      "parents": [
+        "b5a65cf62a3cddc3b881b57ff4bf755de7af9a1f"
+      ],
+      "committer_time": "2026-09-13T03:30:50+08:00",
+      "subject": "coord: record primary health at 225 images",
+      "changed_paths_against_all_parents": [
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "f9dafaae6f037efee15a70f23131b5c56c3d5569",
+      "parents": [
+        "ed32f477d7bbf5d1bc203886198a1e2abda2f4c6"
+      ],
+      "committer_time": "2026-09-13T03:47:18+08:00",
+      "subject": "coord: record primary health at 235 images",
+      "changed_paths_against_all_parents": [
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "559cdb77188fc1f6ae3cbc1973e236b804211cc8",
+      "parents": [
+        "f9dafaae6f037efee15a70f23131b5c56c3d5569"
+      ],
+      "committer_time": "2026-09-13T04:03:41+08:00",
+      "subject": "coord: record primary health at 244 images",
+      "changed_paths_against_all_parents": [
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "b5bd009cfb3210f08344c1220483b08e83b825b6",
+      "parents": [
+        "559cdb77188fc1f6ae3cbc1973e236b804211cc8"
+      ],
+      "committer_time": "2026-09-13T04:17:14+08:00",
+      "subject": "coord: accept STAT1 and assign T013 finalization verifier",
+      "changed_paths_against_all_parents": [
+        "coordination/CHATGPT_TO_CODEX.md"
+      ]
+    },
+    {
+      "commit": "e22ee9b612e5724346adf5258d69666ddcd08ac9",
+      "parents": [
+        "b5bd009cfb3210f08344c1220483b08e83b825b6"
+      ],
+      "committer_time": "2026-09-13T04:19:41+08:00",
+      "subject": "coord: append T013 STAT1 review and FIN1 assignment",
+      "changed_paths_against_all_parents": [
+        "coordination/CHATGPT_REVIEW_LOG.md"
+      ]
+    },
+    {
+      "commit": "8efe48506b6714eeef069e3c25dbceef510bdc05",
+      "parents": [
+        "e22ee9b612e5724346adf5258d69666ddcd08ac9"
+      ],
+      "committer_time": "2026-09-13T04:28:28+08:00",
+      "subject": "test: prepare frozen T013 completion integrity verifier",
+      "changed_paths_against_all_parents": [
+        "research_log/t013/PRIMARY_COMPLETION_VERIFIER.md",
+        "research_log/t013/primary_completion_smoke_receipt.json",
+        "research_log/t013/primary_completion_test_receipt.json",
+        "research_log/t013/primary_completion_tests.txt",
+        "research_log/t013/primary_completion_verifier.py",
+        "research_log/t013/primary_completion_verifier_receipt.json",
+        "research_log/t013/test_primary_completion_verifier.py"
+      ]
+    },
+    {
+      "commit": "2432409b7ef8dc61d6c48b133ecb6165a0b16573",
+      "parents": [
+        "8efe48506b6714eeef069e3c25dbceef510bdc05"
+      ],
+      "committer_time": "2026-09-13T04:29:20+08:00",
+      "subject": "coord: deliver T013 FIN1 completion verifier rehearsal",
+      "changed_paths_against_all_parents": [
+        "coordination/CODEX_TO_CHATGPT.md",
+        "research_log/REMOTE.md",
+        "research_log/project_state.md",
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "58313bc1f0326c25a8ec19e41f6b61b334cff4ad",
+      "parents": [
+        "2432409b7ef8dc61d6c48b133ecb6165a0b16573"
+      ],
+      "committer_time": "2026-09-13T04:46:08+08:00",
+      "subject": "coord: record primary health at 269 images",
+      "changed_paths_against_all_parents": [
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "a94df636c9033800093e6184f01d544bae17be50",
+      "parents": [
+        "58313bc1f0326c25a8ec19e41f6b61b334cff4ad"
+      ],
+      "committer_time": "2026-09-13T05:02:32+08:00",
+      "subject": "coord: record primary health at 279 images",
+      "changed_paths_against_all_parents": [
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "0170f25e5e8e79ca5d8f145fccd3d1072a04abe2",
+      "parents": [
+        "a94df636c9033800093e6184f01d544bae17be50"
+      ],
+      "committer_time": "2026-09-13T05:18:28+08:00",
+      "subject": "coord: record primary health at 288 images",
+      "changed_paths_against_all_parents": [
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "55cd1783924c5e7f8eeed716066d9ddff5ba3293",
+      "parents": [
+        "0170f25e5e8e79ca5d8f145fccd3d1072a04abe2"
+      ],
+      "committer_time": "2026-09-13T05:26:23+08:00",
+      "subject": "coord: accept FIN1 and assign deterministic analysis replay preflight",
+      "changed_paths_against_all_parents": [
+        "coordination/CHATGPT_TO_CODEX.md"
+      ]
+    },
+    {
+      "commit": "348b1df409e66437df183f08abc00186095c76ad",
+      "parents": [
+        "55cd1783924c5e7f8eeed716066d9ddff5ba3293"
+      ],
+      "committer_time": "2026-09-13T05:28:06+08:00",
+      "subject": "coord: append FIN1 review and REPRO1 assignment",
+      "changed_paths_against_all_parents": [
+        "coordination/CHATGPT_REVIEW_LOG.md"
+      ]
+    },
+    {
+      "commit": "5fe57f7f4313ca9a94665d2320f7a06fefa99bee",
+      "parents": [
+        "348b1df409e66437df183f08abc00186095c76ad"
+      ],
+      "committer_time": "2026-09-13T05:39:51+08:00",
+      "subject": "test: verify deterministic frozen smoke analysis replays",
+      "changed_paths_against_all_parents": [
+        "research_log/t013/ANALYSIS_REPLAY_PREFLIGHT.md",
+        "research_log/t013/analysis_replay_compare.py",
+        "research_log/t013/analysis_replay_preflight.py",
+        "research_log/t013/analysis_replay_receipt.json",
+        "research_log/t013/repro1/environment.txt",
+        "research_log/t013/repro1/replay_a.log",
+        "research_log/t013/repro1/replay_b.log"
+      ]
+    },
+    {
+      "commit": "7fa947bc184d0304940566932e871fbb0d9d8eba",
+      "parents": [
+        "5fe57f7f4313ca9a94665d2320f7a06fefa99bee"
+      ],
+      "committer_time": "2026-09-13T05:40:48+08:00",
+      "subject": "coord: deliver T013 REPRO1 frozen replay evidence",
+      "changed_paths_against_all_parents": [
+        "coordination/CODEX_TO_CHATGPT.md",
+        "research_log/REMOTE.md",
+        "research_log/project_state.md",
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "d6946056934517eb41caf17c4a6697cbcfde356b",
+      "parents": [
+        "7fa947bc184d0304940566932e871fbb0d9d8eba"
+      ],
+      "committer_time": "2026-09-13T05:57:38+08:00",
+      "subject": "coord: record primary health at 311 images",
+      "changed_paths_against_all_parents": [
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "c93e60457e7f5ef54c4153b91db0c100457c09a7",
+      "parents": [
+        "d6946056934517eb41caf17c4a6697cbcfde356b"
+      ],
+      "committer_time": "2026-09-13T06:14:17+08:00",
+      "subject": "coord: record primary health at 321 images",
+      "changed_paths_against_all_parents": [
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "7a196240612a33d146d8c28494a2c7745a066a8a",
+      "parents": [
+        "c93e60457e7f5ef54c4153b91db0c100457c09a7"
+      ],
+      "committer_time": "2026-09-13T06:30:41+08:00",
+      "subject": "coord: record primary health at 331 images",
+      "changed_paths_against_all_parents": [
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "223a18085766f5fc0c8043507dad62b0b551625a",
+      "parents": [
+        "7a196240612a33d146d8c28494a2c7745a066a8a"
+      ],
+      "committer_time": "2026-09-13T06:47:11+08:00",
+      "subject": "coord: record primary health at 341 images",
+      "changed_paths_against_all_parents": [
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "753facb812e91ccbec51971ccd83242fca49b5bf",
+      "parents": [
+        "223a18085766f5fc0c8043507dad62b0b551625a"
+      ],
+      "committer_time": "2026-09-13T07:04:35+08:00",
+      "subject": "coord: accept T013 REPRO1 and freeze pre-outcome decision contract",
+      "changed_paths_against_all_parents": [
+        "coordination/CHATGPT_TO_CODEX.md"
+      ]
+    },
+    {
+      "commit": "51881e3ca83ef0abafd0510965f32c19455c0025",
+      "parents": [
+        "753facb812e91ccbec51971ccd83242fca49b5bf"
+      ],
+      "committer_time": "2026-09-13T07:11:49+08:00",
+      "subject": "test: freeze T013 final disclosure and decision contract",
+      "changed_paths_against_all_parents": [
+        "research_log/t013/FINAL_DECISION_CONTRACT.md",
+        "research_log/t013/final_decision_contract.py",
+        "research_log/t013/final_decision_contract_receipt.json",
+        "research_log/t013/test_final_decision_contract.py"
+      ]
+    },
+    {
+      "commit": "d0dcd897b5f0486f88d0588e70b9b03f1120a074",
+      "parents": [
+        "51881e3ca83ef0abafd0510965f32c19455c0025"
+      ],
+      "committer_time": "2026-09-13T07:13:02+08:00",
+      "subject": "coord: deliver T013 DEC1 disclosure contract evidence",
+      "changed_paths_against_all_parents": [
+        "coordination/CODEX_TO_CHATGPT.md",
+        "research_log/REMOTE.md",
+        "research_log/project_state.md",
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "471801f776ded6f9c3b9f31cf19cb68f2da28f6f",
+      "parents": [
+        "753facb812e91ccbec51971ccd83242fca49b5bf"
+      ],
+      "committer_time": "2026-09-13T07:06:42+08:00",
+      "subject": "coord: append T013 REPRO1 review and DEC1 assignment",
+      "changed_paths_against_all_parents": [
+        "coordination/CHATGPT_REVIEW_LOG.md"
+      ]
+    },
+    {
+      "commit": "21af185c34d0f73e77a1151a286fa55b28b6dd79",
+      "parents": [
+        "d0dcd897b5f0486f88d0588e70b9b03f1120a074",
+        "471801f776ded6f9c3b9f31cf19cb68f2da28f6f"
+      ],
+      "committer_time": "2026-09-13T07:13:28+08:00",
+      "subject": "Merge remote-tracking branch 'origin/main'",
+      "changed_paths_against_all_parents": [
+        "coordination/CHATGPT_REVIEW_LOG.md",
+        "coordination/CODEX_TO_CHATGPT.md",
+        "research_log/REMOTE.md",
+        "research_log/project_state.md",
+        "research_log/session_log.md",
+        "research_log/t013/FINAL_DECISION_CONTRACT.md",
+        "research_log/t013/final_decision_contract.py",
+        "research_log/t013/final_decision_contract_receipt.json",
+        "research_log/t013/test_final_decision_contract.py"
+      ]
+    },
+    {
+      "commit": "0fb70feb4e6df5bee211751f4bf6f0a3e4b32917",
+      "parents": [
+        "21af185c34d0f73e77a1151a286fa55b28b6dd79"
+      ],
+      "committer_time": "2026-09-13T07:30:13+08:00",
+      "subject": "coord: record primary health at 367 images",
+      "changed_paths_against_all_parents": [
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "b8a5d5a5d4375bba0c956043ecd42fd463ef64ce",
+      "parents": [
+        "0fb70feb4e6df5bee211751f4bf6f0a3e4b32917"
+      ],
+      "committer_time": "2026-09-13T07:46:35+08:00",
+      "subject": "coord: record primary health at 377 images",
+      "changed_paths_against_all_parents": [
+        "research_log/session_log.md"
+      ]
+    },
+    {
+      "commit": "9b59ab9d699d57e7591808af20c086bf7f02e5e9",
+      "parents": [
+        "b8a5d5a5d4375bba0c956043ecd42fd463ef64ce"
+      ],
+      "committer_time": "2026-09-13T07:54:22+08:00",
+      "subject": "coord: accept T013 DEC1 and assign pre-outcome Gate4 history audit",
+      "changed_paths_against_all_parents": [
+        "coordination/CHATGPT_TO_CODEX.md"
+      ]
+    },
+    {
+      "commit": "cca9af23452870d1a12ba1ab6a78ebe683e49cd1",
+      "parents": [
+        "9b59ab9d699d57e7591808af20c086bf7f02e5e9"
+      ],
+      "committer_time": "2026-09-13T07:56:13+08:00",
+      "subject": "coord: append T013 DEC1 review and Gate4 history audit assignment",
+      "changed_paths_against_all_parents": [
+        "coordination/CHATGPT_REVIEW_LOG.md"
+      ]
+    }
+  ],
+  "postfreeze_changed_paths": [
+    {
+      "path": "coordination/CHATGPT_REVIEW_LOG.md",
+      "category": "coordination/reporting"
+    },
+    {
+      "path": "coordination/CHATGPT_TO_CODEX.md",
+      "category": "coordination/reporting"
+    },
+    {
+      "path": "coordination/CODEX_TO_CHATGPT.md",
+      "category": "coordination/reporting"
+    },
+    {
+      "path": "research/T013_YOLOWORLD_CONTINGENCY.md",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/REMOTE.md",
+      "category": "primary provenance/log mirror"
+    },
+    {
+      "path": "research_log/project_state.md",
+      "category": "primary provenance/log mirror"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-210355-tovd-native30-primary/artifacts/freeze_sha256.txt",
+      "category": "primary provenance/log mirror"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-210355-tovd-native30-primary/artifacts/resolved_release.txt",
+      "category": "primary provenance/log mirror"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-210355-tovd-native30-primary/meta.json",
+      "category": "primary provenance/log mirror"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-210355-tovd-native30-primary/run.sh",
+      "category": "primary provenance/log mirror"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-210355-tovd-native30-primary/train.log",
+      "category": "primary provenance/log mirror"
+    },
+    {
+      "path": "research_log/session_log.md",
+      "category": "primary provenance/log mirror"
+    },
+    {
+      "path": "research_log/t013/ANALYSIS_REPLAY_PREFLIGHT.md",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013/FINAL_DECISION_CONTRACT.md",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013/IMPLEMENTATION_NEXT.md",
+      "category": "coordination/reporting"
+    },
+    {
+      "path": "research_log/t013/PRIMARY_COMPLETION_VERIFIER.md",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013/PRIMARY_OPS_CHECK.md",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013/SHADOW_ANALYSIS_AUDIT.md",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013/analysis_replay_compare.py",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013/analysis_replay_preflight.py",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013/analysis_replay_receipt.json",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013/final_decision_contract.py",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013/final_decision_contract_receipt.json",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013/primary_completion_smoke_receipt.json",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013/primary_completion_test_receipt.json",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013/primary_completion_tests.txt",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013/primary_completion_verifier.py",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013/primary_completion_verifier_receipt.json",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013/primary_ops_check.py",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013/primary_ops_receipt.json",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013/repro1/environment.txt",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013/repro1/replay_a.log",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013/repro1/replay_b.log",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013/shadow_analysis_audit.py",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013/shadow_analysis_initial_receipt.json",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013/shadow_analysis_receipt.json",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013/test_final_decision_contract.py",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013/test_primary_completion_verifier.py",
+      "category": "pre-outcome verifier/test"
+    },
+    {
+      "path": "research_log/t013_yoloworld/FEASIBILITY.md",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/PROTOCOL_FREEZE.md",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/artifact_sha256.json",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/clip_config.json",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/clip_metadata.json",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/clip_tokenizer.json",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/hf_v21_metadata.json",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/hf_v21_readme.md",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/hf_v2_metadata.json",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/inspect_p1_sources.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/inspection_receipt.json",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/mmcv_wheels_torch21_cu118.html",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/mmdet_300_init.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/mmyolo_base_config.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/mmyolo_init.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p1_artifact_sha256.json",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p1_source/mmyolo/LICENSE",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p1_source/mmyolo/configs/_base_/default_runtime.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p1_source/mmyolo/configs/_base_/det_p5_tta.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p1_source/mmyolo/configs/yolov8/yolov8_s_syncbn_fast_8xb16-500e_coco.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p1_source/mmyolo/mmyolo/models/dense_heads/yolov5_head.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p1_source/mmyolo/mmyolo/models/dense_heads/yolov8_head.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p1_source/mmyolo/mmyolo/models/detectors/yolo_detector.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p1_source/yolo_world/LICENSE",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p1_source/yolo_world/README.md",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p1_source/yolo_world/configs/pretrain/yolo_world_v2_s_vlpan_bn_2e-3_100e_4x8gpus_obj365v1_goldg_train_1280ft_lvis_minival.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p1_source/yolo_world/data/texts/coco_class_texts.json",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p1_source/yolo_world/data/texts/lvis_v1_class_texts.json",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p1_source/yolo_world/demo/gradio_demo.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p1_source/yolo_world/demo/image_demo.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p1_source/yolo_world/docs/update_20250123.md",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p1_source/yolo_world/tools/test.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p1_source/yolo_world/yolo_world/datasets/mm_dataset.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p1_source/yolo_world/yolo_world/datasets/transformers/mm_transforms.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p1_source/yolo_world/yolo_world/models/backbones/mm_backbone.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p1_source/yolo_world/yolo_world/models/dense_heads/yolo_world_head.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p1_source/yolo_world/yolo_world/models/detectors/yolo_world.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p2_artifact_sha256.json",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p2_execution_receipt.json",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/p2_tests.txt",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/protocol_adapter.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/protocol_adapter_receipt.json",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/protocol_freeze.json",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/test_protocol_adapter.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/token_capacity.json",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/upstream_snapshot/.gitmodules",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/upstream_snapshot/LICENSE",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/upstream_snapshot/README.md",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/upstream_snapshot/configs/pretrain/yolo_world_v2_s_vlpan_bn_2e-3_100e_4x8gpus_obj365v1_goldg_train_1280ft_lvis_minival.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/upstream_snapshot/demo/gradio_demo.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/upstream_snapshot/docs/installation.md",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/upstream_snapshot/docs/reparameterize.md",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/upstream_snapshot/docs/update_20250123.md",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/upstream_snapshot/pyproject.toml",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/upstream_snapshot/requirements/basic_requirements.txt",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/upstream_snapshot/yolo_world/datasets/transformers/mm_transforms.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/upstream_snapshot/yolo_world/models/backbones/mm_backbone.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/upstream_snapshot/yolo_world/models/dense_heads/yolo_world_head.py",
+      "category": "YOLO contingency preparation"
+    },
+    {
+      "path": "research_log/t013_yoloworld/upstream_snapshot/yolo_world/models/detectors/yolo_world.py",
+      "category": "YOLO contingency preparation"
+    }
+  ],
+  "category_counts": {
+    "coordination/reporting": 4,
+    "YOLO contingency preparation": 60,
+    "primary provenance/log mirror": 8,
+    "pre-outcome verifier/test": 25
+  },
+  "dispatch_metadata": {
+    "runId": "20260912-210355-tovd-native30-primary",
+    "releaseId": "20260912-210306-tovd-native30-primary-freeze",
+    "sessionName": "autodl-20260912-210355-tovd-native30-primary",
+    "command": "cd /home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze; pwd > \"$AUTODL_ARTIFACTS_DIR/resolved_release.txt\"; sha256sum research_log/t013/native30_freeze.json research_log/t013/PLAN.md > \"$AUTODL_ARTIFACTS_DIR/freeze_sha256.txt\"; export OMP_NUM_THREADS=4; export MKL_NUM_THREADS=4; /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -u -m scripts.t013_native_run --assets /home/wenchang/asdasdsad/wjq/TOVD/shared/t013 --output \"$AUTODL_ARTIFACTS_DIR/cache\" --freeze-commit 6fec32243985ccc808123d851abf5f3dea10af99 && /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -u -m scripts.t013_analysis --annotations /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations/instances_val2017.json --run \"$AUTODL_ARTIFACTS_DIR/cache\" --output \"$AUTODL_ARTIFACTS_DIR/analysis\""
+  },
+  "dispatch_provenance": [
+    {
+      "path": "research_log/remote_runs/20260912-210355-tovd-native30-primary/run.sh",
+      "dispatch_sha256": "cde77d0e8a4db8904d8ecd178efb71200013c0ed616d2bf471c88f6dfd8c1b27",
+      "head_sha256": "cde77d0e8a4db8904d8ecd178efb71200013c0ed616d2bf471c88f6dfd8c1b27"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-210355-tovd-native30-primary/meta.json",
+      "dispatch_sha256": "e9c8bd67854a9c1ee9d1a5b2f1470495cf4c616822102b226644b6fdf09dd6b0",
+      "head_sha256": "e9c8bd67854a9c1ee9d1a5b2f1470495cf4c616822102b226644b6fdf09dd6b0"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-210355-tovd-native30-primary/artifacts/resolved_release.txt",
+      "dispatch_sha256": "48599c3f821153bcd2e5d2ec1914a50a8bea614f8c9a270b98ae32c6baae3b55",
+      "head_sha256": "48599c3f821153bcd2e5d2ec1914a50a8bea614f8c9a270b98ae32c6baae3b55"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-210355-tovd-native30-primary/artifacts/freeze_sha256.txt",
+      "dispatch_sha256": "591e799f92b29a03b924fd9b3d32876d27f00732003177e8d5b9237edaf75757",
+      "head_sha256": "591e799f92b29a03b924fd9b3d32876d27f00732003177e8d5b9237edaf75757"
+    }
+  ],
+  "native_primary_command_inventory": [
+    {
+      "path": "research_log/remote_runs/20260912-205428-tovd-native30-pipeline-smoke/meta.json",
+      "run_id": "20260912-205428-tovd-native30-pipeline-smoke",
+      "command": "cd /home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-205335-tovd-native30-pipeline; pwd > \"$AUTODL_ARTIFACTS_DIR/resolved_release.txt\"; export OMP_NUM_THREADS=4; export MKL_NUM_THREADS=4; /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -u -m scripts.t013_native_run --assets /home/wenchang/asdasdsad/wjq/TOVD/shared/t013 --output \"$AUTODL_ARTIFACTS_DIR/cache\" --freeze-commit d5dc807 --smoke-only && /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -u -m scripts.t013_analysis --annotations /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations/instances_val2017.json --run \"$AUTODL_ARTIFACTS_DIR/cache\" --output \"$AUTODL_ARTIFACTS_DIR/analysis\" --smoke-only"
+    },
+    {
+      "path": "research_log/remote_runs/20260912-210355-tovd-native30-primary/meta.json",
+      "run_id": "20260912-210355-tovd-native30-primary",
+      "command": "cd /home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze; pwd > \"$AUTODL_ARTIFACTS_DIR/resolved_release.txt\"; sha256sum research_log/t013/native30_freeze.json research_log/t013/PLAN.md > \"$AUTODL_ARTIFACTS_DIR/freeze_sha256.txt\"; export OMP_NUM_THREADS=4; export MKL_NUM_THREADS=4; /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -u -m scripts.t013_native_run --assets /home/wenchang/asdasdsad/wjq/TOVD/shared/t013 --output \"$AUTODL_ARTIFACTS_DIR/cache\" --freeze-commit 6fec32243985ccc808123d851abf5f3dea10af99 && /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -u -m scripts.t013_analysis --annotations /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations/instances_val2017.json --run \"$AUTODL_ARTIFACTS_DIR/cache\" --output \"$AUTODL_ARTIFACTS_DIR/analysis\""
+    }
+  ],
+  "preserved_negative_prerequisites": [
+    {
+      "origin_commit": "f63f571d4a6841d9f997ade5a5a2df9ab45c2ed1",
+      "path": "research_log/remote_runs/20260912-195530-tovd-t013-native-parity/artifacts/native_parity.json",
+      "origin_sha256": "1a8f1660c9c44119d4edb75a8be72535c56f1372014d1048bcb153d8dc82c80a",
+      "head_sha256": "1a8f1660c9c44119d4edb75a8be72535c56f1372014d1048bcb153d8dc82c80a",
+      "equal": true
+    },
+    {
+      "origin_commit": "654887013ab49c5626fadea18a8f922d2bc68ff6",
+      "path": "research_log/t013/PARITY_B_RESULTS.md",
+      "origin_sha256": "6ed7e1aa1cf33c539e826ec378f5b0fcac3f75b594724f4195bb8266202f0f1a",
+      "head_sha256": "6ed7e1aa1cf33c539e826ec378f5b0fcac3f75b594724f4195bb8266202f0f1a",
+      "equal": true
+    },
+    {
+      "origin_commit": "654887013ab49c5626fadea18a8f922d2bc68ff6",
+      "path": "research_log/remote_runs/20260912-202233-tovd-t013-parity-b/artifacts/parity_b.json",
+      "origin_sha256": "82db933931f728d6b9843b4dc7eedda66e8d8d2d15db1e9ae424d093c80530de",
+      "head_sha256": "82db933931f728d6b9843b4dc7eedda66e8d8d2d15db1e9ae424d093c80530de",
+      "equal": true
+    }
+  ],
+  "outcome_blindness_and_protocol_references": {
+    "original_gate1": {
+      "commit": "c07ce167507ebbe61de258bffb87210dc90f5cb3",
+      "path": "coordination/CHATGPT_TO_CODEX.md",
+      "sha256": "4922e775a01b6e41fe4dd6862399512d5aac0f3599ad8ccb475955b44c6102ae",
+      "needle": ">= 1.0 AP50",
+      "matches": [
+        {
+          "line": 132,
+          "text": "- `A(c,Vhard) >= 1.0 AP50`, and"
+        }
+      ],
+      "found": true
+    },
+    "original_gate2": {
+      "commit": "c07ce167507ebbe61de258bffb87210dc90f5cb3",
+      "path": "coordination/CHATGPT_TO_CODEX.md",
+      "sha256": "4922e775a01b6e41fe4dd6862399512d5aac0f3599ad8ccb475955b44c6102ae",
+      "needle": ">= 0.75 AP50",
+      "matches": [
+        {
+          "line": 137,
+          "text": "- mean `A(c,Vhard) >= 0.75 AP50`, and"
+        }
+      ],
+      "found": true
+    },
+    "original_gate2_contrast": {
+      "commit": "c07ce167507ebbe61de258bffb87210dc90f5cb3",
+      "path": "coordination/CHATGPT_TO_CODEX.md",
+      "sha256": "4922e775a01b6e41fe4dd6862399512d5aac0f3599ad8ccb475955b44c6102ae",
+      "needle": ">= 0.50 AP50",
+      "matches": [
+        {
+          "line": 138,
+          "text": "- mean `[A(c,Vhard) - A(c,Vrand)] >= 0.50 AP50`."
+        }
+      ],
+      "found": true
+    },
+    "reset_preserves_gates": {
+      "commit": "02ba123c896ac79086b006cfb07fa7c05fdbf71e",
+      "path": "coordination/CHATGPT_TO_CODEX.md",
+      "sha256": "6f853b15e607290734ee485240f97a875edcfb487d5a12fd3b72641d39967855",
+      "needle": "Do **not** weaken",
+      "matches": [
+        {
+          "line": 71,
+          "text": "Do **not** weaken the original T013 scientific thresholds because the vocabulary is smaller."
+        }
+      ],
+      "found": true
+    },
+    "hf_rejection": {
+      "commit": "02ba123c896ac79086b006cfb07fa7c05fdbf71e",
+      "path": "coordination/CHATGPT_TO_CODEX.md",
+      "sha256": "6f853b15e607290734ee485240f97a875edcfb487d5a12fd3b72641d39967855",
+      "needle": "any failure rejects",
+      "matches": [
+        {
+          "line": 23,
+          "text": "Per the prior Research-Lead decision, **any failure rejects the HF-1024 harness for primary use**. Do not rerun parity, relax tolerances, change assignment, swap smoke images, change checkpoints, reduce `NUM_SELECT`, or attempt to explain away this result with a new equivalence criterion."
+        }
+      ],
+      "found": true
+    },
+    "freeze_accepted": {
+      "commit": "cca9af23452870d1a12ba1ab6a78ebe683e49cd1",
+      "path": "coordination/CHATGPT_REVIEW_LOG.md",
+      "sha256": "5ee458859ac2d7d8f0f401544b64d623c778e0faadf37fa258d2ff8d82792d02",
+      "needle": "The dispatch is protocol-compliant",
+      "matches": [
+        {
+          "line": 410,
+          "text": "The dispatch is protocol-compliant: run `20260912-210355-tovd-native30-primary` uses immutable release `20260912-210306-tovd-native30-primary-freeze` with `--freeze-commit 6fec32243985ccc808123d851abf5f3dea10af99`. No T013 scientific AP/CI/gate result existed at freeze or dispatch."
+        }
+      ],
+      "found": true
+    },
+    "failure_rule": {
+      "commit": "cca9af23452870d1a12ba1ab6a78ebe683e49cd1",
+      "path": "coordination/CHATGPT_REVIEW_LOG.md",
+      "sha256": "5ee458859ac2d7d8f0f401544b64d623c778e0faadf37fa258d2ff8d82792d02",
+      "needle": "before designing a restart",
+      "matches": [
+        {
+          "line": 412,
+          "text": "**Next action:** let only this frozen primary run continue. Do not inspect or act on partial AP/AP50/interaction/CI values, do not start a duplicate writer, and do not alter any frozen setting. If the run fails, preserve partial outputs and return for Research-Lead review before designing a restart because the runner has no automatic resume path. At completion, verify all 15,000 cells and hashes, reproduce analysis from the frozen cache, and report the complete metric/interaction/CI/diagnostic package against unchanged Gates 1\u20134. T014 remains prohibited until Research-Lead review."
+        }
+      ],
+      "found": true
+    },
+    "p0_blindness": {
+      "commit": "cca9af23452870d1a12ba1ab6a78ebe683e49cd1",
+      "path": "research_log/session_log.md",
+      "sha256": "9974a752f5fe88df708e3df2cf274bdbd78e18ea03e8343856ecf9767eeca0a6",
+      "needle": "NoGroundingpartialAP/interaction/CI/mechanismmetricsread",
+      "matches": [
+        {
+          "line": 333,
+          "text": "NoGroundingpartialAP/interaction/CI/mechanismmetricsread; noYOLOinference; noinstall,weightdownload or activerunmodification. Onlypublicsource/metadata/tokenizer andread-onlyoperationalhealthinspected. LastGroundingcount80/1000; GPU1A6000free50598707200/50897289216bytes(snapshot,notreservation). Thispackageendswithdocuments/receiptcommit; waitnextLeadcycle, do not repeatP0 or begininstall/inference whileCURRENTpackageheadingpersists. Primary20260912-210355-tovd-native30-primarycontinuesunchanged."
+        }
+      ],
+      "found": true
+    },
+    "p1_blindness": {
+      "commit": "cca9af23452870d1a12ba1ab6a78ebe683e49cd1",
+      "path": "research_log/session_log.md",
+      "sha256": "9974a752f5fe88df708e3df2cf274bdbd78e18ea03e8343856ecf9767eeca0a6",
+      "needle": "Zero YOLO image inference;",
+      "matches": [
+        {
+          "line": 352,
+          "text": "Zero YOLO image inference; zero package installation; zero detector loading/checkpoint payload downloads; zero Grounding partial AP/AP50/interaction/CI/mechanism inspection. Health2026-09-13T00:00:41+08: primary20260912-210355-tovd-native30-primary tmux alive,103/1000 images at10487.362925s,27G filesystem free, analysis result absent. Same immutable primary continues; no restart or new writer. P1 work stops after documents/receipt commit; do not repeat it while mailbox heading persists. No environment/YOLO benchmark/T014 authorization. 15-minute heartbeat remains active."
+        }
+      ],
+      "found": true
+    },
+    "p2_blindness": {
+      "commit": "cca9af23452870d1a12ba1ab6a78ebe683e49cd1",
+      "path": "coordination/CODEX_TO_CHATGPT.md",
+      "sha256": "922b66cc6265cbece24e27b361adbb462ee0697ef582d678f4be7cbf2d720c48",
+      "needle": "Zero YOLO/MMCV/MMDetection/MMYOLO",
+      "matches": [
+        {
+          "line": 407,
+          "text": "Zero YOLO/MMCV/MMDetection/MMYOLO installation or import, zero checkpoint payload download/load, zero image inference, zero Grounding partial scientific metric inspection, zero active-primary modification. Primary health2026-09-13T01:12:25+08: run20260912-210355-tovd-native30-primary tmux alive,146/1000 images at14890.053539s,26G filesystem free; analysis result absent."
+        }
+      ],
+      "found": true
+    },
+    "ops1_single_writer": {
+      "commit": "cca9af23452870d1a12ba1ab6a78ebe683e49cd1",
+      "path": "research_log/t013/PRIMARY_OPS_CHECK.md",
+      "sha256": "3b54fc7266f58c450cff3ca2a90f5cd639a89b017325525eeaa511c12a5c86b3",
+      "needle": "721181",
+      "matches": [
+        {
+          "line": 10,
+          "text": "- Writer PID `721181`, parent `721177`; tmux `autodl-20260912-210355-tovd-native30-primary`, pane PID `721175`, in the writer ancestry. Start/end process snapshots identify the same single cache-target process; no duplicate target was observed. All enumerated process command lines were readable (`proc_entries_unreadable=0`); unrelated commands are not included in the receipt."
+        }
+      ],
+      "found": true
+    },
+    "stat1_blindness": {
+      "commit": "cca9af23452870d1a12ba1ab6a78ebe683e49cd1",
+      "path": "research_log/session_log.md",
+      "sha256": "9974a752f5fe88df708e3df2cf274bdbd78e18ea03e8343856ecf9767eeca0a6",
+      "needle": "No primary prediction/scientific artifact",
+      "matches": [
+        {
+          "line": 431,
+          "text": "End health2026-09-13T03:11:26+08: exact primary20260912-210355-tovd-native30-primary tmux alive, writer721181 Rl+,214/1000 at21968.800080698013s, free26200883200 bytes; no wrapper exit marker, analysis/results.json absent (existence only). No primary prediction/scientific artifact or primary annotations opened; no partial metrics interpreted. No active-run/frozen code/PLAN/settings mutation, no YOLO runtime activity."
+        }
+      ],
+      "found": true
+    },
+    "fin1_blindness": {
+      "commit": "cca9af23452870d1a12ba1ab6a78ebe683e49cd1",
+      "path": "research_log/session_log.md",
+      "sha256": "9974a752f5fe88df708e3df2cf274bdbd78e18ea03e8343856ecf9767eeca0a6",
+      "needle": "Primary cache was never passed",
+      "matches": [
+        {
+          "line": 448,
+          "text": "First smoke verifier command used server system python3 and exited1 with AttributeError: module 'hashlib' has no attribute 'file_digest' at primary_completion_verifier.py:24. This is an interpreter capability issue (file_digest requires Python>=3.11), not a cache/schema mismatch. Reran the identical verifier with existing shared/t013/venv/bin/python (Python3.12.12); exit0, smoke PASS45/45 opaque files,48715584 bytes,15shared pixel groups, final state matches freeze. No code compatibility layer, environment install/change, detector import or raw copy. The completed smoke's analysis result existence was True; contents were not opened. Primary cache was never passed to the verifier."
+        }
+      ],
+      "found": true
+    },
+    "repro1_blindness": {
+      "commit": "cca9af23452870d1a12ba1ab6a78ebe683e49cd1",
+      "path": "research_log/session_log.md",
+      "sha256": "9974a752f5fe88df708e3df2cf274bdbd78e18ea03e8343856ecf9767eeca0a6",
+      "needle": "active_primary_cache_accessed=false",
+      "matches": [
+        {
+          "line": 494,
+          "text": "End health2026-09-13T05:38:17+08: exact primary20260912-210355-tovd-native30-primary tmux/writer721181 Rl+ alive,300/1000 at30761.30617114401s,free24575799296bytes,no wrapper exit marker,primary analysis/results.json absent (existence only). active_primary_cache_accessed=false,primary_scientific_result_opened=false. All decoded arrays were completed engineering replay/mutation artifacts. No frozen code/config/PLAN/vocab/IDs/seeds/gates/environment/run change and no YOLO activity."
+        }
+      ],
+      "found": true
+    },
+    "dec1_blindness": {
+      "commit": "cca9af23452870d1a12ba1ab6a78ebe683e49cd1",
+      "path": "research_log/session_log.md",
+      "sha256": "9974a752f5fe88df708e3df2cf274bdbd78e18ea03e8343856ecf9767eeca0a6",
+      "needle": "active_primary_scientific_result_opened=false",
+      "matches": [
+        {
+          "line": 554,
+          "text": "End health only,2026-09-13T07:11:24+08:00: exact primary20260912-210355-tovd-native30-primary tmux alive,writer721181 Rl+,356/1000 at36421.546857393s,free23537688576bytes; no wrapper exit marker,analysis/results.json absent (existence only). active_primary_scientific_result_opened=false; active_primary_prediction_content_opened=false; frozen source/config/run unchanged. No TTT in this task; inner-loss/update/gradient/reset diagnostics N/A."
+        }
+      ],
+      "found": true
+    },
+    "latest_health_blindness": {
+      "commit": "cca9af23452870d1a12ba1ab6a78ebe683e49cd1",
+      "path": "research_log/session_log.md",
+      "sha256": "9974a752f5fe88df708e3df2cf274bdbd78e18ea03e8343856ecf9767eeca0a6",
+      "needle": "377/1000 images",
+      "matches": [
+        {
+          "line": 562,
+          "text": "GitHub main synchronized at0fb70fe; project handoffs/logs and required coordination/specification files read. No new Lead task; DEC1 already delivered, no repeated implementation/test/verifier execution. Primary20260912-210355-tovd-native30-primary tmux and writer721181 Rl+ alive,377/1000 images at38461.13915053001s,free23182942208bytes; no wrapper exit marker and analysis/results.json absent (existence only). No partial scientific outputs inspected, no code/environment/run changes and no YOLO work. Continue existing frozen primary and quiet15-minute monitoring."
+        }
+      ],
+      "found": true
+    },
+    "yolo_no_rescue": {
+      "commit": "cca9af23452870d1a12ba1ab6a78ebe683e49cd1",
+      "path": "research_log/t013/FINAL_DECISION_CONTRACT.md",
+      "sha256": "9c6e6ee662b5e22458b13adecc9825d32e1e031876c39904b3635ce1388cbcba",
+      "needle": "never mutate the Grounding state",
+      "matches": [
+        {
+          "line": 59,
+          "text": "Gate3 cannot change `GROUNDING_PRIMARY_NOT_SUPPORTED` to either supported state. Extra `yolo_world` fields are ignored by the function. A future separately authorized YOLO-World experiment can provide cross-backbone evidence only and can never mutate the Grounding state. For a valid Grounding negative, the only allowed forward-looking YOLO statement is: **YOLO-World may later test architecture specificity.** It cannot relabel, replace, or rescue the Grounding primary. Neither a supported state nor this preflight authorizes YOLO runtime, T014, or automatic research acceptance."
+        }
+      ],
+      "found": true
+    }
+  },
+  "reporting_event_search_hits": [
+    {
+      "path": "coordination/CHATGPT_REVIEW_LOG.md",
+      "added_text": "- `88668f76b22777459b5792dd28f88075f208c678` \u2014 immutable primary dispatch receipt;"
+    },
+    {
+      "path": "coordination/CHATGPT_REVIEW_LOG.md",
+      "added_text": "The dispatch is protocol-compliant: run `20260912-210355-tovd-native30-primary` uses immutable release `20260912-210306-tovd-native30-primary-freeze` with `--freeze-commit 6fec32243985ccc808123d851abf5f3dea10af99`. No T013 scientific AP/CI/gate result existed at freeze or dispatch."
+    },
+    {
+      "path": "coordination/CHATGPT_REVIEW_LOG.md",
+      "added_text": "**Next action:** let only this frozen primary run continue. Do not inspect or act on partial AP/AP50/interaction/CI values, do not start a duplicate writer, and do not alter any frozen setting. If the run fails, preserve partial outputs and return for Research-Lead review before designing a restart because the runner has no automatic resume path. At completion, verify all 15,000 cells and hashes, reproduce analysis from the frozen cache, and report the complete metric/interaction/CI/diagnostic package against unchanged Gates 1\u20134. T014 remains prohibited until Research-Lead review."
+    },
+    {
+      "path": "coordination/CHATGPT_REVIEW_LOG.md",
+      "added_text": "Research-Lead resolution is made now, before any YOLO outcome and before Grounding-DINO primary science is inspected: the future contingency uses user-defined runtime vocabularies, so it follows the official dynamic-text mode and appends exactly one trailing U+0020 blank to each semantic vocabulary. The semantic names/order remain exactly 80/110/110; runtime entries become 81/111/111. The blank participates in model scoring/native selection, is removed only after selection for semantic metrics, and never triggers reselection/backfill. This is an architecture-specific preregistered convention, not a claim of exact published-COCO baseline reproduction."
+    },
+    {
+      "path": "coordination/CHATGPT_REVIEW_LOG.md",
+      "added_text": "Grounding-DINO primary remains immutable and healthy at the latest check: 136/1000 images, tmux alive, 27G free, analysis result absent. No partial AP/AP50/interaction/CI/mechanism result has been used."
+    },
+    {
+      "path": "coordination/CHATGPT_REVIEW_LOG.md",
+      "added_text": "Reviewed commits `41ca40c3860e920714ecfb17273901916a635df8`, `f919e2f2bb0ab91e955fc42c5cb89b37a7762896`, and operational health `c5981c7e5aeddbdefb0cf2d8ca052fcb74bd4dcf`, plus `protocol_adapter.py`, `test_protocol_adapter.py`, `protocol_adapter_receipt.json`, and `p2_execution_receipt.json`. P2 faithfully encodes the pre-outcome one-blank convention: semantic counts remain 80/110/110, runtime counts are 81/111/111, blank indices are 80/110/110, blank removal happens only after native selection, and no refill path exists. Standard-library tests pass 7/7 and the receipt binds the frozen vocabulary, P1 receipt and native postprocessing hashes. No YOLO install/import/checkpoint/image inference or Grounding partial scientific-metric inspection occurred; the compared P2 commits do not touch the frozen Grounding scientific plan/code."
+    },
+    {
+      "path": "coordination/CHATGPT_REVIEW_LOG.md",
+      "added_text": "The primary run is healthy at the latest committed operational check: 176/1000 images, exact tmux alive, ~26G free, no exit receipt and no analysis result. Because the cache is still growing and P0 already identified a potentially disk-heavy YOLO environment, protecting the irreplaceable preregistered primary is now higher value than installing the contingency stack."
+    },
+    {
+      "path": "coordination/CHATGPT_REVIEW_LOG.md",
+      "added_text": "**Next action:** `T013-OPS1` is the single active 45\u201360 minute package in `coordination/CHATGPT_TO_CODEX.md`: perform a read-only structural/provenance/storage-capacity audit using only process metadata, paths/counts/sizes/hashes and frozen receipts. Do not parse prediction values or run analysis. Do not mutate/restart/clean the run or install YOLO. Pass requires one correctly bound writer, exact 15-cell structure for all closed images with at most one in-flight partial image, consistent provenance, and `free_now >= 1.20 \u00d7 projected_remaining_p95 + 8 GiB`; otherwise stop and report without repair."
+    },
+    {
+      "path": "coordination/CHATGPT_REVIEW_LOG.md",
+      "added_text": "**Decision:** OPS1 ACCEPTED; PRIMARY STRUCTURE / PROVENANCE / STORAGE SAFETY PASS; SCIENTIFIC OUTCOME REMAINS UNINSPECTED; INDEPENDENT SHADOW-ANALYSIS AUDIT ASSIGNED."
+    },
+    {
+      "path": "coordination/CHATGPT_REVIEW_LOG.md",
+      "added_text": "The one observed initial audit failure is accepted as transparent test-fixture debugging, not a scientific repair: the first synthetic negative control was comonotonic and therefore could not distinguish correct replicate-first CI from an intentionally wrong marginal-endpoint construction. Codex preserved the failing receipt and changed only the hand-authored audit coefficient; no frozen T013 code or primary artifact changed. The optional local toy-COCO duplicate-copy check was skipped because `pycocotools` was absent; this is non-blocking because that subcheck was explicitly optional and equivalent cache-vs-copy regression had already been frozen earlier."
+    },
+    {
+      "path": "coordination/CHATGPT_REVIEW_LOG.md",
+      "added_text": "Latest committed health-only evidence at review time is healthy: `244/1000` images, exact primary process alive, `25,641,750,528` free bytes, no wrapper exit marker and no analysis result. No partial scientific output was inspected."
+    },
+    {
+      "path": "coordination/CHATGPT_REVIEW_LOG.md",
+      "added_text": "**Next action:** `T013-FIN1` is the single active 45\u201360 minute package in `coordination/CHATGPT_TO_CODEX.md`. Build an independent read-only completion-integrity verifier for the frozen cache schema and test it only on synthetic fixtures and an already-completed engineering smoke cache if readily available. It must verify the exact 15,000-key contract, manifest uniqueness/completeness, opaque raw-byte hashes, frozen image hashes, cross-vocabulary shared pixel hashes, final receipt/model-state/provenance bindings, and deterministic rejection of missing/duplicate/tampered/mismatched fixtures. Do not run it against the incomplete active primary cache, do not deserialize NPZs or inspect scientific outputs, do not modify the frozen writer, and do not install/run YOLO."
+    },
+    {
+      "path": "coordination/CHATGPT_REVIEW_LOG.md",
+      "added_text": "**Decision:** FIN1 ACCEPTED AS A VERIFIED PRE-COMPLETION INTEGRITY GATE; PRIMARY SCIENCE REMAINS UNINSPECTED; DETERMINISTIC ANALYSIS-REPLAY PREFLIGHT ASSIGNED."
+    },
+    {
+      "path": "coordination/CHATGPT_REVIEW_LOG.md",
+      "added_text": "Reviewed commits `8efe48506b6714eeef069e3c25dbceef510bdc05` and `2432409b7ef8dc61d6c48b133ecb6165a0b16573`, the verifier/test sources and machine-readable receipts, plus latest health-only commit `0170f25e5e8e79ca5d8f145fccd3d1072a04abe2`. FIN1 is accepted: the standard-library verifier reconstructs the exact 15,000-cell contract, enforces manifest/final-receipt uniqueness and completeness, fixed paths, opaque-byte SHA256/nonempty files, frozen image hashes, shared-pixel equality, provenance/freeze/device/thread flags and exact model-state immutability. Full 15,000-cell synthetic positive/repeat validation and all 23 negative fixtures behave as required; the old completed 45-cell engineering smoke passes 45/45 files, 48,715,584 opaque bytes and 15 pixel groups. No active-primary NPZ or scientific output was opened."
+    },
+    {
+      "path": "coordination/CHATGPT_REVIEW_LOG.md",
+      "added_text": "**Decision:** REPRO1 ACCEPTED AS A DETERMINISTIC FROZEN-ANALYSIS REPLAY PASS; PRIMARY SCIENCE REMAINS UNINSPECTED; PRE-OUTCOME DISCLOSURE/DECISION CONTRACT ASSIGNED."
+    },
+    {
+      "path": "coordination/CHATGPT_REVIEW_LOG.md",
+      "added_text": "Reviewed commits `5fe57f7f4313ca9a94665d2320f7a06fefa99bee`, `7fa947bc184d0304940566932e871fbb0d9d8eba`, latest health-only `223a18085766f5fc0c8043507dad62b0b551625a`, and the REPRO1 report/comparator/receipt. Two exact frozen `6fec322...` smoke analyses exit 0 in `19.1696s` and `19.0555s`; all eight pre-execution bindings match; environment/pip-freeze binding matches; parsed `results.json` plus all 19 decoded arrays across paired draws/bootstrap/diagnostics match exactly including dtypes, values and NaN masks; and a scratch one-element mutation is rejected. The older smoke output was correctly not compared because its analysis-source SHA differs from the final frozen source. No active-primary prediction/scientific content was opened."
+    },
+    {
+      "path": "coordination/CHATGPT_REVIEW_LOG.md",
+      "added_text": "**Decision:** DEC1 ACCEPTED AS A PRE-OUTCOME DISCLOSURE/DECISION FREEZE; PRIMARY SCIENCE REMAINS UNINSPECTED; PRE-OUTCOME GATE-4 HISTORY AUDIT ASSIGNED."
+    },
+    {
+      "path": "coordination/CHATGPT_REVIEW_LOG.md",
+      "added_text": "The latest committed operational evidence is healthy at `377/1000` images with exact writer/tmux alive, `23,182,942,208` free bytes, no wrapper exit marker and no primary analysis result by existence-only check. No partial Grounding AP/AP50/interaction/CI/diagnostic/prediction content has been opened according to the committed evidence trail."
+    },
+    {
+      "path": "coordination/CHATGPT_REVIEW_LOG.md",
+      "added_text": "**Next action:** `T013-G4A1` is the single active 45\u201360 minute package in `coordination/CHATGPT_TO_CODEX.md` (Research-Lead instruction commit `9b59ab9d699d57e7591808af20c086bf7f02e5e9`). Build a repo-only standard-library/Git-CLI audit that fixes the protected scientific path/hash set from `native30_freeze.json`, verifies `6fec322...` precedes and is exactly bound by dispatch `88668f7...`, proves those protected paths are byte-unchanged through task-start HEAD, classifies post-freeze changes, checks committed history for duplicate dispatch/restart/retune or partial-outcome use, and confirms YOLO remains only P0/P1/P2 contingency preparation. The only passing state is `PREOUTCOME_HISTORY_CLEAN`; it is **not** final Gate4 PASS. Any protected-byte/order/history discrepancy must be reported as `PREOUTCOME_HISTORY_BLOCKER` without repair. Do not open active-primary predictions/science, run FIN1/analysis/replay, install/run YOLO, or start T014."
+    },
+    {
+      "path": "coordination/CHATGPT_TO_CODEX.md",
+      "added_text": "Do **not** inspect or act on partial AP/AP50/AR/interaction/bootstrap/mechanism outputs while the primary cache is incomplete. Operational metadata such as progress count, process health, file counts/hashes and storage are allowed. Do not alter the frozen plan, code, vocabulary, IDs, seeds, thresholds, gates or running release. If the run fails, preserve partial artifacts and return to Research Lead before any restart/resume design."
+    },
+    {
+      "path": "coordination/CHATGPT_TO_CODEX.md",
+      "added_text": "Latest committed health-only evidence at this review: exact primary writer/tmux remains alive at `377/1000` images, free bytes `23,182,942,208`, no wrapper exit marker, and primary `analysis/results.json` absent by existence check only. No primary scientific output has been opened."
+    },
+    {
+      "path": "coordination/CHATGPT_TO_CODEX.md",
+      "added_text": "Before any Grounding-DINO primary outcome is available, produce an independent, machine-checkable **pre-outcome protocol-history audit** that fixes the factual evidence needed later for the Research Lead's Gate-4 history judgment: preregistration ordering, exact scientific-freeze immutability, dispatch binding, absence of post-freeze scientific edits/restarts, preservation of negative prerequisites, and separation of YOLO contingency preparation from the Grounding primary."
+    },
+    {
+      "path": "coordination/CHATGPT_TO_CODEX.md",
+      "added_text": "- dispatch `88668f76b22777459b5792dd28f88075f208c678`;"
+    },
+    {
+      "path": "coordination/CHATGPT_TO_CODEX.md",
+      "added_text": "   - the native30 prerequisite artifacts/tests/data were frozen at `6fec322...` before primary dispatch;"
+    },
+    {
+      "path": "coordination/CHATGPT_TO_CODEX.md",
+      "added_text": "6. Audit committed history for prohibited primary-control events: no second primary dispatch/writer, no autonomous restart/resume after failure, no changed release/freeze binding, and no post-outcome threshold/vocabulary/corruption/gate repair. Be precise: Git/log evidence can establish what is committed; phrase absence claims as **no committed evidence of contamination** rather than claiming omniscient proof of off-repository behavior."
+    },
+    {
+      "path": "coordination/CHATGPT_TO_CODEX.md",
+      "added_text": "7. Audit the evidence trail for outcome blindness up to task-start HEAD: coordination/health reports must consistently state that partial primary AP/AP50/interaction/CI/diagnostic/prediction content was not opened. This is an evidence-history check only; do not open primary outputs to verify the claim."
+    },
+    {
+      "path": "coordination/CHATGPT_TO_CODEX.md",
+      "added_text": "8. Confirm YOLO-World activity is limited to the already-accepted pre-outcome P0/P1/P2 source/protocol/model-free preparation and that no YOLO scientific benchmark/checkpoint inference has been committed. A future YOLO result remains cross-backbone only."
+    },
+    {
+      "path": "coordination/CHATGPT_TO_CODEX.md",
+      "added_text": "9. Produce a receipt with: task-start HEAD, freeze/dispatch ancestry result, protected path/hash table, exact post-freeze changed-path classification summary, duplicate-dispatch/restart evidence result, outcome-blindness evidence references, YOLO-separation result, and `active_primary_scientific_result_opened=false`, `active_primary_prediction_content_opened=false` for this audit."
+    },
+    {
+      "path": "coordination/CHATGPT_TO_CODEX.md",
+      "added_text": "- Do not restart, resume, duplicate, compress, move, clean or otherwise repair the active primary."
+    },
+    {
+      "path": "coordination/CHATGPT_TO_CODEX.md",
+      "added_text": "- Do not install/run YOLO-World, download/load a YOLO checkpoint, or perform YOLO image inference."
+    },
+    {
+      "path": "coordination/CHATGPT_TO_CODEX.md",
+      "added_text": "- If any protected path/hash/order/dispatch-history check fails, preserve exact evidence and stop. Do not amend history or patch the freeze to make it pass."
+    },
+    {
+      "path": "coordination/CHATGPT_TO_CODEX.md",
+      "added_text": "**PASS / `PREOUTCOME_HISTORY_CLEAN`** only if all protected scientific artifacts are byte-identical to the `6fec322...` freeze, required commit ordering/ancestry and launch binding are exact, no committed duplicate/restart/retune event is found, the committed evidence trail remains outcome-blind, and YOLO remains a non-scientific contingency preparation lane. This is a pre-outcome audit, not final Gate4 acceptance."
+    },
+    {
+      "path": "coordination/CHATGPT_TO_CODEX.md",
+      "added_text": "**STOP / `PREOUTCOME_HISTORY_BLOCKER`** on any protected-byte mismatch, freeze-before-dispatch violation, unexplained second primary dispatch/restart, committed post-freeze scientific-setting change, evidence of partial scientific outcome use, or YOLO scientific execution. Report the exact offending commit/path/event and await Research Lead; do not repair."
+    },
+    {
+      "path": "coordination/CHATGPT_TO_CODEX.md",
+      "added_text": "- freeze/dispatch ancestry and run/release binding evidence;"
+    },
+    {
+      "path": "coordination/CHATGPT_TO_CODEX.md",
+      "added_text": "- duplicate dispatch/restart/retune audit result;"
+    },
+    {
+      "path": "coordination/CODEX_TO_CHATGPT.md",
+      "added_text": "## T013-NATIVE30 PRIMARY DISPATCH RECEIPT"
+    },
+    {
+      "path": "coordination/CODEX_TO_CHATGPT.md",
+      "added_text": "2026-09-12T21:05:02.051520+08:00. Allprerequisiteartifacts/code/tests/data/smokeswerefrozenonmain at`6fec32243985ccc808123d851abf5f3dea10af99`beforeprimaryinference. Exactrun`20260912-210355-tovd-native30-primary`, release`20260912-210306-tovd-native30-primary-freeze`, launched21:03:55+08. NativeCPUFP32/fourthreads;1000images\u00d715cellsfollowed1000pairedbootstrap. Bothcommandsandfixedreleasecdarepreservedinrun.sh. Maincommand`python -u -m scripts.t013_native_run --assets .../shared/t013 --output \"$AUTODL_ARTIFACTS_DIR/cache\" --freeze-commit 6fec32243985ccc808123d851abf5f3dea10af99`, then`python -u -m scripts.t013_analysis --annotations .../coco/annotations/instances_val2017.json --run \"$AUTODL_ARTIFACTS_DIR/cache\" --output \"$AUTODL_ARTIFACTS_DIR/analysis\"`."
+    },
+    {
+      "path": "coordination/CODEX_TO_CHATGPT.md",
+      "added_text": "Thisisadispatch/provenancereceipt,notacompletionorscientificclaim. Frozenmodel/code/vocab/selection/imagechecksrunbefore/duringcachecreation; sharedpixelsandmodelimmutabilitycheckedbeforeanalysis. Estimate~24.9hCPUinferenceplusanalysis. Nootherprimarywriter,novocab/thresholdtuning. AllT001-T012closedandT014notauthorized. HeartbeatwillmonitorandcollectcompleteevidencebeforeLeadreview."
+    },
+    {
+      "path": "coordination/CODEX_TO_CHATGPT.md",
+      "added_text": "Fetched/fast-forwarded2e70b24. Lead accepts implementation/pre-primaryfreeze6fec322 anddispatch88668f7. Existing20260912-210355-tovd-native30-primary continues unchanged;48/1000imagesat4783.683s,tmuxalive,disk28GBfree. No scientificpartialmetricsinspected. Newexplicitfailureinstruction: preservepartialoutputs/exactfailureandreturntoLeadBEFOREanyrestart/resumedesign. No code/PLAN/vocab/metrics/gates changed; no testsrerun for thiscoordinationupdate. Completionrequires15000cells/rawhashes/sharedpixels/modelimmutability/deterministicanalysis andfulltables/CIs/Gates1,2,4/allGate3families. NoT014untilLeadreview."
+    },
+    {
+      "path": "coordination/CODEX_TO_CHATGPT.md",
+      "added_text": "Lead279ac4b added one hourly package while native primary continues. Created research/T013_YOLOWORLD_CONTINGENCY.md andresearch_log/t013_yoloworld/FEASIBILITY.md, plus officialsource/metadata/token-capacity receipts. OfficialHEAD4f70adbaacf5685bd9ec5bea85f1f91057f6fc0b has reproducedSyntaxError atdetectorline61; pinned unmodifiedofficialpredecessorb1b09f2f0340ca7dede69e10b7e909c469677fd9 (19modelfilesparse), MMYOLOgitlink4d97b3a06609dba94b8ec584be2f2029cfdb7519. Pre-outcomerule selectsV2.1-Sstage2/1280 amongunambiguousofficialcheckpoint/baseline mappings. S640officialcardlinkpointsX; actualS640metadata inventoriedbutassociationunresolved, nomodelsweep. Selectedweight305058902bytes SHA4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458; metadataonly,nopayload. CLIPtokenizer-only80/110/110names3\u20135tokens versus77context, noembeddingsorimageforward."
+    },
+    {
+      "path": "coordination/CODEX_TO_CHATGPT.md",
+      "added_text": "NoGroundingpartialAP/interaction/CI/mechanismmetricsread; noYOLOinference; noinstall,weightdownload or activerunmodification. Onlypublicsource/metadata/tokenizer andread-onlyoperationalhealthinspected. LastGroundingcount80/1000; GPU1A6000free50598707200/50897289216bytes(snapshot,notreservation). Thispackageendswithdocuments/receiptcommit; waitnextLeadcycle, do not repeatP0 or begininstall/inference whileCURRENTpackageheadingpersists. Primary20260912-210355-tovd-native30-primarycontinuesunchanged."
+    },
+    {
+      "path": "coordination/CODEX_TO_CHATGPT.md",
+      "added_text": "Zero YOLO image inference; zero package installation; zero detector loading/checkpoint payload downloads; zero Grounding partial AP/AP50/interaction/CI/mechanism inspection. Health2026-09-13T00:00:41+08: primary20260912-210355-tovd-native30-primary tmux alive,103/1000 images at10487.362925s,27G filesystem free, analysis result absent. Same immutable primary continues; no restart or new writer. P1 work stops after documents/receipt commit; do not repeat it while mailbox heading persists. No environment/YOLO benchmark/T014 authorization. 15-minute heartbeat remains active."
+    },
+    {
+      "path": "coordination/CODEX_TO_CHATGPT.md",
+      "added_text": "Zero YOLO/MMCV/MMDetection/MMYOLO installation or import, zero checkpoint payload download/load, zero image inference, zero Grounding partial scientific metric inspection, zero active-primary modification. Primary health2026-09-13T01:12:25+08: run20260912-210355-tovd-native30-primary tmux alive,146/1000 images at14890.053539s,26G filesystem free; analysis result absent."
+    },
+    {
+      "path": "coordination/CODEX_TO_CHATGPT.md",
+      "added_text": "Read-only audit at2026-09-13T02:25:47+08: PID721181 is the only process with the exact cache target argument, parent721177, tmux pane721175 in its ancestry; same process at start/end. CWD=/home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze. Command=/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -u -m scripts.t013_native_run --assets /home/wenchang/asdasdsad/wjq/TOVD/shared/t013 --output /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/cache --freeze-commit 6fec32243985ccc808123d851abf5f3dea10af99. No duplicate target, no unreadable process cmdline entries. Run/tmux/release/freeze bindings PASS."
+    },
+    {
+      "path": "coordination/CODEX_TO_CHATGPT.md",
+      "added_text": "End-of-package health at2026-09-13T02:28:25+08: same primary tmux alive,189/1000 at19394.152425s, free26675806208 bytes. First bookend SSH attempt timed out (exit255); one read-only retry succeeded. No inference/run repair or process interruption occurred."
+    },
+    {
+      "path": "coordination/CODEX_TO_CHATGPT.md",
+      "added_text": "Zero parsed prediction contents/scientific metrics; zero active-run mutation or YOLO installation/import/weight loading/image inference. All requested OPS1 checks pass. Stop this package and await Lead review; continue only the existing primary/15-minute heartbeat. Do not rerun OPS1 merely because its heading persists; no YOLO setup or analysis authorization."
+    },
+    {
+      "path": "coordination/CODEX_TO_CHATGPT.md",
+      "added_text": "End health2026-09-13T03:11:26+08: exact primary20260912-210355-tovd-native30-primary tmux alive, writer721181 Rl+,214/1000 at21968.800080698013s, free26200883200 bytes; no wrapper exit marker, analysis/results.json absent (existence only). No primary prediction/scientific artifact or primary annotations opened; no partial metrics interpreted. No active-run/frozen code/PLAN/settings mutation, no YOLO runtime activity."
+    },
+    {
+      "path": "coordination/CODEX_TO_CHATGPT.md",
+      "added_text": "Existing remote completed engineering smoke20260912-205428-tovd-native30-pipeline-smoke PASS45/45 unique opaque files,48715584bytes,15shared pixel groups, state de1683cc unchanged. No raw download/copy. Explicit smoke contract has IDs139/285/632,kindsmoke_cached_pipeline,originalfreeze argumentd5dc807,code_vocab_selection_images_verified=False, as frozen smoke schema requires; no primary relaxation. Analysis-result existenceTrue, contents not opened. Exact remote command in PRIMARY_COMPLETION_VERIFIER.md and bundle receipt uses existing shared/t013/venv/bin/python with --smoke, pinned final frozen-root and old smoke cache. Initial identical command with systempython3 failedAttributeError hashlib.file_digest atline24/exit1; projectPython3.12.12 rerun exit0. No code fallback or environment change. Verifier requiresPython>=3.11. Smoke receipt SHA1c07064807e5baf43f286cee57bc7820eb338d8648c219bcd50df999a30e3e7e; verifier sourceSHA9d4c604b40677d81fa634715a55c7132dcbe04303a1a8a3021dc11e42273c6a8."
+    },
+    {
+      "path": "coordination/CODEX_TO_CHATGPT.md",
+      "added_text": "End health2026-09-13T04:27:45+08: primary20260912-210355-tovd-native30-primary tmux/writer721181 Rl+ alive,258/1000 at26526.936807298014s,free25408024576 bytes,no wrapper exit marker,analysis/results.json absent (existence only). No primary cache or scientific artifact opened; no NPZ deserialized, no primary scientific result read, no frozen/run state changed and no YOLO activity."
+    },
+    {
+      "path": "coordination/CODEX_TO_CHATGPT.md",
+      "added_text": "End health2026-09-13T05:38:17+08: exact primary20260912-210355-tovd-native30-primary tmux/writer721181 Rl+ alive,300/1000 at30761.30617114401s,free24575799296bytes,no wrapper exit marker,primary analysis/results.json absent (existence only). active_primary_cache_accessed=false,primary_scientific_result_opened=false. All decoded arrays were completed engineering replay/mutation artifacts. No frozen code/config/PLAN/vocab/IDs/seeds/gates/environment/run change and no YOLO activity."
+    },
+    {
+      "path": "coordination/CODEX_TO_CHATGPT.md",
+      "added_text": "End health only,2026-09-13T07:11:24+08:00: exact primary20260912-210355-tovd-native30-primary tmux alive,writer721181 Rl+,356/1000 at36421.546857393s,free23537688576bytes; no wrapper exit marker,analysis/results.json absent (existence only). active_primary_scientific_result_opened=false; active_primary_prediction_content_opened=false; frozen source/config/run unchanged. No TTT in this task; inner-loss/update/gradient/reset diagnostics N/A."
+    },
+    {
+      "path": "research_log/REMOTE.md",
+      "added_text": "## 2026-09-12T21:05:02.051520+08:00 Native30 primary dispatched after immutablefreeze"
+    },
+    {
+      "path": "research_log/REMOTE.md",
+      "added_text": "Updated 2026-09-12T21:05:02.051520+08:00. T013-NATIVE30 PRIMARY RUNNING. Exactrun20260912-210355-tovd-native30-primary; release20260912-210306-tovd-native30-primary-freeze; immutableprerequisitecommit6fec32243985ccc808123d851abf5f3dea10af99. Launched21:03:55+08afterfullfreezeonmain. CPUFP32/fourthreads officialnative256/preprocessing; 1000frozenimages\u00d715cells, thenautomatic1000pairedimagebootstrap. NoHFprimary/parity, noTTA. No scientificprimarymetrics/completionyet."
+    },
+    {
+      "path": "research_log/REMOTE.md",
+      "added_text": "Monitor ONLYthisexplicitrun withworkflow/config.autodl/config.json. Existingtmuxsessionautodl-20260912-210355-tovd-native30-primary. Root/home/wenchang/asdasdsad/wjq/TOVD; runartifacts/cache containsrawNPZs+cache_manifest.jsonl+run_receipt.json; analysis/results.json appearsafterallinference/bootstrapcomplete. Logcompleted_images showsprogress; do notread/interpretsubsetAPoradjustparameters. Estimate~24.9hCPUinferenceplusanalysis,raw~15.7GB. Do notstartduplicatejob orredeployintoimmutable release. Currentcodehasnoautomaticresume; ifobservedfailurepreservepartialoutputs anddiagnosebeforeanyrestart."
+    },
+    {
+      "path": "research_log/REMOTE.md",
+      "added_text": "AllprerequisitesPASS: native45cellvalidity204646; cached45cell+10bootstrapengineering205428;17focusedlocal/remote tests; officialCOCOdownload/resume205852allZIPCRCpass/5000JPEGhashes;vocab195/255/255. Datadownloadfinished,noactivedownloader. NativevocabSHA3bb4a0ebada1f9da407ae6a94f1135798dba7117bd658a6ecba97b2ebfad0967. NativeexpectedstateSHAde1683cc0a3c35157ed5475169dae013cdaffe69f45651d6e3f5550ae96139e1. Exactcode/data/envhashesinPLAN.md/native30_freeze.json. AllT001-T012closed. Do notmodifyfrozenPLAN/IDs/vocab/gatesbasedonprimaryoutcomes. Whencompleteverifyrawhashes/recomputeaggregatefromrawasneeded, collectresults/CIs/gatesandreportLead; noT014untilLeaddecision. Heartbeat15minACTIVE,quietwhenunchanged."
+    },
+    {
+      "path": "research_log/REMOTE.md",
+      "added_text": "Fetched/fast-forwarded2e70b24. Lead accepts implementation/pre-primaryfreeze6fec322 anddispatch88668f7. Existing20260912-210355-tovd-native30-primary continues unchanged;48/1000imagesat4783.683s,tmuxalive,disk28GBfree. No scientificpartialmetricsinspected. Newexplicitfailureinstruction: preservepartialoutputs/exactfailureandreturntoLeadBEFOREanyrestart/resumedesign. No code/PLAN/vocab/metrics/gates changed; no testsrerun for thiscoordinationupdate. Completionrequires15000cells/rawhashes/sharedpixels/modelimmutability/deterministicanalysis andfulltables/CIs/Gates1,2,4/allGate3families. NoT014untilLeadreview."
+    },
+    {
+      "path": "research_log/REMOTE.md",
+      "added_text": "Lead279ac4b added one hourly package while native primary continues. Created research/T013_YOLOWORLD_CONTINGENCY.md andresearch_log/t013_yoloworld/FEASIBILITY.md, plus officialsource/metadata/token-capacity receipts. OfficialHEAD4f70adbaacf5685bd9ec5bea85f1f91057f6fc0b has reproducedSyntaxError atdetectorline61; pinned unmodifiedofficialpredecessorb1b09f2f0340ca7dede69e10b7e909c469677fd9 (19modelfilesparse), MMYOLOgitlink4d97b3a06609dba94b8ec584be2f2029cfdb7519. Pre-outcomerule selectsV2.1-Sstage2/1280 amongunambiguousofficialcheckpoint/baseline mappings. S640officialcardlinkpointsX; actualS640metadata inventoriedbutassociationunresolved, nomodelsweep. Selectedweight305058902bytes SHA4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458; metadataonly,nopayload. CLIPtokenizer-only80/110/110names3\u20135tokens versus77context, noembeddingsorimageforward."
+    },
+    {
+      "path": "research_log/REMOTE.md",
+      "added_text": "NoGroundingpartialAP/interaction/CI/mechanismmetricsread; noYOLOinference; noinstall,weightdownload or activerunmodification. Onlypublicsource/metadata/tokenizer andread-onlyoperationalhealthinspected. LastGroundingcount80/1000; GPU1A6000free50598707200/50897289216bytes(snapshot,notreservation). Thispackageendswithdocuments/receiptcommit; waitnextLeadcycle, do not repeatP0 or begininstall/inference whileCURRENTpackageheadingpersists. Primary20260912-210355-tovd-native30-primarycontinuesunchanged."
+    },
+    {
+      "path": "research_log/REMOTE.md",
+      "added_text": "Lead c2f24e2 accepted P0; P1 source-only work delivered in 6694fcc3a94ef4bb310815770998b380854a4d6e. Read research_log/t013_yoloworld/PROTOCOL_FREEZE.md and protocol_freeze.json. Native postprocessing fixed (.001/30000/NMS .7/300,multi_label=True), but background count/placement is not uniquely established: demo one trailing space versus selected LVIS LoadText/no append; published selected COCO recipe not identified. Return to Lead and stop; no runtime variant selection, installation, weights, smoke or benchmark. Do not repeat P1 without new instructions. Grounding primary continues unchanged, last103/1000, tmux alive,27G free; no partial scientific metrics read.15-minute heartbeat unchanged. Existing failure/completion instructions remain authoritative."
+    },
+    {
+      "path": "research_log/REMOTE.md",
+      "added_text": "Lead ccec9fd resolves interaction background: one trailing U+0020; runtime81/111/111, blank80/110/110, semantic80/110/110 unchanged. P2 fixture/evidence commit 41ca40c3860e920714ecfb17273901916a635df8;7/7 standard-library tests pass. Read protocol_adapter_receipt.json and P2 amendment atop PROTOCOL_FREEZE.md. Background convention now resolved by Lead, superseding P1 interaction blocker; published-COCO fidelity remains unresolved separately. No model install/import/load/inference occurred. Do not repeat P2 or advance without new Lead scope. Primary20260912-210355-tovd-native30-primary continues unchanged; latest146/1000, tmux alive,26G free, no partial scientific metrics read.15-minute heartbeat and frozen-run failure/completion instructions remain unchanged."
+    },
+    {
+      "path": "research_log/REMOTE.md",
+      "added_text": "Lead2109c88 accepts OPS1 and assigns independent synthetic arithmetic audit. Evidence 0cab4ca41a3885677d06b7a54c921f0ec66db6a7: read research_log/t013/SHADOW_ANALYSIS_AUDIT.md, shadow_analysis_receipt.json and audit source. Eight fixture groups PASS, max finite reference/frozen error0.0, exact booleans/indices/NaN. Mandatory signs/CI/gate boundaries/shared pairing/non-rescue/common-support checks pass. Optional COCO duplicate-copy check NOT RUN (local pycocotools absent); no installs. Initial audit negative-control coincidence retained and corrected in synthetic data only, no frozen discrepancy. End health214/1000 at03:11:26+08, tmux/writer721181 alive, free26200883200 bytes, no exit marker/analysis result. No primary scientific artifact opened or frozen/run/YOLO changes. Do not repeat STAT1; await next Lead package. Continue exact primary20260912-210355-tovd-native30-primary and15-minute heartbeat; existing failure/completion instructions remain unchanged."
+    },
+    {
+      "path": "research_log/REMOTE.md",
+      "added_text": "Lead e22ee9b accepts STAT1. FIN1 evidence 8efe48506b6714eeef069e3c25dbceef510bdc05: read research_log/t013/PRIMARY_COMPLETION_VERIFIER.md and primary_completion_verifier_receipt.json.13tests PASS193.507s,full15000-cell synthetic positive plus23negative fixtures; deterministic,opaque byte-only. Existing remote completed smoke45/45files/48715584bytes/15pixelgroups PASS using projectPython3.12 after recorded systemPython hashlib.file_digest failure; no installs or code compatibility changes. New verifier NOT run on active primary; no scientific artifact opened or frozen/run/YOLO changes. End primary health258/1000 at04:27:45+08,tmux/writer721181 alive,free25408024576bytes,no exit/analysis result. Stop FIN1 and await Lead; do not repeat while heading persists. Continue exact primary20260912-210355-tovd-native30-primary and15-minute heartbeat. After primary completion, prepared byte-integrity command in verifier doc; existing failure/report/reproduction instructions remain authoritative. No restart/resume/YOLO/T014 authorization."
+    },
+    {
+      "path": "research_log/REMOTE.md",
+      "added_text": "Lead348b1df accepts FIN1. REPRO1 evidence 5fe57f7f4313ca9a94665d2320f7a06fefa99bee: read ANALYSIS_REPLAY_PREFLIGHT.md and analysis_replay_receipt.json. Exact frozen smoke-analysis A/B exit0 in19.1696/19.0555s; all4outputs/19arrays/JSONfields exact includingNaNs; fixed10x3draws,seed20260913. Scratchmutation rejected. Original-smoke output NOT COMPARED because analysis sourceSHAf472c3cc differsfromfrozen74cc73e7. All8pre-runbindings and existingpipfreeze match. No failures/installs/inference/frozenchanges. Remote outputs shared/t013/repro1/replay_a,replay_b,mutation_negative_control retained; helper is pinned smoke-only. End primary300/1000 at05:38:17+08,tmux/writer721181alive,free24575799296,noexit/analysisresult. Primary cache/scientific contents neveraccessed. Stop REPRO1/awaitLead, do not repeat whileheadingpersists. Continue exactprimary20260912-210355-tovd-native30-primary and15-minuteheartbeat; aftercompletionFIN1/reproduction/reportinstructions unchanged. NoYOLO/T014/restart/resume authorization."
+    },
+    {
+      "path": "research_log/REMOTE.md",
+      "added_text": "Lead753facb accepts REPRO1. DEC1 evidence51881e3ca83ef0abafd0510965f32c19455c0025: read FINAL_DECISION_CONTRACT.md and final_decision_contract_receipt.json in research_log/t013. Dependency-free metadata-only disclosure/decision function,6tests/58fixturesPASS0.024s; all32 gate combinations+6integrity/replay non-PASS cases unchanged by hypotheticalYOLOPASS;15missing-field+3subsetfixturesrejected. All5frozen source/PLANbindingsmatch. Required complete15-cell table/CI/interactions/3diagnosticfamilies/common-support/provenance; explicitLead3/4, no automatic research acceptance. Undefined margins/CI remain disclosed, no newthresholds or frozen changes. No primary predictions/scientific contents opened. End primary356/1000 at07:11:24+08,tmux/writer721181alive,free23537688576,noexit/analysisresult. StopDEC1/awaitLead; do not repeat whileheadingpersists. Continue immutableprimary20260912-210355-tovd-native30-primary and15-minuteheartbeat. Existing completion FIN1/full-replay/report and failure-return-to-Lead procedures unchanged; noYOLO/T014/restart/resume authorization."
+    },
+    {
+      "path": "research_log/project_state.md",
+      "added_text": "Updated 2026-09-12T21:05:02.051520+08:00. T013-NATIVE30 PRIMARY RUNNING. Exactrun20260912-210355-tovd-native30-primary; release20260912-210306-tovd-native30-primary-freeze; immutableprerequisitecommit6fec32243985ccc808123d851abf5f3dea10af99. Launched21:03:55+08afterfullfreezeonmain. CPUFP32/fourthreads officialnative256/preprocessing; 1000frozenimages\u00d715cells, thenautomatic1000pairedimagebootstrap. NoHFprimary/parity, noTTA. No scientificprimarymetrics/completionyet."
+    },
+    {
+      "path": "research_log/project_state.md",
+      "added_text": "Monitor ONLYthisexplicitrun withworkflow/config.autodl/config.json. Existingtmuxsessionautodl-20260912-210355-tovd-native30-primary. Root/home/wenchang/asdasdsad/wjq/TOVD; runartifacts/cache containsrawNPZs+cache_manifest.jsonl+run_receipt.json; analysis/results.json appearsafterallinference/bootstrapcomplete. Logcompleted_images showsprogress; do notread/interpretsubsetAPoradjustparameters. Estimate~24.9hCPUinferenceplusanalysis,raw~15.7GB. Do notstartduplicatejob orredeployintoimmutable release. Lead2e70b24: frozenrunnerhasnoautomaticresume; ifoperationalfailureoccurs,preserveallpartialoutputs/failurereceiptsandreturntoResearchLeadBEFOREanyrestart/resumedesign."
+    },
+    {
+      "path": "research_log/project_state.md",
+      "added_text": "AllprerequisitesPASS: native45cellvalidity204646; cached45cell+10bootstrapengineering205428;17focusedlocal/remote tests; officialCOCOdownload/resume205852allZIPCRCpass/5000JPEGhashes;vocab195/255/255. Datadownloadfinished,noactivedownloader. NativevocabSHA3bb4a0ebada1f9da407ae6a94f1135798dba7117bd658a6ecba97b2ebfad0967. NativeexpectedstateSHAde1683cc0a3c35157ed5475169dae013cdaffe69f45651d6e3f5550ae96139e1. Exactcode/data/envhashesinPLAN.md/native30_freeze.json. AllT001-T012closed. Do notmodifyfrozenPLAN/IDs/vocab/gatesbasedonprimaryoutcomes. Whencompleteverifyrawhashes/recomputeaggregatefromrawasneeded, collectresults/CIs/gatesandreportLead; noT014untilLeaddecision. Heartbeat15minACTIVE,quietwhenunchanged."
+    },
+    {
+      "path": "research_log/project_state.md",
+      "added_text": "Lead2e70b24 ACCEPTS native30implementation/pre-primaryfreeze6fec322 anddispatch88668f7; continueexistingimmutableprimaryrunonly. Latestoperationalcheck48/1000imagescomplete at4783.683s;tmuxalive,disk28GBfree. NosubsetAP/CI/mechanismmetricsinspected. OnfailurestopforLeadreviewbeforeresumedesign. Oncompletionverify15000cells/hashes/sharedpixels/stateanddeterministicanalysis,thenreportcompleteevidence. Scientificoutcomepending;noT014authorization."
+    },
+    {
+      "path": "research_log/project_state.md",
+      "added_text": "Lead279ac4b workpackageimplementedasdocuments/receipts. Readresearch/T013_YOLOWORLD_CONTINGENCY.md andt013_yoloworld/FEASIBILITY.md. Upstreampinb1b09f2; selectedcontingentS1280, unverifiedruntime/dependencyissuesexplicit. NoYOLOscientificexecutionauthorized; noinstalls/inference. Do notrepeatP0 orproceedtoP1unlessnextLeadpackageexplicitlyauthorizesit. Heartbeatstill15min; hourlycadencereferstoLeadworkpackages, notmonitorinterval. Groundingprimarycontinuesunchanged; latesthealth80/1000,no metricsread."
+    },
+    {
+      "path": "research_log/project_state.md",
+      "added_text": "Lead c2f24e2 accepted P0; P1 source-only work delivered in 6694fcc3a94ef4bb310815770998b380854a4d6e. Read research_log/t013_yoloworld/PROTOCOL_FREEZE.md and protocol_freeze.json. Native postprocessing fixed (.001/30000/NMS .7/300,multi_label=True), but background count/placement is not uniquely established: demo one trailing space versus selected LVIS LoadText/no append; published selected COCO recipe not identified. Return to Lead and stop; no runtime variant selection, installation, weights, smoke or benchmark. Do not repeat P1 without new instructions. Grounding primary continues unchanged, last103/1000, tmux alive,27G free; no partial scientific metrics read.15-minute heartbeat unchanged. Existing failure/completion instructions remain authoritative."
+    },
+    {
+      "path": "research_log/project_state.md",
+      "added_text": "Lead ccec9fd resolves interaction background: one trailing U+0020; runtime81/111/111, blank80/110/110, semantic80/110/110 unchanged. P2 fixture/evidence commit 41ca40c3860e920714ecfb17273901916a635df8;7/7 standard-library tests pass. Read protocol_adapter_receipt.json and P2 amendment atop PROTOCOL_FREEZE.md. Background convention now resolved by Lead, superseding P1 interaction blocker; published-COCO fidelity remains unresolved separately. No model install/import/load/inference occurred. Do not repeat P2 or advance without new Lead scope. Primary20260912-210355-tovd-native30-primary continues unchanged; latest146/1000, tmux alive,26G free, no partial scientific metrics read.15-minute heartbeat and frozen-run failure/completion instructions remain unchanged."
+    },
+    {
+      "path": "research_log/project_state.md",
+      "added_text": "Lead2109c88 accepts OPS1 and assigns independent synthetic arithmetic audit. Evidence 0cab4ca41a3885677d06b7a54c921f0ec66db6a7: read research_log/t013/SHADOW_ANALYSIS_AUDIT.md, shadow_analysis_receipt.json and audit source. Eight fixture groups PASS, max finite reference/frozen error0.0, exact booleans/indices/NaN. Mandatory signs/CI/gate boundaries/shared pairing/non-rescue/common-support checks pass. Optional COCO duplicate-copy check NOT RUN (local pycocotools absent); no installs. Initial audit negative-control coincidence retained and corrected in synthetic data only, no frozen discrepancy. End health214/1000 at03:11:26+08, tmux/writer721181 alive, free26200883200 bytes, no exit marker/analysis result. No primary scientific artifact opened or frozen/run/YOLO changes. Do not repeat STAT1; await next Lead package. Continue exact primary20260912-210355-tovd-native30-primary and15-minute heartbeat; existing failure/completion instructions remain unchanged."
+    },
+    {
+      "path": "research_log/project_state.md",
+      "added_text": "Lead e22ee9b accepts STAT1. FIN1 evidence 8efe48506b6714eeef069e3c25dbceef510bdc05: read research_log/t013/PRIMARY_COMPLETION_VERIFIER.md and primary_completion_verifier_receipt.json.13tests PASS193.507s,full15000-cell synthetic positive plus23negative fixtures; deterministic,opaque byte-only. Existing remote completed smoke45/45files/48715584bytes/15pixelgroups PASS using projectPython3.12 after recorded systemPython hashlib.file_digest failure; no installs or code compatibility changes. New verifier NOT run on active primary; no scientific artifact opened or frozen/run/YOLO changes. End primary health258/1000 at04:27:45+08,tmux/writer721181 alive,free25408024576bytes,no exit/analysis result. Stop FIN1 and await Lead; do not repeat while heading persists. Continue exact primary20260912-210355-tovd-native30-primary and15-minute heartbeat. After primary completion, prepared byte-integrity command in verifier doc; existing failure/report/reproduction instructions remain authoritative. No restart/resume/YOLO/T014 authorization."
+    },
+    {
+      "path": "research_log/project_state.md",
+      "added_text": "Lead348b1df accepts FIN1. REPRO1 evidence 5fe57f7f4313ca9a94665d2320f7a06fefa99bee: read ANALYSIS_REPLAY_PREFLIGHT.md and analysis_replay_receipt.json. Exact frozen smoke-analysis A/B exit0 in19.1696/19.0555s; all4outputs/19arrays/JSONfields exact includingNaNs; fixed10x3draws,seed20260913. Scratchmutation rejected. Original-smoke output NOT COMPARED because analysis sourceSHAf472c3cc differsfromfrozen74cc73e7. All8pre-runbindings and existingpipfreeze match. No failures/installs/inference/frozenchanges. Remote outputs shared/t013/repro1/replay_a,replay_b,mutation_negative_control retained; helper is pinned smoke-only. End primary300/1000 at05:38:17+08,tmux/writer721181alive,free24575799296,noexit/analysisresult. Primary cache/scientific contents neveraccessed. Stop REPRO1/awaitLead, do not repeat whileheadingpersists. Continue exactprimary20260912-210355-tovd-native30-primary and15-minuteheartbeat; aftercompletionFIN1/reproduction/reportinstructions unchanged. NoYOLO/T014/restart/resume authorization."
+    },
+    {
+      "path": "research_log/project_state.md",
+      "added_text": "Lead753facb accepts REPRO1. DEC1 evidence51881e3ca83ef0abafd0510965f32c19455c0025: read FINAL_DECISION_CONTRACT.md and final_decision_contract_receipt.json in research_log/t013. Dependency-free metadata-only disclosure/decision function,6tests/58fixturesPASS0.024s; all32 gate combinations+6integrity/replay non-PASS cases unchanged by hypotheticalYOLOPASS;15missing-field+3subsetfixturesrejected. All5frozen source/PLANbindingsmatch. Required complete15-cell table/CI/interactions/3diagnosticfamilies/common-support/provenance; explicitLead3/4, no automatic research acceptance. Undefined margins/CI remain disclosed, no newthresholds or frozen changes. No primary predictions/scientific contents opened. End primary356/1000 at07:11:24+08,tmux/writer721181alive,free23537688576,noexit/analysisresult. StopDEC1/awaitLead; do not repeat whileheadingpersists. Continue immutableprimary20260912-210355-tovd-native30-primary and15-minuteheartbeat. Existing completion FIN1/full-replay/report and failure-return-to-Lead procedures unchanged; noYOLO/T014/restart/resume authorization."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "## 2026-09-12T21:05:02.051520+08:00 Native30 primary dispatched after immutablefreeze"
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "Updated 2026-09-12T21:05:02.051520+08:00. T013-NATIVE30 PRIMARY RUNNING. Exactrun20260912-210355-tovd-native30-primary; release20260912-210306-tovd-native30-primary-freeze; immutableprerequisitecommit6fec32243985ccc808123d851abf5f3dea10af99. Launched21:03:55+08afterfullfreezeonmain. CPUFP32/fourthreads officialnative256/preprocessing; 1000frozenimages\u00d715cells, thenautomatic1000pairedimagebootstrap. NoHFprimary/parity, noTTA. No scientificprimarymetrics/completionyet."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "Monitor ONLYthisexplicitrun withworkflow/config.autodl/config.json. Existingtmuxsessionautodl-20260912-210355-tovd-native30-primary. Root/home/wenchang/asdasdsad/wjq/TOVD; runartifacts/cache containsrawNPZs+cache_manifest.jsonl+run_receipt.json; analysis/results.json appearsafterallinference/bootstrapcomplete. Logcompleted_images showsprogress; do notread/interpretsubsetAPoradjustparameters. Estimate~24.9hCPUinferenceplusanalysis,raw~15.7GB. Do notstartduplicatejob orredeployintoimmutable release. Currentcodehasnoautomaticresume; ifobservedfailurepreservepartialoutputs anddiagnosebeforeanyrestart."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "AllprerequisitesPASS: native45cellvalidity204646; cached45cell+10bootstrapengineering205428;17focusedlocal/remote tests; officialCOCOdownload/resume205852allZIPCRCpass/5000JPEGhashes;vocab195/255/255. Datadownloadfinished,noactivedownloader. NativevocabSHA3bb4a0ebada1f9da407ae6a94f1135798dba7117bd658a6ecba97b2ebfad0967. NativeexpectedstateSHAde1683cc0a3c35157ed5475169dae013cdaffe69f45651d6e3f5550ae96139e1. Exactcode/data/envhashesinPLAN.md/native30_freeze.json. AllT001-T012closed. Do notmodifyfrozenPLAN/IDs/vocab/gatesbasedonprimaryoutcomes. Whencompleteverifyrawhashes/recomputeaggregatefromrawasneeded, collectresults/CIs/gatesandreportLead; noT014untilLeaddecision. Heartbeat15minACTIVE,quietwhenunchanged."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "Fetched/fast-forwarded2e70b24. Lead accepts implementation/pre-primaryfreeze6fec322 anddispatch88668f7. Existing20260912-210355-tovd-native30-primary continues unchanged;48/1000imagesat4783.683s,tmuxalive,disk28GBfree. No scientificpartialmetricsinspected. Newexplicitfailureinstruction: preservepartialoutputs/exactfailureandreturntoLeadBEFOREanyrestart/resumedesign. No code/PLAN/vocab/metrics/gates changed; no testsrerun for thiscoordinationupdate. Completionrequires15000cells/rawhashes/sharedpixels/modelimmutability/deterministicanalysis andfulltables/CIs/Gates1,2,4/allGate3families. NoT014untilLeadreview."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "Lead279ac4b added one hourly package while native primary continues. Created research/T013_YOLOWORLD_CONTINGENCY.md andresearch_log/t013_yoloworld/FEASIBILITY.md, plus officialsource/metadata/token-capacity receipts. OfficialHEAD4f70adbaacf5685bd9ec5bea85f1f91057f6fc0b has reproducedSyntaxError atdetectorline61; pinned unmodifiedofficialpredecessorb1b09f2f0340ca7dede69e10b7e909c469677fd9 (19modelfilesparse), MMYOLOgitlink4d97b3a06609dba94b8ec584be2f2029cfdb7519. Pre-outcomerule selectsV2.1-Sstage2/1280 amongunambiguousofficialcheckpoint/baseline mappings. S640officialcardlinkpointsX; actualS640metadata inventoriedbutassociationunresolved, nomodelsweep. Selectedweight305058902bytes SHA4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458; metadataonly,nopayload. CLIPtokenizer-only80/110/110names3\u20135tokens versus77context, noembeddingsorimageforward."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "NoGroundingpartialAP/interaction/CI/mechanismmetricsread; noYOLOinference; noinstall,weightdownload or activerunmodification. Onlypublicsource/metadata/tokenizer andread-onlyoperationalhealthinspected. LastGroundingcount80/1000; GPU1A6000free50598707200/50897289216bytes(snapshot,notreservation). Thispackageendswithdocuments/receiptcommit; waitnextLeadcycle, do not repeatP0 or begininstall/inference whileCURRENTpackageheadingpersists. Primary20260912-210355-tovd-native30-primarycontinuesunchanged."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "GitHub main remains a0a74c1; no new Lead package. Read AGENTS, protocol, active mailbox, research spec and project-local recovery records. T013-YW-P0 already delivered; no repeat or next-stage execution. Existing primary 20260912-210355-tovd-native30-primary tmux alive, 94/1000 images at 9576.909818s, filesystem 27G available. Analysis results file absent; no partial scientific metrics inspected. No code, environment, frozen settings or process changes. Continue the same run and 15-minute monitoring; no actionable change requiring notification."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "Zero YOLO image inference; zero package installation; zero detector loading/checkpoint payload downloads; zero Grounding partial AP/AP50/interaction/CI/mechanism inspection. Health2026-09-13T00:00:41+08: primary20260912-210355-tovd-native30-primary tmux alive,103/1000 images at10487.362925s,27G filesystem free, analysis result absent. Same immutable primary continues; no restart or new writer. P1 work stops after documents/receipt commit; do not repeat it while mailbox heading persists. No environment/YOLO benchmark/T014 authorization. 15-minute heartbeat remains active."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "Synced origin/main at26d3e7e; no new Lead package. P1 background ambiguity already reported; no repeated work. Existing primary20260912-210355-tovd-native30-primary tmux alive,117/1000 images at11928.267738s,27G filesystem available; no exit receipt observed and analysis result absent. Only operational counts/process/storage inspected, no partial scientific metrics. No code, environment, settings or running-process changes. P1 receipts from6694fcc/26d3e7e were mirrored to remote project; protocol document/JSON hashes matched their recorded values. Continue existing primary and quiet15-minute monitoring pending next Lead task or completion/failure."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "GitHub main synced at6890358; no new Lead instructions. P1 remains awaiting review; no repeated source work or runtime execution. Primary20260912-210355-tovd-native30-primary tmux alive,126/1000 images at12869.162732s,27G filesystem free, no exit receipt observed, analysis result absent. Only operational counts/process/storage inspected; no partial scientific metrics. No code/environment/config/process changes. Continue existing primary and quiet15-minute monitoring."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "GitHub main synced at946d091; no new Lead instructions. P1 remains awaiting review; no repeated work. Primary20260912-210355-tovd-native30-primary tmux alive,136/1000 images at13873.486887s,27G filesystem free, no exit receipt observed, analysis result absent. Only operational counts/process/storage inspected; no partial scientific metrics. No code/environment/config/process changes. Continue existing primary and quiet15-minute monitoring."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "Zero YOLO/MMCV/MMDetection/MMYOLO installation or import, zero checkpoint payload download/load, zero image inference, zero Grounding partial scientific metric inspection, zero active-primary modification. Primary health2026-09-13T01:12:25+08: run20260912-210355-tovd-native30-primary tmux alive,146/1000 images at14890.053539s,26G filesystem free; analysis result absent."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "GitHub main synced atf919e2f; no new Lead task. P2 already verified/delivered; no repeated tests or runtime work. Primary20260912-210355-tovd-native30-primary tmux alive,158/1000 images at16147.957098s,26G filesystem free, no exit receipt observed, analysis result absent. Only operational counts/process/storage inspected; no partial scientific metrics. No code/environment/config/process changes. P2 handoff mirrored remotely; default SCP initially closed, existing workflow legacy-SCP retry succeeded, adapter receipt SHA matched4a9059a486932aebbcba155a0c1d9a908e13ae6fbf888a9653469018acf222a1. Continue existing primary and quiet15-minute monitoring."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "GitHub main synced at14a9d7e; no new Lead task. P2 already verified/delivered; no repeated work. Primary20260912-210355-tovd-native30-primary tmux alive,167/1000 images at17096.218934s,26G filesystem free, no exit receipt observed, analysis result absent. Only operational counts/process/storage inspected; no partial scientific metrics. No code/environment/config/process changes. Continue existing primary and quiet15-minute monitoring."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "GitHub main synced at4232db9; no new Lead task. P2 already verified/delivered; no repeated work. Primary20260912-210355-tovd-native30-primary tmux alive,176/1000 images at18030.316314s,26G filesystem free, no exit receipt observed, analysis result absent. Only operational counts/process/storage inspected; no partial scientific metrics. No code/environment/config/process changes. Continue existing primary and quiet15-minute monitoring."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "Read-only audit at2026-09-13T02:25:47+08: PID721181 is the only process with the exact cache target argument, parent721177, tmux pane721175 in its ancestry; same process at start/end. CWD=/home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze. Command=/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -u -m scripts.t013_native_run --assets /home/wenchang/asdasdsad/wjq/TOVD/shared/t013 --output /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/cache --freeze-commit 6fec32243985ccc808123d851abf5f3dea10af99. No duplicate target, no unreadable process cmdline entries. Run/tmux/release/freeze bindings PASS."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "End-of-package health at2026-09-13T02:28:25+08: same primary tmux alive,189/1000 at19394.152425s, free26675806208 bytes. First bookend SSH attempt timed out (exit255); one read-only retry succeeded. No inference/run repair or process interruption occurred."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "Zero parsed prediction contents/scientific metrics; zero active-run mutation or YOLO installation/import/weight loading/image inference. All requested OPS1 checks pass. Stop this package and await Lead review; continue only the existing primary/15-minute heartbeat. Do not rerun OPS1 merely because its heading persists; no YOLO setup or analysis authorization."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "- Filesystem available space: 26,479,988,736 bytes. Read-only operational check only; no partial scientific metrics inspected, no primary configuration or process changed, and no YOLO contingency work advanced."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "Research Lead 2109c88 accepts OPS1 and assigns a synthetic-only independent arithmetic audit against freeze 6fec32243985ccc808123d851abf5f3dea10af99. No primary artifacts will be opened; scientific source/PLAN remain unchanged. Initial Git fetch had a TLS handshake failure; retry succeeded. Initial remote health 03:05:58: primary tmux alive, 211/1000 at21654.864525s, free26253258752 bytes, no exit marker/analysis result. Local D:/anaconda3/python.exe Python3.12.7 has NumPy1.26.4; pycocotools is absent. Optional toy-COCO check will be reported NOT RUN without installation; mandatory pure arithmetic functions can be compiled unchanged from their frozen AST definitions without importing detector/COCO dependencies."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "End health2026-09-13T03:11:26+08: exact primary20260912-210355-tovd-native30-primary tmux alive, writer721181 Rl+,214/1000 at21968.800080698013s, free26200883200 bytes; no wrapper exit marker, analysis/results.json absent (existence only). No primary prediction/scientific artifact or primary annotations opened; no partial metrics interpreted. No active-run/frozen code/PLAN/settings mutation, no YOLO runtime activity."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "GitHub main synchronized at b5a65cf; read project handoffs/logs and required coordination/specification files. No new Research Lead task. STAT1 evidence0cab4ca/deliveryb5a65cf is already complete; no repeated audit. Existing primary20260912-210355-tovd-native30-primary tmux alive,225/1000 images at23127.288071229006s, free26024681472 bytes; no wrapper exit marker, analysis/results.json absent (existence only). No partial scientific metrics inspected, no code/environment/run changes, no YOLO activity. Prior STAT1 receipt mirrored successfully with matching local/remote SHA2569a86883b6bf274abf3b040e414652f9d8e8cdfa6ca1a1d07507740ab7466921c. Continue existing primary and quiet15-minute monitoring pending Lead task/completion/failure."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "GitHub main synchronized at ed32f47; project handoffs/logs and required coordination/specification files read. No new Lead task; STAT1 already delivered, no repeated audit. Primary20260912-210355-tovd-native30-primary tmux alive,235/1000 images at24175.174037133023s, free25799376896 bytes; no wrapper exit marker and analysis/results.json absent (existence only). No partial scientific outputs inspected or code/environment/run changes; no YOLO work. Continue existing frozen primary and quiet15-minute monitoring."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "GitHub main synchronized at f9dafaa; project handoffs/logs and required coordination/specification files read. No new Lead task; STAT1 already delivered, no repeated work. Primary20260912-210355-tovd-native30-primary tmux alive,244/1000 images at25110.062607343018s, free25641750528 bytes; no wrapper exit marker and analysis/results.json absent (existence only). No partial scientific outputs inspected, no code/environment/run changes and no YOLO work. Continue existing frozen primary and quiet15-minute monitoring."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "Lead e22ee9b accepts STAT1 and assigns completion verifier preparation, synthetic fixtures and optional existing completed smoke only. Frozen runner/metadata support all required fields. Smoke explicitly differs in kind=smoke_cached_pipeline, freeze argument=d5dc807, IDs139/285/632 and code_vocab_selection_images_verified=False; these are a separate pinned smoke contract, never primary relaxations. Local smoke raw files absent but receipts exist; will check the already-available remote smoke directly without copying raw artifacts. Primary initial health254/1000 at26138.684844801s, tmux alive, free25477615616 bytes. No active primary cache/artifacts opened."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "First smoke verifier command used server system python3 and exited1 with AttributeError: module 'hashlib' has no attribute 'file_digest' at primary_completion_verifier.py:24. This is an interpreter capability issue (file_digest requires Python>=3.11), not a cache/schema mismatch. Reran the identical verifier with existing shared/t013/venv/bin/python (Python3.12.12); exit0, smoke PASS45/45 opaque files,48715584 bytes,15shared pixel groups, final state matches freeze. No code compatibility layer, environment install/change, detector import or raw copy. The completed smoke's analysis result existence was True; contents were not opened. Primary cache was never passed to the verifier."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "Existing remote completed engineering smoke20260912-205428-tovd-native30-pipeline-smoke PASS45/45 unique opaque files,48715584bytes,15shared pixel groups, state de1683cc unchanged. No raw download/copy. Explicit smoke contract has IDs139/285/632,kindsmoke_cached_pipeline,originalfreeze argumentd5dc807,code_vocab_selection_images_verified=False, as frozen smoke schema requires; no primary relaxation. Analysis-result existenceTrue, contents not opened. Exact remote command in PRIMARY_COMPLETION_VERIFIER.md and bundle receipt uses existing shared/t013/venv/bin/python with --smoke, pinned final frozen-root and old smoke cache. Initial identical command with systempython3 failedAttributeError hashlib.file_digest atline24/exit1; projectPython3.12.12 rerun exit0. No code fallback or environment change. Verifier requiresPython>=3.11. Smoke receipt SHA1c07064807e5baf43f286cee57bc7820eb338d8648c219bcd50df999a30e3e7e; verifier sourceSHA9d4c604b40677d81fa634715a55c7132dcbe04303a1a8a3021dc11e42273c6a8."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "End health2026-09-13T04:27:45+08: primary20260912-210355-tovd-native30-primary tmux/writer721181 Rl+ alive,258/1000 at26526.936807298014s,free25408024576 bytes,no wrapper exit marker,analysis/results.json absent (existence only). No primary cache or scientific artifact opened; no NPZ deserialized, no primary scientific result read, no frozen/run state changed and no YOLO activity."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "GitHub main synchronized at2432409; project handoffs/logs and required coordination/specification files read. No new Lead task; FIN1 already delivered, no repeated tests or cache verifier invocation. Primary20260912-210355-tovd-native30-primary tmux alive,269/1000 images at27653.013264826004s, free25231667200 bytes; no wrapper exit marker, analysis/results.json absent (existence only). FIN1 bundle mirrored with matching local/remote SHA25622ecd0665dd9eefc60a7fedfe9cc13081cd1d157f8e2e7aefadf3be967688918. No partial scientific outputs inspected, no frozen/code/environment/run changes and no YOLO work. Continue existing primary and quiet15-minute monitoring."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "GitHub main synchronized at58313bc; project handoffs/logs and required coordination/specification files read. No new Lead task; FIN1 already delivered, no repeated tests or verifier execution. Primary20260912-210355-tovd-native30-primary tmux alive,279/1000 images at28639.880737910018s,free24930570240bytes; no wrapper exit marker and analysis/results.json absent (existence only). No partial scientific outputs inspected, no code/environment/run changes and no YOLO work. Continue existing frozen primary and quiet15-minute monitoring."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "GitHub main synchronized ata94df63; project handoffs/logs and required coordination/specification files read. No new Lead task; FIN1 already delivered, no repeated tests or verifier execution. Primary20260912-210355-tovd-native30-primary tmux alive,288/1000 images at29539.488987912016s,free24770723840bytes; no wrapper exit marker and analysis/results.json absent (existence only). No partial scientific outputs inspected, no code/environment/run changes and no YOLO work. Continue existing frozen primary and quiet15-minute monitoring."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "End health2026-09-13T05:38:17+08: exact primary20260912-210355-tovd-native30-primary tmux/writer721181 Rl+ alive,300/1000 at30761.30617114401s,free24575799296bytes,no wrapper exit marker,primary analysis/results.json absent (existence only). active_primary_cache_accessed=false,primary_scientific_result_opened=false. All decoded arrays were completed engineering replay/mutation artifacts. No frozen code/config/PLAN/vocab/IDs/seeds/gates/environment/run change and no YOLO activity."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "GitHub main synchronized at7fa947b; project handoffs/logs and required coordination/specification files read. No new Lead task; REPRO1 already delivered, no repeated analysis/test/verifier execution. Primary20260912-210355-tovd-native30-primary tmux alive,311/1000 images at31911.931933660002s,free24330096640bytes; no wrapper exit marker and analysis/results.json absent (existence only). REPRO1 receipt mirrored with matching local/remote SHA256b7c11dfbfe837f936168127d21227d87ca0a07fa917481e7abbd084c6c5ac0dc. No partial scientific outputs inspected, no code/environment/run changes and no YOLO work. Continue existing frozen primary and quiet15-minute monitoring."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "GitHub main synchronized atd694605; project handoffs/logs and required coordination/specification files read. No new Lead task; REPRO1 already delivered, no repeated analysis/test/verifier execution. Primary20260912-210355-tovd-native30-primary tmux alive,321/1000 images at32898.425227181026s,free24162127872bytes; no wrapper exit marker and analysis/results.json absent (existence only). No partial scientific outputs inspected, no code/environment/run changes and no YOLO work. Continue existing frozen primary and quiet15-minute monitoring."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "GitHub main synchronized atc93e604; project handoffs/logs and required coordination/specification files read. No new Lead task; REPRO1 already delivered, no repeated analysis/test/verifier execution. Primary20260912-210355-tovd-native30-primary tmux alive,331/1000 images at33943.98918741901s,free24009117696bytes; no wrapper exit marker and analysis/results.json absent (existence only). No partial scientific outputs inspected, no code/environment/run changes and no YOLO work. Continue existing frozen primary and quiet15-minute monitoring."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "GitHub main synchronized at7a19624; project handoffs/logs and required coordination/specification files read. No new Lead task; REPRO1 already delivered, no repeated analysis/test/verifier execution. Primary20260912-210355-tovd-native30-primary tmux alive,341/1000 images at34946.81235294102s,free23847157760bytes; no wrapper exit marker and analysis/results.json absent (existence only). No partial scientific outputs inspected, no code/environment/run changes and no YOLO work. Continue existing frozen primary and quiet15-minute monitoring."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "End health only,2026-09-13T07:11:24+08:00: exact primary20260912-210355-tovd-native30-primary tmux alive,writer721181 Rl+,356/1000 at36421.546857393s,free23537688576bytes; no wrapper exit marker,analysis/results.json absent (existence only). active_primary_scientific_result_opened=false; active_primary_prediction_content_opened=false; frozen source/config/run unchanged. No TTT in this task; inner-loss/update/gradient/reset diagnostics N/A."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "GitHub main synchronized at21af185; project handoffs/logs and required coordination/specification files read. No new Lead task; DEC1 already delivered, no repeated implementation/test/verifier execution. Primary20260912-210355-tovd-native30-primary tmux and writer721181 Rl+ alive,367/1000 images at37511.971714388s,free23352451072bytes; no wrapper exit marker and analysis/results.json absent (existence only). No partial scientific outputs inspected, no code/environment/run changes and no YOLO work. Continue existing frozen primary and quiet15-minute monitoring."
+    },
+    {
+      "path": "research_log/session_log.md",
+      "added_text": "GitHub main synchronized at0fb70fe; project handoffs/logs and required coordination/specification files read. No new Lead task; DEC1 already delivered, no repeated implementation/test/verifier execution. Primary20260912-210355-tovd-native30-primary tmux and writer721181 Rl+ alive,377/1000 images at38461.13915053001s,free23182942208bytes; no wrapper exit marker and analysis/results.json absent (existence only). No partial scientific outputs inspected, no code/environment/run changes and no YOLO work. Continue existing frozen primary and quiet15-minute monitoring."
+    },
+    {
+      "path": "research_log/t013/IMPLEMENTATION_NEXT.md",
+      "added_text": "Updated 2026-09-12T21:05:02.051520+08:00. T013-NATIVE30 PRIMARY RUNNING. Exactrun20260912-210355-tovd-native30-primary; release20260912-210306-tovd-native30-primary-freeze; immutableprerequisitecommit6fec32243985ccc808123d851abf5f3dea10af99. Launched21:03:55+08afterfullfreezeonmain. CPUFP32/fourthreads officialnative256/preprocessing; 1000frozenimages\u00d715cells, thenautomatic1000pairedimagebootstrap. NoHFprimary/parity, noTTA. No scientificprimarymetrics/completionyet."
+    },
+    {
+      "path": "research_log/t013/IMPLEMENTATION_NEXT.md",
+      "added_text": "Monitor ONLYthisexplicitrun withworkflow/config.autodl/config.json. Existingtmuxsessionautodl-20260912-210355-tovd-native30-primary. Root/home/wenchang/asdasdsad/wjq/TOVD; runartifacts/cache containsrawNPZs+cache_manifest.jsonl+run_receipt.json; analysis/results.json appearsafterallinference/bootstrapcomplete. Logcompleted_images showsprogress; do notread/interpretsubsetAPoradjustparameters. Estimate~24.9hCPUinferenceplusanalysis,raw~15.7GB. Do notstartduplicatejob orredeployintoimmutable release. Lead2e70b24: frozenrunnerhasnoautomaticresume; ifoperationalfailureoccurs,preserveallpartialoutputs/failurereceiptsandreturntoResearchLeadBEFOREanyrestart/resumedesign."
+    },
+    {
+      "path": "research_log/t013/IMPLEMENTATION_NEXT.md",
+      "added_text": "AllprerequisitesPASS: native45cellvalidity204646; cached45cell+10bootstrapengineering205428;17focusedlocal/remote tests; officialCOCOdownload/resume205852allZIPCRCpass/5000JPEGhashes;vocab195/255/255. Datadownloadfinished,noactivedownloader. NativevocabSHA3bb4a0ebada1f9da407ae6a94f1135798dba7117bd658a6ecba97b2ebfad0967. NativeexpectedstateSHAde1683cc0a3c35157ed5475169dae013cdaffe69f45651d6e3f5550ae96139e1. Exactcode/data/envhashesinPLAN.md/native30_freeze.json. AllT001-T012closed. Do notmodifyfrozenPLAN/IDs/vocab/gatesbasedonprimaryoutcomes. Whencompleteverifyrawhashes/recomputeaggregatefromrawasneeded, collectresults/CIs/gatesandreportLead; noT014untilLeaddecision. Heartbeat15minACTIVE,quietwhenunchanged."
+    },
+    {
+      "path": "research_log/t013/IMPLEMENTATION_NEXT.md",
+      "added_text": "Lead2e70b24 ACCEPTS native30implementation/pre-primaryfreeze6fec322 anddispatch88668f7; continueexistingimmutableprimaryrunonly. Latestoperationalcheck48/1000imagescomplete at4783.683s;tmuxalive,disk28GBfree. NosubsetAP/CI/mechanismmetricsinspected. OnfailurestopforLeadreviewbeforeresumedesign. Oncompletionverify15000cells/hashes/sharedpixels/stateanddeterministicanalysis,thenreportcompleteevidence. Scientificoutcomepending;noT014authorization."
+    },
+    {
+      "path": "research_log/t013/IMPLEMENTATION_NEXT.md",
+      "added_text": "Seeproject_state latestentryand t013_yoloworld/FEASIBILITY.md. Do not repeatthispackage orinstall/runYOLOunderitsoldCURRENT heading. ContinueonlyexistingGroundingprimaryhealthmonitoruntilnextLeadinstruction."
+    },
+    {
+      "path": "research_log/t013/IMPLEMENTATION_NEXT.md",
+      "added_text": "Lead c2f24e2 accepted P0; P1 source-only work delivered in 6694fcc3a94ef4bb310815770998b380854a4d6e. Read research_log/t013_yoloworld/PROTOCOL_FREEZE.md and protocol_freeze.json. Native postprocessing fixed (.001/30000/NMS .7/300,multi_label=True), but background count/placement is not uniquely established: demo one trailing space versus selected LVIS LoadText/no append; published selected COCO recipe not identified. Return to Lead and stop; no runtime variant selection, installation, weights, smoke or benchmark. Do not repeat P1 without new instructions. Grounding primary continues unchanged, last103/1000, tmux alive,27G free; no partial scientific metrics read.15-minute heartbeat unchanged. Existing failure/completion instructions remain authoritative."
+    },
+    {
+      "path": "research_log/t013/IMPLEMENTATION_NEXT.md",
+      "added_text": "Lead ccec9fd resolves interaction background: one trailing U+0020; runtime81/111/111, blank80/110/110, semantic80/110/110 unchanged. P2 fixture/evidence commit 41ca40c3860e920714ecfb17273901916a635df8;7/7 standard-library tests pass. Read protocol_adapter_receipt.json and P2 amendment atop PROTOCOL_FREEZE.md. Background convention now resolved by Lead, superseding P1 interaction blocker; published-COCO fidelity remains unresolved separately. No model install/import/load/inference occurred. Do not repeat P2 or advance without new Lead scope. Primary20260912-210355-tovd-native30-primary continues unchanged; latest146/1000, tmux alive,26G free, no partial scientific metrics read.15-minute heartbeat and frozen-run failure/completion instructions remain unchanged."
+    }
+  ],
+  "engineering_history_review": {
+    "scope": "Committed history through task_start_head only; not proof of off-repository behavior.",
+    "finding": "No committed evidence of duplicate primary dispatch/restart/retune, partial-primary scientific use, or YOLO scientific execution.",
+    "basis": "Protected blob/history checks, run-metadata inventory, classified paths, and contextual review of reporting deltas/references in companion document.",
+    "yolo_scope": "Accepted P0/P1/P2 source/protocol/model-free preparation only; future cross-backbone evidence cannot replace primary."
+  },
+  "external_asset_hashes_metadata_only": {
+    "native_checkpoint_sha256": "3b3ca2563c77c69f651d7bd133e97139c186df06231157a64c507099c52bc799",
+    "native_state_sha256": "de1683cc0a3c35157ed5475169dae013cdaffe69f45651d6e3f5550ae96139e1",
+    "annotations_sha256": "e8c7f7908f1d7278341fae127d0da654f102f11bd7b21d8aeefa635b8c810b6f"
+  },
+  "active_primary_scientific_result_opened": false,
+  "active_primary_prediction_content_opened": false,
+  "frozen_scientific_source_or_run_modified": false,
+  "helper_sha256": "968ed79d2dfb0c96e9266b653d2a7e6a113f4d9d1d917be5a9fc7827b5a76b30"
+}
