@@ -1,0 +1,97 @@
+{
+  "task": "T013-FIN1P",
+  "task_start_head": "a60fe97c4c4f6b268b3c922efde943848fe872b7",
+  "lead_instruction_commit": "f985670113a9cb1bf2c8ed364eb808c40676407f",
+  "sources": {
+    "primary_completion_verifier.py": {
+      "commit": "8efe48506b6714eeef069e3c25dbceef510bdc05",
+      "sha256": "9d4c604b40677d81fa634715a55c7132dcbe04303a1a8a3021dc11e42273c6a8",
+      "matched": true
+    },
+    "finalization_barrier.py": {
+      "commit": "0acbd4f6417d2946f2009979ec8461df351eb07b",
+      "sha256": "a227933e266090e1adab5395409ddf8ab037beb43c27f92b96713586d03d6c14",
+      "matched": true
+    }
+  },
+  "completion_evidence_commit": "78203498f524a06210daad0ab6a655db74ac6280",
+  "binding": {
+    "repository": "https://github.com/word-ky/TOVD.git",
+    "project_root": "/home/wenchang/asdasdsad/wjq/TOVD",
+    "run_id": "20260912-210355-tovd-native30-primary",
+    "release_id": "20260912-210306-tovd-native30-primary-freeze",
+    "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+    "dispatch_commit": "88668f76b22777459b5792dd28f88075f208c678",
+    "writer_pid": 721181,
+    "tmux_session": "autodl-20260912-210355-tovd-native30-primary",
+    "ops2_evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a"
+  },
+  "status": "PASS",
+  "final_state": "FIN1_PASS_READY_FOR_REPLAY",
+  "command": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/fin1/primary_completion_verifier.py --frozen-root /home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze --cache /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/cache --output /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/fin1/primary_completion_receipt.json",
+  "interpreter": "Python3.12.12 /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python",
+  "start": "2026-09-14T03:34:29+08:00",
+  "end": "2026-09-14T03:34:47+08:00",
+  "exit_code": 0,
+  "execution_count": 1,
+  "transport_retries": 0,
+  "remote_tool_hash_matched": true,
+  "receipt_ref": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/fin1/primary_completion_receipt.json",
+  "receipt_sha256": "ade691d9765ee09b740ba7a7e24262ee55b272d82d5fd79889659fd6d67df63e",
+  "unchanged_result": {
+    "status": "PASS",
+    "mode": "primary",
+    "scientific_freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+    "receipt_freeze_argument": "6fec32243985ccc808123d851abf5f3dea10af99",
+    "run_id": "20260912-210355-tovd-native30-primary",
+    "release_id": "20260912-210306-tovd-native30-primary-freeze",
+    "image_count": 1000,
+    "expected_records": 15000,
+    "manifest_unique_records": 15000,
+    "receipt_unique_records": 15000,
+    "opaque_files_verified": 15000,
+    "raw_bytes": 16260310170,
+    "shared_pixel_groups": 5000,
+    "state_sha256": "de1683cc0a3c35157ed5475169dae013cdaffe69f45651d6e3f5550ae96139e1",
+    "source_hashes": {
+      "research_log/t013/native30_freeze.json": "50addfb8e247333b49fb22cda14570166b294101bb435b5a1b5bf688b4b3a91e",
+      "research_log/t013/image_selection.json": "8039a70f25c34f295345e63d1980f692631b6bbdaa5c37267a10852acbf3833b",
+      "research_log/t013/vocabulary_native30.json": "3bb4a0ebada1f9da407ae6a94f1135798dba7117bd658a6ecba97b2ebfad0967",
+      "research_log/t013/image_sha256.json": "38eb39894b8c0f1924e099b3a1ec0b885fdf7ec43c86933e1dc28186d85c3ba8",
+      "scripts/t013_native_run.py": "177176fdb1c133b98770f8e6719b22e3ead0a00adbdced598e92326aec723429",
+      "scripts/t013_native_detector.py": "b49f23f131777f08e23131ad55a94d9211c33b1c759adf86c6b52e2b95c34126",
+      "scripts/t013_detector.py": "4800f1471f2de8f964700b683505c7230e078b6833a57afa1e09af6b42babd0d"
+    },
+    "manifest_sha256": "88a31a45712f814d940ef894d0213108f9dca63c845abca01f7133ba44162adc",
+    "run_receipt_sha256": "75518df05b4a4c15a4c20d32a7764073d21c57c9e8b9880b4d737259c1b35366",
+    "analysis_result_exists": true,
+    "analysis_content_opened": false,
+    "npz_deserialized": false,
+    "scope": "metadata and opaque file bytes only; no scientific acceptance"
+  },
+  "barrier_file": "research_log/t013/fin1p/fin1_envelope_and_barrier.json",
+  "barrier_result": {
+    "state": "FIN1_PASS_READY_FOR_REPLAY",
+    "reason": "replay_missing_or_stale_binding",
+    "run_id": "20260912-210355-tovd-native30-primary",
+    "scope": "primary",
+    "research_lead_review_authorized": false,
+    "primary_result_content_access_authorized": false,
+    "fin1_execution_authorized": false,
+    "replay_comparison_execution_authorized": true,
+    "scientific_acceptance": false,
+    "restart_resume_authorized": false,
+    "helper_opened_result_content": false
+  },
+  "continuation": "Stop FIN1P; await Lead review. No replay/comparator/result interpretation authorized in current task.",
+  "operational_events": [],
+  "artifacts": {
+    "research_log/t013/fin1p/fin1p_exit_code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "research_log/t013/fin1p/fin1p_finished.txt": "5d02a80454d45fee3f2fbfe17929642485bc5dbbc0d2b851fbd0d69a117428a1",
+    "research_log/t013/fin1p/fin1p_started.txt": "3318c933b330eef605ae57f34f293df99e23df5f9a398ddb5e8a75be22e3c42b",
+    "research_log/t013/fin1p/fin1p_stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "research_log/t013/fin1p/fin1p_stdout.txt": "438b022ebc94d639e3a86c5faad32e6ce3862c9f6d55babd1e51478fbaf20e85",
+    "research_log/t013/fin1p/fin1_envelope_and_barrier.json": "a2b4b7e3f6f895970589df96c02d139da3c7b8934d430d50fb0007a64d779d64",
+    "research_log/t013/fin1p/primary_completion_receipt.json": "ade691d9765ee09b740ba7a7e24262ee55b272d82d5fd79889659fd6d67df63e"
+  }
+}
