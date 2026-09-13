@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-09-14T02:59:57+08:00",
+  "original_writer": {
+    "pid": 721181,
+    "ps_returncode": 1,
+    "stdout": "",
+    "alive": false
+  },
+  "tmux": {
+    "session": "autodl-20260912-210355-tovd-native30-primary",
+    "returncode": 1,
+    "stderr": "no server running on /tmp/tmux-1012/default",
+    "alive": false
+  },
+  "pane_metadata": null,
+  "pane_metadata_reason": "exact session terminated; list-panes returned no server running; no pane or descendants inspected",
+  "bounded_descendants": [],
+  "wrapper_finished_marker": "[autodl] finished_at=2026-09-14T02:38:30+08:00",
+  "wrapper_exit_marker": "[autodl] exit_code=0",
+  "wrapper_exit_code": 0,
+  "analysis_completion_marker_present": true,
+  "analysis_result_exists": true,
+  "free_bytes": 170155950080,
+  "close1_state": "PRIMARY_COMPLETE_UNVERIFIED"
+}

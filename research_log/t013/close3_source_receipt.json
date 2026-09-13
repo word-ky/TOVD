@@ -1,0 +1,27 @@
+{
+  "primary_survival_guard.py": {
+    "evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a",
+    "git_content_sha256": "8d58f01259387c4327cee0f1ac05e4dfef1dd3fd47a4c8b0f6542820202852c6",
+    "unchanged": true
+  },
+  "primary_incident_snapshot.py": {
+    "evidence_commit": "6ecbc36bd66eb2e4ca6057f9a33c81863ed7eff7",
+    "git_content_sha256": "e2573a10683d5dbdf9eb43cd9a5c9d6e13a8966df616646cbbb8f03d8dcc3e82",
+    "unchanged": true
+  },
+  "finalization_barrier.py": {
+    "evidence_commit": "0acbd4f6417d2946f2009979ec8461df351eb07b",
+    "git_content_sha256": "a227933e266090e1adab5395409ddf8ab037beb43c27f92b96713586d03d6c14",
+    "unchanged": true
+  },
+  "research_log/remote_runs/20260912-210355-tovd-native30-primary/run.sh": {
+    "evidence_commit": "88668f76b22777459b5792dd28f88075f208c678",
+    "git_content_sha256": "cde77d0e8a4db8904d8ecd178efb71200013c0ed616d2bf471c88f6dfd8c1b27",
+    "unchanged": true
+  },
+  "scripts/t013_analysis.py": {
+    "evidence_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+    "git_content_sha256": "74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c",
+    "unchanged": true
+  }
+}
