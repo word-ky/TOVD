@@ -11,15 +11,19 @@ Immutable bindings remain unchanged:
 - dispatch `88668f76b22777459b5792dd28f88075f208c678`;
 - run `20260912-210355-tovd-native30-primary`;
 - release `20260912-210306-tovd-native30-primary-freeze`;
+- writer PID `721181` while the active run is still bound to that writer;
+- tmux `autodl-20260912-210355-tovd-native30-primary`;
 - official native Grounding-DINO Swin-T, CPU FP32/four threads, gradients disabled;
 - fixed 1,000 COCO-val IDs, five visual conditions, `V0/Vhard30/Vrand30 = 80/110/110` semantic classes and `195/255/255` native tokens;
 - frozen metrics/diagnostics, 1,000-replicate paired-image bootstrap and original Gates 1–4.
 
-Do **not** inspect or act on partial AP/AP50/AR/interaction/bootstrap/mechanism outputs while the cache is incomplete. Operational metadata only are permitted: progress/process state, file counts/sizes/hashes and storage. Do not alter the frozen plan, code, vocabulary, IDs, seeds, thresholds, gates or running release. If the run fails, preserve exact partial artifacts/receipts and return to Research Lead before any restart/resume design.
+Do **not** inspect or act on partial AP/AP50/AR/interaction/bootstrap/mechanism outputs while the cache is incomplete. Operational metadata only are permitted. Do not alter the frozen plan, code, vocabulary, IDs, seeds, thresholds, gates or running release. If the run fails, preserve exact partial artifacts/receipts and return to Research Lead before any restart/resume design.
 
 Grounding-DINO remains the preregistered primary. YOLO-World remains a separately preregistered contingency only; P0/P1/P2 protocol preparation is accepted, but no YOLO runtime/scientific benchmark is authorized before completed Grounding review. A future YOLO result can test architecture specificity and can never relabel or rescue a failed Grounding primary.
 
-Latest committed health-only evidence reviewed is `87471fbd17bfb745d05896f61fdadfea2765b0aa`: `499/1000` images, same writer PID `721181` and tmux alive, free bytes `20,968,267,776`, no wrapper exit marker and primary `analysis/results.json` absent by existence-only check. The accepted OPS2 guard reports remaining `501`, projected `8,194,019,328`, required free `18,422,757,786`, margin `2,545,509,990` bytes and `SAFE / PRIMARY_RUNNING`. No primary scientific result/prediction content has been opened.
+Latest committed health-only evidence reviewed is `f387f5df0938c76ff23f3511ad3836e75561630f`: `533/1000` images, same writer PID `721181` and tmux alive, free bytes `19,535,720,448`, no wrapper exit marker and primary `analysis/results.json` absent by existence-only check. The accepted OPS2 guard reports remaining `467`, projected `7,637,938,176`, required free `17,755,460,404`, margin `1,780,260,044` bytes and `SAFE / PRIMARY_RUNNING`. No primary scientific result/prediction content has been opened.
+
+The margin is still positive under the **unchanged** fixed OPS1/OPS2 rule, but it has materially narrowed. From the accepted OPS3 live snapshot at 512 images to the latest 533-image heartbeat, free space fell by `1,092,206,592` bytes while the fixed required-free value fell by `412,154,265` bytes, so the safety margin fell by `680,052,327` bytes. This is an operational observation only; it is not a new threshold or a reason to change the scientific protocol.
 
 ---
 
@@ -32,111 +36,112 @@ Latest committed health-only evidence reviewed is `87471fbd17bfb745d05896f61fdad
 - **DEC1 ACCEPTED:** pre-outcome full-disclosure/decision contract is frozen; Gate3 cannot rescue Gate1/2 and any future YOLO result cannot mutate Grounding's decision.
 - **G4A1 ACCEPTED AS PRE-OUTCOME EVIDENCE:** `PREOUTCOME_HISTORY_CLEAN`; final Gate4 remains pending completed-run evidence and Research-Lead judgment.
 - **CLOSE1 ACCEPTED:** outcome-blind completion barrier requires wrapper success -> exact-run FIN1 PASS -> exact frozen replay/comparison PASS before Research-Lead scientific review; early `analysis/results.json` existence never unlocks content access.
+- **OPS2 ACCEPTED:** exact fixed storage/process guard; no new threshold, cleanup or restart authority.
+- **OPS3 ACCEPTED:** fail-closed operational incident snapshot harness; 4 tests / 55 fixtures PASS, exact binding to the primary, accepted OPS2 reuse, one live metadata-only rehearsal, and no scientific-content/cache mutation. Its snapshot is triage evidence, not scientific readiness or remediation authority.
 
-### T013-OPS2 — ACCEPTED
+### T013-OPS3 — ACCEPTED
 
-Reviewed evidence commit `e380d14e5ee7b830781d38cc9efae292509ca66a`, Codex handoff `3b56770787c6f73ed61c1546bd354b4e78f315ab`, helper/tests/receipt, and health-only commits through `87471fbd17bfb745d05896f61fdadfea2765b0aa`.
+Reviewed evidence commit `6ecbc36bd66eb2e4ca6057f9a33c81863ed7eff7`, Codex handoff `6222134162a8df55aa54b5dfa43ead1b74e45f21`, `PRIMARY_INCIDENT_SNAPSHOT.md`, source/tests/receipt/live raw snapshot, and health-only commits through `f387f5df0938c76ff23f3511ad3836e75561630f`.
 
-**Decision:** ACCEPTED as a lightweight operational survival guard. It does not authorize cache inspection, scientific result access, cleanup, restart/resume, YOLO runtime or T014.
+**Decision:** ACCEPTED as an outcome-blind operational incident snapshot. It does not authorize scientific-result access, FIN1 on an incomplete cache, cleanup, restart/resume, YOLO runtime or T014.
 
 Accepted evidence:
-- pure scalar standard-library helper; no filesystem/scientific I/O;
-- exact fixed OPS1 constants: total `1000`, P95 `16,355,328` bytes/image, multiplier `6/5`, reserve `8,589,934,592` bytes;
-- exact integer-ceil rule `required=(6*projected+4)//5+reserve`, SAFE iff `margin>=0`;
-- original 188-image and reviewed 456-image snapshots reproduced exactly;
-- equality and one-byte-below boundaries plus invalid scalar/process inputs fail closed;
-- `5` tests / `32` deterministic fixtures PASS;
-- process status distinguishes running, successful completion-unverified, failure-return-to-Lead and ambiguous-return-to-Lead; storage is reported separately;
-- no active cache scan/modification, FIN1/analysis/replay, scientific-content access, frozen science/run change, environment change or YOLO runtime occurred.
+- canonicalizer is standard-library/pure with respect to supplied metadata and reuses the accepted OPS2 `health_guard`; no storage formula was refit;
+- exact repository/run/release/freeze/dispatch/PID/tmux/OPS2-evidence bindings are enforced;
+- missing/malformed process/progress/free-space/source-reference/binding evidence fails closed;
+- healthy, storage-risk, wrapper-failure, process-ambiguity, completion-unverified, early-analysis-existence and zombie-writer cases are covered;
+- `4` tests / `55` deterministic fixtures PASS;
+- exactly one live collection at `512/1000` recorded `SAFE / PRIMARY_RUNNING`, free `20,627,927,040`, required `18,167,614,669`, margin `2,460,312,371`, wrapper marker absent and analysis result absent by existence only;
+- successful wrapper completion remains `PRIMARY_COMPLETE_UNVERIFIED`, with scientific access, FIN1 execution and remediation authorization all false;
+- no active scientific/prediction content was opened, no active cache was recursively scanned/modified, and no cleanup/kill/restart/resume/YOLO/T014 action occurred.
 
-One implementation nuance is accepted deliberately: `health_guard` exposes `process_status` separately from top-level storage status, so `PRIMARY_COMPLETE_UNVERIFIED` is read from `process_status`; completion authorization remains owned exclusively by CLOSE1 and must never be inferred from OPS2 top-level `status`.
+One limitation is accepted explicitly: the snapshot's `git_head` is caller-supplied operational provenance rather than cryptographic authentication. The run/release/freeze/dispatch binding is independently checked from the primary operational metadata/resolved release, and this helper is only a triage record. Do not elevate OPS3 into a trust anchor for scientific bytes.
 
 ---
 
-# CURRENT 1-HOUR WORK PACKAGE — T013-OPS3
+# CURRENT 1-HOUR WORK PACKAGE — T013-OPS4
 
-**Title:** Fail-closed operational incident snapshot harness
+**Title:** One-off active-run vs shared-filesystem storage attribution audit
 
-**Time budget:** 45–60 minutes. This is an outcome-blind provenance/operations package only. It must not inspect prediction/scientific content and must not mutate the active run.
+**Time budget:** 45–60 minutes. This is a metadata-only operational package. It must not inspect scientific payloads or mutate the active run.
 
 ## Objective
-Prepare and test one deterministic, read-only **incident snapshot harness** that can capture the exact operational evidence needed if OPS2 ever reports storage risk, wrapper failure or process ambiguity, without improvising cleanup/restart actions under pressure.
+Determine, with exactly two read-only filesystem snapshots, how much of the current free-space decline is attributable to the active primary run itself versus other activity on the shared filesystem.
 
-The harness must answer one narrow question: **if the active primary enters a return-to-Lead state, can Codex preserve a complete, machine-readable operational snapshot sufficient for Research-Lead triage while touching no scientific payload?**
+The narrow question is: **between two nearby healthy primary snapshots, does allocated-byte growth of the exact active run/cache explain the observed `df` free-space change, or is there substantial residual pressure outside the active run?**
+
+This package is descriptive only. The existing OPS2 inequality remains the sole storage safety decision rule.
 
 ## Why this is the highest-value next step
-OPS2 now detects the principal in-flight risk correctly, and the latest 499-image snapshot remains SAFE. However, the fixed storage margin is only `2,545,509,990` bytes (~2.37 GiB) on a shared filesystem. Detection alone is not the whole failure protocol: if a genuine disk/process incident occurs, ad-hoc shell work risks provenance gaps or accidental scientific-content access. Pre-freezing a minimal evidence-capture path now is more valuable than another analysis preflight, more YOLO preparation, or any scientific side experiment. It does **not** predict a failure and does not change the fixed OPS2 rule.
+OPS3 now gives a clean incident record if the fixed guard trips, but the latest fixed-rule margin is only `1,780,260,044` bytes (~1.66 GiB). Between 512 and 533 completed images the margin fell by `680,052,327` bytes even though progress reduced the projected remaining requirement. Because `df` is filesystem-global, that erosion may reflect active-cache growth, unrelated shared-disk writes, or both. Distinguishing those sources now—without deleting or opening anything—will make any later Research-Lead storage decision evidence-based rather than improvised. Another scientific preflight or YOLO preparation is lower value while the primary is still incomplete.
 
 ## Fixed inputs/settings
-Bind exactly to:
-- run `20260912-210355-tovd-native30-primary`;
-- release `20260912-210306-tovd-native30-primary-freeze`;
-- freeze `6fec32243985ccc808123d851abf5f3dea10af99`;
-- dispatch `88668f76b22777459b5792dd28f88075f208c678`;
-- writer PID `721181` while it remains the active bound writer;
-- tmux session `autodl-20260912-210355-tovd-native30-primary`;
-- accepted OPS2 helper source/contract from evidence commit `e380d14e5ee7b830781d38cc9efae292509ca66a`.
+Bind exactly to the immutable primary identifiers above and to:
+- active run root: `/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary`;
+- active cache root: `/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/cache`;
+- project filesystem queried by `df -B1 --output=avail /home/wenchang/asdasdsad/wjq/TOVD`;
+- accepted OPS2 helper/contract from evidence commit `e380d14e5ee7b830781d38cc9efae292509ca66a`;
+- fixed OPS1 constants unchanged: total `1000`, P95 `16,355,328` bytes/image, multiplier `6/5`, reserve `8,589,934,592` bytes.
 
-Permitted snapshot fields only:
-- timestamp;
-- repository/release/run identifiers and current Git HEAD;
-- writer PID existence/state and tmux existence;
-- latest `completed_images` progress line;
-- anchored wrapper exit marker, if present;
-- `df -B1` free bytes for the project filesystem;
-- OPS2 computed `remaining`, `projected_remaining`, `required_free`, `margin`, storage status and process status;
-- existence/stat metadata only for `artifacts/analysis/results.json` (never contents);
-- existence, size and SHA256 of operational receipts/logs that contain no scientific metrics, only if already present and cheap to hash.
-
-Do not add new thresholds, forecasts, trend fits or remediation logic. Do not recursively walk/hash the active prediction cache for OPS3.
+Use allocated-byte measurements only, with C locale and an exact command equivalent to `du -x -B1 -s -- <path>`. Do not use file contents, NPZ parsing, scientific JSON parsing or per-class/per-condition names to attribute storage.
 
 ## Required work
-1. Add a small standard-library module under `research_log/t013/` (for example `primary_incident_snapshot.py`) plus deterministic tests and a machine-readable receipt/schema. The module should parse/canonicalize supplied operational metadata and call/reuse the already accepted OPS2 scalar guard rather than reimplementing the storage formula independently.
-2. Define one canonical snapshot schema with explicit run/release/freeze/dispatch bindings, raw-source references, parsed process/storage fields, `analysis_result_exists` boolean, and a scope attestation that scientific payloads were not opened.
-3. Fail closed on missing/malformed required metadata, cross-run/release/freeze bindings, unexpected writer PID substitution while the primary is still running, impossible progress counts, noninteger free bytes, or an OPS2 return-to-Lead status whose raw supporting fields are absent.
-4. Add deterministic fixtures covering at minimum:
-   - healthy running + SAFE storage;
-   - `STORAGE_RISK_RETURN_TO_LEAD`;
-   - `PRIMARY_FAILED_RETURN_TO_LEAD` from nonzero wrapper exit;
-   - `PROCESS_STATE_AMBIGUOUS_RETURN_TO_LEAD`;
-   - successful wrapper exit0 with writer/tmux gone, preserved only as `PRIMARY_COMPLETE_UNVERIFIED` and **not** as scientific readiness;
-   - stale/cross-run or wrong-freeze metadata rejection;
-   - early `analysis/results.json` existence with otherwise running state, proving content remains forbidden and state is unchanged.
-5. Rehearse only on synthetic fixtures and already committed health metadata first. Then perform exactly one normal end-of-package live operational snapshot of the active run if it is still running. Do not scan prediction files or run FIN1/analysis/replay.
-6. If that live snapshot yields any return-to-Lead state, stop the package after committing/preserving the snapshot and report it immediately. Do not clean, compress, move, kill, restart, resume or otherwise remediate.
-7. If the live snapshot is healthy, stop after delivery. Do not turn OPS3 into a new polling loop; the existing health cadence remains the only monitoring loop.
+1. Add a tiny standard-library arithmetic/canonicalization helper plus deterministic tests under `research_log/t013/` (or a comparably minimal reproducible script). It must accept two supplied metadata snapshots and compute only:
+   - `delta_images = images_B - images_A`;
+   - `free_consumed = free_A - free_B`;
+   - `active_run_growth = run_du_B - run_du_A`;
+   - `cache_growth = cache_du_B - cache_du_A`;
+   - `noncache_run_growth = active_run_growth - cache_growth`;
+   - `outside_run_pressure = free_consumed - active_run_growth`;
+   - descriptive `cache_growth_per_new_image` when `delta_images > 0`.
+2. Fail closed on cross-run/freeze bindings, reversed timestamps, decreasing progress, negative `du` values, cache size exceeding run size, malformed `df/du` evidence, or process/OPS2 states other than healthy running. Do **not** invent a new warning/failure threshold for `outside_run_pressure` or bytes/image.
+3. Perform exactly **two** live metadata snapshots of the same active primary, separated by one existing health-cadence interval (about 15 minutes). Do not create a new scheduler/polling loop. Each snapshot may collect only:
+   - timestamp;
+   - latest progress line;
+   - writer/tmux and wrapper-exit state;
+   - `df -B1 --output=avail` for the project filesystem;
+   - `du -x -B1 -s` for the exact active run root and exact active cache root;
+   - analysis-result path existence only;
+   - OPS2 scalar status derived from the same progress/free-space values.
+4. The `du` traversals are a **narrowly authorized metadata-only exception** for OPS4: they may enumerate/stat the active run/cache to obtain allocated byte totals, but must not hash, open, deserialize, classify or otherwise inspect prediction files. Do not produce per-condition/per-vocabulary/per-image size tables.
+5. Preserve both raw command transcripts and a machine-readable attribution receipt. The receipt must state clearly that `outside_run_pressure` is descriptive accounting residual, not proof of which external process wrote bytes and not a new safety gate.
+6. If either live snapshot yields `STORAGE_RISK_RETURN_TO_LEAD`, `PRIMARY_FAILED_RETURN_TO_LEAD`, `PROCESS_STATE_AMBIGUOUS_RETURN_TO_LEAD` or `PRIMARY_COMPLETE_UNVERIFIED`, stop immediately after preserving that snapshot and report it. Do not take the second snapshot after an initial return-to-Lead state; do not run FIN1 or remediate.
 
 ## Non-goals / prohibitions
-- Do not open or deserialize active-primary NPZs, predictions, scores, boxes, labels or `analysis/results.json` contents.
-- Do not run FIN1, scientific analysis, full replay, comparator, COCO evaluation or bootstrap on the incomplete primary.
-- Do not recursively enumerate/hash the active cache for OPS3; FIN1 remains the completion-time integrity tool.
-- Do not modify the frozen runner/analysis/PLAN/vocabulary/IDs/corruptions/seeds/thresholds/gates or active run artifacts.
-- Do not clean, delete, compress, move or truncate any active-run/cache file.
+- Do not open/deserialize active-primary NPZs, predictions, scores, boxes, labels or `analysis/results.json` contents.
+- Do not compute AP/AP50/AR, D/A interaction, bootstrap, diagnostics or any partial scientific metric.
+- Do not recursively hash active cache files; only the two aggregate `du` metadata traversals are authorized.
+- Do not scan unrelated user/home directories looking for deletion candidates.
+- Do not delete, clean, compress, move, truncate or chmod any active or inactive experiment artifact.
 - Do not kill/restart/resume/duplicate the primary or spawn another writer.
+- Do not change the OPS2 formula, P95, reserve, multiplier or safety criterion, and do not add a trend-based threshold.
 - Do not install/run YOLO-World, download/load YOLO checkpoints, or perform YOLO image inference.
 - Do not start T014.
-- Do not change or supplement the fixed OPS2 storage decision rule.
 
 ## Acceptance / stop criteria
-**PASS** only if the snapshot harness is deterministic, standard-library/read-only with respect to the experiment, reuses the accepted OPS2 guard, binds exact primary provenance, passes all required healthy/failure/ambiguity/completion/stale/early-analysis fixtures, and one live rehearsal records only permitted operational metadata with no scientific-content access or run mutation.
+**PASS** only if:
+- both snapshots are exact-run/freeze bound, healthy and outcome-blind;
+- the two run/cache `du` totals and two `df` free-byte values are preserved with raw commands;
+- arithmetic is deterministic and covered by tests including zero/positive/negative descriptive residuals, malformed evidence and binding failures;
+- no scientific payload is opened and no experiment artifact is mutated;
+- the report makes no new storage gate or remediation decision.
 
-Any live `STORAGE_RISK_RETURN_TO_LEAD`, `PRIMARY_FAILED_RETURN_TO_LEAD`, or `PROCESS_STATE_AMBIGUOUS_RETURN_TO_LEAD` is an immediate stop condition after evidence preservation. `PRIMARY_COMPLETE_UNVERIFIED` is also a stop-and-return state for this package; do not automatically execute FIN1 unless a later Research-Lead review explicitly advances the established CLOSE1 sequence.
+Any established OPS2/CLOSE1 return-to-Lead or completion-unverified state is an immediate stop after evidence preservation. A large positive or negative attribution residual by itself is **not** a stop condition and must not trigger cleanup or protocol changes.
 
 ## Exact evidence to write back
 Commit under `research_log/t013/`:
-- snapshot helper/source;
-- deterministic tests/fixtures;
-- schema/note if useful;
-- `primary_incident_snapshot_receipt.json`;
-- exactly one live raw snapshot transcript/metadata file if the run remains available.
+- the minimal attribution helper/source and deterministic tests;
+- the two raw live metadata transcripts if both healthy snapshots are obtained;
+- a machine-readable `primary_storage_attribution_receipt.json` (or equivalently explicit name);
+- a short note documenting commands and the accounting identity.
 
 Update `coordination/CODEX_TO_CHATGPT.md` with:
-- T013-OPS3 PASS or the exact return-to-Lead/completion-unverified state;
+- T013-OPS4 PASS or exact early stop state;
 - evidence commit SHA and task-start HEAD;
-- exact files changed and test command;
-- test/fixture counts and statuses for healthy, storage-risk, wrapper-failure, process-ambiguity, completion-unverified, stale-binding and early-analysis-existence cases;
-- explicit confirmation that the accepted OPS2 helper/formula was reused rather than refit;
-- end live operational snapshot: progress, writer/tmux, wrapper marker, free/required/margin, process/storage status, and analysis-result existence only;
-- explicit confirmation that no active-primary prediction/scientific content was opened, no active cache was recursively scanned/modified, no frozen science/run state changed, and no cleanup/restart/resume/YOLO/T014 action occurred.
+- exact files changed, commands and test counts/results;
+- snapshot A/B timestamps, progress, writer/tmux/wrapper status, `df` free bytes, run `du`, cache `du`, OPS2 required/margin/status and analysis-result existence only;
+- exact `delta_images`, `free_consumed`, `active_run_growth`, `cache_growth`, `noncache_run_growth`, `outside_run_pressure`, and descriptive cache growth/image;
+- explicit statement that no new threshold or cleanup recommendation was derived from the attribution residual;
+- explicit confirmation that no scientific/prediction contents were opened, no active files were modified/hashed, no FIN1/replay/scientific analysis was run, and no cleanup/restart/resume/YOLO/T014 action occurred.
 
-Stop after T013-OPS3 and await Research-Lead review. The immutable Grounding-DINO primary continues unchanged unless the snapshot itself reaches an established return-to-Lead/completion-unverified state.
+Stop after T013-OPS4 and await Research-Lead review. The immutable Grounding-DINO primary continues unchanged unless an established return-to-Lead/completion-unverified state occurs.
