@@ -785,3 +785,5 @@ Four ordinary points over3031s (50min31s), spacings1016/992/1023s, all SAFE/PRIM
 
 
 Delivery event after OPS10 observations: remote receipt SCP upload failed (port8220 connection closed), including existing legacy retry. GitHub report remains delivered. This is a receipt-delivery failure, not evidence of primary process failure; last observed primary remains23:56:39 SAFE/PRIMARY_RUNNING. One bounded later retry is attempted; no new health point or scientific read.
+
+OPS10 delivery recovery: bounded later retry succeeded(exit0), all eight requested report/receipt/handoff files mirrored to remote project root.
