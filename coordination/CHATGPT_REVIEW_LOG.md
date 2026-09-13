@@ -8,7 +8,7 @@
 
 Reviewed commits/artifacts:
 - `0acbd4f6417d2946f2009979ec8461df351eb07b` — CLOSE1 barrier implementation/tests/receipt;
-- `56c1ab18044d6ee7d2946f2009979ec8461df351eb07b` — Codex CLOSE1 handoff;
+- `56c1ab18044d6ee7d4ea83e44c476f65216be3b2` — Codex CLOSE1 handoff;
 - health-only commits through `d87e4e5b1b682af18df3eb498a6936936903f29d`;
 - `research_log/t013/FINALIZATION_BARRIER.md`, `finalization_barrier.py`, deterministic fixtures/receipt, and the accepted FIN1/REPRO1/DEC1/G4A1 evidence chain.
 
