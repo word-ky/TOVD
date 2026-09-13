@@ -149,3 +149,5 @@ No scientific/log contents interpreted, comparator/replay-envelope/DEC1/CF/MECH/
   "replay_relaunched": false
 }
 ```
+
+Final REPLAY1B evidence commit: eb90ff9494eb34231668cf00d83d3ac3d9bd74da. Delivery is the subsequent `coord: deliver clean replay completion to research lead` commit containing this entry. Clean execution completed; await separately authorized comparator.
