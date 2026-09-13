@@ -78,7 +78,47 @@
       }
     }
   },
-  "observations": [],
-  "next_observations": "Existing ~15-20 minute heartbeats: approximately 05:00,05:16,05:32 +08; at most three further points. Final point must be within 05:29:53-05:44:53 +08 (45-60 min from launch). Stop immediately on exit0 or anomaly.",
-  "prohibitions": "No stdout/stderr/scientific contents, comparator/envelope/DEC1/CF/MECH/YOLO/T014 or second launch. Preserve frozen CPU analysis/environment."
+  "observations": [
+    {
+      "timestamp": "2026-09-14T05:02:12+08:00",
+      "pid": 1104124,
+      "tmux_rc": 0,
+      "tmux_stderr": "",
+      "ps_rc": 0,
+      "process": "1104124 1104122 Rl+  /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -m scripts.t013_analysis --annotations /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations/instances_val2017.json --run /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/cache --output /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/close1-primary-replay",
+      "exit_exists": false,
+      "exit_code": null,
+      "finish_exists": false,
+      "finished": null,
+      "top_level": {
+        "stdout.txt": {
+          "exists": true,
+          "bytes": 653
+        },
+        "stderr.txt": {
+          "exists": true,
+          "bytes": 0
+        },
+        "results.json": {
+          "exists": false,
+          "bytes": null
+        },
+        "paired_image_draws.npy": {
+          "exists": true,
+          "bytes": 8000128
+        },
+        "bootstrap_samples.npz": {
+          "exists": true,
+          "bytes": 40801
+        },
+        "diagnostics_per_image.npz": {
+          "exists": false,
+          "bytes": null
+        }
+      }
+    }
+  ],
+  "next_observations": "Two remaining ordinary heartbeat points near 05:18 and 05:34 +08. Final observation within 05:29:53-05:44:53; stop on natural exit0/anomaly, otherwise REPLAY_RUNNING_HANDOFF at final point. No new launch.",
+  "prohibitions": "No stdout/stderr/scientific contents, comparator/envelope/DEC1/CF/MECH/YOLO/T014 or second launch. Preserve frozen CPU analysis/environment.",
+  "launch_evidence_commit": "688f36b"
 }

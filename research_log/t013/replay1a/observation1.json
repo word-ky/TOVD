@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-09-14T05:02:12+08:00",
+  "pid": 1104124,
+  "tmux_rc": 0,
+  "tmux_stderr": "",
+  "ps_rc": 0,
+  "process": "1104124 1104122 Rl+  /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -m scripts.t013_analysis --annotations /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations/instances_val2017.json --run /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/cache --output /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/close1-primary-replay",
+  "exit_exists": false,
+  "exit_code": null,
+  "finish_exists": false,
+  "finished": null,
+  "top_level": {
+    "stdout.txt": {
+      "exists": true,
+      "bytes": 653
+    },
+    "stderr.txt": {
+      "exists": true,
+      "bytes": 0
+    },
+    "results.json": {
+      "exists": false,
+      "bytes": null
+    },
+    "paired_image_draws.npy": {
+      "exists": true,
+      "bytes": 8000128
+    },
+    "bootstrap_samples.npz": {
+      "exists": true,
+      "bytes": 40801
+    },
+    "diagnostics_per_image.npz": {
+      "exists": false,
+      "bytes": null
+    }
+  }
+}
