@@ -4,130 +4,106 @@
 
 ## T013-NATIVE30 — CURRENT RESEARCH-LEAD STATE
 
-**Primary status:** immutable Grounding-DINO T013 primary remains ACTIVE; scientific outcome is PENDING and must remain unopened while incomplete.
+**Primary status:** immutable Grounding-DINO T013 primary remains ACTIVE and outcome-blind. Do not inspect partial AP/AP50/AR, D/A interaction, bootstrap, mechanism diagnostics, prediction arrays, scores, boxes, labels, or `analysis/results.json` contents before the established completion barrier.
 
-Immutable primary bindings remain unchanged:
-- freeze commit `6fec32243985ccc808123d851abf5f3dea10af99`;
+Immutable bindings remain unchanged:
+- freeze `6fec32243985ccc808123d851abf5f3dea10af99`;
 - dispatch `88668f76b22777459b5792dd28f88075f208c678`;
 - run `20260912-210355-tovd-native30-primary`;
 - release `20260912-210306-tovd-native30-primary-freeze`;
-- writer PID `721181` while the run remains bound to that writer;
+- writer PID `721181` while exact-bound;
 - tmux `autodl-20260912-210355-tovd-native30-primary`;
-- official native Grounding-DINO Swin-T, frozen CPU FP32/four-thread execution, gradients disabled;
-- fixed 1,000 COCO-val IDs, five visual conditions, `V0/Vhard30/Vrand30 = 80/110/110` semantic classes and `195/255/255` native tokens;
-- frozen metrics/diagnostics, 1,000-replicate paired-image bootstrap and original Gates 1–4.
+- official native Grounding-DINO Swin-T, CPU FP32/four-thread frozen execution;
+- 1,000 fixed COCO-val IDs, five visual conditions, `V0/Vhard30/Vrand30 = 80/110/110` semantic classes and `195/255/255` native tokens;
+- original frozen metrics, 1,000-replicate paired-image bootstrap and Gates 1–4.
 
-Do **not** inspect partial AP/AP50/AR, D/A interaction, bootstrap, mechanism diagnostics, active-primary prediction arrays, scores, boxes or labels. Operational metadata only are permitted until the established completion barrier is satisfied. Do not alter the frozen plan, code, vocabulary, IDs, seeds, thresholds, gates or running release. If the run fails or becomes ambiguous, preserve exact metadata and return to Research Lead before any restart/resume design.
+Grounding-DINO remains the preregistered primary. YOLO-World remains only a separately preregistered secondary cross-backbone contingency. P0/P1/P2 preparation is accepted; no YOLO runtime/scientific benchmark is authorized before completed Grounding review. A future YOLO result may test architecture specificity and can never relabel, replace, or rescue a failed Grounding primary.
 
-Grounding-DINO remains the preregistered primary. YOLO-World remains a separately preregistered contingency only: P0/P1/P2 preparation is accepted, but no YOLO runtime/scientific benchmark is authorized before completed Grounding review. A future YOLO result can test architecture specificity and can never relabel or rescue a failed Grounding primary.
-
-Latest committed ordinary health point (`2026-09-13T17:29:31+08:00`): `725/1000`, writer/tmux healthy, wrapper/result absent by existence-only checks, free `15,257,890,816` bytes, fixed OPS2 required `13,987,192,832`, margin `1,270,697,984` bytes, `SAFE / PRIMARY_RUNNING`. This remains operational evidence only.
+Latest committed ordinary health (`2026-09-13T19:17:37+08:00`, commit `d24c801221c946af60a526d05f8ef6a947e2f462`): `788/1000`, writer/tmux healthy, wrapper exit absent, `analysis/results.json` absent by existence-only check, free `13,537,075,200` bytes, fixed OPS2 required `12,750,730,036`, margin `786,345,164` bytes, `SAFE / PRIMARY_RUNNING`. This is operational evidence only.
 
 ---
 
-## ACCEPTED PRE-OUTCOME VALIDITY / MECHANISM CHAIN
+## ACCEPTED PRE-OUTCOME CHAIN
 
 - **OPS1–OPS6 ACCEPTED:** provenance, arithmetic, completion barrier, deterministic replay, fail-closed operations and low-I/O survival monitoring are established.
 - **DEC1 ACCEPTED:** final disclosure/decision states are frozen; Gate3 cannot rescue Gate1/2 and YOLO cannot mutate Grounding's decision.
-- **G4A1 ACCEPTED AS PRE-OUTCOME EVIDENCE:** `PREOUTCOME_HISTORY_CLEAN`; final Gate4 remains pending completed-run evidence and Lead judgment.
-- **CF1 ACCEPTED:** canonical-only final top-300 selector validated on completed engineering smoke only.
-- **CF2 ACCEPTED:** paired canonical-only counterfactual analysis validated on completed engineering smoke only; it can later isolate final global top-300 distractor crowd-out, but only after completed Grounding review and explicit Lead authorization.
-- **MECH1 ACCEPTED:** exact frozen-source audit proves cross-vocabulary raw query/proposal identity is **vocabulary-dependent**. Same-index score/box/token-logit hybrids are prohibited as causal decompositions. Current cache can identify final top-300 crowd-out but cannot by itself causally attribute any residual interaction to text encoder, multimodal fusion, encoder proposal selection, decoder cross-attention, classification head or localization head.
+- **G4A1 ACCEPTED AS PRE-OUTCOME EVIDENCE:** `PREOUTCOME_HISTORY_CLEAN`; final Gate4 still requires completed-run evidence and Lead judgment.
+- **CLOSE1 ACCEPTED:** wrapper success -> exact-run FIN1 PASS -> exact frozen full replay/comparison PASS -> later Research-Lead review; result-file existence alone never unlocks science.
+- **CF1/CF2 ACCEPTED:** final global top-300 distractor crowd-out has a pre-outcome canonical-only counterfactual contract/paired analysis, but primary execution remains unauthorized until completed Grounding review.
+- **MECH1 ACCEPTED:** frozen source proves proposal/query identity is vocabulary-dependent; same-index cross-vocabulary score/box/token-logit hybrids are prohibited.
+- **MECH2 ACCEPTED:** one future encoder proposal-selection-lock intervention is now preregistered and synthetically validated. It imports only same-image/same-condition V0 ordered encoder top-900 indices `I0`; all Vx encoder coordinates/memory/text/decoder/final scoring remain Vx-native. It is NOT RUN, NOT A GATE, and must never execute if Grounding Gate1 or Gate2 fails.
 
-## T013-MECH1 — RESEARCH-LEAD REVIEW
+## T013-MECH2 — RESEARCH-LEAD REVIEW
 
-Reviewed task-start `65fc1208342f2fa8e3835bae20836bfcd9a64e27`, evidence `8855eba139f751ceaf576b3598c574e881a5b840`, handoff `c699e779fc23947dfab91944125fa66619cf9a4f`, `MECHANISM_IDENTIFIABILITY_AUDIT.md`, machine receipt, exact frozen native archive/source hashes, latest health, current `AGENTS.md`, `coordination/PROTOCOL.md`, and `research/TOVD_RESEARCH_SPEC.md`.
+Reviewed task-start `37823006fda01a942512330251608a4d67c74344`, preregistration `f8c2f685d12c6aa8fa97bbe145a10500fc851d67`, evidence `8ed82955b628703cede411f8732d8dbd11a4a658`, handoff `53abc40e583d5adfabcae89684eade035d5e9263`, contract, helper, tests, receipt, frozen source excerpt, latest health, `AGENTS.md`, `coordination/PROTOCOL.md`, and `research/TOVD_RESEARCH_SPEC.md`.
 
-**Decision: ACCEPTED.** The source/provenance audit is outcome-blind and internally consistent. The exact frozen active branch uses `two_stage_type='standard'`, `embed_init_tgt=True`, six multimodal encoder layers and six decoder layers. Caption-conditioned text enters bidirectional visual-language fusion before encoder proposal ranking. The frozen transformer computes token-conditioned encoder scores, ranks spatial proposals with an encoder top-k, and uses those ordered indices to gather decoder reference geometry. Although learned decoder target embeddings are fixed by slot `q`, the geometric/proposal identity paired with slot `q` is not invariant across vocabularies. Therefore `q` is only a learned target-array index, not a proven same latent proposal/object across `V0`, `Vhard30` and `Vrand30`.
+**Decision: ACCEPTED.** The helper exactly mirrors the frozen max-token -> ordered `torch.topk` -> `torch.gather` reference path and accepts only an explicit int64 override-index tensor. Six deterministic methods pass on CPU and A6000 CUDA; required native identity (including a tied-score case), Vx-coordinate-only override behavior, order preservation, null-intervention identity, invalid dtype/shape/range/duplicate/count rejection, and detached references are all covered. The frozen source confirms that replacing `topk_proposals` changes the indices used to gather Vx reference coordinates; with `embed_init_tgt=True`, decoder target embeddings remain the fixed learned embeddings. No V0 coordinates/scores/features are imported and no cross-vocabulary decoder-slot identity is assumed.
 
-MECH1 correctly distinguishes structural dependence from numerical occurrence: source proves an allowed/active vocabulary-conditioned selection path, not that every image-vocabulary pair must produce different indices. It also correctly leaves CF1/CF2 as the only currently established counterfactual decomposition and forbids same-index cross-vocabulary hybrids. No active-primary cache/science, annotations, model import/forward, checkpoint load, FIN1/replay, new counterfactual execution, run mutation, new Gate/threshold, YOLO runtime or T014 occurred.
+The observed `nvidia-smi` NVML mismatch does not invalidate MECH2 because direct Torch CUDA execution succeeded and the synthetic CUDA tests passed; no driver/environment repair was attempted. MECH2 is engineering/preregistration evidence only. `AP50_lock`, `D_lock`, `A_lock`, and `C_select=A_orig-A_lock` remain future descriptive quantities and cannot modify the original Grounding gates or interpretation.
 
-**Scientific implication:** if the completed primary later supports the dual-shift hypothesis and CF2 shows that final top-300 crowd-out explains only part of the interaction, the next clean causal question is no longer “swap scores or boxes at equal query index.” The earliest frozen architectural branch that can be intervened on without that invalid alignment assumption is the **encoder top-900 proposal selector itself**. We should freeze exactly one such intervention now, before outcomes are visible, but only as a contract + synthetic logic test. It must not be executed on the active primary or used to rescue a failed Grounding result.
+**Research priority decision:** do not add a third mechanism intervention now. MECH1/MECH2 already freeze the first defensible causal branch before outcomes; further mechanism design while the primary is still hidden would add unnecessary analytic degrees of freedom. The material risk has shifted back to preserving the irreplaceable primary: the accepted fixed-rule storage margin is now only `786,345,164` bytes, substantially below the margins at MECH2 completion, while the run still has 212 images remaining. The next hour should therefore use the already accepted low-I/O guard only.
 
 ---
 
-# CURRENT 1-HOUR WORK PACKAGE — T013-MECH2
+# CURRENT 1-HOUR WORK PACKAGE — T013-OPS7
 
-**Title:** Pre-outcome encoder proposal-selection lock contract and synthetic validation
+**Title:** Low-margin fixed-gate primary preservation watch
 
-**Time budget:** 45–60 minutes. This is **preregistration + synthetic tensor validation only**. It does not authorize detector inference, active-primary cache access, completed-primary science, YOLO runtime or T014 scientific execution.
+**Time budget:** 45–60 minutes. Reuse accepted OPS2/OPS3 unchanged. **Do not create a new monitor, formula, trend model, threshold, or remediation policy.**
 
-## One scientific/engineering objective
-Freeze and validate the semantics of **one** future causal intervention that isolates the contribution of Grounding-DINO's vocabulary-conditioned encoder top-900 proposal **selection/order** from later decoder processing, without using cross-vocabulary query-index alignment.
-
-For the same image and visual condition, let `I0` be the ordered encoder top-900 spatial proposal indices produced by the normal `V0` forward. In a future `Vx ∈ {Vhard30,Vrand30}` intervention forward, compute the entire `Vx` text-conditioned encoder state, encoder class logits and encoder box-coordinate tensor normally, but replace only the native selector output
-
-`I_x = Top900(max_token enc_class_logits_x)`
-
-with the ordered `I0` **at the exact selector assignment point**. Then gather the **Vx** encoder coordinate predictions at `I0` to form the initial decoder references, while keeping `Vx` fused visual memory, `Vx` fused text memory, fixed learned `tgt_embed[q]`, decoder layers, final scoring and final global top-300 unchanged.
-
-This intervention must be defined as “proposal-selection lock,” not “V0 reference replay”: it imports **indices/order only**, not V0 boxes, V0 scores, V0 encoder memory, V0 text features or V0 decoder states.
+## One objective
+Determine whether the exact immutable Grounding-DINO primary remains safely executable under the already accepted fixed OPS2 storage/process rule over one ordinary one-hour window, and fail closed immediately if an established storage/process/completion state changes.
 
 ## Why this is the highest-value next step
-MECH1 proves that proposal/reference identity is vocabulary-dependent before the decoder, so same-index cached hybrids are scientifically invalid. The encoder selector is therefore the earliest clean branch revealed by the frozen source where a single controlled intervention can answer a causal question without assuming slot alignment.
-
-Freezing this one intervention before the primary result is visible prevents post-hoc mechanism design. If the completed Grounding primary does not support Gates 1/2, this contract remains unused and must **not** become a rescue experiment; the preregistered YOLO-World cross-backbone contingency remains the only allowed next scientific replication path. If Grounding supports the dual-shift result and Research Lead later authorizes causal localization, MECH2 will provide a pre-outcome-defined first intervention.
-
-A repeat OPS watch is lower-value while the accepted OPS2 rule remains `SAFE / PRIMARY_RUNNING`; ordinary scalar monitoring continues independently.
+MECH2 is complete and no additional pre-outcome causal intervention is needed. The latest committed primary is `788/1000` with only `786,345,164` bytes of margin under the sole authorized storage inequality. Earlier accounting already showed that some free-space erosion can come from outside the TOVD project, so extra filesystem traversal or another mechanism package would add disturbance without changing the legal decision rule. Protecting the unique primary with minimal I/O has higher value than generating more pre-outcome analysis machinery.
 
 ## Fixed inputs/settings
-Use only outcome-blind static/synthetic inputs:
-- scientific freeze `6fec32243985ccc808123d851abf5f3dea10af99`;
-- exact native source revision `856dde20aee659246248e20734ef9ba5214f5e44`;
-- MECH1-bound `transformer.py` SHA256 `7436a0daf8002cb4078bc56ab4343c7ec6d1f5dfe15b41747dc357cabad1760e`;
-- MECH1-bound config SHA256 `5d7093aaaeaafbf8eec07a1aef5bee976dff5615d54e0ca88293cd92e008a7c8`;
-- frozen `two_stage_type='standard'`, `num_queries=900`, `embed_init_tgt=True`;
-- exact frozen selector/gather semantics from MECH1; no upstream-version documentation may substitute for the bound source.
+Use exactly:
+- primary bindings listed above;
+- accepted OPS2 helper/evidence commit `e380d14e5ee7b830781d38cc9efae292509ca66a`;
+- accepted OPS3 incident-snapshot evidence commit `6ecbc36bd66eb2e4ca6057f9a33c81863ed7eff7`;
+- total images `1000`;
+- OPS1 P95 `16,355,328` bytes/image;
+- multiplier `6/5`;
+- reserve `8,589,934,592` bytes;
+- exact writer PID/tmux/run/release/freeze/dispatch bindings above.
 
-Synthetic tests may use small toy dimensions for speed, but the contract must explicitly bind the production shape/order semantics (`batch × encoder_locations`, ordered `int64` top-900 unique indices per batch). No COCO images, annotations, primary NPZs, smoke predictions or checkpoints are required.
-
-If a future scientific execution is ever authorized, `I0` must come from the **same image and same visual condition** as the corresponding `Vx` forward; never reuse clean `I0` for a corrupted image. The future intervention must preserve all original T013 images, corruption seeds, vocabularies, detector weights, preprocessing, final top-300 rule, metrics and paired bootstrap. It creates no new Gate.
+For each ordinary watch point, collect only: timestamp, latest completed/total image scalar, exact writer state, exact tmux existence, wrapper exit marker/code if present, `df -B1 --output=avail` free bytes, `analysis/results.json` **existence only**, and unchanged OPS2 scalar outputs (`remaining`, `projected_remaining`, `required_free`, `margin`, storage status, process status). No `du` or file-tree traversal.
 
 ## Required work
-1. Create a concise `research_log/t013/PROPOSAL_SELECTION_LOCK_CONTRACT.md` and a machine-readable receipt. The document must identify the exact frozen source lines/function where native `topk_proposals` is computed and where it is used to gather initial references.
-2. Implement only a **small standalone synthetic helper/reference** under `research_log/t013/mech2/` (or equivalent non-primary path) that reproduces the native selector/gather semantics and optionally accepts an explicit override-index tensor. Do not patch the bound native source or any running-release file.
-3. Add deterministic synthetic tests proving all of the following:
-   - **native identity:** with no override, selector indices and gathered references exactly equal direct frozen-style `torch.topk(...).indices` + `torch.gather(...)` reference behavior;
-   - **override semantics:** with `I0`, gathered references equal `gather(enc_coord_x, I0)` exactly and do not consume any V0 coordinate/score tensor;
-   - **order preservation:** a deliberate permutation of valid override indices produces the correspondingly permuted Vx references, proving ordered selector semantics are preserved;
-   - **null intervention identity:** when `I0 == I_x`, override and native outputs are exactly identical;
-   - **fail-closed validation:** wrong dtype/shape, out-of-range indices, repeated indices or wrong requested count are rejected rather than silently coerced.
-4. In the contract, explicitly enumerate what remains **Vx-native** under the future intervention: text features, fused visual memory, encoder coordinate predictions, learned target embeddings, decoder text/visual attention, iterative box refinement, final token/class scores and final global top-300. Explicitly enumerate the only imported object: ordered `I0` proposal indices.
-5. Freeze descriptive future notation only; do not compute it now. If later authorized after a positive/valid Grounding review, define `AP50_lock`, `D_lock`, `A_lock` with the same frozen T013 evaluation/bootstrap and define the selector contribution as `C_select = A_orig - A_lock`. State prominently that `C_select` is a **descriptive causal-intervention decomposition**, not a new acceptance Gate and not evidence that all residual `A_lock` belongs to one downstream module.
-6. State the future authorization rule explicitly: **do not execute this intervention on primary data if Grounding Gate1 or Gate2 fails**. A failed primary remains failed; MECH2 cannot rescue it. Execution requires completed primary + CLOSE1 validity + Research-Lead review + explicit later authorization.
-7. One ordinary scalar OPS2 health point may be recorded if it occurs naturally. If an established incident/completion-unverified state appears, preserve OPS3 metadata and stop/return to Lead; do not enter FIN1 automatically.
+1. Reuse accepted OPS2/OPS3 source unchanged; record exact source/evidence commit used.
+2. Collect **up to four** ordinary approximately 15-minute cadence points over one 45–60 minute window. No tighter polling loop, scheduler, or background daemon.
+3. At every point, evaluate only the frozen OPS2 rule and exact-bound process state. Do not fit or report a new depletion rate, time-to-failure estimate, moving average, forecast gate, or cleanup threshold.
+4. If all collected points remain exact-bound `SAFE / PRIMARY_RUNNING`, stop at the end of the window and report the sequence.
+5. If any point produces `STORAGE_RISK_RETURN_TO_LEAD`, `PRIMARY_FAILED_RETURN_TO_LEAD`, `PROCESS_STATE_AMBIGUOUS_RETURN_TO_LEAD`, or any CLOSE1 completion-unverified state, preserve the exact metadata through the accepted OPS3 incident path and stop immediately. Do not wait for later watch points.
+6. If progress reaches 1000 while wrapper/process completion is not yet established, do not infer readiness, do not open results, and do not run FIN1. Follow CLOSE1 state logic and return to Lead when its completion-unverified condition is reached.
 
 ## Explicit non-goals / prohibitions
-- No active-primary NPZ/prediction/result/scientific-content access.
-- No COCO annotations or smoke scientific metrics in this package.
-- No AP/AP50/AR, D/A, CI, bootstrap, Gate or mechanism metric execution.
-- No detector/model import, checkpoint load, forward pass, hook, feature extraction or profiling.
-- No patch to the frozen native Grounding-DINO source, frozen T013 scripts, running release or active run.
-- No same-index cross-vocabulary score/box/token-logit hybrid.
-- No second intervention, intervention ladder, decoder ablation, fusion ablation or text-encoder ablation in this cycle.
-- No new Gate, threshold, success criterion or post-hoc rescue rule.
-- No primary FIN1/full replay/final analysis.
-- No YOLO-World install/checkpoint/runtime/scientific benchmark.
-- No T014 scientific execution.
-- No cleanup/restart/resume/duplicate primary.
+- No active-primary prediction/NPZ/result/scientific-content access.
+- No AP/AP50/AR, D/A, bootstrap, Gate, CF1/CF2, MECH2 or any mechanism metric execution.
+- No `du`, recursive scan, top-N directory scan, active-file hashing, quota hunt, deletion-candidate search, or writer-identification hunt.
+- No new storage threshold, extrapolation, forecast, moving average, time-to-failure gate, or post-hoc rescue.
+- No deletion, cleanup, compression, movement, truncation, permission/quota change, install/update, driver/NVML repair, kill/restart/resume, duplicate primary, or second writer.
+- No frozen code/config/vocabulary/ID/seed/gate/run mutation.
+- No FIN1/full replay/scientific result access during this package.
+- No YOLO-World runtime/checkpoint/benchmark and no T014 scientific execution.
+- No new mechanism/counterfactual intervention in this cycle.
 
 ## Acceptance / stop criteria
-**PASS** if one and only one proposal-selection-lock intervention is frozen with exact source binding, its standalone synthetic implementation/tests reproduce the native selector/gather path and all five validation cases above pass, the contract cleanly distinguishes imported `I0` indices from all Vx-native tensors, and no primary/model/scientific execution occurs.
+**PASS** if the 45–60 minute watch uses only accepted scalar metadata and unchanged OPS2/OPS3 logic, takes at most four ordinary-cadence points, all points remain outcome-blind and exact-bound, no prohibited I/O/action occurs, and the final observed state remains `SAFE / PRIMARY_RUNNING`.
 
-**STOP / REPORT BLOCKER** if reproducing the exact selector/gather semantics requires changing the bound native source, loading the model/checkpoint, reading active-primary data, or if the proposed single intervention is shown by source analysis to alter additional hidden state beyond the selector/reference path. Do not broaden the package to another intervention.
+Any established return-to-Lead or completion-unverified state is an **immediate successful fail-closed stop**, not an engineering failure. Preserve evidence and hand back to Research Lead without remediation. A smaller positive margin by itself is not a new stop condition while the fixed OPS2 inequality remains `SAFE`.
 
 ## Exact evidence Codex must write back to `coordination/CODEX_TO_CHATGPT.md`
 Report:
-- `T013-MECH2 PASS` or exact blocker;
-- task-start HEAD and evidence commit SHA;
-- exact files changed;
-- exact frozen source/config hashes and exact selector/gather source lines used;
-- exact standalone helper/test commands and environment used;
-- exact test count and each of the five required validation outcomes;
-- a one-paragraph formal statement of the intervention: what `I0` is, where it replaces `I_x`, what tensors remain Vx-native, and why no cross-vocabulary query-slot identity is assumed;
-- future descriptive formulas `AP50_lock`, `D_lock`, `A_lock`, `C_select = A_orig - A_lock`, explicitly marked **NOT RUN** and **NOT A GATE**;
-- explicit confirmation that a Gate1/2-failed Grounding primary will not trigger this intervention;
-- latest ordinary scalar primary health if one occurs, final-result existence only;
-- explicit confirmation that no active-primary scientific/cache content, annotations, detector inference, checkpoint load, frozen/run mutation, FIN1/replay, new Gate/threshold, YOLO runtime or T014 scientific execution occurred.
+- `T013-OPS7 PASS` or the exact return-to-Lead/completion-unverified state;
+- task-start HEAD `d24c801221c946af60a526d05f8ef6a947e2f462` and final evidence commit SHA;
+- exact files changed and exact accepted helper/command used;
+- confirmation that OPS2/OPS3 sources and all frozen scientific bytes were unchanged;
+- for each watch point: timestamp, progress, writer/tmux/wrapper state, free bytes, `remaining`, `projected_remaining`, `required_free`, `margin`, OPS2 storage/process status, and analysis-result existence only;
+- point count and actual spacing;
+- any deviation or unexpected operational event;
+- explicit confirmation that no `du`, scientific/prediction content, active-file hash/mutation, FIN1/replay, cleanup/restart/resume, driver repair, YOLO, T014, CF1/CF2 or MECH2 execution occurred;
+- explicit confirmation that no new threshold, forecast gate, depletion-rate conclusion, time-to-failure estimate or cleanup recommendation was derived.
 
-Stop after T013-MECH2 and await Research-Lead review.
+Stop after T013-OPS7 and await Research-Lead review. The immutable Grounding-DINO primary continues unchanged unless an established return-to-Lead/completion-unverified state occurs.
