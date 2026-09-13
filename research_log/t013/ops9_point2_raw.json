@@ -1,0 +1,41 @@
+{
+  "binding": {
+    "repository": "https://github.com/word-ky/TOVD.git",
+    "project_root": "/home/wenchang/asdasdsad/wjq/TOVD",
+    "run_id": "20260912-210355-tovd-native30-primary",
+    "release_id": "20260912-210306-tovd-native30-primary-freeze",
+    "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+    "dispatch_commit": "88668f76b22777459b5792dd28f88075f208c678",
+    "writer_pid": 721181,
+    "tmux_session": "autodl-20260912-210355-tovd-native30-primary",
+    "ops2_evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a"
+  },
+  "git_head": "d978eaf08f992a95cd92079ece009d35c462c59b",
+  "timestamp": "2026-09-13T22:10:45+08:00",
+  "writer": {
+    "pid": 721181,
+    "returncode": 0,
+    "stdout": " 721181 Rl+\n"
+  },
+  "tmux_returncode": 0,
+  "progress_line": "{\"completed_images\": 893, \"total_images\": 1000, \"seconds\": 90387.80844924902}",
+  "wrapper_exit_lines": [],
+  "df_stdout": "      Avail\n11379150848\n",
+  "analysis_result_exists": false,
+  "scope_attestation": {
+    "scientific_payloads_opened": false,
+    "cache_recursively_scanned": false,
+    "experiment_mutated": false
+  },
+  "raw_sources": {
+    "binding": "accepted primary dispatch 88668f76b22777459b5792dd28f88075f208c678",
+    "timestamp": "OPS9 point2 date -Is",
+    "git_head": "local git rev-parse HEAD d978eaf08f992a95cd92079ece009d35c462c59b",
+    "writer": "OPS9 point2 ps -p 721181 -o pid=,stat= matching Rl+ row",
+    "tmux": "OPS9 point2 tmux has-session conditional success marker",
+    "progress": "OPS9 point2 exact run train.log latest completed_images scalar",
+    "wrapper_exit": "OPS9 point2 anchored wrapper exit grep no lines",
+    "filesystem": "OPS9 point2 df -B1 --output=avail project root",
+    "analysis_existence": "OPS9 point2 test ! -f exact analysis/results.json"
+  }
+}
