@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-09-14T06:25:44+08:00",
+  "pid": 1104124,
+  "tmux_rc": 1,
+  "tmux_stderr": "no server running on /tmp/tmux-1012/default\n",
+  "ps_rc": 1,
+  "process": "",
+  "exit_exists": true,
+  "exit_code": 0,
+  "finish_exists": true,
+  "finished": "2026-09-14T06:09:11+08:00",
+  "top_level": {
+    "stdout.txt": {
+      "exists": true,
+      "bytes": 1999
+    },
+    "stderr.txt": {
+      "exists": true,
+      "bytes": 0
+    },
+    "results.json": {
+      "exists": true,
+      "bytes": 15857
+    },
+    "paired_image_draws.npy": {
+      "exists": true,
+      "bytes": 8000128
+    },
+    "bootstrap_samples.npz": {
+      "exists": true,
+      "bytes": 796547
+    },
+    "diagnostics_per_image.npz": {
+      "exists": true,
+      "bytes": 93358
+    }
+  }
+}

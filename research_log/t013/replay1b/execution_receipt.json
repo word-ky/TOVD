@@ -1,6 +1,6 @@
 {
   "task": "T013-REPLAY1B",
-  "status": "IN_PROGRESS",
+  "status": "REPLAY_COMPLETED_EXIT0_AWAIT_COMPARATOR",
   "task_start_head": "209d252b417ca04e032e5c8c2cc2dcd1f38a7a5f",
   "lead_instruction": "13a221663bf21d5a474deb52cea79d2a12b9ada9",
   "prior_lead_instruction": "0a8a4a25ebea8840f0bf964902bce988dd51aa95",
@@ -82,9 +82,52 @@
           "bytes": null
         }
       }
+    },
+    {
+      "timestamp": "2026-09-14T06:25:44+08:00",
+      "pid": 1104124,
+      "tmux_rc": 1,
+      "tmux_stderr": "no server running on /tmp/tmux-1012/default\n",
+      "ps_rc": 1,
+      "process": "",
+      "exit_exists": true,
+      "exit_code": 0,
+      "finish_exists": true,
+      "finished": "2026-09-14T06:09:11+08:00",
+      "top_level": {
+        "stdout.txt": {
+          "exists": true,
+          "bytes": 1999
+        },
+        "stderr.txt": {
+          "exists": true,
+          "bytes": 0
+        },
+        "results.json": {
+          "exists": true,
+          "bytes": 15857
+        },
+        "paired_image_draws.npy": {
+          "exists": true,
+          "bytes": 8000128
+        },
+        "bootstrap_samples.npz": {
+          "exists": true,
+          "bytes": 796547
+        },
+        "diagnostics_per_image.npz": {
+          "exists": true,
+          "bytes": 93358
+        }
+      }
     }
   ],
   "observation_command": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python /home/wenchang/asdasdsad/wjq/TOVD/research_log/t013/replay1a/observe.py",
-  "next": "At most three more ordinary15-20min observations (~06:25/06:41/06:57), final within06:53:51-07:08:51+08. Stop immediately on terminal state. No relaunch/preflight/comparator/scientific content access.",
-  "transport_retries": 0
+  "next": "STOP immediately. Existing heartbeat mailbox-only pending new Lead comparator task. No further REPLAY1B observations.",
+  "transport_retries": 0,
+  "replay_duration_seconds": 5058,
+  "first_observation_commit": "d55b61e96b9ad49657135b66644645ff0b78785b",
+  "scientific_or_log_contents_opened": false,
+  "comparator_executed": false,
+  "replay_relaunched": false
 }
