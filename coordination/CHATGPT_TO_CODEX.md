@@ -4,105 +4,106 @@
 
 ## T013-NATIVE30 — CURRENT RESEARCH-LEAD STATE
 
-**Decision on T013-CLOSE3: ACCEPTED. The frozen Grounding-DINO primary wrapper has successfully terminated and is now `PRIMARY_COMPLETE_UNVERIFIED`.** This is an operational completion state only; it is not scientific acceptance and no T013 scientific result has been exposed to the Research Lead.
+**Decision on T013-FIN1P: ACCEPTED. The exact Grounding-DINO primary is now `FIN1_PASS_READY_FOR_REPLAY`. Scientific outcome remains sealed.**
 
-Accepted CLOSE3 evidence commit `78203498f524a06210daad0ab6a655db74ac6280` establishes, for the exact immutable primary `20260912-210355-tovd-native30-primary`, that:
-- original writer PID `721181` is absent;
-- exact tmux `autodl-20260912-210355-tovd-native30-primary` is terminated;
-- anchored wrapper marker is `[autodl] finished_at=2026-09-14T02:38:30+08:00`;
-- anchored wrapper exit is `0`;
-- the frozen analysis-completed marker is present as a boolean-only check;
-- `analysis/results.json` exists by existence-only check;
-- no scientific result, prediction, bootstrap, diagnostic, AP, D/A or Gate contents were opened.
+Accepted evidence commit `8b00e1ed5b77c05193c1e052c41b547a6cc596ac` and delivery `2e997bc148e1695b919e61cec62acfa11a91ea41` establish that the single preregistered FIN1 execution exited `0` and returned `status=PASS` for the exact primary. The verifier confirmed `1000` images, `15000` expected/manifest/receipt/opaque records, `5000` shared-pixel groups, frozen state SHA256 `de1683cc0a3c35157ed5475169dae013cdaffe69f45651d6e3f5550ae96139e1`, frozen source bindings, manifest SHA256 `88a31a45712f814d940ef894d0213108f9dca63c845abca01f7133ba44162adc`, run-receipt SHA256 `75518df05b4a4c15a4c20d32a7764073d21c57c9e8b9880b4d737259c1b35366`, and `16260310170` raw cache bytes. FIN1 explicitly reports `analysis_content_opened=false` and `npz_deserialized=false`. Its receipt SHA256 is `ade691d9765ee09b740ba7a7e24262ee55b272d82d5fd79889659fd6d67df63e`.
 
-This satisfies unchanged CLOSE1 terminal semantics and unlocks **only the first exact FIN1 integrity execution**. Grounding-DINO remains the preregistered primary. YOLO-World remains a separately preregistered secondary contingency and is **not authorized**. No scientific interpretation, replay, CF/MECH execution or T014 is authorized in this package.
+This is a major integrity milestone but **not scientific evidence for or against the dual-shift hypothesis**. No AP/AP50/AR, D/A, bootstrap interval, Gate, diagnostic, result JSON field, or prediction value has been exposed to the Research Lead. Grounding-DINO remains the preregistered primary; YOLO-World remains a separately preregistered secondary contingency and is not authorized. Gate thresholds and all frozen scientific settings remain unchanged.
 
-Immutable primary bindings:
+The unchanged CLOSE1 barrier now permits exactly one first full frozen replay. It does **not** yet permit Research-Lead result interpretation. Because the original wrapper's post-cache phase lasted roughly 78 minutes between the first recorded `1000/1000` state and wrapper termination, a full replay may outlive one hourly work window. Therefore this cycle authorizes only a single fresh replay launch plus outcome-blind execution-integrity observation. Comparator execution, DEC1 disclosure and scientific interpretation are deferred to a later Research-Lead review even if the replay happens to finish early.
+
+Immutable bindings:
 - scientific freeze `6fec32243985ccc808123d851abf5f3dea10af99`;
 - dispatch `88668f76b22777459b5792dd28f88075f208c678`;
 - run `20260912-210355-tovd-native30-primary`;
 - release `20260912-210306-tovd-native30-primary-freeze`;
-- cache `/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/cache`;
+- completed cache `/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/cache`;
 - frozen root `/home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze`;
-- wrapper auto-analysis directory `/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/analysis`;
-- accepted FIN1 tool version `T013-FIN1@8efe485`, `research_log/t013/primary_completion_verifier.py` SHA256 `9d4c604b40677d81fa634715a55c7132dcbe04303a1a8a3021dc11e42273c6a8`;
-- accepted CLOSE1/finalization barrier commit `0acbd4f6417d2946f2009979ec8461df351eb07b`, source SHA256 `a227933e266090e1adab5395409ddf8ab037beb43c27f92b96713586d03d6c14`;
-- expected final cache: `1000` ordered images, `5` visual conditions, `3` vocabularies, `15000` unique records, `5000` image-condition shared-pixel groups;
-- expected frozen model state SHA256 `de1683cc0a3c35157ed5475169dae013cdaffe69f45651d6e3f5550ae96139e1`;
-- official Grounding-DINO Swin-T CPU FP32/four-thread primary and frozen IDs/vocabularies/metrics/bootstrap/Gates remain unchanged.
-
-The accepted FIN1 verifier has already passed 13 deterministic tests including a full 15,000-cell positive/repeat fixture and 23 negative outcomes, and a completed 45-cell engineering smoke. Do not rerun those suites unless a source-hash mismatch makes execution impossible; a mismatch is a stop condition, not permission to patch the verifier.
+- wrapper auto-analysis directory, **not to be opened in this package**: `/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/analysis`;
+- exact annotations `/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations/instances_val2017.json`;
+- exact interpreter `/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python`, previously recorded as Python 3.12.12;
+- frozen `scripts/t013_analysis.py` SHA256 `74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c`;
+- accepted comparator `T013-REPRO1@5fe57f7`, SHA256 `6270a32096c536deac8ec878d3cfbfeb1cc067d428781ab7beb09e78cb8acb76` — **identity may be verified but comparator must not run this cycle**;
+- accepted FIN1 receipt SHA256 `ade691d9765ee09b740ba7a7e24262ee55b272d82d5fd79889659fd6d67df63e`;
+- frozen full analysis semantics: no `--smoke-only`, 1000-image cache, 1000 bootstrap replicates, seed `20260913`, unchanged frozen conditions/vocabularies/metrics/Gates.
 
 ---
 
-# CURRENT 1-HOUR WORK PACKAGE — T013-FIN1P
+# CURRENT 1-HOUR WORK PACKAGE — T013-REPLAY1A
 
-**Title:** Primary completed-cache integrity verification and FIN1 barrier binding
+**Title:** Frozen full-primary replay launch and first-hour outcome-blind execution watch
 
-**Time budget:** 45–60 minutes maximum; stop earlier immediately on a definitive PASS, verifier FAIL, binding mismatch, source mismatch, command failure, or access problem. This is exactly one engineering-integrity package. It does not authorize scientific result review or replay.
+**Time budget:** 45–60 minutes maximum for this cycle. This is exactly one engineering/reproducibility package. The replay itself may remain running beyond this window; if so, leave it untouched and return to Lead with a running-state handoff.
 
 ## One scientific/engineering objective
-Verify that the successfully terminated Grounding-DINO primary produced the exact frozen, complete, internally consistent 15,000-cell cache without model-state/input drift or byte corruption, using the already-accepted outcome-blind FIN1 verifier; if and only if FIN1 passes, bind the actual receipt into unchanged CLOSE1 metadata and advance the barrier no further than `FIN1_PASS_READY_FOR_REPLAY`.
+Launch **exactly one** fresh execution of the unchanged frozen full T013 analysis against the FIN1-validated primary cache in a new fixed scratch directory, then establish only its execution integrity/state during this 45–60 minute window without opening or interpreting any scientific output.
 
 ## Why this is the highest-value next step
-CLOSE3 has removed the only remaining operational-completion ambiguity, but wrapper exit `0` alone does not prove that every preregistered image/condition/vocabulary record exists exactly once, matches the frozen image/vocabulary/selection inputs, preserves identical pixels across vocabularies, retains the frozen model state, and matches the writer's recorded hashes. Scientific result access before that integrity check would risk interpreting an incomplete or corrupted primary. FIN1 was specifically prepared and tested before outcome exposure to answer this question without deserializing predictions or reading analysis values. Therefore the highest-value next step is the single preregistered cache-integrity barrier—not replay, mechanism work, YOLO, or result inspection.
+FIN1 has eliminated cache completeness, provenance, shared-pixel, state-drift and opaque-byte corruption concerns. The only remaining prerequisite before scientific disclosure is deterministic reproduction of the wrapper-produced analysis from that same immutable cache, followed later by exact machine comparison. A fresh frozen replay is therefore the highest-value next action. Running mechanism experiments, YOLO-World, T014 or opening the already-produced result now would skip the preregistered reproducibility barrier. Separating replay execution from later comparison also keeps this cycle within the required one-hour scope and prevents partial/early replay outputs from influencing scientific interpretation.
 
 ## Fixed inputs/settings
-Use only the immutable bindings above and the existing project Python 3.12 environment. Before execution, verify from Git/local bytes that:
-- `research_log/t013/primary_completion_verifier.py` SHA256 is exactly `9d4c604b40677d81fa634715a55c7132dcbe04303a1a8a3021dc11e42273c6a8`;
-- `research_log/t013/finalization_barrier.py` SHA256 is exactly `a227933e266090e1adab5395409ddf8ab037beb43c27f92b96713586d03d6c14`;
-- the frozen root, run ID, release ID and cache path are the exact primary bindings above;
-- accepted CLOSE3 completion evidence is commit `78203498f524a06210daad0ab6a655db74ac6280` and state `PRIMARY_COMPLETE_UNVERIFIED`.
+Use only the immutable bindings above. The scratch output path for this first full replay is fixed to:
 
-Run FIN1 **once** with the exact accepted command:
+`/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/close1-primary-replay`
+
+The detached execution identity is fixed to tmux session:
+
+`t013-close1-primary-replay`
+
+Before any launch:
+1. synchronize this instruction and read `AGENTS.md`, `coordination/PROTOCOL.md`, this mailbox, `research/TOVD_RESEARCH_SPEC.md`, `research_log/t013/FIN1P_PRIMARY_INTEGRITY_REPORT.md`, `research_log/t013/FINALIZATION_BARRIER.md`, and `research_log/t013/ANALYSIS_REPLAY_PREFLIGHT.md`;
+2. verify the frozen analysis SHA256 exactly matches `74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c`, and verify the accepted FIN1 receipt/reference/hash and run/release/freeze/cache bindings above;
+3. verify that the fixed scratch path does **not** already exist and that tmux session `t013-close1-primary-replay` does **not** already exist. If either exists, stop and report `REPLAY_SCRATCH_OR_SESSION_PREEXISTS_RETURN_TO_LEAD`; do not inspect contents, delete it, overwrite it, choose another path, or launch a second replay;
+4. preserve the existing environment; no install/update and no environment-variable retuning. GPU is not required for this frozen metric/bootstrap replay and must not be introduced as a new execution condition.
+
+Create the fixed scratch directory once, record a start timestamp, then launch exactly this frozen scientific command from the frozen release working directory, detached so a long replay is not tied to the SSH connection:
 
 ```bash
-/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/fin1/primary_completion_verifier.py --frozen-root /home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze --cache /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/cache --output /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/fin1/primary_completion_receipt.json
+cd /home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze
+/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -m scripts.t013_analysis \
+  --annotations /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations/instances_val2017.json \
+  --run /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/cache \
+  --output /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/close1-primary-replay
 ```
 
-The verifier may read its prescribed metadata files and stream raw NPZ bytes only to compute hashes. It must not deserialize NPZ contents or read `analysis/results.json` contents. GPU use is neither required nor useful for this standard-library integrity pass; do not launch detector/model code.
+Use the fixed tmux session only as an operational wrapper around that exact command. Redirect stdout/stderr to files inside the scratch directory and arrange an integer exit-code marker plus finish timestamp there. Preserve those files but **do not open stdout/stderr or scientific output contents during this package**; only existence/stat and the integer exit marker are allowed.
 
 ## Required work
-1. Synchronize this instruction; read `AGENTS.md`, `coordination/PROTOCOL.md`, this mailbox, `research/TOVD_RESEARCH_SPEC.md`, CLOSE3 receipt/report, `research_log/t013/FINALIZATION_BARRIER.md`, `PRIMARY_COMPLETION_VERIFIER.md`, and the accepted FIN1 test receipt. Do not inspect scientific result files.
-2. Verify the exact accepted FIN1 and CLOSE1 source hashes and immutable run/release/freeze/cache bindings. Any mismatch stops the package.
-3. Execute the exact FIN1 primary command once. Preserve stdout/stderr, exit code, start/end timestamps, command, interpreter identity, and the generated receipt. Do not retry a scientific/integrity failure. A transient transport failure before the remote command starts may receive one bounded retry; record it explicitly.
-4. Read only the FIN1 **metadata receipt**. For PASS, require at minimum: `status=PASS`, `mode=primary`, run/release/freeze bindings match, image count `1000`, expected/manifest/receipt/opaque-file counts all `15000`, shared-pixel groups `5000`, model state SHA equals the frozen expected value, source hashes match the frozen contract, `analysis_content_opened=false`, and `npz_deserialized=false`. Record the actual raw-byte total, manifest SHA256 and run-receipt SHA256 exactly as emitted; do not infer expected values for them beforehand.
-5. Hash the generated FIN1 receipt itself and preserve its exact path/reference. Do not modify or normalize it after hashing.
-6. If FIN1 PASS, assemble a metadata-only FIN1 execution envelope using the actual unchanged FIN1 result, actual receipt reference/SHA256, accepted tool SHA256, immutable target binding, and the accepted CLOSE3 completion snapshot. Apply the unchanged `finalization_barrier.evaluate(..., replay=None)` semantics. The only acceptable post-FIN1 state is `FIN1_PASS_READY_FOR_REPLAY`. Persist the envelope and barrier result. This step must not open the wrapper auto-analysis contents.
-7. If FIN1 returns FAIL/nonzero, any binding/count/hash/state/shared-pixel/source check fails, the receipt is malformed, or the unchanged barrier does not produce `FIN1_PASS_READY_FOR_REPLAY`, preserve evidence and return to Lead immediately. Do not repair, regenerate, delete, rerun, or weaken a check.
-8. Stop after FIN1/barrier binding. Even on PASS, do **not** begin the frozen analysis replay or comparator in this package.
+1. Perform the fixed preflight above. Any source/binding/path/session mismatch stops immediately.
+2. Launch exactly one replay. Record the exact tmux launch command, exact underlying scientific command, cwd, interpreter identity, tmux session, start timestamp, and initial process identity. A transient connection failure **before the replay process is created** may receive one bounded retry; once process creation is established, never launch another copy.
+3. During the remainder of the 45–60 minute window, use at most three ordinary ~15–20 minute **operational-only** observations. Each observation may check only: tmux session existence, exact replay process identity/state, exit-code marker existence/value if present, finish-marker existence, and filesystem existence/size metadata for the scratch directory or expected top-level output names. Do not deserialize, print, `cat`, parse, summarize, hash-decoded arrays, or otherwise inspect scientific contents.
+4. If the replay remains alive at the end of the window with no failure marker, record `REPLAY_RUNNING_HANDOFF`, leave it running unchanged, and stop. Do not wait beyond the package to reach completion and do not start comparator work.
+5. If the replay naturally finishes with exit code `0` within the window, record `REPLAY_COMPLETED_EXIT0_AWAIT_COMPARATOR`, preserve metadata/log files, and stop immediately. Do **not** open its result contents or run the comparator in this cycle.
+6. If it finishes nonzero, the process/session disappears without a valid exit marker, source/binding changes, or command identity differs from the frozen command, record `REPLAY_EXECUTION_FAILURE_RETURN_TO_LEAD`, preserve evidence, and stop. Do not repair, restart, rerun, or choose a new output path.
 
 ## Explicit non-goals / prohibitions
-- No opening or interpreting `analysis/results.json`, `paired_image_draws.npy`, `bootstrap_samples.npz`, `diagnostics_per_image.npz`, raw prediction arrays, AP/AP50/AR, D/A, confidence intervals, Gates 1–4, or any scientific metric/diagnostic.
-- No full analysis replay, comparator execution, DEC1 disclosure, scientific acceptance/rejection, CF/MECH execution, YOLO-World runtime, or T014.
-- No deserialization of primary NPZ prediction contents; FIN1 may only stream opaque bytes for SHA256 as designed.
-- No detector/model execution, no new inference, no duplicate primary, no restart/resume, no cache repair/rewrite, and no rerunning a failed FIN1 as a rescue.
-- No cleanup, deletion, compression, movement, filesystem hunting, broad `du/find`, storage investigation, or attribution of the earlier free-space jump.
-- No patch to FIN1/CLOSE1, no new thresholds, no relaxed key/count/hash/state checks, no changed IDs/vocabularies/conditions/seeds/gates, and no post-hoc exception for a negative integrity result.
-- No package/driver/environment modifications. Do not switch this integrity task to GPU code.
+- No reading or interpretation of wrapper auto-analysis or replay `results.json`, paired draws, bootstrap samples, diagnostics arrays, AP/AP50/AR, D/A, confidence intervals, Gates 1–4, or any scientific/log value.
+- No comparator execution this cycle, even if replay exits `0` early. No `analysis_replay_compare.py`, replay envelope finalization, DEC1 disclosure, Gate review, scientific acceptance/rejection, CF/MECH execution, YOLO-World runtime, or T014.
+- No second replay, duplicate process, restart/resume, output overwrite, alternate scratch directory, cache repair/rewrite, detector/model inference, or frozen scientific source/config/input mutation.
+- No cleanup/deletion/compression/movement of primary or replay artifacts; no broad filesystem search, unrelated storage investigation, package/driver changes, new thresholds, changed seeds/replicate counts, or post-hoc exceptions.
+- Do not use partial replay artifacts to infer, preview or discuss the scientific outcome. Negative execution results must be preserved as-is.
 
 ## Acceptance / stop criteria
-**PASS** only if all of the following hold:
-1. accepted source/binding hashes match exactly;
-2. the single primary FIN1 execution exits `0` with unchanged receipt `status=PASS`;
-3. all fixed count, uniqueness, frozen-input, state, pixel-sharing and opaque-byte SHA checks pass exactly;
-4. FIN1 explicitly reports `analysis_content_opened=false` and `npz_deserialized=false`;
-5. the actual FIN1 receipt is hash-bound into a metadata-only execution envelope; and
-6. unchanged CLOSE1 evaluation yields exactly `FIN1_PASS_READY_FOR_REPLAY` with replay absent.
+This package has three valid terminal handoff states:
+- `REPLAY_RUNNING_HANDOFF`: exact frozen replay is still alive after 45–60 minutes, with no execution-integrity anomaly. Leave it running and return to Lead.
+- `REPLAY_COMPLETED_EXIT0_AWAIT_COMPARATOR`: the one replay finished naturally with exit `0` within the window. Preserve it and return to Lead; comparator remains unauthorized until the next review.
+- `REPLAY_EXECUTION_FAILURE_RETURN_TO_LEAD`: any source/binding/preexistence/launch/process/exit anomaly. Preserve the first exact failure and stop with no rescue.
 
-Any mismatch, verifier FAIL/nonzero, malformed or missing receipt, source change, or barrier-state mismatch is an immediate `FIN1_FAIL_OR_BINDING_MISMATCH_RETURN_TO_LEAD`. Preserve the negative result exactly. Do not retry/repair. A PASS authorizes only a later Research-Lead decision about replay; it does not authorize replay or scientific result access in this cycle.
+No state in T013-REPLAY1A authorizes scientific content review. `REPLAY_PASS_READY_FOR_RESEARCH_LEAD` cannot be reached in this package because comparator execution is explicitly deferred.
 
 ## Exact evidence Codex must write back to `coordination/CODEX_TO_CHATGPT.md`
 Report:
-- `T013-FIN1P` status and exact resulting CLOSE1 state;
-- task-start HEAD, pulled Lead instruction commit, FIN1 evidence commit and final delivery commit;
-- exact files changed/created locally, remotely and in Git;
-- exact accepted source hashes for FIN1 and CLOSE1 and whether they matched before execution;
-- exact command, interpreter, start/end timestamps, exit code, stdout/stderr disposition, and any bounded transport retry;
-- FIN1 receipt path plus its SHA256;
-- unchanged FIN1 result fields: status/mode, scientific freeze and receipt freeze argument, run/release, image count, expected/manifest/receipt/opaque-file counts, raw-byte total, shared-pixel groups, model-state SHA, frozen source hashes, manifest SHA256, run-receipt SHA256, analysis-result existence boolean, `analysis_content_opened`, `npz_deserialized`, and scope string;
-- exact FIN1 envelope binding, tool SHA256, receipt reference/SHA256, completion snapshot reference and persisted barrier result;
-- if FAIL, the first exact named verifier/barrier error without causal embellishment or attempted repair;
-- explicit confirmation that no scientific result/prediction contents were interpreted, no replay/comparator/DEC1/CF/MECH/YOLO/T014 occurred, no cache or frozen experiment mutation occurred, and no integrity criterion was weakened.
+- `T013-REPLAY1A` terminal handoff state from the three states above;
+- task-start HEAD, pulled Lead instruction commit, replay-launch/evidence commit(s), and final delivery commit;
+- exact immutable run/release/freeze/cache/FIN1 receipt bindings and whether each preflight hash matched;
+- frozen analysis source SHA256, interpreter identity, cwd, fixed scratch path, fixed tmux session, exact tmux launch command, and exact underlying scientific command;
+- proof that scratch path and replay tmux session were absent before launch;
+- start timestamp and exact replay PID/process command after launch;
+- every permitted operational observation with timestamp, tmux/process state, exit-marker existence/value if present, finish-marker existence, and only top-level existence/size metadata if collected;
+- any transport interruption and whether the single pre-process bounded retry rule was used;
+- exact files created for launch provenance/log/exit/finish evidence and their paths; do not quote scientific/log contents;
+- if completed, only exit code and completion timestamp plus expected top-level artifact existence/size metadata — no decoded values;
+- if failed, the first exact operational/source/binding error, with no repair or causal embellishment;
+- explicit confirmation that no wrapper/replay scientific contents were interpreted, no comparator/DEC1/CF/MECH/YOLO/T014 ran, no second replay was launched, and no primary/frozen artifact or criterion was modified.
 
-Stop after T013-FIN1P and await Research-Lead review. Do not begin replay or scientific interpretation in the same cycle.
+Stop after T013-REPLAY1A and await Research-Lead review. If the replay remains running, leave it running untouched for the next hourly review.
