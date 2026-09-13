@@ -1,0 +1,90 @@
+{
+  "task": "T013-REPLAY1B",
+  "status": "IN_PROGRESS",
+  "task_start_head": "209d252b417ca04e032e5c8c2cc2dcd1f38a7a5f",
+  "lead_instruction": "13a221663bf21d5a474deb52cea79d2a12b9ada9",
+  "prior_lead_instruction": "0a8a4a25ebea8840f0bf964902bce988dd51aa95",
+  "launch_evidence": "688f36be6a845d8cf93531fb570268c9fbc2c1e9",
+  "replay1a_evidence": "4a78db28fae8aed9f6a01f60b373fa44cad3b594",
+  "replay1a_delivery": "bf2497e561900fb5aa4d30d7c481418bf45097a3",
+  "original_launch": {
+    "status": "LAUNCH_REQUESTED",
+    "preflight": {
+      "checks": {
+        "analysis": {
+          "path": "/home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze/scripts/t013_analysis.py",
+          "expected": "74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c",
+          "actual": "74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c"
+        },
+        "fin1_receipt": {
+          "path": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/fin1/primary_completion_receipt.json",
+          "expected": "ade691d9765ee09b740ba7a7e24262ee55b272d82d5fd79889659fd6d67df63e",
+          "actual": "ade691d9765ee09b740ba7a7e24262ee55b272d82d5fd79889659fd6d67df63e"
+        }
+      },
+      "scratch_preexists": false,
+      "tmux_rc": 1,
+      "tmux_stderr": "no server running on /tmp/tmux-1012/default\n",
+      "interpreter": "3.12.12 | packaged by conda-forge | (main, Jan 26 2026, 23:51:32) [GCC 14.3.0]",
+      "cache": "/home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/cache",
+      "freeze": "6fec32243985ccc808123d851abf5f3dea10af99"
+    },
+    "started": "2026-09-14T04:44:53+08:00",
+    "cwd": "/home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze",
+    "command": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -m scripts.t013_analysis --annotations /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations/instances_val2017.json --run /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/cache --output /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/close1-primary-replay",
+    "launch_command": [
+      "tmux",
+      "new-session",
+      "-d",
+      "-s",
+      "t013-close1-primary-replay",
+      "bash /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/close1-primary-replay/run.sh"
+    ],
+    "session": "t013-close1-primary-replay",
+    "output": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/close1-primary-replay",
+    "transport_retries": 0
+  },
+  "observations": [
+    {
+      "timestamp": "2026-09-14T06:08:51+08:00",
+      "pid": 1104124,
+      "tmux_rc": 0,
+      "tmux_stderr": "",
+      "ps_rc": 0,
+      "process": "1104124 1104122 Rl+  /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -m scripts.t013_analysis --annotations /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations/instances_val2017.json --run /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/cache --output /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/close1-primary-replay",
+      "exit_exists": false,
+      "exit_code": null,
+      "finish_exists": false,
+      "finished": null,
+      "top_level": {
+        "stdout.txt": {
+          "exists": true,
+          "bytes": 1910
+        },
+        "stderr.txt": {
+          "exists": true,
+          "bytes": 0
+        },
+        "results.json": {
+          "exists": false,
+          "bytes": null
+        },
+        "paired_image_draws.npy": {
+          "exists": true,
+          "bytes": 8000128
+        },
+        "bootstrap_samples.npz": {
+          "exists": true,
+          "bytes": 776609
+        },
+        "diagnostics_per_image.npz": {
+          "exists": false,
+          "bytes": null
+        }
+      }
+    }
+  ],
+  "observation_command": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python /home/wenchang/asdasdsad/wjq/TOVD/research_log/t013/replay1a/observe.py",
+  "next": "At most three more ordinary15-20min observations (~06:25/06:41/06:57), final within06:53:51-07:08:51+08. Stop immediately on terminal state. No relaunch/preflight/comparator/scientific content access.",
+  "transport_retries": 0
+}
