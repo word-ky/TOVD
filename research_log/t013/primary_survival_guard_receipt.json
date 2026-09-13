@@ -1,0 +1,136 @@
+{
+  "task": "T013-OPS2",
+  "status": "PASS",
+  "task_start_head": "7ccfe778148930a0fe67808f84726de7aca229ae",
+  "created_at": "2026-09-13T10:20:37.656318+08:00",
+  "run_id": "20260912-210355-tovd-native30-primary",
+  "release_id": "20260912-210306-tovd-native30-primary-freeze",
+  "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+  "formula": {
+    "total_images": 1000,
+    "p95_allocated_bytes": 16355328,
+    "multiplier_numerator": 6,
+    "multiplier_denominator": 5,
+    "reserve_bytes": 8589934592,
+    "required_free": "(6 * projected_remaining + 4) // 5 + 8589934592"
+  },
+  "tests": {
+    "command": "D:/anaconda3/python.exe -m unittest discover -s research_log/t013 -p test_primary_survival_guard.py -v",
+    "tests": 5,
+    "fixtures": 32,
+    "status": "PASS",
+    "groups": {
+      "known_snapshots": 2,
+      "boundary_and_rounding": 6,
+      "invalid_storage": 12,
+      "process_states": 8,
+      "invalid_process_metadata": 4
+    }
+  },
+  "historical_rehearsal": [
+    {
+      "source_commit": "7ccfe778148930a0fe67808f84726de7aca229ae",
+      "source_path": "research_log/session_log.md",
+      "source_line": "Storage uses only15 closed-file allocated sizes per image (transposed cache layout). Median16310272 bytes; P9516355328 bytes (linear interpolation). Remaining812; projected13280526336 bytes. Free26703241216; required ceil(1.20*projection+8GiB)=24526566196; margin2176675020 bytes (~2.027GiB). Fixed disk inequality PASS. No deletion/compression/move to obtain pass.",
+      "result": {
+        "status": "SAFE",
+        "process_status": "PRIMARY_RUNNING",
+        "storage": {
+          "closed_image_count": 188,
+          "free_bytes": 26703241216,
+          "remaining": 812,
+          "projected_remaining": 13280526336,
+          "required_free": 24526566196,
+          "margin": 2176675020,
+          "status": "SAFE"
+        },
+        "writer_alive": true,
+        "tmux_alive": true,
+        "wrapper_exit_code": null
+      }
+    },
+    {
+      "source_commit": "7ccfe778148930a0fe67808f84726de7aca229ae",
+      "source_path": "research_log/session_log.md",
+      "source_line": "GitHub main synchronized atdc54117; project handoffs/logs and required coordination/specification files read. No new Lead task; CLOSE1 already delivered, no repeated implementation/test/verifier/barrier execution. Primary20260912-210355-tovd-native30-primary tmux and writer721181 Rl+ alive,456/1000 images at46410.80810151802s,free21751160832bytes; no wrapper exit marker and analysis/results.json absent (existence only). No partial scientific outputs inspected, no code/environment/run changes and no YOLO work. Continue existing frozen primary and quiet15-minute monitoring.",
+      "result": {
+        "status": "SAFE",
+        "process_status": "PRIMARY_RUNNING",
+        "storage": {
+          "closed_image_count": 456,
+          "free_bytes": 21751160832,
+          "remaining": 544,
+          "projected_remaining": 8897298432,
+          "required_free": 19266692711,
+          "margin": 2484468121,
+          "status": "SAFE"
+        },
+        "writer_alive": true,
+        "tmux_alive": true,
+        "wrapper_exit_code": null
+      }
+    },
+    {
+      "source_commit": "7ccfe778148930a0fe67808f84726de7aca229ae",
+      "source_path": "research_log/session_log.md",
+      "source_line": "GitHub main synchronized at d87e4e5; project handoffs/logs and required coordination/specification files read. No new Lead task; CLOSE1 already delivered, no repeated implementation/test/verifier/barrier execution. Primary 20260912-210355-tovd-native30-primary tmux and writer 721181 Rl+ alive, 467/1000 images at 47558.21211498001s, free 21488541696 bytes; no wrapper exit marker and analysis/results.json absent (existence only). No partial scientific outputs inspected, no code/environment/run changes and no YOLO work. Continue existing frozen primary and quiet 15-minute monitoring.",
+      "result": {
+        "status": "SAFE",
+        "process_status": "PRIMARY_RUNNING",
+        "storage": {
+          "closed_image_count": 467,
+          "free_bytes": 21488541696,
+          "remaining": 533,
+          "projected_remaining": 8717389824,
+          "required_free": 19050802381,
+          "margin": 2437739315,
+          "status": "SAFE"
+        },
+        "writer_alive": true,
+        "tmux_alive": true,
+        "wrapper_exit_code": null
+      }
+    }
+  ],
+  "source_sha256": {
+    "primary_survival_guard.py": "8d58f01259387c4327cee0f1ac05e4dfef1dd3fd47a4c8b0f6542820202852c6",
+    "test_primary_survival_guard.py": "75c9c02c1f40a40674f70e7eab7d87698de2c818699e70f37d8efdccefd6b717",
+    "primary_survival_guard_tests.txt": "45d252eb9998a05b160ed37c39b0b5b29626497d25507d7bc5b4943f31befed3"
+  },
+  "scope": {
+    "scientific_contents_opened": false,
+    "cache_files_scanned": false,
+    "cache_files_modified": false,
+    "frozen_science_or_run_changed": false,
+    "fin1_analysis_replay_executed": false,
+    "restart_resume_or_cleanup_executed": false,
+    "yolo_runtime_executed": false
+  },
+  "live_health": {
+    "timestamp": "2026-09-13T10:20:53+08:00",
+    "writer_pid": 721181,
+    "writer_stat": "Rl+",
+    "total_images": 1000,
+    "seconds": 47754.84462102302,
+    "analysis_result_exists": false,
+    "wrapper_exit_marker_present": false,
+    "raw_metadata_path": "research_log/t013/primary_survival_guard_live_health.txt",
+    "raw_metadata_sha256": "aab86930a94255446be23c4dca47399951a2948675ae0129bd82fb963fe024e6",
+    "guard": {
+      "status": "SAFE",
+      "process_status": "PRIMARY_RUNNING",
+      "storage": {
+        "closed_image_count": 469,
+        "free_bytes": 21460013056,
+        "remaining": 531,
+        "projected_remaining": 8684679168,
+        "required_free": 19011549594,
+        "margin": 2448463462,
+        "status": "SAFE"
+      },
+      "writer_alive": true,
+      "tmux_alive": true,
+      "wrapper_exit_code": null
+    }
+  }
+}

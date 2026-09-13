@@ -1,0 +1,10 @@
+test_boundary_and_rounding (test_primary_survival_guard.SurvivalGuardTests.test_boundary_and_rounding) ... ok
+test_invalid_process_metadata (test_primary_survival_guard.SurvivalGuardTests.test_invalid_process_metadata) ... ok
+test_invalid_storage (test_primary_survival_guard.SurvivalGuardTests.test_invalid_storage) ... ok
+test_known_snapshots (test_primary_survival_guard.SurvivalGuardTests.test_known_snapshots) ... ok
+test_process_states (test_primary_survival_guard.SurvivalGuardTests.test_process_states) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
