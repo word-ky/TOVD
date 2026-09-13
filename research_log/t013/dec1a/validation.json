@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "canonical_results_sha256": "2f46ecb0cfe7a7b5764181eb7f1bb487f7da2ac3b4ef24e4a35826ec185131f7",
+  "machine_sha256": "c3a76e32982d3581b7a0eb56b823ccfab56bbd99700f53a56976444f314879ff",
+  "human_sha256": "98a90a1dbbd7c0b27abcccaf6758e3f1168a3672a871640954fd108943c3ac94",
+  "checks": [
+    "mandatory metadata order",
+    "point [5,3,8] and CI [2,5,3,8]",
+    "all contrast/gate/family fields",
+    "all20 provenance identifiers",
+    "machine results field/order/type equality with canonical",
+    "human complete payload equality and all120 table values"
+  ],
+  "decide": "NOT_RUN_AWAITING_RESEARCH_LEAD_JUDGMENT",
+  "new_scientific_statistics": false
+}
