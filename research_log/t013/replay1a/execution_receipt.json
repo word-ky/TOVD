@@ -1,8 +1,8 @@
 {
   "task": "T013-REPLAY1A",
-  "status": "IN_PROGRESS",
-  "task_start_head": "3b0a474",
-  "lead_instruction": "d4c91ab",
+  "status": "REPLAY_RUNNING_HANDOFF",
+  "task_start_head": "3b0a4749dd746fefc88b28d0b7f1700c2b4e7055",
+  "lead_instruction": "d4c91abaefbb04c5ce70780f89f94d50c40e8eb0",
   "launch": {
     "status": "LAUNCH_REQUESTED",
     "preflight": {
@@ -154,11 +154,55 @@
           "bytes": null
         }
       }
+    },
+    {
+      "timestamp": "2026-09-14T05:35:13+08:00",
+      "pid": 1104124,
+      "tmux_rc": 0,
+      "tmux_stderr": "",
+      "ps_rc": 0,
+      "process": "1104124 1104122 Rl+  /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -m scripts.t013_analysis --annotations /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations/instances_val2017.json --run /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/cache --output /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/close1-primary-replay",
+      "exit_exists": false,
+      "exit_code": null,
+      "finish_exists": false,
+      "finished": null,
+      "top_level": {
+        "stdout.txt": {
+          "exists": true,
+          "bytes": 1298
+        },
+        "stderr.txt": {
+          "exists": true,
+          "bytes": 0
+        },
+        "results.json": {
+          "exists": false,
+          "bytes": null
+        },
+        "paired_image_draws.npy": {
+          "exists": true,
+          "bytes": 8000128
+        },
+        "bootstrap_samples.npz": {
+          "exists": true,
+          "bytes": 418556
+        },
+        "diagnostics_per_image.npz": {
+          "exists": false,
+          "bytes": null
+        }
+      }
     }
   ],
-  "next_observations": "ONE remaining ordinary heartbeat point near 05:35 +08. Final observation within original 05:29:53-05:44:53 window; no clock reset. Stop on natural exit0/anomaly, otherwise REPLAY_RUNNING_HANDOFF. Never relaunch.",
+  "next_observations": "STOP: all three scheduled observations consumed. Leave single replay untouched. Existing heartbeat mailbox-only pending new Lead task; no comparator or scientific access.",
   "prohibitions": "No stdout/stderr/scientific contents, comparator/envelope/DEC1/CF/MECH/YOLO/T014 or second launch. Preserve frozen CPU analysis/environment.",
-  "launch_evidence_commit": "688f36b",
+  "launch_evidence_commit": "688f36be6a845d8cf93531fb570268c9fbc2c1e9",
   "refreshed_lead_instruction": "0a8a4a25ebea8840f0bf964902bce988dd51aa95",
-  "first_observation_commit": "244f44a8c3d5b1300a3540ab90caf1545edb9885"
+  "first_observation_commit": "244f44a8c3d5b1300a3540ab90caf1545edb9885",
+  "elapsed_seconds": 3020,
+  "second_observation_commit": "372663ae1d00ae06d5d766f1e48de32f5d123ad9",
+  "scientific_contents_opened": false,
+  "comparator_executed": false,
+  "second_replay_launched": false,
+  "clock_reset": false
 }
