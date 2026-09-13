@@ -1,6 +1,6 @@
 {
   "task": "T013-OPS9",
-  "status": "IN_PROGRESS",
+  "status": "PASS",
   "task_start_head": "fe6fef0dd2e7a7a1066eaf4af9eb1ddd20667e71",
   "lead_instruction_commit": "8dfea8e8983d93efd2f0435104406472d0fe6598",
   "sources": {
@@ -206,14 +206,77 @@
       "remediation_authorized": false,
       "close1_state": "PRIMARY_RUNNING",
       "close1_reason": "successful wrapper exit0 and exact writer/tmux termination not established; result existence is irrelevant"
+    },
+    {
+      "schema_version": "T013-OPS3-v1",
+      "binding": {
+        "repository": "https://github.com/word-ky/TOVD.git",
+        "project_root": "/home/wenchang/asdasdsad/wjq/TOVD",
+        "run_id": "20260912-210355-tovd-native30-primary",
+        "release_id": "20260912-210306-tovd-native30-primary-freeze",
+        "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+        "dispatch_commit": "88668f76b22777459b5792dd28f88075f208c678",
+        "writer_pid": 721181,
+        "tmux_session": "autodl-20260912-210355-tovd-native30-primary",
+        "ops2_evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a"
+      },
+      "timestamp": "2026-09-13T22:48:38+08:00",
+      "git_head": "5174c9cddf7f661a1c768b80359f22867155aee8",
+      "raw_sources": {
+        "binding": "accepted primary dispatch 88668f76b22777459b5792dd28f88075f208c678",
+        "timestamp": "OPS9 point4 date -Is",
+        "git_head": "local git rev-parse HEAD 5174c9cddf7f661a1c768b80359f22867155aee8",
+        "writer": "OPS9 point4 ps -p 721181 -o pid=,stat= matching Rl+ row",
+        "tmux": "OPS9 point4 tmux has-session conditional success marker",
+        "progress": "OPS9 point4 exact run train.log latest completed_images scalar",
+        "wrapper_exit": "OPS9 point4 anchored wrapper exit grep no lines",
+        "filesystem": "OPS9 point4 df -B1 --output=avail project root",
+        "analysis_existence": "OPS9 point4 test ! -f exact analysis/results.json"
+      },
+      "progress": {
+        "completed_images": 915,
+        "total_images": 1000,
+        "seconds": 92640.01332098903
+      },
+      "writer_pid_exists": true,
+      "writer_state": "Rl+",
+      "analysis_result_exists": false,
+      "ops2": {
+        "status": "SAFE",
+        "process_status": "PRIMARY_RUNNING",
+        "storage": {
+          "closed_image_count": 915,
+          "free_bytes": 10803159040,
+          "remaining": 85,
+          "projected_remaining": 1390202880,
+          "required_free": 10258178048,
+          "margin": 544980992,
+          "status": "SAFE"
+        },
+        "writer_alive": true,
+        "tmux_alive": true,
+        "wrapper_exit_code": null
+      },
+      "status": "SAFE",
+      "scope_attestation": {
+        "scientific_payloads_opened": false,
+        "cache_recursively_scanned": false,
+        "experiment_mutated": false
+      },
+      "scientific_content_access_authorized": false,
+      "fin1_execution_authorized": false,
+      "remediation_authorized": false,
+      "close1_state": "PRIMARY_RUNNING",
+      "close1_reason": "successful wrapper exit0 and exact writer/tmux termination not established; result existence is irrelevant"
     }
   ],
-  "point_count": 3,
+  "point_count": 4,
   "spacing_seconds": [
     1081.0,
-    1058.0
+    1058.0,
+    1215.0
   ],
-  "window_seconds": 2139.0,
+  "window_seconds": 3354.0,
   "scalar_collection_commands": [
     "date -Is",
     "tmux has-session -t autodl-20260912-210355-tovd-native30-primary",
@@ -224,7 +287,7 @@
     "test ! -f /home/wenchang/asdasdsad/wjq/TOVD/runs/20260912-210355-tovd-native30-primary/artifacts/analysis/results.json"
   ],
   "evaluation": "accepted canonical_snapshot(raw) -> OPS2; CLOSE1 operational state semantics read from unchanged finalization_barrier.evaluate. No completed-cache binding hashes collected or fabricated; no full finalization evaluate/FIN1/replay invoked.",
-  "continuation": "Resume existing receipt next ordinary15-minute heartbeat, up to four total points over45\u201360min from21:52:44+08 (final22:37:44\u201322:52:44). No new scheduler. Stop immediately on existing storage/process risk or PRIMARY_COMPLETE_UNVERIFIED via OPS3. No cleanup or FIN1 even after completion; return Lead.",
+  "continuation": "OPS9 completed; return to Lead for review. No further OPS9 points, cleanup, FIN1 or replay authorized. Existing heartbeat checks mailbox for new tasks.",
   "scope": {
     "scientific_content_opened": false,
     "fin1_or_replay": false,
@@ -234,5 +297,8 @@
     "new_threshold_or_forecast": false,
     "frozen_source_mutated": false,
     "yolo_or_t014": false
-  }
+  },
+  "operational_events": [
+    "Final heartbeat GitHub fetch failed connecting to port443 after21100ms; one bounded retry succeeded. No primary process or SSH collection failure."
+  ]
 }
