@@ -1,0 +1,106 @@
+{
+  "task": "T013-MECH2",
+  "status": "PASS",
+  "timestamp": "2026-09-13T17:53:43.788584+08:00",
+  "task_start_head": "37823006fda01a942512330251608a4d67c74344",
+  "preregistration_commit": "f8c2f685d12c6aa8fa97bbe145a10500fc851d67",
+  "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+  "native_revision": "856dde20aee659246248e20734ef9ba5214f5e44",
+  "source_sha256": {
+    "groundingdino/models/GroundingDINO/transformer.py": "7436a0daf8002cb4078bc56ab4343c7ec6d1f5dfe15b41747dc357cabad1760e",
+    "groundingdino/config/GroundingDINO_SwinT_OGC.py": "5d7093aaaeaafbf8eec07a1aef5bee976dff5615d54e0ca88293cd92e008a7c8"
+  },
+  "artifact_sha256": {
+    "proposal_selection_lock.py": "b17d1ae60243608cba96ed3b71f84a73973bcb1c01d9c1ef4f29fd68b4060481",
+    "test_proposal_selection_lock.py": "a9b8c3a0847fe73445e93c473f0cc80bc7fd54de82d7ca5cce3dd4befa18cdd1",
+    "tests_cpu.log": "cda4343dd3b3060feba6f6f911533b829c352d78f497a13a050a324ada51d1cc",
+    "tests_cuda1.log": "8505badefb7c61439a592128260cee56440e060397fa02ca32f0cd8e3e72b928"
+  },
+  "contract_sha256": "2805ecef414cdf043b2e134d368539a697331d59e22b26faa6e301ce1b1b5101",
+  "environment": {
+    "python": "3.12.12",
+    "torch": "2.4.0+cu121",
+    "gpu": "NVIDIA RTX A6000",
+    "gpu_device": "cuda:1",
+    "cuda_available": true,
+    "cuda_device_count": 2,
+    "gpu_free_bytes_before_tests": 50598707200,
+    "gpu_total_bytes": 50897289216,
+    "environment_changed": false
+  },
+  "commands": {
+    "cwd": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/mech2",
+    "gpu": "MECH2_TEST_DEVICE=cuda:1 ../venv/bin/python -m unittest -v test_proposal_selection_lock",
+    "cpu": "MECH2_TEST_DEVICE=cpu ../venv/bin/python -m unittest -v test_proposal_selection_lock"
+  },
+  "test_runs": [
+    {
+      "device": "cuda:1",
+      "tests": 6,
+      "seconds": 0.343,
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "device": "cpu",
+      "tests": 6,
+      "seconds": 0.009,
+      "exit_code": 0,
+      "status": "PASS"
+    }
+  ],
+  "validation": {
+    "native_identity_with_and_without_ties": "PASS",
+    "override_vx_coordinates_only": "PASS",
+    "ordered_permutation": "PASS",
+    "null_intervention_identity": "PASS",
+    "invalid_dtype_shape_range_duplicates_count_rejected": "PASS"
+  },
+  "invalid_override_cases": 8,
+  "invalid_requested_count_cases": 4,
+  "detached_references_verified": true,
+  "observed_issue": "nvidia-smi exit18: NVML library580.178 driver/library version mismatch. Torch CUDA available; all CUDA tests passed despite NVML warning. No driver/library changes.",
+  "primary_health": {
+    "timestamp": "2026-09-13T17:46:28+08:00",
+    "completed_images": 735,
+    "total_images": 1000,
+    "elapsed_seconds": 74510.60974929802,
+    "writer_pid": 721181,
+    "writer_stat": "Rl+",
+    "tmux_alive": true,
+    "wrapper_exit_code": null,
+    "analysis_results_exists": false,
+    "free_bytes": 14863929344,
+    "ops2": {
+      "status": "SAFE",
+      "process_status": "PRIMARY_RUNNING",
+      "storage": {
+        "closed_image_count": 735,
+        "free_bytes": 14863929344,
+        "remaining": 265,
+        "projected_remaining": 4334161920,
+        "required_free": 13790928896,
+        "margin": 1073000448,
+        "status": "SAFE"
+      },
+      "writer_alive": true,
+      "tmux_alive": true,
+      "wrapper_exit_code": null
+    }
+  },
+  "future_metrics_status": "NOT RUN / NOT A GATE",
+  "future_execution_authorized": false,
+  "gate1_or_gate2_failure_action": "DO NOT EXECUTE",
+  "scope": {
+    "synthetic_tensors_only": true,
+    "primary_scientific_or_cache_content_opened": false,
+    "annotations_opened": false,
+    "detector_import_or_inference": false,
+    "checkpoint_loaded": false,
+    "frozen_source_or_run_mutated": false,
+    "fin1_or_replay": false,
+    "new_gate_or_threshold": false,
+    "yolo_runtime": false,
+    "t014_execution": false
+  }
+}

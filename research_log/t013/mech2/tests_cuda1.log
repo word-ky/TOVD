@@ -1,0 +1,13 @@
+test_invalid_override_rejected (test_proposal_selection_lock.ProposalLockTests.test_invalid_override_rejected) ... /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+ok
+test_invalid_requested_count_rejected (test_proposal_selection_lock.ProposalLockTests.test_invalid_requested_count_rejected) ... ok
+test_native_identity (test_proposal_selection_lock.ProposalLockTests.test_native_identity) ... ok
+test_null_intervention_identity (test_proposal_selection_lock.ProposalLockTests.test_null_intervention_identity) ... ok
+test_override_order_preserved (test_proposal_selection_lock.ProposalLockTests.test_override_order_preserved) ... ok
+test_override_uses_only_vx_coordinates (test_proposal_selection_lock.ProposalLockTests.test_override_uses_only_vx_coordinates) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.343s
+
+OK
