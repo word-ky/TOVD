@@ -1,0 +1,138 @@
+{
+  "task": "T013-OPS6",
+  "task_start_head": "9f008f73db3e8dd2bf7506f4f6a31ab231695323",
+  "status": "ACTIVE_WATCH_1_OF_4",
+  "source_evidence": [
+    {
+      "path": "research_log/t013/primary_survival_guard.py",
+      "evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a",
+      "matches_git_blob_after_git_line_ending_normalization": true,
+      "modified": false
+    },
+    {
+      "path": "research_log/t013/primary_incident_snapshot.py",
+      "evidence_commit": "6ecbc36bd66eb2e4ca6057f9a33c81863ed7eff7",
+      "matches_git_blob_after_git_line_ending_normalization": true,
+      "modified": false
+    }
+  ],
+  "points": [
+    {
+      "index": 1,
+      "raw_transcript": "research_log/t013/primary_survival_watch_point1.txt",
+      "supplied_metadata": {
+        "binding": {
+          "repository": "https://github.com/word-ky/TOVD.git",
+          "project_root": "/home/wenchang/asdasdsad/wjq/TOVD",
+          "run_id": "20260912-210355-tovd-native30-primary",
+          "release_id": "20260912-210306-tovd-native30-primary-freeze",
+          "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+          "dispatch_commit": "88668f76b22777459b5792dd28f88075f208c678",
+          "writer_pid": 721181,
+          "tmux_session": "autodl-20260912-210355-tovd-native30-primary",
+          "ops2_evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a"
+        },
+        "git_head": "9f008f73db3e8dd2bf7506f4f6a31ab231695323",
+        "timestamp": "2026-09-13T13:58:00+08:00",
+        "raw_sources": {
+          "binding": "accepted immutable primary metadata/dispatch 88668f76b22777459b5792dd28f88075f208c678",
+          "timestamp": "research_log/t013/primary_survival_watch_point1.txt#timestamp",
+          "git_head": "local git rev-parse HEAD 9f008f73db3e8dd2bf7506f4f6a31ab231695323",
+          "writer": "research_log/t013/primary_survival_watch_point1.txt#writer",
+          "tmux": "research_log/t013/primary_survival_watch_point1.txt#tmux",
+          "progress": "research_log/t013/primary_survival_watch_point1.txt#progress",
+          "wrapper_exit": "research_log/t013/primary_survival_watch_point1.txt#wrapper_exit",
+          "filesystem": "research_log/t013/primary_survival_watch_point1.txt#filesystem",
+          "analysis_existence": "research_log/t013/primary_survival_watch_point1.txt#analysis_existence"
+        },
+        "writer": {
+          "pid": 721181,
+          "returncode": 0,
+          "stdout": " 721181 Rl+\n"
+        },
+        "tmux_returncode": 0,
+        "progress_line": "{\"completed_images\": 600, \"total_images\": 1000, \"seconds\": 60797.984918}",
+        "wrapper_exit_lines": [],
+        "df_stdout": "      Avail\n17867317248\n",
+        "analysis_result_exists": false,
+        "scope_attestation": {
+          "scientific_payloads_opened": false,
+          "cache_recursively_scanned": false,
+          "experiment_mutated": false
+        }
+      },
+      "snapshot": {
+        "schema_version": "T013-OPS3-v1",
+        "binding": {
+          "repository": "https://github.com/word-ky/TOVD.git",
+          "project_root": "/home/wenchang/asdasdsad/wjq/TOVD",
+          "run_id": "20260912-210355-tovd-native30-primary",
+          "release_id": "20260912-210306-tovd-native30-primary-freeze",
+          "freeze_commit": "6fec32243985ccc808123d851abf5f3dea10af99",
+          "dispatch_commit": "88668f76b22777459b5792dd28f88075f208c678",
+          "writer_pid": 721181,
+          "tmux_session": "autodl-20260912-210355-tovd-native30-primary",
+          "ops2_evidence_commit": "e380d14e5ee7b830781d38cc9efae292509ca66a"
+        },
+        "timestamp": "2026-09-13T13:58:00+08:00",
+        "git_head": "9f008f73db3e8dd2bf7506f4f6a31ab231695323",
+        "raw_sources": {
+          "binding": "accepted immutable primary metadata/dispatch 88668f76b22777459b5792dd28f88075f208c678",
+          "timestamp": "research_log/t013/primary_survival_watch_point1.txt#timestamp",
+          "git_head": "local git rev-parse HEAD 9f008f73db3e8dd2bf7506f4f6a31ab231695323",
+          "writer": "research_log/t013/primary_survival_watch_point1.txt#writer",
+          "tmux": "research_log/t013/primary_survival_watch_point1.txt#tmux",
+          "progress": "research_log/t013/primary_survival_watch_point1.txt#progress",
+          "wrapper_exit": "research_log/t013/primary_survival_watch_point1.txt#wrapper_exit",
+          "filesystem": "research_log/t013/primary_survival_watch_point1.txt#filesystem",
+          "analysis_existence": "research_log/t013/primary_survival_watch_point1.txt#analysis_existence"
+        },
+        "progress": {
+          "completed_images": 600,
+          "total_images": 1000,
+          "seconds": 60797.984918
+        },
+        "writer_pid_exists": true,
+        "writer_state": "Rl+",
+        "analysis_result_exists": false,
+        "ops2": {
+          "status": "SAFE",
+          "process_status": "PRIMARY_RUNNING",
+          "storage": {
+            "closed_image_count": 600,
+            "free_bytes": 17867317248,
+            "remaining": 400,
+            "projected_remaining": 6542131200,
+            "required_free": 16440492032,
+            "margin": 1426825216,
+            "status": "SAFE"
+          },
+          "writer_alive": true,
+          "tmux_alive": true,
+          "wrapper_exit_code": null
+        },
+        "status": "SAFE",
+        "scope_attestation": {
+          "scientific_payloads_opened": false,
+          "cache_recursively_scanned": false,
+          "experiment_mutated": false
+        },
+        "scientific_content_access_authorized": false,
+        "fin1_execution_authorized": false,
+        "remediation_authorized": false
+      }
+    }
+  ],
+  "point_count": 1,
+  "maximum_points": 4,
+  "watch_start": "2026-09-13T13:58:00+08:00",
+  "next_action": "Next three existing approximately15-minute heartbeats each collect one ordinary scalar point, append receipt. No new loop/helper/du/hashing. Stop immediately on incident or completion-unverified using accepted OPS3 canonical metadata snapshot. If allhealthy, deliver PASS after fourth point spanning45-60minutes.",
+  "prohibitions_observed": {
+    "du": false,
+    "scientific_payload_access": false,
+    "active_file_hash_or_mutation": false,
+    "fin1_replay_scientific_analysis": false,
+    "cleanup_restart_resume_yolo_t014": false,
+    "new_threshold_forecast_time_to_failure_or_cleanup_recommendation": false
+  }
+}
