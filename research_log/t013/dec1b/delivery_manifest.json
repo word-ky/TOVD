@@ -1,0 +1,20 @@
+{
+  "task": "T013-DEC1B",
+  "status": "PASS",
+  "validation": {
+    "all_four_disclosure_sections_unchanged": true,
+    "only_explicit_lead_review_added": true,
+    "decision_call_count_one": true,
+    "expected_negative_state": true,
+    "source_and_scientific_tracked_files_unchanged": true
+  },
+  "command": "Standard-library JSON serialization equality and Git diff of protected scientific/contract paths; no decide call",
+  "files_sha256": {
+    "research_log/t013/dec1b/call_started.json": "420e135d41bb292e8c8d75cfb45bbe72bd6ea637c5fe92e97adc8a98c21d4d5f",
+    "research_log/t013/dec1b/decision_input.json": "293c04f46c36e67f8181915f91ab2bf57240f9f8e53e8046bd43efa75beac7d9",
+    "research_log/t013/dec1b/decision_receipt.json": "8ab3437f8799c67fab98d839c7b0d227bfd1b3716c39d3d4cbc6db4dcbc3432f",
+    "research_log/t013/dec1b/execution_receipt.json": "f5e6e0dcf3b3e42f8124a19c3aebdfb88be926a6c94a1c618f79b158285b167d",
+    "research_log/t013/dec1b/FINAL_GROUNDING_DECISION.md": "9dbd04712ee0edcd9a771068cac15cd710aff45a81bc98142f9c7fcfc769c279",
+    "research_log/t013/dec1b/seal_decision.py": "86d3caf26c7ceb12ff69414692203d386637fd7ddcfa0b72627d9cd57521178c"
+  }
+}

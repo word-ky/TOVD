@@ -1720,3 +1720,196 @@ Final history finding: no committed evidence of duplicate/restarted primary, una
 
 
 G4B1 evidence commit: d469eb34fcb29e0b3f899053e5415b0581ebcd76. Fixed scientific-history endpoint remains 745efb43d8640f8ac3958bb733d0df44c51c87ff. This evidence commit and the following delivery commit are outside the audited interval. The four audit artifacts remain unchanged. Final state FINAL_GATE4_HISTORY_CLEAN_READY_FOR_DEC1B; await Research Lead DEC1B adjudication, no repeated audit or scientific execution.
+
+
+# T013-DEC1B — DEC1B_GROUNDING_PRIMARY_NOT_SUPPORTED_FINAL
+
+Lead ca74fa34a9e94d96f30eb4883ed88572ff1b1cf5 / task-start94833fffd735060d077eafaf66d23156e77e3918 accepted G4B1, fixed final Gate4=true and authorized DEC1B. At2026-09-14T12:36:46–12:36:48+08 local Python3.12.7 executed frozen T013-DEC1-v1 decide exactlyONCE; returned GROUNDING_PRIMARY_NOT_SUPPORTED. Final package state DEC1B_GROUNDING_PRIMARY_NOT_SUPPORTED_FINAL. Gate1=false,Gate2=true,Lead gate3_coherent=false,recorded/finalGate4=true. Full accepted DEC1A envelope copied unchanged plus exactLead fields; hashes/bindingsPASS, no metrics recomputed, no predictioncacheopened. Raw-vs-Git CRLF-only differences documented with both digests; sourcefiles unchanged. No failures/newdetector/CF/MECH/T014/YOLO/FIN1/replay/comparator runtime. Packet under research_log/t013/dec1b, decision_input SHA293c04f46c36e67f8181915f91ab2bf57240f9f8e53e8046bd43efa75beac7d9. STOP; never rerun actualdecision. Await Research Lead review of sealed Grounding negative and decision whether to preregister a separate YOLO-World architecture-specific replication. No such runtime is authorized yet; heartbeatmailbox-only.
+
+Evidence commit is the commit introducing this packet; full SHA will be appended by the delivery commit. Exact files added: research_log/t013/dec1b/seal_decision.py, call_started.json, decision_input.json, decision_receipt.json, FINAL_GROUNDING_DECISION.md, execution_receipt.json, delivery_manifest.json. Also updated this mailbox and research_log/REMOTE.md, project_state.md, session_log.md.
+
+# T013-DEC1B — Final Grounding primary decision
+
+**GROUNDING_PRIMARY_NOT_SUPPORTED**. The frozen T013-DEC1-v1 function was called exactly once on the complete accepted DEC1A disclosure plus Research-Lead judgments and returned the expected state.
+
+FIN1 and full-cache replay/comparison are PASS. Frozen Gate1=false, Gate2=true, recorded Gate4=true; Research Lead supplied gate3_coherent=false and final gate4=true. Under unchanged DEC1 precedence, this is a valid negative Grounding primary. Gate3 cannot rescue Gate1. No thresholds or results were recalculated or changed.
+
+The full scientific envelope is decision_input.json; machine state is decision_receipt.json. execution_receipt.json binds exact source/document/verification receipt, disclosure, FIN1, comparator, replay envelope and Gate4 audit hashes, including both local raw and Git blob hashes where CRLF differs. The accepted Git bytes are unchanged; no source file was normalized or rewritten. The existing disclosure's historical contract_decision=NOT_RUN is not a current decision input: only its required contract_version/evidence/provenance/results sections were copied unchanged, then the explicit Lead review fields were added.
+
+Task-start HEAD: 94833fffd735060d077eafaf66d23156e77e3918; Lead instruction: ca74fa34a9e94d96f30eb4883ed88572ff1b1cf5. Review reference: coordination/CHATGPT_REVIEW_LOG.md#T013-G4B1-review--T013-DEC1B-assignment. Gate4 audit: research_log/t013/GATE4_FINAL_HISTORY_AUDIT.md, evidence d469eb34fcb29e0b3f899053e5415b0581ebcd76. Original disclosure evidence: cfe24727a4c2205a966c2f31c8b54e5b74da80b6.
+
+Command: D:/anaconda3/python.exe research_log/t013/dec1b/seal_decision.py, local Python 3.12.7, standard library only. The frozen function performs schema validation and state selection; no detector or scientific test was rerun. Primary prediction-cache access, scientific metric recomputation and new detector/CF/MECH/T014/YOLO/FIN1/replay/comparator execution counts are all zero.
+
+No discrepancy occurred. The inherited Git-history limitation remains: accepted repository/operational evidence cannot prove absence of unrecorded off-repository behavior. T014 and vocabulary/gate redesign remain prohibited for this primary. YOLO-World may later test architecture specificity; it cannot replace, relabel or rescue this Grounding negative. No YOLO runtime is authorized by this packet.
+
+Stop and await Research Lead review of sealed Grounding negative and decision whether to preregister a separate YOLO-World architecture-specific replication.
+
+
+## Exact accepted FIN1/replay evidence references
+
+```json
+{
+  "fin1": {
+    "status": "PASS",
+    "receipt_ref": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/fin1/primary_completion_receipt.json",
+    "receipt_sha256": "ade691d9765ee09b740ba7a7e24262ee55b272d82d5fd79889659fd6d67df63e"
+  },
+  "full_cache_replay": {
+    "status": "PASS",
+    "receipt_ref": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013/close1-primary-replay/comparison_receipt.json",
+    "receipt_sha256": "a22ac31a351080b8860838beda92eb318c2a7ddfb422e2a8be29082388110eef",
+    "envelope_ref": "research_log/t013/replay1c/replay_envelope_and_barrier.json",
+    "envelope_sha256": "b6c4f96f44d92d007a0cd964da012452c16f71a79d8b95f261365bf7812a1bdf"
+  }
+}
+```
+
+## Execution, input/source hashes, and Lead fields
+
+```json
+{
+  "task": "T013-DEC1B",
+  "task_start_head": "94833fffd735060d077eafaf66d23156e77e3918",
+  "lead_instruction_commit": "ca74fa34a9e94d96f30eb4883ed88572ff1b1cf5",
+  "started_utc": "2026-09-14T04:36:46.432965+00:00",
+  "command": "D:/anaconda3/python.exe research_log/t013/dec1b/seal_decision.py",
+  "interpreter": "D:\\anaconda3\\python.exe",
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+  "driver_sha256": "86d3caf26c7ceb12ff69414692203d386637fd7ddcfa0b72627d9cd57521178c",
+  "actual_primary_decision_call_count": 1,
+  "input_bindings": {
+    "contract_source": {
+      "path": "research_log/t013/final_decision_contract.py",
+      "accepted_commit": "51881e3",
+      "local_raw_sha256": "baf99f38a3130c268385ddc4c986cd72d123bfb55e7fed29a90b88d289570931",
+      "accepted_git_blob_sha256": "baf99f38a3130c268385ddc4c986cd72d123bfb55e7fed29a90b88d289570931",
+      "task_start_git_blob_sha256": "baf99f38a3130c268385ddc4c986cd72d123bfb55e7fed29a90b88d289570931",
+      "git_bytes_unchanged": true,
+      "local_matches_accepted_except_CRLF": true
+    },
+    "contract_document": {
+      "path": "research_log/t013/FINAL_DECISION_CONTRACT.md",
+      "accepted_commit": "51881e3",
+      "local_raw_sha256": "9c6e6ee662b5e22458b13adecc9825d32e1e031876c39904b3635ce1388cbcba",
+      "accepted_git_blob_sha256": "9c6e6ee662b5e22458b13adecc9825d32e1e031876c39904b3635ce1388cbcba",
+      "task_start_git_blob_sha256": "9c6e6ee662b5e22458b13adecc9825d32e1e031876c39904b3635ce1388cbcba",
+      "git_bytes_unchanged": true,
+      "local_matches_accepted_except_CRLF": true
+    },
+    "contract_receipt": {
+      "path": "research_log/t013/final_decision_contract_receipt.json",
+      "accepted_commit": "51881e3",
+      "local_raw_sha256": "7fe1d2811d7fcf5ffd122e7957e01e2260522f6ed03013e4a3a8606872a95737",
+      "accepted_git_blob_sha256": "dbb29177688abcee6a427b17beb8d32b2ed99d79c2befc66c08834fe45e1d64d",
+      "task_start_git_blob_sha256": "dbb29177688abcee6a427b17beb8d32b2ed99d79c2befc66c08834fe45e1d64d",
+      "git_bytes_unchanged": true,
+      "local_matches_accepted_except_CRLF": true
+    },
+    "disclosure": {
+      "path": "research_log/t013/dec1a/primary_scientific_disclosure.json",
+      "accepted_commit": "cfe24727a4c2205a966c2f31c8b54e5b74da80b6",
+      "local_raw_sha256": "c3a76e32982d3581b7a0eb56b823ccfab56bbd99700f53a56976444f314879ff",
+      "accepted_git_blob_sha256": "49c50347055e804a1ea0754878d1badf50f01de6bc140626509292a91fbb3304",
+      "task_start_git_blob_sha256": "49c50347055e804a1ea0754878d1badf50f01de6bc140626509292a91fbb3304",
+      "git_bytes_unchanged": true,
+      "local_matches_accepted_except_CRLF": true
+    },
+    "fin1": {
+      "path": "research_log/t013/fin1p/primary_completion_receipt.json",
+      "accepted_commit": "8b00e1e",
+      "local_raw_sha256": "ade691d9765ee09b740ba7a7e24262ee55b272d82d5fd79889659fd6d67df63e",
+      "accepted_git_blob_sha256": "ade691d9765ee09b740ba7a7e24262ee55b272d82d5fd79889659fd6d67df63e",
+      "task_start_git_blob_sha256": "ade691d9765ee09b740ba7a7e24262ee55b272d82d5fd79889659fd6d67df63e",
+      "git_bytes_unchanged": true,
+      "local_matches_accepted_except_CRLF": true
+    },
+    "comparison": {
+      "path": "research_log/t013/replay1c/comparison_receipt.json",
+      "accepted_commit": "60c99b1",
+      "local_raw_sha256": "a22ac31a351080b8860838beda92eb318c2a7ddfb422e2a8be29082388110eef",
+      "accepted_git_blob_sha256": "a22ac31a351080b8860838beda92eb318c2a7ddfb422e2a8be29082388110eef",
+      "task_start_git_blob_sha256": "a22ac31a351080b8860838beda92eb318c2a7ddfb422e2a8be29082388110eef",
+      "git_bytes_unchanged": true,
+      "local_matches_accepted_except_CRLF": true
+    },
+    "replay_envelope": {
+      "path": "research_log/t013/replay1c/replay_envelope_and_barrier.json",
+      "accepted_commit": "60c99b1",
+      "local_raw_sha256": "b6c4f96f44d92d007a0cd964da012452c16f71a79d8b95f261365bf7812a1bdf",
+      "accepted_git_blob_sha256": "c26072d95d0fd420b440f9f2cd7c768469ff8486effa5196c9630fbd15a932a0",
+      "task_start_git_blob_sha256": "c26072d95d0fd420b440f9f2cd7c768469ff8486effa5196c9630fbd15a932a0",
+      "git_bytes_unchanged": true,
+      "local_matches_accepted_except_CRLF": true
+    },
+    "gate4_report": {
+      "path": "research_log/t013/GATE4_FINAL_HISTORY_AUDIT.md",
+      "accepted_commit": "d469eb34fcb29e0b3f899053e5415b0581ebcd76",
+      "local_raw_sha256": "476f86ad17d50e286f448abdf0ed1d84cc13566e812b153341efa96bfd4c1123",
+      "accepted_git_blob_sha256": "55e1eaa425148cffc2f3eec71251dcc3aa9ba102310bb2850a30762f527625a3",
+      "task_start_git_blob_sha256": "55e1eaa425148cffc2f3eec71251dcc3aa9ba102310bb2850a30762f527625a3",
+      "git_bytes_unchanged": true,
+      "local_matches_accepted_except_CRLF": true
+    }
+  },
+  "failures": [],
+  "scientific_metrics_recomputed": false,
+  "primary_prediction_cache_opened": false,
+  "new_scientific_runtime_counts": {
+    "detector": 0,
+    "CF": 0,
+    "MECH": 0,
+    "T014": 0,
+    "YOLO-World": 0,
+    "FIN1": 0,
+    "replay": 0,
+    "comparator": 0
+  },
+  "input_sha256": "293c04f46c36e67f8181915f91ab2bf57240f9f8e53e8046bd43efa75beac7d9",
+  "lead_review": {
+    "gate3_coherent": false,
+    "gate4": true,
+    "gate3_rationale": "complete three-family Gate3 evidence is not qualitatively coherent because only distractor-FP excess is statistically supported, classification-beyond-localization is unsupported, and matched-localization margin shrinkage is negative in all four corruptions; this cannot alter Gate1",
+    "gate4_history_audit_ref": "research_log/t013/GATE4_FINAL_HISTORY_AUDIT.md / evidence commit d469eb34fcb29e0b3f899053e5415b0581ebcd76",
+    "review_ref": "coordination/CHATGPT_REVIEW_LOG.md#T013-G4B1-review--T013-DEC1B-assignment"
+  },
+  "all_input_bindings_validated": true,
+  "returned_state": "GROUNDING_PRIMARY_NOT_SUPPORTED",
+  "status": "DEC1B_GROUNDING_PRIMARY_NOT_SUPPORTED_FINAL",
+  "recommended_next_action": "Research Lead review of sealed Grounding negative and decision whether to preregister a separate YOLO-World architecture-specific replication",
+  "finished_utc": "2026-09-14T04:36:48.605456+00:00",
+  "artifact_sha256": {
+    "call_started.json": "420e135d41bb292e8c8d75cfb45bbe72bd6ea637c5fe92e97adc8a98c21d4d5f",
+    "decision_input.json": "293c04f46c36e67f8181915f91ab2bf57240f9f8e53e8046bd43efa75beac7d9",
+    "decision_receipt.json": "8ab3437f8799c67fab98d839c7b0d227bfd1b3716c39d3d4cbc6db4dcbc3432f",
+    "FINAL_GROUNDING_DECISION.md": "9dbd04712ee0edcd9a771068cac15cd710aff45a81bc98142f9c7fcfc769c279",
+    "seal_decision.py": "86d3caf26c7ceb12ff69414692203d386637fd7ddcfa0b72627d9cd57521178c"
+  }
+}
+```
+
+## Delivery validation and output hashes
+
+```json
+{
+  "task": "T013-DEC1B",
+  "status": "PASS",
+  "validation": {
+    "all_four_disclosure_sections_unchanged": true,
+    "only_explicit_lead_review_added": true,
+    "decision_call_count_one": true,
+    "expected_negative_state": true,
+    "source_and_scientific_tracked_files_unchanged": true
+  },
+  "command": "Standard-library JSON serialization equality and Git diff of protected scientific/contract paths; no decide call",
+  "files_sha256": {
+    "research_log/t013/dec1b/call_started.json": "420e135d41bb292e8c8d75cfb45bbe72bd6ea637c5fe92e97adc8a98c21d4d5f",
+    "research_log/t013/dec1b/decision_input.json": "293c04f46c36e67f8181915f91ab2bf57240f9f8e53e8046bd43efa75beac7d9",
+    "research_log/t013/dec1b/decision_receipt.json": "8ab3437f8799c67fab98d839c7b0d227bfd1b3716c39d3d4cbc6db4dcbc3432f",
+    "research_log/t013/dec1b/execution_receipt.json": "f5e6e0dcf3b3e42f8124a19c3aebdfb88be926a6c94a1c618f79b158285b167d",
+    "research_log/t013/dec1b/FINAL_GROUNDING_DECISION.md": "9dbd04712ee0edcd9a771068cac15cd710aff45a81bc98142f9c7fcfc769c279",
+    "research_log/t013/dec1b/seal_decision.py": "86d3caf26c7ceb12ff69414692203d386637fd7ddcfa0b72627d9cd57521178c"
+  }
+}
+```
+
+delivery_manifest.json SHA256: 0ebee3467e2c633795f5820a5313aa659cc1a1c8a0fe6bc5f08058a3fe3650c9.

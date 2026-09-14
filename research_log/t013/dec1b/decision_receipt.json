@@ -1,0 +1,20 @@
+{
+  "task": "T013-DEC1B",
+  "contract_version": "T013-DEC1-v1",
+  "state": "GROUNDING_PRIMARY_NOT_SUPPORTED",
+  "expected_state": "GROUNDING_PRIMARY_NOT_SUPPORTED",
+  "matches_expected_state": true,
+  "actual_primary_decision_call_count": 1,
+  "input_sha256": "293c04f46c36e67f8181915f91ab2bf57240f9f8e53e8046bd43efa75beac7d9",
+  "contract_source_sha256": "baf99f38a3130c268385ddc4c986cd72d123bfb55e7fed29a90b88d289570931",
+  "gate1": false,
+  "gate2": true,
+  "gate4_recorded_checks": true,
+  "lead_review": {
+    "gate3_coherent": false,
+    "gate4": true,
+    "gate3_rationale": "complete three-family Gate3 evidence is not qualitatively coherent because only distractor-FP excess is statistically supported, classification-beyond-localization is unsupported, and matched-localization margin shrinkage is negative in all four corruptions; this cannot alter Gate1",
+    "gate4_history_audit_ref": "research_log/t013/GATE4_FINAL_HISTORY_AUDIT.md / evidence commit d469eb34fcb29e0b3f899053e5415b0581ebcd76",
+    "review_ref": "coordination/CHATGPT_REVIEW_LOG.md#T013-G4B1-review--T013-DEC1B-assignment"
+  }
+}
