@@ -1,0 +1,309 @@
+{
+  "task": "T013-YW-P3R3",
+  "task_start_head": "29482534e26c34f379da0f1cca6578d94d09670f",
+  "lead_instruction_commit": "2cb45efcdc4797506b734337d7bdfac3557a3544",
+  "started_at": "2026-09-14T15:54:54.625538+08:00",
+  "queries": [
+    {
+      "command": [
+        "/usr/bin/dig",
+        "@205.251.192.137",
+        "huggingface.co",
+        "A",
+        "+norecurse",
+        "+time=5",
+        "+tries=1",
+        "+ignore"
+      ],
+      "started_at": "2026-09-14T15:54:54.637258+08:00",
+      "stopped_at": "2026-09-14T15:54:54.670151+08:00",
+      "elapsed_seconds": 0.032899613957852125,
+      "exit_code": 0,
+      "stdout": "\n; <<>> DiG 9.18.39-0ubuntu0.22.04.6-Ubuntu <<>> @205.251.192.137 huggingface.co A +norecurse +time=5 +tries=1 +ignore\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 62494\n;; flags: qr aa; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0\n\n;; QUESTION SECTION:\n;huggingface.co.\t\t\tIN\tA\n\n;; ANSWER SECTION:\nhuggingface.co.\t\t150\tIN\tA\t205.186.152.122\n\n;; Query time: 12 msec\n;; SERVER: 205.251.192.137#53(205.251.192.137) (UDP)\n;; WHEN: Mon Sep 14 15:54:54 CST 2026\n;; MSG SIZE  rcvd: 48\n\n",
+      "stderr": "",
+      "server_ip": "205.251.192.137",
+      "server_name": "ns-137.awsdns-17.com",
+      "record_type": "A",
+      "transport": "UDP",
+      "rcode": "NOERROR",
+      "aa": true,
+      "tc": false,
+      "answers": [
+        {
+          "name": "huggingface.co.",
+          "ttl": 150,
+          "rrclass": "IN",
+          "type": "A",
+          "data": "205.186.152.122"
+        }
+      ]
+    },
+    {
+      "command": [
+        "/usr/bin/dig",
+        "@205.251.192.137",
+        "huggingface.co",
+        "AAAA",
+        "+norecurse",
+        "+time=5",
+        "+tries=1",
+        "+ignore"
+      ],
+      "started_at": "2026-09-14T15:54:54.670676+08:00",
+      "stopped_at": "2026-09-14T15:54:54.710795+08:00",
+      "elapsed_seconds": 0.040117199008818716,
+      "exit_code": 0,
+      "stdout": "\n; <<>> DiG 9.18.39-0ubuntu0.22.04.6-Ubuntu <<>> @205.251.192.137 huggingface.co AAAA +norecurse +time=5 +tries=1 +ignore\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 11294\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0\n\n;; QUESTION SECTION:\n;huggingface.co.\t\t\tIN\tAAAA\n\n;; ANSWER SECTION:\nhuggingface.co.\t\t68\tIN\tAAAA\t2001::68f4:2be4\n\n;; Query time: 20 msec\n;; SERVER: 205.251.192.137#53(205.251.192.137) (UDP)\n;; WHEN: Mon Sep 14 15:54:54 CST 2026\n;; MSG SIZE  rcvd: 60\n\n",
+      "stderr": "",
+      "server_ip": "205.251.192.137",
+      "server_name": "ns-137.awsdns-17.com",
+      "record_type": "AAAA",
+      "transport": "UDP",
+      "rcode": "NOERROR",
+      "aa": false,
+      "tc": false,
+      "answers": [
+        {
+          "name": "huggingface.co.",
+          "ttl": 68,
+          "rrclass": "IN",
+          "type": "AAAA",
+          "data": "2001::68f4:2be4"
+        }
+      ]
+    },
+    {
+      "command": [
+        "/usr/bin/dig",
+        "@205.251.197.172",
+        "huggingface.co",
+        "A",
+        "+norecurse",
+        "+time=5",
+        "+tries=1",
+        "+ignore"
+      ],
+      "started_at": "2026-09-14T15:54:54.711127+08:00",
+      "stopped_at": "2026-09-14T15:54:54.742429+08:00",
+      "elapsed_seconds": 0.03130168200004846,
+      "exit_code": 0,
+      "stdout": "\n; <<>> DiG 9.18.39-0ubuntu0.22.04.6-Ubuntu <<>> @205.251.197.172 huggingface.co A +norecurse +time=5 +tries=1 +ignore\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 34712\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0\n\n;; QUESTION SECTION:\n;huggingface.co.\t\t\tIN\tA\n\n;; ANSWER SECTION:\nhuggingface.co.\t\t71\tIN\tA\t199.16.158.104\n\n;; Query time: 12 msec\n;; SERVER: 205.251.197.172#53(205.251.197.172) (UDP)\n;; WHEN: Mon Sep 14 15:54:54 CST 2026\n;; MSG SIZE  rcvd: 48\n\n",
+      "stderr": "",
+      "server_ip": "205.251.197.172",
+      "server_name": "ns-1452.awsdns-53.org",
+      "record_type": "A",
+      "transport": "UDP",
+      "rcode": "NOERROR",
+      "aa": false,
+      "tc": false,
+      "answers": [
+        {
+          "name": "huggingface.co.",
+          "ttl": 71,
+          "rrclass": "IN",
+          "type": "A",
+          "data": "199.16.158.104"
+        }
+      ]
+    },
+    {
+      "command": [
+        "/usr/bin/dig",
+        "@205.251.197.172",
+        "huggingface.co",
+        "AAAA",
+        "+norecurse",
+        "+time=5",
+        "+tries=1",
+        "+ignore"
+      ],
+      "started_at": "2026-09-14T15:54:54.742774+08:00",
+      "stopped_at": "2026-09-14T15:54:54.774111+08:00",
+      "elapsed_seconds": 0.03133694198913872,
+      "exit_code": 0,
+      "stdout": "\n; <<>> DiG 9.18.39-0ubuntu0.22.04.6-Ubuntu <<>> @205.251.197.172 huggingface.co AAAA +norecurse +time=5 +tries=1 +ignore\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 26007\n;; flags: qr aa; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0\n\n;; QUESTION SECTION:\n;huggingface.co.\t\t\tIN\tAAAA\n\n;; ANSWER SECTION:\nhuggingface.co.\t\t207\tIN\tAAAA\t2a03:2880:f127:283:face:b00c:0:25de\n\n;; Query time: 11 msec\n;; SERVER: 205.251.197.172#53(205.251.197.172) (UDP)\n;; WHEN: Mon Sep 14 15:54:54 CST 2026\n;; MSG SIZE  rcvd: 60\n\n",
+      "stderr": "",
+      "server_ip": "205.251.197.172",
+      "server_name": "ns-1452.awsdns-53.org",
+      "record_type": "AAAA",
+      "transport": "UDP",
+      "rcode": "NOERROR",
+      "aa": true,
+      "tc": false,
+      "answers": [
+        {
+          "name": "huggingface.co.",
+          "ttl": 207,
+          "rrclass": "IN",
+          "type": "AAAA",
+          "data": "2a03:2880:f127:283:face:b00c:0:25de"
+        }
+      ]
+    },
+    {
+      "command": [
+        "/usr/bin/dig",
+        "@205.251.199.163",
+        "huggingface.co",
+        "A",
+        "+norecurse",
+        "+time=5",
+        "+tries=1",
+        "+ignore"
+      ],
+      "started_at": "2026-09-14T15:54:54.774467+08:00",
+      "stopped_at": "2026-09-14T15:54:54.810836+08:00",
+      "elapsed_seconds": 0.03636962897144258,
+      "exit_code": 0,
+      "stdout": "\n; <<>> DiG 9.18.39-0ubuntu0.22.04.6-Ubuntu <<>> @205.251.199.163 huggingface.co A +norecurse +time=5 +tries=1 +ignore\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 8370\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0\n\n;; QUESTION SECTION:\n;huggingface.co.\t\t\tIN\tA\n\n;; ANSWER SECTION:\nhuggingface.co.\t\t128\tIN\tA\t199.59.148.15\n\n;; Query time: 17 msec\n;; SERVER: 205.251.199.163#53(205.251.199.163) (UDP)\n;; WHEN: Mon Sep 14 15:54:54 CST 2026\n;; MSG SIZE  rcvd: 48\n\n",
+      "stderr": "",
+      "server_ip": "205.251.199.163",
+      "server_name": "ns-1955.awsdns-52.co.uk",
+      "record_type": "A",
+      "transport": "UDP",
+      "rcode": "NOERROR",
+      "aa": false,
+      "tc": false,
+      "answers": [
+        {
+          "name": "huggingface.co.",
+          "ttl": 128,
+          "rrclass": "IN",
+          "type": "A",
+          "data": "199.59.148.15"
+        }
+      ]
+    },
+    {
+      "command": [
+        "/usr/bin/dig",
+        "@205.251.199.163",
+        "huggingface.co",
+        "AAAA",
+        "+norecurse",
+        "+time=5",
+        "+tries=1",
+        "+ignore"
+      ],
+      "started_at": "2026-09-14T15:54:54.811220+08:00",
+      "stopped_at": "2026-09-14T15:54:54.850968+08:00",
+      "elapsed_seconds": 0.03975460695801303,
+      "exit_code": 0,
+      "stdout": "\n; <<>> DiG 9.18.39-0ubuntu0.22.04.6-Ubuntu <<>> @205.251.199.163 huggingface.co AAAA +norecurse +time=5 +tries=1 +ignore\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 17850\n;; flags: qr aa; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0\n\n;; QUESTION SECTION:\n;huggingface.co.\t\t\tIN\tAAAA\n\n;; ANSWER SECTION:\nhuggingface.co.\t\t212\tIN\tAAAA\t2a03:2880:f12c:83:face:b00c:0:25de\n\n;; Query time: 20 msec\n;; SERVER: 205.251.199.163#53(205.251.199.163) (UDP)\n;; WHEN: Mon Sep 14 15:54:54 CST 2026\n;; MSG SIZE  rcvd: 60\n\n",
+      "stderr": "",
+      "server_ip": "205.251.199.163",
+      "server_name": "ns-1955.awsdns-52.co.uk",
+      "record_type": "AAAA",
+      "transport": "UDP",
+      "rcode": "NOERROR",
+      "aa": true,
+      "tc": false,
+      "answers": [
+        {
+          "name": "huggingface.co.",
+          "ttl": 212,
+          "rrclass": "IN",
+          "type": "AAAA",
+          "data": "2a03:2880:f12c:83:face:b00c:0:25de"
+        }
+      ]
+    },
+    {
+      "command": [
+        "/usr/bin/dig",
+        "@205.251.195.151",
+        "huggingface.co",
+        "A",
+        "+norecurse",
+        "+time=5",
+        "+tries=1",
+        "+ignore"
+      ],
+      "started_at": "2026-09-14T15:54:54.851441+08:00",
+      "stopped_at": "2026-09-14T15:54:54.885240+08:00",
+      "elapsed_seconds": 0.0338005960220471,
+      "exit_code": 0,
+      "stdout": "\n; <<>> DiG 9.18.39-0ubuntu0.22.04.6-Ubuntu <<>> @205.251.195.151 huggingface.co A +norecurse +time=5 +tries=1 +ignore\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 15744\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0\n\n;; QUESTION SECTION:\n;huggingface.co.\t\t\tIN\tA\n\n;; ANSWER SECTION:\nhuggingface.co.\t\t133\tIN\tA\t162.125.83.1\n\n;; Query time: 13 msec\n;; SERVER: 205.251.195.151#53(205.251.195.151) (UDP)\n;; WHEN: Mon Sep 14 15:54:54 CST 2026\n;; MSG SIZE  rcvd: 48\n\n",
+      "stderr": "",
+      "server_ip": "205.251.195.151",
+      "server_name": "ns-919.awsdns-50.net",
+      "record_type": "A",
+      "transport": "UDP",
+      "rcode": "NOERROR",
+      "aa": false,
+      "tc": false,
+      "answers": [
+        {
+          "name": "huggingface.co.",
+          "ttl": 133,
+          "rrclass": "IN",
+          "type": "A",
+          "data": "162.125.83.1"
+        }
+      ]
+    },
+    {
+      "command": [
+        "/usr/bin/dig",
+        "@205.251.195.151",
+        "huggingface.co",
+        "AAAA",
+        "+norecurse",
+        "+time=5",
+        "+tries=1",
+        "+ignore"
+      ],
+      "started_at": "2026-09-14T15:54:54.885703+08:00",
+      "stopped_at": "2026-09-14T15:54:54.920857+08:00",
+      "elapsed_seconds": 0.03515492199221626,
+      "exit_code": 0,
+      "stdout": "\n; <<>> DiG 9.18.39-0ubuntu0.22.04.6-Ubuntu <<>> @205.251.195.151 huggingface.co AAAA +norecurse +time=5 +tries=1 +ignore\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 21854\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0\n\n;; QUESTION SECTION:\n;huggingface.co.\t\t\tIN\tAAAA\n\n;; ANSWER SECTION:\nhuggingface.co.\t\t211\tIN\tAAAA\t2001::9df0:23\n\n;; Query time: 15 msec\n;; SERVER: 205.251.195.151#53(205.251.195.151) (UDP)\n;; WHEN: Mon Sep 14 15:54:54 CST 2026\n;; MSG SIZE  rcvd: 60\n\n",
+      "stderr": "",
+      "server_ip": "205.251.195.151",
+      "server_name": "ns-919.awsdns-50.net",
+      "record_type": "AAAA",
+      "transport": "UDP",
+      "rcode": "NOERROR",
+      "aa": false,
+      "tc": false,
+      "answers": [
+        {
+          "name": "huggingface.co.",
+          "ttl": 211,
+          "rrclass": "IN",
+          "type": "AAAA",
+          "data": "2001::9df0:23"
+        }
+      ]
+    }
+  ],
+  "same_origin_probes": [],
+  "system_dns": {
+    "command": [
+      "getent",
+      "ahosts",
+      "huggingface.co"
+    ],
+    "started_at": "2026-09-14T15:54:54.625597+08:00",
+    "stopped_at": "2026-09-14T15:54:54.627723+08:00",
+    "elapsed_seconds": 0.0021328950533643365,
+    "exit_code": 0,
+    "stdout": "199.96.59.19    STREAM huggingface.co\n199.96.59.19    DGRAM  \n199.96.59.19    RAW    \n2a03:2880:f11c:8083:face:b00c:0:25de STREAM \n2a03:2880:f11c:8083:face:b00c:0:25de DGRAM  \n2a03:2880:f11c:8083:face:b00c:0:25de RAW    \n",
+    "stderr": ""
+  },
+  "client": {
+    "command": [
+      "/usr/bin/dig",
+      "-v"
+    ],
+    "started_at": "2026-09-14T15:54:54.627740+08:00",
+    "stopped_at": "2026-09-14T15:54:54.637240+08:00",
+    "elapsed_seconds": 0.00950584001839161,
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "DiG 9.18.39-0ubuntu0.22.04.6-Ubuntu\n"
+  },
+  "client_preexisting": true,
+  "client_path": "/usr/bin/dig",
+  "dns_stopped_at": "2026-09-14T15:54:54.921331+08:00"
+}

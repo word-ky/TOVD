@@ -2500,3 +2500,436 @@ Complete P3R2 metadata receipt:
 
 P3R2 evidence commit: 613e9fff4549f72e35f458c22775a593e69a8d6e. State YW_P3R2_AMBIGUOUS_RETURN_TO_LEAD. Adjudication receipt SHA256 d2af601c57846ba529d89c7a8fab93480808afcb9752ff62c3913fd15a489a77; human report SHA256 53200a7d6988087f33fe659e8f82f9f0f7d72da4c5d4c9e155a76c2d84296612. Both match server project-local mirror; complete changed artifact hashes in p3r2/delivery_manifest.json. No follow-up probe or runtime; await Research Lead review of resolver/path evidence before any checkpoint recovery.
 
+
+
+---
+
+# T013-YW-P3R3 — direct DNS replies fail consensus
+
+State: **YW_P3R3_AUTHORITATIVE_DNS_INCONSISTENT_RETURN_TO_LEAD**.
+Task-start HEAD: `29482534e26c34f379da0f1cca6578d94d09670f`. Lead instruction: `2cb45efcdc4797506b734337d7bdfac3557a3544`.
+Probe interval: 2026-09-14T15:54:54.625538+08:00 to 2026-09-14T15:54:54.921331+08:00; driver exit 0.
+
+Exactly eight UDP nonrecursive queries to the four fixed server IPs completed, all exit 0 / RCODE NOERROR. All TC flags were false: no TCP retry. Replies existed, so this is not the DNS-unreachable state. All four A answers differed; only the first A reply had AA set. No A address met the fixed >=2 authoritative-server rule. Eligible A and AAAA sets, and their system-DNS overlaps, are all empty. Step C was not eligible: zero HTTPS/--resolve probes, with TLS/HTTP/redirect/byte results NOT RUN. No broader DNS or origin-path attribution follows from these unauthenticated UDP observations.
+
+| Target server | Type | Returned address | TTL | AA | TC | Elapsed seconds |
+|---|---|---|---|---|---|---|
+| 205.251.192.137 | A | 205.186.152.122 | 150 | True | False | 0.032899613957852125 |
+| 205.251.192.137 | AAAA | 2001::68f4:2be4 | 68 | False | False | 0.040117199008818716 |
+| 205.251.197.172 | A | 199.16.158.104 | 71 | False | False | 0.03130168200004846 |
+| 205.251.197.172 | AAAA | 2a03:2880:f127:283:face:b00c:0:25de | 207 | True | False | 0.03133694198913872 |
+| 205.251.199.163 | A | 199.59.148.15 | 128 | False | False | 0.03636962897144258 |
+| 205.251.199.163 | AAAA | 2a03:2880:f12c:83:face:b00c:0:25de | 212 | True | False | 0.03975460695801303 |
+| 205.251.195.151 | A | 162.125.83.1 | 133 | False | False | 0.0338005960220471 |
+| 205.251.195.151 | AAAA | 2001::9df0:23 | 211 | False | False | 0.03515492199221626 |
+
+Authoritative support counts: A 205.186.152.122 has 1; the other three A addresses have 0. AAAA 2a03:2880:f127:283:face:b00c:0:25de and 2a03:2880:f12c:83:face:b00c:0:25de each have 1; the other two AAAA addresses have 0. No address has support from two servers. Five replies carried rd/ra without AA despite nonrecursive requests; their answers were excluded from authoritative support. This inconsistency is preserved without claiming a specific interception mechanism.
+
+Contemporaneous system control `getent ahosts huggingface.co` returned 199.96.59.19 and 2a03:2880:f11c:8083:face:b00c:0:25de, exit 0. Tool preflight `command -v dig; command -v nslookup; dig -v; getent ahosts huggingface.co` found existing /usr/bin/dig and /usr/bin/nslookup. Used /usr/bin/dig version 9.18.39-0ubuntu0.22.04.6-Ubuntu; no installation. A second system control and version observation are captured in the execution receipt.
+
+Each exact command was `/usr/bin/dig @<fixed-ip> huggingface.co <A-or-AAAA> +norecurse +time=5 +tries=1 +ignore`. The +ignore option prevents automatic TCP retry; none was warranted. Complete server-name/IP bindings, command arrays, timestamps, raw replies, RCODE/flags, RRsets/TTLs and timings are in adjudication_receipt.json; original evidence is dns_receipt.json.
+
+Frozen asset: wondervictor/YOLO-World-V2.1, revision c620164ee3979bf49b895c8a8e0f49aeaca89209, file s_stage2-4466ab94.pth; expected 305058902 bytes and SHA256 4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458. Exact URL: https://huggingface.co/wondervictor/YOLO-World-V2.1/resolve/c620164ee3979bf49b895c8a8e0f49aeaca89209/s_stage2-4466ab94.pth. Payload acquisition attempts = 0; no payload hashing, checkpoint/partial file, copy or rename.
+
+All prohibited-action counts are 0: alternate checkpoint/model/content host; DNS/network configuration edits; package install/build; checkpoint deserialization; CUDA/model-load/forward; T013/COCO/LVIS scientific work; Grounding rerun; T014/CF/MECH science. P3/P3R1/P3R2 artifacts, Grounding freeze/cache/receipts/decision, YOLO P0/P1/P2 freeze and scientific settings remain unchanged. No background process remains. Changed paths are this separate p3r3 directory and append-only coordination/CODEX_TO_CHATGPT.md / research_log/session_log.md; file hashes are in delivery_manifest.json. Do not repeat the exhausted probes on an unchanged mailbox.
+
+Recommended next action: **Research Lead review of P3R3 authoritative-path evidence before any checkpoint recovery**.
+
+Complete P3R3 receipt:
+```json
+{
+  "task": "T013-YW-P3R3",
+  "task_start_head": "29482534e26c34f379da0f1cca6578d94d09670f",
+  "lead_instruction_commit": "2cb45efcdc4797506b734337d7bdfac3557a3544",
+  "started_at": "2026-09-14T15:54:54.625538+08:00",
+  "queries": [
+    {
+      "command": [
+        "/usr/bin/dig",
+        "@205.251.192.137",
+        "huggingface.co",
+        "A",
+        "+norecurse",
+        "+time=5",
+        "+tries=1",
+        "+ignore"
+      ],
+      "started_at": "2026-09-14T15:54:54.637258+08:00",
+      "stopped_at": "2026-09-14T15:54:54.670151+08:00",
+      "elapsed_seconds": 0.032899613957852125,
+      "exit_code": 0,
+      "stdout": "\n; <<>> DiG 9.18.39-0ubuntu0.22.04.6-Ubuntu <<>> @205.251.192.137 huggingface.co A +norecurse +time=5 +tries=1 +ignore\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 62494\n;; flags: qr aa; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0\n\n;; QUESTION SECTION:\n;huggingface.co.\t\t\tIN\tA\n\n;; ANSWER SECTION:\nhuggingface.co.\t\t150\tIN\tA\t205.186.152.122\n\n;; Query time: 12 msec\n;; SERVER: 205.251.192.137#53(205.251.192.137) (UDP)\n;; WHEN: Mon Sep 14 15:54:54 CST 2026\n;; MSG SIZE  rcvd: 48\n\n",
+      "stderr": "",
+      "server_ip": "205.251.192.137",
+      "server_name": "ns-137.awsdns-17.com",
+      "record_type": "A",
+      "transport": "UDP",
+      "rcode": "NOERROR",
+      "aa": true,
+      "tc": false,
+      "answers": [
+        {
+          "name": "huggingface.co.",
+          "ttl": 150,
+          "rrclass": "IN",
+          "type": "A",
+          "data": "205.186.152.122"
+        }
+      ]
+    },
+    {
+      "command": [
+        "/usr/bin/dig",
+        "@205.251.192.137",
+        "huggingface.co",
+        "AAAA",
+        "+norecurse",
+        "+time=5",
+        "+tries=1",
+        "+ignore"
+      ],
+      "started_at": "2026-09-14T15:54:54.670676+08:00",
+      "stopped_at": "2026-09-14T15:54:54.710795+08:00",
+      "elapsed_seconds": 0.040117199008818716,
+      "exit_code": 0,
+      "stdout": "\n; <<>> DiG 9.18.39-0ubuntu0.22.04.6-Ubuntu <<>> @205.251.192.137 huggingface.co AAAA +norecurse +time=5 +tries=1 +ignore\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 11294\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0\n\n;; QUESTION SECTION:\n;huggingface.co.\t\t\tIN\tAAAA\n\n;; ANSWER SECTION:\nhuggingface.co.\t\t68\tIN\tAAAA\t2001::68f4:2be4\n\n;; Query time: 20 msec\n;; SERVER: 205.251.192.137#53(205.251.192.137) (UDP)\n;; WHEN: Mon Sep 14 15:54:54 CST 2026\n;; MSG SIZE  rcvd: 60\n\n",
+      "stderr": "",
+      "server_ip": "205.251.192.137",
+      "server_name": "ns-137.awsdns-17.com",
+      "record_type": "AAAA",
+      "transport": "UDP",
+      "rcode": "NOERROR",
+      "aa": false,
+      "tc": false,
+      "answers": [
+        {
+          "name": "huggingface.co.",
+          "ttl": 68,
+          "rrclass": "IN",
+          "type": "AAAA",
+          "data": "2001::68f4:2be4"
+        }
+      ]
+    },
+    {
+      "command": [
+        "/usr/bin/dig",
+        "@205.251.197.172",
+        "huggingface.co",
+        "A",
+        "+norecurse",
+        "+time=5",
+        "+tries=1",
+        "+ignore"
+      ],
+      "started_at": "2026-09-14T15:54:54.711127+08:00",
+      "stopped_at": "2026-09-14T15:54:54.742429+08:00",
+      "elapsed_seconds": 0.03130168200004846,
+      "exit_code": 0,
+      "stdout": "\n; <<>> DiG 9.18.39-0ubuntu0.22.04.6-Ubuntu <<>> @205.251.197.172 huggingface.co A +norecurse +time=5 +tries=1 +ignore\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 34712\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0\n\n;; QUESTION SECTION:\n;huggingface.co.\t\t\tIN\tA\n\n;; ANSWER SECTION:\nhuggingface.co.\t\t71\tIN\tA\t199.16.158.104\n\n;; Query time: 12 msec\n;; SERVER: 205.251.197.172#53(205.251.197.172) (UDP)\n;; WHEN: Mon Sep 14 15:54:54 CST 2026\n;; MSG SIZE  rcvd: 48\n\n",
+      "stderr": "",
+      "server_ip": "205.251.197.172",
+      "server_name": "ns-1452.awsdns-53.org",
+      "record_type": "A",
+      "transport": "UDP",
+      "rcode": "NOERROR",
+      "aa": false,
+      "tc": false,
+      "answers": [
+        {
+          "name": "huggingface.co.",
+          "ttl": 71,
+          "rrclass": "IN",
+          "type": "A",
+          "data": "199.16.158.104"
+        }
+      ]
+    },
+    {
+      "command": [
+        "/usr/bin/dig",
+        "@205.251.197.172",
+        "huggingface.co",
+        "AAAA",
+        "+norecurse",
+        "+time=5",
+        "+tries=1",
+        "+ignore"
+      ],
+      "started_at": "2026-09-14T15:54:54.742774+08:00",
+      "stopped_at": "2026-09-14T15:54:54.774111+08:00",
+      "elapsed_seconds": 0.03133694198913872,
+      "exit_code": 0,
+      "stdout": "\n; <<>> DiG 9.18.39-0ubuntu0.22.04.6-Ubuntu <<>> @205.251.197.172 huggingface.co AAAA +norecurse +time=5 +tries=1 +ignore\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 26007\n;; flags: qr aa; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0\n\n;; QUESTION SECTION:\n;huggingface.co.\t\t\tIN\tAAAA\n\n;; ANSWER SECTION:\nhuggingface.co.\t\t207\tIN\tAAAA\t2a03:2880:f127:283:face:b00c:0:25de\n\n;; Query time: 11 msec\n;; SERVER: 205.251.197.172#53(205.251.197.172) (UDP)\n;; WHEN: Mon Sep 14 15:54:54 CST 2026\n;; MSG SIZE  rcvd: 60\n\n",
+      "stderr": "",
+      "server_ip": "205.251.197.172",
+      "server_name": "ns-1452.awsdns-53.org",
+      "record_type": "AAAA",
+      "transport": "UDP",
+      "rcode": "NOERROR",
+      "aa": true,
+      "tc": false,
+      "answers": [
+        {
+          "name": "huggingface.co.",
+          "ttl": 207,
+          "rrclass": "IN",
+          "type": "AAAA",
+          "data": "2a03:2880:f127:283:face:b00c:0:25de"
+        }
+      ]
+    },
+    {
+      "command": [
+        "/usr/bin/dig",
+        "@205.251.199.163",
+        "huggingface.co",
+        "A",
+        "+norecurse",
+        "+time=5",
+        "+tries=1",
+        "+ignore"
+      ],
+      "started_at": "2026-09-14T15:54:54.774467+08:00",
+      "stopped_at": "2026-09-14T15:54:54.810836+08:00",
+      "elapsed_seconds": 0.03636962897144258,
+      "exit_code": 0,
+      "stdout": "\n; <<>> DiG 9.18.39-0ubuntu0.22.04.6-Ubuntu <<>> @205.251.199.163 huggingface.co A +norecurse +time=5 +tries=1 +ignore\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 8370\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0\n\n;; QUESTION SECTION:\n;huggingface.co.\t\t\tIN\tA\n\n;; ANSWER SECTION:\nhuggingface.co.\t\t128\tIN\tA\t199.59.148.15\n\n;; Query time: 17 msec\n;; SERVER: 205.251.199.163#53(205.251.199.163) (UDP)\n;; WHEN: Mon Sep 14 15:54:54 CST 2026\n;; MSG SIZE  rcvd: 48\n\n",
+      "stderr": "",
+      "server_ip": "205.251.199.163",
+      "server_name": "ns-1955.awsdns-52.co.uk",
+      "record_type": "A",
+      "transport": "UDP",
+      "rcode": "NOERROR",
+      "aa": false,
+      "tc": false,
+      "answers": [
+        {
+          "name": "huggingface.co.",
+          "ttl": 128,
+          "rrclass": "IN",
+          "type": "A",
+          "data": "199.59.148.15"
+        }
+      ]
+    },
+    {
+      "command": [
+        "/usr/bin/dig",
+        "@205.251.199.163",
+        "huggingface.co",
+        "AAAA",
+        "+norecurse",
+        "+time=5",
+        "+tries=1",
+        "+ignore"
+      ],
+      "started_at": "2026-09-14T15:54:54.811220+08:00",
+      "stopped_at": "2026-09-14T15:54:54.850968+08:00",
+      "elapsed_seconds": 0.03975460695801303,
+      "exit_code": 0,
+      "stdout": "\n; <<>> DiG 9.18.39-0ubuntu0.22.04.6-Ubuntu <<>> @205.251.199.163 huggingface.co AAAA +norecurse +time=5 +tries=1 +ignore\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 17850\n;; flags: qr aa; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0\n\n;; QUESTION SECTION:\n;huggingface.co.\t\t\tIN\tAAAA\n\n;; ANSWER SECTION:\nhuggingface.co.\t\t212\tIN\tAAAA\t2a03:2880:f12c:83:face:b00c:0:25de\n\n;; Query time: 20 msec\n;; SERVER: 205.251.199.163#53(205.251.199.163) (UDP)\n;; WHEN: Mon Sep 14 15:54:54 CST 2026\n;; MSG SIZE  rcvd: 60\n\n",
+      "stderr": "",
+      "server_ip": "205.251.199.163",
+      "server_name": "ns-1955.awsdns-52.co.uk",
+      "record_type": "AAAA",
+      "transport": "UDP",
+      "rcode": "NOERROR",
+      "aa": true,
+      "tc": false,
+      "answers": [
+        {
+          "name": "huggingface.co.",
+          "ttl": 212,
+          "rrclass": "IN",
+          "type": "AAAA",
+          "data": "2a03:2880:f12c:83:face:b00c:0:25de"
+        }
+      ]
+    },
+    {
+      "command": [
+        "/usr/bin/dig",
+        "@205.251.195.151",
+        "huggingface.co",
+        "A",
+        "+norecurse",
+        "+time=5",
+        "+tries=1",
+        "+ignore"
+      ],
+      "started_at": "2026-09-14T15:54:54.851441+08:00",
+      "stopped_at": "2026-09-14T15:54:54.885240+08:00",
+      "elapsed_seconds": 0.0338005960220471,
+      "exit_code": 0,
+      "stdout": "\n; <<>> DiG 9.18.39-0ubuntu0.22.04.6-Ubuntu <<>> @205.251.195.151 huggingface.co A +norecurse +time=5 +tries=1 +ignore\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 15744\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0\n\n;; QUESTION SECTION:\n;huggingface.co.\t\t\tIN\tA\n\n;; ANSWER SECTION:\nhuggingface.co.\t\t133\tIN\tA\t162.125.83.1\n\n;; Query time: 13 msec\n;; SERVER: 205.251.195.151#53(205.251.195.151) (UDP)\n;; WHEN: Mon Sep 14 15:54:54 CST 2026\n;; MSG SIZE  rcvd: 48\n\n",
+      "stderr": "",
+      "server_ip": "205.251.195.151",
+      "server_name": "ns-919.awsdns-50.net",
+      "record_type": "A",
+      "transport": "UDP",
+      "rcode": "NOERROR",
+      "aa": false,
+      "tc": false,
+      "answers": [
+        {
+          "name": "huggingface.co.",
+          "ttl": 133,
+          "rrclass": "IN",
+          "type": "A",
+          "data": "162.125.83.1"
+        }
+      ]
+    },
+    {
+      "command": [
+        "/usr/bin/dig",
+        "@205.251.195.151",
+        "huggingface.co",
+        "AAAA",
+        "+norecurse",
+        "+time=5",
+        "+tries=1",
+        "+ignore"
+      ],
+      "started_at": "2026-09-14T15:54:54.885703+08:00",
+      "stopped_at": "2026-09-14T15:54:54.920857+08:00",
+      "elapsed_seconds": 0.03515492199221626,
+      "exit_code": 0,
+      "stdout": "\n; <<>> DiG 9.18.39-0ubuntu0.22.04.6-Ubuntu <<>> @205.251.195.151 huggingface.co AAAA +norecurse +time=5 +tries=1 +ignore\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 21854\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0\n\n;; QUESTION SECTION:\n;huggingface.co.\t\t\tIN\tAAAA\n\n;; ANSWER SECTION:\nhuggingface.co.\t\t211\tIN\tAAAA\t2001::9df0:23\n\n;; Query time: 15 msec\n;; SERVER: 205.251.195.151#53(205.251.195.151) (UDP)\n;; WHEN: Mon Sep 14 15:54:54 CST 2026\n;; MSG SIZE  rcvd: 60\n\n",
+      "stderr": "",
+      "server_ip": "205.251.195.151",
+      "server_name": "ns-919.awsdns-50.net",
+      "record_type": "AAAA",
+      "transport": "UDP",
+      "rcode": "NOERROR",
+      "aa": false,
+      "tc": false,
+      "answers": [
+        {
+          "name": "huggingface.co.",
+          "ttl": 211,
+          "rrclass": "IN",
+          "type": "AAAA",
+          "data": "2001::9df0:23"
+        }
+      ]
+    }
+  ],
+  "same_origin_probes": [],
+  "system_dns": {
+    "command": [
+      "getent",
+      "ahosts",
+      "huggingface.co"
+    ],
+    "started_at": "2026-09-14T15:54:54.625597+08:00",
+    "stopped_at": "2026-09-14T15:54:54.627723+08:00",
+    "elapsed_seconds": 0.0021328950533643365,
+    "exit_code": 0,
+    "stdout": "199.96.59.19    STREAM huggingface.co\n199.96.59.19    DGRAM  \n199.96.59.19    RAW    \n2a03:2880:f11c:8083:face:b00c:0:25de STREAM \n2a03:2880:f11c:8083:face:b00c:0:25de DGRAM  \n2a03:2880:f11c:8083:face:b00c:0:25de RAW    \n",
+    "stderr": ""
+  },
+  "client": {
+    "command": [
+      "/usr/bin/dig",
+      "-v"
+    ],
+    "started_at": "2026-09-14T15:54:54.627740+08:00",
+    "stopped_at": "2026-09-14T15:54:54.637240+08:00",
+    "elapsed_seconds": 0.00950584001839161,
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "DiG 9.18.39-0ubuntu0.22.04.6-Ubuntu\n"
+  },
+  "client_preexisting": true,
+  "client_path": "/usr/bin/dig",
+  "dns_stopped_at": "2026-09-14T15:54:54.921331+08:00",
+  "consensus": {
+    "A": {
+      "205.186.152.122": {
+        "authoritative_server_count": 1,
+        "servers": [
+          "205.251.192.137"
+        ]
+      },
+      "199.16.158.104": {
+        "authoritative_server_count": 0,
+        "servers": []
+      },
+      "199.59.148.15": {
+        "authoritative_server_count": 0,
+        "servers": []
+      },
+      "162.125.83.1": {
+        "authoritative_server_count": 0,
+        "servers": []
+      }
+    },
+    "AAAA": {
+      "2001::68f4:2be4": {
+        "authoritative_server_count": 0,
+        "servers": []
+      },
+      "2a03:2880:f127:283:face:b00c:0:25de": {
+        "authoritative_server_count": 1,
+        "servers": [
+          "205.251.197.172"
+        ]
+      },
+      "2a03:2880:f12c:83:face:b00c:0:25de": {
+        "authoritative_server_count": 1,
+        "servers": [
+          "205.251.199.163"
+        ]
+      },
+      "2001::9df0:23": {
+        "authoritative_server_count": 0,
+        "servers": []
+      }
+    }
+  },
+  "eligible": {
+    "A": [],
+    "AAAA": []
+  },
+  "system_addresses": [
+    "199.96.59.19",
+    "2a03:2880:f11c:8083:face:b00c:0:25de"
+  ],
+  "eligible_system_overlap": {
+    "A": [],
+    "AAAA": []
+  },
+  "state": "YW_P3R3_AUTHORITATIVE_DNS_INCONSISTENT_RETURN_TO_LEAD",
+  "stopped_at": "2026-09-14T15:54:54.921331+08:00",
+  "reason": "Direct replies exist, but no A address has AA-marked support from two fixed servers. All four A answers differ; only one has AA set.",
+  "asset": {
+    "repository": "wondervictor/YOLO-World-V2.1",
+    "revision": "c620164ee3979bf49b895c8a8e0f49aeaca89209",
+    "filename": "s_stage2-4466ab94.pth",
+    "url": "https://huggingface.co/wondervictor/YOLO-World-V2.1/resolve/c620164ee3979bf49b895c8a8e0f49aeaca89209/s_stage2-4466ab94.pth",
+    "expected_bytes": 305058902,
+    "expected_sha256": "4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458"
+  },
+  "counts": {
+    "checkpoint_partial_files_created": 0,
+    "checkpoint_payload_download_attempts": 0,
+    "alternate_checkpoint_model_content_host": 0,
+    "resolver_network_configuration_changes": 0,
+    "package_install_build": 0,
+    "checkpoint_deserialization": 0,
+    "CUDA_model_load_forward": 0,
+    "T013_COCO_LVIS_scientific_actions": 0,
+    "Grounding_rerun": 0,
+    "T014_CF_MECH_science": 0,
+    "TCP_retry": 0,
+    "same_origin_probe": 0,
+    "UDP_queries": 8
+  },
+  "driver_command": "/usr/bin/python3.10 /home/wenchang/asdasdsad/wjq/TOVD/research_log/t013_yoloworld/p3r3/authoritative_dns.py",
+  "driver_exit_code": 0,
+  "preserved": "P3/P3R1/P3R2, Grounding freeze/cache/receipts/decision, YOLO P0/P1/P2 freeze and scientific settings unchanged.",
+  "next_action": "Research Lead review of P3R3 authoritative-path evidence before any checkpoint recovery"
+}
+```

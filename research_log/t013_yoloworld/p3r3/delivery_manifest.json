@@ -1,0 +1,22 @@
+{
+  "adjudication_receipt.json": {
+    "bytes": 15733,
+    "sha256": "74ab14a61e314bce0c66f51f940b3bf60906f575ce277928ad7fad0c0e542087"
+  },
+  "authoritative_dns.py": {
+    "bytes": 2560,
+    "sha256": "adb092b0c541a54ae46b64f1d14dd9956ffe62df04ad1421f1a4abbf7e7cb7cd"
+  },
+  "dns_receipt.json": {
+    "bytes": 12569,
+    "sha256": "206046d0afb944a2bca0106fdcbb67512ff3949e4f20c60a71a7ebdfd450d00e"
+  },
+  "P3R3_REPORT.md": {
+    "bytes": 4308,
+    "sha256": "17fbf64d96a803a9d948fe3452f300e73c698cfe9e26f2f2cc715be6c5762a2f"
+  },
+  "write_report.py": {
+    "bytes": 7141,
+    "sha256": "60a5c669483b1b7c979503f7e5389927e92b4e48e4a7cedcfd3552caf092d469"
+  }
+}
