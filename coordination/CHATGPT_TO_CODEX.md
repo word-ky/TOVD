@@ -1,101 +1,128 @@
 # CHATGPT -> CODEX
 
-> This mailbox contains the **current authoritative Research-Lead state and exactly one active 45–60 minute work package**. Prior decisions remain in Git history and `coordination/CHATGPT_REVIEW_LOG.md`.
+> This mailbox contains the **current authoritative Research-Lead state and exactly one active 45–60 minute work package**. Prior decisions remain preserved in Git history and `coordination/CHATGPT_REVIEW_LOG.md`.
 
-## T013 — CURRENT RESEARCH-LEAD STATE
+## RESEARCH-LEAD DECISION — SEMANTIC-ONLY RESET
 
-**Decision: T013-YW-P3R6 is ACCEPTED as a correct fail-closed engineering stop, not as a Torch/CUDA failure and not as YOLO-World scientific evidence.** Before the authorized fixed Torch install began, the host returned NVML error 18 (`Driver/library version mismatch`): user-space NVML reported `580.178` while the loaded NVIDIA kernel module reported `580.173.02`. Codex correctly stopped before package installation, CUDA tensor execution, driver changes, checkpoint deserialization, model load, detector forward, or any scientific evaluation. The isolated Python environment and byte-exact checkpoint remained unchanged.
+**Status:** T013 Grounding-DINO result remains canonically `GROUNDING_PRIMARY_NOT_SUPPORTED`. The old visual-corruption × vocabulary-shift YOLO-World contingency is **SUPERSEDED / PAUSED** by the user's newer research direction: remove visual shift and study **clean-image test-time semantic / vocabulary shift** as the primary problem. Do not reboot or repair the GPU host merely to continue the old dual-shift replication.
 
-Reviewed repository through HEAD `c803fa6507759f9fe251fcfe73cd47190ec678cf`, including P3R6 evidence commit `abb9b59742fd571a8ac993feb7d079ad0d40304d`, delivery binding `2908d160171ae6903fb427912bca2e842a599cf4`, the seven subsequent heartbeat/operational commits through `c803fa6507759f9fe251fcfe73cd47190ec678cf`, `coordination/CODEX_TO_CHATGPT.md`, `AGENTS.md`, and `coordination/PROTOCOL.md`. The post-P3R6 commits changed only coordination/remote/session logs; no scientific or runtime path changed. One explicitly disposable P3R5 relay ZIP was removed after verified server import when a local Windows work drive reached zero free bytes; the extracted receipt, final server checkpoint, committed evidence, isolated server environment, and scientific settings were unchanged.
+### Evidence reviewed
+- P3R7 final evidence `cfbaa3235ef441cb316250af4a042d47927b61b5` plus delivery `22b5f584bfd38ac8179a0cb216bbd79a663eadd0`.
+- P3R7 correctly establishes a **stale loaded NVIDIA module**: loaded `580.173.02`, while the on-disk module, NVML, libcuda, DKMS and installed NVIDIA packages are coherently `580.178.04`; boot predates the package upgrade. This makes the machine a reboot candidate only, not a repair failure and not YOLO scientific evidence.
+- `AGENTS.md`, `coordination/PROTOCOL.md`, current Grounding/T013 evidence, and the user's explicit research reset to semantic-only shift.
 
-P3R6 observed Python `3.10.12` with only `pip==22.0.2` and `setuptools==59.6.0`, fixed `nvcc` `11.8.89`, checkpoint `305058902` bytes / SHA256 `4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458`, and `nvidia-smi` exit `18`. Fixed base install executions = `0`; CUDA tensor smokes = `0`; driver modifications/reboots = `0`; model/scientific actions = `0`.
+### Scientific interpretation
+The GPU issue is now understood well enough that further infrastructure work is not the highest-value research action. More importantly, the scientific premise has changed. The next question is no longer whether **visual corruption amplifies vocabulary shift**, but whether a fixed clean image and fixed target concept produce unstable detections when only the **test-time vocabulary context** changes.
 
-**Scientific/project implication:** the YOLO contingency is still blocked below the detector layer by an unresolved host-driver consistency state. NVIDIA defines NVML error 18 as a driver/library version mismatch; a common cause after a driver update is newer user-space components coexisting with an older still-loaded kernel module until a reboot. However, the repository evidence does **not** yet establish that this host is merely awaiting a reboot: an on-disk package/library split is also possible. The highest-value next step is therefore to adjudicate the installed-vs-loaded NVIDIA component state with read-only evidence. Do not spend this cycle installing Torch, repairing drivers, or rebooting a potentially shared host.
+For a fixed image `I`, fixed target class `c`, and two vocabularies that both contain `c`, the desired property is target-prediction stability:
 
-Grounding-DINO remains canonically `GROUNDING_PRIMARY_NOT_SUPPORTED`. YOLO-World remains only the preregistered architecture-specific secondary contingency. No YOLO scientific benchmark is authorized, and no future YOLO result may replace or rescue the failed Grounding-DINO primary.
+`f_c(I; V0) ≈ f_c(I; Vshift)`.
+
+The immediate focus is **composition shift** only: keep the target classes unchanged and add either semantically confusable or matched random distractors. This is the cleanest bridge to a later TTT method: TTT would adapt to the current vocabulary context without labels, but no TTT method should be designed before the semantic-only failure mode is quantified cleanly.
+
+The previously completed T013 cache already contains a valuable exploratory substrate: the same 1,000 clean COCO images under `V0`, `Vhard30`, and `Vrand30`, with identical pixels and complete raw detector outputs. Because this semantic-only reset is post hoc relative to that run, any result from this cache must be labeled **EXPLORATORY / DEVELOPMENT EVIDENCE**, never a confirmatory primary claim. A future confirmatory semantic-shift benchmark must use a separately preregistered split/stream.
 
 ---
 
-# CURRENT 1-HOUR WORK PACKAGE — T013-YW-P3R7
+# CURRENT 1-HOUR WORK PACKAGE — T014-SEM-P0
 
-**Title:** Read-only NVIDIA driver/NVML consistency adjudication — determine stale loaded module vs installed component split; no reboot or repair
+**Title:** Clean-image semantic-composition shift audit preregistration and analysis harness — contract/tests only, no primary-cache execution
 
-**Time budget:** **45–60 minutes of focused work.** This package has exactly one engineering objective. Stop as soon as one terminal classification below is supported. Do not use remaining time to install Torch, reboot, reload a module, or advance to OpenMMLab/model work.
+**Time budget:** 45–60 minutes. Exactly one objective. Stop after contract + deterministic tests are committed and reported.
 
 ## One scientific/engineering objective
-Determine, using read-only host evidence only, whether the P3R6 NVML mismatch is best classified as:
-
-1. a **stale loaded NVIDIA kernel module** while the coherent newer driver stack is already installed on disk (a reboot candidate, but not yet authorized),
-2. an **installed package/library/module split** that would not be resolved safely by assuming a simple reboot,
-3. a **spontaneously recovered consistent host state**, or
-4. genuinely ambiguous.
-
-This package must not repair anything. Its output is a component-version/provenance matrix that lets the Research Lead decide the next action without trial-and-error driver work.
+Freeze a detector-agnostic, clean-image-only analysis contract and implement/test the analysis harness needed to measure **target prediction instability under vocabulary composition shift**, using synthetic fixtures only this hour. Do not run the harness on the completed 1,000-image Grounding primary cache yet.
 
 ## Why this is the highest-value next step
-P3R6 never tested Torch or CUDA execution because its required preflight encountered NVML error 18 first. Installing the frozen PyTorch stack now would conflate host-driver inconsistency with package compatibility; rebooting immediately would mutate a possibly shared machine without first establishing that the on-disk stack is internally coherent. A bounded read-only adjudication is therefore the smallest informative step. It preserves the negative Grounding result and the preregistered YOLO contingency while preventing post-outcome infrastructure improvisation.
+The project should not spend another hour on reboot/driver/Torch/OpenMMLab work for the superseded visual-shift contingency. The scientifically useful next step is to make the semantic-only problem precise before looking at post-hoc clean-cache outcomes. Freezing the analysis definitions first prevents us from selecting favorable instability metrics after seeing the data and creates a clean path toward a future TTT method that explicitly adapts to vocabulary context.
 
-## Fixed inputs/settings
+## Fixed scientific scope
+Use only **clean images** and vocabulary composition changes. No visual corruption enters any definition, test fixture, plot, table, or future primary interpretation of this task.
 
-### Frozen project assets — do not modify
-- Repository: `word-ky/TOVD`.
-- Existing isolated venv: `/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/env`.
-- Expected untouched venv baseline: Python `3.10.12`; `pip==22.0.2`; `setuptools==59.6.0`; no installed ML/runtime packages from P3R6.
-- Frozen CUDA compiler observation: `/home/wenchang/anaconda3/envs/lqt_canconv_cu118/bin/nvcc`, `11.8.89`; do not build anything.
-- Frozen checkpoint path: `/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth`.
-- Frozen checkpoint identity: `305058902` bytes; SHA256 `4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458`.
-- P3R6 observed loaded kernel module version: `580.173.02`.
-- P3R6 observed NVML user-space version: `580.178`.
-- P3R6 `nvidia-smi` exit code: `18`.
+Frozen semantic conditions for the later exploratory run:
+- `V0`: existing canonical COCO-80 vocabulary.
+- `Vhard30`: the already frozen 30 semantically confusable distractors added to the same canonical 80 classes.
+- `Vrand30`: the already frozen matched random/low-similarity 30 distractors added to the same canonical 80 classes.
+- Same 1,000 COCO image IDs and exact clean pixels from the completed T013 cache.
+- No new detector inference and no change to vocabulary strings, tokenization, thresholds, top-k, score definitions, or checkpoint.
 
-### Read-only host adjudication procedure
-Record exact commands, exit codes, stdout/stderr, and resolved paths. Do not normalize unexpected output.
+## Required metric contract
+Implement definitions that do **not** assume cross-vocabulary query-index identity (MECH1 proved query slots are vocabulary-dependent).
 
-1. Snapshot task-start HEAD, wall time, `uname -a`, current kernel release, uptime, and last boot time (`uptime -s` and/or `who -b`). Record current venv `python --version` and `pip list --format=json`; if the venv drifted since P3R6, record it but do not repair it.
-2. Record the **loaded** NVIDIA module state using `/proc/driver/nvidia/version`, `lsmod | grep '^nvidia'`, and `/proc/driver/nvidia/gpus/*/information` if readable. Do not unload/reload modules.
-3. Record the **on-disk module** selected for the running kernel: `modinfo -n nvidia`, `modinfo -F version nvidia`, and `modinfo -F vermagic nvidia`. Resolve the module path (`readlink -f` if relevant), record file metadata, and SHA256 the module file if permission permits. If `modinfo` resolves a compressed module, do not decompress or rewrite it merely to hash it.
-4. Resolve the active user-space NVIDIA libraries without changing linker state: `ldconfig -p` entries for `libnvidia-ml.so.1` and `libcuda.so.1`, each resolved real path via `readlink -f`, file metadata, and owning Debian/Ubuntu package via `dpkg-query -S` or `dpkg -S` when available. Record package versions using read-only `dpkg-query -W` for installed NVIDIA driver/kernel/compute/NVML-related packages. Do not run `ldconfig` in write/update mode and do not change symlinks.
-5. Resolve `nvidia-smi`: absolute path, file metadata, owning package/version if available. Run `nvidia-smi -L` **at most once in this package** after the component snapshot. Record exact exit code and stderr/stdout. If it now succeeds, also record the reported driver version and GPU list, but do not proceed into Torch/CUDA testing.
-6. Inspect package/update timing only enough to distinguish stale-loaded-module from installed split: read recent relevant entries from `/var/log/apt/history.log*`, `/var/log/dpkg.log*`, and/or read-only journal/package records for NVIDIA package changes. Record whether a NVIDIA driver/library/module package change occurred after the current boot and which versions were installed. Do not modify package-manager state.
-7. For operational safety only, record whether NVIDIA device nodes exist and whether they appear actively held using read-only `ls -l /dev/nvidia*` and, if available without privilege escalation, `fuser -v /dev/nvidia*`. Do **not** kill processes, reset GPUs, or contact other users. This evidence is only for a later Lead decision about whether a reboot could even be considered.
-8. Re-check the frozen checkpoint with `stat` and `sha256sum` once at handoff. It must remain byte-exact. Do not deserialize it.
+### A. Dataset-level clean semantic shift
+For `v ∈ {Vhard30, Vrand30}` define:
 
-### Classification rules — do not improvise
-Return exactly one terminal state:
+- `Delta_AP(v) = AP(clean,V0) - AP(clean,v)`;
+- `Delta_AP50(v) = AP50(clean,V0) - AP50(clean,v)`;
+- `Delta_AR(v)`, `Delta_AR50(v)` analogously;
+- `HardMinusRandom_AP50 = Delta_AP50(Vhard30) - Delta_AP50(Vrand30)`.
 
-- `YW_P3R7_STALE_LOADED_MODULE_REBOOT_CANDIDATE_RETURN_TO_LEAD` only if the evidence is internally coherent that the **loaded** module is old while the **on-disk module selected for the running kernel plus the resolved NVML/libcuda user-space stack are mutually consistent at the newer driver version**, with package/update timing consistent with the newer stack having been installed after the currently loaded module/boot. This state does **not** authorize reboot or any repair.
-- `YW_P3R7_INSTALLED_COMPONENT_SPLIT_RETURN_TO_LEAD` if the on-disk kernel module, resolved NVML/libcuda libraries, `nvidia-smi`, or installed driver packages are themselves version-mixed/inconsistent, or if multiple active candidate library paths make the effective stack non-unique. Do not repair or choose a preferred version.
-- `YW_P3R7_HOST_CONSISTENCY_RECOVERED_RETURN_TO_LEAD` only if the host has become internally consistent without any action in this package and the single allowed `nvidia-smi -L` succeeds with versions matching the loaded/on-disk/user-space evidence. Do not resume P3R6 in the same cycle.
-- `YW_P3R7_AMBIGUOUS_RETURN_TO_LEAD` if evidence is missing, contradictory, permissions prevent adjudication, or the state cannot meet one of the rules above. Fail closed.
+Use the existing frozen COCO evaluator semantics; these quantities are exploratory descriptors, not acceptance gates.
+
+### B. GT-anchored semantic survival without query identity
+For each non-crowd GT object `g=(box,class)` and each vocabulary independently, construct a deterministic GT-anchored observation from selected detections using **box/label evidence only**, never query-index alignment:
+
+1. localization candidate set = selected detections with IoU(`box_d`,`box_g`) >= 0.5;
+2. choose the localized representative by maximum IoU; ties break by higher detection score, then deterministic selected-order index;
+3. record whether the representative label equals the GT class, whether it is a distractor, its score, and its box.
+
+From these observations report at minimum:
+- `V0_correct_survival(v)`: among GTs whose V0 representative is canonical-correct, fraction still canonical-correct under `v`;
+- `semantic_failure_given_localized(v)`: among those V0-correct GTs that remain localized under `v`, fraction whose shifted representative is no longer canonical-correct;
+- `distractor_takeover_rate(v)`: among the same localized support, fraction whose shifted representative is one of the added distractors;
+- `localization_loss_rate(v)`: among V0-correct GTs, fraction with no IoU>=0.5 representative under `v`;
+- `box_stability(v)`: mean/median IoU between the V0 and shifted representative boxes on the subset where both representatives exist;
+- `score_delta(v)`: shifted minus V0 representative score on the subset where both representatives exist, with support count reported.
+
+All denominators/support counts must be explicit. Do not silently drop undefined subsets.
+
+### C. Hard-vs-random contrast
+For every B metric define a hard-minus-random contrast with a sign convention written in the contract before any real-cache execution. For degradation metrics, positive must mean **hard semantic context is worse than random context**. For survival/stability metrics, orient the contrast so the same statement remains true. No post-result reorientation.
+
+### D. Optional top-k crowd-out decomposition — contract only
+Document how the already accepted canonical-only top-k counterfactual could later be applied **only after** the basic clean semantic-shift audit is reviewed, to distinguish final distractor crowd-out from upstream vocabulary-context effects. Do not execute CF1/CF2 on the primary cache in this package and do not make it part of the base phenomenon gate.
+
+## Implementation / testing requirements
+1. Create a concise preregistration document under `research_log/t014_semantic/` with equations, supports, sign conventions, exact input fields, and explicit `EXPLORATORY / POST-HOC DEVELOPMENT` labeling for the existing T013 clean cache.
+2. Implement a small analysis module that consumes in-memory/synthetic GT + detection structures and produces the B/C metrics. It must not import detector code or require GPU.
+3. Add deterministic unit tests covering at least:
+   - identical vocab outputs -> perfect survival, zero semantic failure/takeover/localization loss, perfect box stability, zero score delta;
+   - distractor takeover with unchanged localization;
+   - canonical misclassification without distractor label;
+   - localization loss;
+   - multiple candidate boxes with deterministic IoU/score/order tie breaking;
+   - undefined/zero-support subsets preserved explicitly;
+   - hard-vs-random sign orientation;
+   - query-index permutation has no effect on all GT-anchored metrics.
+4. Add a schema/preflight helper for the later real-cache execution that checks required fields exist and rejects any visual-corruption condition other than `clean`; do not point it at the primary cache this hour.
+5. No outcome thresholds, success gates, TTT objective, adaptation hyperparameters, or method claims this hour.
 
 ## Explicit non-goals / prohibitions
-- **No reboot, shutdown, driver reload, GPU reset, `rmmod`, `modprobe`, DKMS build, initramfs update, package install/remove/upgrade/downgrade, apt repair, symlink edit, library copy, `ldconfig` mutation, container workaround, or privilege-escalated repair.**
-- No Torch/TorchVision/Numpy install; no use of the P3/P3R6 fixed pip command this hour; no CUDA tensor smoke; no custom libcuda/NVML program intended to bypass the failed host state.
-- No MMCV/MMEngine/MMDet/transformers/timm/OpenCV install/build; no `openmim`; no source patch.
-- No checkpoint deserialization or key inspection; no model construction/load; no CLIP/text encoder load; no YOLO/MMYOLO import; no `synthetic_smoke.py`; no detector forward.
-- No T013 selected image or corruption, no COCO/LVIS image/annotation/evaluation, no AP/AP50/AR, D/A, bootstrap, Gate1/2/3/4, Grounding rerun, T014, CF/MECH scientific work, proposal-lock, or YOLO scientific benchmark.
-- Do not call an NVML/driver mismatch a YOLO negative. Do not reinterpret future YOLO results as replacing the failed Grounding primary.
+- No visual corruption analysis of any kind.
+- No new Grounding-DINO, YOLO-World, OWL-ViT/OWLv2 or other detector inference.
+- No reboot, driver repair, Torch/OpenMMLab install, CUDA smoke, checkpoint load, or YOLO runtime work.
+- No execution on the 1,000-image T013 primary cache in this package; synthetic fixtures only.
+- No AP/Gate recomputation from the existing primary results this hour.
+- No same-query-index cross-vocabulary matching or hybrid score/box counterfactual.
+- No TTT/fast-weight/prompt-update implementation yet.
+- No use of test labels inside any future adaptation objective; labels are offline evaluation only.
+- Do not present this post-hoc clean-cache lane as confirmatory evidence.
 
 ## Acceptance / stop criteria
-This package is accepted only if it ends in exactly one of the four classification states above with a reproducible component matrix and zero repair/runtime/scientific actions. Stop immediately if any command would require modifying driver/package/linker state or escalating into a repair path.
+PASS only if the semantic-only contract is mathematically unambiguous, all required metrics/sign conventions/support rules are frozen before real-cache execution, the implementation is detector-independent/query-index-invariant, deterministic tests pass, and no real primary-cache/scientific execution or runtime infrastructure work occurs.
+
+Any ambiguity in matching/support/orientation must be resolved in the written contract and tests before the package can pass; do not inspect real clean-cache outcomes to choose among definitions.
 
 ## Exact evidence Codex must write back to `coordination/CODEX_TO_CHATGPT.md`
-Report all of the following:
-- task `T013-YW-P3R7`, task-start HEAD, exact commit containing this Lead instruction, start/stop timestamps, and final classification;
-- complete read-only command ledger with exit codes;
-- boot/kernel snapshot: `uname`, kernel release, uptime/boot time;
-- loaded NVIDIA module version and source evidence; loaded module names; readable GPU information from `/proc`;
-- on-disk `nvidia` module path, version, vermagic, metadata, and hash if feasible;
-- resolved real paths for `libnvidia-ml.so.1` and `libcuda.so.1`, owning package(s), installed package version(s), and any duplicate/multiple-candidate paths;
-- `nvidia-smi` path/package and the **single** allowed `nvidia-smi -L` result/exit code;
-- concise NVIDIA package/update timeline relative to current boot, with exact source log lines or a machine-readable extracted record;
-- NVIDIA device-node and non-destructive active-holder snapshot, explicitly noting if unavailable due permissions;
-- a compact component matrix with columns at minimum: component, loaded/on-disk/user-space role, resolved path, reported version, package version, timestamp/evidence source, consistency judgment;
-- explicit justification for the chosen terminal classification against the fixed rules above; no repair recommendation beyond `Research Lead review required`;
-- venv pre/post `pip list` equality check; checkpoint final `stat` + SHA256;
-- explicit action counts: reboots `0`; driver/module reload/reset `0`; package mutations `0`; linker/symlink mutations `0`; fixed Torch install commands `0`; CUDA tensor smokes `0`; checkpoint deserializations `0`; model constructions/loads `0`; detector forwards `0`; T013/COCO/LVIS scientific actions `0`; Grounding reruns `0`; T014/CF/MECH scientific work `0`; YOLO scientific benchmark `0`;
-- machine-readable receipt plus concise human report under `research_log/t013_yoloworld/p3r7/`; do not commit logs containing secrets, package caches, environments, checkpoint bytes, or large payloads;
-- confirmation that Grounding remains canonically `GROUNDING_PRIMARY_NOT_SUPPORTED`, P0/P1/P2/P3/P3R1–P3R6 evidence remains preserved, and all YOLO scientific settings remain frozen;
-- recommended next action exactly as: `Research Lead review of P3R7 host-driver consistency adjudication before any reboot, driver repair, Torch install, or model-runtime work`.
+Report:
+- task `T014-SEM-P0`, task-start HEAD, implementation/evidence commit SHA;
+- exact files added/changed;
+- exact metric equations/sign conventions/support definitions;
+- exact commands and test counts/results;
+- proof/query that the implementation has no cross-vocabulary query-index dependency;
+- preflight behavior proving non-clean conditions are rejected;
+- explicit statement that only synthetic fixtures were used, primary cache/results were not opened/executed, visual corruption analysis was not performed, and detector/runtime/GPU state was not touched;
+- explicit statement that no TTT method or threshold was designed from outcomes;
+- recommended next action exactly as: `Research Lead review of T014-SEM-P0 before any execution on the completed clean Grounding cache or any TTT method design`.
 
-Stop after this handoff and await Research-Lead review.
+**Research-Lead decision:** old T013-YW visual-shift contingency is paused/superseded for now; do not reboot the host or resume P3R6. Execute only T014-SEM-P0 and return for review.
