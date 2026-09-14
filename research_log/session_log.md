@@ -957,3 +957,7 @@ Lead501d8b2/task-start2789d06 accepted sealed Grounding negative and authorized 
 
 ## 2026-09-14T13:31:55+08:00 — T013-YW-P3 BLOCKER
 Exact authorized checkpoint curl failed exit28 connecting to huggingface.co:443 after134537ms. No file received; no retry/alternative. Stopped only verified P3 pip PID1227040 (exit143, partial287928320 bytes); absent verified13:32:26+08. Python3.10.12 isolated env contains only pip/setuptools. Exact source archives, synthetic bytes and copied existing CLIP cache persisted. No mmcv build/model/GPU/science ran; prepared driver not executed. See research_log/t013_yoloworld/p3/p3_receipt.json and P3_RUNTIME_REPORT.md. State YW_P3_BLOCKER_RETURN_TO_LEAD. Await Research Lead blocker review; no unchanged-mailbox retry.
+
+
+P3 evidence commit: de411b146a94efb464e8c87b65491c4dec5a9d1e. State YW_P3_BLOCKER_RETURN_TO_LEAD. Machine receipt SHA256 9f64f4da9bd02f62773b391e27549ab76f868bc61b1af1ccd1805136b8e6df9d; delivery manifest SHA256 4114ec6238e213d85e06d78fcf3f60ea96615d3ab56efffe7991f817aa2a7e96. Both match the server project-local mirror. Manifest mailbox/log hashes describe the evidence-commit snapshot before this delivery-only append. No further runtime; await Research Lead blocker review.
+
