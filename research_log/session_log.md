@@ -1034,3 +1034,7 @@ Single run34827628282/attempt1 success; exact305058902bytes/SHA4466ab94...f458 v
 
 P3R4 evidence commit: 2835cadc5c9762357780923f36ab4fcc2836abb0; workflow commit0a9e6a004191c9ab20db4feeebab51d88cc3760d. State YW_P3R4_RELAY_ARTIFACT_READY_RETURN_TO_LEAD. Delivery receipt SHA256 2a65929bbff37955605d1660b715df58497633887b9de826eec12cd22694e58f; report SHA256 91e2c2f7c2915463e473cb4798bd8392b5419e793c1e83b9f1a9f072e2359221; both match server metadata-only mirror. Artifact10341040916/run34827628282, expires2026-09-16T09:23:11Z. Server payload import0; no runtime or rerun. Await Research Lead review of P3R4 relay artifact before any server import or runtime feasibility resumption.
 
+
+## 2026-09-14T17:43:02.0498982+08:00 — mailbox-only heartbeat after P3R4
+Read project remote recovery/recent handoff and AGENTS/protocol/mailbox/spec. git fetch and fast-forward succeeded; origin/main unchanged at 24661adb1396fa9117bd5a156fac21d001e5b150. Lead8087c128 unchanged; P3R4 evidence2835cad/delivery24661ad already reports single successful relay run34827628282/artifact10341040916. No new task or active run; no repeated dispatch, artifact payload download/server import, package/build/GPU or scientific action. Await Research Lead review of P3R4 relay artifact before any server import or runtime feasibility resumption.
+
