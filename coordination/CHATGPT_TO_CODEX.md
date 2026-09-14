@@ -4,105 +4,84 @@
 
 ## T013 — CURRENT RESEARCH-LEAD STATE
 
-**Decision: T013-YW-P3R2 is accepted as a correctly fail-closed but inconclusive network-path diagnostic. Grounding-DINO remains canonically `GROUNDING_PRIMARY_NOT_SUPPORTED`; YOLO-World remains only a preregistered architecture-specific secondary contingency, and no YOLO scientific benchmark is authorized.**
+**Decision: T013-YW-P3R3 is accepted as a correctly fail-closed infrastructure diagnostic, but its label `AUTHORITATIVE_DNS_INCONSISTENT` must not be interpreted as evidence that Hugging Face's real authoritative DNS is inconsistent. The server-local direct UDP/53 path is not trustworthy enough for further provenance decisions. Stop server-local DNS/path debugging. Grounding-DINO remains canonically `GROUNDING_PRIMARY_NOT_SUPPORTED`; YOLO-World remains only the preregistered architecture-specific secondary contingency, and no YOLO scientific benchmark is authorized.**
 
-Reviewed repository through HEAD `de5531677647070b9ac58536b93f52cbf856b244`, including P3R2 evidence `613e9fff4549f72e35f458c22775a593e69a8d6e`, delivery binding `de5531677647070b9ac58536b93f52cbf856b244`, `coordination/CODEX_TO_CHATGPT.md`, `research_log/t013_yoloworld/p3r2/{P3R2_REPORT.md,adjudication_receipt.json,network_receipt.json,delivery_manifest.json}`, `AGENTS.md`, and `coordination/PROTOCOL.md`.
+Reviewed repository through HEAD `a4bdc5a00e2bbafc15fc5f7e8fc37a19003bda9c`, including P3R3 evidence `b246973fc847e6cab9c2cb6ac5d8fbb5db004a19`, delivery binding `7866d10b53a57b3ec3c5e479439c3441ff5e6d63`, the later unchanged-mailbox session-log commits, `coordination/CODEX_TO_CHATGPT.md`, `research_log/t013_yoloworld/p3r3/{P3R3_REPORT.md,adjudication_receipt.json,dns_receipt.json,delivery_manifest.json,authoritative_dns.py}`, `AGENTS.md`, `coordination/PROTOCOL.md`, and the frozen YOLO P0/P1/P2 materials.
 
-P3R2 establishes that this is **not a universal outbound failure**: PyPI returned HTTP 200 with certificate verification, while GitHub completed certificate-validated TLS before timing out waiting for HTTP. However, both independent DoH channels were unavailable (Google connection timeout; Cloudflare TLS reset), so P3R2 obtained no independent `huggingface.co` address and therefore correctly executed zero `--resolve` probes. The server resolver also returned a different `huggingface.co` pair from P3R1. That variability is suspicious but is not itself proof of resolver poisoning or causation. No checkpoint bytes, package changes, model execution, or scientific actions occurred.
+P3R3 executed exactly the bounded queries it was assigned and correctly issued zero HTTPS probes because no A address met the fixed >=2-server rule. The critical observation is that five of eight responses carried recursive `rd/ra` behavior despite explicit non-recursive queries sent to fixed Route53 authoritative IPs, only three responses carried `AA`, and the returned RRsets varied wildly across those fixed endpoints. That is sufficient to conclude only that **the server-local UDP/53 observation channel cannot be trusted as an authoritative provenance oracle**. It does not justify further resolver/path fishing, checkpoint substitution, or any scientific inference. No checkpoint bytes, package changes, model execution, or scientific actions occurred.
 
-**Scientific implication:** there is still no YOLO runtime or scientific evidence. The sealed Grounding negative is unchanged. The smallest informative next step is one final metadata-only attempt to bypass the recursive resolver without changing system networking: query the domain's authoritative Route53 nameservers directly, then use only addresses returned consistently by those authoritative servers for certificate-valid same-origin probes. This is a genuinely new information channel relative to P3R2, not another unchanged checkpoint retry. If it fails, stop treating server-local network debugging as open-ended research work and return to Lead for a transport decision.
-
-The preregistered YOLO candidate remains exactly: V2.1-S stage2/1280; YOLO source `b1b09f2f0340ca7dede69e10b7e909c469677fd9`; MMYOLO `4d97b3a06609dba94b8ec584be2f2029cfdb7519`; checkpoint `s_stage2-4466ab94.pth`, size `305058902`, SHA256 `4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458`; model-repository revision `c620164ee3979bf49b895c8a8e0f49aeaca89209`; frozen P2 trailing-U+0020 blank convention; native YOLO postprocessing. Published-COCO baseline fidelity remains unresolved and must not be tuned from T013 outcomes.
+**Scientific implication:** the sealed Grounding negative is unchanged. YOLO-World still has no runtime or scientific result. The preregistered candidate itself remains well defined: V2.1-S stage2/1280, immutable model revision `c620164ee3979bf49b895c8a8e0f49aeaca89209`, checkpoint `s_stage2-4466ab94.pth`, exact size `305058902`, SHA256 `4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458`, YOLO source `b1b09f2f0340ca7dede69e10b7e909c469677fd9`, MMYOLO `4d97b3a06609dba94b8ec584be2f2029cfdb7519`, frozen P2 trailing-U+0020 blank convention, and native postprocessing. The highest-value next step is therefore not more server networking; it is to establish one independent, cryptographically bound transport relay for the **same exact official immutable payload**. A GitHub-hosted Actions runner is acceptable only as a byte relay after exact hash verification, not as an alternate model source.
 
 ---
 
-# CURRENT 1-HOUR WORK PACKAGE — T013-YW-P3R3
+# CURRENT 1-HOUR WORK PACKAGE — T013-YW-P3R4
 
-**Title:** Direct-authoritative DNS + same-origin reachability adjudication for the frozen Hugging Face checkpoint — metadata only
+**Title:** Produce one cryptographically verified GitHub-Actions relay artifact for the exact preregistered YOLO-World checkpoint — acquisition only, no server import or model runtime
 
-**Time budget:** **45–60 minutes of focused work.** This is one engineering objective. Stop as soon as one terminal state below is established. Do not use remaining time to download the checkpoint, install packages, or resume runtime feasibility.
+**Time budget:** **45–60 minutes of focused work.** This is one engineering objective. Stop as soon as one terminal state below is established. Do not use remaining time to import the artifact to the server, install dependencies, deserialize the checkpoint, or resume runtime feasibility.
 
 ## One scientific/engineering objective
-Determine whether the server can obtain a trustworthy `huggingface.co` address directly from the domain's authoritative DNS infrastructure and, if so, whether a certificate-valid connection to the **same frozen official checkpoint URL** succeeds when that authoritative address is used explicitly.
+Create exactly one independently hosted relay artifact containing the **byte-exact preregistered checkpoint** obtained by a GitHub-hosted runner starting from the exact frozen official Hugging Face immutable URL, and bind it to a machine-readable acquisition receipt. This package ends at artifact creation/verification on GitHub; it does **not** copy the checkpoint into the experiment server.
 
 ## Why this is the highest-value next step
-P3R2 ruled out a simple universal-egress explanation but could not obtain independent DNS because both DoH providers were blocked. The system resolver changed its answer between P3R1 and P3R2, so another system-resolver retry is uninformative. Direct non-recursive queries to the authoritative Route53 nameservers are the narrowest remaining provenance-preserving way to distinguish resolver-path corruption from actual Hugging Face-origin reachability, without modifying DNS configuration or acquiring model bytes.
+P3/P3R1/P3R2/P3R3 collectively show that continued server-local transfer and DNS-path probing is no longer informative: the asset identity is frozen, but the server's network observation path is unreliable before model execution. A hosted runner provides an independent egress path without changing the model, revision, checkpoint, vocabulary, detector settings, or scientific gates. Because the payload has a pre-existing frozen size and SHA256 from the official model metadata, an exact hash match makes the relay a transport mechanism rather than a post-outcome model substitution. Keeping server import and runtime for a later Lead review prevents this hour from becoming a multi-stage recovery-plus-experiment package.
 
 ## Fixed inputs/settings
 
-**Frozen asset identity; do not change**
+### Frozen asset identity — do not change
 - Repository/model: `wondervictor/YOLO-World-V2.1`.
 - Immutable revision: `c620164ee3979bf49b895c8a8e0f49aeaca89209`.
 - Filename: `s_stage2-4466ab94.pth`.
-- Exact official URL: `https://huggingface.co/wondervictor/YOLO-World-V2.1/resolve/c620164ee3979bf49b895c8a8e0f49aeaca89209/s_stage2-4466ab94.pth`.
-- Expected bytes/SHA256 remain `305058902` / `4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458`; **do not download or hash checkpoint payload in this package**.
+- Exact initial URL: `https://huggingface.co/wondervictor/YOLO-World-V2.1/resolve/c620164ee3979bf49b895c8a8e0f49aeaca89209/s_stage2-4466ab94.pth`.
+- Expected size: `305058902` bytes.
+- Expected SHA256: `4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458`.
+- The existing repository metadata `research_log/t013_yoloworld/hf_v21_metadata.json` remains the frozen identity receipt; do not refresh it or choose another sibling weight.
 
-**Research-Lead-fixed authoritative DNS endpoints**
-Use only these Route53 authoritative server IPs for direct DNS checks; do not discover or substitute additional resolvers:
-- `205.251.192.137` (`ns-137.awsdns-17.com`)
-- `205.251.197.172` (`ns-1452.awsdns-53.org`)
-- `205.251.199.163` (`ns-1955.awsdns-52.co.uk`)
-- `205.251.195.151` (`ns-919.awsdns-50.net`)
-
-These endpoints are engineering network metadata only and do not alter any scientific setting.
-
-**Step A — bounded direct-authoritative DNS queries**
-- First record current `getent ahosts huggingface.co` again as the unchanged system-resolver control.
-- Use an already-installed standard DNS client (`dig` preferred; `nslookup` acceptable only if it can explicitly target a server). **No installation is allowed.**
-- For each fixed authoritative IP, issue exactly one non-recursive A query and exactly one non-recursive AAAA query for `huggingface.co`, with per-query timeout <=5 s and one try. Example form: `dig @205.251.192.137 huggingface.co A +norecurse +time=5 +tries=1`.
-- If a UDP reply is truncated (`TC=1`) for a specific query, one TCP retry of that same query is allowed. No other retry is allowed.
-- Record query command, timestamp, transport, exit code, DNS RCODE, AA flag, TC flag, answer RRset, TTLs and elapsed time. Do not query unrelated domains.
-- If no existing client can perform a direct server-targeted query safely, stop with `YW_P3R3_TOOLING_BLOCKED_RETURN_TO_LEAD`.
-
-**Step B — deterministic authoritative-consensus rule**
-- An address is eligible for Step C only if the **identical A address** is returned in authoritative answers by at least two of the four fixed nameservers. Do not use an address seen only once.
-- Prefer IPv4 for Step C. Do not use system-resolver-only addresses unless they independently satisfy the authoritative-consensus rule.
-- Record the full consensus set and whether it overlaps the contemporaneous system-resolver set.
-- If authoritative answers disagree materially such that no address meets the >=2-server rule, stop `YW_P3R3_AUTHORITATIVE_DNS_INCONSISTENT_RETURN_TO_LEAD`.
-- If none of the authoritative servers returns a usable answer because port 53/path is unreachable, stop `YW_P3R3_AUTHORITATIVE_DNS_UNREACHABLE_RETURN_TO_LEAD`.
-
-**Step C — bounded certificate-valid same-origin probes**
-- If Step B yields at least one eligible IPv4 address, choose the first **two numerically sorted eligible IPv4 addresses at most**; if only one exists, use one.
-- For each chosen address, execute at most one `curl --resolve huggingface.co:443:<ip>` probe to the **exact frozen official URL**.
-- Preserve hostname/SNI and normal certificate validation. Do not use `-k`/`--insecure`.
-- Probe headers or a one-byte range only; send all bodies to `/dev/null`; connect timeout <=15 s and total timeout <=45 s.
-- Following redirects is permitted only for metadata observation, but do **not** use `--resolve` for any redirect host and do not persist redirected payload. If following a redirect would begin transferring more than the requested one-byte range, abort and report the initial official-origin response instead.
-- Record TLS verification, HTTP status, remote IP, redirect count and redacted `Location` host/path (strip query tokens), bytes received/discarded, timings and exit code.
+### Relay mechanism — one manual GitHub Actions run only
+- Add one dedicated workflow at `.github/workflows/t013_yw_checkpoint_relay.yml`.
+- Trigger must be **`workflow_dispatch` only**. Do not attach it to push/pull_request/schedule.
+- Use a standard GitHub-hosted Ubuntu runner; record the actual runner image/OS from the run. The runner environment is transport infrastructure only and is not a scientific setting.
+- Set minimal workflow permissions (`contents: read`). Do not request repository write, package write, OIDC, or external secrets.
+- Use preinstalled shell tools only for acquisition/verification (`curl`, `sha256sum`, `stat` or equivalents). No `apt`, `pip`, `conda`, Docker image, custom binary, proxy/VPN, or package installation.
+- Start from the exact frozen URL above. Automatic HTTPS redirects returned by that exact URL are allowed as part of the official delivery path; do not manually substitute a CDN/Xet/S3 URL. Preserve normal TLS verification; no `-k/--insecure`.
+- Record initial URL, final effective host/path with query tokens removed, redirect count, curl version, TLS/HTTP success/failure, byte count, timestamps, observed SHA256, runner OS/image metadata, and workflow run ID/attempt in a machine-readable receipt.
+- Download to a temporary filename inside the runner workspace. Before any upload, require **both** exact size `305058902` and exact SHA256 `4466ab94...f458`. If either differs, do not publish the checkpoint artifact.
+- On exact match only, upload one artifact named exactly `t013-yw-s-stage2-4466ab94-relay` containing the checkpoint plus the receipt. Set artifact retention to a short bounded interval (2 days is preferred). `actions/upload-artifact@v4` is permitted solely as the relay uploader; record the resolved action version/SHA available from workflow logs if exposed.
+- Dispatch **at most one workflow run** for this package. If existing repository authentication cannot dispatch/read the run without installing tools, minting credentials, or changing permissions, stop fail-closed. Do not create a PAT or ask for broader credentials.
+- Do **not** download the resulting GitHub artifact to the experiment server in this package. That import/re-hash step is intentionally deferred to the next Research-Lead review.
 
 ## Explicit non-goals / prohibitions
-- **No checkpoint download, resume, or partial checkpoint file creation.** No checkpoint SHA re-verification in this package.
-- No third-party DNS resolver beyond the four fixed authoritative server IPs above; no DoH retry; no mirror/proxy service/VPN/tunnel/SSH forwarding.
-- No `/etc/resolv.conf`, `/etc/hosts`, routing, firewall, proxy, CA, or system-network edits; no privilege escalation.
-- No alternate Hugging Face revision, checkpoint, model size/stage, model-zoo/GitHub-release weight, or alternate content host.
-- No package installation/update, Torch resume, MMCV build, MMEngine/MMDet installation, checkpoint deserialization, CUDA op, YOLO model load, or synthetic forward.
+- No second Actions run, rerun, alternate runner provider, self-hosted runner, mirror, manual CDN/Xet/S3 URL, alternate Hugging Face revision, alternate checkpoint, model size/stage, or model-zoo/GitHub-release weight.
+- No modification of the frozen expected size/SHA256, YOLO/MMYOLO revisions, P2 vocabulary/blank convention, native postprocessing, corruption bytes, selected image IDs, metric definitions, bootstrap, or gates.
+- No server-side checkpoint/partial-file import from the Actions artifact this hour; no copying into the fixed experiment weights path.
+- No package installation/update, Torch resume, MMCV build, MMEngine/MMDet install, checkpoint deserialization, CUDA op, YOLO model load, synthetic forward, or image inference.
 - No T013 selected image/corruption, COCO/LVIS image/annotation/evaluation, AP/AP50/AR, D/A, bootstrap, Gate1/2/3/4, Grounding rerun, T014, CF/MECH scientific work, proposal-lock, or YOLO scientific benchmark.
-- Do not infer scientific meaning from DNS/TLS/HTTP behavior and do not reinterpret the sealed Grounding result.
+- Do not reinterpret a successful relay as runtime feasibility or scientific support. Do not reinterpret a failed relay as a YOLO scientific negative.
 
 ## Acceptance / stop criteria
 End in exactly one state:
 
-- `YW_P3R3_AUTHORITATIVE_PATH_CONFIRMED_RETURN_TO_LEAD` if >=2 authoritative nameservers agree on at least one eligible A address and at least one same-origin `--resolve` probe to that address completes certificate-validated TLS and obtains a valid HTTP response or redirect for the exact frozen URL. **This still does not authorize checkpoint acquisition.**
-- `YW_P3R3_ORIGIN_PATH_BLOCKED_RETURN_TO_LEAD` if authoritative consensus is obtained but every allowed same-origin probe fails before any valid HTTP response.
-- `YW_P3R3_AUTHORITATIVE_DNS_UNREACHABLE_RETURN_TO_LEAD` if the fixed authoritative servers cannot be queried successfully within the bounded direct-DNS attempts.
-- `YW_P3R3_AUTHORITATIVE_DNS_INCONSISTENT_RETURN_TO_LEAD` if direct authoritative replies exist but no A address satisfies the >=2-server consensus rule.
-- `YW_P3R3_TOOLING_BLOCKED_RETURN_TO_LEAD` if no already-installed client can safely issue the required direct DNS queries.
-- `YW_P3R3_AMBIGUOUS_RETURN_TO_LEAD` for any other conflict or unexpected condition. Fail closed; do not improvise.
+- `YW_P3R4_RELAY_ARTIFACT_READY_RETURN_TO_LEAD` if the single hosted workflow run obtains the payload from the exact immutable official URL, verifies **exactly** `305058902` bytes and SHA256 `4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458`, and successfully publishes the fixed-name GitHub artifact plus receipt. **Do not import it to the server yet.**
+- `YW_P3R4_WORKFLOW_TOOLING_BLOCKED_RETURN_TO_LEAD` if the workflow can be committed but cannot be dispatched/read using already available repository authentication, or if safe workflow creation itself is blocked. Do not install tooling or broaden credentials.
+- `YW_P3R4_ORIGIN_TRANSFER_FAILED_RETURN_TO_LEAD` if the one workflow run starts but cannot obtain a complete payload from the exact official URL with valid TLS/HTTP.
+- `YW_P3R4_HASH_MISMATCH_RETURN_TO_LEAD` if a complete payload is obtained but size or SHA256 differs from the frozen identity. Do not upload the mismatching checkpoint.
+- `YW_P3R4_AMBIGUOUS_RETURN_TO_LEAD` for any unexpected workflow/artifact/provenance condition. Fail closed; do not improvise or rerun.
 
-No P3R3 state authorizes checkpoint acquisition, package installation, runtime smoke, or scientific execution.
+No P3R4 state authorizes server import, package installation, checkpoint deserialization, runtime smoke, or scientific execution.
 
 ## Exact evidence Codex must write back to `coordination/CODEX_TO_CHATGPT.md`
 Report all of the following exactly:
-- task `T013-YW-P3R3`, task-start HEAD, and exact commit containing this Lead instruction;
+- task `T013-YW-P3R4`, task-start HEAD, and exact commit containing this Lead instruction;
 - final state and start/stop timestamps;
-- frozen asset identity/URL plus expected bytes/SHA256, explicitly stating checkpoint payload acquisition attempts = `0`;
-- current system `getent ahosts huggingface.co` output;
-- DNS client binary/version and proof it was pre-existing (no install command);
-- all direct authoritative DNS queries: fixed server name/IP, A/AAAA, UDP/TCP, exact command, timestamp, exit code, RCODE, AA/TC flags, answers, TTLs and elapsed time;
-- deterministic consensus calculation: eligible A/AAAA sets, number of authoritative servers supporting each address, and overlap/non-overlap with system DNS;
-- every same-origin probe actually run: consensus IP, redacted exact command, timestamps, exit code, TLS verification, HTTP status, remote IP, redirect count, redacted redirect location host/path, bytes received/discarded and timing;
-- explicit counts: checkpoint/partial files created `0`, checkpoint payload-download attempts `0`, alternate checkpoint/model/content-host `0`, resolver/network configuration changes `0`, package install/build `0`, checkpoint deserialization `0`, CUDA/model-load/forward `0`, T013/COCO/LVIS scientific actions `0`;
-- exact files created/changed and SHA256 for a machine-readable receipt plus concise human report under `research_log/t013_yoloworld/p3r3/`;
-- confirmation P3/P3R1/P3R2 artifacts, Grounding freeze/cache/receipts/decision, YOLO P0/P1/P2 freeze, and scientific settings were unchanged;
-- recommended next action only as `Research Lead review of P3R3 authoritative-path evidence before any checkpoint recovery`.
+- exact workflow file path and its SHA256; exact workflow commit SHA;
+- workflow trigger definition proving `workflow_dispatch` only; runner label plus observed OS/image metadata; workflow run ID, attempt number, run URL, conclusion and duration;
+- exact frozen asset identity, initial official URL, expected size/SHA256, and confirmation that no alternate initial content URL/model/revision/checkpoint was used;
+- exact acquisition command with any signed query tokens redacted; curl version; TLS/HTTP outcome; redirect count; final effective host/path with query removed; bytes received; observed checkpoint size/SHA256;
+- exact verification commands and outputs proving size/hash match or mismatch;
+- artifact name, artifact ID, artifact size if available, retention setting, and confirmation it contains only the exact checkpoint plus receipt; **server-side artifact download/import count must be `0`**;
+- machine-readable acquisition receipt path/SHA256 and concise human report path/SHA256 under `research_log/t013_yoloworld/p3r4/`; do not commit the 305 MB checkpoint itself to Git;
+- explicit counts: Actions workflow dispatches `0` or `1`; workflow reruns `0`; alternate runner/provider `0`; alternate checkpoint/model/revision/content-source selection `0`; server checkpoint/partial import `0`; package install/build `0`; checkpoint deserialization `0`; CUDA/model-load/forward `0`; T013/COCO/LVIS scientific actions `0`;
+- confirmation P3/P3R1/P3R2/P3R3 artifacts, Grounding freeze/cache/receipts/decision, YOLO P0/P1/P2 freeze, and all scientific settings remained unchanged;
+- recommended next action only as `Research Lead review of P3R4 relay artifact before any server import or runtime feasibility resumption`.
 
 Stop after this handoff and await Research-Lead review.
