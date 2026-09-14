@@ -1,0 +1,32 @@
+[
+  {
+    "path": "tovd/semantic_shift.py",
+    "bytes": 6073,
+    "sha256": "9858457d1adc408f01473044ee2e004c0f39975cfa0632b3bf2136fedc8a0bc0"
+  },
+  {
+    "path": "tests/test_semantic_shift.py",
+    "bytes": 8083,
+    "sha256": "b172b24a78d4499b14b5f4404be5b87f038ae526b417b3fea6be04bbc713f05f"
+  },
+  {
+    "path": "research_log/t014_semantic/PREREGISTRATION.md",
+    "bytes": 6340,
+    "sha256": "0bf111b629b320e4f12739debd031dc6b10ad5abe8f2258a604ba3b0656ce7fb"
+  },
+  {
+    "path": "research_log/t014_semantic/tests.txt",
+    "bytes": 1692,
+    "sha256": "dd11967ef0d66f5c21924fd4844adda06a7b6a9cc6d9f5303c18e2ef1532ee5f"
+  },
+  {
+    "path": "research_log/t014_semantic/source_check.txt",
+    "bytes": 58,
+    "sha256": "0928dbaf04612a02784696c3ea3e9e2b01c2f483127fbc9defa4715997836393"
+  },
+  {
+    "path": "research_log/t014_semantic/P0_REPORT.md",
+    "bytes": 4831,
+    "sha256": "ecb3c000749d70d01fcd2e3f81544084d441e06af5e3a7bb282dbff657f62f61"
+  }
+]

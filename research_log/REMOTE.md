@@ -522,3 +522,7 @@ Same SSH configuration succeeded; earlier terminal transport stop was premature 
 
 P3R7 resolved evidence commit: cfbaa3235ef441cb316250af4a042d47927b61b5. Current state YW_P3R7_STALE_LOADED_MODULE_REBOOT_CANDIDATE_RETURN_TO_LEAD supersedes initial transport-stop classification. Resolved receipt SHA256 173e71132c2222ce8a6044bf7d1f193e3882a65e05ef01cff12f4ba3e7595b0b; report SHA256 b2d8fe48741eb0f8d397d820dc87079676bd6bfee12bab3c17c621a317d392df; both match remote mirror. Read-only work complete, nvidia-smi1, repair/runtime/science0. Research Lead review required before any reboot, driver repair, Torch install, or model-runtime work.
 
+
+## 2026-09-14T23:20:50.1258847+08:00 — T014-SEM-P0 contract and synthetic tests passed
+Lead317abd18/task-start61fb9804; evidence457e6fe18e2008b4f56dfb08e2e7bd6800330f52. Semantic-only reset supersedes/pauses old YOLO visual-shift contingency. Frozen contract research_log/t014_semantic/PREREGISTRATION.md; detector-independent tovd/semantic_shift.py;14 synthetic tests pass; query-field search no matches, non-clean rejected, empty supports null. No primary-cache/results access, detector/GPU/runtime changes, AP recomputation or TTT design. Report P0_REPORT.md. Await Research Lead review of T014-SEM-P0 before any execution on the completed clean Grounding cache or any TTT method design.
+

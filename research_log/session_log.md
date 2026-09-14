@@ -1110,3 +1110,7 @@ Read recovery/handoff and AGENTS/protocol/mailbox/spec; git status/fetch/fast-fo
 ## 2026-09-14T22:06:02.6586706+08:00 — mailbox-only heartbeat awaiting P3R7 review
 Read recovery/handoff and AGENTS/protocol/mailbox/spec; git status/fetch/fast-forward exit0. origin/main unchanged at c1a8af4ca0bde580e1e272997e7f57d052175967. Lead1f76d408 P3R7 already completed in cfbaa323/22b5f58 as STALE_LOADED_MODULE_REBOOT_CANDIDATE. No new task or active remote run; no repeated snapshot/nvidia-smi, reboot/repair, install, CUDA smoke or science. Await Research Lead review of P3R7 host-driver consistency adjudication before any reboot, driver repair, Torch install, or model-runtime work.
 
+
+## 2026-09-14T23:20:50.1258847+08:00 — T014-SEM-P0 contract and synthetic tests passed
+Lead317abd18/task-start61fb9804; evidence457e6fe18e2008b4f56dfb08e2e7bd6800330f52. Semantic-only reset supersedes/pauses old YOLO visual-shift contingency. Frozen contract research_log/t014_semantic/PREREGISTRATION.md; detector-independent tovd/semantic_shift.py;14 synthetic tests pass; query-field search no matches, non-clean rejected, empty supports null. No primary-cache/results access, detector/GPU/runtime changes, AP recomputation or TTT design. Report P0_REPORT.md. Await Research Lead review of T014-SEM-P0 before any execution on the completed clean Grounding cache or any TTT method design.
+
