@@ -1,0 +1,48 @@
+name: T013 YW exact checkpoint relay
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  relay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Acquire and verify frozen official bytes
+        id: acquire
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p relay
+          initial='https://huggingface.co/wondervictor/YOLO-World-V2.1/resolve/c620164ee3979bf49b895c8a8e0f49aeaca89209/s_stage2-4466ab94.pth'
+          expected_sha='4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458'
+          started=$(date -u +%FT%TZ)
+          curl --version > curl_version.txt
+          set +e
+          curl --fail --location --silent --show-error --proto '=https' --proto-redir '=https' --connect-timeout 45 --max-time 1200 --output checkpoint.partial --write-out '%{json}' "$initial" > transport.json
+          code=$?
+          set -e
+          stopped=$(date -u +%FT%TZ)
+          bytes=0
+          observed_sha=''
+          if [ -f checkpoint.partial ]; then
+            bytes=$(stat -c '%s' checkpoint.partial)
+            observed_sha=$(sha256sum checkpoint.partial | cut -d ' ' -f 1)
+          fi
+          verified=false
+          if [ "$code" -eq 0 ] && [ "$bytes" -eq 305058902 ] && [ "$observed_sha" = "$expected_sha" ]; then verified=true; fi
+          jq -n --arg initial "$initial" --arg started "$started" --arg stopped "$stopped" --arg sha "$observed_sha" --arg expected_sha "$expected_sha" --argjson bytes "$bytes" --argjson code "$code" --argjson verified "$verified" --arg run_id "$GITHUB_RUN_ID" --arg attempt "$GITHUB_RUN_ATTEMPT" --arg commit "$GITHUB_SHA" --arg runner_os "$RUNNER_OS" --arg image_os "${ImageOS:-}" --arg image_version "${ImageVersion:-}" --rawfile os_release /etc/os-release --rawfile curl_version curl_version.txt --slurpfile transport transport.json '{task:"T013-YW-P3R4",initial_url:$initial,started_at:$started,stopped_at:$stopped,expected_bytes:305058902,expected_sha256:$expected_sha,observed_bytes:$bytes,observed_sha256:$sha,curl_exit_code:$code,verified:$verified,run_id:$run_id,run_attempt:$attempt,workflow_commit:$commit,runner_os:$runner_os,image_os:$image_os,image_version:$image_version,os_release:$os_release,curl_version:$curl_version,verification_commands:["stat -c %s checkpoint.partial","sha256sum checkpoint.partial"],transport:($transport[0]|{http_code,ssl_verify_result,remote_ip,num_redirects,size_download,time_total,final_effective_host_path:(.url_effective|split("?")[0]|split("#")[0])})}' > relay/acquisition_receipt.json
+          cat relay/acquisition_receipt.json
+          if [ "$verified" != true ]; then exit 1; fi
+          mv checkpoint.partial relay/s_stage2-4466ab94.pth
+      - name: Upload exact checkpoint and receipt
+        id: upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: t013-yw-s-stage2-4466ab94-relay
+          path: |
+            relay/s_stage2-4466ab94.pth
+            relay/acquisition_receipt.json
+          retention-days: 2
+          compression-level: 0
+          if-no-files-found: error
