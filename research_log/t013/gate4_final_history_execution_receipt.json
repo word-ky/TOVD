@@ -1,0 +1,43 @@
+{
+  "task": "T013-G4B1",
+  "status": "FINAL_GATE4_HISTORY_CLEAN_READY_FOR_DEC1B",
+  "task_start_head": "08785e443282b060cae1943fc7a1fbac4c770e80",
+  "lead_instruction_commit": "745f1d24784376afc128156829bcd65b15ff1661",
+  "audit_base": "cca9af23452870d1a12ba1ab6a78ebe683e49cd1",
+  "audit_endpoint": "745efb43d8640f8ac3958bb733d0df44c51c87ff",
+  "environment": {
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "D:\\anaconda3\\python.exe",
+    "device": "CPU; standard-library Git/history only"
+  },
+  "commands": [
+    "git fetch origin; git merge --ff-only origin/main; ordered AGENTS/protocol/mailbox/spec reads",
+    "D:/anaconda3/python.exe research_log/t013/gate4_final_history_audit.py",
+    "git show --remerge-diff --format=%H 7ccfe77 65fc120 546dd93 9942a57",
+    "Bounded local Git show/log/diff, rg source inspection and standard-library receipt scope inspection",
+    "Standard-library final receipt context_review annotation and completion-table/report writing; no scientific calculation"
+  ],
+  "mechanical_check_count": 20,
+  "mechanical_checks_pass": true,
+  "manual_context_review_complete": true,
+  "failures": [],
+  "files_sha256": {
+    "research_log/t013/gate4_final_history_audit.py": "039f936c0cd2a48a8def7649ce402523093ff514cff0a9a40fa1fc42934a831f",
+    "research_log/t013/gate4_final_history_receipt.json": "b7fc09769661d7592e5fce66c5f6e1a5484d5a1c0818c6800ab069d2c4d7c1e9",
+    "research_log/t013/GATE4_FINAL_HISTORY_AUDIT.md": "476f86ad17d50e286f448abdf0ed1d84cc13566e812b153341efa96bfd4c1123"
+  },
+  "execution_counts": {
+    "primary_inference": 1,
+    "fin1_primary": 1,
+    "full_primary_replay": 1,
+    "primary_comparator": 1,
+    "canonical_disclosure": 1,
+    "yolo_scientific_runtime": 0,
+    "t014_or_proposal_lock_primary_runtime": 0
+  },
+  "scientific_result_reopened": false,
+  "scientific_execution": false,
+  "decide_called": false,
+  "final_gate4": "PENDING_RESEARCH_LEAD_REVIEW",
+  "recommended_next_action": "DEC1B final Grounding adjudication"
+}

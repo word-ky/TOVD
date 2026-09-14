@@ -1,0 +1,4536 @@
+{
+  "task": "T013-G4B1",
+  "recorded_utc": "2026-09-14T03:39:22.230346+00:00",
+  "task_start_head": "08785e443282b060cae1943fc7a1fbac4c770e80",
+  "lead_instruction_commit": "745f1d24784376afc128156829bcd65b15ff1661",
+  "freeze": "6fec32243985ccc808123d851abf5f3dea10af99",
+  "dispatch": "88668f76b22777459b5792dd28f88075f208c678",
+  "run": "20260912-210355-tovd-native30-primary",
+  "release": "20260912-210306-tovd-native30-primary-freeze",
+  "audit_base": "cca9af23452870d1a12ba1ab6a78ebe683e49cd1",
+  "audit_endpoint": "745efb43d8640f8ac3958bb733d0df44c51c87ff",
+  "status": "FINAL_GATE4_HISTORY_CLEAN_READY_FOR_DEC1B",
+  "checks": {
+    "17_protected_paths_identical_without_intermediate_edits": true,
+    "exact_170_commits": true,
+    "zero_unclassified_paths": true,
+    "no_new_run_mirror_scripts_tests_or_yolo_changes": true,
+    "chronology_ancestry": true,
+    "unique_committed_primary_dispatch": true,
+    "dispatch_provenance_unchanged": true,
+    "cf1_45_completed_smoke_cells": true,
+    "cf2_two_smoke_replays_only": true,
+    "mech1_source_only": true,
+    "mech2_synthetic_only": true,
+    "smoke_driver_sources_match_executed_receipts": true,
+    "ops8_exact_authorized_archives_only": true,
+    "fin1_single_exit0_opaque": true,
+    "replay_single_exact_launch": true,
+    "comparator_single_exit0_before_disclosure": true,
+    "accepted_fin1_and_comparison_hashes": true,
+    "single_authorized_disclosure_unchanged": true,
+    "decision_contract_unchanged": true,
+    "three_postdelivery_commits_mailbox_only": true
+  },
+  "protected_paths": [
+    {
+      "path": "scripts/t013_native_detector.py",
+      "expected_sha256": "b49f23f131777f08e23131ad55a94d9211c33b1c759adf86c6b52e2b95c34126",
+      "freeze_sha256": "b49f23f131777f08e23131ad55a94d9211c33b1c759adf86c6b52e2b95c34126",
+      "endpoint_sha256": "b49f23f131777f08e23131ad55a94d9211c33b1c759adf86c6b52e2b95c34126",
+      "equal": true
+    },
+    {
+      "path": "scripts/t013_native_run.py",
+      "expected_sha256": "177176fdb1c133b98770f8e6719b22e3ead0a00adbdced598e92326aec723429",
+      "freeze_sha256": "177176fdb1c133b98770f8e6719b22e3ead0a00adbdced598e92326aec723429",
+      "endpoint_sha256": "177176fdb1c133b98770f8e6719b22e3ead0a00adbdced598e92326aec723429",
+      "equal": true
+    },
+    {
+      "path": "scripts/t013_native_smoke.py",
+      "expected_sha256": "d30430f324d0577afc6997c38d78d6f46b78679cb2adaf96055986344928a421",
+      "freeze_sha256": "d30430f324d0577afc6997c38d78d6f46b78679cb2adaf96055986344928a421",
+      "endpoint_sha256": "d30430f324d0577afc6997c38d78d6f46b78679cb2adaf96055986344928a421",
+      "equal": true
+    },
+    {
+      "path": "scripts/t013_analysis.py",
+      "expected_sha256": "74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c",
+      "freeze_sha256": "74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c",
+      "endpoint_sha256": "74cc73e71385e5d38e3fbe68ff03a0f11da30e67ff39b436da90422f72e99f9c",
+      "equal": true
+    },
+    {
+      "path": "scripts/t013_coco.py",
+      "expected_sha256": "bd3245235a6dcd455224ea7eb737b07875920b0a08b34f30e706dfc6a9ca9e81",
+      "freeze_sha256": "bd3245235a6dcd455224ea7eb737b07875920b0a08b34f30e706dfc6a9ca9e81",
+      "endpoint_sha256": "bd3245235a6dcd455224ea7eb737b07875920b0a08b34f30e706dfc6a9ca9e81",
+      "equal": true
+    },
+    {
+      "path": "scripts/t013_diagnostics.py",
+      "expected_sha256": "ae7e61feaa5701ca9580c9c48901f99d09e9986b560c2821073100c94645a41e",
+      "freeze_sha256": "ae7e61feaa5701ca9580c9c48901f99d09e9986b560c2821073100c94645a41e",
+      "endpoint_sha256": "ae7e61feaa5701ca9580c9c48901f99d09e9986b560c2821073100c94645a41e",
+      "equal": true
+    },
+    {
+      "path": "scripts/t013_detector.py",
+      "expected_sha256": "4800f1471f2de8f964700b683505c7230e078b6833a57afa1e09af6b42babd0d",
+      "freeze_sha256": "4800f1471f2de8f964700b683505c7230e078b6833a57afa1e09af6b42babd0d",
+      "endpoint_sha256": "4800f1471f2de8f964700b683505c7230e078b6833a57afa1e09af6b42babd0d",
+      "equal": true
+    },
+    {
+      "path": "scripts/t013_text.py",
+      "expected_sha256": "2c175a779304f045267e3419eda04dbc2e5c4730ae19cce23727043832102018",
+      "freeze_sha256": "2c175a779304f045267e3419eda04dbc2e5c4730ae19cce23727043832102018",
+      "endpoint_sha256": "2c175a779304f045267e3419eda04dbc2e5c4730ae19cce23727043832102018",
+      "equal": true
+    },
+    {
+      "path": "scripts/t013_native_vocab.py",
+      "expected_sha256": "61d40e7f4107a2a13eaa7cd872667acaa4db3dffb3a257e2cddbaece4f943351",
+      "freeze_sha256": "61d40e7f4107a2a13eaa7cd872667acaa4db3dffb3a257e2cddbaece4f943351",
+      "endpoint_sha256": "61d40e7f4107a2a13eaa7cd872667acaa4db3dffb3a257e2cddbaece4f943351",
+      "equal": true
+    },
+    {
+      "path": "scripts/t013_data_receipt.py",
+      "expected_sha256": "9ef780aa724d3a8a6f685dc0a273a285e7ce17942985fb107c2638810f54305e",
+      "freeze_sha256": "9ef780aa724d3a8a6f685dc0a273a285e7ce17942985fb107c2638810f54305e",
+      "endpoint_sha256": "9ef780aa724d3a8a6f685dc0a273a285e7ce17942985fb107c2638810f54305e",
+      "equal": true
+    },
+    {
+      "path": "research_log/t013/PLAN.md",
+      "expected_sha256": "5d977aceb3c06a7915396aea9c7cc2504759e584ce79b459a287b18fb67e4beb",
+      "freeze_sha256": "5d977aceb3c06a7915396aea9c7cc2504759e584ce79b459a287b18fb67e4beb",
+      "endpoint_sha256": "5d977aceb3c06a7915396aea9c7cc2504759e584ce79b459a287b18fb67e4beb",
+      "equal": true
+    },
+    {
+      "path": "research_log/t013/vocabulary_native30.json",
+      "expected_sha256": "3bb4a0ebada1f9da407ae6a94f1135798dba7117bd658a6ecba97b2ebfad0967",
+      "freeze_sha256": "3bb4a0ebada1f9da407ae6a94f1135798dba7117bd658a6ecba97b2ebfad0967",
+      "endpoint_sha256": "3bb4a0ebada1f9da407ae6a94f1135798dba7117bd658a6ecba97b2ebfad0967",
+      "equal": true
+    },
+    {
+      "path": "research_log/t013/image_selection.json",
+      "expected_sha256": "8039a70f25c34f295345e63d1980f692631b6bbdaa5c37267a10852acbf3833b",
+      "freeze_sha256": "8039a70f25c34f295345e63d1980f692631b6bbdaa5c37267a10852acbf3833b",
+      "endpoint_sha256": "8039a70f25c34f295345e63d1980f692631b6bbdaa5c37267a10852acbf3833b",
+      "equal": true
+    },
+    {
+      "path": "research_log/t013/data_receipt.json",
+      "expected_sha256": "4dc1361b17a9221b278dd70ac805afb4d87742451b310af5381dc69900fe8c50",
+      "freeze_sha256": "4dc1361b17a9221b278dd70ac805afb4d87742451b310af5381dc69900fe8c50",
+      "endpoint_sha256": "4dc1361b17a9221b278dd70ac805afb4d87742451b310af5381dc69900fe8c50",
+      "equal": true
+    },
+    {
+      "path": "research_log/t013/image_sha256.json",
+      "expected_sha256": "38eb39894b8c0f1924e099b3a1ec0b885fdf7ec43c86933e1dc28186d85c3ba8",
+      "freeze_sha256": "38eb39894b8c0f1924e099b3a1ec0b885fdf7ec43c86933e1dc28186d85c3ba8",
+      "endpoint_sha256": "38eb39894b8c0f1924e099b3a1ec0b885fdf7ec43c86933e1dc28186d85c3ba8",
+      "equal": true
+    },
+    {
+      "path": "research_log/t013/native30_environment.txt",
+      "expected_sha256": "6fdb8b3da35dddb24c5ea602e81b160ab864e792ca29fa27236dd759a6b4f090",
+      "freeze_sha256": "6fdb8b3da35dddb24c5ea602e81b160ab864e792ca29fa27236dd759a6b4f090",
+      "endpoint_sha256": "6fdb8b3da35dddb24c5ea602e81b160ab864e792ca29fa27236dd759a6b4f090",
+      "equal": true
+    },
+    {
+      "path": "research_log/t013/native30_freeze.json",
+      "expected_sha256": "50addfb8e247333b49fb22cda14570166b294101bb435b5a1b5bf688b4b3a91e",
+      "freeze_sha256": "50addfb8e247333b49fb22cda14570166b294101bb435b5a1b5bf688b4b3a91e",
+      "endpoint_sha256": "50addfb8e247333b49fb22cda14570166b294101bb435b5a1b5bf688b4b3a91e",
+      "equal": true
+    }
+  ],
+  "protected_intermediate_edits": [],
+  "commit_count": 170,
+  "merge_commits": [
+    "7ccfe778148930a0fe67808f84726de7aca229ae",
+    "65fc1208342f2fa8e3835bae20836bfcd9a64e27",
+    "546dd93199c967bfb77198d91d3fcd3e391f7689",
+    "9942a573399861ca004c00cd2a9c706afba5cf4e"
+  ],
+  "history": [
+    {
+      "commit": "6a96f8870f0e88087d64341ed37dabf05df49f84",
+      "parents": [
+        "cca9af23452870d1a12ba1ab6a78ebe683e49cd1"
+      ],
+      "subject": "docs: audit T013 pre-outcome freeze and protocol history",
+      "committer_time": "2026-09-13T08:11:08+08:00",
+      "changes_by_parent": {
+        "cca9af23452870d1a12ba1ab6a78ebe683e49cd1": [
+          "A\tresearch_log/t013/GATE4_PREOUTCOME_HISTORY_AUDIT.md",
+          "A\tresearch_log/t013/gate4_preoutcome_history_audit.py",
+          "A\tresearch_log/t013/gate4_preoutcome_history_initial_receipt.json",
+          "A\tresearch_log/t013/gate4_preoutcome_history_receipt.json"
+        ]
+      },
+      "categories": [
+        "G4A1 accepted history audit"
+      ]
+    },
+    {
+      "commit": "96bcf62535c1dbfbca92f3b1e55a47888b319b79",
+      "parents": [
+        "6a96f8870f0e88087d64341ed37dabf05df49f84"
+      ],
+      "subject": "coord: deliver T013 G4A1 pre-outcome history evidence",
+      "committer_time": "2026-09-13T08:12:31+08:00",
+      "changes_by_parent": {
+        "6a96f8870f0e88087d64341ed37dabf05df49f84": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "17ca34bf9022d94307ada49781c54b9301f25de8",
+      "parents": [
+        "96bcf62535c1dbfbca92f3b1e55a47888b319b79"
+      ],
+      "subject": "coord: record primary health at 403 images",
+      "committer_time": "2026-09-13T08:29:15+08:00",
+      "changes_by_parent": {
+        "96bcf62535c1dbfbca92f3b1e55a47888b319b79": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "32be3ffa914224c573a4186de307a6b761330dc4",
+      "parents": [
+        "17ca34bf9022d94307ada49781c54b9301f25de8"
+      ],
+      "subject": "coord: record primary health at 413 images",
+      "committer_time": "2026-09-13T08:45:32+08:00",
+      "changes_by_parent": {
+        "17ca34bf9022d94307ada49781c54b9301f25de8": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "a3cac7cd6220cf8fb3431f3e153b90373ee902b4",
+      "parents": [
+        "32be3ffa914224c573a4186de307a6b761330dc4"
+      ],
+      "subject": "coord: accept T013 G4A1 and assign completion barrier preflight",
+      "committer_time": "2026-09-13T08:51:19+08:00",
+      "changes_by_parent": {
+        "32be3ffa914224c573a4186de307a6b761330dc4": [
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "2af6322facef6381835488a639761578b7fd2b16",
+      "parents": [
+        "a3cac7cd6220cf8fb3431f3e153b90373ee902b4"
+      ],
+      "subject": "coord: append T013 G4A1 review and CLOSE1 assignment",
+      "committer_time": "2026-09-13T08:53:40+08:00",
+      "changes_by_parent": {
+        "a3cac7cd6220cf8fb3431f3e153b90373ee902b4": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "0acbd4f6417d2946f2009979ec8461df351eb07b",
+      "parents": [
+        "2af6322facef6381835488a639761578b7fd2b16"
+      ],
+      "subject": "test: freeze T013 completion barrier and smoke receipt rehearsal",
+      "committer_time": "2026-09-13T09:08:22+08:00",
+      "changes_by_parent": {
+        "2af6322facef6381835488a639761578b7fd2b16": [
+          "A\tresearch_log/t013/FINALIZATION_BARRIER.md",
+          "A\tresearch_log/t013/close1/mutated_smoke_replay_receipt.json",
+          "A\tresearch_log/t013/close1/smoke_rehearsal_envelopes.json",
+          "A\tresearch_log/t013/finalization_barrier.py",
+          "A\tresearch_log/t013/finalization_barrier_receipt.json",
+          "A\tresearch_log/t013/test_finalization_barrier.py"
+        ]
+      },
+      "categories": [
+        "CLOSE1 metadata barrier and smoke fixtures"
+      ]
+    },
+    {
+      "commit": "56c1ab18044d6ee7d4ea83e44c476f65216be3b2",
+      "parents": [
+        "0acbd4f6417d2946f2009979ec8461df351eb07b"
+      ],
+      "subject": "coord: deliver T013 CLOSE1 completion barrier evidence",
+      "committer_time": "2026-09-13T09:09:37+08:00",
+      "changes_by_parent": {
+        "0acbd4f6417d2946f2009979ec8461df351eb07b": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "ed5a486643490fe07826e509d4d3836f6b7efeac",
+      "parents": [
+        "56c1ab18044d6ee7d4ea83e44c476f65216be3b2"
+      ],
+      "subject": "coord: record primary health at 437 images",
+      "committer_time": "2026-09-13T09:26:05+08:00",
+      "changes_by_parent": {
+        "56c1ab18044d6ee7d4ea83e44c476f65216be3b2": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "dc541170fb8975631d7b8ff14570a80973f4ac4d",
+      "parents": [
+        "ed5a486643490fe07826e509d4d3836f6b7efeac"
+      ],
+      "subject": "coord: record primary health at 446 images",
+      "committer_time": "2026-09-13T09:42:03+08:00",
+      "changes_by_parent": {
+        "ed5a486643490fe07826e509d4d3836f6b7efeac": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "d87e4e5b1b682af18df3eb498a6936936903f29d",
+      "parents": [
+        "dc541170fb8975631d7b8ff14570a80973f4ac4d"
+      ],
+      "subject": "coord: record primary health at 456 images",
+      "committer_time": "2026-09-13T09:58:05+08:00",
+      "changes_by_parent": {
+        "dc541170fb8975631d7b8ff14570a80973f4ac4d": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "4f8de1aac7bfd4fa0834eead5649f019e1f0d723",
+      "parents": [
+        "d87e4e5b1b682af18df3eb498a6936936903f29d"
+      ],
+      "subject": "Log primary health at 467 images",
+      "committer_time": "2026-09-13T10:18:20+08:00",
+      "changes_by_parent": {
+        "d87e4e5b1b682af18df3eb498a6936936903f29d": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "bc74aa66570170b5f7c6094d22100758ffe07b81",
+      "parents": [
+        "d87e4e5b1b682af18df3eb498a6936936903f29d"
+      ],
+      "subject": "coord: accept T013 CLOSE1 and assign OPS2 survival guard",
+      "committer_time": "2026-09-13T10:16:23+08:00",
+      "changes_by_parent": {
+        "d87e4e5b1b682af18df3eb498a6936936903f29d": [
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "0f3934260c8d04ae96257a4a9851f115624c1aa6",
+      "parents": [
+        "bc74aa66570170b5f7c6094d22100758ffe07b81"
+      ],
+      "subject": "coord: continue review log with CLOSE1 acceptance and OPS2 assignment",
+      "committer_time": "2026-09-13T10:17:11+08:00",
+      "changes_by_parent": {
+        "bc74aa66570170b5f7c6094d22100758ffe07b81": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "7ccfe778148930a0fe67808f84726de7aca229ae",
+      "parents": [
+        "4f8de1aac7bfd4fa0834eead5649f019e1f0d723",
+        "0f3934260c8d04ae96257a4a9851f115624c1aa6"
+      ],
+      "subject": "Merge remote-tracking branch 'origin/main'",
+      "committer_time": "2026-09-13T10:18:43+08:00",
+      "changes_by_parent": {
+        "4f8de1aac7bfd4fa0834eead5649f019e1f0d723": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md",
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ],
+        "0f3934260c8d04ae96257a4a9851f115624c1aa6": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "e380d14e5ee7b830781d38cc9efae292509ca66a",
+      "parents": [
+        "7ccfe778148930a0fe67808f84726de7aca229ae"
+      ],
+      "subject": "test: verify T013 OPS2 fixed storage and process guard",
+      "committer_time": "2026-09-13T10:22:09+08:00",
+      "changes_by_parent": {
+        "7ccfe778148930a0fe67808f84726de7aca229ae": [
+          "A\tresearch_log/t013/PRIMARY_SURVIVAL_GUARD.md",
+          "A\tresearch_log/t013/primary_survival_guard.py",
+          "A\tresearch_log/t013/primary_survival_guard_live_health.txt",
+          "A\tresearch_log/t013/primary_survival_guard_receipt.json",
+          "A\tresearch_log/t013/primary_survival_guard_tests.txt",
+          "A\tresearch_log/t013/test_primary_survival_guard.py"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests"
+      ]
+    },
+    {
+      "commit": "3b56770787c6f73ed61c1546bd354b4e78f315ab",
+      "parents": [
+        "e380d14e5ee7b830781d38cc9efae292509ca66a"
+      ],
+      "subject": "coord: deliver T013 OPS2 passing survival guard",
+      "committer_time": "2026-09-13T10:22:58+08:00",
+      "changes_by_parent": {
+        "e380d14e5ee7b830781d38cc9efae292509ca66a": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "cdb7ce298dc7d6009a004845fcbac5d36e2db28d",
+      "parents": [
+        "3b56770787c6f73ed61c1546bd354b4e78f315ab"
+      ],
+      "subject": "coord: log primary health at 480 images",
+      "committer_time": "2026-09-13T10:39:47+08:00",
+      "changes_by_parent": {
+        "3b56770787c6f73ed61c1546bd354b4e78f315ab": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "1c6bc3935148b7b33f992d4fbc59a3f3a0df49d4",
+      "parents": [
+        "cdb7ce298dc7d6009a004845fcbac5d36e2db28d"
+      ],
+      "subject": "coord: log primary health at 490 images",
+      "committer_time": "2026-09-13T10:56:18+08:00",
+      "changes_by_parent": {
+        "cdb7ce298dc7d6009a004845fcbac5d36e2db28d": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "87471fbd17bfb745d05896f61fdadfea2765b0aa",
+      "parents": [
+        "1c6bc3935148b7b33f992d4fbc59a3f3a0df49d4"
+      ],
+      "subject": "coord: log primary health at 499 images",
+      "committer_time": "2026-09-13T11:12:46+08:00",
+      "changes_by_parent": {
+        "1c6bc3935148b7b33f992d4fbc59a3f3a0df49d4": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "41cc9cba52ac7bee2367e0ff5bef24e2e3dc5780",
+      "parents": [
+        "87471fbd17bfb745d05896f61fdadfea2765b0aa"
+      ],
+      "subject": "coord: accept T013 OPS2 and assign OPS3 incident snapshot guard",
+      "committer_time": "2026-09-13T11:23:05+08:00",
+      "changes_by_parent": {
+        "87471fbd17bfb745d05896f61fdadfea2765b0aa": [
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "490cf9c56b68a4b868aeb09f223238e792a71aac",
+      "parents": [
+        "41cc9cba52ac7bee2367e0ff5bef24e2e3dc5780"
+      ],
+      "subject": "coord: review T013 OPS2 and assign OPS3 incident snapshot",
+      "committer_time": "2026-09-13T11:23:28+08:00",
+      "changes_by_parent": {
+        "41cc9cba52ac7bee2367e0ff5bef24e2e3dc5780": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "65b1075be239e0fb8caaf451a9769e4a48aec040",
+      "parents": [
+        "490cf9c56b68a4b868aeb09f223238e792a71aac"
+      ],
+      "subject": "coord: correct CLOSE1 handoff SHA in review log",
+      "committer_time": "2026-09-13T11:23:44+08:00",
+      "changes_by_parent": {
+        "490cf9c56b68a4b868aeb09f223238e792a71aac": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "6ecbc36bd66eb2e4ca6057f9a33c81863ed7eff7",
+      "parents": [
+        "65b1075be239e0fb8caaf451a9769e4a48aec040"
+      ],
+      "subject": "test: verify T013 OPS3 operational incident snapshot",
+      "committer_time": "2026-09-13T11:34:31+08:00",
+      "changes_by_parent": {
+        "65b1075be239e0fb8caaf451a9769e4a48aec040": [
+          "A\tresearch_log/t013/PRIMARY_INCIDENT_SNAPSHOT.md",
+          "A\tresearch_log/t013/collect_primary_incident_metadata.py",
+          "A\tresearch_log/t013/primary_incident_snapshot.py",
+          "A\tresearch_log/t013/primary_incident_snapshot_live_raw.json",
+          "A\tresearch_log/t013/primary_incident_snapshot_receipt.json",
+          "A\tresearch_log/t013/primary_incident_snapshot_tests.txt",
+          "A\tresearch_log/t013/test_primary_incident_snapshot.py"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests"
+      ]
+    },
+    {
+      "commit": "6222134162a8df55aa54b5dfa43ead1b74e45f21",
+      "parents": [
+        "6ecbc36bd66eb2e4ca6057f9a33c81863ed7eff7"
+      ],
+      "subject": "coord: deliver T013 OPS3 passing incident snapshot",
+      "committer_time": "2026-09-13T11:35:16+08:00",
+      "changes_by_parent": {
+        "6ecbc36bd66eb2e4ca6057f9a33c81863ed7eff7": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "407b273b1d9298303234ebbceccebff4eba42315",
+      "parents": [
+        "6222134162a8df55aa54b5dfa43ead1b74e45f21"
+      ],
+      "subject": "coord: log primary health at 523 images",
+      "committer_time": "2026-09-13T11:51:46+08:00",
+      "changes_by_parent": {
+        "6222134162a8df55aa54b5dfa43ead1b74e45f21": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "f387f5df0938c76ff23f3511ad3836e75561630f",
+      "parents": [
+        "407b273b1d9298303234ebbceccebff4eba42315"
+      ],
+      "subject": "coord: log primary health at 533 images",
+      "committer_time": "2026-09-13T12:08:22+08:00",
+      "changes_by_parent": {
+        "407b273b1d9298303234ebbceccebff4eba42315": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "351d70a78a5ecf0c0079d72652620cb148394fba",
+      "parents": [
+        "f387f5df0938c76ff23f3511ad3836e75561630f"
+      ],
+      "subject": "coord: accept T013 OPS3 and assign OPS4 storage attribution audit",
+      "committer_time": "2026-09-13T12:17:35+08:00",
+      "changes_by_parent": {
+        "f387f5df0938c76ff23f3511ad3836e75561630f": [
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "032de1a44ae19d0fda497fe43909b0fee98f63ab",
+      "parents": [
+        "351d70a78a5ecf0c0079d72652620cb148394fba"
+      ],
+      "subject": "coord: log OPS3 acceptance and OPS4 storage attribution assignment",
+      "committer_time": "2026-09-13T12:17:58+08:00",
+      "changes_by_parent": {
+        "351d70a78a5ecf0c0079d72652620cb148394fba": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "882034a2381564044ea2ba1d14c3fe987b39f442",
+      "parents": [
+        "032de1a44ae19d0fda497fe43909b0fee98f63ab"
+      ],
+      "subject": "exp: prepare OPS4 attribution and preserve snapshot A",
+      "committer_time": "2026-09-13T12:28:20+08:00",
+      "changes_by_parent": {
+        "032de1a44ae19d0fda497fe43909b0fee98f63ab": [
+          "A\tresearch_log/t013/PRIMARY_STORAGE_ATTRIBUTION.md",
+          "A\tresearch_log/t013/primary_storage_attribution.py",
+          "A\tresearch_log/t013/primary_storage_attribution_A_raw.json",
+          "A\tresearch_log/t013/primary_storage_attribution_receipt.json",
+          "A\tresearch_log/t013/primary_storage_attribution_tests.txt",
+          "A\tresearch_log/t013/test_primary_storage_attribution.py"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests"
+      ]
+    },
+    {
+      "commit": "3eba59a448ff34b465212b4f7d98c2519eaeb949",
+      "parents": [
+        "882034a2381564044ea2ba1d14c3fe987b39f442"
+      ],
+      "subject": "coord: hand off OPS4 snapshot B to next heartbeat",
+      "committer_time": "2026-09-13T12:28:55+08:00",
+      "changes_by_parent": {
+        "882034a2381564044ea2ba1d14c3fe987b39f442": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "0d825766d0fcbc60bf090f83ddc799f7fcabeffb",
+      "parents": [
+        "3eba59a448ff34b465212b4f7d98c2519eaeb949"
+      ],
+      "subject": "exp: complete OPS4 two-snapshot storage attribution",
+      "committer_time": "2026-09-13T12:46:29+08:00",
+      "changes_by_parent": {
+        "3eba59a448ff34b465212b4f7d98c2519eaeb949": [
+          "M\tresearch_log/t013/PRIMARY_STORAGE_ATTRIBUTION.md",
+          "A\tresearch_log/t013/primary_storage_attribution_B_raw.json",
+          "M\tresearch_log/t013/primary_storage_attribution_receipt.json"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests"
+      ]
+    },
+    {
+      "commit": "10b62bbbdca3ef0d13056ffd36b67a2f1f7a5699",
+      "parents": [
+        "0d825766d0fcbc60bf090f83ddc799f7fcabeffb"
+      ],
+      "subject": "coord: deliver OPS4 completed storage accounting",
+      "committer_time": "2026-09-13T12:47:17+08:00",
+      "changes_by_parent": {
+        "0d825766d0fcbc60bf090f83ddc799f7fcabeffb": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "84cde1bb300a6ed4888b7d5f0e2b5e2e8cfdcd76",
+      "parents": [
+        "10b62bbbdca3ef0d13056ffd36b67a2f1f7a5699"
+      ],
+      "subject": "coord: accept T013 OPS4 and assign bounded OPS5 project-boundary audit",
+      "committer_time": "2026-09-13T12:57:25+08:00",
+      "changes_by_parent": {
+        "10b62bbbdca3ef0d13056ffd36b67a2f1f7a5699": [
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "b3b27c6258bda129968cac10e74a8080fed392a9",
+      "parents": [
+        "84cde1bb300a6ed4888b7d5f0e2b5e2e8cfdcd76"
+      ],
+      "subject": "coord: log OPS4 acceptance and OPS5 project-boundary assignment",
+      "committer_time": "2026-09-13T12:57:50+08:00",
+      "changes_by_parent": {
+        "84cde1bb300a6ed4888b7d5f0e2b5e2e8cfdcd76": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "0e9551ea2a4204dcad39050d884930f91073f253",
+      "parents": [
+        "b3b27c6258bda129968cac10e74a8080fed392a9"
+      ],
+      "subject": "exp: prepare OPS5 project accounting and snapshot A",
+      "committer_time": "2026-09-13T13:05:41+08:00",
+      "changes_by_parent": {
+        "b3b27c6258bda129968cac10e74a8080fed392a9": [
+          "A\tresearch_log/t013/PRIMARY_PROJECT_STORAGE_ATTRIBUTION.md",
+          "A\tresearch_log/t013/primary_project_storage_attribution.py",
+          "A\tresearch_log/t013/primary_project_storage_attribution_A_raw.json",
+          "A\tresearch_log/t013/primary_project_storage_attribution_receipt.json",
+          "A\tresearch_log/t013/primary_project_storage_attribution_tests.txt",
+          "A\tresearch_log/t013/test_primary_project_storage_attribution.py"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests"
+      ]
+    },
+    {
+      "commit": "e15af14112524a7d93f5d8f9e850bc50d9b31392",
+      "parents": [
+        "0e9551ea2a4204dcad39050d884930f91073f253"
+      ],
+      "subject": "coord: hand off OPS5 snapshot B to next heartbeat",
+      "committer_time": "2026-09-13T13:06:16+08:00",
+      "changes_by_parent": {
+        "0e9551ea2a4204dcad39050d884930f91073f253": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "86f4d61e139488fd1d5870bbab45c1f9eecc6b36",
+      "parents": [
+        "e15af14112524a7d93f5d8f9e850bc50d9b31392"
+      ],
+      "subject": "exp: complete OPS5 project-boundary storage accounting",
+      "committer_time": "2026-09-13T13:23:49+08:00",
+      "changes_by_parent": {
+        "e15af14112524a7d93f5d8f9e850bc50d9b31392": [
+          "M\tresearch_log/t013/PRIMARY_PROJECT_STORAGE_ATTRIBUTION.md",
+          "A\tresearch_log/t013/primary_project_storage_attribution_B_raw.json",
+          "M\tresearch_log/t013/primary_project_storage_attribution_receipt.json"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests"
+      ]
+    },
+    {
+      "commit": "8099c9ae831a4fe4a3ad76c4a34eecb35adbab32",
+      "parents": [
+        "86f4d61e139488fd1d5870bbab45c1f9eecc6b36"
+      ],
+      "subject": "coord: deliver OPS5 completed project accounting",
+      "committer_time": "2026-09-13T13:24:37+08:00",
+      "changes_by_parent": {
+        "86f4d61e139488fd1d5870bbab45c1f9eecc6b36": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "1f73ecbd3aa92c7d1f32b482a627d2329854aceb",
+      "parents": [
+        "8099c9ae831a4fe4a3ad76c4a34eecb35adbab32"
+      ],
+      "subject": "coord: log primary health at 590 images",
+      "committer_time": "2026-09-13T13:41:17+08:00",
+      "changes_by_parent": {
+        "8099c9ae831a4fe4a3ad76c4a34eecb35adbab32": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "c82850b1fa7261dfe2896cfe333af85e0df5b1dc",
+      "parents": [
+        "1f73ecbd3aa92c7d1f32b482a627d2329854aceb"
+      ],
+      "subject": "coord: accept T013 OPS5 and assign fixed-gate survival watch",
+      "committer_time": "2026-09-13T13:43:10+08:00",
+      "changes_by_parent": {
+        "1f73ecbd3aa92c7d1f32b482a627d2329854aceb": [
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "9f008f73db3e8dd2bf7506f4f6a31ab231695323",
+      "parents": [
+        "c82850b1fa7261dfe2896cfe333af85e0df5b1dc"
+      ],
+      "subject": "coord: log OPS5 acceptance and OPS6 survival watch",
+      "committer_time": "2026-09-13T13:43:45+08:00",
+      "changes_by_parent": {
+        "c82850b1fa7261dfe2896cfe333af85e0df5b1dc": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "9195f680f82de3ef11649ea618c967f4841b30f9",
+      "parents": [
+        "9f008f73db3e8dd2bf7506f4f6a31ab231695323"
+      ],
+      "subject": "exp: start OPS6 fixed-gate watch with point one",
+      "committer_time": "2026-09-13T13:59:09+08:00",
+      "changes_by_parent": {
+        "9f008f73db3e8dd2bf7506f4f6a31ab231695323": [
+          "A\tresearch_log/t013/PRIMARY_SURVIVAL_WATCH.md",
+          "A\tresearch_log/t013/primary_survival_watch_point1.txt",
+          "A\tresearch_log/t013/primary_survival_watch_receipt.json"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests"
+      ]
+    },
+    {
+      "commit": "af8d06956a028e585a3108ecba338a117d0cbaf9",
+      "parents": [
+        "9195f680f82de3ef11649ea618c967f4841b30f9"
+      ],
+      "subject": "coord: persist OPS6 active watch across heartbeats",
+      "committer_time": "2026-09-13T13:59:41+08:00",
+      "changes_by_parent": {
+        "9195f680f82de3ef11649ea618c967f4841b30f9": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "9c3609cc7769387abb55eab7c6f0a37452359084",
+      "parents": [
+        "af8d06956a028e585a3108ecba338a117d0cbaf9"
+      ],
+      "subject": "coord: record OPS6 healthy watch point two",
+      "committer_time": "2026-09-13T14:16:35+08:00",
+      "changes_by_parent": {
+        "af8d06956a028e585a3108ecba338a117d0cbaf9": [
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md",
+          "A\tresearch_log/t013/primary_survival_watch_point2.txt",
+          "M\tresearch_log/t013/primary_survival_watch_receipt.json"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "c2791991625d9eb7b40fe0ddca93d5c7ecfee683",
+      "parents": [
+        "9c3609cc7769387abb55eab7c6f0a37452359084"
+      ],
+      "subject": "Record OPS6 survival watch point 3",
+      "committer_time": "2026-09-13T14:37:23+08:00",
+      "changes_by_parent": {
+        "9c3609cc7769387abb55eab7c6f0a37452359084": [
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md",
+          "A\tresearch_log/t013/primary_survival_watch_point3.txt",
+          "M\tresearch_log/t013/primary_survival_watch_receipt.json"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "8a58598b68893d7d090f21cdbae8c2a736ff9d84",
+      "parents": [
+        "c2791991625d9eb7b40fe0ddca93d5c7ecfee683"
+      ],
+      "subject": "exp: complete OPS6 four-point survival watch",
+      "committer_time": "2026-09-13T14:54:43+08:00",
+      "changes_by_parent": {
+        "c2791991625d9eb7b40fe0ddca93d5c7ecfee683": [
+          "M\tresearch_log/t013/PRIMARY_SURVIVAL_WATCH.md",
+          "A\tresearch_log/t013/primary_survival_watch_point4.txt",
+          "M\tresearch_log/t013/primary_survival_watch_receipt.json"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests"
+      ]
+    },
+    {
+      "commit": "0ef3f720a62e2ee88fb2cd2d954535ed5cf25aad",
+      "parents": [
+        "8a58598b68893d7d090f21cdbae8c2a736ff9d84"
+      ],
+      "subject": "coord: deliver OPS6 survival watch PASS to research lead",
+      "committer_time": "2026-09-13T14:55:14+08:00",
+      "changes_by_parent": {
+        "8a58598b68893d7d090f21cdbae8c2a736ff9d84": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "bef664e4f6b15e2f280dbebb3503da8bee6ce8c8",
+      "parents": [
+        "0ef3f720a62e2ee88fb2cd2d954535ed5cf25aad"
+      ],
+      "subject": "docs: record healthy primary progress at 644 images",
+      "committer_time": "2026-09-13T15:12:01+08:00",
+      "changes_by_parent": {
+        "0ef3f720a62e2ee88fb2cd2d954535ed5cf25aad": [
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "098cdad32df41b75807224805ae972f35909ef6c",
+      "parents": [
+        "bef664e4f6b15e2f280dbebb3503da8bee6ce8c8"
+      ],
+      "subject": "coord: accept OPS6 and preregister top-k counterfactual fixture",
+      "committer_time": "2026-09-13T15:14:17+08:00",
+      "changes_by_parent": {
+        "bef664e4f6b15e2f280dbebb3503da8bee6ce8c8": [
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "56c80996fdbe274f583596db018cd10cd64f755c",
+      "parents": [
+        "098cdad32df41b75807224805ae972f35909ef6c"
+      ],
+      "subject": "coord: log OPS6 acceptance and CF1 preregistration",
+      "committer_time": "2026-09-13T15:14:39+08:00",
+      "changes_by_parent": {
+        "098cdad32df41b75807224805ae972f35909ef6c": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "d8d3beb99cfa86115ecc89282b7a0484b7b78536",
+      "parents": [
+        "56c80996fdbe274f583596db018cd10cd64f755c"
+      ],
+      "subject": "feat: preregister canonical-only top-300 counterfactual",
+      "committer_time": "2026-09-13T15:30:34+08:00",
+      "changes_by_parent": {
+        "56c80996fdbe274f583596db018cd10cd64f755c": [
+          "A\tresearch_log/t013/CANONICAL_TOPK_COUNTERFACTUAL.md",
+          "A\tresearch_log/t013/canonical_topk_counterfactual.py",
+          "A\tresearch_log/t013/test_canonical_topk_counterfactual.py",
+          "A\tresearch_log/t013/validate_canonical_topk_smoke.py"
+        ]
+      },
+      "categories": [
+        "CF1 completed smoke selection"
+      ]
+    },
+    {
+      "commit": "8154004f5574721903ee297a8a5aade729b1e131",
+      "parents": [
+        "d8d3beb99cfa86115ecc89282b7a0484b7b78536"
+      ],
+      "subject": "test: verify CF1 on 45 completed smoke cells",
+      "committer_time": "2026-09-13T15:32:16+08:00",
+      "changes_by_parent": {
+        "d8d3beb99cfa86115ecc89282b7a0484b7b78536": [
+          "A\tresearch_log/t013/CANONICAL_TOPK_RESULTS.md",
+          "A\tresearch_log/t013/canonical_topk_receipt.json",
+          "A\tresearch_log/t013/canonical_topk_tests.txt"
+        ]
+      },
+      "categories": [
+        "CF1 completed smoke selection"
+      ]
+    },
+    {
+      "commit": "cbb601535901ffe18f58c47a3f5ee87327dd1a85",
+      "parents": [
+        "8154004f5574721903ee297a8a5aade729b1e131"
+      ],
+      "subject": "coord: deliver CF1 counterfactual preparation PASS",
+      "committer_time": "2026-09-13T15:32:46+08:00",
+      "changes_by_parent": {
+        "8154004f5574721903ee297a8a5aade729b1e131": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "7fd7c0b1bf2375950bfb6607f7e90b3dcba8baa2",
+      "parents": [
+        "cbb601535901ffe18f58c47a3f5ee87327dd1a85"
+      ],
+      "subject": "docs: record healthy primary progress at 667 images",
+      "committer_time": "2026-09-13T15:49:55+08:00",
+      "changes_by_parent": {
+        "cbb601535901ffe18f58c47a3f5ee87327dd1a85": [
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "c7ac7ba47ab7bb5c3798c325f233f0f391af6bb2",
+      "parents": [
+        "7fd7c0b1bf2375950bfb6607f7e90b3dcba8baa2"
+      ],
+      "subject": "docs: record healthy primary progress at 676 images",
+      "committer_time": "2026-09-13T16:06:24+08:00",
+      "changes_by_parent": {
+        "7fd7c0b1bf2375950bfb6607f7e90b3dcba8baa2": [
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "58c1b974cdd12a5c4e030a5dee30e041d29031dc",
+      "parents": [
+        "c7ac7ba47ab7bb5c3798c325f233f0f391af6bb2"
+      ],
+      "subject": "coord: accept CF1 and preregister paired counterfactual analysis",
+      "committer_time": "2026-09-13T16:13:25+08:00",
+      "changes_by_parent": {
+        "c7ac7ba47ab7bb5c3798c325f233f0f391af6bb2": [
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "a1588cb2ff11e04aeebb90029ce7b19ca0e48b74",
+      "parents": [
+        "58c1b974cdd12a5c4e030a5dee30e041d29031dc"
+      ],
+      "subject": "coord: log CF1 acceptance and CF2 analysis rehearsal",
+      "committer_time": "2026-09-13T16:13:43+08:00",
+      "changes_by_parent": {
+        "58c1b974cdd12a5c4e030a5dee30e041d29031dc": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "dddb0e8d74e5a8eb4ba2b326938014717da0bfae",
+      "parents": [
+        "a1588cb2ff11e04aeebb90029ce7b19ca0e48b74"
+      ],
+      "subject": "feat: preregister CF2 paired counterfactual analysis",
+      "committer_time": "2026-09-13T16:26:35+08:00",
+      "changes_by_parent": {
+        "a1588cb2ff11e04aeebb90029ce7b19ca0e48b74": [
+          "A\tresearch_log/t013/CANONICAL_COUNTERFACTUAL_ANALYSIS_CONTRACT.md",
+          "A\tresearch_log/t013/canonical_counterfactual_analysis.py",
+          "A\tresearch_log/t013/rehearse_canonical_counterfactual.py",
+          "A\tresearch_log/t013/test_canonical_counterfactual_analysis.py"
+        ]
+      },
+      "categories": [
+        "CF2 completed smoke arithmetic and replay"
+      ]
+    },
+    {
+      "commit": "27118710f1ea0a761f0b9efe2a6d51a99e45be0c",
+      "parents": [
+        "dddb0e8d74e5a8eb4ba2b326938014717da0bfae"
+      ],
+      "subject": "fix: bind CF2 reference to REPRO1 execution fields",
+      "committer_time": "2026-09-13T16:28:09+08:00",
+      "changes_by_parent": {
+        "dddb0e8d74e5a8eb4ba2b326938014717da0bfae": [
+          "M\tresearch_log/t013/CANONICAL_COUNTERFACTUAL_ANALYSIS_CONTRACT.md",
+          "A\tresearch_log/t013/canonical_counterfactual_initial_blocked_receipt.json",
+          "A\tresearch_log/t013/cf2_remote_repro1_receipt.json",
+          "M\tresearch_log/t013/rehearse_canonical_counterfactual.py"
+        ]
+      },
+      "categories": [
+        "CF2 completed smoke arithmetic and replay"
+      ]
+    },
+    {
+      "commit": "b185ee5d05f3b84d402712fb62c9a26a12fa6847",
+      "parents": [
+        "27118710f1ea0a761f0b9efe2a6d51a99e45be0c"
+      ],
+      "subject": "exp: verify CF2 paired smoke analysis and exact V0 identity",
+      "committer_time": "2026-09-13T16:31:05+08:00",
+      "changes_by_parent": {
+        "27118710f1ea0a761f0b9efe2a6d51a99e45be0c": [
+          "A\tresearch_log/t013/CANONICAL_COUNTERFACTUAL_ANALYSIS_RESULTS.md",
+          "A\tresearch_log/t013/canonical_counterfactual_delivery_sha256.json",
+          "A\tresearch_log/t013/canonical_counterfactual_receipt.json",
+          "A\tresearch_log/t013/canonical_counterfactual_tests.txt",
+          "A\tresearch_log/t013/cf2/replay_a/descriptor_samples.npz",
+          "A\tresearch_log/t013/cf2/replay_a/descriptors.json",
+          "A\tresearch_log/t013/cf2/replay_a/metrics.npz",
+          "A\tresearch_log/t013/cf2/replay_a/paired_image_draws.npy",
+          "A\tresearch_log/t013/cf2/replay_b/descriptor_samples.npz",
+          "A\tresearch_log/t013/cf2/replay_b/descriptors.json",
+          "A\tresearch_log/t013/cf2/replay_b/metrics.npz",
+          "A\tresearch_log/t013/cf2/replay_b/paired_image_draws.npy"
+        ]
+      },
+      "categories": [
+        "CF2 completed smoke arithmetic and replay"
+      ]
+    },
+    {
+      "commit": "bd547413b41c0dd5a1267507f66127de2fb1461f",
+      "parents": [
+        "b185ee5d05f3b84d402712fb62c9a26a12fa6847"
+      ],
+      "subject": "coord: deliver CF2 paired analysis rehearsal PASS",
+      "committer_time": "2026-09-13T16:31:38+08:00",
+      "changes_by_parent": {
+        "b185ee5d05f3b84d402712fb62c9a26a12fa6847": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "2a54bd115e42f40d50e837523bf6f0f6831a56fd",
+      "parents": [
+        "bd547413b41c0dd5a1267507f66127de2fb1461f"
+      ],
+      "subject": "docs: record healthy primary progress at 700 images",
+      "committer_time": "2026-09-13T16:48:51+08:00",
+      "changes_by_parent": {
+        "bd547413b41c0dd5a1267507f66127de2fb1461f": [
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "9b8e9fcf0ede42c4c8412bcbb99fc4f9caf584ea",
+      "parents": [
+        "2a54bd115e42f40d50e837523bf6f0f6831a56fd"
+      ],
+      "subject": "docs: record healthy primary progress at 710 images",
+      "committer_time": "2026-09-13T17:05:28+08:00",
+      "changes_by_parent": {
+        "2a54bd115e42f40d50e837523bf6f0f6831a56fd": [
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "afc7c6410fe60a5b65c0b46863e1f08a7a58660b",
+      "parents": [
+        "2a54bd115e42f40d50e837523bf6f0f6831a56fd"
+      ],
+      "subject": "coord: accept CF2 and assign source-only mechanism identifiability audit",
+      "committer_time": "2026-09-13T17:05:28+08:00",
+      "changes_by_parent": {
+        "2a54bd115e42f40d50e837523bf6f0f6831a56fd": [
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "65fc1208342f2fa8e3835bae20836bfcd9a64e27",
+      "parents": [
+        "9b8e9fcf0ede42c4c8412bcbb99fc4f9caf584ea",
+        "afc7c6410fe60a5b65c0b46863e1f08a7a58660b"
+      ],
+      "subject": "Merge remote-tracking branch 'origin/main'",
+      "committer_time": "2026-09-13T17:05:55+08:00",
+      "changes_by_parent": {
+        "9b8e9fcf0ede42c4c8412bcbb99fc4f9caf584ea": [
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ],
+        "afc7c6410fe60a5b65c0b46863e1f08a7a58660b": [
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "8855eba139f751ceaf576b3598c574e881a5b840",
+      "parents": [
+        "65fc1208342f2fa8e3835bae20836bfcd9a64e27"
+      ],
+      "subject": "docs: audit frozen query identifiability and prohibit slot hybrids",
+      "committer_time": "2026-09-13T17:11:03+08:00",
+      "changes_by_parent": {
+        "65fc1208342f2fa8e3835bae20836bfcd9a64e27": [
+          "A\tresearch_log/t013/MECHANISM_IDENTIFIABILITY_AUDIT.md",
+          "A\tresearch_log/t013/mech1/LICENSE",
+          "A\tresearch_log/t013/mech1/STATIC_COMMANDS.md",
+          "A\tresearch_log/t013/mech1/frozen/scripts/t013_native_detector.py",
+          "A\tresearch_log/t013/mech1/frozen/scripts/t013_native_run.py",
+          "A\tresearch_log/t013/mech1/frozen/scripts/t013_text.py",
+          "A\tresearch_log/t013/mech1/groundingdino/config/GroundingDINO_SwinT_OGC.py",
+          "A\tresearch_log/t013/mech1/groundingdino/models/GroundingDINO/bertwarper.py",
+          "A\tresearch_log/t013/mech1/groundingdino/models/GroundingDINO/fuse_modules.py",
+          "A\tresearch_log/t013/mech1/groundingdino/models/GroundingDINO/groundingdino.py",
+          "A\tresearch_log/t013/mech1/groundingdino/models/GroundingDINO/transformer.py",
+          "A\tresearch_log/t013/mech1/groundingdino/models/GroundingDINO/transformer_vanilla.py",
+          "A\tresearch_log/t013/mech1/groundingdino/models/GroundingDINO/utils.py",
+          "A\tresearch_log/t013/mech1/native_source.tar.gz",
+          "A\tresearch_log/t013/mech1/remote_source_sha256.txt",
+          "A\tresearch_log/t013/mechanism_identifiability_receipt.json"
+        ]
+      },
+      "categories": [
+        "MECH1 static source provenance"
+      ]
+    },
+    {
+      "commit": "8766e65394b740abd2362ad86a326e97e7f32f84",
+      "parents": [
+        "afc7c6410fe60a5b65c0b46863e1f08a7a58660b"
+      ],
+      "subject": "coord: log CF2 acceptance and MECH1 identifiability audit",
+      "committer_time": "2026-09-13T17:06:15+08:00",
+      "changes_by_parent": {
+        "afc7c6410fe60a5b65c0b46863e1f08a7a58660b": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "546dd93199c967bfb77198d91d3fcd3e391f7689",
+      "parents": [
+        "8855eba139f751ceaf576b3598c574e881a5b840",
+        "8766e65394b740abd2362ad86a326e97e7f32f84"
+      ],
+      "subject": "Merge remote-tracking branch 'origin/main'",
+      "committer_time": "2026-09-13T17:12:49+08:00",
+      "changes_by_parent": {
+        "8855eba139f751ceaf576b3598c574e881a5b840": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md"
+        ],
+        "8766e65394b740abd2362ad86a326e97e7f32f84": [
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md",
+          "A\tresearch_log/t013/MECHANISM_IDENTIFIABILITY_AUDIT.md",
+          "A\tresearch_log/t013/mech1/LICENSE",
+          "A\tresearch_log/t013/mech1/STATIC_COMMANDS.md",
+          "A\tresearch_log/t013/mech1/frozen/scripts/t013_native_detector.py",
+          "A\tresearch_log/t013/mech1/frozen/scripts/t013_native_run.py",
+          "A\tresearch_log/t013/mech1/frozen/scripts/t013_text.py",
+          "A\tresearch_log/t013/mech1/groundingdino/config/GroundingDINO_SwinT_OGC.py",
+          "A\tresearch_log/t013/mech1/groundingdino/models/GroundingDINO/bertwarper.py",
+          "A\tresearch_log/t013/mech1/groundingdino/models/GroundingDINO/fuse_modules.py",
+          "A\tresearch_log/t013/mech1/groundingdino/models/GroundingDINO/groundingdino.py",
+          "A\tresearch_log/t013/mech1/groundingdino/models/GroundingDINO/transformer.py",
+          "A\tresearch_log/t013/mech1/groundingdino/models/GroundingDINO/transformer_vanilla.py",
+          "A\tresearch_log/t013/mech1/groundingdino/models/GroundingDINO/utils.py",
+          "A\tresearch_log/t013/mech1/native_source.tar.gz",
+          "A\tresearch_log/t013/mech1/remote_source_sha256.txt",
+          "A\tresearch_log/t013/mechanism_identifiability_receipt.json"
+        ]
+      },
+      "categories": [
+        "MECH1 static source provenance",
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "c699e779fc23947dfab91944125fa66619cf9a4f",
+      "parents": [
+        "546dd93199c967bfb77198d91d3fcd3e391f7689"
+      ],
+      "subject": "coord: deliver MECH1 source-only query identifiability audit",
+      "committer_time": "2026-09-13T17:12:50+08:00",
+      "changes_by_parent": {
+        "546dd93199c967bfb77198d91d3fcd3e391f7689": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "625614219d97bc297da699c0126a9755a59a820d",
+      "parents": [
+        "c699e779fc23947dfab91944125fa66619cf9a4f"
+      ],
+      "subject": "docs: record healthy primary progress at 725 images",
+      "committer_time": "2026-09-13T17:29:55+08:00",
+      "changes_by_parent": {
+        "c699e779fc23947dfab91944125fa66619cf9a4f": [
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "7c58079d6cdeb1f6273d18277eb0bd5d3d9d2f6b",
+      "parents": [
+        "625614219d97bc297da699c0126a9755a59a820d"
+      ],
+      "subject": "coord: accept MECH1 and preregister proposal-selection lock",
+      "committer_time": "2026-09-13T17:35:22+08:00",
+      "changes_by_parent": {
+        "625614219d97bc297da699c0126a9755a59a820d": [
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "37823006fda01a942512330251608a4d67c74344",
+      "parents": [
+        "7c58079d6cdeb1f6273d18277eb0bd5d3d9d2f6b"
+      ],
+      "subject": "coord: log MECH1 acceptance and MECH2 selector-lock assignment",
+      "committer_time": "2026-09-13T17:35:42+08:00",
+      "changes_by_parent": {
+        "7c58079d6cdeb1f6273d18277eb0bd5d3d9d2f6b": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "f8c2f685d12c6aa8fa97bbe145a10500fc851d67",
+      "parents": [
+        "37823006fda01a942512330251608a4d67c74344"
+      ],
+      "subject": "Preregister MECH2 proposal selection lock and synthetic tests",
+      "committer_time": "2026-09-13T17:51:38+08:00",
+      "changes_by_parent": {
+        "37823006fda01a942512330251608a4d67c74344": [
+          "A\tresearch_log/t013/PROPOSAL_SELECTION_LOCK_CONTRACT.md",
+          "A\tresearch_log/t013/mech2/proposal_selection_lock.py",
+          "A\tresearch_log/t013/mech2/test_proposal_selection_lock.py"
+        ]
+      },
+      "categories": [
+        "MECH2 synthetic tensor preparation"
+      ]
+    },
+    {
+      "commit": "8ed82955b628703cede411f8732d8dbd11a4a658",
+      "parents": [
+        "f8c2f685d12c6aa8fa97bbe145a10500fc851d67"
+      ],
+      "subject": "test: validate MECH2 selector lock on A6000 CUDA and CPU",
+      "committer_time": "2026-09-13T17:54:35+08:00",
+      "changes_by_parent": {
+        "f8c2f685d12c6aa8fa97bbe145a10500fc851d67": [
+          "A\tresearch_log/t013/PROPOSAL_SELECTION_LOCK_RESULTS.md",
+          "A\tresearch_log/t013/mech2/tests_cpu.log",
+          "A\tresearch_log/t013/mech2/tests_cuda1.log",
+          "A\tresearch_log/t013/proposal_selection_lock_receipt.json"
+        ]
+      },
+      "categories": [
+        "MECH2 synthetic tensor preparation"
+      ]
+    },
+    {
+      "commit": "53abc40e583d5adfabcae89684eade035d5e9263",
+      "parents": [
+        "8ed82955b628703cede411f8732d8dbd11a4a658"
+      ],
+      "subject": "coord: deliver MECH2 GPU evidence and preserve primary handoff",
+      "committer_time": "2026-09-13T17:55:09+08:00",
+      "changes_by_parent": {
+        "8ed82955b628703cede411f8732d8dbd11a4a658": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "ed8ccfede7636441629e04f9861736dd52ff2aaa",
+      "parents": [
+        "53abc40e583d5adfabcae89684eade035d5e9263"
+      ],
+      "subject": "coord: record primary 750 image scalar health while awaiting MECH2 review",
+      "committer_time": "2026-09-13T18:11:52+08:00",
+      "changes_by_parent": {
+        "53abc40e583d5adfabcae89684eade035d5e9263": [
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "aa90a3ccd63d1bdb0c208113f6b25f0fd3711ce9",
+      "parents": [
+        "ed8ccfede7636441629e04f9861736dd52ff2aaa"
+      ],
+      "subject": "coord: record primary 760 image scalar health",
+      "committer_time": "2026-09-13T18:28:24+08:00",
+      "changes_by_parent": {
+        "ed8ccfede7636441629e04f9861736dd52ff2aaa": [
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "1f95e6dd8b931469f1c801e64e231c6ed1d02411",
+      "parents": [
+        "aa90a3ccd63d1bdb0c208113f6b25f0fd3711ce9"
+      ],
+      "subject": "coord: record primary 769 image scalar health",
+      "committer_time": "2026-09-13T18:44:54+08:00",
+      "changes_by_parent": {
+        "aa90a3ccd63d1bdb0c208113f6b25f0fd3711ce9": [
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "cd1d6866520cf5b116ea66829398cdecde925418",
+      "parents": [
+        "1f95e6dd8b931469f1c801e64e231c6ed1d02411"
+      ],
+      "subject": "coord: record primary 779 image scalar health",
+      "committer_time": "2026-09-13T19:01:24+08:00",
+      "changes_by_parent": {
+        "1f95e6dd8b931469f1c801e64e231c6ed1d02411": [
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "d24c801221c946af60a526d05f8ef6a947e2f462",
+      "parents": [
+        "cd1d6866520cf5b116ea66829398cdecde925418"
+      ],
+      "subject": "coord: record primary 788 image scalar health",
+      "committer_time": "2026-09-13T19:17:56+08:00",
+      "changes_by_parent": {
+        "cd1d6866520cf5b116ea66829398cdecde925418": [
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "c14d05f430c45d13ed95816813ddc8641bd3a4f1",
+      "parents": [
+        "d24c801221c946af60a526d05f8ef6a947e2f462"
+      ],
+      "subject": "coord: accept MECH2 and assign low-margin OPS7 watch",
+      "committer_time": "2026-09-13T19:27:09+08:00",
+      "changes_by_parent": {
+        "d24c801221c946af60a526d05f8ef6a947e2f462": [
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "f1cf362eea45460edd60e908c09006b10e853008",
+      "parents": [
+        "c14d05f430c45d13ed95816813ddc8641bd3a4f1"
+      ],
+      "subject": "coord: log MECH2 acceptance and OPS7 preservation watch",
+      "committer_time": "2026-09-13T19:27:33+08:00",
+      "changes_by_parent": {
+        "c14d05f430c45d13ed95816813ddc8641bd3a4f1": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "568b771d2c029dd526a8def830ba223ef600ea57",
+      "parents": [
+        "f1cf362eea45460edd60e908c09006b10e853008"
+      ],
+      "subject": "coord: begin OPS7 preservation watch with first fixed-rule health point",
+      "committer_time": "2026-09-13T19:35:10+08:00",
+      "changes_by_parent": {
+        "f1cf362eea45460edd60e908c09006b10e853008": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md",
+          "A\tresearch_log/t013/ops7_preservation_watch_receipt.json"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests",
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "f428b50f938062a97d60242e0a57848deb5ce6e9",
+      "parents": [
+        "568b771d2c029dd526a8def830ba223ef600ea57"
+      ],
+      "subject": "coord: continue OPS7 unchanged after first safe watch point",
+      "committer_time": "2026-09-13T19:41:46+08:00",
+      "changes_by_parent": {
+        "568b771d2c029dd526a8def830ba223ef600ea57": [
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "17920624c2a316d6389fafa0bc992b788373dc8c",
+      "parents": [
+        "f428b50f938062a97d60242e0a57848deb5ce6e9"
+      ],
+      "subject": "coord: preserve OPS7 storage risk incident and stop watch at point two",
+      "committer_time": "2026-09-13T19:53:13+08:00",
+      "changes_by_parent": {
+        "f428b50f938062a97d60242e0a57848deb5ce6e9": [
+          "A\tresearch_log/t013/OPS7_PRESERVATION_WATCH_REPORT.md",
+          "A\tresearch_log/t013/ops7_incident_point2.txt",
+          "A\tresearch_log/t013/ops7_incident_raw.json",
+          "A\tresearch_log/t013/ops7_incident_snapshot.json",
+          "M\tresearch_log/t013/ops7_preservation_watch_receipt.json"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests"
+      ]
+    },
+    {
+      "commit": "eff1c826f34b3e5c520aacffcaa655248a6bc325",
+      "parents": [
+        "17920624c2a316d6389fafa0bc992b788373dc8c"
+      ],
+      "subject": "coord: return OPS7 storage incident to research lead",
+      "committer_time": "2026-09-13T19:53:42+08:00",
+      "changes_by_parent": {
+        "17920624c2a316d6389fafa0bc992b788373dc8c": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "526294dc3f517a9f4ccd476f360d7f3644abe9b8",
+      "parents": [
+        "eff1c826f34b3e5c520aacffcaa655248a6bc325"
+      ],
+      "subject": "coord: await lead response after OPS7 storage incident",
+      "committer_time": "2026-09-13T20:10:06+08:00",
+      "changes_by_parent": {
+        "eff1c826f34b3e5c520aacffcaa655248a6bc325": [
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "638405c8299519a8d907a977d69486e4748af250",
+      "parents": [
+        "526294dc3f517a9f4ccd476f360d7f3644abe9b8"
+      ],
+      "subject": "coord: record mailbox check awaiting OPS7 incident review",
+      "committer_time": "2026-09-13T20:26:07+08:00",
+      "changes_by_parent": {
+        "526294dc3f517a9f4ccd476f360d7f3644abe9b8": [
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "61012198868dd5b11cc57d58de694f3754e20628",
+      "parents": [
+        "638405c8299519a8d907a977d69486e4748af250"
+      ],
+      "subject": "coord: accept OPS7 incident and assign bounded OPS8 storage recovery",
+      "committer_time": "2026-09-13T20:36:38+08:00",
+      "changes_by_parent": {
+        "638405c8299519a8d907a977d69486e4748af250": [
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "7aa87119566b5acfb799fac9244745cfdc7fe9ce",
+      "parents": [
+        "61012198868dd5b11cc57d58de694f3754e20628"
+      ],
+      "subject": "coord: log OPS7 incident review and OPS8 bounded recovery",
+      "committer_time": "2026-09-13T20:37:08+08:00",
+      "changes_by_parent": {
+        "61012198868dd5b11cc57d58de694f3754e20628": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "b73871167a4f9f52ced8fa5d8a97b197960f5303",
+      "parents": [
+        "7aa87119566b5acfb799fac9244745cfdc7fe9ce"
+      ],
+      "subject": "coord: reclaim two authorized COCO archives and verify restored storage gate",
+      "committer_time": "2026-09-13T20:44:44+08:00",
+      "changes_by_parent": {
+        "7aa87119566b5acfb799fac9244745cfdc7fe9ce": [
+          "A\tresearch_log/t013/OPS8_RECLAMATION_REPORT.md",
+          "A\tresearch_log/t013/ops8_post_raw.json",
+          "A\tresearch_log/t013/ops8_post_snapshot.json",
+          "A\tresearch_log/t013/ops8_pre_raw.json",
+          "A\tresearch_log/t013/ops8_pre_snapshot.json",
+          "A\tresearch_log/t013/ops8_reclamation_receipt.json"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests"
+      ]
+    },
+    {
+      "commit": "0fd6e7489b649319d2c4fa6e1199e05e0fca12d8",
+      "parents": [
+        "b73871167a4f9f52ced8fa5d8a97b197960f5303"
+      ],
+      "subject": "coord: report OPS8 recovery and schedule remaining ordinary heartbeat observations",
+      "committer_time": "2026-09-13T20:45:20+08:00",
+      "changes_by_parent": {
+        "b73871167a4f9f52ced8fa5d8a97b197960f5303": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "81feb1f95173403eb1dea2396f4cfb7325201f42",
+      "parents": [
+        "0fd6e7489b649319d2c4fa6e1199e05e0fca12d8"
+      ],
+      "subject": "coord: record recovered OPS8 receipt transfer interruption",
+      "committer_time": "2026-09-13T20:46:13+08:00",
+      "changes_by_parent": {
+        "0fd6e7489b649319d2c4fa6e1199e05e0fca12d8": [
+          "M\tresearch_log/session_log.md",
+          "M\tresearch_log/t013/ops8_reclamation_receipt.json"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "7efbe9c778e2f244099cb4c31999ffb306f3fbeb",
+      "parents": [
+        "81feb1f95173403eb1dea2396f4cfb7325201f42"
+      ],
+      "subject": "coord: record OPS8 first later safe point at 852 images",
+      "committer_time": "2026-09-13T21:02:45+08:00",
+      "changes_by_parent": {
+        "81feb1f95173403eb1dea2396f4cfb7325201f42": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md",
+          "M\tresearch_log/t013/OPS8_RECLAMATION_REPORT.md",
+          "A\tresearch_log/t013/ops8_later1_raw.json",
+          "A\tresearch_log/t013/ops8_later1_snapshot.json",
+          "M\tresearch_log/t013/ops8_reclamation_receipt.json"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests",
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "df4cd3053fdc0cf053609548f8ef6c9fcb49de0f",
+      "parents": [
+        "7efbe9c778e2f244099cb4c31999ffb306f3fbeb"
+      ],
+      "subject": "coord: preserve OPS8 final observation for end of authorized window",
+      "committer_time": "2026-09-13T21:19:16+08:00",
+      "changes_by_parent": {
+        "7efbe9c778e2f244099cb4c31999ffb306f3fbeb": [
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "7909fa4009ceda78377eddcbd0e9b764bfc9f287",
+      "parents": [
+        "df4cd3053fdc0cf053609548f8ef6c9fcb49de0f"
+      ],
+      "subject": "coord: complete OPS8 recovery window with final safe primary state",
+      "committer_time": "2026-09-13T21:35:54+08:00",
+      "changes_by_parent": {
+        "df4cd3053fdc0cf053609548f8ef6c9fcb49de0f": [
+          "M\tresearch_log/t013/OPS8_RECLAMATION_REPORT.md",
+          "A\tresearch_log/t013/ops8_later2_raw.json",
+          "A\tresearch_log/t013/ops8_later2_snapshot.json",
+          "M\tresearch_log/t013/ops8_reclamation_receipt.json"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests"
+      ]
+    },
+    {
+      "commit": "a43b77a077312e139132e38a098ba8c30af44d85",
+      "parents": [
+        "7909fa4009ceda78377eddcbd0e9b764bfc9f287"
+      ],
+      "subject": "coord: deliver OPS8 PASS and hand back completed recovery evidence",
+      "committer_time": "2026-09-13T21:36:39+08:00",
+      "changes_by_parent": {
+        "7909fa4009ceda78377eddcbd0e9b764bfc9f287": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "8dfea8e8983d93efd2f0435104406472d0fe6598",
+      "parents": [
+        "a43b77a077312e139132e38a098ba8c30af44d85"
+      ],
+      "subject": "coord: accept OPS8 and assign completion-aware OPS9 watch",
+      "committer_time": "2026-09-13T21:43:44+08:00",
+      "changes_by_parent": {
+        "a43b77a077312e139132e38a098ba8c30af44d85": [
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "fe6fef0dd2e7a7a1066eaf4af9eb1ddd20667e71",
+      "parents": [
+        "8dfea8e8983d93efd2f0435104406472d0fe6598"
+      ],
+      "subject": "coord: log OPS8 acceptance and OPS9 completion watch",
+      "committer_time": "2026-09-13T21:44:01+08:00",
+      "changes_by_parent": {
+        "8dfea8e8983d93efd2f0435104406472d0fe6598": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "d978eaf08f992a95cd92079ece009d35c462c59b",
+      "parents": [
+        "fe6fef0dd2e7a7a1066eaf4af9eb1ddd20667e71"
+      ],
+      "subject": "coord: begin OPS9 completion-aware watch at 882 images",
+      "committer_time": "2026-09-13T21:53:48+08:00",
+      "changes_by_parent": {
+        "fe6fef0dd2e7a7a1066eaf4af9eb1ddd20667e71": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md",
+          "A\tresearch_log/t013/ops9_completion_watch_receipt.json",
+          "A\tresearch_log/t013/ops9_point1_raw.json",
+          "A\tresearch_log/t013/ops9_point1_snapshot.json"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests",
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "cb2c2df18d80a7c2a03baa193d67bef7d0710862",
+      "parents": [
+        "d978eaf08f992a95cd92079ece009d35c462c59b"
+      ],
+      "subject": "coord: record OPS9 second safe point at 893 images",
+      "committer_time": "2026-09-13T22:11:40+08:00",
+      "changes_by_parent": {
+        "d978eaf08f992a95cd92079ece009d35c462c59b": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md",
+          "M\tresearch_log/t013/ops9_completion_watch_receipt.json",
+          "A\tresearch_log/t013/ops9_point2_raw.json",
+          "A\tresearch_log/t013/ops9_point2_snapshot.json"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests",
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "5174c9cddf7f661a1c768b80359f22867155aee8",
+      "parents": [
+        "cb2c2df18d80a7c2a03baa193d67bef7d0710862"
+      ],
+      "subject": "coord: record OPS9 third safe point at 903 images",
+      "committer_time": "2026-09-13T22:28:57+08:00",
+      "changes_by_parent": {
+        "cb2c2df18d80a7c2a03baa193d67bef7d0710862": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md",
+          "M\tresearch_log/t013/ops9_completion_watch_receipt.json",
+          "A\tresearch_log/t013/ops9_point3_raw.json",
+          "A\tresearch_log/t013/ops9_point3_snapshot.json"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests",
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "36822354ee03febbcc39d867e90ed4079fa5214f",
+      "parents": [
+        "5174c9cddf7f661a1c768b80359f22867155aee8"
+      ],
+      "subject": "Complete OPS9 four-point preservation watch",
+      "committer_time": "2026-09-13T22:49:32+08:00",
+      "changes_by_parent": {
+        "5174c9cddf7f661a1c768b80359f22867155aee8": [
+          "A\tresearch_log/t013/OPS9_COMPLETION_WATCH_REPORT.md",
+          "M\tresearch_log/t013/ops9_completion_watch_receipt.json",
+          "A\tresearch_log/t013/ops9_point4_raw.json",
+          "A\tresearch_log/t013/ops9_point4_snapshot.json"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests"
+      ]
+    },
+    {
+      "commit": "bfd524f9c5eee8c2d8e2f15cb7738d4a5c1f5b69",
+      "parents": [
+        "36822354ee03febbcc39d867e90ed4079fa5214f"
+      ],
+      "subject": "Report OPS9 PASS and return to research lead",
+      "committer_time": "2026-09-13T22:49:54+08:00",
+      "changes_by_parent": {
+        "36822354ee03febbcc39d867e90ed4079fa5214f": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "d8b52ade2ae0de752e681a25e183e4313bfbfc9a",
+      "parents": [
+        "bfd524f9c5eee8c2d8e2f15cb7738d4a5c1f5b69"
+      ],
+      "subject": "coord: accept OPS9 and assign terminal-transition OPS10 watch",
+      "committer_time": "2026-09-13T23:00:27+08:00",
+      "changes_by_parent": {
+        "bfd524f9c5eee8c2d8e2f15cb7738d4a5c1f5b69": [
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "af62197f9e42e688837883a3a2ba871fbc935069",
+      "parents": [
+        "d8b52ade2ae0de752e681a25e183e4313bfbfc9a"
+      ],
+      "subject": "coord: log OPS9 acceptance and OPS10 terminal watch",
+      "committer_time": "2026-09-13T23:00:50+08:00",
+      "changes_by_parent": {
+        "d8b52ade2ae0de752e681a25e183e4313bfbfc9a": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "6a0290031e0d2d0bfff767b1ccec71436111b1d6",
+      "parents": [
+        "af62197f9e42e688837883a3a2ba871fbc935069"
+      ],
+      "subject": "coord: start OPS10 terminal watch with first safe point",
+      "committer_time": "2026-09-13T23:06:52+08:00",
+      "changes_by_parent": {
+        "af62197f9e42e688837883a3a2ba871fbc935069": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md",
+          "A\tresearch_log/t013/ops10_point1_raw.json",
+          "A\tresearch_log/t013/ops10_point1_snapshot.json",
+          "A\tresearch_log/t013/ops10_terminal_watch_receipt.json"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests",
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "3f1176316bfbabe18d3c4f3cfdbe357f575a66a8",
+      "parents": [
+        "6a0290031e0d2d0bfff767b1ccec71436111b1d6"
+      ],
+      "subject": "coord: record OPS10 second safe observation",
+      "committer_time": "2026-09-13T23:23:37+08:00",
+      "changes_by_parent": {
+        "6a0290031e0d2d0bfff767b1ccec71436111b1d6": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md",
+          "A\tresearch_log/t013/ops10_point2_raw.json",
+          "A\tresearch_log/t013/ops10_point2_snapshot.json",
+          "M\tresearch_log/t013/ops10_terminal_watch_receipt.json"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests",
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "7b0ec21ba5796fbb074f4446bf31cf220e8b0c51",
+      "parents": [
+        "3f1176316bfbabe18d3c4f3cfdbe357f575a66a8"
+      ],
+      "subject": "coord: record OPS10 third safe observation",
+      "committer_time": "2026-09-13T23:40:11+08:00",
+      "changes_by_parent": {
+        "3f1176316bfbabe18d3c4f3cfdbe357f575a66a8": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md",
+          "A\tresearch_log/t013/ops10_point3_raw.json",
+          "A\tresearch_log/t013/ops10_point3_snapshot.json",
+          "M\tresearch_log/t013/ops10_terminal_watch_receipt.json"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests",
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "789a00a7f4f3b998d2ce1c1e8c66b16c272a60ff",
+      "parents": [
+        "7b0ec21ba5796fbb074f4446bf31cf220e8b0c51"
+      ],
+      "subject": "coord: complete OPS10 four-point terminal watch",
+      "committer_time": "2026-09-13T23:57:36+08:00",
+      "changes_by_parent": {
+        "7b0ec21ba5796fbb074f4446bf31cf220e8b0c51": [
+          "A\tresearch_log/t013/OPS10_TERMINAL_WATCH_REPORT.md",
+          "A\tresearch_log/t013/ops10_point4_raw.json",
+          "A\tresearch_log/t013/ops10_point4_snapshot.json",
+          "M\tresearch_log/t013/ops10_terminal_watch_receipt.json"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests"
+      ]
+    },
+    {
+      "commit": "b9854f060911bae73cc2ef39428cfa1915f0ad46",
+      "parents": [
+        "789a00a7f4f3b998d2ce1c1e8c66b16c272a60ff"
+      ],
+      "subject": "coord: report OPS10 PASS and return to research lead",
+      "committer_time": "2026-09-13T23:57:59+08:00",
+      "changes_by_parent": {
+        "789a00a7f4f3b998d2ce1c1e8c66b16c272a60ff": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "ddef8e92f70ebf204b05c431f5747af26cb69b9f",
+      "parents": [
+        "b9854f060911bae73cc2ef39428cfa1915f0ad46"
+      ],
+      "subject": "coord: record OPS10 receipt delivery connection failure",
+      "committer_time": "2026-09-13T23:58:41+08:00",
+      "changes_by_parent": {
+        "b9854f060911bae73cc2ef39428cfa1915f0ad46": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md",
+          "M\tresearch_log/t013/OPS10_TERMINAL_WATCH_REPORT.md",
+          "M\tresearch_log/t013/ops10_terminal_watch_receipt.json"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests",
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "57cdd15c2813ce72170c758780d84916a33c260b",
+      "parents": [
+        "ddef8e92f70ebf204b05c431f5747af26cb69b9f"
+      ],
+      "subject": "coord: confirm OPS10 remote receipt delivery recovery",
+      "committer_time": "2026-09-13T23:59:22+08:00",
+      "changes_by_parent": {
+        "ddef8e92f70ebf204b05c431f5747af26cb69b9f": [
+          "M\tresearch_log/session_log.md",
+          "M\tresearch_log/t013/ops10_terminal_watch_receipt.json"
+        ]
+      },
+      "categories": [
+        "OPS metadata observations, storage accounting and tests",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "d5163bf4978e6076b2fd090bbb3d0303a0e30649",
+      "parents": [
+        "57cdd15c2813ce72170c758780d84916a33c260b"
+      ],
+      "subject": "coord: record mailbox check awaiting OPS10 review",
+      "committer_time": "2026-09-14T00:15:09+08:00",
+      "changes_by_parent": {
+        "57cdd15c2813ce72170c758780d84916a33c260b": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "28a48afd84bfe57f35afea23780da0143b10145b",
+      "parents": [
+        "d5163bf4978e6076b2fd090bbb3d0303a0e30649"
+      ],
+      "subject": "coord: record unchanged mailbox after OPS10",
+      "committer_time": "2026-09-14T00:31:09+08:00",
+      "changes_by_parent": {
+        "d5163bf4978e6076b2fd090bbb3d0303a0e30649": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "0155bde95cff9831d44cfa151235623a773867a9",
+      "parents": [
+        "28a48afd84bfe57f35afea23780da0143b10145b"
+      ],
+      "subject": "coord: accept OPS10 and assign CLOSE2 completion capture",
+      "committer_time": "2026-09-14T00:46:15+08:00",
+      "changes_by_parent": {
+        "28a48afd84bfe57f35afea23780da0143b10145b": [
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "53dcd036cbf8c72df08d9faaa57c015e4282015d",
+      "parents": [
+        "0155bde95cff9831d44cfa151235623a773867a9"
+      ],
+      "subject": "coord: log OPS10 acceptance and CLOSE2 assignment",
+      "committer_time": "2026-09-14T00:46:41+08:00",
+      "changes_by_parent": {
+        "0155bde95cff9831d44cfa151235623a773867a9": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "fd6ace71b93d5e052c8a2f09e866adbe77c6afa1",
+      "parents": [
+        "53dcd036cbf8c72df08d9faaa57c015e4282015d"
+      ],
+      "subject": "coord: start CLOSE2 exact terminal capture",
+      "committer_time": "2026-09-14T00:48:02+08:00",
+      "changes_by_parent": {
+        "53dcd036cbf8c72df08d9faaa57c015e4282015d": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md",
+          "A\tresearch_log/t013/close2_point1_raw.json",
+          "A\tresearch_log/t013/close2_point1_snapshot.json",
+          "A\tresearch_log/t013/close2_terminal_capture_receipt.json"
+        ]
+      },
+      "categories": [
+        "CLOSE2/CLOSE3 terminal metadata",
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "a8f872914e8ba81720a3241cb420f9149ac06063",
+      "parents": [
+        "fd6ace71b93d5e052c8a2f09e866adbe77c6afa1"
+      ],
+      "subject": "coord: record CLOSE2 second nonterminal observation",
+      "committer_time": "2026-09-14T01:04:51+08:00",
+      "changes_by_parent": {
+        "fd6ace71b93d5e052c8a2f09e866adbe77c6afa1": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md",
+          "A\tresearch_log/t013/close2_point2_raw.json",
+          "A\tresearch_log/t013/close2_point2_snapshot.json",
+          "M\tresearch_log/t013/close2_terminal_capture_receipt.json"
+        ]
+      },
+      "categories": [
+        "CLOSE2/CLOSE3 terminal metadata",
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "385bfac42a7bbb3a9378be91a4ff642f97fa7952",
+      "parents": [
+        "a8f872914e8ba81720a3241cb420f9149ac06063"
+      ],
+      "subject": "coord: preserve CLOSE2 ambiguous process state and stop",
+      "committer_time": "2026-09-14T01:21:35+08:00",
+      "changes_by_parent": {
+        "a8f872914e8ba81720a3241cb420f9149ac06063": [
+          "A\tresearch_log/t013/CLOSE2_TERMINAL_CAPTURE_REPORT.md",
+          "A\tresearch_log/t013/close2_point3_raw.json",
+          "A\tresearch_log/t013/close2_point3_snapshot.json",
+          "M\tresearch_log/t013/close2_terminal_capture_receipt.json"
+        ]
+      },
+      "categories": [
+        "CLOSE2/CLOSE3 terminal metadata"
+      ]
+    },
+    {
+      "commit": "028ce6ff05d9c99968f40b5a328e94f899a18e5c",
+      "parents": [
+        "385bfac42a7bbb3a9378be91a4ff642f97fa7952"
+      ],
+      "subject": "coord: return CLOSE2 process ambiguity to research lead",
+      "committer_time": "2026-09-14T01:22:08+08:00",
+      "changes_by_parent": {
+        "385bfac42a7bbb3a9378be91a4ff642f97fa7952": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "1c0726fd89098dd383000f4db576d2f2ade26356",
+      "parents": [
+        "028ce6ff05d9c99968f40b5a328e94f899a18e5c"
+      ],
+      "subject": "coord: record recovered CLOSE2 receipt upload",
+      "committer_time": "2026-09-14T01:22:40+08:00",
+      "changes_by_parent": {
+        "028ce6ff05d9c99968f40b5a328e94f899a18e5c": [
+          "M\tresearch_log/session_log.md",
+          "M\tresearch_log/t013/close2_terminal_capture_receipt.json"
+        ]
+      },
+      "categories": [
+        "CLOSE2/CLOSE3 terminal metadata",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "3b1e08689ae44bdef6520bf8579494731a3c78f1",
+      "parents": [
+        "1c0726fd89098dd383000f4db576d2f2ade26356"
+      ],
+      "subject": "coord: await lead review of CLOSE2 process ambiguity",
+      "committer_time": "2026-09-14T01:38:41+08:00",
+      "changes_by_parent": {
+        "1c0726fd89098dd383000f4db576d2f2ade26356": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "40b3742e8801a1e27f2c1e8d026bbcd0b8651f73",
+      "parents": [
+        "3b1e08689ae44bdef6520bf8579494731a3c78f1"
+      ],
+      "subject": "coord: record pending CLOSE2 review mailbox check",
+      "committer_time": "2026-09-14T01:54:41+08:00",
+      "changes_by_parent": {
+        "3b1e08689ae44bdef6520bf8579494731a3c78f1": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "9c26f561ad1e022d83685379f3b66b23f34e6c90",
+      "parents": [
+        "40b3742e8801a1e27f2c1e8d026bbcd0b8651f73"
+      ],
+      "subject": "coord: record CLOSE2 mailbox check awaiting follow-up",
+      "committer_time": "2026-09-14T02:10:40+08:00",
+      "changes_by_parent": {
+        "40b3742e8801a1e27f2c1e8d026bbcd0b8651f73": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "8bc79a3809a6c452b90557d49b2edac378e42cfd",
+      "parents": [
+        "9c26f561ad1e022d83685379f3b66b23f34e6c90"
+      ],
+      "subject": "coord: record unchanged CLOSE2 mailbox",
+      "committer_time": "2026-09-14T02:26:38+08:00",
+      "changes_by_parent": {
+        "9c26f561ad1e022d83685379f3b66b23f34e6c90": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "577ebf5f521178dc0ac04aca66ab66b3a1e6e716",
+      "parents": [
+        "8bc79a3809a6c452b90557d49b2edac378e42cfd"
+      ],
+      "subject": "coord: record GitHub connection failure pending sync",
+      "committer_time": "2026-09-14T02:43:29+08:00",
+      "changes_by_parent": {
+        "8bc79a3809a6c452b90557d49b2edac378e42cfd": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "34194fd90d987b18e938e2043d1b6ece70fbb575",
+      "parents": [
+        "8bc79a3809a6c452b90557d49b2edac378e42cfd"
+      ],
+      "subject": "coord: accept CLOSE2 stop and assign CLOSE3 phase adjudication",
+      "committer_time": "2026-09-14T02:32:03+08:00",
+      "changes_by_parent": {
+        "8bc79a3809a6c452b90557d49b2edac378e42cfd": [
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "dafc0506c5e150cf21bbae2f278786969c1cda8d",
+      "parents": [
+        "34194fd90d987b18e938e2043d1b6ece70fbb575"
+      ],
+      "subject": "coord: log CLOSE2 review and CLOSE3 phase adjudication",
+      "committer_time": "2026-09-14T02:32:33+08:00",
+      "changes_by_parent": {
+        "34194fd90d987b18e938e2043d1b6ece70fbb575": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "9942a573399861ca004c00cd2a9c706afba5cf4e",
+      "parents": [
+        "577ebf5f521178dc0ac04aca66ab66b3a1e6e716",
+        "dafc0506c5e150cf21bbae2f278786969c1cda8d"
+      ],
+      "subject": "Merge remote-tracking branch 'origin/main'",
+      "committer_time": "2026-09-14T02:59:09+08:00",
+      "changes_by_parent": {
+        "577ebf5f521178dc0ac04aca66ab66b3a1e6e716": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md",
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ],
+        "dafc0506c5e150cf21bbae2f278786969c1cda8d": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "78203498f524a06210daad0ab6a655db74ac6280",
+      "parents": [
+        "9942a573399861ca004c00cd2a9c706afba5cf4e"
+      ],
+      "subject": "coord: capture CLOSE3 successful wrapper termination",
+      "committer_time": "2026-09-14T03:01:07+08:00",
+      "changes_by_parent": {
+        "9942a573399861ca004c00cd2a9c706afba5cf4e": [
+          "A\tresearch_log/t013/CLOSE3_TERMINAL_CAPTURE_REPORT.md",
+          "A\tresearch_log/t013/close3_point1_metadata.json",
+          "A\tresearch_log/t013/close3_source_receipt.json",
+          "A\tresearch_log/t013/close3_terminal_capture_receipt.json"
+        ]
+      },
+      "categories": [
+        "CLOSE2/CLOSE3 terminal metadata"
+      ]
+    },
+    {
+      "commit": "631b108bd47654fefa42509a719a5f4ed3f66ac9",
+      "parents": [
+        "78203498f524a06210daad0ab6a655db74ac6280"
+      ],
+      "subject": "coord: report CLOSE3 terminal capture to research lead",
+      "committer_time": "2026-09-14T03:01:39+08:00",
+      "changes_by_parent": {
+        "78203498f524a06210daad0ab6a655db74ac6280": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "e065b6e19d7622b49af0caa2373dbf7e7be1131d",
+      "parents": [
+        "631b108bd47654fefa42509a719a5f4ed3f66ac9"
+      ],
+      "subject": "coord: await CLOSE3 review and finalization instruction",
+      "committer_time": "2026-09-14T03:17:52+08:00",
+      "changes_by_parent": {
+        "631b108bd47654fefa42509a719a5f4ed3f66ac9": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "f985670113a9cb1bf2c8ed364eb808c40676407f",
+      "parents": [
+        "e065b6e19d7622b49af0caa2373dbf7e7be1131d"
+      ],
+      "subject": "coord: accept CLOSE3 and assign primary FIN1 integrity barrier",
+      "committer_time": "2026-09-14T03:24:06+08:00",
+      "changes_by_parent": {
+        "e065b6e19d7622b49af0caa2373dbf7e7be1131d": [
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "a60fe97c4c4f6b268b3c922efde943848fe872b7",
+      "parents": [
+        "f985670113a9cb1bf2c8ed364eb808c40676407f"
+      ],
+      "subject": "coord: log CLOSE3 acceptance and primary FIN1 assignment",
+      "committer_time": "2026-09-14T03:24:40+08:00",
+      "changes_by_parent": {
+        "f985670113a9cb1bf2c8ed364eb808c40676407f": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "8b00e1ed5b77c05193c1e052c41b547a6cc596ac",
+      "parents": [
+        "a60fe97c4c4f6b268b3c922efde943848fe872b7"
+      ],
+      "subject": "coord: verify primary FIN1 integrity and bind replay readiness",
+      "committer_time": "2026-09-14T03:36:19+08:00",
+      "changes_by_parent": {
+        "a60fe97c4c4f6b268b3c922efde943848fe872b7": [
+          "A\tresearch_log/t013/FIN1P_PRIMARY_INTEGRITY_REPORT.md",
+          "A\tresearch_log/t013/fin1p/fin1_envelope_and_barrier.json",
+          "A\tresearch_log/t013/fin1p/fin1p_exit_code.txt",
+          "A\tresearch_log/t013/fin1p/fin1p_finished.txt",
+          "A\tresearch_log/t013/fin1p/fin1p_started.txt",
+          "A\tresearch_log/t013/fin1p/fin1p_stderr.txt",
+          "A\tresearch_log/t013/fin1p/fin1p_stdout.txt",
+          "A\tresearch_log/t013/fin1p/primary_completion_receipt.json",
+          "A\tresearch_log/t013/fin1p_execution_receipt.json"
+        ]
+      },
+      "categories": [
+        "FIN1P single primary opaque integrity check"
+      ]
+    },
+    {
+      "commit": "2e997bc148e1695b919e61cec62acfa11a91ea41",
+      "parents": [
+        "8b00e1ed5b77c05193c1e052c41b547a6cc596ac"
+      ],
+      "subject": "coord: deliver FIN1P integrity PASS to research lead",
+      "committer_time": "2026-09-14T03:36:55+08:00",
+      "changes_by_parent": {
+        "8b00e1ed5b77c05193c1e052c41b547a6cc596ac": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "1c903751b233db16bcb5f4102411ce421dc60bc4",
+      "parents": [
+        "2e997bc148e1695b919e61cec62acfa11a91ea41"
+      ],
+      "subject": "coord: record mailbox check after FIN1P completion",
+      "committer_time": "2026-09-14T03:55:46+08:00",
+      "changes_by_parent": {
+        "2e997bc148e1695b919e61cec62acfa11a91ea41": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "0c71a8a49381c1068c615f80cad7630a96e78d9b",
+      "parents": [
+        "1c903751b233db16bcb5f4102411ce421dc60bc4"
+      ],
+      "subject": "coord: log unchanged FIN1P mailbox state",
+      "committer_time": "2026-09-14T04:11:43+08:00",
+      "changes_by_parent": {
+        "1c903751b233db16bcb5f4102411ce421dc60bc4": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "14140eef19b4b9e28ade9432572e2a241fd22e24",
+      "parents": [
+        "0c71a8a49381c1068c615f80cad7630a96e78d9b"
+      ],
+      "subject": "coord: record pending FIN1P review heartbeat",
+      "committer_time": "2026-09-14T04:27:50+08:00",
+      "changes_by_parent": {
+        "0c71a8a49381c1068c615f80cad7630a96e78d9b": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "d4c91abaefbb04c5ce70780f89f94d50c40e8eb0",
+      "parents": [
+        "14140eef19b4b9e28ade9432572e2a241fd22e24"
+      ],
+      "subject": "coord: accept FIN1P and launch bounded full replay",
+      "committer_time": "2026-09-14T04:28:18+08:00",
+      "changes_by_parent": {
+        "14140eef19b4b9e28ade9432572e2a241fd22e24": [
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "3b0a4749dd746fefc88b28d0b7f1700c2b4e7055",
+      "parents": [
+        "d4c91abaefbb04c5ce70780f89f94d50c40e8eb0"
+      ],
+      "subject": "coord: log FIN1P acceptance and bounded replay launch",
+      "committer_time": "2026-09-14T04:28:34+08:00",
+      "changes_by_parent": {
+        "d4c91abaefbb04c5ce70780f89f94d50c40e8eb0": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "688f36be6a845d8cf93531fb570268c9fbc2c1e9",
+      "parents": [
+        "3b0a4749dd746fefc88b28d0b7f1700c2b4e7055"
+      ],
+      "subject": "coord: launch single frozen primary replay and record initial state",
+      "committer_time": "2026-09-14T04:45:58+08:00",
+      "changes_by_parent": {
+        "3b0a4749dd746fefc88b28d0b7f1700c2b4e7055": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md",
+          "A\tresearch_log/t013/replay1a/execution_receipt.json",
+          "A\tresearch_log/t013/replay1a/initial_process.json",
+          "A\tresearch_log/t013/replay1a/launch.py",
+          "A\tresearch_log/t013/replay1a/launch_receipt.json",
+          "A\tresearch_log/t013/replay1a/observe.py"
+        ]
+      },
+      "categories": [
+        "REPLAY1A/B one primary replay and observations",
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "244f44a8c3d5b1300a3540ab90caf1545edb9885",
+      "parents": [
+        "688f36be6a845d8cf93531fb570268c9fbc2c1e9"
+      ],
+      "subject": "coord: record first scheduled replay execution observation",
+      "committer_time": "2026-09-14T05:02:38+08:00",
+      "changes_by_parent": {
+        "688f36be6a845d8cf93531fb570268c9fbc2c1e9": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md",
+          "M\tresearch_log/t013/replay1a/execution_receipt.json",
+          "A\tresearch_log/t013/replay1a/observation1.json"
+        ]
+      },
+      "categories": [
+        "REPLAY1A/B one primary replay and observations",
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "0a8a4a25ebea8840f0bf964902bce988dd51aa95",
+      "parents": [
+        "244f44a8c3d5b1300a3540ab90caf1545edb9885"
+      ],
+      "subject": "coord: confirm single replay remains active under original window",
+      "committer_time": "2026-09-14T05:04:16+08:00",
+      "changes_by_parent": {
+        "244f44a8c3d5b1300a3540ab90caf1545edb9885": [
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "9e5afd85e360d37e0e316c6f63d41c0451e419c9",
+      "parents": [
+        "0a8a4a25ebea8840f0bf964902bce988dd51aa95"
+      ],
+      "subject": "coord: log healthy first replay observation and unchanged barrier",
+      "committer_time": "2026-09-14T05:04:34+08:00",
+      "changes_by_parent": {
+        "0a8a4a25ebea8840f0bf964902bce988dd51aa95": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "372663ae1d00ae06d5d766f1e48de32f5d123ad9",
+      "parents": [
+        "9e5afd85e360d37e0e316c6f63d41c0451e419c9"
+      ],
+      "subject": "coord: record second replay observation under unchanged window",
+      "committer_time": "2026-09-14T05:19:15+08:00",
+      "changes_by_parent": {
+        "9e5afd85e360d37e0e316c6f63d41c0451e419c9": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md",
+          "M\tresearch_log/t013/replay1a/execution_receipt.json",
+          "A\tresearch_log/t013/replay1a/observation2.json"
+        ]
+      },
+      "categories": [
+        "REPLAY1A/B one primary replay and observations",
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "4a78db28fae8aed9f6a01f60b373fa44cad3b594",
+      "parents": [
+        "372663ae1d00ae06d5d766f1e48de32f5d123ad9"
+      ],
+      "subject": "coord: close replay first-hour window with healthy running handoff",
+      "committer_time": "2026-09-14T05:36:06+08:00",
+      "changes_by_parent": {
+        "372663ae1d00ae06d5d766f1e48de32f5d123ad9": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md",
+          "A\tresearch_log/t013/REPLAY1A_EXECUTION_REPORT.md",
+          "M\tresearch_log/t013/replay1a/execution_receipt.json",
+          "A\tresearch_log/t013/replay1a/observation3.json"
+        ]
+      },
+      "categories": [
+        "REPLAY1A/B one primary replay and observations",
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "bf2497e561900fb5aa4d30d7c481418bf45097a3",
+      "parents": [
+        "4a78db28fae8aed9f6a01f60b373fa44cad3b594"
+      ],
+      "subject": "coord: deliver replay running handoff to research lead",
+      "committer_time": "2026-09-14T05:36:28+08:00",
+      "changes_by_parent": {
+        "4a78db28fae8aed9f6a01f60b373fa44cad3b594": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/session_log.md",
+          "M\tresearch_log/t013/REPLAY1A_EXECUTION_REPORT.md"
+        ]
+      },
+      "categories": [
+        "REPLAY1A/B one primary replay and observations",
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "e54c6271fcb4a156a941f3a2ed51edb1c89c2f1b",
+      "parents": [
+        "bf2497e561900fb5aa4d30d7c481418bf45097a3"
+      ],
+      "subject": "coord: record mailbox check after replay running handoff",
+      "committer_time": "2026-09-14T05:52:50+08:00",
+      "changes_by_parent": {
+        "bf2497e561900fb5aa4d30d7c481418bf45097a3": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "13a221663bf21d5a474deb52cea79d2a12b9ada9",
+      "parents": [
+        "e54c6271fcb4a156a941f3a2ed51edb1c89c2f1b"
+      ],
+      "subject": "coord: accept replay handoff and assign terminal continuation watch",
+      "committer_time": "2026-09-14T05:57:14+08:00",
+      "changes_by_parent": {
+        "e54c6271fcb4a156a941f3a2ed51edb1c89c2f1b": [
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "209d252b417ca04e032e5c8c2cc2dcd1f38a7a5f",
+      "parents": [
+        "13a221663bf21d5a474deb52cea79d2a12b9ada9"
+      ],
+      "subject": "coord: log replay running handoff and continuation watch",
+      "committer_time": "2026-09-14T05:57:36+08:00",
+      "changes_by_parent": {
+        "13a221663bf21d5a474deb52cea79d2a12b9ada9": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "d55b61e96b9ad49657135b66644645ff0b78785b",
+      "parents": [
+        "209d252b417ca04e032e5c8c2cc2dcd1f38a7a5f"
+      ],
+      "subject": "coord: begin authorized replay terminal observation window",
+      "committer_time": "2026-09-14T06:09:34+08:00",
+      "changes_by_parent": {
+        "209d252b417ca04e032e5c8c2cc2dcd1f38a7a5f": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md",
+          "A\tresearch_log/t013/replay1b/execution_receipt.json",
+          "A\tresearch_log/t013/replay1b/observation1.json"
+        ]
+      },
+      "categories": [
+        "REPLAY1A/B one primary replay and observations",
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "eb90ff9494eb34231668cf00d83d3ac3d9bd74da",
+      "parents": [
+        "d55b61e96b9ad49657135b66644645ff0b78785b"
+      ],
+      "subject": "coord: capture clean frozen replay termination awaiting comparison",
+      "committer_time": "2026-09-14T06:26:37+08:00",
+      "changes_by_parent": {
+        "d55b61e96b9ad49657135b66644645ff0b78785b": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md",
+          "A\tresearch_log/t013/REPLAY1B_TERMINAL_REPORT.md",
+          "M\tresearch_log/t013/replay1b/execution_receipt.json",
+          "A\tresearch_log/t013/replay1b/observation2.json"
+        ]
+      },
+      "categories": [
+        "REPLAY1A/B one primary replay and observations",
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "b49a73136342c9657ad21f2f1f6c9e98df44febe",
+      "parents": [
+        "eb90ff9494eb34231668cf00d83d3ac3d9bd74da"
+      ],
+      "subject": "coord: deliver clean replay completion to research lead",
+      "committer_time": "2026-09-14T06:26:56+08:00",
+      "changes_by_parent": {
+        "eb90ff9494eb34231668cf00d83d3ac3d9bd74da": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/session_log.md",
+          "M\tresearch_log/t013/REPLAY1B_TERMINAL_REPORT.md"
+        ]
+      },
+      "categories": [
+        "REPLAY1A/B one primary replay and observations",
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "5d4b96b579ce4348963ed0819f1ce7a7c8647ac8",
+      "parents": [
+        "b49a73136342c9657ad21f2f1f6c9e98df44febe"
+      ],
+      "subject": "coord: record mailbox check after clean replay completion",
+      "committer_time": "2026-09-14T06:43:19+08:00",
+      "changes_by_parent": {
+        "b49a73136342c9657ad21f2f1f6c9e98df44febe": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "ebc3a8b08d19bfbac9a92f3dcb00f5c9bc6faff2",
+      "parents": [
+        "5d4b96b579ce4348963ed0819f1ce7a7c8647ac8"
+      ],
+      "subject": "coord: record pending replay comparison mailbox check",
+      "committer_time": "2026-09-14T06:59:25+08:00",
+      "changes_by_parent": {
+        "5d4b96b579ce4348963ed0819f1ce7a7c8647ac8": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "1ae41f3b795d50345ed2b35af808998d1aa2e82b",
+      "parents": [
+        "ebc3a8b08d19bfbac9a92f3dcb00f5c9bc6faff2"
+      ],
+      "subject": "coord: accept clean replay completion and assign parity comparator",
+      "committer_time": "2026-09-14T07:08:09+08:00",
+      "changes_by_parent": {
+        "ebc3a8b08d19bfbac9a92f3dcb00f5c9bc6faff2": [
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "fa6973856b7e9a90e8309f2bc54c609b15d65525",
+      "parents": [
+        "1ae41f3b795d50345ed2b35af808998d1aa2e82b"
+      ],
+      "subject": "coord: log clean replay completion and parity adjudication",
+      "committer_time": "2026-09-14T07:08:35+08:00",
+      "changes_by_parent": {
+        "1ae41f3b795d50345ed2b35af808998d1aa2e82b": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "60c99b1051382bed8df6101389905277bb07d80f",
+      "parents": [
+        "fa6973856b7e9a90e8309f2bc54c609b15d65525"
+      ],
+      "subject": "coord: verify exact primary replay parity and finalize CLOSE1 readiness",
+      "committer_time": "2026-09-14T07:17:53+08:00",
+      "changes_by_parent": {
+        "fa6973856b7e9a90e8309f2bc54c609b15d65525": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md",
+          "A\tresearch_log/t013/REPLAY1C_PARITY_REPORT.md",
+          "A\tresearch_log/t013/replay1c/command.sh",
+          "A\tresearch_log/t013/replay1c/comparator_exit_code.txt",
+          "A\tresearch_log/t013/replay1c/comparator_finished.txt",
+          "A\tresearch_log/t013/replay1c/comparator_started.txt",
+          "A\tresearch_log/t013/replay1c/comparator_stderr.txt",
+          "A\tresearch_log/t013/replay1c/comparator_stdout.txt",
+          "A\tresearch_log/t013/replay1c/comparison_receipt.json",
+          "A\tresearch_log/t013/replay1c/execution_output.txt",
+          "A\tresearch_log/t013/replay1c/execution_receipt.json",
+          "A\tresearch_log/t013/replay1c/preflight.json",
+          "A\tresearch_log/t013/replay1c/preflight.py",
+          "A\tresearch_log/t013/replay1c/replay_envelope_and_barrier.json"
+        ]
+      },
+      "categories": [
+        "REPLAY1C single decoded comparison and authorization",
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "68b432f1d1183ba06853595aba046aa1479025ab",
+      "parents": [
+        "60c99b1051382bed8df6101389905277bb07d80f"
+      ],
+      "subject": "coord: deliver exact parity readiness to research lead",
+      "committer_time": "2026-09-14T07:18:14+08:00",
+      "changes_by_parent": {
+        "60c99b1051382bed8df6101389905277bb07d80f": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/session_log.md",
+          "M\tresearch_log/t013/REPLAY1C_PARITY_REPORT.md"
+        ]
+      },
+      "categories": [
+        "REPLAY1C single decoded comparison and authorization",
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "8be991f16740cc96731635cd6a7b7467ab5f87a7",
+      "parents": [
+        "68b432f1d1183ba06853595aba046aa1479025ab"
+      ],
+      "subject": "coord: record mailbox check after exact replay parity",
+      "committer_time": "2026-09-14T07:35:01+08:00",
+      "changes_by_parent": {
+        "68b432f1d1183ba06853595aba046aa1479025ab": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "94582bd58d10f92251234bb8db057fe2c736585c",
+      "parents": [
+        "8be991f16740cc96731635cd6a7b7467ab5f87a7"
+      ],
+      "subject": "coord: accept replay parity and authorize full primary disclosure",
+      "committer_time": "2026-09-14T07:39:16+08:00",
+      "changes_by_parent": {
+        "8be991f16740cc96731635cd6a7b7467ab5f87a7": [
+          "M\tcoordination/CHATGPT_TO_CODEX.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "2df5023d1ec4b953bcd5e569701fbdad61808c85",
+      "parents": [
+        "94582bd58d10f92251234bb8db057fe2c736585c"
+      ],
+      "subject": "coord: log replay parity acceptance and DEC1A disclosure",
+      "committer_time": "2026-09-14T07:39:54+08:00",
+      "changes_by_parent": {
+        "94582bd58d10f92251234bb8db057fe2c736585c": [
+          "M\tcoordination/CHATGPT_REVIEW_LOG.md"
+        ]
+      },
+      "categories": [
+        "coordination"
+      ]
+    },
+    {
+      "commit": "cfe24727a4c2205a966c2f31c8b54e5b74da80b6",
+      "parents": [
+        "2df5023d1ec4b953bcd5e569701fbdad61808c85"
+      ],
+      "subject": "coord: disclose complete frozen primary results under DEC1A",
+      "committer_time": "2026-09-14T07:53:36+08:00",
+      "changes_by_parent": {
+        "2df5023d1ec4b953bcd5e569701fbdad61808c85": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/REMOTE.md",
+          "M\tresearch_log/project_state.md",
+          "M\tresearch_log/session_log.md",
+          "A\tresearch_log/t013/DEC1A_PRIMARY_SCIENTIFIC_DISCLOSURE.md",
+          "A\tresearch_log/t013/dec1a/build_disclosure.py",
+          "A\tresearch_log/t013/dec1a/canonical_results.json",
+          "A\tresearch_log/t013/dec1a/execution_receipt.json",
+          "A\tresearch_log/t013/dec1a/output_identifiers.txt",
+          "A\tresearch_log/t013/dec1a/primary_scientific_disclosure.json",
+          "A\tresearch_log/t013/dec1a/validation.json"
+        ]
+      },
+      "categories": [
+        "DEC1A authorized disclosure",
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "0a6b5158265b918f8e5d3ca1eaba1968e5abe075",
+      "parents": [
+        "cfe24727a4c2205a966c2f31c8b54e5b74da80b6"
+      ],
+      "subject": "coord: deliver complete primary disclosure to research lead",
+      "committer_time": "2026-09-14T07:53:58+08:00",
+      "changes_by_parent": {
+        "cfe24727a4c2205a966c2f31c8b54e5b74da80b6": [
+          "M\tcoordination/CODEX_TO_CHATGPT.md",
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "coordination",
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "5cc83e993712ec892ebbb310ecb421edcb301987",
+      "parents": [
+        "0a6b5158265b918f8e5d3ca1eaba1968e5abe075"
+      ],
+      "subject": "coord: record mailbox check after complete primary disclosure",
+      "committer_time": "2026-09-14T08:10:22+08:00",
+      "changes_by_parent": {
+        "0a6b5158265b918f8e5d3ca1eaba1968e5abe075": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "a79aca45e6b4d370ed7925eadf8c6afb290d4bef",
+      "parents": [
+        "5cc83e993712ec892ebbb310ecb421edcb301987"
+      ],
+      "subject": "coord: log pending primary disclosure review heartbeat",
+      "committer_time": "2026-09-14T08:26:23+08:00",
+      "changes_by_parent": {
+        "5cc83e993712ec892ebbb310ecb421edcb301987": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    },
+    {
+      "commit": "745efb43d8640f8ac3958bb733d0df44c51c87ff",
+      "parents": [
+        "a79aca45e6b4d370ed7925eadf8c6afb290d4bef"
+      ],
+      "subject": "coord: record unchanged DEC1A review mailbox",
+      "committer_time": "2026-09-14T08:42:23+08:00",
+      "changes_by_parent": {
+        "a79aca45e6b4d370ed7925eadf8c6afb290d4bef": [
+          "M\tresearch_log/session_log.md"
+        ]
+      },
+      "categories": [
+        "project operational handoff"
+      ]
+    }
+  ],
+  "changed_path_count": 186,
+  "classified_paths": [
+    {
+      "path": "coordination/CHATGPT_REVIEW_LOG.md",
+      "category": "coordination"
+    },
+    {
+      "path": "coordination/CHATGPT_TO_CODEX.md",
+      "category": "coordination"
+    },
+    {
+      "path": "coordination/CODEX_TO_CHATGPT.md",
+      "category": "coordination"
+    },
+    {
+      "path": "research_log/REMOTE.md",
+      "category": "project operational handoff"
+    },
+    {
+      "path": "research_log/project_state.md",
+      "category": "project operational handoff"
+    },
+    {
+      "path": "research_log/session_log.md",
+      "category": "project operational handoff"
+    },
+    {
+      "path": "research_log/t013/CANONICAL_COUNTERFACTUAL_ANALYSIS_CONTRACT.md",
+      "category": "CF2 completed smoke arithmetic and replay"
+    },
+    {
+      "path": "research_log/t013/CANONICAL_COUNTERFACTUAL_ANALYSIS_RESULTS.md",
+      "category": "CF2 completed smoke arithmetic and replay"
+    },
+    {
+      "path": "research_log/t013/CANONICAL_TOPK_COUNTERFACTUAL.md",
+      "category": "CF1 completed smoke selection"
+    },
+    {
+      "path": "research_log/t013/CANONICAL_TOPK_RESULTS.md",
+      "category": "CF1 completed smoke selection"
+    },
+    {
+      "path": "research_log/t013/CLOSE2_TERMINAL_CAPTURE_REPORT.md",
+      "category": "CLOSE2/CLOSE3 terminal metadata"
+    },
+    {
+      "path": "research_log/t013/CLOSE3_TERMINAL_CAPTURE_REPORT.md",
+      "category": "CLOSE2/CLOSE3 terminal metadata"
+    },
+    {
+      "path": "research_log/t013/DEC1A_PRIMARY_SCIENTIFIC_DISCLOSURE.md",
+      "category": "DEC1A authorized disclosure"
+    },
+    {
+      "path": "research_log/t013/FIN1P_PRIMARY_INTEGRITY_REPORT.md",
+      "category": "FIN1P single primary opaque integrity check"
+    },
+    {
+      "path": "research_log/t013/FINALIZATION_BARRIER.md",
+      "category": "CLOSE1 metadata barrier and smoke fixtures"
+    },
+    {
+      "path": "research_log/t013/GATE4_PREOUTCOME_HISTORY_AUDIT.md",
+      "category": "G4A1 accepted history audit"
+    },
+    {
+      "path": "research_log/t013/MECHANISM_IDENTIFIABILITY_AUDIT.md",
+      "category": "MECH1 static source provenance"
+    },
+    {
+      "path": "research_log/t013/OPS10_TERMINAL_WATCH_REPORT.md",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/OPS7_PRESERVATION_WATCH_REPORT.md",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/OPS8_RECLAMATION_REPORT.md",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/OPS9_COMPLETION_WATCH_REPORT.md",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/PRIMARY_INCIDENT_SNAPSHOT.md",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/PRIMARY_PROJECT_STORAGE_ATTRIBUTION.md",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/PRIMARY_STORAGE_ATTRIBUTION.md",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/PRIMARY_SURVIVAL_GUARD.md",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/PRIMARY_SURVIVAL_WATCH.md",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/PROPOSAL_SELECTION_LOCK_CONTRACT.md",
+      "category": "MECH2 synthetic tensor preparation"
+    },
+    {
+      "path": "research_log/t013/PROPOSAL_SELECTION_LOCK_RESULTS.md",
+      "category": "MECH2 synthetic tensor preparation"
+    },
+    {
+      "path": "research_log/t013/REPLAY1A_EXECUTION_REPORT.md",
+      "category": "REPLAY1A/B one primary replay and observations"
+    },
+    {
+      "path": "research_log/t013/REPLAY1B_TERMINAL_REPORT.md",
+      "category": "REPLAY1A/B one primary replay and observations"
+    },
+    {
+      "path": "research_log/t013/REPLAY1C_PARITY_REPORT.md",
+      "category": "REPLAY1C single decoded comparison and authorization"
+    },
+    {
+      "path": "research_log/t013/canonical_counterfactual_analysis.py",
+      "category": "CF2 completed smoke arithmetic and replay"
+    },
+    {
+      "path": "research_log/t013/canonical_counterfactual_delivery_sha256.json",
+      "category": "CF2 completed smoke arithmetic and replay"
+    },
+    {
+      "path": "research_log/t013/canonical_counterfactual_initial_blocked_receipt.json",
+      "category": "CF2 completed smoke arithmetic and replay"
+    },
+    {
+      "path": "research_log/t013/canonical_counterfactual_receipt.json",
+      "category": "CF2 completed smoke arithmetic and replay"
+    },
+    {
+      "path": "research_log/t013/canonical_counterfactual_tests.txt",
+      "category": "CF2 completed smoke arithmetic and replay"
+    },
+    {
+      "path": "research_log/t013/canonical_topk_counterfactual.py",
+      "category": "CF1 completed smoke selection"
+    },
+    {
+      "path": "research_log/t013/canonical_topk_receipt.json",
+      "category": "CF1 completed smoke selection"
+    },
+    {
+      "path": "research_log/t013/canonical_topk_tests.txt",
+      "category": "CF1 completed smoke selection"
+    },
+    {
+      "path": "research_log/t013/cf2/replay_a/descriptor_samples.npz",
+      "category": "CF2 completed smoke arithmetic and replay"
+    },
+    {
+      "path": "research_log/t013/cf2/replay_a/descriptors.json",
+      "category": "CF2 completed smoke arithmetic and replay"
+    },
+    {
+      "path": "research_log/t013/cf2/replay_a/metrics.npz",
+      "category": "CF2 completed smoke arithmetic and replay"
+    },
+    {
+      "path": "research_log/t013/cf2/replay_a/paired_image_draws.npy",
+      "category": "CF2 completed smoke arithmetic and replay"
+    },
+    {
+      "path": "research_log/t013/cf2/replay_b/descriptor_samples.npz",
+      "category": "CF2 completed smoke arithmetic and replay"
+    },
+    {
+      "path": "research_log/t013/cf2/replay_b/descriptors.json",
+      "category": "CF2 completed smoke arithmetic and replay"
+    },
+    {
+      "path": "research_log/t013/cf2/replay_b/metrics.npz",
+      "category": "CF2 completed smoke arithmetic and replay"
+    },
+    {
+      "path": "research_log/t013/cf2/replay_b/paired_image_draws.npy",
+      "category": "CF2 completed smoke arithmetic and replay"
+    },
+    {
+      "path": "research_log/t013/cf2_remote_repro1_receipt.json",
+      "category": "CF2 completed smoke arithmetic and replay"
+    },
+    {
+      "path": "research_log/t013/close1/mutated_smoke_replay_receipt.json",
+      "category": "CLOSE1 metadata barrier and smoke fixtures"
+    },
+    {
+      "path": "research_log/t013/close1/smoke_rehearsal_envelopes.json",
+      "category": "CLOSE1 metadata barrier and smoke fixtures"
+    },
+    {
+      "path": "research_log/t013/close2_point1_raw.json",
+      "category": "CLOSE2/CLOSE3 terminal metadata"
+    },
+    {
+      "path": "research_log/t013/close2_point1_snapshot.json",
+      "category": "CLOSE2/CLOSE3 terminal metadata"
+    },
+    {
+      "path": "research_log/t013/close2_point2_raw.json",
+      "category": "CLOSE2/CLOSE3 terminal metadata"
+    },
+    {
+      "path": "research_log/t013/close2_point2_snapshot.json",
+      "category": "CLOSE2/CLOSE3 terminal metadata"
+    },
+    {
+      "path": "research_log/t013/close2_point3_raw.json",
+      "category": "CLOSE2/CLOSE3 terminal metadata"
+    },
+    {
+      "path": "research_log/t013/close2_point3_snapshot.json",
+      "category": "CLOSE2/CLOSE3 terminal metadata"
+    },
+    {
+      "path": "research_log/t013/close2_terminal_capture_receipt.json",
+      "category": "CLOSE2/CLOSE3 terminal metadata"
+    },
+    {
+      "path": "research_log/t013/close3_point1_metadata.json",
+      "category": "CLOSE2/CLOSE3 terminal metadata"
+    },
+    {
+      "path": "research_log/t013/close3_source_receipt.json",
+      "category": "CLOSE2/CLOSE3 terminal metadata"
+    },
+    {
+      "path": "research_log/t013/close3_terminal_capture_receipt.json",
+      "category": "CLOSE2/CLOSE3 terminal metadata"
+    },
+    {
+      "path": "research_log/t013/collect_primary_incident_metadata.py",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/dec1a/build_disclosure.py",
+      "category": "DEC1A authorized disclosure"
+    },
+    {
+      "path": "research_log/t013/dec1a/canonical_results.json",
+      "category": "DEC1A authorized disclosure"
+    },
+    {
+      "path": "research_log/t013/dec1a/execution_receipt.json",
+      "category": "DEC1A authorized disclosure"
+    },
+    {
+      "path": "research_log/t013/dec1a/output_identifiers.txt",
+      "category": "DEC1A authorized disclosure"
+    },
+    {
+      "path": "research_log/t013/dec1a/primary_scientific_disclosure.json",
+      "category": "DEC1A authorized disclosure"
+    },
+    {
+      "path": "research_log/t013/dec1a/validation.json",
+      "category": "DEC1A authorized disclosure"
+    },
+    {
+      "path": "research_log/t013/fin1p/fin1_envelope_and_barrier.json",
+      "category": "FIN1P single primary opaque integrity check"
+    },
+    {
+      "path": "research_log/t013/fin1p/fin1p_exit_code.txt",
+      "category": "FIN1P single primary opaque integrity check"
+    },
+    {
+      "path": "research_log/t013/fin1p/fin1p_finished.txt",
+      "category": "FIN1P single primary opaque integrity check"
+    },
+    {
+      "path": "research_log/t013/fin1p/fin1p_started.txt",
+      "category": "FIN1P single primary opaque integrity check"
+    },
+    {
+      "path": "research_log/t013/fin1p/fin1p_stderr.txt",
+      "category": "FIN1P single primary opaque integrity check"
+    },
+    {
+      "path": "research_log/t013/fin1p/fin1p_stdout.txt",
+      "category": "FIN1P single primary opaque integrity check"
+    },
+    {
+      "path": "research_log/t013/fin1p/primary_completion_receipt.json",
+      "category": "FIN1P single primary opaque integrity check"
+    },
+    {
+      "path": "research_log/t013/fin1p_execution_receipt.json",
+      "category": "FIN1P single primary opaque integrity check"
+    },
+    {
+      "path": "research_log/t013/finalization_barrier.py",
+      "category": "CLOSE1 metadata barrier and smoke fixtures"
+    },
+    {
+      "path": "research_log/t013/finalization_barrier_receipt.json",
+      "category": "CLOSE1 metadata barrier and smoke fixtures"
+    },
+    {
+      "path": "research_log/t013/gate4_preoutcome_history_audit.py",
+      "category": "G4A1 accepted history audit"
+    },
+    {
+      "path": "research_log/t013/gate4_preoutcome_history_initial_receipt.json",
+      "category": "G4A1 accepted history audit"
+    },
+    {
+      "path": "research_log/t013/gate4_preoutcome_history_receipt.json",
+      "category": "G4A1 accepted history audit"
+    },
+    {
+      "path": "research_log/t013/mech1/LICENSE",
+      "category": "MECH1 static source provenance"
+    },
+    {
+      "path": "research_log/t013/mech1/STATIC_COMMANDS.md",
+      "category": "MECH1 static source provenance"
+    },
+    {
+      "path": "research_log/t013/mech1/frozen/scripts/t013_native_detector.py",
+      "category": "MECH1 static source provenance"
+    },
+    {
+      "path": "research_log/t013/mech1/frozen/scripts/t013_native_run.py",
+      "category": "MECH1 static source provenance"
+    },
+    {
+      "path": "research_log/t013/mech1/frozen/scripts/t013_text.py",
+      "category": "MECH1 static source provenance"
+    },
+    {
+      "path": "research_log/t013/mech1/groundingdino/config/GroundingDINO_SwinT_OGC.py",
+      "category": "MECH1 static source provenance"
+    },
+    {
+      "path": "research_log/t013/mech1/groundingdino/models/GroundingDINO/bertwarper.py",
+      "category": "MECH1 static source provenance"
+    },
+    {
+      "path": "research_log/t013/mech1/groundingdino/models/GroundingDINO/fuse_modules.py",
+      "category": "MECH1 static source provenance"
+    },
+    {
+      "path": "research_log/t013/mech1/groundingdino/models/GroundingDINO/groundingdino.py",
+      "category": "MECH1 static source provenance"
+    },
+    {
+      "path": "research_log/t013/mech1/groundingdino/models/GroundingDINO/transformer.py",
+      "category": "MECH1 static source provenance"
+    },
+    {
+      "path": "research_log/t013/mech1/groundingdino/models/GroundingDINO/transformer_vanilla.py",
+      "category": "MECH1 static source provenance"
+    },
+    {
+      "path": "research_log/t013/mech1/groundingdino/models/GroundingDINO/utils.py",
+      "category": "MECH1 static source provenance"
+    },
+    {
+      "path": "research_log/t013/mech1/native_source.tar.gz",
+      "category": "MECH1 static source provenance"
+    },
+    {
+      "path": "research_log/t013/mech1/remote_source_sha256.txt",
+      "category": "MECH1 static source provenance"
+    },
+    {
+      "path": "research_log/t013/mech2/proposal_selection_lock.py",
+      "category": "MECH2 synthetic tensor preparation"
+    },
+    {
+      "path": "research_log/t013/mech2/test_proposal_selection_lock.py",
+      "category": "MECH2 synthetic tensor preparation"
+    },
+    {
+      "path": "research_log/t013/mech2/tests_cpu.log",
+      "category": "MECH2 synthetic tensor preparation"
+    },
+    {
+      "path": "research_log/t013/mech2/tests_cuda1.log",
+      "category": "MECH2 synthetic tensor preparation"
+    },
+    {
+      "path": "research_log/t013/mechanism_identifiability_receipt.json",
+      "category": "MECH1 static source provenance"
+    },
+    {
+      "path": "research_log/t013/ops10_point1_raw.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops10_point1_snapshot.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops10_point2_raw.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops10_point2_snapshot.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops10_point3_raw.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops10_point3_snapshot.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops10_point4_raw.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops10_point4_snapshot.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops10_terminal_watch_receipt.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops7_incident_point2.txt",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops7_incident_raw.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops7_incident_snapshot.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops7_preservation_watch_receipt.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops8_later1_raw.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops8_later1_snapshot.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops8_later2_raw.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops8_later2_snapshot.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops8_post_raw.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops8_post_snapshot.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops8_pre_raw.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops8_pre_snapshot.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops8_reclamation_receipt.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops9_completion_watch_receipt.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops9_point1_raw.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops9_point1_snapshot.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops9_point2_raw.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops9_point2_snapshot.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops9_point3_raw.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops9_point3_snapshot.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops9_point4_raw.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/ops9_point4_snapshot.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/primary_incident_snapshot.py",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/primary_incident_snapshot_live_raw.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/primary_incident_snapshot_receipt.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/primary_incident_snapshot_tests.txt",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/primary_project_storage_attribution.py",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/primary_project_storage_attribution_A_raw.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/primary_project_storage_attribution_B_raw.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/primary_project_storage_attribution_receipt.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/primary_project_storage_attribution_tests.txt",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/primary_storage_attribution.py",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/primary_storage_attribution_A_raw.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/primary_storage_attribution_B_raw.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/primary_storage_attribution_receipt.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/primary_storage_attribution_tests.txt",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/primary_survival_guard.py",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/primary_survival_guard_live_health.txt",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/primary_survival_guard_receipt.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/primary_survival_guard_tests.txt",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/primary_survival_watch_point1.txt",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/primary_survival_watch_point2.txt",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/primary_survival_watch_point3.txt",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/primary_survival_watch_point4.txt",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/primary_survival_watch_receipt.json",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/proposal_selection_lock_receipt.json",
+      "category": "MECH2 synthetic tensor preparation"
+    },
+    {
+      "path": "research_log/t013/rehearse_canonical_counterfactual.py",
+      "category": "CF2 completed smoke arithmetic and replay"
+    },
+    {
+      "path": "research_log/t013/replay1a/execution_receipt.json",
+      "category": "REPLAY1A/B one primary replay and observations"
+    },
+    {
+      "path": "research_log/t013/replay1a/initial_process.json",
+      "category": "REPLAY1A/B one primary replay and observations"
+    },
+    {
+      "path": "research_log/t013/replay1a/launch.py",
+      "category": "REPLAY1A/B one primary replay and observations"
+    },
+    {
+      "path": "research_log/t013/replay1a/launch_receipt.json",
+      "category": "REPLAY1A/B one primary replay and observations"
+    },
+    {
+      "path": "research_log/t013/replay1a/observation1.json",
+      "category": "REPLAY1A/B one primary replay and observations"
+    },
+    {
+      "path": "research_log/t013/replay1a/observation2.json",
+      "category": "REPLAY1A/B one primary replay and observations"
+    },
+    {
+      "path": "research_log/t013/replay1a/observation3.json",
+      "category": "REPLAY1A/B one primary replay and observations"
+    },
+    {
+      "path": "research_log/t013/replay1a/observe.py",
+      "category": "REPLAY1A/B one primary replay and observations"
+    },
+    {
+      "path": "research_log/t013/replay1b/execution_receipt.json",
+      "category": "REPLAY1A/B one primary replay and observations"
+    },
+    {
+      "path": "research_log/t013/replay1b/observation1.json",
+      "category": "REPLAY1A/B one primary replay and observations"
+    },
+    {
+      "path": "research_log/t013/replay1b/observation2.json",
+      "category": "REPLAY1A/B one primary replay and observations"
+    },
+    {
+      "path": "research_log/t013/replay1c/command.sh",
+      "category": "REPLAY1C single decoded comparison and authorization"
+    },
+    {
+      "path": "research_log/t013/replay1c/comparator_exit_code.txt",
+      "category": "REPLAY1C single decoded comparison and authorization"
+    },
+    {
+      "path": "research_log/t013/replay1c/comparator_finished.txt",
+      "category": "REPLAY1C single decoded comparison and authorization"
+    },
+    {
+      "path": "research_log/t013/replay1c/comparator_started.txt",
+      "category": "REPLAY1C single decoded comparison and authorization"
+    },
+    {
+      "path": "research_log/t013/replay1c/comparator_stderr.txt",
+      "category": "REPLAY1C single decoded comparison and authorization"
+    },
+    {
+      "path": "research_log/t013/replay1c/comparator_stdout.txt",
+      "category": "REPLAY1C single decoded comparison and authorization"
+    },
+    {
+      "path": "research_log/t013/replay1c/comparison_receipt.json",
+      "category": "REPLAY1C single decoded comparison and authorization"
+    },
+    {
+      "path": "research_log/t013/replay1c/execution_output.txt",
+      "category": "REPLAY1C single decoded comparison and authorization"
+    },
+    {
+      "path": "research_log/t013/replay1c/execution_receipt.json",
+      "category": "REPLAY1C single decoded comparison and authorization"
+    },
+    {
+      "path": "research_log/t013/replay1c/preflight.json",
+      "category": "REPLAY1C single decoded comparison and authorization"
+    },
+    {
+      "path": "research_log/t013/replay1c/preflight.py",
+      "category": "REPLAY1C single decoded comparison and authorization"
+    },
+    {
+      "path": "research_log/t013/replay1c/replay_envelope_and_barrier.json",
+      "category": "REPLAY1C single decoded comparison and authorization"
+    },
+    {
+      "path": "research_log/t013/test_canonical_counterfactual_analysis.py",
+      "category": "CF2 completed smoke arithmetic and replay"
+    },
+    {
+      "path": "research_log/t013/test_canonical_topk_counterfactual.py",
+      "category": "CF1 completed smoke selection"
+    },
+    {
+      "path": "research_log/t013/test_finalization_barrier.py",
+      "category": "CLOSE1 metadata barrier and smoke fixtures"
+    },
+    {
+      "path": "research_log/t013/test_primary_incident_snapshot.py",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/test_primary_project_storage_attribution.py",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/test_primary_storage_attribution.py",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/test_primary_survival_guard.py",
+      "category": "OPS metadata observations, storage accounting and tests"
+    },
+    {
+      "path": "research_log/t013/validate_canonical_topk_smoke.py",
+      "category": "CF1 completed smoke selection"
+    }
+  ],
+  "classification_rules": {
+    "coordination": [
+      "coordination/*.md"
+    ],
+    "project operational handoff": [
+      "research_log/REMOTE.md",
+      "research_log/project_state.md",
+      "research_log/session_log.md"
+    ],
+    "G4A1 accepted history audit": [
+      "research_log/t013/gate4_preoutcome*",
+      "research_log/t013/GATE4_PREOUTCOME_HISTORY_AUDIT.md"
+    ],
+    "CLOSE1 metadata barrier and smoke fixtures": [
+      "research_log/t013/finalization_barrier*",
+      "research_log/t013/test_finalization_barrier.py",
+      "research_log/t013/FINALIZATION_BARRIER.md",
+      "research_log/t013/close1/*"
+    ],
+    "OPS metadata observations, storage accounting and tests": [
+      "research_log/t013/ops*",
+      "research_log/t013/OPS*",
+      "research_log/t013/primary_*",
+      "research_log/t013/PRIMARY_*",
+      "research_log/t013/test_primary_*",
+      "research_log/t013/collect_primary_incident_metadata.py"
+    ],
+    "CF1 completed smoke selection": [
+      "research_log/t013/canonical_topk*",
+      "research_log/t013/test_canonical_topk*",
+      "research_log/t013/validate_canonical_topk_smoke.py",
+      "research_log/t013/CANONICAL_TOPK*"
+    ],
+    "CF2 completed smoke arithmetic and replay": [
+      "research_log/t013/canonical_counterfactual*",
+      "research_log/t013/CANONICAL_COUNTERFACTUAL*",
+      "research_log/t013/test_canonical_counterfactual*",
+      "research_log/t013/rehearse_canonical_counterfactual.py",
+      "research_log/t013/cf2/*",
+      "research_log/t013/cf2_remote_repro1_receipt.json"
+    ],
+    "MECH1 static source provenance": [
+      "research_log/t013/mech1/*",
+      "research_log/t013/mechanism_identifiability_receipt.json",
+      "research_log/t013/MECHANISM_IDENTIFIABILITY_AUDIT.md"
+    ],
+    "MECH2 synthetic tensor preparation": [
+      "research_log/t013/mech2/*",
+      "research_log/t013/proposal_selection_lock_receipt.json",
+      "research_log/t013/PROPOSAL_SELECTION_LOCK*"
+    ],
+    "CLOSE2/CLOSE3 terminal metadata": [
+      "research_log/t013/close2*",
+      "research_log/t013/close3*",
+      "research_log/t013/CLOSE2*",
+      "research_log/t013/CLOSE3*"
+    ],
+    "FIN1P single primary opaque integrity check": [
+      "research_log/t013/fin1p*",
+      "research_log/t013/FIN1P*"
+    ],
+    "REPLAY1A/B one primary replay and observations": [
+      "research_log/t013/replay1a/*",
+      "research_log/t013/replay1b/*",
+      "research_log/t013/REPLAY1A*",
+      "research_log/t013/REPLAY1B*"
+    ],
+    "REPLAY1C single decoded comparison and authorization": [
+      "research_log/t013/replay1c/*",
+      "research_log/t013/REPLAY1C*"
+    ],
+    "DEC1A authorized disclosure": [
+      "research_log/t013/dec1a/*",
+      "research_log/t013/DEC1A_PRIMARY_SCIENTIFIC_DISCLOSURE.md"
+    ]
+  },
+  "category_counts": {
+    "coordination": 3,
+    "project operational handoff": 3,
+    "CF2 completed smoke arithmetic and replay": 18,
+    "CF1 completed smoke selection": 7,
+    "CLOSE2/CLOSE3 terminal metadata": 12,
+    "DEC1A authorized disclosure": 7,
+    "FIN1P single primary opaque integrity check": 9,
+    "CLOSE1 metadata barrier and smoke fixtures": 6,
+    "G4A1 accepted history audit": 4,
+    "MECH1 static source provenance": 16,
+    "OPS metadata observations, storage accounting and tests": 68,
+    "MECH2 synthetic tensor preparation": 7,
+    "REPLAY1A/B one primary replay and observations": 13,
+    "REPLAY1C single decoded comparison and authorization": 13
+  },
+  "chronology": [
+    {
+      "before": "6fec32243985ccc808123d851abf5f3dea10af99",
+      "after": "88668f76b22777459b5792dd28f88075f208c678",
+      "ancestor": true
+    },
+    {
+      "before": "88668f76b22777459b5792dd28f88075f208c678",
+      "after": "cca9af23452870d1a12ba1ab6a78ebe683e49cd1",
+      "ancestor": true
+    },
+    {
+      "before": "cca9af23452870d1a12ba1ab6a78ebe683e49cd1",
+      "after": "6a96f8870f0e88087d64341ed37dabf05df49f84",
+      "ancestor": true
+    },
+    {
+      "before": "6a96f8870f0e88087d64341ed37dabf05df49f84",
+      "after": "0acbd4f6417d2946f2009979ec8461df351eb07b",
+      "ancestor": true
+    },
+    {
+      "before": "0acbd4f6417d2946f2009979ec8461df351eb07b",
+      "after": "385bfac42a7bbb3a9378be91a4ff642f97fa7952",
+      "ancestor": true
+    },
+    {
+      "before": "385bfac42a7bbb3a9378be91a4ff642f97fa7952",
+      "after": "78203498f524a06210daad0ab6a655db74ac6280",
+      "ancestor": true
+    },
+    {
+      "before": "78203498f524a06210daad0ab6a655db74ac6280",
+      "after": "f985670113a9cb1bf2c8ed364eb808c40676407f",
+      "ancestor": true
+    },
+    {
+      "before": "f985670113a9cb1bf2c8ed364eb808c40676407f",
+      "after": "8b00e1ed5b77c05193c1e052c41b547a6cc596ac",
+      "ancestor": true
+    },
+    {
+      "before": "8b00e1ed5b77c05193c1e052c41b547a6cc596ac",
+      "after": "d4c91abaefbb04c5ce70780f89f94d50c40e8eb0",
+      "ancestor": true
+    },
+    {
+      "before": "d4c91abaefbb04c5ce70780f89f94d50c40e8eb0",
+      "after": "688f36be6a845d8cf93531fb570268c9fbc2c1e9",
+      "ancestor": true
+    },
+    {
+      "before": "688f36be6a845d8cf93531fb570268c9fbc2c1e9",
+      "after": "eb90ff9494eb34231668cf00d83d3ac3d9bd74da",
+      "ancestor": true
+    },
+    {
+      "before": "eb90ff9494eb34231668cf00d83d3ac3d9bd74da",
+      "after": "1ae41f3b795d50345ed2b35af808998d1aa2e82b",
+      "ancestor": true
+    },
+    {
+      "before": "1ae41f3b795d50345ed2b35af808998d1aa2e82b",
+      "after": "60c99b1051382bed8df6101389905277bb07d80f",
+      "ancestor": true
+    },
+    {
+      "before": "60c99b1051382bed8df6101389905277bb07d80f",
+      "after": "94582bd58d10f92251234bb8db057fe2c736585c",
+      "ancestor": true
+    },
+    {
+      "before": "94582bd58d10f92251234bb8db057fe2c736585c",
+      "after": "cfe24727a4c2205a966c2f31c8b54e5b74da80b6",
+      "ancestor": true
+    },
+    {
+      "before": "cfe24727a4c2205a966c2f31c8b54e5b74da80b6",
+      "after": "0a6b5158265b918f8e5d3ca1eaba1968e5abe075",
+      "ancestor": true
+    },
+    {
+      "before": "0a6b5158265b918f8e5d3ca1eaba1968e5abe075",
+      "after": "745efb43d8640f8ac3958bb733d0df44c51c87ff",
+      "ancestor": true
+    }
+  ],
+  "dispatch_inventory": [
+    {
+      "path": "research_log/remote_runs/20260912-205428-tovd-native30-pipeline-smoke/meta.json",
+      "run_id": "20260912-205428-tovd-native30-pipeline-smoke",
+      "command": "cd /home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-205335-tovd-native30-pipeline; pwd > \"$AUTODL_ARTIFACTS_DIR/resolved_release.txt\"; export OMP_NUM_THREADS=4; export MKL_NUM_THREADS=4; /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -u -m scripts.t013_native_run --assets /home/wenchang/asdasdsad/wjq/TOVD/shared/t013 --output \"$AUTODL_ARTIFACTS_DIR/cache\" --freeze-commit d5dc807 --smoke-only && /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -u -m scripts.t013_analysis --annotations /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations/instances_val2017.json --run \"$AUTODL_ARTIFACTS_DIR/cache\" --output \"$AUTODL_ARTIFACTS_DIR/analysis\" --smoke-only",
+      "smoke_only": true
+    },
+    {
+      "path": "research_log/remote_runs/20260912-210355-tovd-native30-primary/meta.json",
+      "run_id": "20260912-210355-tovd-native30-primary",
+      "command": "cd /home/wenchang/asdasdsad/wjq/TOVD/releases/20260912-210306-tovd-native30-primary-freeze; pwd > \"$AUTODL_ARTIFACTS_DIR/resolved_release.txt\"; sha256sum research_log/t013/native30_freeze.json research_log/t013/PLAN.md > \"$AUTODL_ARTIFACTS_DIR/freeze_sha256.txt\"; export OMP_NUM_THREADS=4; export MKL_NUM_THREADS=4; /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -u -m scripts.t013_native_run --assets /home/wenchang/asdasdsad/wjq/TOVD/shared/t013 --output \"$AUTODL_ARTIFACTS_DIR/cache\" --freeze-commit 6fec32243985ccc808123d851abf5f3dea10af99 && /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/venv/bin/python -u -m scripts.t013_analysis --annotations /home/wenchang/asdasdsad/wjq/TOVD/shared/t013/coco/annotations/instances_val2017.json --run \"$AUTODL_ARTIFACTS_DIR/cache\" --output \"$AUTODL_ARTIFACTS_DIR/analysis\"",
+      "smoke_only": false
+    }
+  ],
+  "source_bindings": [
+    {
+      "path": "research_log/t013/canonical_topk_counterfactual.py",
+      "expected": "cef3e87ea1a05b40dc36522022b50280f35e8caf78dbcedcb7a47ce27cf01539",
+      "actual": "cef3e87ea1a05b40dc36522022b50280f35e8caf78dbcedcb7a47ce27cf01539",
+      "match": true
+    },
+    {
+      "path": "research_log/t013/test_canonical_topk_counterfactual.py",
+      "expected": "bd7e7995f9b3264c4d13113582f09443bfaf05f17cb7afd5d35aceace716daf8",
+      "actual": "bd7e7995f9b3264c4d13113582f09443bfaf05f17cb7afd5d35aceace716daf8",
+      "match": true
+    },
+    {
+      "path": "research_log/t013/validate_canonical_topk_smoke.py",
+      "expected": "edc8f2b04b41e7267ab92dfa24bb6788e0c9aa1b9b2e9da8e4ea8f45b20087cf",
+      "actual": "edc8f2b04b41e7267ab92dfa24bb6788e0c9aa1b9b2e9da8e4ea8f45b20087cf",
+      "match": true
+    },
+    {
+      "path": "research_log/t013/CANONICAL_TOPK_COUNTERFACTUAL.md",
+      "expected": "2925d9bf419febb3cbfb40e8393ec1002a7705e6cdfc1a63069b80e15eabc57a",
+      "actual": "2925d9bf419febb3cbfb40e8393ec1002a7705e6cdfc1a63069b80e15eabc57a",
+      "match": true
+    },
+    {
+      "path": "research_log/t013/canonical_topk_counterfactual.py",
+      "expected": "cef3e87ea1a05b40dc36522022b50280f35e8caf78dbcedcb7a47ce27cf01539",
+      "actual": "cef3e87ea1a05b40dc36522022b50280f35e8caf78dbcedcb7a47ce27cf01539",
+      "match": true
+    },
+    {
+      "path": "research_log/t013/canonical_counterfactual_analysis.py",
+      "expected": "93d91fa377e1557573d1cabae5008f529fc8104a98930f188bf98a97ef59453e",
+      "actual": "93d91fa377e1557573d1cabae5008f529fc8104a98930f188bf98a97ef59453e",
+      "match": true
+    },
+    {
+      "path": "research_log/t013/test_canonical_counterfactual_analysis.py",
+      "expected": "cf34c7227f68d8b7fb3f9be902f009bbed2a36c5ff67873acd43bb15c471ef35",
+      "actual": "cf34c7227f68d8b7fb3f9be902f009bbed2a36c5ff67873acd43bb15c471ef35",
+      "match": true
+    },
+    {
+      "path": "research_log/t013/rehearse_canonical_counterfactual.py",
+      "expected": "da40b6fe83eebd9edb751a53457e801f2a802d81d6f7cc72223052e9d4a85031",
+      "actual": "da40b6fe83eebd9edb751a53457e801f2a802d81d6f7cc72223052e9d4a85031",
+      "match": true
+    },
+    {
+      "path": "research_log/t013/CANONICAL_COUNTERFACTUAL_ANALYSIS_CONTRACT.md",
+      "expected": "884847c8b1290418a4240ff4acabcf95e21c7a8eecc865a4478a1e5466254a35",
+      "actual": "884847c8b1290418a4240ff4acabcf95e21c7a8eecc865a4478a1e5466254a35",
+      "match": true
+    }
+  ],
+  "evidence": [
+    {
+      "path": "research_log/t013/canonical_topk_receipt.json",
+      "endpoint_sha256": "f0fa74481bf336b520de0fb054927930e4f2184462e9cdf06fabba0ad0abd061",
+      "history_commits": [
+        "8154004f5574721903ee297a8a5aade729b1e131"
+      ]
+    },
+    {
+      "path": "research_log/t013/canonical_counterfactual_receipt.json",
+      "endpoint_sha256": "3435aa7ea610eb280320e933673b5d060e381520deacff755bd79905fae9f18d",
+      "history_commits": [
+        "b185ee5d05f3b84d402712fb62c9a26a12fa6847"
+      ]
+    },
+    {
+      "path": "research_log/t013/canonical_counterfactual_initial_blocked_receipt.json",
+      "endpoint_sha256": "172a0ff4ec9064e8c96b0535b2f50272132ee635ae552d85fbbbcaede0b088b0",
+      "history_commits": [
+        "27118710f1ea0a761f0b9efe2a6d51a99e45be0c"
+      ]
+    },
+    {
+      "path": "research_log/t013/mechanism_identifiability_receipt.json",
+      "endpoint_sha256": "65f405a4cb164d60d6cd1343a8abd4cdb29c93479aecc489dd077486381a3a25",
+      "history_commits": [
+        "546dd93199c967bfb77198d91d3fcd3e391f7689",
+        "8855eba139f751ceaf576b3598c574e881a5b840"
+      ]
+    },
+    {
+      "path": "research_log/t013/proposal_selection_lock_receipt.json",
+      "endpoint_sha256": "a5eb315e073e58034fba2128c2089935f963af487487189f86f9f0fbb0ddb1c9",
+      "history_commits": [
+        "8ed82955b628703cede411f8732d8dbd11a4a658"
+      ]
+    },
+    {
+      "path": "research_log/t013/ops7_preservation_watch_receipt.json",
+      "endpoint_sha256": "fe4a5ca1308c12890830995d9df67a160e47576aeb20cae37d5ef705e5f0e2f0",
+      "history_commits": [
+        "17920624c2a316d6389fafa0bc992b788373dc8c",
+        "568b771d2c029dd526a8def830ba223ef600ea57"
+      ]
+    },
+    {
+      "path": "research_log/t013/ops8_reclamation_receipt.json",
+      "endpoint_sha256": "b65234d25b72084dde135a3cb9dc9701ba76dc645bf2f31142f4b9673d1f1025",
+      "history_commits": [
+        "7909fa4009ceda78377eddcbd0e9b764bfc9f287",
+        "7efbe9c778e2f244099cb4c31999ffb306f3fbeb",
+        "81feb1f95173403eb1dea2396f4cfb7325201f42",
+        "b73871167a4f9f52ced8fa5d8a97b197960f5303"
+      ]
+    },
+    {
+      "path": "research_log/t013/ops10_terminal_watch_receipt.json",
+      "endpoint_sha256": "a262b2d25cb55f42524182b5a6d154cee33c0e06d833f017fd34bd1b06d175f2",
+      "history_commits": [
+        "57cdd15c2813ce72170c758780d84916a33c260b",
+        "ddef8e92f70ebf204b05c431f5747af26cb69b9f",
+        "789a00a7f4f3b998d2ce1c1e8c66b16c272a60ff",
+        "7b0ec21ba5796fbb074f4446bf31cf220e8b0c51",
+        "3f1176316bfbabe18d3c4f3cfdbe357f575a66a8",
+        "6a0290031e0d2d0bfff767b1ccec71436111b1d6"
+      ]
+    },
+    {
+      "path": "research_log/t013/close2_terminal_capture_receipt.json",
+      "endpoint_sha256": "42bda5ba5104420beeebaa3d8a616104360b8850e773f9e48427e7ed4fb4a1a1",
+      "history_commits": [
+        "1c0726fd89098dd383000f4db576d2f2ade26356",
+        "385bfac42a7bbb3a9378be91a4ff642f97fa7952",
+        "a8f872914e8ba81720a3241cb420f9149ac06063",
+        "fd6ace71b93d5e052c8a2f09e866adbe77c6afa1"
+      ]
+    },
+    {
+      "path": "research_log/t013/close3_terminal_capture_receipt.json",
+      "endpoint_sha256": "7a3d211d5c756eb6f8b10c8e63e776e311116372ceed228a0417053e4ddd4438",
+      "history_commits": [
+        "78203498f524a06210daad0ab6a655db74ac6280"
+      ]
+    },
+    {
+      "path": "research_log/t013/fin1p_execution_receipt.json",
+      "endpoint_sha256": "8e5616e4c15e14a50b0a04b3d39de11978bec71f18754a1f299f750ff3a03092",
+      "history_commits": [
+        "8b00e1ed5b77c05193c1e052c41b547a6cc596ac"
+      ]
+    },
+    {
+      "path": "research_log/t013/replay1a/launch_receipt.json",
+      "endpoint_sha256": "7f800dd45ab07ee7e78a9ff1e8e093995f8db81f5d486e762327556c02280819",
+      "history_commits": [
+        "688f36be6a845d8cf93531fb570268c9fbc2c1e9"
+      ]
+    },
+    {
+      "path": "research_log/t013/replay1b/execution_receipt.json",
+      "endpoint_sha256": "dface99e6c4456863434ddeffc8789adfbfd96aa540d2b0a23bfe7843748d06c",
+      "history_commits": [
+        "eb90ff9494eb34231668cf00d83d3ac3d9bd74da",
+        "d55b61e96b9ad49657135b66644645ff0b78785b"
+      ]
+    },
+    {
+      "path": "research_log/t013/replay1c/execution_receipt.json",
+      "endpoint_sha256": "c158cae68c4eadc35c4c1101556ade7e764d446b210fc8fc89ae453daf445226",
+      "history_commits": [
+        "60c99b1051382bed8df6101389905277bb07d80f"
+      ]
+    },
+    {
+      "path": "research_log/t013/replay1c/replay_envelope_and_barrier.json",
+      "endpoint_sha256": "c26072d95d0fd420b440f9f2cd7c768469ff8486effa5196c9630fbd15a932a0",
+      "history_commits": [
+        "60c99b1051382bed8df6101389905277bb07d80f"
+      ]
+    },
+    {
+      "path": "research_log/t013/dec1a/execution_receipt.json",
+      "endpoint_sha256": "ed69e23805d881730d3ed8e0389960b5cbee6daf6bdcc65562992cee251bfeed",
+      "history_commits": [
+        "cfe24727a4c2205a966c2f31c8b54e5b74da80b6"
+      ]
+    }
+  ],
+  "disclosure_path_history": {
+    "research_log/t013/dec1a/canonical_results.json": [
+      "cfe24727a4c2205a966c2f31c8b54e5b74da80b6"
+    ],
+    "research_log/t013/dec1a/primary_scientific_disclosure.json": [
+      "cfe24727a4c2205a966c2f31c8b54e5b74da80b6"
+    ],
+    "research_log/t013/DEC1A_PRIMARY_SCIENTIFIC_DISCLOSURE.md": [
+      "cfe24727a4c2205a966c2f31c8b54e5b74da80b6"
+    ]
+  },
+  "postdelivery_paths": {
+    "5cc83e9": [
+      "research_log/session_log.md"
+    ],
+    "a79aca4": [
+      "research_log/session_log.md"
+    ],
+    "745efb4": [
+      "research_log/session_log.md"
+    ]
+  },
+  "excluded_after_endpoint": [
+    "5b24bd014c025bc17f105047821c0380ba6e507d coord: record unchanged DEC1A review heartbeat",
+    "745f1d24784376afc128156829bcd65b15ff1661 coord: accept DEC1A and assign final Gate4 history audit",
+    "08785e443282b060cae1943fc7a1fbac4c770e80 coord: log DEC1A scientific review and final Gate4 audit"
+  ],
+  "execution_counts_from_committed_evidence": {
+    "primary_inference": 1,
+    "fin1_primary": 1,
+    "full_primary_replay": 1,
+    "primary_comparator": 1,
+    "canonical_disclosure": 1,
+    "yolo_scientific_runtime": 0,
+    "t014_or_proposal_lock_primary_runtime": 0
+  },
+  "limitation": "Git and accepted self-reported receipts establish committed evidence only; they cannot prove off-repository behavior. Execution counts identify events, not repeated mentions/copies of one event. Qualitative history review is required in companion report.",
+  "new_scientific_execution": false,
+  "scientific_results_decoded": false,
+  "decide_called": false,
+  "helper_sha256": "039f936c0cd2a48a8def7649ce402523093ff514cff0a9a40fa1fc42934a831f",
+  "mechanical_status": "MECHANICAL_CHECKS_PASS_PENDING_CONTEXT_REVIEW",
+  "context_review": {
+    "status": "COMPLETE",
+    "report": "research_log/t013/GATE4_FINAL_HISTORY_AUDIT.md",
+    "reviewed_at": "2026-09-14T11:42:50+08:00",
+    "basis": "All-parent commit/path inventory; historical Lead authorizations; operational receipt chronology; static CF1/CF2 drivers and source hashes; MECH1/MECH2 source/synthetic receipts; OPS7/8 exact deletion record; FIN1/replay/comparator/disclosure receipts; postdelivery diffs. See companion report for exceptions and Git-only limitation.",
+    "unclassified_protocol_relevant_changes": 0,
+    "unresolved_protocol_discrepancies": [],
+    "known_exceptions": [
+      "G4A1 initial smoke classifier failure preserved and corrected without scientific mutation",
+      "CF2 unrelated health-append receipt mismatch repaired before smoke evaluation and accepted by Lead",
+      "OPS7 storage-risk stop; OPS8 two explicitly authorized reproducible archive deletions",
+      "OPS10 free-space jump remains unattributed; not evidence of scientific mutation; off-repository behavior is not provable from Git",
+      "CLOSE2 process ambiguity stopped; separately authorized CLOSE3 observed natural wrapper completion",
+      "Transport/identity/encoding command failures preserved; no scientific command retry",
+      "CLOSE1 smoke fixtures and CF2 smoke outputs are not primary scientific content; MECH2 synthetic tests are not T014",
+      "Replay/comparator completed-data machine reads are explicitly authorized reproducibility steps, preceding human disclosure"
+    ],
+    "final_gate4": "PENDING_RESEARCH_LEAD_REVIEW",
+    "decide": "NOT_RUN",
+    "recommended_next_action": "DEC1B final Grounding adjudication"
+  }
+}
