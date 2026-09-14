@@ -930,3 +930,7 @@ Lead745f1d2/task-start08785e4 accepted DEC1A and assigned G4B1. Fixed Git interv
 
 
 G4B1 evidence commit: d469eb34fcb29e0b3f899053e5415b0581ebcd76. Fixed scientific-history endpoint remains 745efb43d8640f8ac3958bb733d0df44c51c87ff. This evidence commit and the following delivery commit are outside the audited interval. The four audit artifacts remain unchanged. Final state FINAL_GATE4_HISTORY_CLEAN_READY_FOR_DEC1B; await Research Lead DEC1B adjudication, no repeated audit or scientific execution.
+
+
+## 2026-09-14T12:00:54+08:00 — mailbox-only heartbeat after G4B1
+Read project-local recovery records and mandatory AGENTS/protocol/mailbox/spec; git fetch and fast-forward check succeeded, origin/main unchanged at f633e6c. Lead745f1d2 still assigns already-completed G4B1. Evidence d469eb34fcb29e0b3f899053e5415b0581ebcd76 and delivery f633e6c remain ready for Lead review. No repeated audit, remote observation, result access, DEC1 call or scientific execution. Await new Lead task through existing heartbeat.
