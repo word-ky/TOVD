@@ -1031,3 +1031,6 @@ Lead8087c128/task-startb9c8358. Manual-only contents:read ubuntu-latest relay wo
 
 ## 2026-09-14T17:25:44.043563+08:00 — P3R4 RELAY_ARTIFACT_READY
 Single run34827628282/attempt1 success; exact305058902bytes/SHA4466ab94...f458 verified by hosted runner. Artifact10341040916 fixed name,2files,305061442bytes,expires2026-09-16T09:23:11Z. No payload/server import/runtime. Workflow0a9e6a0, complete p3r4 logs/receipts. REST log redirect401 recovered using existing connector; no rerun. Await Lead review before import/runtime; no unchanged-mailbox repeat.
+
+P3R4 evidence commit: 2835cadc5c9762357780923f36ab4fcc2836abb0; workflow commit0a9e6a004191c9ab20db4feeebab51d88cc3760d. State YW_P3R4_RELAY_ARTIFACT_READY_RETURN_TO_LEAD. Delivery receipt SHA256 2a65929bbff37955605d1660b715df58497633887b9de826eec12cd22694e58f; report SHA256 91e2c2f7c2915463e473cb4798bd8392b5419e793c1e83b9f1a9f072e2359221; both match server metadata-only mirror. Artifact10341040916/run34827628282, expires2026-09-16T09:23:11Z. Server payload import0; no runtime or rerun. Await Research Lead review of P3R4 relay artifact before any server import or runtime feasibility resumption.
+

@@ -3062,3 +3062,6 @@ Machine delivery receipt:
   "log_retrieval_note": "Initial local REST job-log redirect returned HTTP401 InvalidAuthenticationInfo; existing GitHub connector fetched logs successfully. No workflow rerun or credential change."
 }
 ```
+
+P3R4 evidence commit: 2835cadc5c9762357780923f36ab4fcc2836abb0; workflow commit0a9e6a004191c9ab20db4feeebab51d88cc3760d. State YW_P3R4_RELAY_ARTIFACT_READY_RETURN_TO_LEAD. Delivery receipt SHA256 2a65929bbff37955605d1660b715df58497633887b9de826eec12cd22694e58f; report SHA256 91e2c2f7c2915463e473cb4798bd8392b5419e793c1e83b9f1a9f072e2359221; both match server metadata-only mirror. Artifact10341040916/run34827628282, expires2026-09-16T09:23:11Z. Server payload import0; no runtime or rerun. Await Research Lead review of P3R4 relay artifact before any server import or runtime feasibility resumption.
+
