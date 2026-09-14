@@ -1913,3 +1913,6 @@ Stop and await Research Lead review of sealed Grounding negative and decision wh
 ```
 
 delivery_manifest.json SHA256: 0ebee3467e2c633795f5820a5313aa659cc1a1c8a0fe6bc5f08058a3fe3650c9.
+
+
+DEC1B evidence commit: e072950635d24b06f7abf1979d36e7017f4848b1. Canonical final state GROUNDING_PRIMARY_NOT_SUPPORTED; actual primary decide call count remains exactly one. This delivery entry does not modify the sealed seven-file packet. Await Research Lead; no second decision call or experiment authorized.
