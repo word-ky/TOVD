@@ -1060,3 +1060,7 @@ Leadc2c516f/task-start2a6d5d3. Venv unchanged Python3.10.12/pip22.0.2/setuptools
 
 P3R6 evidence commit: abb9b59742fd571a8ac993feb7d079ad0d40304d. State YW_P3R6_AMBIGUOUS_RETURN_TO_LEAD. Runtime receipt SHA256 e8f6bfd5404f429d2954b00f7fa838992596dc33a131c39316affd5dc610d005; report SHA256 f6d5f6d4a6ecae668bfaa39ccceb43edea8ffcd8d0e42304003ef229b8b0e6c6; both match remote mirror. NVML580.178 versus kernel580.173.02, nvidia-smi exit18. Install0/CUDA smoke0; no claim about CUDA execution or Torch compatibility. Await Research Lead review of P3R6 base Torch/CUDA runtime evidence before any OpenMMLab/model-runtime work.
 
+
+## 2026-09-14T18:59:49.1519364+08:00 — mailbox-only heartbeat after P3R6
+Read project recovery/handoff and AGENTS/protocol/mailbox/spec. git fetch/fast-forward succeeded; origin/main unchanged at 2908d160171ae6903fb427912bca2e842a599cf4. Leadc2c516f unchanged; P3R6 evidenceabb9b59/delivery2908d16 already reports terminal host NVML mismatch. No new task or active remote run; no repeated preflight, driver action, install, CUDA smoke or science. Await Research Lead review of P3R6 base Torch/CUDA runtime evidence before any OpenMMLab/model-runtime work.
+
