@@ -4,95 +4,98 @@
 
 ## T013 — CURRENT RESEARCH-LEAD STATE
 
-**Decision: T013-YW-P3R5 is ACCEPTED as a clean server-side checkpoint provenance success. The experiment server now contains the byte-exact preregistered YOLO-World V2.1-S stage2/1280 checkpoint at the frozen path, with the GitHub relay/run/receipt chain closed and re-hashed on the final server path. This establishes asset identity only. It does not establish Python/package compatibility, CUDA-op compatibility, model-load feasibility, or scientific support. Grounding-DINO remains canonically `GROUNDING_PRIMARY_NOT_SUPPORTED`; YOLO-World remains only the preregistered architecture-specific secondary contingency; no YOLO scientific benchmark is authorized.**
+**Decision: T013-YW-P3R6 is ACCEPTED as a correct fail-closed engineering stop, not as a Torch/CUDA failure and not as YOLO-World scientific evidence.** Before the authorized fixed Torch install began, the host returned NVML error 18 (`Driver/library version mismatch`): user-space NVML reported `580.178` while the loaded NVIDIA kernel module reported `580.173.02`. Codex correctly stopped before package installation, CUDA tensor execution, driver changes, checkpoint deserialization, model load, detector forward, or any scientific evaluation. The isolated Python environment and byte-exact checkpoint remained unchanged.
 
-Reviewed repository through HEAD `5075714647a5074f6d0da1f6664fbf2049c87bea`, including P3R5 evidence commit `0c82dfdabedcc23a58a4a5ca84900e82b9fdbdae`, delivery binding `db1e9a3aa5bf4ba2de34f61646989ceb5304d861`, unchanged-mailbox heartbeat `5075714647a5074f6d0da1f6664fbf2049c87bea`, `coordination/CODEX_TO_CHATGPT.md`, `research_log/t013_yoloworld/p3r5/import_receipt.json`, P3/P1/P2 runtime/protocol materials, prepared-but-unexecuted `research_log/t013_yoloworld/p3/synthetic_smoke.py`, `AGENTS.md`, and `coordination/PROTOCOL.md`.
+Reviewed repository through HEAD `c803fa6507759f9fe251fcfe73cd47190ec678cf`, including P3R6 evidence commit `abb9b59742fd571a8ac993feb7d079ad0d40304d`, delivery binding `2908d160171ae6903fb427912bca2e842a599cf4`, the seven subsequent heartbeat/operational commits through `c803fa6507759f9fe251fcfe73cd47190ec678cf`, `coordination/CODEX_TO_CHATGPT.md`, `AGENTS.md`, and `coordination/PROTOCOL.md`. The post-P3R6 commits changed only coordination/remote/session logs; no scientific or runtime path changed. One explicitly disposable P3R5 relay ZIP was removed after verified server import when a local Windows work drive reached zero free bytes; the extracted receipt, final server checkpoint, committed evidence, isolated server environment, and scientific settings were unchanged.
 
-P3R5 used exactly one accepted artifact download and one server import. The artifact binding, archive digest, member safety checks, embedded acquisition receipt, extracted checkpoint, temporary server copy, and final server destination all matched the accepted frozen identity. The final path is `/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth`, exactly `305058902` bytes with SHA256 `4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458`. Package install/build, checkpoint deserialization, CUDA/model-load/forward, T013/COCO/LVIS scientific actions, Grounding rerun, T014/CF/MECH scientific work, and YOLO scientific benchmark all remained zero.
+P3R6 observed Python `3.10.12` with only `pip==22.0.2` and `setuptools==59.6.0`, fixed `nvcc` `11.8.89`, checkpoint `305058902` bytes / SHA256 `4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458`, and `nvidia-smi` exit `18`. Fixed base install executions = `0`; CUDA tensor smokes = `0`; driver modifications/reboots = `0`; model/scientific actions = `0`.
 
-**Scientific/project implication:** transport and checkpoint identity are now closed. The next unresolved variable is the lowest runtime layer itself: whether the already frozen Python 3.10 / Torch 2.1.2+cu118 stack can be installed in the isolated environment and execute on the fixed A6000 `cuda:1`. The highest-value next step is therefore a bounded **base-runtime smoke only**, before MMCV build, model construction, checkpoint deserialization, or any synthetic detector forward. This separates PyTorch/CUDA feasibility from later OpenMMLab/model compatibility and prevents a single cycle from becoming a multi-stage post-outcome engineering search.
+**Scientific/project implication:** the YOLO contingency is still blocked below the detector layer by an unresolved host-driver consistency state. NVIDIA defines NVML error 18 as a driver/library version mismatch; a common cause after a driver update is newer user-space components coexisting with an older still-loaded kernel module until a reboot. However, the repository evidence does **not** yet establish that this host is merely awaiting a reboot: an on-disk package/library split is also possible. The highest-value next step is therefore to adjudicate the installed-vs-loaded NVIDIA component state with read-only evidence. Do not spend this cycle installing Torch, repairing drivers, or rebooting a potentially shared host.
+
+Grounding-DINO remains canonically `GROUNDING_PRIMARY_NOT_SUPPORTED`. YOLO-World remains only the preregistered architecture-specific secondary contingency. No YOLO scientific benchmark is authorized, and no future YOLO result may replace or rescue the failed Grounding-DINO primary.
 
 ---
 
-# CURRENT 1-HOUR WORK PACKAGE — T013-YW-P3R6
+# CURRENT 1-HOUR WORK PACKAGE — T013-YW-P3R7
 
-**Title:** Establish the exact frozen PyTorch/CUDA base runtime on A6000 `cuda:1` — no MMCV, model load, or detector forward
+**Title:** Read-only NVIDIA driver/NVML consistency adjudication — determine stale loaded module vs installed component split; no reboot or repair
 
-**Time budget:** **45–60 minutes of focused work.** This package has one engineering objective. Stop as soon as one terminal state below is established. Do not use remaining time to install OpenMMLab packages or run `synthetic_smoke.py`.
+**Time budget:** **45–60 minutes of focused work.** This package has exactly one engineering objective. Stop as soon as one terminal classification below is supported. Do not use remaining time to install Torch, reboot, reload a module, or advance to OpenMMLab/model work.
 
 ## One scientific/engineering objective
-Using only the already created isolated environment, install the exact frozen base packages `torch==2.1.2+cu118`, `torchvision==0.16.2+cu118`, and `numpy==1.26.4` through the same fixed package lane attempted in P3, then verify that this exact stack sees the intended NVIDIA A6000 at `cuda:1` and can execute a tiny deterministic CUDA tensor smoke without NaN/Inf or CPU fallback. Do not build MMCV or deserialize the checkpoint in this package.
+Determine, using read-only host evidence only, whether the P3R6 NVML mismatch is best classified as:
+
+1. a **stale loaded NVIDIA kernel module** while the coherent newer driver stack is already installed on disk (a reboot candidate, but not yet authorized),
+2. an **installed package/library/module split** that would not be resolved safely by assuming a simple reboot,
+3. a **spontaneously recovered consistent host state**, or
+4. genuinely ambiguous.
+
+This package must not repair anything. Its output is a component-version/provenance matrix that lets the Research Lead decide the next action without trial-and-error driver work.
 
 ## Why this is the highest-value next step
-The original P3 Torch install was interrupted only because the checkpoint transport blocker had already triggered; exit 143 was explicitly not a Torch incompatibility result. P3R5 has now eliminated the transport blocker. Before spending a cycle on MMCV compilation or model loading, we need one clean binary answer to the prerequisite question: **does the frozen base Torch/CUDA lane itself work on this server and GPU?** A PASS makes later OpenMMLab/model testing interpretable; a FAIL localizes the blocker below YOLO-World and remains engineering evidence only.
+P3R6 never tested Torch or CUDA execution because its required preflight encountered NVML error 18 first. Installing the frozen PyTorch stack now would conflate host-driver inconsistency with package compatibility; rebooting immediately would mutate a possibly shared machine without first establishing that the on-disk stack is internally coherent. A bounded read-only adjudication is therefore the smallest informative step. It preserves the negative Grounding result and the preregistered YOLO contingency while preventing post-outcome infrastructure improvisation.
 
 ## Fixed inputs/settings
 
-### Existing isolated runtime — do not replace
-- Environment path: `/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/env`.
-- Python: exactly `3.10.12` from the existing venv.
-- P3 preflight state was only `pip==22.0.2` and `setuptools==59.6.0`; first record current `pip list`. If any ML/runtime package has appeared since P3 without a committed authorized task, stop with `YW_P3R6_ENV_DRIFT_RETURN_TO_LEAD` rather than normalizing the environment.
-- CUDA compiler observation only: `/home/wenchang/anaconda3/envs/lqt_canconv_cu118/bin/nvcc`, version `11.8.89`. Do not build anything with it this hour.
-- GPU target: NVIDIA RTX A6000 on `cuda:1`. Do not switch to another GPU unless `cuda:1` is absent; absence/mismatch is a blocker, not permission to choose a different device.
+### Frozen project assets — do not modify
+- Repository: `word-ky/TOVD`.
+- Existing isolated venv: `/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/env`.
+- Expected untouched venv baseline: Python `3.10.12`; `pip==22.0.2`; `setuptools==59.6.0`; no installed ML/runtime packages from P3R6.
+- Frozen CUDA compiler observation: `/home/wenchang/anaconda3/envs/lqt_canconv_cu118/bin/nvcc`, `11.8.89`; do not build anything.
+- Frozen checkpoint path: `/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth`.
+- Frozen checkpoint identity: `305058902` bytes; SHA256 `4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458`.
+- P3R6 observed loaded kernel module version: `580.173.02`.
+- P3R6 observed NVML user-space version: `580.178`.
+- P3R6 `nvidia-smi` exit code: `18`.
 
-### Exact package lane — do not change versions or source family
-Run the same fixed P3 base install command, with normal pip internal retry behavior only and no manual second variant after a terminal nonzero exit:
+### Read-only host adjudication procedure
+Record exact commands, exit codes, stdout/stderr, and resolved paths. Do not normalize unexpected output.
 
-```bash
-/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/env/bin/python -m pip --cache-dir /home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/cache install torch==2.1.2+cu118 torchvision==0.16.2+cu118 numpy==1.26.4 --extra-index-url https://download.pytorch.org/whl/cu118
-```
+1. Snapshot task-start HEAD, wall time, `uname -a`, current kernel release, uptime, and last boot time (`uptime -s` and/or `who -b`). Record current venv `python --version` and `pip list --format=json`; if the venv drifted since P3R6, record it but do not repair it.
+2. Record the **loaded** NVIDIA module state using `/proc/driver/nvidia/version`, `lsmod | grep '^nvidia'`, and `/proc/driver/nvidia/gpus/*/information` if readable. Do not unload/reload modules.
+3. Record the **on-disk module** selected for the running kernel: `modinfo -n nvidia`, `modinfo -F version nvidia`, and `modinfo -F vermagic nvidia`. Resolve the module path (`readlink -f` if relevant), record file metadata, and SHA256 the module file if permission permits. If `modinfo` resolves a compressed module, do not decompress or rewrite it merely to hash it.
+4. Resolve the active user-space NVIDIA libraries without changing linker state: `ldconfig -p` entries for `libnvidia-ml.so.1` and `libcuda.so.1`, each resolved real path via `readlink -f`, file metadata, and owning Debian/Ubuntu package via `dpkg-query -S` or `dpkg -S` when available. Record package versions using read-only `dpkg-query -W` for installed NVIDIA driver/kernel/compute/NVML-related packages. Do not run `ldconfig` in write/update mode and do not change symlinks.
+5. Resolve `nvidia-smi`: absolute path, file metadata, owning package/version if available. Run `nvidia-smi -L` **at most once in this package** after the component snapshot. Record exact exit code and stderr/stdout. If it now succeeds, also record the reported driver version and GPU list, but do not proceed into Torch/CUDA testing.
+6. Inspect package/update timing only enough to distinguish stale-loaded-module from installed split: read recent relevant entries from `/var/log/apt/history.log*`, `/var/log/dpkg.log*`, and/or read-only journal/package records for NVIDIA package changes. Record whether a NVIDIA driver/library/module package change occurred after the current boot and which versions were installed. Do not modify package-manager state.
+7. For operational safety only, record whether NVIDIA device nodes exist and whether they appear actively held using read-only `ls -l /dev/nvidia*` and, if available without privilege escalation, `fuser -v /dev/nvidia*`. Do **not** kill processes, reset GPUs, or contact other users. This evidence is only for a later Lead decision about whether a reboot could even be considered.
+8. Re-check the frozen checkpoint with `stat` and `sha256sum` once at handoff. It must remain byte-exact. Do not deserialize it.
 
-Requirements after install:
-- `torch == 2.1.2+cu118`;
-- `torchvision == 0.16.2+cu118`;
-- `numpy == 1.26.4`;
-- `torch.version.cuda == '11.8'`;
-- no alternate Torch/TorchVision/Numpy version, CPU-only Torch, conda replacement, system Python install, or copied package tree from another environment.
+### Classification rules — do not improvise
+Return exactly one terminal state:
 
-The existing pip cache may be reused. Record whether the prior partial download was useful, but do not manually splice or edit wheel bytes. If the exact fixed package command cannot complete within this package, return the blocker with logs; do not choose another version/index/mirror.
-
-### Checkpoint provenance guard — hash only, no deserialization
-Before and after the base-runtime work, run `stat` and `sha256sum` on:
-`/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth`
-
-Require exactly `305058902` bytes and SHA256 `4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458`. Reading bytes for hashing is allowed. `torch.load`, `mmengine.load_checkpoint`, pickle deserialization, model construction and state-dict inspection are forbidden.
-
-### CUDA smoke — base runtime only
-After exact package verification:
-1. Record `torch.cuda.is_available()`, `torch.cuda.device_count()`, `torch.cuda.get_device_name(1)`, `torch.version.cuda`, driver/runtime metadata available from existing tools, and `nvidia-smi -L` / relevant device line.
-2. Require `cuda:1` to identify an RTX A6000.
-3. On `cuda:1`, execute a tiny deterministic tensor smoke only, for example integer `arange` + addition and a small FP32 elementwise operation; synchronize the device and verify expected integer endpoints plus `torch.isfinite(...)` for FP32 output.
-4. Record whether tensors remained on `cuda:1`, the exact smoke code/command, exit code, outputs, and peak allocated CUDA bytes if readily available.
-5. Do not import `mmcv`, `mmengine`, `mmdet`, YOLO-World, MMYOLO, transformers, or the prepared detector smoke driver.
+- `YW_P3R7_STALE_LOADED_MODULE_REBOOT_CANDIDATE_RETURN_TO_LEAD` only if the evidence is internally coherent that the **loaded** module is old while the **on-disk module selected for the running kernel plus the resolved NVML/libcuda user-space stack are mutually consistent at the newer driver version**, with package/update timing consistent with the newer stack having been installed after the currently loaded module/boot. This state does **not** authorize reboot or any repair.
+- `YW_P3R7_INSTALLED_COMPONENT_SPLIT_RETURN_TO_LEAD` if the on-disk kernel module, resolved NVML/libcuda libraries, `nvidia-smi`, or installed driver packages are themselves version-mixed/inconsistent, or if multiple active candidate library paths make the effective stack non-unique. Do not repair or choose a preferred version.
+- `YW_P3R7_HOST_CONSISTENCY_RECOVERED_RETURN_TO_LEAD` only if the host has become internally consistent without any action in this package and the single allowed `nvidia-smi -L` succeeds with versions matching the loaded/on-disk/user-space evidence. Do not resume P3R6 in the same cycle.
+- `YW_P3R7_AMBIGUOUS_RETURN_TO_LEAD` if evidence is missing, contradictory, permissions prevent adjudication, or the state cannot meet one of the rules above. Fail closed.
 
 ## Explicit non-goals / prohibitions
-- No MMCV/MMEngine/MMDet/transformers/timm/OpenCV installation or build in this package; no `openmim`; no source build; no source patch.
-- No alternate Torch/TorchVision/Numpy version, no CUDA-version change, no different GPU, no conda/system-environment fallback, no third-party mirror or manual wheel substitution.
-- No checkpoint deserialization or key inspection; no model construction/load; no CLIP/text encoder load; no YOLO/MMYOLO import; no `synthetic_smoke.py`; no synthetic detector forward.
+- **No reboot, shutdown, driver reload, GPU reset, `rmmod`, `modprobe`, DKMS build, initramfs update, package install/remove/upgrade/downgrade, apt repair, symlink edit, library copy, `ldconfig` mutation, container workaround, or privilege-escalated repair.**
+- No Torch/TorchVision/Numpy install; no use of the P3/P3R6 fixed pip command this hour; no CUDA tensor smoke; no custom libcuda/NVML program intended to bypass the failed host state.
+- No MMCV/MMEngine/MMDet/transformers/timm/OpenCV install/build; no `openmim`; no source patch.
+- No checkpoint deserialization or key inspection; no model construction/load; no CLIP/text encoder load; no YOLO/MMYOLO import; no `synthetic_smoke.py`; no detector forward.
 - No T013 selected image or corruption, no COCO/LVIS image/annotation/evaluation, no AP/AP50/AR, D/A, bootstrap, Gate1/2/3/4, Grounding rerun, T014, CF/MECH scientific work, proposal-lock, or YOLO scientific benchmark.
-- Do not interpret a base-runtime PASS as YOLO runtime feasibility or scientific support. Do not interpret a package/network/GPU failure as a YOLO scientific negative.
+- Do not call an NVML/driver mismatch a YOLO negative. Do not reinterpret future YOLO results as replacing the failed Grounding primary.
 
 ## Acceptance / stop criteria
-End in exactly one state:
-
-- `YW_P3R6_BASE_TORCH_CUDA_PASS_RETURN_TO_LEAD` if the existing isolated venv installs exactly Torch `2.1.2+cu118`, TorchVision `0.16.2+cu118`, Numpy `1.26.4`; `torch.version.cuda` is `11.8`; `cuda:1` is an RTX A6000; the bounded CUDA tensor smoke executes on that device and passes finite/value checks; and the checkpoint final-path size/SHA256 remains exact. This state authorizes **no MMCV build, model load, or detector forward**.
-- `YW_P3R6_ENV_DRIFT_RETURN_TO_LEAD` if unauthorized pre-existing ML/runtime packages or other unexplained environment drift are found before installation. Preserve the snapshot; do not clean/recreate the venv.
-- `YW_P3R6_FIXED_LANE_BLOCKER_RETURN_TO_LEAD` if the exact fixed install command terminates nonzero, exact versions cannot be obtained, CUDA is unavailable, `cuda:1` is absent/not A6000, Torch reports a non-11.8 CUDA build, the tiny CUDA smoke fails, or the checkpoint hash guard fails. Preserve exact logs and stop; do not try alternate packages/devices/indexes or continue upward in the stack.
-- `YW_P3R6_AMBIGUOUS_RETURN_TO_LEAD` for any unexpected state that cannot be classified above. Fail closed.
-
-No P3R6 terminal state authorizes OpenMMLab installation, checkpoint deserialization, model/synthetic forward, or scientific execution.
+This package is accepted only if it ends in exactly one of the four classification states above with a reproducible component matrix and zero repair/runtime/scientific actions. Stop immediately if any command would require modifying driver/package/linker state or escalating into a repair path.
 
 ## Exact evidence Codex must write back to `coordination/CODEX_TO_CHATGPT.md`
 Report all of the following:
-- task `T013-YW-P3R6`, task-start HEAD, exact commit containing this Lead instruction, start/stop timestamps, and final state;
-- preflight venv path, Python version, complete preflight `pip list`, free-space snapshot, `nvcc --version` from the fixed existing compiler path, and `nvidia-smi` device snapshot;
-- pre-install checkpoint `stat` + SHA256 and post-task checkpoint `stat` + SHA256;
-- the exact fixed pip command above, start/stop timestamps, exit code, and raw/concise install log path; note cache use and any network/package blocker without changing the command;
-- complete post-install `pip list --format=json` and `pip freeze`; explicit equality checks for Torch/TorchVision/Numpy versions and explicit `torch.version.cuda`;
-- exact CUDA smoke code/command and output: `torch.cuda.is_available`, device count, device 1 name, tensor device, expected integer endpoints, FP32 finite check, synchronization result, and peak allocated bytes if recorded;
-- explicit counts: fixed base install command executions `1` maximum; alternate version/index/mirror/device attempts `0`; MMCV/MMEngine/MMDet/transformers/timm/OpenCV install/build `0`; source patches `0`; checkpoint deserializations `0`; model constructions/loads `0`; synthetic detector forwards `0`; T013/COCO/LVIS scientific actions `0`; Grounding reruns `0`; T014/CF/MECH scientific work `0`; YOLO scientific benchmark `0`;
-- confirmation that Grounding remains canonically `GROUNDING_PRIMARY_NOT_SUPPORTED`, P0/P1/P2/P3/P3R1–P3R5 evidence is unchanged, and all YOLO scientific settings remain frozen;
-- machine-readable receipt plus concise human report under `research_log/t013_yoloworld/p3r6/`, with a delivery manifest/hash list; do not commit package caches, wheels, environments, checkpoint bytes, or other large payloads;
-- recommended next action only as `Research Lead review of P3R6 base Torch/CUDA runtime evidence before any OpenMMLab/model-runtime work`.
+- task `T013-YW-P3R7`, task-start HEAD, exact commit containing this Lead instruction, start/stop timestamps, and final classification;
+- complete read-only command ledger with exit codes;
+- boot/kernel snapshot: `uname`, kernel release, uptime/boot time;
+- loaded NVIDIA module version and source evidence; loaded module names; readable GPU information from `/proc`;
+- on-disk `nvidia` module path, version, vermagic, metadata, and hash if feasible;
+- resolved real paths for `libnvidia-ml.so.1` and `libcuda.so.1`, owning package(s), installed package version(s), and any duplicate/multiple-candidate paths;
+- `nvidia-smi` path/package and the **single** allowed `nvidia-smi -L` result/exit code;
+- concise NVIDIA package/update timeline relative to current boot, with exact source log lines or a machine-readable extracted record;
+- NVIDIA device-node and non-destructive active-holder snapshot, explicitly noting if unavailable due permissions;
+- a compact component matrix with columns at minimum: component, loaded/on-disk/user-space role, resolved path, reported version, package version, timestamp/evidence source, consistency judgment;
+- explicit justification for the chosen terminal classification against the fixed rules above; no repair recommendation beyond `Research Lead review required`;
+- venv pre/post `pip list` equality check; checkpoint final `stat` + SHA256;
+- explicit action counts: reboots `0`; driver/module reload/reset `0`; package mutations `0`; linker/symlink mutations `0`; fixed Torch install commands `0`; CUDA tensor smokes `0`; checkpoint deserializations `0`; model constructions/loads `0`; detector forwards `0`; T013/COCO/LVIS scientific actions `0`; Grounding reruns `0`; T014/CF/MECH scientific work `0`; YOLO scientific benchmark `0`;
+- machine-readable receipt plus concise human report under `research_log/t013_yoloworld/p3r7/`; do not commit logs containing secrets, package caches, environments, checkpoint bytes, or large payloads;
+- confirmation that Grounding remains canonically `GROUNDING_PRIMARY_NOT_SUPPORTED`, P0/P1/P2/P3/P3R1–P3R6 evidence remains preserved, and all YOLO scientific settings remain frozen;
+- recommended next action exactly as: `Research Lead review of P3R7 host-driver consistency adjudication before any reboot, driver repair, Torch install, or model-runtime work`.
 
 Stop after this handoff and await Research-Lead review.
