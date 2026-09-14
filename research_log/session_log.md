@@ -1088,3 +1088,7 @@ Read recovery/handoff and AGENTS/protocol/mailbox/spec; git status/fetch/fast-fo
 ## 2026-09-14T20:36:22.9681390+08:00 — mailbox-only heartbeat awaiting P3R6 review
 Read recovery/handoff and AGENTS/protocol/mailbox/spec; git status/fetch/fast-forward exit0. origin/main unchanged at baa1def8436c298c9836201ef6199bb8867fd566; Leadc2c516f P3R6 already terminal in abb9b59/2908d16. No new task or active remote run; no repeated preflight, driver action, package install, CUDA smoke, science or cleanup. Await Research Lead review of P3R6 base Torch/CUDA runtime evidence before any OpenMMLab/model-runtime work.
 
+
+
+## 2026-09-14T13:22:29.238578+00:00 — P3R7 SSH transport stop
+Resumed after user replenished quota. Lead1f76d408/task-start75eda550. Local read-only snapshot.py prepared but not uploaded/executed: first SSH project-dir preparation closed(exit255), identity-only probe succeeded21:20:22+08, second preparation timed out(exit255). State YW_P3R7_AMBIGUOUS_RETURN_TO_LEAD due missing current component evidence. nvidia-smi0, repair/runtime/science0; no new checkpoint/venv measurement. Prior evidence unchanged. Local p3r7 receipts authoritative; remote mirror unavailable. Await Lead review; do not repeat unchanged terminal task.

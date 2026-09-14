@@ -1,0 +1,22 @@
+[
+  {
+    "command": "Invoke-AutodlSsh mkdir -p /home/wenchang/asdasdsad/wjq/TOVD/research_log/t013_yoloworld/p3r7",
+    "exit_code": 255,
+    "stdout": "",
+    "stderr": "Connection closed by 202.101.162.22 port 8220",
+    "effect": "SSH failed; no confirmation directory was created; subsequent upload/execution/fetch not reached"
+  },
+  {
+    "command": "Invoke-AutodlSsh 'date -Is; hostname'",
+    "exit_code": 0,
+    "stdout": "2026-09-14T21:20:22+08:00\nwenchang-PR4904W1\n",
+    "stderr": ""
+  },
+  {
+    "command": "Invoke-AutodlSsh mkdir -p /home/wenchang/asdasdsad/wjq/TOVD/research_log/t013_yoloworld/p3r7",
+    "exit_code": 255,
+    "stdout": "",
+    "stderr": "ssh: connect to host 202.101.162.22 port 8220: Connection timed out",
+    "effect": "SSH failed; subsequent upload/execution/fetch not reached"
+  }
+]
