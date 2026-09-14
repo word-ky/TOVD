@@ -1,0 +1,134 @@
+{
+  "task": "T013-YW-P3R1",
+  "task_start_head": "1fe8a00f7bb6396db5549505efad3003731301c1",
+  "lead_instruction_commit": "bd8d7980b1b7d823ee266d341c1daee637d3c704",
+  "started_at": "2026-09-14T14:09:57.749621+08:00",
+  "asset": {
+    "repository": "wondervictor/YOLO-World-V2.1",
+    "revision": "c620164ee3979bf49b895c8a8e0f49aeaca89209",
+    "filename": "s_stage2-4466ab94.pth",
+    "url": "https://huggingface.co/wondervictor/YOLO-World-V2.1/resolve/c620164ee3979bf49b895c8a8e0f49aeaca89209/s_stage2-4466ab94.pth",
+    "expected_bytes": 305058902,
+    "expected_sha256": "4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458"
+  },
+  "final_path": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth",
+  "final_existed_before": false,
+  "candidates": [],
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_at": "2026-09-14T14:09:57.794688+08:00",
+      "resumed": false,
+      "dns_addresses": [
+        "2a03:2880:f10d:183:face:b00c:0:25de",
+        "66.220.149.18"
+      ],
+      "command": [
+        "curl",
+        "-fL",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "45",
+        "--max-time",
+        "900",
+        "--output",
+        "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth.p3r1.partial",
+        "--write-out",
+        "%{json}",
+        "https://huggingface.co/wondervictor/YOLO-World-V2.1/resolve/c620164ee3979bf49b895c8a8e0f49aeaca89209/s_stage2-4466ab94.pth"
+      ],
+      "stopped_at": "2026-09-14T14:10:20.527588+08:00",
+      "exit_code": 28,
+      "stderr": "curl: (28) Failed to connect to huggingface.co port 443 after 22703 ms: \u8fde\u63a5\u8d85\u65f6\n",
+      "partial_bytes": 0,
+      "bytes_added": 0,
+      "transport": {
+        "http_code": 0,
+        "remote_ip": "",
+        "remote_port": 0,
+        "num_redirects": 0,
+        "time_namelookup": 0.001513,
+        "time_connect": 0.0,
+        "time_appconnect": 0.0,
+        "time_total": 22.702418,
+        "size_download": 0,
+        "speed_download": 0,
+        "ssl_verify_result": 0,
+        "errormsg": "Failed to connect to huggingface.co port 443 after 22703 ms: uffffffe8uffffffbfuffffff9euffffffe6uffffff8euffffffa5uffffffe8uffffffb6uffffff85uffffffe6uffffff97uffffffb6"
+      }
+    },
+    {
+      "attempt": 2,
+      "started_at": "2026-09-14T14:10:20.528517+08:00",
+      "resumed": false,
+      "dns_addresses": [
+        "2a03:2880:f10d:183:face:b00c:0:25de",
+        "66.220.149.18"
+      ],
+      "command": [
+        "curl",
+        "-fL",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "45",
+        "--max-time",
+        "900",
+        "--output",
+        "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth.p3r1.partial",
+        "--write-out",
+        "%{json}",
+        "https://huggingface.co/wondervictor/YOLO-World-V2.1/resolve/c620164ee3979bf49b895c8a8e0f49aeaca89209/s_stage2-4466ab94.pth"
+      ],
+      "stopped_at": "2026-09-14T14:10:43.246200+08:00",
+      "exit_code": 28,
+      "stderr": "curl: (28) Failed to connect to huggingface.co port 443 after 22701 ms: \u8fde\u63a5\u8d85\u65f6\n",
+      "partial_bytes": 0,
+      "bytes_added": 0,
+      "transport": {
+        "http_code": 0,
+        "remote_ip": "",
+        "remote_port": 0,
+        "num_redirects": 0,
+        "time_namelookup": 0.001731,
+        "time_connect": 0.0,
+        "time_appconnect": 0.0,
+        "time_total": 22.701534,
+        "size_download": 0,
+        "speed_download": 0,
+        "ssl_verify_result": 0,
+        "errormsg": "Failed to connect to huggingface.co port 443 after 22701 ms: uffffffe8uffffffbfuffffff9euffffffe6uffffff8euffffffa5uffffffe8uffffffb6uffffff85uffffffe6uffffff97uffffffb6"
+      }
+    }
+  ],
+  "commands": [],
+  "first_blocker": {
+    "attempt": 1,
+    "exit_code": 28,
+    "message": "curl: (28) Failed to connect to huggingface.co port 443 after 22703 ms: \u8fde\u63a5\u8d85\u65f6"
+  },
+  "final_verification": null,
+  "independent_verification": null,
+  "prohibited_action_counts": {
+    "alternate_checkpoint_model": 0,
+    "alternate_host_mirror": 0,
+    "package_install_build": 0,
+    "checkpoint_deserialization": 0,
+    "CUDA_ops": 0,
+    "model_load": 0,
+    "forward": 0,
+    "T013_COCO_LVIS_science": 0
+  },
+  "search_roots": [
+    "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld",
+    "/home/liujianhua/.cache/huggingface/hub"
+  ],
+  "search_command": "Python os.walk listed roots, followlinks=False; files selected by basename == s_stage2-4466ab94.pth OR stat().st_size == 305058902; raw hashlib.sha256 for every selected file",
+  "candidate_count": 0,
+  "state": "YW_P3R1_CHECKPOINT_TRANSPORT_BLOCKED_RETURN_TO_LEAD",
+  "stop_reason": "Two authorized official-source attempts exhausted without a verified checkpoint",
+  "next_action": "Research Lead checkpoint-transport blocker review",
+  "stopped_at": "2026-09-14T14:10:43.247888+08:00",
+  "final_exists_after": false
+}
