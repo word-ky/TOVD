@@ -1717,3 +1717,6 @@ Final history finding: no committed evidence of duplicate/restarted primary, una
   "recommended_next_action": "DEC1B final Grounding adjudication"
 }
 ```
+
+
+G4B1 evidence commit: d469eb34fcb29e0b3f899053e5415b0581ebcd76. Fixed scientific-history endpoint remains 745efb43d8640f8ac3958bb733d0df44c51c87ff. This evidence commit and the following delivery commit are outside the audited interval. The four audit artifacts remain unchanged. Final state FINAL_GATE4_HISTORY_CLEAN_READY_FOR_DEC1B; await Research Lead DEC1B adjudication, no repeated audit or scientific execution.
