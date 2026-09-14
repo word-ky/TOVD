@@ -945,3 +945,7 @@ Lead ca74fa34a9e94d96f30eb4883ed88572ff1b1cf5 / task-start94833fffd735060d077eaf
 
 
 DEC1B evidence commit: e072950635d24b06f7abf1979d36e7017f4848b1. Canonical final state GROUNDING_PRIMARY_NOT_SUPPORTED; actual primary decide call count remains exactly one. This delivery entry does not modify the sealed seven-file packet. Await Research Lead; no second decision call or experiment authorized.
+
+
+## 2026-09-14T12:55:51+08:00 — mailbox-only heartbeat after DEC1B
+Project recovery records and mandatory AGENTS/protocol/mailbox/spec read. Initial git fetch failed connecting to github.com:443 after21117ms; one bounded retry succeeded. Fast-forward check already up to date at588c7b4; no new Lead instruction. DEC1B evidence e072950635d24b06f7abf1979d36e7017f4848b1/delivery588c7b4 already seals GROUNDING_PRIMARY_NOT_SUPPORTED. No repeated decision call, scientific result access, remote observation or experiment execution. Await Lead review/new task; transient synchronization failure recovered without scientific action.
