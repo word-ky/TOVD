@@ -1,0 +1,22 @@
+{
+  "adjudication_receipt.json": {
+    "bytes": 10867,
+    "sha256": "d2af601c57846ba529d89c7a8fab93480808afcb9752ff62c3913fd15a489a77"
+  },
+  "network_metadata.py": {
+    "bytes": 2802,
+    "sha256": "15fc483bde789f038b7dd75988991bbe7c90f18b1858d4974e2c8b97357d9084"
+  },
+  "network_receipt.json": {
+    "bytes": 7988,
+    "sha256": "624b5159bd85145c3fa9c4d12d541ecf12823d7a2bc7a93f0e052d8ba049839e"
+  },
+  "P3R2_REPORT.md": {
+    "bytes": 3447,
+    "sha256": "53200a7d6988087f33fe659e8f82f9f0f7d72da4c5d4c9e155a76c2d84296612"
+  },
+  "write_report.py": {
+    "bytes": 6276,
+    "sha256": "83a8338781019e4d3346685e073f5065378c0b57e464b2dbcb6a77e8aac6e796"
+  }
+}

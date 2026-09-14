@@ -992,3 +992,10 @@ Read project remote recovery/recent handoff and AGENTS/protocol/mailbox/spec. gi
 ## 2026-09-14T15:17:55.8465420+08:00 — mailbox-only heartbeat after P3R1
 Read remote recovery/recent handoff and AGENTS/protocol/mailbox/spec. git fetch and fast-forward succeeded; origin/main unchanged at b2d63c302071080ccbb3273cdce01343634b33ed. Lead bd8d798 unchanged; P3R1 evidence4212502/deliverye694f12 already exhausted the two authorized transfers. No new task or active run; no retry, remote runtime observation, package/build/GPU/scientific action. Await Research Lead checkpoint-transport blocker review.
 
+
+## 2026-09-14T15:34:55.4909811+08:00 — T013-YW-P3R2 started
+Lead767d41e/task-start144e6f4 authorizes metadata-only resolver/path adjudication. Deployed network_metadata.py to remote project p3r2; system Python3.10 executes resolver/proxy-name/curl snapshot, two HEAD egress controls, and Google/Cloudflare DoH A/AAAA queries. No checkpoint request, install, configuration change or model/GPU/scientific action. Same-origin probe decision awaits independent DNS results.
+
+
+## 2026-09-14T15:35:33.482938+08:00 — P3R2 AMBIGUOUS
+Independent Google DoH A/AAAA exit28 and Cloudflare A/AAAA exit35; no records, Step C not run. PyPI HTTP200/TLSvalid, GitHub TLSvalid then response timeout. System DNS changed versus P3R1, insufficient for causal attribution. No checkpoint, network change, installation, GPU or scientific action. Full separate p3r2 evidence; await Research Lead review of resolver/path evidence before any checkpoint recovery. No unchanged-mailbox repeat.

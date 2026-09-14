@@ -2189,3 +2189,311 @@ P3R1 artifact SHA256: recovery_receipt.json cd87cf09190ec57922976cce4ca2ddfd3294
 
 P3R1 evidence commit: 42125024eb6fb0b8a1906e5c263f99e2a47a94de. Receipt/report hashes match the server project-local mirror. State YW_P3R1_CHECKPOINT_TRANSPORT_BLOCKED_RETURN_TO_LEAD; exactly two attempts exhausted. No further recovery/runtime action; await Research Lead checkpoint-transport blocker review.
 
+
+
+---
+
+# T013-YW-P3R2 — resolver/path attribution remains ambiguous
+
+State: **YW_P3R2_AMBIGUOUS_RETURN_TO_LEAD**.
+Task-start HEAD: `144e6f45c766a5783838d282e21193ca34c23065`. Lead instruction: `767d41e326439ee5c4b668af8e792cc45d768bdb`.
+Probe interval: 2026-09-14T15:34:38.856861+08:00 through 2026-09-14T15:35:33.482938+08:00. Metadata driver exit 0; individual failures retained below.
+
+PyPI returned HTTP 200 with verified TLS (151.101.192.223, 0.245516 s). GitHub connected and completed TLS (20.205.243.166, TLS time 0.463352 s, verification result 0), then timed out after 30.001642 s without HTTP response (curl 28). Thus these controls do not establish a universal outbound block.
+
+Google DoH A/AAAA both failed before connection with curl 28, after 11355/11352 ms. Cloudflare DoH A/AAAA both failed with curl 35: `OpenSSL SSL_connect: 连接被对方重置 in connection to cloudflare-dns.com:443`. All four returned no DNS JSON, addresses, TTL or status. Agreement with each other or system DNS is unavailable. No independently obtained address exists for Step C: same-origin --resolve probes = 0. No additional client/resolver or retry was improvised.
+
+System `getent ahosts huggingface.co` succeeded and returned IPv4 199.59.149.231 and IPv6 2a03:2880:f134:183:face:b00c:0:25de. These differ from the P3R1 observations, but variation alone does not establish resolver causation. `/etc/resolv.conf` uses nameserver 127.0.0.53, options edns0 trust-ad, search dot; full content retained in the receipt, SHA256 ebdf560272a77357195c39e98340b77e18c8a8ce2025ee950e9e0c7b01467ab8.
+
+HTTP_PROXY, HTTPS_PROXY, ALL_PROXY, http_proxy, https_proxy, all_proxy, NO_PROXY and no_proxy are all unset; no proxy values were read or printed. Existing curl 7.81.0 / OpenSSL 3.0.2 advertises HTTPS, HTTP2 and SSL, with --doh-url and --resolve exposed in help. No curl replacement or certificate bypass occurred.
+
+Frozen asset: wondervictor/YOLO-World-V2.1, revision c620164ee3979bf49b895c8a8e0f49aeaca89209, file s_stage2-4466ab94.pth; expected 305058902 bytes, SHA256 4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458. Exact URL: https://huggingface.co/wondervictor/YOLO-World-V2.1/resolve/c620164ee3979bf49b895c8a8e0f49aeaca89209/s_stage2-4466ab94.pth. No request to this URL occurred in P3R2; no payload acquired, partial created, checkpoint hash reverified or model deserialized.
+
+All prohibited-action counts are 0: checkpoint/partial creation, payload-download attempt, alternate checkpoint/model or content host/mirror, network/DNS configuration change, package install/build, checkpoint deserialization, CUDA/model-load/forward, T013/COCO/LVIS science, Grounding rerun, T014/CF/MECH scientific work. P3/P3R1, Grounding and YOLO freezes/settings remain unchanged. No background job remains.
+
+Exact command arrays, timestamped results, resolver content, curl features, DNS failures, TLS/HTTP/IP/timing fields and empty same-origin probe list are in adjudication_receipt.json (raw A/B evidence: network_receipt.json). Changed paths: this separate p3r2 directory, plus append-only coordination/CODEX_TO_CHATGPT.md and research_log/session_log.md. File hashes are in delivery_manifest.json. These are network observations only, not runtime or scientific evidence. Do not repeat the package on an unchanged mailbox.
+
+Recommended next action: **Research Lead review of resolver/path evidence before any checkpoint recovery**.
+
+Complete P3R2 metadata receipt:
+```json
+{
+  "task": "T013-YW-P3R2",
+  "task_start_head": "144e6f45c766a5783838d282e21193ca34c23065",
+  "lead_instruction_commit": "767d41e326439ee5c4b668af8e792cc45d768bdb",
+  "started_at": "2026-09-14T15:34:38.856861+08:00",
+  "resolv_conf": {
+    "content": "# This is /run/systemd/resolve/stub-resolv.conf managed by man:systemd-resolved(8).\n# Do not edit.\n#\n# This file might be symlinked as /etc/resolv.conf. If you're looking at\n# /etc/resolv.conf and seeing this text, you have followed the symlink.\n#\n# This is a dynamic resolv.conf file for connecting local clients to the\n# internal DNS stub resolver of systemd-resolved. This file lists all\n# configured search domains.\n#\n# Run \"resolvectl status\" to see details about the uplink DNS servers\n# currently in use.\n#\n# Third party programs should typically not access this file directly, but only\n# through the symlink at /etc/resolv.conf. To manage man:resolv.conf(5) in a\n# different way, replace this symlink by a static file or a different symlink.\n#\n# See man:systemd-resolved.service(8) for details about the supported modes of\n# operation for /etc/resolv.conf.\n\nnameserver 127.0.0.53\noptions edns0 trust-ad\nsearch .\n",
+    "sha256": "ebdf560272a77357195c39e98340b77e18c8a8ce2025ee950e9e0c7b01467ab8"
+  },
+  "system_dns": {
+    "command": [
+      "getent",
+      "ahosts",
+      "huggingface.co"
+    ],
+    "started_at": "2026-09-14T15:34:38.857058+08:00",
+    "stopped_at": "2026-09-14T15:34:38.874927+08:00",
+    "exit_code": 0,
+    "stdout": "199.59.149.231  STREAM huggingface.co\n199.59.149.231  DGRAM  \n199.59.149.231  RAW    \n2a03:2880:f134:183:face:b00c:0:25de STREAM \n2a03:2880:f134:183:face:b00c:0:25de DGRAM  \n2a03:2880:f134:183:face:b00c:0:25de RAW    \n",
+    "stderr": ""
+  },
+  "proxy_status": {
+    "HTTP_PROXY": "unset",
+    "HTTPS_PROXY": "unset",
+    "ALL_PROXY": "unset",
+    "http_proxy": "unset",
+    "https_proxy": "unset",
+    "all_proxy": "unset",
+    "NO_PROXY": "unset",
+    "no_proxy": "unset"
+  },
+  "curl_version": {
+    "command": [
+      "curl",
+      "--version"
+    ],
+    "started_at": "2026-09-14T15:34:38.874967+08:00",
+    "stopped_at": "2026-09-14T15:34:38.887158+08:00",
+    "exit_code": 0,
+    "stdout": "curl 7.81.0 (x86_64-pc-linux-gnu) libcurl/7.81.0 OpenSSL/3.0.2 zlib/1.2.11 brotli/1.0.9 zstd/1.4.8 libidn2/2.3.2 libpsl/0.21.0 (+libidn2/2.3.2) libssh/0.9.6/openssl/zlib nghttp2/1.43.0 librtmp/2.3 OpenLDAP/2.5.19\nRelease-Date: 2022-01-05\nProtocols: dict file ftp ftps gopher gophers http https imap imaps ldap ldaps mqtt pop3 pop3s rtmp rtsp scp sftp smb smbs smtp smtps telnet tftp \nFeatures: alt-svc AsynchDNS brotli GSS-API HSTS HTTP2 HTTPS-proxy IDN IPv6 Kerberos Largefile libz NTLM NTLM_WB PSL SPNEGO SSL TLS-SRP UnixSockets zstd\n",
+    "stderr": ""
+  },
+  "curl_help_capabilities": {
+    "command": [
+      "curl",
+      "--help",
+      "all"
+    ],
+    "exit_code": 0,
+    "lines": [
+      "     --doh-cert-status    Verify the status of the DoH server cert via OCSP-staple",
+      "     --doh-insecure       Allow insecure DoH server connections",
+      "     --doh-url <URL>      Resolve host names over DoH",
+      "     --http2              Use HTTP 2",
+      "     --http2-prior-knowledge Use HTTP 2 without HTTP/1.1 Upgrade",
+      "     --resolve <[+]host:port:addr[,addr]...> Resolve the host+port to this address"
+    ]
+  },
+  "controls": [
+    {
+      "command": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--head",
+        "--connect-timeout",
+        "15",
+        "--max-time",
+        "30",
+        "--output",
+        "/dev/null",
+        "--write-out",
+        "%{json}",
+        "https://github.com/"
+      ],
+      "started_at": "2026-09-14T15:34:38.895294+08:00",
+      "stopped_at": "2026-09-14T15:35:08.911818+08:00",
+      "exit_code": 28,
+      "stderr": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received\n",
+      "transport": {
+        "http_code": 0,
+        "remote_ip": "20.205.243.166",
+        "ssl_verify_result": 0,
+        "time_namelookup": 0.015234,
+        "time_connect": 0.127913,
+        "time_appconnect": 0.463352,
+        "time_total": 30.001642,
+        "num_redirects": 0,
+        "size_download": 0
+      }
+    },
+    {
+      "command": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--head",
+        "--connect-timeout",
+        "15",
+        "--max-time",
+        "30",
+        "--output",
+        "/dev/null",
+        "--write-out",
+        "%{json}",
+        "https://pypi.org/"
+      ],
+      "started_at": "2026-09-14T15:35:08.912853+08:00",
+      "stopped_at": "2026-09-14T15:35:09.170089+08:00",
+      "exit_code": 0,
+      "stderr": "",
+      "transport": {
+        "http_code": 200,
+        "remote_ip": "151.101.192.223",
+        "ssl_verify_result": 0,
+        "time_namelookup": 0.012851,
+        "time_connect": 0.072545,
+        "time_appconnect": 0.191547,
+        "time_total": 0.245516,
+        "num_redirects": 0,
+        "size_download": 0
+      }
+    }
+  ],
+  "doh": [
+    {
+      "command": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "15",
+        "--max-time",
+        "30",
+        "--header",
+        "Accept: application/dns-json",
+        "https://dns.google/resolve?name=huggingface.co&type=A"
+      ],
+      "started_at": "2026-09-14T15:35:09.171107+08:00",
+      "stopped_at": "2026-09-14T15:35:20.534510+08:00",
+      "exit_code": 28,
+      "stderr": "curl: (28) Failed to connect to dns.google port 443 after 11355 ms: \u8fde\u63a5\u8d85\u65f6\n",
+      "endpoint": "https://dns.google/resolve",
+      "record_type": "A",
+      "dns_response": null,
+      "non_json_body_bytes": 0
+    },
+    {
+      "command": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "15",
+        "--max-time",
+        "30",
+        "--header",
+        "Accept: application/dns-json",
+        "https://dns.google/resolve?name=huggingface.co&type=AAAA"
+      ],
+      "started_at": "2026-09-14T15:35:20.535822+08:00",
+      "stopped_at": "2026-09-14T15:35:31.899566+08:00",
+      "exit_code": 28,
+      "stderr": "curl: (28) Failed to connect to dns.google port 443 after 11352 ms: \u8fde\u63a5\u8d85\u65f6\n",
+      "endpoint": "https://dns.google/resolve",
+      "record_type": "AAAA",
+      "dns_response": null,
+      "non_json_body_bytes": 0
+    },
+    {
+      "command": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "15",
+        "--max-time",
+        "30",
+        "--header",
+        "Accept: application/dns-json",
+        "https://cloudflare-dns.com/dns-query?name=huggingface.co&type=A"
+      ],
+      "started_at": "2026-09-14T15:35:31.900939+08:00",
+      "stopped_at": "2026-09-14T15:35:32.193581+08:00",
+      "exit_code": 35,
+      "stderr": "curl: (35) OpenSSL SSL_connect: \u8fde\u63a5\u88ab\u5bf9\u65b9\u91cd\u7f6e in connection to cloudflare-dns.com:443 \n",
+      "endpoint": "https://cloudflare-dns.com/dns-query",
+      "record_type": "A",
+      "dns_response": null,
+      "non_json_body_bytes": 0
+    },
+    {
+      "command": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "15",
+        "--max-time",
+        "30",
+        "--header",
+        "Accept: application/dns-json",
+        "https://cloudflare-dns.com/dns-query?name=huggingface.co&type=AAAA"
+      ],
+      "started_at": "2026-09-14T15:35:32.194812+08:00",
+      "stopped_at": "2026-09-14T15:35:33.481555+08:00",
+      "exit_code": 35,
+      "stderr": "curl: (35) OpenSSL SSL_connect: \u8fde\u63a5\u88ab\u5bf9\u65b9\u91cd\u7f6e in connection to cloudflare-dns.com:443 \n",
+      "endpoint": "https://cloudflare-dns.com/dns-query",
+      "record_type": "AAAA",
+      "dns_response": null,
+      "non_json_body_bytes": 0
+    }
+  ],
+  "same_origin_probes": [],
+  "ab_stopped_at": "2026-09-14T15:35:33.482938+08:00",
+  "state": "YW_P3R2_AMBIGUOUS_RETURN_TO_LEAD",
+  "stopped_at": "2026-09-14T15:35:33.482938+08:00",
+  "reason": "Both independent DoH services unavailable; no independent address for authorized same-origin probe. PyPI control succeeds, so broad egress blockage is not established.",
+  "asset": {
+    "repository": "wondervictor/YOLO-World-V2.1",
+    "revision": "c620164ee3979bf49b895c8a8e0f49aeaca89209",
+    "filename": "s_stage2-4466ab94.pth",
+    "url": "https://huggingface.co/wondervictor/YOLO-World-V2.1/resolve/c620164ee3979bf49b895c8a8e0f49aeaca89209/s_stage2-4466ab94.pth",
+    "expected_bytes": 305058902,
+    "expected_sha256": "4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458"
+  },
+  "counts": {
+    "checkpoint_partial_files_created": 0,
+    "checkpoint_payload_download_attempts": 0,
+    "alternate_checkpoint_model": 0,
+    "alternate_content_host_mirror": 0,
+    "network_DNS_configuration_changes": 0,
+    "package_install_build": 0,
+    "checkpoint_deserialization": 0,
+    "CUDA_model_load_forward": 0,
+    "T013_COCO_LVIS_scientific_actions": 0,
+    "Grounding_rerun": 0,
+    "T014_CF_MECH_scientific_work": 0
+  },
+  "independent_DNS_agreement": "UNAVAILABLE: all four queries returned no DNS response; no returned addresses/status/TTL",
+  "same_origin_probe_skip_reason": "Step B produced no independent address; Step C prerequisite unmet",
+  "first_probe_failure": {
+    "command": [
+      "curl",
+      "--silent",
+      "--show-error",
+      "--head",
+      "--connect-timeout",
+      "15",
+      "--max-time",
+      "30",
+      "--output",
+      "/dev/null",
+      "--write-out",
+      "%{json}",
+      "https://github.com/"
+    ],
+    "started_at": "2026-09-14T15:34:38.895294+08:00",
+    "stopped_at": "2026-09-14T15:35:08.911818+08:00",
+    "exit_code": 28,
+    "stderr": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received\n",
+    "transport": {
+      "http_code": 0,
+      "remote_ip": "20.205.243.166",
+      "ssl_verify_result": 0,
+      "time_namelookup": 0.015234,
+      "time_connect": 0.127913,
+      "time_appconnect": 0.463352,
+      "time_total": 30.001642,
+      "num_redirects": 0,
+      "size_download": 0
+    }
+  },
+  "preserved": "Original P3/P3R1 artifacts, Grounding freeze/cache/receipts/decision, YOLO P0/P1/P2 freeze and scientific settings unchanged.",
+  "driver_command": "/usr/bin/python3.10 /home/wenchang/asdasdsad/wjq/TOVD/research_log/t013_yoloworld/p3r2/network_metadata.py",
+  "driver_exit_code": 0,
+  "next_action": "Research Lead review of resolver/path evidence before any checkpoint recovery"
+}
+```

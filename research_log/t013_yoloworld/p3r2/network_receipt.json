@@ -1,0 +1,217 @@
+{
+  "task": "T013-YW-P3R2",
+  "task_start_head": "144e6f45c766a5783838d282e21193ca34c23065",
+  "lead_instruction_commit": "767d41e326439ee5c4b668af8e792cc45d768bdb",
+  "started_at": "2026-09-14T15:34:38.856861+08:00",
+  "resolv_conf": {
+    "content": "# This is /run/systemd/resolve/stub-resolv.conf managed by man:systemd-resolved(8).\n# Do not edit.\n#\n# This file might be symlinked as /etc/resolv.conf. If you're looking at\n# /etc/resolv.conf and seeing this text, you have followed the symlink.\n#\n# This is a dynamic resolv.conf file for connecting local clients to the\n# internal DNS stub resolver of systemd-resolved. This file lists all\n# configured search domains.\n#\n# Run \"resolvectl status\" to see details about the uplink DNS servers\n# currently in use.\n#\n# Third party programs should typically not access this file directly, but only\n# through the symlink at /etc/resolv.conf. To manage man:resolv.conf(5) in a\n# different way, replace this symlink by a static file or a different symlink.\n#\n# See man:systemd-resolved.service(8) for details about the supported modes of\n# operation for /etc/resolv.conf.\n\nnameserver 127.0.0.53\noptions edns0 trust-ad\nsearch .\n",
+    "sha256": "ebdf560272a77357195c39e98340b77e18c8a8ce2025ee950e9e0c7b01467ab8"
+  },
+  "system_dns": {
+    "command": [
+      "getent",
+      "ahosts",
+      "huggingface.co"
+    ],
+    "started_at": "2026-09-14T15:34:38.857058+08:00",
+    "stopped_at": "2026-09-14T15:34:38.874927+08:00",
+    "exit_code": 0,
+    "stdout": "199.59.149.231  STREAM huggingface.co\n199.59.149.231  DGRAM  \n199.59.149.231  RAW    \n2a03:2880:f134:183:face:b00c:0:25de STREAM \n2a03:2880:f134:183:face:b00c:0:25de DGRAM  \n2a03:2880:f134:183:face:b00c:0:25de RAW    \n",
+    "stderr": ""
+  },
+  "proxy_status": {
+    "HTTP_PROXY": "unset",
+    "HTTPS_PROXY": "unset",
+    "ALL_PROXY": "unset",
+    "http_proxy": "unset",
+    "https_proxy": "unset",
+    "all_proxy": "unset",
+    "NO_PROXY": "unset",
+    "no_proxy": "unset"
+  },
+  "curl_version": {
+    "command": [
+      "curl",
+      "--version"
+    ],
+    "started_at": "2026-09-14T15:34:38.874967+08:00",
+    "stopped_at": "2026-09-14T15:34:38.887158+08:00",
+    "exit_code": 0,
+    "stdout": "curl 7.81.0 (x86_64-pc-linux-gnu) libcurl/7.81.0 OpenSSL/3.0.2 zlib/1.2.11 brotli/1.0.9 zstd/1.4.8 libidn2/2.3.2 libpsl/0.21.0 (+libidn2/2.3.2) libssh/0.9.6/openssl/zlib nghttp2/1.43.0 librtmp/2.3 OpenLDAP/2.5.19\nRelease-Date: 2022-01-05\nProtocols: dict file ftp ftps gopher gophers http https imap imaps ldap ldaps mqtt pop3 pop3s rtmp rtsp scp sftp smb smbs smtp smtps telnet tftp \nFeatures: alt-svc AsynchDNS brotli GSS-API HSTS HTTP2 HTTPS-proxy IDN IPv6 Kerberos Largefile libz NTLM NTLM_WB PSL SPNEGO SSL TLS-SRP UnixSockets zstd\n",
+    "stderr": ""
+  },
+  "curl_help_capabilities": {
+    "command": [
+      "curl",
+      "--help",
+      "all"
+    ],
+    "exit_code": 0,
+    "lines": [
+      "     --doh-cert-status    Verify the status of the DoH server cert via OCSP-staple",
+      "     --doh-insecure       Allow insecure DoH server connections",
+      "     --doh-url <URL>      Resolve host names over DoH",
+      "     --http2              Use HTTP 2",
+      "     --http2-prior-knowledge Use HTTP 2 without HTTP/1.1 Upgrade",
+      "     --resolve <[+]host:port:addr[,addr]...> Resolve the host+port to this address"
+    ]
+  },
+  "controls": [
+    {
+      "command": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--head",
+        "--connect-timeout",
+        "15",
+        "--max-time",
+        "30",
+        "--output",
+        "/dev/null",
+        "--write-out",
+        "%{json}",
+        "https://github.com/"
+      ],
+      "started_at": "2026-09-14T15:34:38.895294+08:00",
+      "stopped_at": "2026-09-14T15:35:08.911818+08:00",
+      "exit_code": 28,
+      "stderr": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received\n",
+      "transport": {
+        "http_code": 0,
+        "remote_ip": "20.205.243.166",
+        "ssl_verify_result": 0,
+        "time_namelookup": 0.015234,
+        "time_connect": 0.127913,
+        "time_appconnect": 0.463352,
+        "time_total": 30.001642,
+        "num_redirects": 0,
+        "size_download": 0
+      }
+    },
+    {
+      "command": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--head",
+        "--connect-timeout",
+        "15",
+        "--max-time",
+        "30",
+        "--output",
+        "/dev/null",
+        "--write-out",
+        "%{json}",
+        "https://pypi.org/"
+      ],
+      "started_at": "2026-09-14T15:35:08.912853+08:00",
+      "stopped_at": "2026-09-14T15:35:09.170089+08:00",
+      "exit_code": 0,
+      "stderr": "",
+      "transport": {
+        "http_code": 200,
+        "remote_ip": "151.101.192.223",
+        "ssl_verify_result": 0,
+        "time_namelookup": 0.012851,
+        "time_connect": 0.072545,
+        "time_appconnect": 0.191547,
+        "time_total": 0.245516,
+        "num_redirects": 0,
+        "size_download": 0
+      }
+    }
+  ],
+  "doh": [
+    {
+      "command": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "15",
+        "--max-time",
+        "30",
+        "--header",
+        "Accept: application/dns-json",
+        "https://dns.google/resolve?name=huggingface.co&type=A"
+      ],
+      "started_at": "2026-09-14T15:35:09.171107+08:00",
+      "stopped_at": "2026-09-14T15:35:20.534510+08:00",
+      "exit_code": 28,
+      "stderr": "curl: (28) Failed to connect to dns.google port 443 after 11355 ms: \u8fde\u63a5\u8d85\u65f6\n",
+      "endpoint": "https://dns.google/resolve",
+      "record_type": "A",
+      "dns_response": null,
+      "non_json_body_bytes": 0
+    },
+    {
+      "command": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "15",
+        "--max-time",
+        "30",
+        "--header",
+        "Accept: application/dns-json",
+        "https://dns.google/resolve?name=huggingface.co&type=AAAA"
+      ],
+      "started_at": "2026-09-14T15:35:20.535822+08:00",
+      "stopped_at": "2026-09-14T15:35:31.899566+08:00",
+      "exit_code": 28,
+      "stderr": "curl: (28) Failed to connect to dns.google port 443 after 11352 ms: \u8fde\u63a5\u8d85\u65f6\n",
+      "endpoint": "https://dns.google/resolve",
+      "record_type": "AAAA",
+      "dns_response": null,
+      "non_json_body_bytes": 0
+    },
+    {
+      "command": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "15",
+        "--max-time",
+        "30",
+        "--header",
+        "Accept: application/dns-json",
+        "https://cloudflare-dns.com/dns-query?name=huggingface.co&type=A"
+      ],
+      "started_at": "2026-09-14T15:35:31.900939+08:00",
+      "stopped_at": "2026-09-14T15:35:32.193581+08:00",
+      "exit_code": 35,
+      "stderr": "curl: (35) OpenSSL SSL_connect: \u8fde\u63a5\u88ab\u5bf9\u65b9\u91cd\u7f6e in connection to cloudflare-dns.com:443 \n",
+      "endpoint": "https://cloudflare-dns.com/dns-query",
+      "record_type": "A",
+      "dns_response": null,
+      "non_json_body_bytes": 0
+    },
+    {
+      "command": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "15",
+        "--max-time",
+        "30",
+        "--header",
+        "Accept: application/dns-json",
+        "https://cloudflare-dns.com/dns-query?name=huggingface.co&type=AAAA"
+      ],
+      "started_at": "2026-09-14T15:35:32.194812+08:00",
+      "stopped_at": "2026-09-14T15:35:33.481555+08:00",
+      "exit_code": 35,
+      "stderr": "curl: (35) OpenSSL SSL_connect: \u8fde\u63a5\u88ab\u5bf9\u65b9\u91cd\u7f6e in connection to cloudflare-dns.com:443 \n",
+      "endpoint": "https://cloudflare-dns.com/dns-query",
+      "record_type": "AAAA",
+      "dns_response": null,
+      "non_json_body_bytes": 0
+    }
+  ],
+  "same_origin_probes": [],
+  "ab_stopped_at": "2026-09-14T15:35:33.482938+08:00"
+}
