@@ -1,0 +1,94 @@
+{
+  "task": "T013-YW-P3R5",
+  "task_started_at": "2026-09-14T09:58:18.512Z",
+  "task_start_head": "06610b250e74166fd56c1a49b7d011441ded38d6",
+  "lead_instruction_commit": "ae07716fb90c9b8979aad4ed695ef5f3b498af05",
+  "archive_download_count": 1,
+  "download_endpoint": "https://api.github.com/repos/word-ky/TOVD/actions/artifacts/10341040916/zip",
+  "command": "D:/anaconda3/python.exe research_log/t013_yoloworld/p3r5/import_archive.py",
+  "archive_path": "D:\\work\\fightccfa-agin\\CVPR2027\\TTT-OVD\\.autodl\\p3r5\\artifact-10341040916.zip",
+  "extraction_path": "D:\\work\\fightccfa-agin\\CVPR2027\\TTT-OVD\\.autodl\\p3r5\\extracted",
+  "local_free_space": {
+    "total": 294972813312,
+    "used": 293566230528,
+    "free": 1406582784
+  },
+  "already_present_exact": false,
+  "temporary_files_retained": true,
+  "artifact_metadata": {
+    "id": 10341040916,
+    "node_id": "MDg6QXJ0aWZhY3QxMDM0MTA0MDkxNg==",
+    "name": "t013-yw-s-stage2-4466ab94-relay",
+    "size_in_bytes": 305061442,
+    "url": "https://api.github.com/repos/word-ky/TOVD/actions/artifacts/10341040916",
+    "archive_download_url": "https://api.github.com/repos/word-ky/TOVD/actions/artifacts/10341040916/zip",
+    "expired": false,
+    "digest": "sha256:2589f9b63f57e51d4646ea114cdbff0bf7896d7988c8a499360bb077ef76c5bf",
+    "created_at": "2026-09-14T09:23:13Z",
+    "updated_at": "2026-09-14T09:23:13Z",
+    "expires_at": "2026-09-16T09:23:11Z",
+    "workflow_run": {
+      "id": 34827628282,
+      "repository_id": 1366464556,
+      "head_repository_id": 1366464556,
+      "head_branch": "main",
+      "head_sha": "0a9e6a004191c9ab20db4feeebab51d88cc3760d"
+    }
+  },
+  "run_binding": {
+    "id": 34827628282,
+    "run_attempt": 1,
+    "head_sha": "0a9e6a004191c9ab20db4feeebab51d88cc3760d",
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "download_started_at": "2026-09-14T10:03:04.958956+00:00",
+  "download_http_status": 200,
+  "delivery_host": "productionresultssa12.blob.core.windows.net",
+  "download_stopped_at": "2026-09-14T10:03:59.828775+00:00",
+  "download_exit_code": 0,
+  "archive_bytes": 305061442,
+  "archive_sha256": "2589f9b63f57e51d4646ea114cdbff0bf7896d7988c8a499360bb077ef76c5bf",
+  "archive_digest_matches": true,
+  "archive_members": [
+    {
+      "name": "s_stage2-4466ab94.pth",
+      "bytes": 305058902,
+      "external_attr": 2175008800,
+      "create_system": 3
+    },
+    {
+      "name": "acquisition_receipt.json",
+      "bytes": 2244,
+      "external_attr": 2175008800,
+      "create_system": 3
+    }
+  ],
+  "member_safety_checks": {
+    "exact_two_regular_files": true,
+    "duplicates": false,
+    "traversal": false,
+    "absolute_paths": false,
+    "symlinks": false,
+    "nesting_or_extra": false
+  },
+  "embedded_receipt_bytes": 2244,
+  "embedded_receipt_sha256": "d64080965c78597c853d3f99c34cdf2885d7d5154f0f1141cd81b4639270241f",
+  "embedded_receipt_binding": {
+    "verified": true,
+    "run_id": "34827628282",
+    "run_attempt": "1",
+    "workflow_commit": "0a9e6a004191c9ab20db4feeebab51d88cc3760d",
+    "initial_url": "https://huggingface.co/wondervictor/YOLO-World-V2.1/resolve/c620164ee3979bf49b895c8a8e0f49aeaca89209/s_stage2-4466ab94.pth",
+    "expected_bytes": 305058902,
+    "observed_bytes": 305058902,
+    "expected_sha256": "4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458",
+    "observed_sha256": "4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458"
+  },
+  "receipt_binding_matches_accepted_p3r4": true,
+  "checkpoint_bytes": 305058902,
+  "checkpoint_sha256": "4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458",
+  "archive_validation_passed": true,
+  "state": "ARCHIVE_VERIFIED_PENDING_SERVER_PLACEMENT",
+  "local_validation_stopped_at": "2026-09-14T10:04:01.437185+00:00"
+}

@@ -1,0 +1,42 @@
+{
+  "research_log/t013_yoloworld/p3r5/archive_validation.json": {
+    "bytes": 3861,
+    "sha256": "9eca067eb50567f616b0fc0dd06688f3e1b9ec2198511ba4975b2a39527ba3cc"
+  },
+  "research_log/t013_yoloworld/p3r5/artifact.json": {
+    "bytes": 686,
+    "sha256": "b1e6404b4a61d141e89653f70915b4885dbf134a364e9fb062ca9391ab16d413"
+  },
+  "research_log/t013_yoloworld/p3r5/import_archive.py": {
+    "bytes": 7306,
+    "sha256": "9b7bea5f1dcf02fd8a3763a62500af6b0551812878c197613c0eb7b3dc0cd083"
+  },
+  "research_log/t013_yoloworld/p3r5/import_receipt.json": {
+    "bytes": 7242,
+    "sha256": "06dcf1c762fc1c3a8c29dab7239eb33f1b8a34d18c4f4a7a9ef571bd2ea247fc"
+  },
+  "research_log/t013_yoloworld/p3r5/P3R5_REPORT.md": {
+    "bytes": 9986,
+    "sha256": "5fab6b052cbc4cba748572015b947810982077d130d172a3b0ca8b1e19a18964"
+  },
+  "research_log/t013_yoloworld/p3r5/place_checkpoint.sh": {
+    "bytes": 849,
+    "sha256": "41e409a6478180f526226e775e5828a4cd126f766c65141f76d37b5f0477cdc9"
+  },
+  "research_log/t013_yoloworld/p3r5/run.json": {
+    "bytes": 11332,
+    "sha256": "ff042b0ac65c7ff29afda6ff89db2ef474e4236b768fbcd3dd6ec984734ae1d4"
+  },
+  "research_log/t013_yoloworld/p3r5/server_placement.txt": {
+    "bytes": 518,
+    "sha256": "d0f3bdc5ddfc379430b7827033bfc0868db94f6cbe9aa455d23bbf52191007df"
+  },
+  "research_log/t013_yoloworld/p3r5/server_preflight.txt": {
+    "bytes": 195,
+    "sha256": "acc84efcab6a71c1e8a57e46957a834792b88f2a407208aceef55e42d8bc1757"
+  },
+  "research_log/t013_yoloworld/p3r5/write_report.py": {
+    "bytes": 6884,
+    "sha256": "871c6b202f29d4b6b930f8af1127ed8d73b9a5e259b234dea5710dad83788fc3"
+  }
+}

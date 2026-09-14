@@ -490,3 +490,7 @@ Lead ca74fa34a9e94d96f30eb4883ed88572ff1b1cf5 / task-start94833fffd735060d077eaf
 
 
 DEC1B evidence commit: e072950635d24b06f7abf1979d36e7017f4848b1. Canonical final state GROUNDING_PRIMARY_NOT_SUPPORTED; actual primary decide call count remains exactly one. This delivery entry does not modify the sealed seven-file packet. Await Research Lead; no second decision call or experiment authorized.
+
+
+## 2026-09-14T18:05:28+08:00 — P3R5 checkpoint imported verified
+Leadae07716fb90c9b8979aad4ed695ef5f3b498af05, task-start06610b250e74166fd56c1a49b7d011441ded38d6. Single bound artifact10341040916/run34827628282 downloaded once; archive/member/receipt/checkpoint checks passed. SCP sibling temporary + atomic rename; final305058902bytes/SHA4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458, inode76310702. State YW_P3R5_CHECKPOINT_IMPORTED_VERIFIED_RETURN_TO_LEAD. Receipts/report/manifest: research_log/t013_yoloworld/p3r5/. Existing env and scientific evidence unchanged; runtime/GPU/science0. No repeat import on unchanged mailbox. Next: Research Lead review of P3R5 server-side checkpoint provenance before any runtime-feasibility resumption.
