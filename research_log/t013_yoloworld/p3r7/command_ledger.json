@@ -1,0 +1,353 @@
+[
+  {
+    "label": "boot",
+    "command": "date -Is; uname -a; uname -r; uptime; uptime -s; who -b",
+    "started_at": "2026-09-14T13:30:24.029138+00:00",
+    "stopped_at": "2026-09-14T13:30:24.045406+00:00",
+    "exit_code": 0,
+    "stdout": "2026-09-14T21:30:24+08:00\nLinux wenchang-PR4904W1 6.8.0-124-generic #124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC  x86_64 x86_64 x86_64 GNU/Linux\n6.8.0-124-generic\n 21:30:24 up 4 days,  7:16,  1 user,  load average: 20.18, 20.22, 20.04\n2026-09-10 14:14:01\n         \u7cfb\u7edf\u5f15\u5bfc 2026-09-10 14:14\n",
+    "stderr": ""
+  },
+  {
+    "label": "python",
+    "command": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/env/bin/python --version",
+    "started_at": "2026-09-14T13:30:24.045613+00:00",
+    "stopped_at": "2026-09-14T13:30:24.048492+00:00",
+    "exit_code": 0,
+    "stdout": "Python 3.10.12\n",
+    "stderr": ""
+  },
+  {
+    "label": "pip_pre",
+    "command": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/env/bin/python -m pip list --format=json",
+    "started_at": "2026-09-14T13:30:24.048682+00:00",
+    "stopped_at": "2026-09-14T13:30:24.441921+00:00",
+    "exit_code": 0,
+    "stdout": "[{\"name\": \"pip\", \"version\": \"22.0.2\"}, {\"name\": \"setuptools\", \"version\": \"59.6.0\"}]\n",
+    "stderr": ""
+  },
+  {
+    "label": "loaded_version",
+    "command": "cat /proc/driver/nvidia/version",
+    "started_at": "2026-09-14T13:30:24.442379+00:00",
+    "stopped_at": "2026-09-14T13:30:24.444843+00:00",
+    "exit_code": 0,
+    "stdout": "NVRM version: NVIDIA UNIX x86_64 Kernel Module  580.173.02  Tue Jun 23 08:38:17 UTC 2026\nGCC version:  gcc version 12.3.0 (Ubuntu 12.3.0-1ubuntu1~22.04.3) \n",
+    "stderr": ""
+  },
+  {
+    "label": "loaded_modules",
+    "command": "lsmod | grep '^nvidia'",
+    "started_at": "2026-09-14T13:30:24.445161+00:00",
+    "stopped_at": "2026-09-14T13:30:24.455168+00:00",
+    "exit_code": 0,
+    "stdout": "nvidia_uvm           2093056  0\nnvidia_drm            139264  4\nnvidia_modeset       1638400  3 nvidia_drm\nnvidia              104198144  62 nvidia_uvm,nvidia_modeset\n",
+    "stderr": ""
+  },
+  {
+    "label": "proc_gpu_information",
+    "command": "for p in /proc/driver/nvidia/gpus/*/information; do printf \"%s\\n\" \"$p\"; cat \"$p\"; done",
+    "started_at": "2026-09-14T13:30:24.455464+00:00",
+    "stopped_at": "2026-09-14T13:30:24.458802+00:00",
+    "exit_code": 0,
+    "stdout": "/proc/driver/nvidia/gpus/0000:b1:00.0/information\nModel: \t\t NVIDIA RTX A6000\nIRQ:   \t\t 553\nGPU UUID: \t GPU-9de4332b-3b09-a3b4-5589-30229f0c14fe\nVideo BIOS: \t 94.02.5c.00.02\nBus Type: \t PCIe\nDMA Size: \t 47 bits\nDMA Mask: \t 0x7fffffffffff\nBus Location: \t 0000:b1:00.0\nDevice Minor: \t 0\nGPU Firmware: \t 580.173.02\nGPU Excluded:\t No\n/proc/driver/nvidia/gpus/0000:ca:00.0/information\nModel: \t\t NVIDIA RTX A6000\nIRQ:   \t\t 554\nGPU UUID: \t GPU-9c468c54-b125-4903-1476-77c4d63270be\nVideo BIOS: \t 94.02.5c.00.02\nBus Type: \t PCIe\nDMA Size: \t 47 bits\nDMA Mask: \t 0x7fffffffffff\nBus Location: \t 0000:ca:00.0\nDevice Minor: \t 1\nGPU Firmware: \t 580.173.02\nGPU Excluded:\t No\n",
+    "stderr": ""
+  },
+  {
+    "label": "module_path",
+    "command": "modinfo -n nvidia",
+    "started_at": "2026-09-14T13:30:24.459099+00:00",
+    "stopped_at": "2026-09-14T13:30:24.462263+00:00",
+    "exit_code": 0,
+    "stdout": "/lib/modules/6.8.0-124-generic/updates/dkms/nvidia.ko\n",
+    "stderr": ""
+  },
+  {
+    "label": "module_version",
+    "command": "modinfo -F version nvidia",
+    "started_at": "2026-09-14T13:30:24.462556+00:00",
+    "stopped_at": "2026-09-14T13:30:24.466559+00:00",
+    "exit_code": 0,
+    "stdout": "580.178.04\n",
+    "stderr": ""
+  },
+  {
+    "label": "module_vermagic",
+    "command": "modinfo -F vermagic nvidia",
+    "started_at": "2026-09-14T13:30:24.466886+00:00",
+    "stopped_at": "2026-09-14T13:30:24.470066+00:00",
+    "exit_code": 0,
+    "stdout": "6.8.0-124-generic SMP preempt mod_unload modversions \n",
+    "stderr": ""
+  },
+  {
+    "label": "module_realpath",
+    "command": "readlink -f /lib/modules/6.8.0-124-generic/updates/dkms/nvidia.ko",
+    "started_at": "2026-09-14T13:30:24.470401+00:00",
+    "stopped_at": "2026-09-14T13:30:24.472567+00:00",
+    "exit_code": 0,
+    "stdout": "/usr/lib/modules/6.8.0-124-generic/updates/dkms/nvidia.ko\n",
+    "stderr": ""
+  },
+  {
+    "label": "module_stat",
+    "command": "stat /lib/modules/6.8.0-124-generic/updates/dkms/nvidia.ko",
+    "started_at": "2026-09-14T13:30:24.472904+00:00",
+    "stopped_at": "2026-09-14T13:30:24.475401+00:00",
+    "exit_code": 0,
+    "stdout": "  \u6587\u4ef6\uff1a/lib/modules/6.8.0-124-generic/updates/dkms/nvidia.ko\n  \u5927\u5c0f\uff1a113913584 \t\u5757\uff1a222496     IO \u5757\u5927\u5c0f\uff1a4096   \u666e\u901a\u6587\u4ef6\n\u8bbe\u5907\uff1a10308h/66312d\tInode\uff1a4064936     \u786c\u94fe\u63a5\uff1a1\n\u6743\u9650\uff1a(0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)\n\u8bbf\u95ee\u65f6\u95f4\uff1a2026-09-14 21:30:24.464546036 +0800\n\u4fee\u6539\u65f6\u95f4\uff1a2026-09-12 06:21:13.569202956 +0800\n\u53d8\u66f4\u65f6\u95f4\uff1a2026-09-12 06:21:13.569202956 +0800\n\u521b\u5efa\u65f6\u95f4\uff1a2026-09-12 06:21:13.508202454 +0800\n",
+    "stderr": ""
+  },
+  {
+    "label": "module_hash",
+    "command": "sha256sum /lib/modules/6.8.0-124-generic/updates/dkms/nvidia.ko",
+    "started_at": "2026-09-14T13:30:24.475766+00:00",
+    "stopped_at": "2026-09-14T13:30:25.184586+00:00",
+    "exit_code": 0,
+    "stdout": "4469ca921b755e8a9fe7a8a9eb5d886ca6c120ef3aa316e1e3d8b4e645eafd5d  /lib/modules/6.8.0-124-generic/updates/dkms/nvidia.ko\n",
+    "stderr": ""
+  },
+  {
+    "label": "module_package",
+    "command": "dpkg-query -S /lib/modules/6.8.0-124-generic/updates/dkms/nvidia.ko",
+    "started_at": "2026-09-14T13:30:25.185175+00:00",
+    "stopped_at": "2026-09-14T13:30:25.376677+00:00",
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "dpkg-query: \u6ca1\u6709\u627e\u5230\u4e0e /lib/modules/6.8.0-124-generic/updates/dkms/nvidia.ko \u76f8\u5339\u914d\u7684\u8def\u5f84\n"
+  },
+  {
+    "label": "linker_cache",
+    "command": "ldconfig -p | grep -E 'libnvidia-ml[.]so[.]1|libcuda[.]so[.]1'",
+    "started_at": "2026-09-14T13:30:25.377507+00:00",
+    "stopped_at": "2026-09-14T13:30:25.381690+00:00",
+    "exit_code": 0,
+    "stdout": "\tlibnvidia-ml.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnvidia-ml.so.1\n\tlibnvidia-ml.so.1 (libc6) => /lib/i386-linux-gnu/libnvidia-ml.so.1\n\tlibcuda.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcuda.so.1\n\tlibcuda.so.1 (libc6) => /lib/i386-linux-gnu/libcuda.so.1\n",
+    "stderr": ""
+  },
+  {
+    "label": "library_search_environment",
+    "command": "printf \"LD_LIBRARY_PATH=%s\\nLD_PRELOAD=%s\\n\" \"$LD_LIBRARY_PATH\" \"$LD_PRELOAD\"",
+    "started_at": "2026-09-14T13:30:25.382435+00:00",
+    "stopped_at": "2026-09-14T13:30:25.384064+00:00",
+    "exit_code": 0,
+    "stdout": "LD_LIBRARY_PATH=\nLD_PRELOAD=\n",
+    "stderr": ""
+  },
+  {
+    "label": "library_realpath_0",
+    "command": "readlink -f /lib/x86_64-linux-gnu/libnvidia-ml.so.1",
+    "started_at": "2026-09-14T13:30:25.385052+00:00",
+    "stopped_at": "2026-09-14T13:30:25.387439+00:00",
+    "exit_code": 0,
+    "stdout": "/usr/lib/x86_64-linux-gnu/libnvidia-ml.so.580.178.04\n",
+    "stderr": ""
+  },
+  {
+    "label": "library_stat_0",
+    "command": "stat /usr/lib/x86_64-linux-gnu/libnvidia-ml.so.580.178.04",
+    "started_at": "2026-09-14T13:30:25.388219+00:00",
+    "stopped_at": "2026-09-14T13:30:25.390851+00:00",
+    "exit_code": 0,
+    "stdout": "  \u6587\u4ef6\uff1a/usr/lib/x86_64-linux-gnu/libnvidia-ml.so.580.178.04\n  \u5927\u5c0f\uff1a2291896   \t\u5757\uff1a4480       IO \u5757\u5927\u5c0f\uff1a4096   \u666e\u901a\u6587\u4ef6\n\u8bbe\u5907\uff1a10308h/66312d\tInode\uff1a3671213     \u786c\u94fe\u63a5\uff1a1\n\u6743\u9650\uff1a(0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)\n\u8bbf\u95ee\u65f6\u95f4\uff1a2026-09-14 08:22:00.141595000 +0800\n\u4fee\u6539\u65f6\u95f4\uff1a2026-07-07 20:02:57.000000000 +0800\n\u53d8\u66f4\u65f6\u95f4\uff1a2026-09-12 06:20:12.970698116 +0800\n\u521b\u5efa\u65f6\u95f4\uff1a2026-09-12 06:20:11.207683238 +0800\n",
+    "stderr": ""
+  },
+  {
+    "label": "library_package_0",
+    "command": "dpkg-query -S /usr/lib/x86_64-linux-gnu/libnvidia-ml.so.580.178.04",
+    "started_at": "2026-09-14T13:30:25.391641+00:00",
+    "stopped_at": "2026-09-14T13:30:25.555736+00:00",
+    "exit_code": 0,
+    "stdout": "libnvidia-compute-580-server:amd64: /usr/lib/x86_64-linux-gnu/libnvidia-ml.so.580.178.04\n",
+    "stderr": ""
+  },
+  {
+    "label": "library_realpath_1",
+    "command": "readlink -f /lib/i386-linux-gnu/libnvidia-ml.so.1",
+    "started_at": "2026-09-14T13:30:25.556803+00:00",
+    "stopped_at": "2026-09-14T13:30:25.559458+00:00",
+    "exit_code": 0,
+    "stdout": "/usr/lib/i386-linux-gnu/libnvidia-ml.so.580.178.04\n",
+    "stderr": ""
+  },
+  {
+    "label": "library_stat_1",
+    "command": "stat /usr/lib/i386-linux-gnu/libnvidia-ml.so.580.178.04",
+    "started_at": "2026-09-14T13:30:25.560430+00:00",
+    "stopped_at": "2026-09-14T13:30:25.564350+00:00",
+    "exit_code": 0,
+    "stdout": "  \u6587\u4ef6\uff1a/usr/lib/i386-linux-gnu/libnvidia-ml.so.580.178.04\n  \u5927\u5c0f\uff1a2979548   \t\u5757\uff1a5824       IO \u5757\u5927\u5c0f\uff1a4096   \u666e\u901a\u6587\u4ef6\n\u8bbe\u5907\uff1a10308h/66312d\tInode\uff1a3670798     \u786c\u94fe\u63a5\uff1a1\n\u6743\u9650\uff1a(0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)\n\u8bbf\u95ee\u65f6\u95f4\uff1a2026-09-12 06:21:50.780507064 +0800\n\u4fee\u6539\u65f6\u95f4\uff1a2026-07-07 19:58:40.000000000 +0800\n\u53d8\u66f4\u65f6\u95f4\uff1a2026-09-12 06:20:14.310709416 +0800\n\u521b\u5efa\u65f6\u95f4\uff1a2026-09-12 06:20:13.113699322 +0800\n",
+    "stderr": ""
+  },
+  {
+    "label": "library_package_1",
+    "command": "dpkg-query -S /usr/lib/i386-linux-gnu/libnvidia-ml.so.580.178.04",
+    "started_at": "2026-09-14T13:30:25.565236+00:00",
+    "stopped_at": "2026-09-14T13:30:25.728923+00:00",
+    "exit_code": 0,
+    "stdout": "libnvidia-compute-580-server:i386: /usr/lib/i386-linux-gnu/libnvidia-ml.so.580.178.04\n",
+    "stderr": ""
+  },
+  {
+    "label": "library_realpath_2",
+    "command": "readlink -f /lib/x86_64-linux-gnu/libcuda.so.1",
+    "started_at": "2026-09-14T13:30:25.729968+00:00",
+    "stopped_at": "2026-09-14T13:30:25.732527+00:00",
+    "exit_code": 0,
+    "stdout": "/usr/lib/x86_64-linux-gnu/libcuda.so.580.178.04\n",
+    "stderr": ""
+  },
+  {
+    "label": "library_stat_2",
+    "command": "stat /usr/lib/x86_64-linux-gnu/libcuda.so.580.178.04",
+    "started_at": "2026-09-14T13:30:25.733435+00:00",
+    "stopped_at": "2026-09-14T13:30:25.736026+00:00",
+    "exit_code": 0,
+    "stdout": "  \u6587\u4ef6\uff1a/usr/lib/x86_64-linux-gnu/libcuda.so.580.178.04\n  \u5927\u5c0f\uff1a96284520  \t\u5757\uff1a188064     IO \u5757\u5927\u5c0f\uff1a4096   \u666e\u901a\u6587\u4ef6\n\u8bbe\u5907\uff1a10308h/66312d\tInode\uff1a3671124     \u786c\u94fe\u63a5\uff1a1\n\u6743\u9650\uff1a(0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)\n\u8bbf\u95ee\u65f6\u95f4\uff1a2026-09-14 07:02:50.959204245 +0800\n\u4fee\u6539\u65f6\u95f4\uff1a2026-07-07 20:41:41.000000000 +0800\n\u53d8\u66f4\u65f6\u95f4\uff1a2026-09-12 06:20:12.970698116 +0800\n\u521b\u5efa\u65f6\u95f4\uff1a2026-09-12 06:20:10.806679853 +0800\n",
+    "stderr": ""
+  },
+  {
+    "label": "library_package_2",
+    "command": "dpkg-query -S /usr/lib/x86_64-linux-gnu/libcuda.so.580.178.04",
+    "started_at": "2026-09-14T13:30:25.736906+00:00",
+    "stopped_at": "2026-09-14T13:30:25.904541+00:00",
+    "exit_code": 0,
+    "stdout": "libnvidia-compute-580-server:amd64: /usr/lib/x86_64-linux-gnu/libcuda.so.580.178.04\n",
+    "stderr": ""
+  },
+  {
+    "label": "library_realpath_3",
+    "command": "readlink -f /lib/i386-linux-gnu/libcuda.so.1",
+    "started_at": "2026-09-14T13:30:25.905714+00:00",
+    "stopped_at": "2026-09-14T13:30:25.908316+00:00",
+    "exit_code": 0,
+    "stdout": "/usr/lib/i386-linux-gnu/libcuda.so.580.178.04\n",
+    "stderr": ""
+  },
+  {
+    "label": "library_stat_3",
+    "command": "stat /usr/lib/i386-linux-gnu/libcuda.so.580.178.04",
+    "started_at": "2026-09-14T13:30:25.909316+00:00",
+    "stopped_at": "2026-09-14T13:30:25.912102+00:00",
+    "exit_code": 0,
+    "stdout": "  \u6587\u4ef6\uff1a/usr/lib/i386-linux-gnu/libcuda.so.580.178.04\n  \u5927\u5c0f\uff1a28008776  \t\u5757\uff1a54712      IO \u5757\u5927\u5c0f\uff1a4096   \u666e\u901a\u6587\u4ef6\n\u8bbe\u5907\uff1a10308h/66312d\tInode\uff1a3670415     \u786c\u94fe\u63a5\uff1a1\n\u6743\u9650\uff1a(0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)\n\u8bbf\u95ee\u65f6\u95f4\uff1a2026-09-12 06:21:50.780507064 +0800\n\u4fee\u6539\u65f6\u95f4\uff1a2026-07-07 20:13:23.000000000 +0800\n\u53d8\u66f4\u65f6\u95f4\uff1a2026-09-12 06:20:14.310709416 +0800\n\u521b\u5efa\u65f6\u95f4\uff1a2026-09-12 06:20:13.016698504 +0800\n",
+    "stderr": ""
+  },
+  {
+    "label": "library_package_3",
+    "command": "dpkg-query -S /usr/lib/i386-linux-gnu/libcuda.so.580.178.04",
+    "started_at": "2026-09-14T13:30:25.913088+00:00",
+    "stopped_at": "2026-09-14T13:30:26.078309+00:00",
+    "exit_code": 0,
+    "stdout": "libnvidia-compute-580-server:i386: /usr/lib/i386-linux-gnu/libcuda.so.580.178.04\n",
+    "stderr": ""
+  },
+  {
+    "label": "installed_packages",
+    "command": "dpkg-query -W -f='${binary:Package}\t${Version}\t${db:Status-Abbrev}\n' '*nvidia*' '*libcuda*' '*cuda-drivers*'",
+    "started_at": "2026-09-14T13:30:26.079488+00:00",
+    "stopped_at": "2026-09-14T13:30:26.106949+00:00",
+    "exit_code": 1,
+    "stdout": "libcuda-10.0-1\t\tun \nlibcuda-10.1-1\t\tun \nlibcuda-10.2-1\t\tun \nlibcuda-11.0-1\t\tun \nlibcuda-11.1-1\t\tun \nlibcuda-11.2-1\t\tun \nlibcuda-11.3-1\t\tun \nlibcuda-11.4-1\t\tun \nlibcuda-11.5-1\t\tun \nlibcuda-11.6-1\t\tun \nlibcuda-11.7-1\t\tun \nlibcuda-11.8-1\t\tun \nlibcuda-12.0-1\t\tun \nlibcuda-12.1-1\t\tun \nlibcuda-12.2-1\t\tun \nlibcuda-12.3-1\t\tun \nlibcuda-12.4-1\t\tun \nlibcuda-12.5-1\t\tun \nlibcuda-12.6-1\t\tun \nlibcuda-12.7-1\t\tun \nlibcuda-12.8-1\t\tun \nlibcuda-5.0-1\t\tun \nlibcuda-5.5-1\t\tun \nlibcuda-6.0-1\t\tun \nlibcuda-6.5-1\t\tun \nlibcuda-7.0-1\t\tun \nlibcuda-7.5-1\t\tun \nlibcuda-8.0-1\t\tun \nlibcuda-9.0-1\t\tun \nlibcuda-9.1-1\t\tun \nlibcuda-9.2-1\t\tun \nlibcuda.so.1\t\tun \nlibcuda1\t\tun \nlibgldispatch0-nvidia\t\tun \nlibnvidia-cfg1-580-server:amd64\t580.178.04-0ubuntu0.22.04.1\tii \nlibnvidia-cfg1-any\t\tun \nlibnvidia-common\t\tun \nlibnvidia-common-580-server\t580.178.04-0ubuntu0.22.04.1\tii \nlibnvidia-compute\t\tun \nlibnvidia-compute-570-server:amd64\t570.211.01-0ubuntu1.22.04.1\trc \nlibnvidia-compute-580-server:amd64\t580.178.04-0ubuntu0.22.04.1\tii \nlibnvidia-compute-580-server:i386\t580.178.04-0ubuntu0.22.04.1\tii \nlibnvidia-container-tools\t1.19.0-1\tii \nlibnvidia-container1:amd64\t1.19.0-1\tii \nlibnvidia-decode\t\tun \nlibnvidia-decode-580-server:amd64\t580.178.04-0ubuntu0.22.04.1\tii \nlibnvidia-decode-580-server:i386\t580.178.04-0ubuntu0.22.04.1\tii \nlibnvidia-egl-wayland1:amd64\t1:1.1.9-1.1ubuntu0.1\tii \nlibnvidia-encode\t\tun \nlibnvidia-encode-580-server:amd64\t580.178.04-0ubuntu0.22.04.1\tii \nlibnvidia-encode-580-server:i386\t580.178.04-0ubuntu0.22.04.1\tii \nlibnvidia-encode1\t\tun \nlibnvidia-extra\t\tun \nlibnvidia-extra-580-server:amd64\t580.178.04-0ubuntu0.22.04.1\tii \nlibnvidia-fbc1\t\tun \nlibnvidia-fbc1-580-server:amd64\t580.178.04-0ubuntu0.22.04.1\tii \nlibnvidia-fbc1-580-server:i386\t580.178.04-0ubuntu0.22.04.1\tii \nlibnvidia-gl\t\tun \nlibnvidia-gl-390\t\tun \nlibnvidia-gl-410\t\tun \nlibnvidia-gl-580-server:amd64\t580.178.04-0ubuntu0.22.04.1\tii \nlibnvidia-legacy-390xx-egl-wayland1\t\tun \nlibnvidia-ml.so.1\t\tun \nlibnvidia-ml1\t\tun \nlinux-modules-nvidia-570-server-6.8.0-100-generic\t6.8.0-100.100~22.04.1\trc \nlinux-modules-nvidia-570-server-6.8.0-101-generic\t6.8.0-101.101~22.04.1\trc \nlinux-modules-nvidia-570-server-6.8.0-106-generic\t6.8.0-106.106~22.04.1\trc \nlinux-modules-nvidia-570-server-6.8.0-90-generic\t6.8.0-90.91~22.04.1+1\trc \nlinux-modules-nvidia-570-server-6.8.0-94-generic\t6.8.0-94.96~22.04.1\trc \nlinux-modules-nvidia-570-server-generic-hwe-22.04\t6.8.0-138.138~22.04.1+1\tii \nlinux-modules-nvidia-580-server-6.8.0-124-generic\t6.8.0-124.124~22.04.1\tii \nlinux-modules-nvidia-580-server-6.8.0-138-generic\t6.8.0-138.138~22.04.1+1\tii \nlinux-modules-nvidia-580-server-generic-hwe-22.04\t6.8.0-138.138~22.04.1+1\tii \nlinux-objects-nvidia-570-server-6.8.0-100-generic\t6.8.0-100.100~22.04.1\trc \nlinux-objects-nvidia-570-server-6.8.0-101-generic\t6.8.0-101.101~22.04.1\trc \nlinux-objects-nvidia-570-server-6.8.0-106-generic\t6.8.0-106.106~22.04.1\trc \nlinux-objects-nvidia-570-server-6.8.0-90-generic\t6.8.0-90.91~22.04.1+1\trc \nlinux-objects-nvidia-570-server-6.8.0-94-generic\t6.8.0-94.96~22.04.1\trc \nlinux-objects-nvidia-580-server-6.8.0-124-generic\t6.8.0-124.124~22.04.1\tii \nlinux-objects-nvidia-580-server-6.8.0-138-generic\t6.8.0-138.138~22.04.1+1\tii \nlinux-signatures-nvidia-6.8.0-100-generic\t\tun \nlinux-signatures-nvidia-6.8.0-101-generic\t\tun \nlinux-signatures-nvidia-6.8.0-106-generic\t\tun \nlinux-signatures-nvidia-6.8.0-124-generic\t6.8.0-124.124~22.04.1\tii \nlinux-signatures-nvidia-6.8.0-138-generic\t6.8.0-138.138~22.04.1+1\tii \nlinux-signatures-nvidia-6.8.0-90-generic\t\tun \nlinux-signatures-nvidia-6.8.0-94-generic\t\tun \nnvidia-common\t\tun \nnvidia-compute-utils\t\tun \nnvidia-compute-utils-580-server\t580.178.04-0ubuntu0.22.04.1\tii \nnvidia-container-runtime\t\tun \nnvidia-container-runtime-hook\t\tun \nnvidia-container-toolkit\t1.19.0-1\tii \nnvidia-container-toolkit-base\t1.19.0-1\tii \nnvidia-dkms-580-server\t580.178.04-0ubuntu0.22.04.1\tii \nnvidia-dkms-kernel\t\tun \nnvidia-driver-570-server\t570.211.01-0ubuntu1.22.04.1\tii \nnvidia-driver-580-server\t580.178.04-0ubuntu0.22.04.1\tii \nnvidia-driver-binary\t\tun \nnvidia-egl-wayland-common\t\tun \nnvidia-firmware-580-580.178.04\t\tun \nnvidia-firmware-580-server-580.178.04\t580.178.04-0ubuntu0.22.04.1\tii \nnvidia-kernel-common\t\tun \nnvidia-kernel-common-570-server\t\tun \nnvidia-kernel-common-580-server\t580.178.04-0ubuntu0.22.04.1\tii \nnvidia-kernel-common-580-server-580.178.04\t\tun \nnvidia-kernel-source\t\tun \nnvidia-kernel-source-580-server\t580.178.04-0ubuntu0.22.04.1\tii \nnvidia-libopencl1-dev\t\tun \nnvidia-opencl-icd\t\tun \nnvidia-persistenced\t\tun \nnvidia-prebuilt-kernel\t\tun \nnvidia-prime\t\tun \nnvidia-settings\t\tun \nnvidia-smi\t\tun \nnvidia-utils\t\tun \nnvidia-utils-580-server\t580.178.04-0ubuntu0.22.04.1\tii \nxserver-xorg-video-nvidia-580-server\t580.178.04-0ubuntu0.22.04.1\tii \n",
+    "stderr": "dpkg-query: \u6ca1\u6709\u627e\u5230\u4e0e *cuda-drivers* \u76f8\u5339\u914d\u7684\u8f6f\u4ef6\u5305\n"
+  },
+  {
+    "label": "smi_path",
+    "command": "command -v nvidia-smi",
+    "started_at": "2026-09-14T13:30:26.108186+00:00",
+    "stopped_at": "2026-09-14T13:30:26.109999+00:00",
+    "exit_code": 0,
+    "stdout": "/usr/bin/nvidia-smi\n",
+    "stderr": ""
+  },
+  {
+    "label": "smi_realpath",
+    "command": "readlink -f /usr/bin/nvidia-smi",
+    "started_at": "2026-09-14T13:30:26.111142+00:00",
+    "stopped_at": "2026-09-14T13:30:26.113383+00:00",
+    "exit_code": 0,
+    "stdout": "/usr/bin/nvidia-smi\n",
+    "stderr": ""
+  },
+  {
+    "label": "smi_stat",
+    "command": "stat /usr/bin/nvidia-smi",
+    "started_at": "2026-09-14T13:30:26.114496+00:00",
+    "stopped_at": "2026-09-14T13:30:26.118815+00:00",
+    "exit_code": 0,
+    "stdout": "  \u6587\u4ef6\uff1a/usr/bin/nvidia-smi\n  \u5927\u5c0f\uff1a1244096   \t\u5757\uff1a2432       IO \u5757\u5927\u5c0f\uff1a4096   \u666e\u901a\u6587\u4ef6\n\u8bbe\u5907\uff1a10308h/66312d\tInode\uff1a3671654     \u786c\u94fe\u63a5\uff1a1\n\u6743\u9650\uff1a(0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)\n\u8bbf\u95ee\u65f6\u95f4\uff1a2026-09-14 12:55:21.131594300 +0800\n\u4fee\u6539\u65f6\u95f4\uff1a2026-07-07 20:02:57.000000000 +0800\n\u53d8\u66f4\u65f6\u95f4\uff1a2026-09-12 06:20:14.365709880 +0800\n\u521b\u5efa\u65f6\u95f4\uff1a2026-09-12 06:20:14.357709812 +0800\n",
+    "stderr": ""
+  },
+  {
+    "label": "smi_package",
+    "command": "dpkg-query -S /usr/bin/nvidia-smi",
+    "started_at": "2026-09-14T13:30:26.120029+00:00",
+    "stopped_at": "2026-09-14T13:30:26.284224+00:00",
+    "exit_code": 0,
+    "stdout": "nvidia-utils-580-server: /usr/bin/nvidia-smi\n",
+    "stderr": ""
+  },
+  {
+    "label": "smi_list_SINGLE_ATTEMPT",
+    "command": "nvidia-smi -L",
+    "started_at": "2026-09-14T13:30:26.285607+00:00",
+    "stopped_at": "2026-09-14T13:30:26.299990+00:00",
+    "exit_code": 18,
+    "stdout": "Failed to initialize NVML: Driver/library version mismatch\nNVML library version: 580.178\n",
+    "stderr": ""
+  },
+  {
+    "label": "package_timeline",
+    "command": "zgrep -h -E ' (install|upgrade|configure|status installed) (nvidia|libnvidia|linux-modules-nvidia|cuda-drivers)' /var/log/dpkg.log* | tail -n 100",
+    "started_at": "2026-09-14T13:30:26.301324+00:00",
+    "stopped_at": "2026-09-14T13:30:26.349570+00:00",
+    "exit_code": 0,
+    "stdout": "2026-01-29 06:18:23 upgrade nvidia-driver-570-server:amd64 570.195.03-0ubuntu0.22.04.3 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:23 upgrade libnvidia-extra-570-server:amd64 570.195.03-0ubuntu0.22.04.3 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:23 upgrade libnvidia-common-570-server:all 570.195.03-0ubuntu0.22.04.3 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:23 upgrade libnvidia-decode-570-server:amd64 570.195.03-0ubuntu0.22.04.3 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:23 upgrade libnvidia-compute-570-server:amd64 570.195.03-0ubuntu0.22.04.3 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:24 upgrade nvidia-utils-570-server:amd64 570.195.03-0ubuntu0.22.04.3 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:25 upgrade libnvidia-fbc1-570-server:amd64 570.195.03-0ubuntu0.22.04.3 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:25 upgrade libnvidia-encode-570-server:amd64 570.195.03-0ubuntu0.22.04.3 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:25 install nvidia-firmware-570-server-570.211.01:amd64 <none> 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:25 upgrade libnvidia-gl-570-server:amd64 570.195.03-0ubuntu0.22.04.3 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:28 upgrade libnvidia-cfg1-570-server:amd64 570.195.03-0ubuntu0.22.04.3 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:28 upgrade nvidia-kernel-common-570-server:amd64 570.195.03-0ubuntu0.22.04.3 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:28 upgrade linux-modules-nvidia-570-server-generic-hwe-22.04:amd64 6.8.0-90.91~22.04.1 6.8.0-90.91~22.04.1+1\n2026-01-29 06:18:28 upgrade linux-modules-nvidia-570-server-6.8.0-90-generic:amd64 6.8.0-90.91~22.04.1 6.8.0-90.91~22.04.1+1\n2026-01-29 06:18:32 upgrade nvidia-kernel-source-570-server:amd64 570.195.03-0ubuntu0.22.04.3 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:32 upgrade nvidia-compute-utils-570-server:amd64 570.195.03-0ubuntu0.22.04.3 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:33 configure nvidia-kernel-source-570-server:amd64 570.211.01-0ubuntu0.22.04.1 <none>\n2026-01-29 06:18:33 status installed nvidia-kernel-source-570-server:amd64 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:33 configure nvidia-firmware-570-server-570.211.01:amd64 570.211.01-0ubuntu0.22.04.1 <none>\n2026-01-29 06:18:33 status installed nvidia-firmware-570-server-570.211.01:amd64 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:34 configure nvidia-kernel-common-570-server:amd64 570.211.01-0ubuntu0.22.04.1 <none>\n2026-01-29 06:18:34 status installed nvidia-kernel-common-570-server:amd64 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:34 configure linux-modules-nvidia-570-server-6.8.0-90-generic:amd64 6.8.0-90.91~22.04.1+1 <none>\n2026-01-29 06:18:38 status installed linux-modules-nvidia-570-server-6.8.0-90-generic:amd64 6.8.0-90.91~22.04.1+1\n2026-01-29 06:18:38 configure libnvidia-fbc1-570-server:amd64 570.211.01-0ubuntu0.22.04.1 <none>\n2026-01-29 06:18:38 status installed libnvidia-fbc1-570-server:amd64 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:38 configure libnvidia-common-570-server:all 570.211.01-0ubuntu0.22.04.1 <none>\n2026-01-29 06:18:38 status installed libnvidia-common-570-server:all 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:38 configure linux-modules-nvidia-570-server-generic-hwe-22.04:amd64 6.8.0-90.91~22.04.1+1 <none>\n2026-01-29 06:18:38 status installed linux-modules-nvidia-570-server-generic-hwe-22.04:amd64 6.8.0-90.91~22.04.1+1\n2026-01-29 06:18:38 configure libnvidia-gl-570-server:amd64 570.211.01-0ubuntu0.22.04.1 <none>\n2026-01-29 06:18:38 status installed libnvidia-gl-570-server:amd64 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:38 configure libnvidia-cfg1-570-server:amd64 570.211.01-0ubuntu0.22.04.1 <none>\n2026-01-29 06:18:38 status installed libnvidia-cfg1-570-server:amd64 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:38 configure libnvidia-compute-570-server:amd64 570.211.01-0ubuntu0.22.04.1 <none>\n2026-01-29 06:18:38 status installed libnvidia-compute-570-server:amd64 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:38 configure libnvidia-extra-570-server:amd64 570.211.01-0ubuntu0.22.04.1 <none>\n2026-01-29 06:18:38 status installed libnvidia-extra-570-server:amd64 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:38 configure nvidia-compute-utils-570-server:amd64 570.211.01-0ubuntu0.22.04.1 <none>\n2026-01-29 06:18:38 status installed nvidia-compute-utils-570-server:amd64 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:38 configure libnvidia-decode-570-server:amd64 570.211.01-0ubuntu0.22.04.1 <none>\n2026-01-29 06:18:38 status installed libnvidia-decode-570-server:amd64 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:38 configure nvidia-utils-570-server:amd64 570.211.01-0ubuntu0.22.04.1 <none>\n2026-01-29 06:18:38 status installed nvidia-utils-570-server:amd64 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:38 configure libnvidia-encode-570-server:amd64 570.211.01-0ubuntu0.22.04.1 <none>\n2026-01-29 06:18:38 status installed libnvidia-encode-570-server:amd64 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:18:38 configure nvidia-driver-570-server:amd64 570.211.01-0ubuntu0.22.04.1 <none>\n2026-01-29 06:18:38 status installed nvidia-driver-570-server:amd64 570.211.01-0ubuntu0.22.04.1\n2026-01-29 06:19:17 status installed nvidia-firmware-570-server-570.195.03:amd64 570.195.03-0ubuntu0.22.04.3\n2025-12-17 00:22:10 install nvidia-firmware-570-server-570.195.03:amd64 <none> 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:11 install nvidia-kernel-common-570-server:amd64 <none> 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:11 install libnvidia-cfg1-570-server:amd64 <none> 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:11 install libnvidia-common-570-server:all <none> 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:11 install libnvidia-compute-570-server:amd64 <none> 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:13 install libnvidia-decode-570-server:amd64 <none> 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:13 install libnvidia-egl-wayland1:amd64 <none> 1:1.1.9-1.1ubuntu0.1\n2025-12-17 00:22:13 install libnvidia-encode-570-server:amd64 <none> 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:13 install libnvidia-extra-570-server:amd64 <none> 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:13 install libnvidia-fbc1-570-server:amd64 <none> 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:13 install libnvidia-gl-570-server:amd64 <none> 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:17 install linux-modules-nvidia-570-server-6.8.0-90-generic:amd64 <none> 6.8.0-90.91~22.04.1\n2025-12-17 00:22:17 install linux-modules-nvidia-570-server-generic-hwe-22.04:amd64 <none> 6.8.0-90.91~22.04.1\n2025-12-17 00:22:17 install nvidia-compute-utils-570-server:amd64 <none> 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:17 install nvidia-kernel-source-570-server:amd64 <none> 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:17 install nvidia-utils-570-server:amd64 <none> 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:17 install nvidia-driver-570-server:amd64 <none> 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:18 configure nvidia-kernel-source-570-server:amd64 570.195.03-0ubuntu0.22.04.2 <none>\n2025-12-17 00:22:18 status installed nvidia-kernel-source-570-server:amd64 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:18 configure nvidia-firmware-570-server-570.195.03:amd64 570.195.03-0ubuntu0.22.04.2 <none>\n2025-12-17 00:22:18 status installed nvidia-firmware-570-server-570.195.03:amd64 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:18 configure libnvidia-egl-wayland1:amd64 1:1.1.9-1.1ubuntu0.1 <none>\n2025-12-17 00:22:18 status installed libnvidia-egl-wayland1:amd64 1:1.1.9-1.1ubuntu0.1\n2025-12-17 00:22:18 configure nvidia-kernel-common-570-server:amd64 570.195.03-0ubuntu0.22.04.2 <none>\n2025-12-17 00:22:19 status installed nvidia-kernel-common-570-server:amd64 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:19 configure libnvidia-fbc1-570-server:amd64 570.195.03-0ubuntu0.22.04.2 <none>\n2025-12-17 00:22:19 status installed libnvidia-fbc1-570-server:amd64 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:19 configure libnvidia-common-570-server:all 570.195.03-0ubuntu0.22.04.2 <none>\n2025-12-17 00:22:19 status installed libnvidia-common-570-server:all 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:19 configure libnvidia-gl-570-server:amd64 570.195.03-0ubuntu0.22.04.2 <none>\n2025-12-17 00:22:19 status installed libnvidia-gl-570-server:amd64 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:19 configure libnvidia-cfg1-570-server:amd64 570.195.03-0ubuntu0.22.04.2 <none>\n2025-12-17 00:22:19 status installed libnvidia-cfg1-570-server:amd64 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:19 configure libnvidia-compute-570-server:amd64 570.195.03-0ubuntu0.22.04.2 <none>\n2025-12-17 00:22:19 status installed libnvidia-compute-570-server:amd64 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:19 configure libnvidia-extra-570-server:amd64 570.195.03-0ubuntu0.22.04.2 <none>\n2025-12-17 00:22:19 status installed libnvidia-extra-570-server:amd64 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:19 configure nvidia-compute-utils-570-server:amd64 570.195.03-0ubuntu0.22.04.2 <none>\n2025-12-17 00:22:19 status installed nvidia-compute-utils-570-server:amd64 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:19 configure libnvidia-decode-570-server:amd64 570.195.03-0ubuntu0.22.04.2 <none>\n2025-12-17 00:22:19 status installed libnvidia-decode-570-server:amd64 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:19 configure nvidia-utils-570-server:amd64 570.195.03-0ubuntu0.22.04.2 <none>\n2025-12-17 00:22:19 status installed nvidia-utils-570-server:amd64 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:21 configure linux-modules-nvidia-570-server-6.8.0-90-generic:amd64 6.8.0-90.91~22.04.1 <none>\n2025-12-17 00:22:25 status installed linux-modules-nvidia-570-server-6.8.0-90-generic:amd64 6.8.0-90.91~22.04.1\n2025-12-17 00:22:25 configure libnvidia-encode-570-server:amd64 570.195.03-0ubuntu0.22.04.2 <none>\n2025-12-17 00:22:25 status installed libnvidia-encode-570-server:amd64 570.195.03-0ubuntu0.22.04.2\n2025-12-17 00:22:25 configure linux-modules-nvidia-570-server-generic-hwe-22.04:amd64 6.8.0-90.91~22.04.1 <none>\n2025-12-17 00:22:25 status installed linux-modules-nvidia-570-server-generic-hwe-22.04:amd64 6.8.0-90.91~22.04.1\n2025-12-17 00:22:25 configure nvidia-driver-570-server:amd64 570.195.03-0ubuntu0.22.04.2 <none>\n2025-12-17 00:22:25 status installed nvidia-driver-570-server:amd64 570.195.03-0ubuntu0.22.04.2\n",
+    "stderr": ""
+  },
+  {
+    "label": "device_nodes",
+    "command": "ls -l /dev/nvidia*",
+    "started_at": "2026-09-14T13:30:26.351044+00:00",
+    "stopped_at": "2026-09-14T13:30:26.354102+00:00",
+    "exit_code": 0,
+    "stdout": "crw-rw-rw- 1 root root 195,   0  9\u6708 10 14:14 /dev/nvidia0\ncrw-rw-rw- 1 root root 195,   1  9\u6708 10 14:14 /dev/nvidia1\ncrw-rw-rw- 1 root root 195, 255  9\u6708 10 14:14 /dev/nvidiactl\ncrw-rw-rw- 1 root root 195, 254  9\u6708 10 14:14 /dev/nvidia-modeset\ncrw-rw-rw- 1 root root 506,   0  9\u6708 10 14:14 /dev/nvidia-uvm\ncrw-rw-rw- 1 root root 506,   1  9\u6708 10 14:14 /dev/nvidia-uvm-tools\n",
+    "stderr": ""
+  },
+  {
+    "label": "device_holders",
+    "command": "fuser -v /dev/nvidia*",
+    "started_at": "2026-09-14T13:30:26.355742+00:00",
+    "stopped_at": "2026-09-14T13:30:26.426997+00:00",
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "label": "pip_post",
+    "command": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/env/bin/python -m pip list --format=json",
+    "started_at": "2026-09-14T13:30:26.428501+00:00",
+    "stopped_at": "2026-09-14T13:30:26.817966+00:00",
+    "exit_code": 0,
+    "stdout": "[{\"name\": \"pip\", \"version\": \"22.0.2\"}, {\"name\": \"setuptools\", \"version\": \"59.6.0\"}]\n",
+    "stderr": ""
+  },
+  {
+    "label": "checkpoint_stat",
+    "command": "stat /home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth",
+    "started_at": "2026-09-14T13:30:26.819652+00:00",
+    "stopped_at": "2026-09-14T13:30:26.824091+00:00",
+    "exit_code": 0,
+    "stdout": "  \u6587\u4ef6\uff1a/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth\n  \u5927\u5c0f\uff1a305058902 \t\u5757\uff1a595824     IO \u5757\u5927\u5c0f\uff1a4096   \u666e\u901a\u6587\u4ef6\n\u8bbe\u5907\uff1a10309h/66313d\tInode\uff1a76310702    \u786c\u94fe\u63a5\uff1a1\n\u6743\u9650\uff1a(0644/-rw-r--r--)  Uid: ( 1012/liujianhua)   Gid: ( 1000/wenchang)\n\u8bbf\u95ee\u65f6\u95f4\uff1a2026-09-14 18:05:25.450044020 +0800\n\u4fee\u6539\u65f6\u95f4\uff1a2026-09-14 18:04:51.317147474 +0800\n\u53d8\u66f4\u65f6\u95f4\uff1a2026-09-14 18:05:25.447044029 +0800\n\u521b\u5efa\u65f6\u95f4\uff1a2026-09-14 18:04:18.463260919 +0800\n",
+    "stderr": ""
+  },
+  {
+    "label": "checkpoint_hash",
+    "command": "sha256sum /home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth",
+    "started_at": "2026-09-14T13:30:26.825601+00:00",
+    "stopped_at": "2026-09-14T13:30:28.592636+00:00",
+    "exit_code": 0,
+    "stdout": "4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458  /home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth\n",
+    "stderr": ""
+  }
+]

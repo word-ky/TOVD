@@ -1,0 +1,50 @@
+{
+  "adjudication_receipt.json": {
+    "bytes": 3713,
+    "sha256": "240062b11c88b4559f80fd7291b75a0b713e6d776b3e9f94ecbcd27310dc58b2"
+  },
+  "command_ledger.json": {
+    "bytes": 34430,
+    "sha256": "39bb171b01468e513f20a8fc6698d41bc7d9b651f0e304ed2c25e7b5554f9685"
+  },
+  "delivery_manifest.json": {
+    "bytes": 675,
+    "sha256": "3ed765e5df3101717f342e7aae0b249fcb293779de0ed0274446afe73eb61f01"
+  },
+  "P3R7_REPORT.md": {
+    "bytes": 5967,
+    "sha256": "cf8a4c7d36dd53daf19365d0aa8b23767025e20ff70c6baab8cb97a215b78a11"
+  },
+  "P3R7_RESOLVED_REPORT.md": {
+    "bytes": 13059,
+    "sha256": "b2d8fe48741eb0f8d397d820dc87079676bd6bfee12bab3c17c621a317d392df"
+  },
+  "resolve_report.py": {
+    "bytes": 8931,
+    "sha256": "bdf40ccf5196b81a09a16aad729fd3bc26b590cdc1ac73deefd47264f7b1cfd1"
+  },
+  "resolved_receipt.json": {
+    "bytes": 9378,
+    "sha256": "173e71132c2222ce8a6044bf7d1f193e3882a65e05ef01cff12f4ba3e7595b0b"
+  },
+  "snapshot.py": {
+    "bytes": 3112,
+    "sha256": "3e2d8add832be07c43e8a74586ea137584a3ef908538738a71a888df01834047"
+  },
+  "supplement.py": {
+    "bytes": 1003,
+    "sha256": "36bbec6995e2958bf101cc5c2acfbdb4a3f1cc523568b24dabd06d80389af3df"
+  },
+  "supplement_ledger.json": {
+    "bytes": 25537,
+    "sha256": "3996ec3800479597170b4ce28ea20e562a2f6bae8f19470a065f922f14c443c3"
+  },
+  "transport_ledger.json": {
+    "bytes": 846,
+    "sha256": "1105e3f7fbbd97084dc054f86126e5e62c3263edb4d425c0787f2ed0d5fe3832"
+  },
+  "write_report.py": {
+    "bytes": 7448,
+    "sha256": "985a6b394785d3ff1a8621c4f7562e9b669af69ec468659a01b980c57dfe6666"
+  }
+}

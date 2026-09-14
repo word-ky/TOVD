@@ -515,3 +515,7 @@ Resumed after user replenished quota. Lead1f76d408/task-start75eda550. Local rea
 
 P3R7 evidence commit: f55ac957f2f05e1a7432de5f4b059cf6c604f005. State YW_P3R7_AMBIGUOUS_RETURN_TO_LEAD (current host evidence missing due SSH transport failures). Receipt SHA256 240062b11c88b4559f80fd7291b75a0b713e6d776b3e9f94ecbcd27310dc58b2; report SHA256 cf8a4c7d36dd53daf19365d0aa8b23767025e20ff70c6baab8cb97a215b78a11. Remote mirror not completed; no current driver/venv/checkpoint measurements. Snapshot script remains local-only/unexecuted; nvidia-smi0 and repair/runtime/science0. Next: Research Lead review of P3R7 host-driver consistency adjudication before any reboot, driver repair, Torch install, or model-runtime work.
 
+
+
+## 2026-09-14T13:31:32.315114+00:00 — P3R7 completed after user correction
+Same SSH configuration succeeded; earlier terminal transport stop was premature and is superseded. Full read-only snapshot+dated package follow-up completed. Loaded580.173.02, disk/DKMS/NVML/libcuda/utils580.178.04; bootSept10 predates Sept12 package update. State YW_P3R7_STALE_LOADED_MODULE_REBOOT_CANDIDATE_RETURN_TO_LEAD. nvidia-smi1 total exit18; repair/runtime/science0. fuser no visible holders is not proof idle. Venv unchanged, checkpoint exact. Current p3r7/resolved_receipt.json and P3R7_RESOLVED_REPORT.md supersede initial missing-evidence report; preserve old receipts. Next: Research Lead review of P3R7 host-driver consistency adjudication before any reboot, driver repair, Torch install, or model-runtime work.
