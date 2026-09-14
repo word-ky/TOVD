@@ -2936,3 +2936,129 @@ Complete P3R3 receipt:
 
 P3R3 evidence commit: b246973fc847e6cab9c2cb6ac5d8fbb5db004a19. State YW_P3R3_AUTHORITATIVE_DNS_INCONSISTENT_RETURN_TO_LEAD. Adjudication receipt SHA256 74ab14a61e314bce0c66f51f940b3bf60906f575ce277928ad7fad0c0e542087; human report SHA256 17fbf64d96a803a9d948fe3452f300e73c698cfe9e26f2f2cc715be6c5762a2f. Both match server project-local mirror. Full artifact hashes in p3r3/delivery_manifest.json. No additional probes/runtime; await Research Lead review of P3R3 authoritative-path evidence before any checkpoint recovery.
 
+
+
+---
+
+# T013-YW-P3R4 — exact relay artifact ready
+
+State: **YW_P3R4_RELAY_ARTIFACT_READY_RETURN_TO_LEAD**. Task-start `b9c8358d2a206cabca7ad67e2d7289b73fd2e877`; Lead `8087c128ea0bd1ea41d755df5351b12b91423993`. Heartbeat started 2026-09-14T09:20:16.607Z; report finalized 2026-09-14T17:25:44.043563+08:00.
+
+Exactly one workflow dispatch returned HTTP204. Run [34827628282](https://github.com/word-ky/TOVD/actions/runs/34827628282), attempt1, conclusion success; job 09:22:56–09:23:15 UTC (19 seconds), acquisition 09:22:57–09:23:11 UTC. Workflow `.github/workflows/t013_yw_checkpoint_relay.yml` commit `0a9e6a004191c9ab20db4feeebab51d88cc3760d`, SHA256 `3155607bc8d31b02d1b1fc4e6646d7ce8f56ba7a1ecd676264379cf9e560f4d4`. Trigger is workflow_dispatch only, contents:read; no push/PR/schedule trigger. Existing Git credential manager authentication used without installation or credential creation. Hosted ubuntu-latest resolved to Ubuntu24.04.5 LTS, ubuntu-24.04 image20260907.300.1. Upload-artifact@v4 resolved SHA `ea165f8d65b6e75b540449e92b4886f43607fa02`.
+
+Fixed asset: wondervictor/YOLO-World-V2.1 at c620164ee3979bf49b895c8a8e0f49aeaca89209, s_stage2-4466ab94.pth. Initial URL https://huggingface.co/wondervictor/YOLO-World-V2.1/resolve/c620164ee3979bf49b895c8a8e0f49aeaca89209/s_stage2-4466ab94.pth. No alternate initial URL/revision/checkpoint. curl8.5.0/OpenSSL3.0.13 exited0, HTTP200, TLS verification0, one automatic HTTPS redirect, 305058902 bytes received in13.353016s. Final host/path with query removed: https://us.aws.cdn.hf.co/xet-bridge-us/6794731697ff861d092a5864/41e5b92c0747ed7f4a45be8361749698d39f30eba61468a4c45bc80a0a08f1d2. The CDN URL was not manually selected.
+
+Acquisition command: `curl --fail --location --silent --show-error --proto '=https' --proto-redir '=https' --connect-timeout 45 --max-time 1200 --output checkpoint.partial --write-out '%{json}' "$initial" > transport.json`. Normal certificate validation, no package installation. `stat -c '%s' checkpoint.partial` returned305058902; `sha256sum checkpoint.partial` returned4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458. Both exactly match frozen expected values; upload ran only after this condition succeeded.
+
+Artifact `t013-yw-s-stage2-4466ab94-relay`, ID10341040916, ZIP size305061442 bytes, digest `sha256:2589f9b63f57e51d4646ea114cdbff0bf7896d7988c8a499360bb077ef76c5bf`. Upload logs report exactly2 files: checkpoint plus acquisition_receipt.json. Retention2days; expires 2026-09-16T09:23:11Z (2026-09-16 17:23:11+08). Artifact metadata retrieved through GitHub API; payload ZIP was not downloaded locally or to the experiment server. Server import count0. The runner-printed JSON receipt is retained at research_log/t013_yoloworld/p3r4/acquisition_receipt.json, SHA256 `d64080965c78597c853d3f99c34cdf2885d7d5154f0f1141cd81b4639270241f`; reconstructed by stripping log timestamp prefixes, not independently extracted from the ZIP.
+
+Initial local REST job-log retrieval returned HTTP401 at its redirect. Existing GitHub connector successfully retrieved complete logs; original failure body remains job.log, successful logs hosted_job.log. This read failure did not affect the successful workflow and caused no rerun or credential change. No unexpected acquisition/hash failure occurred.
+
+Counts: dispatch1, rerun0, alternate runner/provider0, alternate checkpoint/model/revision/content-source selection0, server import0, package/build0, deserialization0, CUDA/model-load/forward0, T013/COCO/LVIS science0, Grounding rerun0, T014/CF/MECH science0. P3/P3R1/P3R2/P3R3, Grounding freeze/cache/receipts/decision, YOLO P0/P1/P2 and all scientific settings unchanged. Relay success is transport evidence only; no runtime or scientific claim. Changed paths: dedicated workflow, separate p3r4 directory, appended coordination/CODEX_TO_CHATGPT.md and research_log/session_log.md. Full artifact hashes: delivery_manifest.json.
+
+Recommended next action: **Research Lead review of P3R4 relay artifact before any server import or runtime feasibility resumption**. Stop; no unchanged-mailbox dispatch or server import.
+
+Machine delivery receipt:
+```json
+{
+  "task": "T013-YW-P3R4",
+  "task_start_head": "b9c8358d2a206cabca7ad67e2d7289b73fd2e877",
+  "lead_instruction_commit": "8087c128ea0bd1ea41d755df5351b12b91423993",
+  "state": "YW_P3R4_RELAY_ARTIFACT_READY_RETURN_TO_LEAD",
+  "heartbeat_started_at": "2026-09-14T09:20:16.607Z",
+  "stopped_at": "2026-09-14T17:25:44.043563+08:00",
+  "workflow_path": ".github/workflows/t013_yw_checkpoint_relay.yml",
+  "workflow_sha256": "3155607bc8d31b02d1b1fc4e6646d7ce8f56ba7a1ecd676264379cf9e560f4d4",
+  "workflow_commit": "0a9e6a004191c9ab20db4feeebab51d88cc3760d",
+  "trigger": "workflow_dispatch only",
+  "permissions": {
+    "contents": "read"
+  },
+  "runner_label": "ubuntu-latest",
+  "observed_image": "ubuntu-24.04 / 20260907.300.1 / Ubuntu 24.04.5 LTS",
+  "run_id": 34827628282,
+  "run_attempt": 1,
+  "run_url": "https://github.com/word-ky/TOVD/actions/runs/34827628282",
+  "conclusion": "success",
+  "run_created_at": "2026-09-14T09:22:50Z",
+  "run_updated_at": "2026-09-14T09:23:16Z",
+  "job_duration_seconds": 19,
+  "acquisition": {
+    "task": "T013-YW-P3R4",
+    "initial_url": "https://huggingface.co/wondervictor/YOLO-World-V2.1/resolve/c620164ee3979bf49b895c8a8e0f49aeaca89209/s_stage2-4466ab94.pth",
+    "started_at": "2026-09-14T09:22:57Z",
+    "stopped_at": "2026-09-14T09:23:11Z",
+    "expected_bytes": 305058902,
+    "expected_sha256": "4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458",
+    "observed_bytes": 305058902,
+    "observed_sha256": "4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458",
+    "curl_exit_code": 0,
+    "verified": true,
+    "run_id": "34827628282",
+    "run_attempt": "1",
+    "workflow_commit": "0a9e6a004191c9ab20db4feeebab51d88cc3760d",
+    "runner_os": "Linux",
+    "image_os": "ubuntu24",
+    "image_version": "20260907.300.1",
+    "os_release": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+    "curl_version": "curl 8.5.0 (x86_64-pc-linux-gnu) libcurl/8.5.0 OpenSSL/3.0.13 zlib/1.3 brotli/1.1.0 zstd/1.5.5 libidn2/2.3.7 libpsl/0.21.2 (+libidn2/2.3.7) libssh/0.10.6/openssl/zlib nghttp2/1.59.0 librtmp/2.3 OpenLDAP/2.6.10\nRelease-Date: 2023-12-06, security patched: 8.5.0-2ubuntu10.13\nProtocols: dict file ftp ftps gopher gophers http https imap imaps ldap ldaps mqtt pop3 pop3s rtmp rtsp scp sftp smb smbs smtp smtps telnet tftp\nFeatures: alt-svc AsynchDNS brotli GSS-API HSTS HTTP2 HTTPS-proxy IDN IPv6 Kerberos Largefile libz NTLM PSL SPNEGO SSL threadsafe TLS-SRP UnixSockets zstd\n",
+    "verification_commands": [
+      "stat -c %s checkpoint.partial",
+      "sha256sum checkpoint.partial"
+    ],
+    "transport": {
+      "http_code": 200,
+      "ssl_verify_result": 0,
+      "remote_ip": "100.57.83.12",
+      "num_redirects": 1,
+      "size_download": 305058902,
+      "time_total": 13.353016,
+      "final_effective_host_path": "https://us.aws.cdn.hf.co/xet-bridge-us/6794731697ff861d092a5864/41e5b92c0747ed7f4a45be8361749698d39f30eba61468a4c45bc80a0a08f1d2"
+    }
+  },
+  "artifact": {
+    "id": 10341040916,
+    "node_id": "MDg6QXJ0aWZhY3QxMDM0MTA0MDkxNg==",
+    "name": "t013-yw-s-stage2-4466ab94-relay",
+    "size_in_bytes": 305061442,
+    "url": "https://api.github.com/repos/word-ky/TOVD/actions/artifacts/10341040916",
+    "archive_download_url": "https://api.github.com/repos/word-ky/TOVD/actions/artifacts/10341040916/zip",
+    "expired": false,
+    "digest": "sha256:2589f9b63f57e51d4646ea114cdbff0bf7896d7988c8a499360bb077ef76c5bf",
+    "created_at": "2026-09-14T09:23:13Z",
+    "updated_at": "2026-09-14T09:23:13Z",
+    "expires_at": "2026-09-16T09:23:11Z",
+    "workflow_run": {
+      "id": 34827628282,
+      "repository_id": 1366464556,
+      "head_repository_id": 1366464556,
+      "head_branch": "main",
+      "head_sha": "0a9e6a004191c9ab20db4feeebab51d88cc3760d"
+    }
+  },
+  "retention_days": 2,
+  "artifact_files": [
+    "s_stage2-4466ab94.pth",
+    "acquisition_receipt.json"
+  ],
+  "artifact_file_count_log": 2,
+  "upload_action_sha": "ea165f8d65b6e75b540449e92b4886f43607fa02",
+  "acquisition_receipt_sha256": "d64080965c78597c853d3f99c34cdf2885d7d5154f0f1141cd81b4639270241f",
+  "receipt_provenance": "Exact JSON printed by runner, reconstructed by stripping GitHub log timestamps; artifact itself not downloaded",
+  "counts": {
+    "workflow_reruns": 0,
+    "alternate_runner_provider": 0,
+    "alternate_checkpoint_model_revision_source_selection": 0,
+    "server_checkpoint_partial_import": 0,
+    "package_install_build": 0,
+    "checkpoint_deserialization": 0,
+    "CUDA_model_load_forward": 0,
+    "T013_COCO_LVIS_scientific_actions": 0,
+    "Grounding_rerun": 0,
+    "T014_CF_MECH_science": 0,
+    "Actions_workflow_dispatches": 1
+  },
+  "next_action": "Research Lead review of P3R4 relay artifact before any server import or runtime feasibility resumption",
+  "log_retrieval_note": "Initial local REST job-log redirect returned HTTP401 InvalidAuthenticationInfo; existing GitHub connector fetched logs successfully. No workflow rerun or credential change."
+}
+```

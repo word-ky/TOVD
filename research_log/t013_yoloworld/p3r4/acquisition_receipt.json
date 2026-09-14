@@ -1,0 +1,33 @@
+{
+  "task": "T013-YW-P3R4",
+  "initial_url": "https://huggingface.co/wondervictor/YOLO-World-V2.1/resolve/c620164ee3979bf49b895c8a8e0f49aeaca89209/s_stage2-4466ab94.pth",
+  "started_at": "2026-09-14T09:22:57Z",
+  "stopped_at": "2026-09-14T09:23:11Z",
+  "expected_bytes": 305058902,
+  "expected_sha256": "4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458",
+  "observed_bytes": 305058902,
+  "observed_sha256": "4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458",
+  "curl_exit_code": 0,
+  "verified": true,
+  "run_id": "34827628282",
+  "run_attempt": "1",
+  "workflow_commit": "0a9e6a004191c9ab20db4feeebab51d88cc3760d",
+  "runner_os": "Linux",
+  "image_os": "ubuntu24",
+  "image_version": "20260907.300.1",
+  "os_release": "PRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.5 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "curl_version": "curl 8.5.0 (x86_64-pc-linux-gnu) libcurl/8.5.0 OpenSSL/3.0.13 zlib/1.3 brotli/1.1.0 zstd/1.5.5 libidn2/2.3.7 libpsl/0.21.2 (+libidn2/2.3.7) libssh/0.10.6/openssl/zlib nghttp2/1.59.0 librtmp/2.3 OpenLDAP/2.6.10\nRelease-Date: 2023-12-06, security patched: 8.5.0-2ubuntu10.13\nProtocols: dict file ftp ftps gopher gophers http https imap imaps ldap ldaps mqtt pop3 pop3s rtmp rtsp scp sftp smb smbs smtp smtps telnet tftp\nFeatures: alt-svc AsynchDNS brotli GSS-API HSTS HTTP2 HTTPS-proxy IDN IPv6 Kerberos Largefile libz NTLM PSL SPNEGO SSL threadsafe TLS-SRP UnixSockets zstd\n",
+  "verification_commands": [
+    "stat -c %s checkpoint.partial",
+    "sha256sum checkpoint.partial"
+  ],
+  "transport": {
+    "http_code": 200,
+    "ssl_verify_result": 0,
+    "remote_ip": "100.57.83.12",
+    "num_redirects": 1,
+    "size_download": 305058902,
+    "time_total": 13.353016,
+    "final_effective_host_path": "https://us.aws.cdn.hf.co/xet-bridge-us/6794731697ff861d092a5864/41e5b92c0747ed7f4a45be8361749698d39f30eba61468a4c45bc80a0a08f1d2"
+  }
+}

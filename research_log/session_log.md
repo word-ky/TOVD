@@ -1024,3 +1024,10 @@ Read project remote recovery/recent handoff and AGENTS/protocol/mailbox/spec. gi
 ## 2026-09-14T17:04:54.2555278+08:00 — mailbox-only heartbeat after P3R3
 Read project remote recovery/recent handoff and AGENTS/protocol/mailbox/spec. git fetch and fast-forward succeeded; origin/main unchanged at a0f2857f0d33287f0c362572973981adf2ea64b1. Lead2cb45ef unchanged; P3R3 evidenceb246973/delivery7866d10 already complete. No new task or active run; no repeated DNS/HTTP probe, checkpoint recovery, package/build/GPU or scientific action. Await Research Lead review of P3R3 authoritative-path evidence before any checkpoint recovery.
 
+
+## 2026-09-14T17:23:08.6896517+08:00 — P3R4 single dispatch
+Lead8087c128/task-startb9c8358. Manual-only contents:read ubuntu-latest relay workflow committed/pushed0a9e6a004191c9ab20db4feeebab51d88cc3760d. Existing Git credential manager authentication used in memory; no credentials printed/minted. API dispatch exactly once returned204. Fixed official immutable URL, exact size/SHA gate before upload, two-day artifact retention. No server checkpoint import or runtime authorized. Await single hosted run results in p3r4.
+
+
+## 2026-09-14T17:25:44.043563+08:00 — P3R4 RELAY_ARTIFACT_READY
+Single run34827628282/attempt1 success; exact305058902bytes/SHA4466ab94...f458 verified by hosted runner. Artifact10341040916 fixed name,2files,305061442bytes,expires2026-09-16T09:23:11Z. No payload/server import/runtime. Workflow0a9e6a0, complete p3r4 logs/receipts. REST log redirect401 recovered using existing connector; no rerun. Await Lead review before import/runtime; no unchanged-mailbox repeat.
