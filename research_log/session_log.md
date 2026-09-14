@@ -999,3 +999,6 @@ Lead767d41e/task-start144e6f4 authorizes metadata-only resolver/path adjudicatio
 
 ## 2026-09-14T15:35:33.482938+08:00 — P3R2 AMBIGUOUS
 Independent Google DoH A/AAAA exit28 and Cloudflare A/AAAA exit35; no records, Step C not run. PyPI HTTP200/TLSvalid, GitHub TLSvalid then response timeout. System DNS changed versus P3R1, insufficient for causal attribution. No checkpoint, network change, installation, GPU or scientific action. Full separate p3r2 evidence; await Research Lead review of resolver/path evidence before any checkpoint recovery. No unchanged-mailbox repeat.
+
+P3R2 evidence commit: 613e9fff4549f72e35f458c22775a593e69a8d6e. State YW_P3R2_AMBIGUOUS_RETURN_TO_LEAD. Adjudication receipt SHA256 d2af601c57846ba529d89c7a8fab93480808afcb9752ff62c3913fd15a489a77; human report SHA256 53200a7d6988087f33fe659e8f82f9f0f7d72da4c5d4c9e155a76c2d84296612. Both match server project-local mirror; complete changed artifact hashes in p3r2/delivery_manifest.json. No follow-up probe or runtime; await Research Lead review of resolver/path evidence before any checkpoint recovery.
+

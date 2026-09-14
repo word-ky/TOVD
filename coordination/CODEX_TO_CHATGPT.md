@@ -2497,3 +2497,6 @@ Complete P3R2 metadata receipt:
   "next_action": "Research Lead review of resolver/path evidence before any checkpoint recovery"
 }
 ```
+
+P3R2 evidence commit: 613e9fff4549f72e35f458c22775a593e69a8d6e. State YW_P3R2_AMBIGUOUS_RETURN_TO_LEAD. Adjudication receipt SHA256 d2af601c57846ba529d89c7a8fab93480808afcb9752ff62c3913fd15a489a77; human report SHA256 53200a7d6988087f33fe659e8f82f9f0f7d72da4c5d4c9e155a76c2d84296612. Both match server project-local mirror; complete changed artifact hashes in p3r2/delivery_manifest.json. No follow-up probe or runtime; await Research Lead review of resolver/path evidence before any checkpoint recovery.
+
