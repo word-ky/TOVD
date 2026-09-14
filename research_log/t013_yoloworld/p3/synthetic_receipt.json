@@ -1,0 +1,14 @@
+{
+  "shape": [
+    640,
+    960,
+    3
+  ],
+  "dtype": "uint8",
+  "order": "C contiguous RGB",
+  "formula": "image[y,x,c] = (13*x + 7*y + 53*c) mod 256",
+  "raw_bytes": 1843200,
+  "sha256": "886a1ad7bfca38b1b829d91a0e9f2c15da95a022c67a905675b8552c5cad8592",
+  "scientific_image": false,
+  "annotations": false
+}

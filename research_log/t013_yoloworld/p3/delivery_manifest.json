@@ -1,0 +1,90 @@
+{
+  "research_log/t013_yoloworld/p3/checkpoint_download.log": {
+    "bytes": 10989,
+    "sha256": "0975a293bc120cb343f46dd2ee15f05b73bb7edea1fc6711f45ae223973c4593"
+  },
+  "research_log/t013_yoloworld/p3/checkpoint_exit.txt": {
+    "bytes": 3,
+    "sha256": "9961d158a7e0e2f990765971a9e490af826c0743b7d603020f34cc8944319fcb"
+  },
+  "research_log/t013_yoloworld/p3/checkpoint_started.txt": {
+    "bytes": 26,
+    "sha256": "2112df417d04eb502fa345b81edf7702a6d14fe52a869c144f9771b07aa1346e"
+  },
+  "research_log/t013_yoloworld/p3/environment_packages.json": {
+    "bytes": 84,
+    "sha256": "abd2324a8b7c0123333d4d26db280debafacbd0ffd30e98db651670217304282"
+  },
+  "research_log/t013_yoloworld/p3/existing_clip_cache.sha256": {
+    "bytes": 253,
+    "sha256": "b1b9cfa36a3ee71cffadd09df35724ff4cf20ad3693fc957efe45523286d4ade"
+  },
+  "research_log/t013_yoloworld/p3/mmyolo_source.tar.gz": {
+    "bytes": 2321311,
+    "sha256": "cb9764dbe838c3eb58ac631c0fc18e8da550d1b3d5a85d6adfe437d4c3d32a8e"
+  },
+  "research_log/t013_yoloworld/p3/p3_receipt.json": {
+    "bytes": 6963,
+    "sha256": "9f64f4da9bd02f62773b391e27549ab76f868bc61b1af1ccd1805136b8e6df9d"
+  },
+  "research_log/t013_yoloworld/p3/P3_RUNTIME_REPORT.md": {
+    "bytes": 2837,
+    "sha256": "545be010bf8d4125d6e89ee0aac713ac04afd9d82c7a40d990b15f30a3ae12c2"
+  },
+  "research_log/t013_yoloworld/p3/source_receipt.json": {
+    "bytes": 557,
+    "sha256": "9ceb786cd35c75084a6564f8c089c39e0afb1c1d5b5594d36760b09f8b8b1cd8"
+  },
+  "research_log/t013_yoloworld/p3/stopped_at.txt": {
+    "bytes": 26,
+    "sha256": "76b8023d87a570d434df941563b79e04ab51f8420568e32a030879bfe9fcdb1e"
+  },
+  "research_log/t013_yoloworld/p3/stopped_process.txt": {
+    "bytes": 300,
+    "sha256": "aa6bdb0f8e7932c6510293f1a95d07259b3c11431f6d55884a5c1b5716a3e63d"
+  },
+  "research_log/t013_yoloworld/p3/synthetic_receipt.json": {
+    "bytes": 326,
+    "sha256": "90893110b4acfc8eda7285958c596d0b1df2000484801ba904488ec7d9f11494"
+  },
+  "research_log/t013_yoloworld/p3/synthetic_rgb.uint8": {
+    "bytes": 1843200,
+    "sha256": "886a1ad7bfca38b1b829d91a0e9f2c15da95a022c67a905675b8552c5cad8592"
+  },
+  "research_log/t013_yoloworld/p3/synthetic_smoke.py": {
+    "bytes": 6029,
+    "sha256": "266ecacfc81fdbc9c2a8143cb7c2502b71b5e7631d91ff70b5b0d3b23fed2b7f"
+  },
+  "research_log/t013_yoloworld/p3/torch_exit.txt": {
+    "bytes": 4,
+    "sha256": "9d9b18720961e9b4689fd763b85e7b6f36160ccd3a8a1c9ddc5103bb0f66c396"
+  },
+  "research_log/t013_yoloworld/p3/torch_install.log": {
+    "bytes": 231,
+    "sha256": "e13beabd336150e310fa5315f12916eccf399f2f5268ab984a0175fdeec320ff"
+  },
+  "research_log/t013_yoloworld/p3/torch_partial_bytes.txt": {
+    "bytes": 10,
+    "sha256": "08c988121bd759c18aefde10bb99b79583b5dc808db0bb01f57b6d81a7f33dfe"
+  },
+  "research_log/t013_yoloworld/p3/torch_started.txt": {
+    "bytes": 26,
+    "sha256": "3ab82849400febe8c7c88c19ee406c155b2fac1a7569d1c0c674c30c80f7f910"
+  },
+  "research_log/t013_yoloworld/p3/write_handoff.py": {
+    "bytes": 9035,
+    "sha256": "2aca89fd2b1c608ed003e0ecc16fea07809815f95b2e9d0d37be4b109f9cd3ce"
+  },
+  "research_log/t013_yoloworld/p3/yolo_world_source.tar.gz": {
+    "bytes": 2378388,
+    "sha256": "e85d6eda273d0d31b1aacc70c04649cdd921d0fc7fd17804546b1cf6bb6858d1"
+  },
+  "coordination/CODEX_TO_CHATGPT.md": {
+    "bytes": 86046,
+    "sha256": "9137879a68955085d1aec1500d8ee0ded5481252e72bf7a4db4949d04d3e1692"
+  },
+  "research_log/session_log.md": {
+    "bytes": 191305,
+    "sha256": "a680779cd02e0110f12fdbaa831c7fd6cb71b9b0d99e3666cf71b4c825c02bbb"
+  }
+}

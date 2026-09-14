@@ -1,0 +1,18 @@
+[
+  {
+    "source": "yolo_world",
+    "revision": "b1b09f2f0340ca7dede69e10b7e909c469677fd9",
+    "archive": "yolo_world_source.tar.gz",
+    "sha256": "e85d6eda273d0d31b1aacc70c04649cdd921d0fc7fd17804546b1cf6bb6858d1",
+    "bytes": 2378388,
+    "source_patch_count": 0
+  },
+  {
+    "source": "mmyolo",
+    "revision": "4d97b3a06609dba94b8ec584be2f2029cfdb7519",
+    "archive": "mmyolo_source.tar.gz",
+    "sha256": "cb9764dbe838c3eb58ac631c0fc18e8da550d1b3d5a85d6adfe437d4c3d32a8e",
+    "bytes": 2321311,
+    "source_patch_count": 0
+  }
+]

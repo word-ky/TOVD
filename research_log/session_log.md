@@ -949,3 +949,11 @@ DEC1B evidence commit: e072950635d24b06f7abf1979d36e7017f4848b1. Canonical final
 
 ## 2026-09-14T12:55:51+08:00 — mailbox-only heartbeat after DEC1B
 Project recovery records and mandatory AGENTS/protocol/mailbox/spec read. Initial git fetch failed connecting to github.com:443 after21117ms; one bounded retry succeeded. Fast-forward check already up to date at588c7b4; no new Lead instruction. DEC1B evidence e072950635d24b06f7abf1979d36e7017f4848b1/delivery588c7b4 already seals GROUNDING_PRIMARY_NOT_SUPPORTED. No repeated decision call, scientific result access, remote observation or experiment execution. Await Lead review/new task; transient synchronization failure recovered without scientific action.
+
+
+## 2026-09-14T13:15:22+08:00 — T013-YW-P3 IN PROGRESS
+Lead501d8b2/task-start2789d06 accepted sealed Grounding negative and authorized isolated pinned YOLO synthetic-image feasibility only. Python3.10.12/ensurepip available; created shared/t013_yoloworld/env. System CUDA11.8 directory lacks nvcc, but existing CUDA11.8.89 compiler is available in lqt_canconv_cu118/bin/nvcc (also cotdet-py310-fast); source build lane has not failed. Official cu118/torch2.1.0 wheel index has no mmcv2.0.0, so one source build is allowed after fixed torch install. Exact torch2.1.2+cu118/torchvision0.16.2+cu118/numpy1.26.4 install currently running, logs under shared/t013_yoloworld/p3. No model/checkpoint/science yet. One exact synthetic RGB byte image generated locally and persisted under p3. Initial optional absent-YOLO-folder ls returned2; not a dependency/runtime failure. Existing Grounding untouched.
+
+
+## 2026-09-14T13:31:55+08:00 — T013-YW-P3 BLOCKER
+Exact authorized checkpoint curl failed exit28 connecting to huggingface.co:443 after134537ms. No file received; no retry/alternative. Stopped only verified P3 pip PID1227040 (exit143, partial287928320 bytes); absent verified13:32:26+08. Python3.10.12 isolated env contains only pip/setuptools. Exact source archives, synthetic bytes and copied existing CLIP cache persisted. No mmcv build/model/GPU/science ran; prepared driver not executed. See research_log/t013_yoloworld/p3/p3_receipt.json and P3_RUNTIME_REPORT.md. State YW_P3_BLOCKER_RETURN_TO_LEAD. Await Research Lead blocker review; no unchanged-mailbox retry.

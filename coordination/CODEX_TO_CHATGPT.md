@@ -1916,3 +1916,222 @@ delivery_manifest.json SHA256: 0ebee3467e2c633795f5820a5313aa659cc1a1c8a0fe6bc5f
 
 
 DEC1B evidence commit: e072950635d24b06f7abf1979d36e7017f4848b1. Canonical final state GROUNDING_PRIMARY_NOT_SUPPORTED; actual primary decide call count remains exactly one. This delivery entry does not modify the sealed seven-file packet. Await Research Lead; no second decision call or experiment authorized.
+
+
+---
+
+# T013-YW-P3 — runtime setup blocked
+
+State: **YW_P3_BLOCKER_RETURN_TO_LEAD**. Started 2026-09-14T13:11:42+08:00; stopped 2026-09-14T13:31:55+08:00.
+Task-start HEAD: `2789d06ae8496ed624b91a5f048aa50b288a8776`. Lead instruction: `501d8b2ce57b82366e3ee2095aabe3eee0391413`.
+
+First exact blocker (checkpoint curl exit 28):
+```
+curl: (28) Failed to connect to huggingface.co port 443 after 134537 ms: 杩炴帴瓒呮椂
+```
+The authorized checkpoint file was not created; actual size/hash are unavailable. No model was downloaded. Torch download had received 287928320 bytes and was explicitly stopped with SIGTERM after this blocker (exit 143); this is not evidence of Torch incompatibility. No P3 process remains running. No alternate transport/model/version attempt or source patch followed the blocker.
+
+Created isolated Python 3.10.12 environment `/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/env`; only pip 22.0.2 and setuptools 59.6.0 are installed. All target ML package versions remain unavailable, not verified. Existing CUDA compiler 11.8.89 was located; A6000/cuda:1 was the intended runtime, not tested in P3. No mmcv source build, CUDA-op check, model load or GPU forward ran. The official wheel index had no mmcv 2.0.0 match. No claim of runtime incompatibility or scientific failure follows from this network failure.
+
+Exact preregistered YOLO and MMYOLO revisions were archived and extracted to the isolated source folder, with archive hashes matched remotely (see source_receipt.json). Source-patch count 0. Existing CLIP snapshot was copied into the isolated cache; no extra model download occurred. Synthetic bytes use the required RGB uint8 640×960×3 formula `(13*x+7*y+53*c)%256`, SHA256 `886a1ad7bfca38b1b829d91a0e9f2c15da95a022c67a905675b8552c5cad8592`.
+
+V0 semantic/runtime/blank = 80/81/80; Vhard30 = 110/111/110; Vrand30 = 110/111/110. Every forward count is 0. Accepted class counts, prediction counts, blank-removal counts, finite checks and peak CUDA memory are all NOT RUN / null. The prepared synthetic_smoke.py was not executed and is not validated runtime evidence.
+
+No selected T013 image/corruption, COCO/LVIS annotation/evaluation, scientific metric/gate, Grounding rerun, T014, CF/MECH scientific work, or YOLO scientific benchmark ran. Grounding remains canonically GROUNDING_PRIMARY_NOT_SUPPORTED. No checkpoint/version/model alternative was attempted.
+
+Exact commands, exit codes, sources and expected checkpoint values are in p3_receipt.json; raw download/process logs are adjacent. Changed project paths are this p3 folder, research_log/session_log.md and coordination/CODEX_TO_CHATGPT.md. File hashes are in delivery_manifest.json. Stop after this delivery; an unchanged heartbeat must not retry P3.
+
+Recommended next action: **Research Lead blocker review**.
+
+Full machine-readable evidence:
+```json
+{
+  "task": "T013-YW-P3",
+  "task_start_head": "2789d06ae8496ed624b91a5f048aa50b288a8776",
+  "lead_instruction_commit": "501d8b2ce57b82366e3ee2095aabe3eee0391413",
+  "state": "YW_P3_BLOCKER_RETURN_TO_LEAD",
+  "started_at": "2026-09-14T13:11:42+08:00",
+  "stopped_at": "2026-09-14T13:31:55+08:00",
+  "first_blocker": {
+    "phase": "authorized checkpoint download",
+    "exit_code": 28,
+    "exact_message": "curl: (28) Failed to connect to huggingface.co port 443 after 134537 ms: 杩炴帴瓒呮椂"
+  },
+  "environment": {
+    "path": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/env",
+    "python": "3.10.12",
+    "cuda_compiler": "11.8.89",
+    "cuda_compiler_path": "/home/wenchang/anaconda3/envs/lqt_canconv_cu118/bin/nvcc",
+    "gpu_target": "A6000 / cuda:1",
+    "gpu_runtime_verified_in_p3": false,
+    "package_versions": {
+      "torch": null,
+      "torchvision": null,
+      "numpy": null,
+      "mmengine": null,
+      "mmcv": null,
+      "mmdet": null,
+      "transformers": null,
+      "timm": null,
+      "opencv-python-headless": null
+    },
+    "installed_distributions": [
+      {
+        "name": "pip",
+        "version": "22.0.2"
+      },
+      {
+        "name": "setuptools",
+        "version": "59.6.0"
+      }
+    ],
+    "source_build_occurred": false
+  },
+  "sources": [
+    {
+      "source": "yolo_world",
+      "revision": "b1b09f2f0340ca7dede69e10b7e909c469677fd9",
+      "archive": "yolo_world_source.tar.gz",
+      "sha256": "e85d6eda273d0d31b1aacc70c04649cdd921d0fc7fd17804546b1cf6bb6858d1",
+      "bytes": 2378388,
+      "source_patch_count": 0
+    },
+    {
+      "source": "mmyolo",
+      "revision": "4d97b3a06609dba94b8ec584be2f2029cfdb7519",
+      "archive": "mmyolo_source.tar.gz",
+      "sha256": "cb9764dbe838c3eb58ac631c0fc18e8da550d1b3d5a85d6adfe437d4c3d32a8e",
+      "bytes": 2321311,
+      "source_patch_count": 0
+    }
+  ],
+  "checkpoint": {
+    "url": "https://huggingface.co/wondervictor/YOLO-World-V2.1/resolve/c620164ee3979bf49b895c8a8e0f49aeaca89209/s_stage2-4466ab94.pth",
+    "path": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth",
+    "expected_bytes": 305058902,
+    "expected_sha256": "4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458",
+    "file_exists": false,
+    "actual_bytes": null,
+    "actual_sha256": null,
+    "other_checkpoint_model_downloaded": false
+  },
+  "existing_text_cache": {
+    "action": "copied existing local cache; no network model download",
+    "source": "/home/liujianhua/.cache/huggingface/hub/models--openai--clip-vit-base-patch32",
+    "destination": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/cache/huggingface/hub/models--openai--clip-vit-base-patch32",
+    "snapshot": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+    "weight_sha256": "a63082132ba4f97a80bea76823f544493bffa8082296d62d71581a4feff1576f"
+  },
+  "commands": [
+    {
+      "command": "/usr/bin/python3.10 -m venv /home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/env",
+      "exit_code": 0
+    },
+    {
+      "command": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/env/bin/python -m pip --cache-dir /home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/cache install torch==2.1.2+cu118 torchvision==0.16.2+cu118 numpy==1.26.4 --extra-index-url https://download.pytorch.org/whl/cu118",
+      "exit_code": 143,
+      "reason": "explicit SIGTERM after checkpoint blocker; not a Torch dependency failure",
+      "partial_torch_wheel_bytes": 287928320
+    },
+    {
+      "command": "curl -fL --max-time 900 --output /home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth \"https://huggingface.co/wondervictor/YOLO-World-V2.1/resolve/c620164ee3979bf49b895c8a8e0f49aeaca89209/s_stage2-4466ab94.pth\"",
+      "exit_code": 28
+    },
+    {
+      "command": "kill -TERM 1227040",
+      "exit_code": 0,
+      "pid_command_verified_before_signal": true,
+      "process_absent_confirmed_at": "2026-09-14T13:32:26+08:00"
+    },
+    {
+      "command": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/env/bin/python -m pip list --format=json",
+      "exit_code": 0
+    },
+    {
+      "command": "mmcv build / CUDA-op import / model load / synthetic_smoke.py",
+      "exit_code": null,
+      "status": "NOT_RUN"
+    }
+  ],
+  "mmcv_wheel_probe": {
+    "index": "https://download.openmmlab.com/mmcv/dist/cu118/torch2.1.0/index.html",
+    "matching_mmcv_2_0_0_wheel_found": false,
+    "source_build_started": false
+  },
+  "synthetic_image": {
+    "shape": [
+      640,
+      960,
+      3
+    ],
+    "dtype": "uint8",
+    "order": "C contiguous RGB",
+    "formula": "image[y,x,c] = (13*x + 7*y + 53*c) mod 256",
+    "raw_bytes": 1843200,
+    "sha256": "886a1ad7bfca38b1b829d91a0e9f2c15da95a022c67a905675b8552c5cad8592",
+    "scientific_image": false,
+    "annotations": false
+  },
+  "cuda_op_check": "NOT_RUN",
+  "model_load": "NOT_RUN",
+  "vocabularies": [
+    {
+      "name": "V0",
+      "semantic_count": 80,
+      "runtime_count": 81,
+      "blank_index": 80,
+      "model_accepted_class_count": null,
+      "native_retained_count": null,
+      "blank_retained_count": null,
+      "post_blank_removal_count": null,
+      "nan_inf_check": "NOT_RUN",
+      "forward_count": 0
+    },
+    {
+      "name": "Vhard30",
+      "semantic_count": 110,
+      "runtime_count": 111,
+      "blank_index": 110,
+      "model_accepted_class_count": null,
+      "native_retained_count": null,
+      "blank_retained_count": null,
+      "post_blank_removal_count": null,
+      "nan_inf_check": "NOT_RUN",
+      "forward_count": 0
+    },
+    {
+      "name": "Vrand30",
+      "semantic_count": 110,
+      "runtime_count": 111,
+      "blank_index": 110,
+      "model_accepted_class_count": null,
+      "native_retained_count": null,
+      "blank_retained_count": null,
+      "post_blank_removal_count": null,
+      "nan_inf_check": "NOT_RUN",
+      "forward_count": 0
+    }
+  ],
+  "peak_cuda_allocated_bytes": null,
+  "peak_lte_24_gib": null,
+  "source_patch_count": 0,
+  "alternative_version_checkpoint_model_attempts": 0,
+  "scientific_actions": {
+    "T013_selected_images": 0,
+    "T013_corruptions": 0,
+    "COCO_LVIS_annotations_or_evaluation": 0,
+    "scientific_metrics_or_gates": 0,
+    "Grounding_rerun": 0,
+    "T014": 0,
+    "CF_MECH_scientific_work": 0,
+    "YOLO_scientific_benchmark": 0
+  },
+  "remaining_running_p3_processes": 0,
+  "prepared_smoke_driver_executed": false,
+  "next_action": "Research Lead blocker review",
+  "preflight_notes": [
+    "The conventional /usr/local/cuda-11.8/bin/nvcc path is absent; existing exact 11.8.89 compiler found without modification.",
+    "Optional missing-directory listing and cache-search no-match exits were preflight observations, not fixed-lane failures."
+  ]
+}
+```
