@@ -512,3 +512,6 @@ D: free0 bytes caused git index.lock write failure (Out of diskspace); no lock r
 
 ## 2026-09-14T13:22:29.238578+00:00 — P3R7 SSH transport stop
 Resumed after user replenished quota. Lead1f76d408/task-start75eda550. Local read-only snapshot.py prepared but not uploaded/executed: first SSH project-dir preparation closed(exit255), identity-only probe succeeded21:20:22+08, second preparation timed out(exit255). State YW_P3R7_AMBIGUOUS_RETURN_TO_LEAD due missing current component evidence. nvidia-smi0, repair/runtime/science0; no new checkpoint/venv measurement. Prior evidence unchanged. Local p3r7 receipts authoritative; remote mirror unavailable. Await Lead review; do not repeat unchanged terminal task.
+
+P3R7 evidence commit: f55ac957f2f05e1a7432de5f4b059cf6c604f005. State YW_P3R7_AMBIGUOUS_RETURN_TO_LEAD (current host evidence missing due SSH transport failures). Receipt SHA256 240062b11c88b4559f80fd7291b75a0b713e6d776b3e9f94ecbcd27310dc58b2; report SHA256 cf8a4c7d36dd53daf19365d0aa8b23767025e20ff70c6baab8cb97a215b78a11. Remote mirror not completed; no current driver/venv/checkpoint measurements. Snapshot script remains local-only/unexecuted; nvidia-smi0 and repair/runtime/science0. Next: Research Lead review of P3R7 host-driver consistency adjudication before any reboot, driver repair, Torch install, or model-runtime work.
+

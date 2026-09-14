@@ -3440,3 +3440,6 @@ Next action: **Research Lead review of P3R7 host-driver consistency adjudication
   "next_action": "Research Lead review of P3R7 host-driver consistency adjudication before any reboot, driver repair, Torch install, or model-runtime work"
 }
 ```
+
+P3R7 evidence commit: f55ac957f2f05e1a7432de5f4b059cf6c604f005. State YW_P3R7_AMBIGUOUS_RETURN_TO_LEAD (current host evidence missing due SSH transport failures). Receipt SHA256 240062b11c88b4559f80fd7291b75a0b713e6d776b3e9f94ecbcd27310dc58b2; report SHA256 cf8a4c7d36dd53daf19365d0aa8b23767025e20ff70c6baab8cb97a215b78a11. Remote mirror not completed; no current driver/venv/checkpoint measurements. Snapshot script remains local-only/unexecuted; nvidia-smi0 and repair/runtime/science0. Next: Research Lead review of P3R7 host-driver consistency adjudication before any reboot, driver repair, Torch install, or model-runtime work.
+
