@@ -934,3 +934,7 @@ G4B1 evidence commit: d469eb34fcb29e0b3f899053e5415b0581ebcd76. Fixed scientific
 
 ## 2026-09-14T12:00:54+08:00 — mailbox-only heartbeat after G4B1
 Read project-local recovery records and mandatory AGENTS/protocol/mailbox/spec; git fetch and fast-forward check succeeded, origin/main unchanged at f633e6c. Lead745f1d2 still assigns already-completed G4B1. Evidence d469eb34fcb29e0b3f899053e5415b0581ebcd76 and delivery f633e6c remain ready for Lead review. No repeated audit, remote observation, result access, DEC1 call or scientific execution. Await new Lead task through existing heartbeat.
+
+
+## 2026-09-14T12:17:21+08:00 — mailbox-only heartbeat after G4B1
+Project recovery records and mandatory AGENTS/protocol/mailbox/spec read. GitHub fetch and fast-forward check succeeded; origin/main unchanged at a163f5c. No new Lead instruction. G4B1 evidence d469eb3/delivery f633e6c already complete; unchanged mailbox does not authorize repeating the audit or DEC1 adjudication. No remote observation, scientific result access or experiment execution. Await Lead review/new task.
