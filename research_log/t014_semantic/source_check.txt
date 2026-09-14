@@ -1,0 +1,1 @@
+No query-field/runtime/file-loader references: rg exit=1

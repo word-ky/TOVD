@@ -1,0 +1,19 @@
+test_canonical_misclassification (test_semantic_shift.SemanticShiftTests.test_canonical_misclassification) ... ok
+test_dataset_delta_arithmetic_synthetic_only (test_semantic_shift.SemanticShiftTests.test_dataset_delta_arithmetic_synthetic_only) ... ok
+test_empty_and_crowd (test_semantic_shift.SemanticShiftTests.test_empty_and_crowd) ... ok
+test_hard_random_orientation (test_semantic_shift.SemanticShiftTests.test_hard_random_orientation) ... ok
+test_identical (test_semantic_shift.SemanticShiftTests.test_identical) ... ok
+test_initially_wrong_included_in_box_score_support_only (test_semantic_shift.SemanticShiftTests.test_initially_wrong_included_in_box_score_support_only) ... ok
+test_iou_boundary_inclusive (test_semantic_shift.SemanticShiftTests.test_iou_boundary_inclusive) ... ok
+test_iou_then_score_then_order (test_semantic_shift.SemanticShiftTests.test_iou_then_score_then_order) ... ok
+test_localization_loss (test_semantic_shift.SemanticShiftTests.test_localization_loss) ... ok
+test_pooled_gt_support_and_independent_reuse (test_semantic_shift.SemanticShiftTests.test_pooled_gt_support_and_independent_reuse) ... ok
+test_preflight_condition_and_required_fields (test_semantic_shift.SemanticShiftTests.test_preflight_condition_and_required_fields) ... ok
+test_preflight_labels_and_boxes (test_semantic_shift.SemanticShiftTests.test_preflight_labels_and_boxes) ... ok
+test_query_permutation_irrelevant (test_semantic_shift.SemanticShiftTests.test_query_permutation_irrelevant) ... ok
+test_takeover (test_semantic_shift.SemanticShiftTests.test_takeover) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.003s
+
+OK
