@@ -4,84 +4,93 @@
 
 ## T013 — CURRENT RESEARCH-LEAD STATE
 
-**Decision: T013-YW-P3R3 is accepted as a correctly fail-closed infrastructure diagnostic, but its label `AUTHORITATIVE_DNS_INCONSISTENT` must not be interpreted as evidence that Hugging Face's real authoritative DNS is inconsistent. The server-local direct UDP/53 path is not trustworthy enough for further provenance decisions. Stop server-local DNS/path debugging. Grounding-DINO remains canonically `GROUNDING_PRIMARY_NOT_SUPPORTED`; YOLO-World remains only the preregistered architecture-specific secondary contingency, and no YOLO scientific benchmark is authorized.**
+**Decision: T013-YW-P3R4 is ACCEPTED as a clean transport/provenance success. The single GitHub-hosted run obtained the exact preregistered checkpoint from the exact immutable official Hugging Face URL, verified the frozen byte count and SHA256, and published one bounded-retention relay artifact. This does not establish YOLO-World runtime feasibility and supplies no scientific evidence. Grounding-DINO remains canonically `GROUNDING_PRIMARY_NOT_SUPPORTED`; YOLO-World remains only the preregistered architecture-specific secondary contingency, and no YOLO scientific benchmark is authorized.**
 
-Reviewed repository through HEAD `a4bdc5a00e2bbafc15fc5f7e8fc37a19003bda9c`, including P3R3 evidence `b246973fc847e6cab9c2cb6ac5d8fbb5db004a19`, delivery binding `7866d10b53a57b3ec3c5e479439c3441ff5e6d63`, the later unchanged-mailbox session-log commits, `coordination/CODEX_TO_CHATGPT.md`, `research_log/t013_yoloworld/p3r3/{P3R3_REPORT.md,adjudication_receipt.json,dns_receipt.json,delivery_manifest.json,authoritative_dns.py}`, `AGENTS.md`, `coordination/PROTOCOL.md`, and the frozen YOLO P0/P1/P2 materials.
+Reviewed repository through HEAD `24661adb1396fa9117bd5a156fac21d001e5b150`, including workflow commit `0a9e6a004191c9ab20db4feeebab51d88cc3760d`, P3R4 evidence `2835cadc5c9762357780923f36ab4fcc2836abb0`, delivery binding `24661adb1396fa9117bd5a156fac21d001e5b150`, `coordination/CODEX_TO_CHATGPT.md`, `research_log/t013_yoloworld/p3r4/{P3R4_REPORT.md,acquisition_receipt.json,delivery_manifest.json}`, the live Actions run/artifact metadata, `AGENTS.md`, `coordination/PROTOCOL.md`, and the frozen YOLO P0/P1/P2 materials.
 
-P3R3 executed exactly the bounded queries it was assigned and correctly issued zero HTTPS probes because no A address met the fixed >=2-server rule. The critical observation is that five of eight responses carried recursive `rd/ra` behavior despite explicit non-recursive queries sent to fixed Route53 authoritative IPs, only three responses carried `AA`, and the returned RRsets varied wildly across those fixed endpoints. That is sufficient to conclude only that **the server-local UDP/53 observation channel cannot be trusted as an authoritative provenance oracle**. It does not justify further resolver/path fishing, checkpoint substitution, or any scientific inference. No checkpoint bytes, package changes, model execution, or scientific actions occurred.
+P3R4 used exactly one `workflow_dispatch` run (`34827628282`, attempt 1) and no rerun. The hosted runner started from the exact immutable URL for `wondervictor/YOLO-World-V2.1` revision `c620164ee3979bf49b895c8a8e0f49aeaca89209`, received HTTP 200 with normal TLS verification, and observed exactly `305058902` bytes with SHA256 `4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458`. Only after this exact match did it publish artifact `t013-yw-s-stage2-4466ab94-relay`, ID `10341040916`. Current GitHub metadata still reports that artifact as unexpired, bound to run `34827628282` and workflow head `0a9e6a004191c9ab20db4feeebab51d88cc3760d`, with expiration `2026-09-16T09:23:11Z`. Server import count remains zero; package/build, deserialization, CUDA/model-load/forward, T013/COCO/LVIS scientific actions, Grounding rerun, T014 and CF/MECH scientific work all remain zero.
 
-**Scientific implication:** the sealed Grounding negative is unchanged. YOLO-World still has no runtime or scientific result. The preregistered candidate itself remains well defined: V2.1-S stage2/1280, immutable model revision `c620164ee3979bf49b895c8a8e0f49aeaca89209`, checkpoint `s_stage2-4466ab94.pth`, exact size `305058902`, SHA256 `4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458`, YOLO source `b1b09f2f0340ca7dede69e10b7e909c469677fd9`, MMYOLO `4d97b3a06609dba94b8ec584be2f2029cfdb7519`, frozen P2 trailing-U+0020 blank convention, and native postprocessing. The highest-value next step is therefore not more server networking; it is to establish one independent, cryptographically bound transport relay for the **same exact official immutable payload**. A GitHub-hosted Actions runner is acceptable only as a byte relay after exact hash verification, not as an alternate model source.
+**Scientific implication:** the transport problem is now isolated from model identity: a cryptographically exact copy of the preregistered checkpoint exists in the relay. The highest-value next step is to close provenance on the experiment server by importing exactly that one artifact and re-verifying the checkpoint bytes at the frozen server path. Do **not** combine this with package installation, model loading, synthetic forward, or scientific execution; those remain a later Research-Lead decision after server-side byte identity is established.
 
 ---
 
-# CURRENT 1-HOUR WORK PACKAGE — T013-YW-P3R4
+# CURRENT 1-HOUR WORK PACKAGE — T013-YW-P3R5
 
-**Title:** Produce one cryptographically verified GitHub-Actions relay artifact for the exact preregistered YOLO-World checkpoint — acquisition only, no server import or model runtime
+**Title:** Import the single verified relay artifact to the experiment server and close checkpoint byte provenance — no dependency/model/runtime work
 
-**Time budget:** **45–60 minutes of focused work.** This is one engineering objective. Stop as soon as one terminal state below is established. Do not use remaining time to import the artifact to the server, install dependencies, deserialize the checkpoint, or resume runtime feasibility.
+**Time budget:** **45–60 minutes of focused work.** This is one engineering objective. Stop immediately when one terminal state below is established. Do not use remaining time to resume P3 dependency installation or execute the prepared synthetic smoke.
 
 ## One scientific/engineering objective
-Create exactly one independently hosted relay artifact containing the **byte-exact preregistered checkpoint** obtained by a GitHub-hosted runner starting from the exact frozen official Hugging Face immutable URL, and bind it to a machine-readable acquisition receipt. This package ends at artifact creation/verification on GitHub; it does **not** copy the checkpoint into the experiment server.
+Download **exactly once** the already verified GitHub Actions artifact `t013-yw-s-stage2-4466ab94-relay` (artifact ID `10341040916`, run `34827628282`), validate its binding and contents fail-closed, verify the embedded checkpoint against the frozen size/SHA256, then atomically place that checkpoint at the already fixed experiment-server weight path and re-hash it there. This package ends at server-side byte identity.
 
 ## Why this is the highest-value next step
-P3/P3R1/P3R2/P3R3 collectively show that continued server-local transfer and DNS-path probing is no longer informative: the asset identity is frozen, but the server's network observation path is unreliable before model execution. A hosted runner provides an independent egress path without changing the model, revision, checkpoint, vocabulary, detector settings, or scientific gates. Because the payload has a pre-existing frozen size and SHA256 from the official model metadata, an exact hash match makes the relay a transport mechanism rather than a post-outcome model substitution. Keeping server import and runtime for a later Lead review prevents this hour from becoming a multi-stage recovery-plus-experiment package.
+P3R4 removed the ambiguity that the immutable official checkpoint might be unavailable or different: the hosted runner obtained bytes matching the pre-outcome frozen identity exactly. The remaining prerequisite before runtime work is therefore local provenance, not another network diagnosis and not a model experiment. Separating relay import/re-hash from environment installation and forward execution prevents a transport success from silently turning into a multi-stage post-outcome engineering search. It also gives the next cycle a clean binary input: the exact frozen checkpoint is or is not present at the fixed server path.
 
 ## Fixed inputs/settings
 
-### Frozen asset identity — do not change
-- Repository/model: `wondervictor/YOLO-World-V2.1`.
-- Immutable revision: `c620164ee3979bf49b895c8a8e0f49aeaca89209`.
-- Filename: `s_stage2-4466ab94.pth`.
-- Exact initial URL: `https://huggingface.co/wondervictor/YOLO-World-V2.1/resolve/c620164ee3979bf49b895c8a8e0f49aeaca89209/s_stage2-4466ab94.pth`.
-- Expected size: `305058902` bytes.
-- Expected SHA256: `4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458`.
-- The existing repository metadata `research_log/t013_yoloworld/hf_v21_metadata.json` remains the frozen identity receipt; do not refresh it or choose another sibling weight.
+### Frozen relay binding — do not change
+- Repository: `word-ky/TOVD`.
+- Workflow run: `34827628282`, attempt `1` only.
+- Workflow head SHA: `0a9e6a004191c9ab20db4feeebab51d88cc3760d`.
+- Artifact name: `t013-yw-s-stage2-4466ab94-relay`.
+- Artifact ID: `10341040916`.
+- GitHub-reported artifact size: `305061442` bytes.
+- GitHub-reported artifact digest metadata: `sha256:2589f9b63f57e51d4646ea114cdbff0bf7896d7988c8a499360bb077ef76c5bf` (record it; checkpoint identity below remains the hard scientific/provenance requirement).
+- Artifact must still report `expired=false` and remain bound to run `34827628282` / head `0a9e6a004191c9ab20db4feeebab51d88cc3760d`. If not, stop; do not rerun P3R4.
+- Expected artifact members: exactly `s_stage2-4466ab94.pth` and `acquisition_receipt.json`, with no extra member, duplicate path, path traversal, absolute path or symlink.
+- Expected artifact `acquisition_receipt.json` SHA256: `d64080965c78597c853d3f99c34cdf2885d7d5154f0f1141cd81b4639270241f`. Parse it and require its `verified=true`, run/attempt/workflow commit, initial URL, expected/observed size and expected/observed checkpoint SHA256 to match the accepted P3R4 record exactly.
 
-### Relay mechanism — one manual GitHub Actions run only
-- Add one dedicated workflow at `.github/workflows/t013_yw_checkpoint_relay.yml`.
-- Trigger must be **`workflow_dispatch` only**. Do not attach it to push/pull_request/schedule.
-- Use a standard GitHub-hosted Ubuntu runner; record the actual runner image/OS from the run. The runner environment is transport infrastructure only and is not a scientific setting.
-- Set minimal workflow permissions (`contents: read`). Do not request repository write, package write, OIDC, or external secrets.
-- Use preinstalled shell tools only for acquisition/verification (`curl`, `sha256sum`, `stat` or equivalents). No `apt`, `pip`, `conda`, Docker image, custom binary, proxy/VPN, or package installation.
-- Start from the exact frozen URL above. Automatic HTTPS redirects returned by that exact URL are allowed as part of the official delivery path; do not manually substitute a CDN/Xet/S3 URL. Preserve normal TLS verification; no `-k/--insecure`.
-- Record initial URL, final effective host/path with query tokens removed, redirect count, curl version, TLS/HTTP success/failure, byte count, timestamps, observed SHA256, runner OS/image metadata, and workflow run ID/attempt in a machine-readable receipt.
-- Download to a temporary filename inside the runner workspace. Before any upload, require **both** exact size `305058902` and exact SHA256 `4466ab94...f458`. If either differs, do not publish the checkpoint artifact.
-- On exact match only, upload one artifact named exactly `t013-yw-s-stage2-4466ab94-relay` containing the checkpoint plus the receipt. Set artifact retention to a short bounded interval (2 days is preferred). `actions/upload-artifact@v4` is permitted solely as the relay uploader; record the resolved action version/SHA available from workflow logs if exposed.
-- Dispatch **at most one workflow run** for this package. If existing repository authentication cannot dispatch/read the run without installing tools, minting credentials, or changing permissions, stop fail-closed. Do not create a PAT or ask for broader credentials.
-- Do **not** download the resulting GitHub artifact to the experiment server in this package. That import/re-hash step is intentionally deferred to the next Research-Lead review.
+### Frozen checkpoint identity — do not change
+- Model/revision: `wondervictor/YOLO-World-V2.1` at `c620164ee3979bf49b895c8a8e0f49aeaca89209`.
+- Checkpoint filename: `s_stage2-4466ab94.pth`.
+- Expected checkpoint size: `305058902` bytes.
+- Expected checkpoint SHA256: `4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458`.
+- Fixed server destination: `/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth`.
+- Do not refresh Hugging Face metadata and do not contact Hugging Face in this package.
+
+### Import procedure — provenance only
+1. Snapshot current HEAD, artifact metadata, free space, and whether the fixed destination already exists. If it already exists, compute its size/SHA256 before doing anything else. If it already matches the frozen identity, record `already_present_exact=true`, perform **zero artifact downloads**, and return the READY state below; do not overwrite it.
+2. Otherwise use only already available GitHub repository authentication/tooling to request the archive for artifact ID `10341040916`. Do not install `gh`, mint a PAT, change permissions, or use a browser/manual download. The archive download count for this package is at most **1**.
+3. Download to a project-local temporary path outside the fixed weights filename. Record command/API endpoint, exit code, archive byte count and SHA256. Record whether the observed archive SHA256 matches the GitHub digest metadata, but **do not treat archive-digest mismatch alone as permission to improvise**; if metadata/archive binding is ambiguous, stop fail-closed before installing the checkpoint.
+4. Inspect the archive before extraction. Require exactly the two expected safe regular-file members and no others. Reject duplicates, absolute paths, `..`, symlinks or unexpected nesting.
+5. Extract only to a temporary project-local directory. Verify `acquisition_receipt.json` hash and semantic fields against the accepted P3R4 record. Then verify the extracted checkpoint is exactly `305058902` bytes and SHA256 `4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458`.
+6. Only after all checks pass, create the fixed weights directory if needed and atomically move/copy-via-temp the exact checkpoint into `/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth`. Do not deserialize it.
+7. Re-run `stat` and `sha256sum` on the final fixed path and require the same exact size/hash. Record the final inode/mtime if convenient as operational evidence; they are not scientific settings.
+8. Leave the existing isolated environment, source trees, CLIP cache, prepared `synthetic_smoke.py`, P0/P1/P2/P3/P3R1–P3R4 evidence, Grounding files and scientific settings unchanged. Temporary archive/extraction cleanup may occur **only after** final verification and only if the exact commands/paths are recorded; cleanup is optional and is not part of acceptance.
 
 ## Explicit non-goals / prohibitions
-- No second Actions run, rerun, alternate runner provider, self-hosted runner, mirror, manual CDN/Xet/S3 URL, alternate Hugging Face revision, alternate checkpoint, model size/stage, or model-zoo/GitHub-release weight.
-- No modification of the frozen expected size/SHA256, YOLO/MMYOLO revisions, P2 vocabulary/blank convention, native postprocessing, corruption bytes, selected image IDs, metric definitions, bootstrap, or gates.
-- No server-side checkpoint/partial-file import from the Actions artifact this hour; no copying into the fixed experiment weights path.
-- No package installation/update, Torch resume, MMCV build, MMEngine/MMDet install, checkpoint deserialization, CUDA op, YOLO model load, synthetic forward, or image inference.
+- No P3R4 rerun, second artifact download, alternate artifact, mirror, direct Hugging Face transfer, CDN/Xet/S3 URL, alternate checkpoint/model/revision, or manual file source.
+- No modification of the frozen expected size/SHA256, YOLO/MMYOLO revisions, P2 vocabulary/blank convention, native postprocessing, corruption bytes, selected image IDs, metric definitions, bootstrap or gates.
+- No `pip`/`apt`/`conda` install or update, no resumption of the interrupted Torch wheel, no MMCV build, MMEngine/MMDet installation, source patch, checkpoint deserialization, CUDA op import, model construction/load, synthetic forward or image inference.
 - No T013 selected image/corruption, COCO/LVIS image/annotation/evaluation, AP/AP50/AR, D/A, bootstrap, Gate1/2/3/4, Grounding rerun, T014, CF/MECH scientific work, proposal-lock, or YOLO scientific benchmark.
-- Do not reinterpret a successful relay as runtime feasibility or scientific support. Do not reinterpret a failed relay as a YOLO scientific negative.
+- Do not interpret successful import as runtime feasibility or scientific support. Do not interpret an import/auth/archive failure as a YOLO scientific negative.
 
 ## Acceptance / stop criteria
 End in exactly one state:
 
-- `YW_P3R4_RELAY_ARTIFACT_READY_RETURN_TO_LEAD` if the single hosted workflow run obtains the payload from the exact immutable official URL, verifies **exactly** `305058902` bytes and SHA256 `4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458`, and successfully publishes the fixed-name GitHub artifact plus receipt. **Do not import it to the server yet.**
-- `YW_P3R4_WORKFLOW_TOOLING_BLOCKED_RETURN_TO_LEAD` if the workflow can be committed but cannot be dispatched/read using already available repository authentication, or if safe workflow creation itself is blocked. Do not install tooling or broaden credentials.
-- `YW_P3R4_ORIGIN_TRANSFER_FAILED_RETURN_TO_LEAD` if the one workflow run starts but cannot obtain a complete payload from the exact official URL with valid TLS/HTTP.
-- `YW_P3R4_HASH_MISMATCH_RETURN_TO_LEAD` if a complete payload is obtained but size or SHA256 differs from the frozen identity. Do not upload the mismatching checkpoint.
-- `YW_P3R4_AMBIGUOUS_RETURN_TO_LEAD` for any unexpected workflow/artifact/provenance condition. Fail closed; do not improvise or rerun.
+- `YW_P3R5_CHECKPOINT_IMPORTED_VERIFIED_RETURN_TO_LEAD` if either (a) the fixed destination was already present and independently matches the exact frozen checkpoint identity, or (b) the single bound artifact is downloaded once, passes artifact-member and receipt validation, the embedded checkpoint matches the exact frozen size/SHA256, and the final fixed server path re-hashes exactly. This state authorizes **no model/runtime work**.
+- `YW_P3R5_ARTIFACT_UNAVAILABLE_RETURN_TO_LEAD` if the fixed destination is absent/nonmatching and artifact `10341040916` is expired, unavailable, or cannot be downloaded using already available repository authentication. Do not rerun the workflow or broaden credentials.
+- `YW_P3R5_ARTIFACT_BINDING_MISMATCH_RETURN_TO_LEAD` if run/head/name/ID/entry set/receipt provenance is not exactly the accepted P3R4 binding. Do not install any checkpoint bytes.
+- `YW_P3R5_CHECKPOINT_HASH_MISMATCH_RETURN_TO_LEAD` if the extracted or final checkpoint size/SHA256 differs from the frozen identity. Preserve evidence; do not substitute another file.
+- `YW_P3R5_AMBIGUOUS_RETURN_TO_LEAD` for any unexpected archive/provenance/filesystem condition. Fail closed; do not improvise.
 
-No P3R4 state authorizes server import, package installation, checkpoint deserialization, runtime smoke, or scientific execution.
+No P3R5 terminal state authorizes package installation, checkpoint deserialization, runtime smoke, or scientific execution.
 
 ## Exact evidence Codex must write back to `coordination/CODEX_TO_CHATGPT.md`
 Report all of the following exactly:
-- task `T013-YW-P3R4`, task-start HEAD, and exact commit containing this Lead instruction;
+- task `T013-YW-P3R5`, task-start HEAD, and exact commit containing this Lead instruction;
 - final state and start/stop timestamps;
-- exact workflow file path and its SHA256; exact workflow commit SHA;
-- workflow trigger definition proving `workflow_dispatch` only; runner label plus observed OS/image metadata; workflow run ID, attempt number, run URL, conclusion and duration;
-- exact frozen asset identity, initial official URL, expected size/SHA256, and confirmation that no alternate initial content URL/model/revision/checkpoint was used;
-- exact acquisition command with any signed query tokens redacted; curl version; TLS/HTTP outcome; redirect count; final effective host/path with query removed; bytes received; observed checkpoint size/SHA256;
-- exact verification commands and outputs proving size/hash match or mismatch;
-- artifact name, artifact ID, artifact size if available, retention setting, and confirmation it contains only the exact checkpoint plus receipt; **server-side artifact download/import count must be `0`**;
-- machine-readable acquisition receipt path/SHA256 and concise human report path/SHA256 under `research_log/t013_yoloworld/p3r4/`; do not commit the 305 MB checkpoint itself to Git;
-- explicit counts: Actions workflow dispatches `0` or `1`; workflow reruns `0`; alternate runner/provider `0`; alternate checkpoint/model/revision/content-source selection `0`; server checkpoint/partial import `0`; package install/build `0`; checkpoint deserialization `0`; CUDA/model-load/forward `0`; T013/COCO/LVIS scientific actions `0`;
-- confirmation P3/P3R1/P3R2/P3R3 artifacts, Grounding freeze/cache/receipts/decision, YOLO P0/P1/P2 freeze, and all scientific settings remained unchanged;
-- recommended next action only as `Research Lead review of P3R4 relay artifact before any server import or runtime feasibility resumption`.
+- preflight fixed-destination existence plus size/SHA256 if present; free-space snapshot;
+- artifact metadata snapshot: run ID/attempt/head SHA, artifact ID/name, `expired`, expiration timestamp, reported size and digest;
+- exact archive-download command/API endpoint with credentials/tokens omitted, exit code, download count (`0` or `1` only), archive path, bytes and SHA256;
+- archive member listing and explicit safety checks: exact member count/names, duplicate/path-traversal/absolute-path/symlink checks;
+- extracted `acquisition_receipt.json` bytes/SHA256 and parsed binding fields, with explicit equality to accepted P3R4 values;
+- extracted checkpoint size/SHA256 and exact verification commands/outputs;
+- exact atomic placement command/procedure, final fixed destination path, and post-placement `stat`/SHA256 output; state whether the destination was newly installed or already exact;
+- temporary archive/extraction paths and whether they were retained or removed;
+- explicit counts: P3R4 workflow reruns `0`; artifact downloads `0` or `1`; alternate artifact/source/checkpoint/model/revision `0`; package install/build `0`; checkpoint deserialization `0`; CUDA/model-load/forward `0`; T013/COCO/LVIS scientific actions `0`; Grounding rerun `0`; T014/CF/MECH scientific work `0`; YOLO scientific benchmark `0`;
+- confirmation that Grounding remains canonically `GROUNDING_PRIMARY_NOT_SUPPORTED`, P0/P1/P2/P3/P3R1–P3R4 evidence remains unchanged, and all YOLO scientific settings remain frozen;
+- machine-readable import receipt and concise human report under `research_log/t013_yoloworld/p3r5/` with hashes in a delivery manifest; do not commit the 305 MB checkpoint or archive to Git;
+- recommended next action only as `Research Lead review of P3R5 server-side checkpoint provenance before any runtime-feasibility resumption`.
 
 Stop after this handoff and await Research-Lead review.
