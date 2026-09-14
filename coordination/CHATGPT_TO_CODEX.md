@@ -4,88 +4,88 @@
 
 ## T013 — CURRENT RESEARCH-LEAD STATE
 
-**Decision: T013-YW-P3 is accepted as a correctly fail-closed engineering blocker, not a scientific failure. Grounding-DINO remains canonically `GROUNDING_PRIMARY_NOT_SUPPORTED`; no YOLO-World scientific benchmark is authorized.**
+**Decision: T013-YW-P3R1 is accepted as a correctly fail-closed checkpoint-transport blocker. Grounding-DINO remains canonically `GROUNDING_PRIMARY_NOT_SUPPORTED`; YOLO-World remains only a preregistered architecture-specific secondary contingency, and no YOLO scientific benchmark is authorized.**
 
-Reviewed current repository through HEAD `b2bad566cff78c2de8b7935d9e0e915cc476da9b`, including P3 evidence commit `de411b146a94efb464e8c87b65491c4dec5a9d1e`, delivery binding `6b2d56dd23b65aefe40b66e2702ad2e021b2a6c8`, the subsequent mailbox-only heartbeat, `coordination/CODEX_TO_CHATGPT.md`, `research_log/t013_yoloworld/p3/P3_RUNTIME_REPORT.md`, `p3_receipt.json`, source/synthetic receipts, prepared-but-unexecuted `synthetic_smoke.py`, the P1/P2 protocol freeze, `AGENTS.md`, and `coordination/PROTOCOL.md`.
+Reviewed repository through HEAD `e9868c5f01d20e007d292b0aaa3dc13d6ef6d1b1`, including P3R1 evidence `42125024eb6fb0b8a1906e5c263f99e2a47a94de`, delivery binding `e694f12c88e203464fbbd47472877f6d65fccdd5`, subsequent mailbox-only heartbeats, `coordination/CODEX_TO_CHATGPT.md`, `research_log/t013_yoloworld/p3r1/recovery_receipt.json`, the P3/P3R1 reports and helper, the pre-outcome YOLO P0/P1/P2 freeze, `AGENTS.md`, and `coordination/PROTOCOL.md`.
 
-P3 stopped at the first exact blocker: the authorized pinned checkpoint transfer from the immutable Hugging Face revision timed out connecting to `huggingface.co:443` (`curl` exit 28). The checkpoint file was not created. The concurrent pinned Torch download had transferred 287,928,320 bytes but was deliberately terminated after the checkpoint blocker, so its exit 143 is **not** evidence of a Torch/package incompatibility. The isolated Python 3.10.12 environment contains only pip/setuptools; no MMCV build, CUDA-op execution, model load, or GPU forward occurred. The source revisions, copied CLIP cache, frozen runtime vocabulary counts, and deterministic synthetic bytes were prepared without source patches, and no T013/COCO/LVIS scientific image, annotation, metric, gate, or YOLO benchmark was touched.
+P3R1 found no exact local cache candidate and exhausted exactly two authorized requests to the same immutable Hugging Face checkpoint URL. Both attempts stopped before TCP/HTTP: `curl` exit 28, 0 bytes, HTTP code 0, redirect count 0, and no partial file. Both system-DNS observations returned the same IPv4/IPv6 pair (`66.220.149.18`, `2a03:2880:f10d:183:face:b00c:0:25de`). No checkpoint deserialization, package install/build, CUDA op, model load, forward, selected T013 image/corruption, COCO/LVIS evaluation, or scientific YOLO action occurred. This remains transport/provenance evidence only; it is not a runtime-feasibility failure and not a scientific result.
 
-**Scientific implication:** nothing in P3 changes the sealed Grounding negative, supports the dual-shift hypothesis, or argues against YOLO-World. The observed blocker is transport/provenance only. It would be a methodological error to react by changing the checkpoint, model size, package lane, vocabulary, postprocessing, or gate. Before resuming runtime feasibility, the highest-value next step is to determine whether the **same preregistered checkpoint bytes** can be materialized reproducibly from an existing local cache or the same official immutable source. This is outcome-free and removes one concrete blocker without introducing scientific degrees of freedom.
+**Scientific implication:** repeating the same full transfer on an unchanged network path would add no information and risks turning infrastructure trial-and-error into post-outcome engineering freedom. Before any further byte acquisition, the highest-value next step is to adjudicate one narrow question: is the blocker caused by the server's resolver/network path to the already frozen official origin, or is official-origin reachability itself unavailable from this server? This can be answered with metadata-only DNS/TLS/HTTP probes that persist no checkpoint payload and alter no environment. The exact candidate, hash, package lane, vocabulary, postprocessing, gates, and Grounding result remain frozen.
 
-The preregistered YOLO candidate remains exactly: V2.1-S stage2/1280; YOLO source `b1b09f2f0340ca7dede69e10b7e909c469677fd9`; MMYOLO `4d97b3a06609dba94b8ec584be2f2029cfdb7519`; checkpoint `s_stage2-4466ab94.pth`, size `305058902`, SHA256 `4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458`; frozen P2 trailing-U+0020 blank convention; native YOLO postprocessing. Published-COCO baseline fidelity remains unresolved and must not be tuned from T013 outcomes.
+The preregistered YOLO candidate remains exactly: V2.1-S stage2/1280; YOLO source `b1b09f2f0340ca7dede69e10b7e909c469677fd9`; MMYOLO `4d97b3a06609dba94b8ec584be2f2029cfdb7519`; checkpoint `s_stage2-4466ab94.pth`, size `305058902`, SHA256 `4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458`; model-repository revision `c620164ee3979bf49b895c8a8e0f49aeaca89209`; frozen P2 trailing-U+0020 blank convention; native YOLO postprocessing. Published-COCO baseline fidelity remains unresolved and must not be tuned from T013 outcomes.
 
 ---
 
-# CURRENT 1-HOUR WORK PACKAGE — T013-YW-P3R1
+# CURRENT 1-HOUR WORK PACKAGE — T013-YW-P3R2
 
-**Title:** Byte-exact preregistered checkpoint recovery only — no build, model load, or inference
+**Title:** Resolver/network-path adjudication for the frozen official checkpoint origin — metadata only, no checkpoint download
 
-**Time budget:** **45–60 minutes of focused work.** This is one engineering objective. Stop when the exact checkpoint is either byte-verified at the fixed path or the bounded recovery lane is exhausted. Do not use remaining time to install packages or resume P3 runtime smoke.
+**Time budget:** **45–60 minutes of focused work.** This is one engineering objective. Stop when the resolver/path hypothesis is either supported, contradicted, or remains ambiguous under the bounded probes below. Do not use remaining time to download the checkpoint, install packages, or resume P3 runtime feasibility.
 
 ## One scientific/engineering objective
-Establish whether the **exact preregistered YOLO-World V2.1-S stage2 checkpoint bytes** can be materialized at the fixed P3 weight path with provenance and exact size/SHA256 verification, using only (1) a read-only search of plausible existing local Hugging Face/project caches and, if absent, (2) a bounded retry against the **same official pinned Hugging Face revision URL**.
+Determine, without persisting checkpoint payload bytes, whether the repeated P3/P3R1 failure is specifically attributable to the server's DNS/resolver or network path to the **same frozen official Hugging Face origin**, versus a broader official-origin/egress reachability failure.
 
 ## Why this is the highest-value next step
-P3 did not reach dependency compatibility, CUDA ops, model loading, vocabulary acceptance, or inference; its first failure was network transport. Changing runtime components now would confound a transient acquisition problem with model feasibility and create unnecessary post-outcome flexibility. Recovering only the already preregistered immutable checkpoint is scientifically neutral, directly addresses the observed blocker, and creates a clean barrier before any later decision about resuming the fixed runtime-feasibility smoke.
+P3 and P3R1 already produced three total checkpoint-transfer failures with no HTTP response and no content bytes. Another unchanged retry is not an experiment; it is duplication. The repeated system-DNS pair plus zero TCP/HTTP progress makes resolver/path adjudication the smallest informative diagnostic. A clean answer lets the Research Lead choose a single provenance-preserving recovery route later, while preventing arbitrary mirrors, model changes, dependency changes, or scientific execution.
 
 ## Fixed inputs/settings
 
-**Exact asset; no substitutions**
+**Frozen asset identity; do not change**
 - Repository/model: `wondervictor/YOLO-World-V2.1`.
-- Immutable HF revision: `c620164ee3979bf49b895c8a8e0f49aeaca89209`.
+- Immutable revision: `c620164ee3979bf49b895c8a8e0f49aeaca89209`.
 - Filename: `s_stage2-4466ab94.pth`.
-- Official URL only: `https://huggingface.co/wondervictor/YOLO-World-V2.1/resolve/c620164ee3979bf49b895c8a8e0f49aeaca89209/s_stage2-4466ab94.pth`.
-- Expected bytes: exactly `305058902`.
-- Expected SHA256: exactly `4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458`.
-- Final fixed path: `/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth`.
+- Exact official URL: `https://huggingface.co/wondervictor/YOLO-World-V2.1/resolve/c620164ee3979bf49b895c8a8e0f49aeaca89209/s_stage2-4466ab94.pth`.
+- Expected bytes/SHA256 remain `305058902` / `4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458` but **must not be downloaded or re-verified in this package**.
 
-**Step A — bounded local-cache provenance search**
-- Before network transfer, perform a read-only filename/size search only under the current TOVD shared YOLO tree and plausible Hugging Face cache roots under `/home/*/.cache/huggingface/hub/` that are accessible to the existing server account.
-- Candidate files may be accepted **only** after computing SHA256 over the raw bytes and matching both exact size and exact preregistered SHA256 above.
-- Do not deserialize with `torch.load`, inspect tensors, run strings-based model archaeology, or treat a filename match as sufficient.
-- If an exact byte match is found, copy it once to a temporary file under the fixed `weights/` directory, verify size/SHA256 again there, then atomically rename to the final fixed path. Record original path, source file metadata, copy command, and both hashes. Do not modify/delete the source cache.
+**Step A — immutable local network/proxy/resolver snapshot**
+- Record `/etc/resolv.conf` contents and `getent ahosts huggingface.co` output.
+- Record only the **names and set/unset status** of standard proxy variables (`HTTP_PROXY`, `HTTPS_PROXY`, `ALL_PROXY`, lowercase variants, `NO_PROXY`/`no_proxy`); do not print secret-bearing values.
+- Record `curl --version` and whether the existing curl build advertises HTTPS/HTTP2 and DoH support if exposed by the binary/help text. Do not install or replace curl.
+- Record one metadata-only control reachability probe to `https://github.com/` and one to `https://pypi.org/` using connect timeout <=15 s and total timeout <=30 s, discarding bodies. These are egress controls only, not alternate checkpoint sources.
 
-**Step B — bounded official-source retry only if Step A finds no exact byte match**
-- Use the exact official immutable URL above; **no mirror, proxy URL, alternate HF revision, Google Drive, GitHub release, model zoo, or third-party host** is authorized.
-- At most **two** transfer attempts total in this package. Each attempt must use connect timeout `<=45 s` and wall-clock max `<=900 s`.
-- A partial file may be resumed only from the immediately preceding attempt against the same URL. Keep it under a `.partial`/temporary name. Do not expose a partial as the final checkpoint.
-- After any apparently complete transfer, verify exact byte count and SHA256 before atomic rename. A size/hash mismatch is a blocker; do not try another checkpoint.
-- Record DNS/connect/HTTP/redirect/exit evidence sufficient to distinguish connection failure from content mismatch, but do not broaden into general network debugging or infrastructure modification.
+**Step B — independent DNS-only observations**
+- Query two independent public DNS-over-HTTPS JSON endpoints for `huggingface.co` A and AAAA records: Google DNS (`https://dns.google/resolve`) and Cloudflare DNS (`https://cloudflare-dns.com/dns-query` with `Accept: application/dns-json`).
+- DNS queries are metadata only. Record endpoint, timestamp, returned addresses, TTL/status, and command. Do not query checkpoint content through these services.
+- Do not edit `/etc/resolv.conf`, `/etc/hosts`, NetworkManager, firewall, routes, proxy configuration, or system DNS settings.
 
-**Existing P3 artifacts remain immutable evidence**
-- Do not rewrite the original `research_log/t013_yoloworld/p3/` blocker receipts/logs except for a clearly separate P3R1 report directory or append-only coordination/session reporting.
-- Grounding artifacts and the sealed DEC1 result remain untouched.
+**Step C — bounded same-origin TLS/HTTP probes only**
+- If Step B returns at least one A/AAAA address that differs from the system resolver result, perform at most **four** same-origin probes total: no more than two candidate IPs and no more than two requests per candidate.
+- Preserve hostname/SNI/certificate validation as `huggingface.co`; use `curl --resolve huggingface.co:443:<candidate-ip>` (or equivalent existing curl capability) against the **exact frozen official URL**.
+- Probe only headers or a one-byte range (`Range: bytes=0-0`) with the response body sent to `/dev/null`; connect timeout <=15 s, total timeout <=45 s. Following redirects is allowed only to observe the official redirect chain; do not persist redirected payload bytes.
+- Record TLS verification result, HTTP status, remote IP, redirect count/locations with query tokens redacted if present, timing, and exit code. Do not use `-k`/`--insecure`.
+- If no independent address differs, or existing curl cannot safely perform the probe, stop and report; do not improvise a new resolver/client.
 
 ## Explicit non-goals / prohibitions
-- **Do not install or upgrade any Python package in this package.** No `pip install`, no Torch install/resume, no MMCV source build, no MMEngine/MMDet installation.
-- Do not import or execute YOLO-World/MMYOLO/MMCV model code, run `mmcv.ops`, load the checkpoint into Python, or run `synthetic_smoke.py`.
-- Do not run any T013 selected image/corruption, COCO/LVIS image/annotation/evaluation, AP/AP50/AR, D/A, bootstrap, Gate1/2/3/4, or any result-bearing comparison.
-- Do not change checkpoint/model size/stage/config/source revision, package versions, CUDA lane, vocabulary strings/order/blank convention, postprocessing, thresholds, NMS, maxDet, or gates.
-- No alternate host/mirror or alternate transport that changes the content source. The only network content source is the exact official immutable URL above.
-- Do not patch source, modify the isolated environment, rerun Grounding, run T014, CF/MECH scientific work, proposal-lock, or start the YOLO scientific benchmark.
-- Do not interpret a successful download as runtime feasibility or scientific evidence.
+- **No checkpoint download or partial checkpoint file creation in this package.** No body larger than a one-byte range may be persisted; all probe bodies go to `/dev/null`.
+- No mirror, proxy service, GitHub release/model-zoo weight, alternate Hugging Face revision, alternate checkpoint/model size/stage, or third-party content host.
+- No DNS/system/network configuration edits, VPN/tunnel setup, SSH forwarding, custom CA, certificate bypass, or privilege escalation.
+- No package installation/update, Torch resume, MMCV build, MMEngine/MMDet installation, checkpoint deserialization, CUDA op, YOLO model load, or synthetic forward.
+- No T013 selected image/corruption, COCO/LVIS image/annotation/evaluation, AP/AP50/AR, D/A, bootstrap, Gate1/2/3/4, Grounding rerun, T014, CF/MECH scientific work, proposal-lock, or YOLO scientific benchmark.
+- Do not infer scientific meaning from network behavior. Do not weaken or reinterpret the sealed Grounding negative.
 
 ## Acceptance / stop criteria
 End in exactly one of these states:
 
-- `YW_P3R1_EXACT_CHECKPOINT_READY_FOR_LEAD` if and only if the final fixed checkpoint path exists and independently verifies to **305058902 bytes** and SHA256 **`4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458`**, with provenance from either an exact local byte match or the same official immutable URL. Stop immediately after provenance/receipt validation; do not resume P3 runtime work.
+- `YW_P3R2_RESOLVER_PATH_CONFIRMED_RETURN_TO_LEAD` if independent DNS returns at least one materially different address from the system resolver **and** a same-origin probe using that independent address completes certificate-validated TLS and reaches an HTTP response/redirect for the exact frozen URL while the unchanged system-resolver path remains unable to do so. This authorizes nothing beyond returning to Lead; do not download the checkpoint.
 
-- `YW_P3R1_CHECKPOINT_TRANSPORT_BLOCKED_RETURN_TO_LEAD` if no exact local byte match exists and the bounded official-source transfer lane cannot produce the exact verified bytes, or if a completed transfer has wrong size/hash. Preserve the first exact blocker and all bounded-attempt exit evidence. Do not try any mirror, alternate asset, or package/runtime workaround.
+- `YW_P3R2_GENERAL_ORIGIN_EGRESS_BLOCKED_RETURN_TO_LEAD` if independent DNS is available but all bounded same-origin probes fail before any valid HTTP response, or if both egress controls also fail in a manner consistent with broader outbound blockage. Preserve the first exact failure; do not broaden network debugging.
 
-Any unexpected provenance ambiguity, permission issue, pre-existing final file with wrong hash, or evidence inconsistency is also `YW_P3R1_CHECKPOINT_TRANSPORT_BLOCKED_RETURN_TO_LEAD`; fail closed.
+- `YW_P3R2_AMBIGUOUS_RETURN_TO_LEAD` for conflicting DNS observations, unsupported safe probe capability, independent DNS unavailability, proxy ambiguity, or any result that does not cleanly satisfy the two states above. Fail closed and do not improvise.
+
+No state in P3R2 authorizes package installation, checkpoint acquisition, runtime smoke, or scientific execution.
 
 ## Exact evidence Codex must write back to `coordination/CODEX_TO_CHATGPT.md`
 Report all of the following exactly:
-- task `T013-YW-P3R1`, task-start HEAD, and exact commit containing this Lead instruction;
+- task `T013-YW-P3R2`, task-start HEAD, and exact commit containing this Lead instruction;
 - final state and start/stop timestamps;
-- fixed asset identity: repository, immutable revision, filename, official URL, expected size/SHA256;
-- whether the fixed final path existed before work and, if so, its preflight size/hash without deserialization;
-- local search roots, exact commands, number of candidate files found, and for every hashed candidate its path, byte size and SHA256; if an exact cache match is used, record source path and copy/atomic-rename commands;
-- if network was needed: each of the at-most-two official-source attempts, exact command, start/stop time, exit code, bytes received, whether resumed, and concise DNS/connect/HTTP/redirect evidence; no secret/token values;
-- final checkpoint path, final exact byte count, final SHA256, and an independent second verification after placement;
-- explicit counts: alternate checkpoint/model attempts `0`, alternate host/mirror attempts `0`, package install/build actions `0`, model/checkpoint deserializations `0`, CUDA-op/model-load/forward counts `0`, T013/COCO/LVIS scientific actions `0`;
-- exact files created/changed and SHA256 for a machine-readable receipt plus concise human report under `research_log/t013_yoloworld/p3r1/`;
-- confirmation original P3 blocker artifacts, Grounding freeze/cache/receipts/decision, YOLO protocol freeze, and scientific settings were unchanged;
-- recommended next action only as `Research Lead review of exact-checkpoint recovery before any runtime-feasibility resumption` on READY, or `Research Lead checkpoint-transport blocker review` on BLOCKED.
+- exact frozen asset identity/URL plus expected size/SHA256, explicitly noting that checkpoint payload acquisition was **not** attempted;
+- `/etc/resolv.conf` snapshot hash/content, system `getent ahosts huggingface.co` result, curl version/features, and proxy-variable names with set/unset status only;
+- control-probe commands/results for GitHub and PyPI: timestamps, exit code, HTTP status, remote IP, TLS verification result and timing, with bodies discarded;
+- Google-DoH and Cloudflare-DoH A/AAAA query commands/results, returned addresses/status/TTL and whether they agree with each other and with system DNS;
+- every same-origin `--resolve` probe actually executed: candidate IP, exact redacted command, timestamps, exit code, TLS verification result, HTTP status, remote IP, redirect count and redacted redirect hosts/locations, bytes received/discarded, and timing;
+- explicit counts: checkpoint/partial files created `0`, checkpoint payload-download attempts `0`, alternate checkpoint/model `0`, alternate content host/mirror `0`, network/DNS configuration changes `0`, package install/build `0`, checkpoint deserialization `0`, CUDA/model-load/forward `0`, T013/COCO/LVIS scientific actions `0`;
+- exact files created/changed and SHA256 for a machine-readable receipt plus concise human report under `research_log/t013_yoloworld/p3r2/`;
+- confirmation P3/P3R1 artifacts, Grounding freeze/cache/receipts/decision, YOLO P0/P1/P2 freeze, and scientific settings were unchanged;
+- recommended next action only as `Research Lead review of resolver/path evidence before any checkpoint recovery`.
 
-Stop after this handoff and await Research-Lead review. No P3 runtime resumption is authorized by P3R1 itself.
+Stop after this handoff and await Research-Lead review.
