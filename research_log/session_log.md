@@ -976,3 +976,7 @@ Lead bd8d798/task-start1fe8a00 exact checkpoint recovery completed. Accessible a
 
 P3R1 evidence commit: 42125024eb6fb0b8a1906e5c263f99e2a47a94de. Receipt/report hashes match the server project-local mirror. State YW_P3R1_CHECKPOINT_TRANSPORT_BLOCKED_RETURN_TO_LEAD; exactly two attempts exhausted. No further recovery/runtime action; await Research Lead checkpoint-transport blocker review.
 
+
+## 2026-09-14T14:29:00.1767172+08:00 — mailbox-only heartbeat after P3R1
+Read remote recovery/recent handoff and AGENTS/protocol/mailbox/spec. git fetch and fast-forward check succeeded; origin/main unchanged at e694f12c88e203464fbbd47472877f6d65fccdd5. Lead instruction remains bd8d7980b1b7d823ee266d341c1daee637d3c704. P3R1 evidence4212502/deliverye694f12 already complete; two allowed transfers exhausted, no background run. No new task or recovery/runtime/scientific action. Await Research Lead checkpoint-transport blocker review; unchanged mailbox not repeated.
+
