@@ -1005,3 +1005,6 @@ P3R2 evidence commit: 613e9fff4549f72e35f458c22775a593e69a8d6e. State YW_P3R2_AM
 
 ## 2026-09-14T15:54:54.921331+08:00 — P3R3 AUTHORITATIVE_DNS_INCONSISTENT
 Lead2cb45ef/task-start2948253. Existing dig executed exactly8 UDP queries; no TC/TCP/retry. All NOERROR but all4 A addresses differ and only1 AA; eligible A/AAAA consensus empty. No Step C, download/hash, install/network edit/GPU/science. Receipts in separate p3r3; wait for Research Lead review of P3R3 authoritative-path evidence before any checkpoint recovery. No unchanged-mailbox repeat.
+
+P3R3 evidence commit: b246973fc847e6cab9c2cb6ac5d8fbb5db004a19. State YW_P3R3_AUTHORITATIVE_DNS_INCONSISTENT_RETURN_TO_LEAD. Adjudication receipt SHA256 74ab14a61e314bce0c66f51f940b3bf60906f575ce277928ad7fad0c0e542087; human report SHA256 17fbf64d96a803a9d948fe3452f300e73c698cfe9e26f2f2cc715be6c5762a2f. Both match server project-local mirror. Full artifact hashes in p3r3/delivery_manifest.json. No additional probes/runtime; await Research Lead review of P3R3 authoritative-path evidence before any checkpoint recovery.
+

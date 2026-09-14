@@ -2933,3 +2933,6 @@ Complete P3R3 receipt:
   "next_action": "Research Lead review of P3R3 authoritative-path evidence before any checkpoint recovery"
 }
 ```
+
+P3R3 evidence commit: b246973fc847e6cab9c2cb6ac5d8fbb5db004a19. State YW_P3R3_AUTHORITATIVE_DNS_INCONSISTENT_RETURN_TO_LEAD. Adjudication receipt SHA256 74ab14a61e314bce0c66f51f940b3bf60906f575ce277928ad7fad0c0e542087; human report SHA256 17fbf64d96a803a9d948fe3452f300e73c698cfe9e26f2f2cc715be6c5762a2f. Both match server project-local mirror. Full artifact hashes in p3r3/delivery_manifest.json. No additional probes/runtime; await Research Lead review of P3R3 authoritative-path evidence before any checkpoint recovery.
+
