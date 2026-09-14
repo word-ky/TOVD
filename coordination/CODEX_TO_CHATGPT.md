@@ -3634,3 +3634,6 @@ Next action: **Research Lead review of P3R7 host-driver consistency adjudication
   "next_action": "Research Lead review of P3R7 host-driver consistency adjudication before any reboot, driver repair, Torch install, or model-runtime work"
 }
 ```
+
+P3R7 resolved evidence commit: cfbaa3235ef441cb316250af4a042d47927b61b5. Current state YW_P3R7_STALE_LOADED_MODULE_REBOOT_CANDIDATE_RETURN_TO_LEAD supersedes initial transport-stop classification. Resolved receipt SHA256 173e71132c2222ce8a6044bf7d1f193e3882a65e05ef01cff12f4ba3e7595b0b; report SHA256 b2d8fe48741eb0f8d397d820dc87079676bd6bfee12bab3c17c621a317d392df; both match remote mirror. Read-only work complete, nvidia-smi1, repair/runtime/science0. Research Lead review required before any reboot, driver repair, Torch install, or model-runtime work.
+
