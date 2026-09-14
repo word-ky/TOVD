@@ -1064,3 +1064,7 @@ P3R6 evidence commit: abb9b59742fd571a8ac993feb7d079ad0d40304d. State YW_P3R6_AM
 ## 2026-09-14T18:59:49.1519364+08:00 — mailbox-only heartbeat after P3R6
 Read project recovery/handoff and AGENTS/protocol/mailbox/spec. git fetch/fast-forward succeeded; origin/main unchanged at 2908d160171ae6903fb427912bca2e842a599cf4. Leadc2c516f unchanged; P3R6 evidenceabb9b59/delivery2908d16 already reports terminal host NVML mismatch. No new task or active remote run; no repeated preflight, driver action, install, CUDA smoke or science. Await Research Lead review of P3R6 base Torch/CUDA runtime evidence before any OpenMMLab/model-runtime work.
 
+
+## 2026-09-14T19:16:26.1067499+08:00 — heartbeat and local disk-space recovery
+D: free0 bytes caused git index.lock write failure (Out of diskspace); no lock remained. Remote main independently confirmed236f5015e4e9fa6889227c390a58dc1ce1d21b1d. Removed only verified disposable relay ZIP with PowerShell Remove-Item -LiteralPath 'D:\work\fightccfa-agin\CVPR2027\TTT-OVD\.autodl\p3r5\artifact-10341040916.zip' (305061442bytes); P3R5 explicitly permitted post-verification temporary cleanup. D: free304779264bytes afterward; git status/fetch/fast-forward all exit0. Archive is now removed, superseding P3R5's retained-at-handoff note; extracted checkpoint/receipt, final server checkpoint and all committed evidence unchanged. No broad cleanup. Mailbox remains Leadc2c516f P3R6, already terminal in abb9b59/2908d16; no new task/active run or repeated GPU/driver/install/scientific action. Await Lead review.
+
