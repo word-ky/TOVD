@@ -1,0 +1,23 @@
+2026-09-14T18:40:44+08:00
+Python 3.10.12
+[{"name": "pip", "version": "22.0.2"}, {"name": "setuptools", "version": "59.6.0"}]
+文件系统              1B的块          已用         可用 已用% 挂载点
+/dev/nvme0n1p9 2497827418112 2210525593600 160343076864   94% /home
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2022 NVIDIA Corporation
+Built on Wed_Sep_21_10:33:58_PDT_2022
+Cuda compilation tools, release 11.8, V11.8.89
+Build cuda_11.8.r11.8/compiler.31833905_0
+Failed to initialize NVML: Driver/library version mismatch
+NVML library version: 580.178
+Failed to initialize NVML: Driver/library version mismatch
+NVML library version: 580.178
+  文件：/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth
+  大小：305058902 	块：595824     IO 块大小：4096   普通文件
+设备：10309h/66313d	Inode：76310702    硬链接：1
+权限：(0644/-rw-r--r--)  Uid: ( 1012/liujianhua)   Gid: ( 1000/wenchang)
+访问时间：2026-09-14 18:05:25.450044020 +0800
+修改时间：2026-09-14 18:04:51.317147474 +0800
+变更时间：2026-09-14 18:05:25.447044029 +0800
+创建时间：2026-09-14 18:04:18.463260919 +0800
+4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458  /home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth

@@ -1,0 +1,95 @@
+{
+  "task": "T013-YW-P3R6",
+  "task_start_head": "2a6d5d39fdd782b57108ea62c86a4fa0c4e701d5",
+  "lead_instruction_commit": "c2c516fcec094a54ebe0a62a67511d94425ad37b",
+  "started_at": "2026-09-14T10:39:19.222Z",
+  "stopped_at": "2026-09-14T18:41:17+08:00",
+  "state": "YW_P3R6_AMBIGUOUS_RETURN_TO_LEAD",
+  "reason": "Preflight nvidia-smi cannot initialize NVML: Driver/library version mismatch. NVML reports580.178 whereas the loaded kernel module reports580.173.02. GPU identity is unavailable from the required device snapshot. This is an unexpected host state; CUDA execution was not tested, so CUDA unavailability or Torch incompatibility is not asserted. Stop under the explicit unexpected-state rule before installing packages.",
+  "venv_path": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/env",
+  "python": "3.10.12",
+  "preflight_pip_list": [
+    {
+      "name": "pip",
+      "version": "22.0.2"
+    },
+    {
+      "name": "setuptools",
+      "version": "59.6.0"
+    }
+  ],
+  "post_task_pip_list": [
+    {
+      "name": "pip",
+      "version": "22.0.2"
+    },
+    {
+      "name": "setuptools",
+      "version": "59.6.0"
+    }
+  ],
+  "post_task_pip_freeze": "",
+  "venv_drift": false,
+  "free_bytes": 160343076864,
+  "nvcc_path": "/home/wenchang/anaconda3/envs/lqt_canconv_cu118/bin/nvcc",
+  "nvcc_version": "11.8.89",
+  "nvidia_smi_command": "nvidia-smi -L",
+  "nvidia_smi_exit_code": 18,
+  "nvml_library_version_reported": "580.178",
+  "loaded_kernel_module_version": "580.173.02",
+  "driver_metadata_command": "cat /proc/driver/nvidia/version",
+  "checkpoint_path": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth",
+  "checkpoint_pre_bytes": 305058902,
+  "checkpoint_post_bytes": 305058902,
+  "checkpoint_pre_sha256": "4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458",
+  "checkpoint_post_sha256": "4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458",
+  "checkpoint_guard_commands": [
+    "stat /home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth",
+    "sha256sum /home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth"
+  ],
+  "fixed_install_command_NOT_EXECUTED": "/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/env/bin/python -m pip --cache-dir /home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/cache install torch==2.1.2+cu118 torchvision==0.16.2+cu118 numpy==1.26.4 --extra-index-url https://download.pytorch.org/whl/cu118",
+  "install_started_at": null,
+  "install_stopped_at": null,
+  "install_exit_code": null,
+  "install_log_path": null,
+  "cache_use": "Not accessed; previous partial-download usefulness not evaluated because install did not start.",
+  "required_version_checks": {
+    "torch_2.1.2+cu118": "NOT_RUN_NOT_INSTALLED",
+    "torchvision_0.16.2+cu118": "NOT_RUN_NOT_INSTALLED",
+    "numpy_1.26.4": "NOT_RUN_NOT_INSTALLED",
+    "torch.version.cuda_11.8": "NOT_RUN"
+  },
+  "cuda_smoke": {
+    "status": "NOT_RUN_PREFLIGHT_HOST_MISMATCH",
+    "code_path": null,
+    "command": null,
+    "exit_code": null,
+    "cuda_available": null,
+    "device_count": null,
+    "device_1_name": null,
+    "tensor_device": null,
+    "integer_endpoints": null,
+    "FP32_finite": null,
+    "synchronization": null,
+    "peak_allocated_bytes": null
+  },
+  "counts": {
+    "fixed_base_install_commands": 0,
+    "alternate_version_index_mirror_device_attempts": 0,
+    "MMCV_MMEngine_MMDet_transformers_timm_OpenCV_install_build": 0,
+    "source_patches": 0,
+    "checkpoint_deserializations": 0,
+    "model_constructions_loads": 0,
+    "synthetic_detector_forwards": 0,
+    "CUDA_tensor_smokes": 0,
+    "T013_COCO_LVIS_science": 0,
+    "Grounding_reruns": 0,
+    "T014_CF_MECH_science": 0,
+    "YOLO_scientific_benchmark": 0,
+    "driver_modifications_reboots": 0
+  },
+  "preflight_raw": "2026-09-14T18:40:44+08:00\r\nPython 3.10.12\r\n[{\"name\": \"pip\", \"version\": \"22.0.2\"}, {\"name\": \"setuptools\", \"version\": \"59.6.0\"}]\r\n文件系统              1B的块          已用         可用 已用% 挂载点\r\n/dev/nvme0n1p9 2497827418112 2210525593600 160343076864   94% /home\r\nnvcc: NVIDIA (R) Cuda compiler driver\r\nCopyright (c) 2005-2022 NVIDIA Corporation\r\nBuilt on Wed_Sep_21_10:33:58_PDT_2022\r\nCuda compilation tools, release 11.8, V11.8.89\r\nBuild cuda_11.8.r11.8/compiler.31833905_0\r\nFailed to initialize NVML: Driver/library version mismatch\r\nNVML library version: 580.178\r\nFailed to initialize NVML: Driver/library version mismatch\r\nNVML library version: 580.178\r\n  文件：/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth\r\n  大小：305058902 \t块：595824     IO 块大小：4096   普通文件\r\n设备：10309h/66313d\tInode：76310702    硬链接：1\r\n权限：(0644/-rw-r--r--)  Uid: ( 1012/liujianhua)   Gid: ( 1000/wenchang)\r\n访问时间：2026-09-14 18:05:25.450044020 +0800\r\n修改时间：2026-09-14 18:04:51.317147474 +0800\r\n变更时间：2026-09-14 18:05:25.447044029 +0800\r\n创建时间：2026-09-14 18:04:18.463260919 +0800\r\n4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458  /home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth\r\n",
+  "terminal_raw": "2026-09-14T18:41:15+08:00\r\nFailed to initialize NVML: Driver/library version mismatch\r\nNVML library version: 580.178\r\nnvidia_smi_exit_code=18\r\nNVRM version: NVIDIA UNIX x86_64 Kernel Module  580.173.02  Tue Jun 23 08:38:17 UTC 2026\r\nGCC version:  gcc version 12.3.0 (Ubuntu 12.3.0-1ubuntu1~22.04.3) \r\n[{\"name\": \"pip\", \"version\": \"22.0.2\"}, {\"name\": \"setuptools\", \"version\": \"59.6.0\"}]\r\n  文件：/home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth\r\n  大小：305058902 \t块：595824     IO 块大小：4096   普通文件\r\n设备：10309h/66313d\tInode：76310702    硬链接：1\r\n权限：(0644/-rw-r--r--)  Uid: ( 1012/liujianhua)   Gid: ( 1000/wenchang)\r\n访问时间：2026-09-14 18:05:25.450044020 +0800\r\n修改时间：2026-09-14 18:04:51.317147474 +0800\r\n变更时间：2026-09-14 18:05:25.447044029 +0800\r\n创建时间：2026-09-14 18:04:18.463260919 +0800\r\n4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458  /home/wenchang/asdasdsad/wjq/TOVD/shared/t013_yoloworld/weights/s_stage2-4466ab94.pth\r\n2026-09-14T18:41:17+08:00\r\n",
+  "preservation": "Grounding remains GROUNDING_PRIMARY_NOT_SUPPORTED. P0/P1/P2/P3/P3R1–P3R5 evidence, environment, sources, caches and frozen YOLO scientific settings unchanged. This is host preflight evidence only, not a YOLO scientific negative or Torch compatibility result.",
+  "next_action": "Research Lead review of P3R6 base Torch/CUDA runtime evidence before any OpenMMLab/model-runtime work"
+}

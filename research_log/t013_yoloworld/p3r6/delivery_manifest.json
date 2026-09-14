@@ -1,0 +1,22 @@
+{
+  "research_log/t013_yoloworld/p3r6/P3R6_REPORT.md": {
+    "bytes": 8825,
+    "sha256": "f6d5f6d4a6ecae668bfaa39ccceb43edea8ffcd8d0e42304003ef229b8b0e6c6"
+  },
+  "research_log/t013_yoloworld/p3r6/preflight.txt": {
+    "bytes": 1346,
+    "sha256": "0378b7705efaf90d15616948bf7d058355f48e1f4657f7efacb93f8808b07130"
+  },
+  "research_log/t013_yoloworld/p3r6/runtime_receipt.json": {
+    "bytes": 6926,
+    "sha256": "e8f6bfd5404f429d2954b00f7fa838992596dc33a131c39316affd5dc610d005"
+  },
+  "research_log/t013_yoloworld/p3r6/terminal_snapshot.txt": {
+    "bytes": 1082,
+    "sha256": "1a003163f649a63df769a2db5c24ca44993f2ed9626be88f80051aabf1f62667"
+  },
+  "research_log/t013_yoloworld/p3r6/write_report.py": {
+    "bytes": 7896,
+    "sha256": "01102ab5b2b22bde00921f81f3fe7d6af9105b8610ef14f98b459e9e0b19c845"
+  }
+}

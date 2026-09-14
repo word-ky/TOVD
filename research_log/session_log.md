@@ -1049,3 +1049,11 @@ P3R5 evidence commit: 0c82dfdabedcc23a58a4a5ca84900e82b9fdbdae. State YW_P3R5_CH
 ## 2026-09-14T18:23:45.1278095+08:00 — mailbox-only heartbeat after P3R5
 Read project recovery/handoff and AGENTS/protocol/mailbox/spec; git fetch/fast-forward succeeded, origin/main unchanged at db1e9a3aa5bf4ba2de34f61646989ceb5304d861. Lead ae07716 unchanged; P3R5 evidence0c82dfd/deliverydb1e9a3 already establishes imported checkpoint identity. No new task or active remote experiment; no repeat download/import/hash, dependency work, GPU/runtime or science. Await Research Lead review of P3R5 server-side checkpoint provenance before any runtime-feasibility resumption.
 
+
+## 2026-09-14T18:40:37.5117662+08:00 — P3R6 authorized base runtime
+Task-start2a6d5d39fdd782b57108ea62c86a4fa0c4e701d5; Leadc2c516fcec094a54ebe0a62a67511d94425ad37b. Preflight existing Python3.10 venv then at most one exact fixed Torch2.1.2+cu118/torchvision0.16.2+cu118/numpy1.26.4 install and cuda:1 A6000 tensor-only smoke. No OpenMMLab/model/science.
+
+
+
+## 2026-09-14T18:41:17+08:00 — P3R6 unexpected host driver state
+Leadc2c516f/task-start2a6d5d3. Venv unchanged Python3.10.12/pip22.0.2/setuptools59.6.0. nvidia-smi exit18 Driver/library version mismatch: NVML580.178 vs kernel580.173.02. State YW_P3R6_AMBIGUOUS_RETURN_TO_LEAD under unexpected-state stop; CUDA compatibility untested. Fixed install0, CUDA smoke0, driver modification0, science0. Checkpoint before/after exact305058902bytes/SHA4466ab94...f458. Full receipts research_log/t013_yoloworld/p3r6. Do not repeat unchanged package or repair driver without new Lead scope. Next: Research Lead review of P3R6 base Torch/CUDA runtime evidence before any OpenMMLab/model-runtime work.

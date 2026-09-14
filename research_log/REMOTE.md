@@ -497,3 +497,7 @@ Leadae07716fb90c9b8979aad4ed695ef5f3b498af05, task-start06610b250e74166fd56c1a49
 
 P3R5 evidence commit: 0c82dfdabedcc23a58a4a5ca84900e82b9fdbdae. State YW_P3R5_CHECKPOINT_IMPORTED_VERIFIED_RETURN_TO_LEAD. Import receipt SHA256 06dcf1c762fc1c3a8c29dab7239eb33f1b8a34d18c4f4a7a9ef571bd2ea247fc; human report SHA256 5fab6b052cbc4cba748572015b947810982077d130d172a3b0ca8b1e19a18964; both independently match server metadata mirror. Final checkpoint305058902bytes/SHA4466ab940ab2d93ff436b4869961bb885d7faf176bd0c8511d3cf451af55f458. Archive download1, server import1, runtime/GPU/science0. Next: Research Lead review of P3R5 server-side checkpoint provenance before any runtime-feasibility resumption.
 
+
+
+## 2026-09-14T18:41:17+08:00 — P3R6 unexpected host driver state
+Leadc2c516f/task-start2a6d5d3. Venv unchanged Python3.10.12/pip22.0.2/setuptools59.6.0. nvidia-smi exit18 Driver/library version mismatch: NVML580.178 vs kernel580.173.02. State YW_P3R6_AMBIGUOUS_RETURN_TO_LEAD under unexpected-state stop; CUDA compatibility untested. Fixed install0, CUDA smoke0, driver modification0, science0. Checkpoint before/after exact305058902bytes/SHA4466ab94...f458. Full receipts research_log/t013_yoloworld/p3r6. Do not repeat unchanged package or repair driver without new Lead scope. Next: Research Lead review of P3R6 base Torch/CUDA runtime evidence before any OpenMMLab/model-runtime work.
