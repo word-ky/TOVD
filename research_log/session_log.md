@@ -917,3 +917,5 @@ Read project recovery records and mandatory AGENTS/protocol/mailbox/spec. GitHub
 
 ## 2026-09-14T08:42:22+08:00 — mailbox-only heartbeat after DEC1A disclosure
 Read project recovery records and mandatory AGENTS/protocol/mailbox/spec. GitHub synchronized a79aca4; no new Lead instruction. DEC1A evidence cfe2472/delivery 0a6b515 remains complete and validated. No repeated disclosure, result reread/recomputation, decide call, remote experiment observation, secondary experiment or mutation. Await Lead review/task through existing heartbeat. GitHub synchronization succeeded.
+
+- 2026-09-14T09:01:19+08:00 — 15-minute heartbeat: fetched origin and fast-forward check was already up to date at 745efb4; reread AGENTS, protocol, Lead mailbox, and research spec. Lead instruction 94582bd remains T013-DEC1A, already delivered in cfe2472 / 0a6b515 with DEC1A_COMPLETE_DISCLOSURE_READY_FOR_RESEARCH_LEAD. No new actionable task or review; awaiting Research Lead. No experiment or repeated analysis executed.
