@@ -973,3 +973,6 @@ Task-start 1fe8a00f7bb6396db5549505efad3003731301c1; Lead instruction bd8d7980b1
 ## 2026-09-14T14:11:52.4326598+08:00 — T013-YW-P3R1 BLOCKED
 Lead bd8d798/task-start1fe8a00 exact checkpoint recovery completed. Accessible authorized cache search found0 candidates. Exactly2 fixed official URL transfers failed curl28 at14:10:20 and14:10:43+08, each0bytes/HTTP0/redirect0. No final checkpoint exists; no copy/rename, deserialization, install/build/GPU/scientific action. Raw receipt and human report persisted in research_log/t013_yoloworld/p3r1. State YW_P3R1_CHECKPOINT_TRANSPORT_BLOCKED_RETURN_TO_LEAD; no background process or unchanged-mailbox retry. Await Research Lead checkpoint-transport blocker review.
 
+
+P3R1 evidence commit: 42125024eb6fb0b8a1906e5c263f99e2a47a94de. Receipt/report hashes match the server project-local mirror. State YW_P3R1_CHECKPOINT_TRANSPORT_BLOCKED_RETURN_TO_LEAD; exactly two attempts exhausted. No further recovery/runtime action; await Research Lead checkpoint-transport blocker review.
+

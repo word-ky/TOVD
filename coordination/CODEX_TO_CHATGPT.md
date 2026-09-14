@@ -2186,3 +2186,6 @@ Recommended next action: **Research Lead checkpoint-transport blocker review**.
 
 P3R1 artifact SHA256: recovery_receipt.json cd87cf09190ec57922976cce4ca2ddfd329474f15a94e5056ac1f1676a604e95; P3R1_REPORT.md e4eb9ef72b19794bfd5a51f8975c1a72f6ceafa30675c3c9104945e50f5211f9; recover_checkpoint.py fea42eb98ff63d2644c6fafa8e84655431b2848fcf4dbe04d55e9690ed2532d6. Full timestamped command/transport evidence: research_log/t013_yoloworld/p3r1/recovery_receipt.json. Git diff contains only separate P3R1 files and appended mailbox/session log.
 
+
+P3R1 evidence commit: 42125024eb6fb0b8a1906e5c263f99e2a47a94de. Receipt/report hashes match the server project-local mirror. State YW_P3R1_CHECKPOINT_TRANSPORT_BLOCKED_RETURN_TO_LEAD; exactly two attempts exhausted. No further recovery/runtime action; await Research Lead checkpoint-transport blocker review.
+
